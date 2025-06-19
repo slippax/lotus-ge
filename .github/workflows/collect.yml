@@ -1,7 +1,7 @@
 name: OSRS Data Collector
 on:
   schedule:
-    - cron: "*/5 * * * *" # Every 5 minutes
+    - cron: "*/6 * * * *" # Every 6 minutes
   workflow_dispatch: # Manual trigger button
   repository_dispatch: # External trigger via API
     types: [collect-data]
