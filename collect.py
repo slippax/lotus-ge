@@ -593,8 +593,7 @@ def calculate_statistics(conn):
 
                     ResultList.append(resultdict)
 
-        # Save results to main db (methodology)
-        cursor.execute("DELETE FROM marketstats")
+        # Save results to main db (methodology) - USE INSERT OR REPLACE, NOT DELETE
         for result in ResultList:
             cursor.execute("INSERT OR REPLACE INTO marketstats VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
                          (result["typeid"], result["Type"], result["MeanLow"], result["MeanHigh"],
