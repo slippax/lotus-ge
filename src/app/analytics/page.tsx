@@ -471,11 +471,11 @@ export default function AnalyticsPage() {
   }
 
   return (
-    <div className="space-y-6 text-white min-h-screen mt-6">
+    <div className="space-y-4 md:space-y-6 text-white min-h-screen mt-4 md:mt-6 px-2 md:px-0">
       {/* Streamlined Header */}
       <div className="flex flex-col md:items-start gap-2">
         {lastUpdate && (
-          <div className="text-lg font-serif text-gray-300">
+          <div className="text-base md:text-lg font-serif text-gray-300">
             <p
               className={`transition-all duration-300 ${
                 isRefreshing ? "text-green-400 scale-105" : ""
@@ -485,28 +485,30 @@ export default function AnalyticsPage() {
             </p>
             {dataUpdated && (
               <p
-                className={`text-base transition-all duration-300 ${
+                className={`text-sm md:text-base transition-all duration-300 ${
                   isRefreshing ? "text-green-400" : ""
                 }`}
               >
                 Data: {dataUpdated.toLocaleString()}
               </p>
             )}
-            <p className="text-sm text-blue-400">Instant webhook updates</p>
+            <p className="text-xs md:text-sm text-blue-400">
+              Instant webhook updates
+            </p>
           </div>
         )}
       </div>
 
       {/* Strategy Tabs */}
-      <div className="border border-gray-600  overflow-hidden bg-gray-900">
-        <div className="flex flex-wrap bg-gray-800">
+      <div className="border border-gray-600 overflow-hidden bg-gray-900">
+        <div className="grid grid-cols-2 md:flex bg-gray-800">
           {(
             ["dips", "processing", "flipping", "alchemy"] as AnalyticsTab[]
           ).map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-8 py-4 font-semibold text-xl font-serif border-r border-gray-600 transition-colors ${
+              className={`px-3 md:px-8 py-3 md:py-4 font-semibold text-sm md:text-xl font-serif border-r border-gray-600 transition-colors ${
                 activeTab === tab
                   ? "bg-white text-black"
                   : "bg-gray-800 text-white hover:bg-gray-700"
@@ -517,7 +519,7 @@ export default function AnalyticsPage() {
           ))}
         </div>
 
-        <div className="">
+        <div className="overflow-x-auto">
           {/* Tab Content */}
           {activeTab === "flipping" && <FlippingTable data={data.flipping} />}
           {activeTab === "dips" && <DipsTable data={data.dips} />}
@@ -534,26 +536,26 @@ export default function AnalyticsPage() {
 // Table Components for each strategy
 function FlippingTable({ data }: { data: FlippingItem[] }) {
   return (
-    <div className="border border-gray-600 overflow-hidden">
-      <table className="w-full border-collapse font-serif">
+    <div className="border border-gray-600 overflow-x-auto">
+      <table className="w-full border-collapse font-serif min-w-[800px]">
         <thead>
           <tr className="bg-gray-800">
-            <th className="border-b border-gray-600 p-6 text-left font-semibold text-xl text-white">
+            <th className="border-b border-gray-600 p-3 md:p-6 text-left font-semibold text-sm md:text-xl text-white">
               Item
             </th>
-            <th className="border-b border-gray-600 p-6 text-right font-semibold text-xl text-white">
+            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
               Buy Range
             </th>
-            <th className="border-b border-gray-600 p-6 text-right font-semibold text-xl text-white">
+            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
               Sell Range
             </th>
-            <th className="border-b border-gray-600 p-6 text-right font-semibold text-xl text-white">
+            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
               Daily Profit
             </th>
-            <th className="border-b border-gray-600 p-6 text-right font-semibold text-xl text-white">
+            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
               ROI
             </th>
-            <th className="border-b border-gray-600 p-6 text-right font-semibold text-xl text-white">
+            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
               Buy Limit
             </th>
           </tr>
@@ -561,51 +563,51 @@ function FlippingTable({ data }: { data: FlippingItem[] }) {
         <tbody>
           {data.slice(0, 20).map((item, index) => (
             <tr key={`flip-${item.id}-${index}`} className="hover:bg-gray-800">
-              <td className="border-b border-gray-600 p-6">
-                <div className="flex items-center gap-4">
-                  <div className="text-lg font-medium text-gray-300">
+              <td className="border-b border-gray-600 p-3 md:p-6">
+                <div className="flex items-center gap-2 md:gap-4">
+                  <div className="text-sm md:text-lg font-medium text-gray-300">
                     #{index + 1}
                   </div>
                   <div>
-                    <div className="text-xl font-semibold text-white">
+                    <div className="text-sm md:text-xl font-semibold text-white">
                       {item.name}
                     </div>
                     {item.members && (
-                      <div className="text-sm text-blue-400 font-medium">
+                      <div className="text-xs md:text-sm text-blue-400 font-medium">
                         Members
                       </div>
                     )}
                   </div>
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-6 text-right">
-                <div className="text-lg font-semibold text-blue-400">
+              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+                <div className="text-sm md:text-lg font-semibold text-blue-400">
                   {item.buyRange}
                 </div>
-                <div className="text-sm text-gray-400">
+                <div className="text-xs md:text-sm text-gray-400">
                   Suggested buy prices
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-6 text-right">
-                <div className="text-lg font-semibold text-green-400">
+              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+                <div className="text-sm md:text-lg font-semibold text-green-400">
                   {item.sellRange}
                 </div>
-                <div className="text-sm text-gray-400">
+                <div className="text-xs md:text-sm text-gray-400">
                   Suggested sell prices
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-6 text-right">
-                <div className="text-lg font-bold text-green-400">
+              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+                <div className="text-sm md:text-lg font-bold text-green-400">
                   {formatGP(item.dailyProfit)} gp
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-6 text-right">
-                <div className="text-lg font-bold text-green-400">
+              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+                <div className="text-sm md:text-lg font-bold text-green-400">
                   {item.roi.toFixed(1)}%
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-6 text-right">
-                <div className="text-lg font-medium text-white">
+              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+                <div className="text-sm md:text-lg font-medium text-white">
                   {item.buyLimit.toLocaleString()}
                 </div>
               </td>
@@ -619,23 +621,23 @@ function FlippingTable({ data }: { data: FlippingItem[] }) {
 
 function DipsTable({ data }: { data: DipItem[] }) {
   return (
-    <div className="border border-gray-600  overflow-hidden">
-      <table className="w-full border-collapse font-serif">
+    <div className="border border-gray-600 overflow-x-auto">
+      <table className="w-full border-collapse font-serif min-w-[700px]">
         <thead>
           <tr className="bg-gray-800">
-            <th className="border-b border-gray-600 p-6 text-left font-semibold text-xl text-white">
+            <th className="border-b border-gray-600 p-3 md:p-6 text-left font-semibold text-sm md:text-xl text-white">
               Item
             </th>
-            <th className="border-b border-gray-600 p-6 text-right font-semibold text-xl text-white">
+            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
               Buy Range
             </th>
-            <th className="border-b border-gray-600 p-6 text-right font-semibold text-xl text-white">
+            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
               Sell Target
             </th>
-            <th className="border-b border-gray-600 p-6 text-right font-semibold text-xl text-white">
+            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
               Price Drop
             </th>
-            <th className="border-b border-gray-600 p-6 text-right font-semibold text-xl text-white">
+            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
               Estimated Profit
             </th>
           </tr>
@@ -643,42 +645,46 @@ function DipsTable({ data }: { data: DipItem[] }) {
         <tbody>
           {data.slice(0, 20).map((item, index) => (
             <tr key={`dip-${item.id}-${index}`} className="hover:bg-gray-800">
-              <td className="border-b border-gray-600 p-6">
-                <div className="flex items-center gap-4">
-                  <div className="text-lg font-medium text-gray-300">
+              <td className="border-b border-gray-600 p-3 md:p-6">
+                <div className="flex items-center gap-2 md:gap-4">
+                  <div className="text-sm md:text-lg font-medium text-gray-300">
                     #{index + 1}
                   </div>
                   <div>
-                    <div className="text-xl font-semibold text-white">
+                    <div className="text-sm md:text-xl font-semibold text-white">
                       {item.name}
                     </div>
                     {item.members && (
-                      <div className="text-sm text-blue-400 font-medium">
+                      <div className="text-xs md:text-sm text-blue-400 font-medium">
                         Members
                       </div>
                     )}
                   </div>
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-6 text-right">
-                <div className="text-lg font-semibold text-blue-400">
+              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+                <div className="text-sm md:text-lg font-semibold text-blue-400">
                   {item.buyRange}
                 </div>
-                <div className="text-sm text-gray-400">Buy during dip</div>
+                <div className="text-xs md:text-sm text-gray-400">
+                  Buy during dip
+                </div>
               </td>
-              <td className="border-b border-gray-600 p-6 text-right">
-                <div className="text-lg font-semibold text-green-400">
+              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+                <div className="text-sm md:text-lg font-semibold text-green-400">
                   {item.sellRange}
                 </div>
-                <div className="text-sm text-gray-400">Recovery target</div>
+                <div className="text-xs md:text-sm text-gray-400">
+                  Recovery target
+                </div>
               </td>
-              <td className="border-b border-gray-600 p-6 text-right">
-                <div className="text-lg font-bold text-red-400">
+              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+                <div className="text-sm md:text-lg font-bold text-red-400">
                   -{item.priceDropPercent.toFixed(1)}%
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-6 text-right">
-                <div className="text-lg font-bold text-green-400">
+              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+                <div className="text-sm md:text-lg font-bold text-green-400">
                   {formatGP(item.estimatedProfit)} gp
                 </div>
               </td>
@@ -693,22 +699,22 @@ function DipsTable({ data }: { data: DipItem[] }) {
 function AlchemyTable({ data }: { data: AlchemyItem[] }) {
   return (
     <div className="border border-gray-600 overflow-x-auto">
-      <table className="w-full border-collapse font-serif">
+      <table className="w-full border-collapse font-serif min-w-[600px]">
         <thead>
           <tr>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-4 text-left font-bold text-lg">
+            <th className="border-b border-gray-600 bg-gray-800 text-white p-3 md:p-4 text-left font-bold text-sm md:text-lg">
               Item
             </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-4 text-right font-bold text-lg">
+            <th className="border-b border-gray-600 bg-gray-800 text-white p-3 md:p-4 text-right font-bold text-sm md:text-lg">
               Current Price
             </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-4 text-right font-bold text-lg">
+            <th className="border-b border-gray-600 bg-gray-800 text-white p-3 md:p-4 text-right font-bold text-sm md:text-lg">
               Price Floor
             </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-4 text-right font-bold text-lg">
+            <th className="border-b border-gray-600 bg-gray-800 text-white p-3 md:p-4 text-right font-bold text-sm md:text-lg">
               Profit Margin
             </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-4 text-right font-bold text-lg">
+            <th className="border-b border-gray-600 bg-gray-800 text-white p-3 md:p-4 text-right font-bold text-sm md:text-lg">
               ROI
             </th>
           </tr>
@@ -719,30 +725,36 @@ function AlchemyTable({ data }: { data: AlchemyItem[] }) {
               key={`alchemy-${item.id}-${index}`}
               className="hover:bg-gray-800"
             >
-              <td className="border-b border-gray-600 p-4 font-semibold text-white">
-                <div className="flex items-center gap-3">
-                  <div className="text-gray-300">#{index + 1}</div>
+              <td className="border-b border-gray-600 p-3 md:p-4 font-semibold text-white">
+                <div className="flex items-center gap-2 md:gap-3">
+                  <div className="text-sm md:text-base text-gray-300">
+                    #{index + 1}
+                  </div>
                   <div>
-                    <div className="font-bold">{item.name}</div>
+                    <div className="text-sm md:text-base font-bold">
+                      {item.name}
+                    </div>
                     {item.members && (
-                      <div className="text-blue-400">Members</div>
+                      <div className="text-xs md:text-sm text-blue-400">
+                        Members
+                      </div>
                     )}
                   </div>
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-4 text-right font-semibold text-white">
+              <td className="border-b border-gray-600 p-3 md:p-4 text-right font-semibold text-white text-sm md:text-base">
                 {formatGP(item.currentPrice)} gp
               </td>
-              <td className="border-b border-gray-600 p-4 text-right text-white">
+              <td className="border-b border-gray-600 p-3 md:p-4 text-right text-white text-sm md:text-base">
                 {formatGP(item.priceFloor)} gp
               </td>
-              <td className="border-b border-gray-600 p-4 text-right">
-                <div className="font-bold text-green-400">
+              <td className="border-b border-gray-600 p-3 md:p-4 text-right">
+                <div className="font-bold text-green-400 text-sm md:text-base">
                   {formatGP(item.profitMargin)} gp
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-4 text-right">
-                <div className="font-bold text-green-400">
+              <td className="border-b border-gray-600 p-3 md:p-4 text-right">
+                <div className="font-bold text-green-400 text-sm md:text-base">
                   {item.roi.toFixed(1)}%
                 </div>
               </td>
@@ -757,25 +769,25 @@ function AlchemyTable({ data }: { data: AlchemyItem[] }) {
 function ProcessingTable({ data }: { data: ProcessingItem[] }) {
   return (
     <div className="border border-gray-600 overflow-x-auto">
-      <table className="w-full border-collapse font-serif">
+      <table className="w-full border-collapse font-serif min-w-[900px]">
         <thead>
           <tr>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-4 text-left font-bold text-lg">
+            <th className="border-b border-gray-600 bg-gray-800 text-white p-3 md:p-4 text-left font-bold text-sm md:text-lg">
               Item
             </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-4 text-right font-bold text-lg">
+            <th className="border-b border-gray-600 bg-gray-800 text-white p-3 md:p-4 text-right font-bold text-sm md:text-lg">
               Buy Range
             </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-4 text-right font-bold text-lg">
+            <th className="border-b border-gray-600 bg-gray-800 text-white p-3 md:p-4 text-right font-bold text-sm md:text-lg">
               Sell Range
             </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-4 text-right font-bold text-lg">
+            <th className="border-b border-gray-600 bg-gray-800 text-white p-3 md:p-4 text-right font-bold text-sm md:text-lg">
               Max Profit
             </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-4 text-right font-bold text-lg">
+            <th className="border-b border-gray-600 bg-gray-800 text-white p-3 md:p-4 text-right font-bold text-sm md:text-lg">
               Capital Required
             </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-4 text-center font-bold text-lg">
+            <th className="border-b border-gray-600 bg-gray-800 text-white p-3 md:p-4 text-center font-bold text-sm md:text-lg">
               Recipe Instructions
             </th>
           </tr>
@@ -786,42 +798,56 @@ function ProcessingTable({ data }: { data: ProcessingItem[] }) {
               key={`processing-${item.id}-${index}`}
               className="hover:bg-gray-800"
             >
-              <td className="border-b border-gray-600 p-4 font-semibold text-white">
-                <div className="flex items-center gap-3">
-                  <div className="text-gray-300">#{index + 1}</div>
+              <td className="border-b border-gray-600 p-3 md:p-4 font-semibold text-white">
+                <div className="flex items-center gap-2 md:gap-3">
+                  <div className="text-sm md:text-base text-gray-300">
+                    #{index + 1}
+                  </div>
                   <div>
-                    <div className="font-bold">{item.name}</div>
+                    <div className="text-sm md:text-base font-bold">
+                      {item.name}
+                    </div>
                     {item.members && (
-                      <div className="text-blue-400">Members</div>
+                      <div className="text-xs md:text-sm text-blue-400">
+                        Members
+                      </div>
                     )}
                   </div>
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-4 text-right">
-                <div className="font-semibold text-blue-400">
+              <td className="border-b border-gray-600 p-3 md:p-4 text-right">
+                <div className="font-semibold text-blue-400 text-sm md:text-base">
                   {item.buyRange}
                 </div>
-                <div className="text-sm text-gray-400">Ingredient costs</div>
+                <div className="text-xs md:text-sm text-gray-400">
+                  Ingredient costs
+                </div>
               </td>
-              <td className="border-b border-gray-600 p-4 text-right">
-                <div className="font-semibold text-green-400">
+              <td className="border-b border-gray-600 p-3 md:p-4 text-right">
+                <div className="font-semibold text-green-400 text-sm md:text-base">
                   {item.sellRange}
                 </div>
-                <div className="text-sm text-gray-400">Finished product</div>
+                <div className="text-xs md:text-sm text-gray-400">
+                  Finished product
+                </div>
               </td>
-              <td className="border-b border-gray-600 p-4 text-right">
-                <div className="font-bold text-green-400">
+              <td className="border-b border-gray-600 p-3 md:p-4 text-right">
+                <div className="font-bold text-green-400 text-sm md:text-base">
                   {formatGP(item.maxProfit)} gp
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-4 text-right">
-                <div className="font-semibold text-orange-400">
+              <td className="border-b border-gray-600 p-3 md:p-4 text-right">
+                <div className="font-semibold text-orange-400 text-sm md:text-base">
                   {formatGP(item.capitalRequired)} gp
                 </div>
-                <div className="text-sm text-gray-400">Investment needed</div>
+                <div className="text-xs md:text-sm text-gray-400">
+                  Investment needed
+                </div>
               </td>
-              <td className="border-b border-gray-600 p-4 text-center text-white">
-                <div className="text-sm text-gray-300">{item.recipeType}</div>
+              <td className="border-b border-gray-600 p-3 md:p-4 text-center text-white">
+                <div className="text-xs md:text-sm text-gray-300">
+                  {item.recipeType}
+                </div>
               </td>
             </tr>
           ))}

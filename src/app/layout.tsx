@@ -25,7 +25,7 @@ export default function RootLayout({
         className={`${crimsonText.variable} font-serif antialiased bg-black text-white`}
       >
         <div className="min-h-screen">
-          <header className="border-b-4 border-gray-600 bg-gray-900 p-8">
+          <header className="border-b-4 border-gray-600 bg-gray-900 p-2">
             <div className="max-w-7xl mx-auto">
               <h1 className="text-6xl md:text-8xl font-bold leading-none tracking-tight font-serif text-white">
                 OSRS GE
