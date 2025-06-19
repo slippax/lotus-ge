@@ -1,0 +1,47 @@
+name: OSRS Data Collector
+on:
+  schedule:
+    - cron: "*/5 * * * *" # Every 5 minutes
+  workflow_dispatch: # Manual trigger button
+  repository_dispatch: # External trigger via API
+    types: [collect-data]
+
+permissions:
+  contents: write # Required for git push
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Collect OSRS data
+        run: python collect.py
+
+      - name: Commit and push data
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "OSRS Data Collector"
+          git add data/
+          if ! git diff --staged --quiet; then
+            git commit -m "Data collection: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+            git push
+            echo "✓ Data committed and pushed"
+
+            # Notify users of instant data update
+            curl -X POST "https://ntfy.sh/osrs-ge-lotus-updates" \
+              -H "Title: OSRS Market Data Updated" \
+              -d "refresh"
+          else
+            echo "ℹ No changes to commit"
+          fi
