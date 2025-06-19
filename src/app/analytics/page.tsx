@@ -471,7 +471,7 @@ export default function AnalyticsPage() {
   }
 
   return (
-    <div className="space-y-4 md:space-y-6 text-white min-h-screen mt-4 md:mt-6 px-2 md:px-0">
+    <div className="space-y-4 md:space-y-6 text-white min-h-screen mt-4 md:mt-6 px-2">
       {/* Streamlined Header */}
       <div className="flex flex-col md:items-start gap-2">
         {lastUpdate && (
