@@ -1,5 +1,5 @@
 {
-  "updated": "2025-06-20T17:10:34.727616+00:00",
+  "updated": "2025-06-20T17:15:30.906278+00:00",
   "strategy": "MOMENTUM_TRADING",
   "methodology": "ROC_Based_Trend_Following",
   "description": "Items showing upward price momentum - ride the trend strategy",
@@ -11,9 +11,9 @@
   },
   "momentum_intelligence": {
     "total_momentum_opportunities": 50,
-    "strong_momentum_count": 1,
-    "high_volume_count": 25,
-    "avg_momentum_strength": 79.43
+    "strong_momentum_count": 5,
+    "high_volume_count": 28,
+    "avg_momentum_strength": 77.92
   },
   "trading_strategy": {
     "approach": "Buy items showing upward momentum, sell when momentum weakens",
@@ -24,22 +24,11 @@
   "items": [
     {
       "ItemName": "Mithril med helm",
-      "CurrentPrice": 355,
+      "CurrentPrice": 281,
       "DailyAverage": 76,
       "BuyLimit": 125,
-      "momentum_roc_pct": 367.11,
-      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
-      "volume_confirmation": "HIGH_VOLUME_SURGE",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Skewer stick",
-      "CurrentPrice": 1000,
-      "DailyAverage": 231,
-      "BuyLimit": 13000,
-      "momentum_roc_pct": 332.9,
-      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
+      "momentum_roc_pct": 269.74,
+      "momentum_signal": "NO_MOMENTUM",
       "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
@@ -78,6 +67,17 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
+      "ItemName": "Pink skirt",
+      "CurrentPrice": 770,
+      "DailyAverage": 289,
+      "BuyLimit": 150,
+      "momentum_roc_pct": 166.44,
+      "momentum_signal": "NO_MOMENTUM",
+      "volume_confirmation": "NORMAL_VOLUME",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
       "ItemName": "Mushroom spore",
       "CurrentPrice": 358,
       "DailyAverage": 143,
@@ -100,6 +100,17 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
+      "ItemName": "Maple shield",
+      "CurrentPrice": 43,
+      "DailyAverage": 19,
+      "BuyLimit": 125,
+      "momentum_roc_pct": 126.32,
+      "momentum_signal": "STRONG_UPWARD_MOMENTUM",
+      "volume_confirmation": "HIGH_VOLUME_SURGE",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
       "ItemName": "Wooden shield",
       "CurrentPrice": 242,
       "DailyAverage": 115,
@@ -107,6 +118,17 @@
       "momentum_roc_pct": 110.43,
       "momentum_signal": "STRONG_UPWARD_MOMENTUM",
       "volume_confirmation": "NORMAL_VOLUME",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Leather body",
+      "CurrentPrice": 25,
+      "DailyAverage": 12,
+      "BuyLimit": 125,
+      "momentum_roc_pct": 108.33,
+      "momentum_signal": "STRONG_UPWARD_MOMENTUM",
+      "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
@@ -133,33 +155,11 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Tarromin seed",
-      "CurrentPrice": 12,
-      "DailyAverage": 6,
-      "BuyLimit": 600,
-      "momentum_roc_pct": 100.0,
-      "momentum_signal": "NO_MOMENTUM",
-      "volume_confirmation": "NORMAL_VOLUME",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
       "ItemName": "Tarromin tar",
       "CurrentPrice": 2,
       "DailyAverage": 1,
       "BuyLimit": 7000,
       "momentum_roc_pct": 100.0,
-      "momentum_signal": "NO_MOMENTUM",
-      "volume_confirmation": "HIGH_VOLUME_SURGE",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Maple shield",
-      "CurrentPrice": 37,
-      "DailyAverage": 19,
-      "BuyLimit": 125,
-      "momentum_roc_pct": 94.74,
       "momentum_signal": "NO_MOMENTUM",
       "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
@@ -173,6 +173,39 @@
       "momentum_roc_pct": 93.8,
       "momentum_signal": "NO_MOMENTUM",
       "volume_confirmation": "NORMAL_VOLUME",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Staff of fire",
+      "CurrentPrice": 3249,
+      "DailyAverage": 1741,
+      "BuyLimit": 125,
+      "momentum_roc_pct": 86.62,
+      "momentum_signal": "STRONG_UPWARD_MOMENTUM",
+      "volume_confirmation": "HIGH_VOLUME_SURGE",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Rosemary seed",
+      "CurrentPrice": 13,
+      "DailyAverage": 7,
+      "BuyLimit": 600,
+      "momentum_roc_pct": 85.71,
+      "momentum_signal": "NO_MOMENTUM",
+      "volume_confirmation": "HIGH_VOLUME_SURGE",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Purple firelighter",
+      "CurrentPrice": 228,
+      "DailyAverage": 126,
+      "BuyLimit": 250,
+      "momentum_roc_pct": 80.95,
+      "momentum_signal": "STRONG_UPWARD_MOMENTUM",
+      "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
@@ -215,6 +248,17 @@
       "DailyAverage": 61,
       "BuyLimit": 125,
       "momentum_roc_pct": 67.21,
+      "momentum_signal": "NO_MOMENTUM",
+      "volume_confirmation": "NORMAL_VOLUME",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Tarromin seed",
+      "CurrentPrice": 10,
+      "DailyAverage": 6,
+      "BuyLimit": 600,
+      "momentum_roc_pct": 66.67,
       "momentum_signal": "NO_MOMENTUM",
       "volume_confirmation": "NORMAL_VOLUME",
       "strategy_type": "TREND_FOLLOWING",
@@ -265,23 +309,23 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Yew shield",
-      "CurrentPrice": 250,
-      "DailyAverage": 163,
-      "BuyLimit": 125,
-      "momentum_roc_pct": 53.37,
-      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
-      "volume_confirmation": "NORMAL_VOLUME",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
       "ItemName": "Blue firelighter",
       "CurrentPrice": 150,
       "DailyAverage": 100,
       "BuyLimit": 250,
       "momentum_roc_pct": 50.0,
       "momentum_signal": "NO_MOMENTUM",
+      "volume_confirmation": "HIGH_VOLUME_SURGE",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Earth rune",
+      "CurrentPrice": 6,
+      "DailyAverage": 4,
+      "BuyLimit": 50000,
+      "momentum_roc_pct": 50.0,
+      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
       "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
@@ -331,17 +375,6 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Steel dart",
-      "CurrentPrice": 3,
-      "DailyAverage": 2,
-      "BuyLimit": 7000,
-      "momentum_roc_pct": 50.0,
-      "momentum_signal": "NO_MOMENTUM",
-      "volume_confirmation": "HIGH_VOLUME_SURGE",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
       "ItemName": "Swamp paste",
       "CurrentPrice": 3,
       "DailyAverage": 2,
@@ -375,12 +408,23 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Purple dye",
-      "CurrentPrice": 574,
-      "DailyAverage": 400,
-      "BuyLimit": 150,
-      "momentum_roc_pct": 43.5,
+      "ItemName": "Long kebbit spike",
+      "CurrentPrice": 777,
+      "DailyAverage": 533,
+      "BuyLimit": 10000,
+      "momentum_roc_pct": 45.78,
       "momentum_signal": "NO_MOMENTUM",
+      "volume_confirmation": "HIGH_VOLUME_SURGE",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Yew shield",
+      "CurrentPrice": 234,
+      "DailyAverage": 163,
+      "BuyLimit": 125,
+      "momentum_roc_pct": 43.56,
+      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
       "volume_confirmation": "NORMAL_VOLUME",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
@@ -397,33 +441,11 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Nasturtium seed",
-      "CurrentPrice": 10,
-      "DailyAverage": 7,
-      "BuyLimit": 200,
-      "momentum_roc_pct": 42.86,
-      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
-      "volume_confirmation": "NORMAL_VOLUME",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
       "ItemName": "Oak shield",
       "CurrentPrice": 10,
       "DailyAverage": 7,
       "BuyLimit": 125,
       "momentum_roc_pct": 42.86,
-      "momentum_signal": "NO_MOMENTUM",
-      "volume_confirmation": "HIGH_VOLUME_SURGE",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Leather body",
-      "CurrentPrice": 17,
-      "DailyAverage": 12,
-      "BuyLimit": 125,
-      "momentum_roc_pct": 41.67,
       "momentum_signal": "NO_MOMENTUM",
       "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
@@ -447,17 +469,6 @@
       "BuyLimit": 125,
       "momentum_roc_pct": 38.98,
       "momentum_signal": "NO_MOMENTUM",
-      "volume_confirmation": "NORMAL_VOLUME",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Guam seed",
-      "CurrentPrice": 18,
-      "DailyAverage": 13,
-      "BuyLimit": 600,
-      "momentum_roc_pct": 38.46,
-      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
       "volume_confirmation": "NORMAL_VOLUME",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
@@ -496,44 +507,11 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Iron nails",
-      "CurrentPrice": 16,
-      "DailyAverage": 12,
-      "BuyLimit": 13000,
-      "momentum_roc_pct": 33.33,
-      "momentum_signal": "NO_MOMENTUM",
-      "volume_confirmation": "NORMAL_VOLUME",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Bark",
-      "CurrentPrice": 188,
-      "DailyAverage": 144,
-      "BuyLimit": 13000,
-      "momentum_roc_pct": 30.56,
-      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
-      "volume_confirmation": "NORMAL_VOLUME",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
       "ItemName": "Amulet of defence",
       "CurrentPrice": 1050,
       "DailyAverage": 824,
       "BuyLimit": 125,
       "momentum_roc_pct": 27.43,
-      "momentum_signal": "NO_MOMENTUM",
-      "volume_confirmation": "HIGH_VOLUME_SURGE",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Irit tar",
-      "CurrentPrice": 14,
-      "DailyAverage": 11,
-      "BuyLimit": 11000,
-      "momentum_roc_pct": 27.27,
       "momentum_signal": "NO_MOMENTUM",
       "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
@@ -569,6 +547,28 @@
       "momentum_roc_pct": 25.31,
       "momentum_signal": "NO_MOMENTUM",
       "volume_confirmation": "NORMAL_VOLUME",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Attack potion(4)",
+      "CurrentPrice": 25,
+      "DailyAverage": 20,
+      "BuyLimit": 2000,
+      "momentum_roc_pct": 25.0,
+      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
+      "volume_confirmation": "MODERATE_VOLUME_SURGE",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Yanillian seed",
+      "CurrentPrice": 5,
+      "DailyAverage": 4,
+      "BuyLimit": 2000,
+      "momentum_roc_pct": 25.0,
+      "momentum_signal": "NO_MOMENTUM",
+      "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     }
