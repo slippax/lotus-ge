@@ -1,5 +1,5 @@
 {
-  "updated": "2025-06-20T12:25:31.196976+00:00",
+  "updated": "2025-06-20T12:26:41.668383+00:00",
   "strategy": "MOMENTUM_TRADING",
   "methodology": "ROC_Based_Trend_Following",
   "description": "Items showing upward price momentum - ride the trend strategy",
@@ -13,7 +13,7 @@
     "total_momentum_opportunities": 50,
     "strong_momentum_count": 4,
     "high_volume_count": 27,
-    "avg_momentum_strength": 81.78
+    "avg_momentum_strength": 81.22
   },
   "trading_strategy": {
     "approach": "Buy items showing upward momentum, sell when momentum weakens",
@@ -155,17 +155,6 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Iron scimitar",
-      "CurrentPrice": 258,
-      "DailyAverage": 139,
-      "BuyLimit": 125,
-      "momentum_roc_pct": 85.61,
-      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
-      "volume_confirmation": "NORMAL_VOLUME",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
       "ItemName": "Attack potion(2)",
       "CurrentPrice": 11,
       "DailyAverage": 6,
@@ -287,6 +276,17 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
+      "ItemName": "Iron scimitar",
+      "CurrentPrice": 204,
+      "DailyAverage": 139,
+      "BuyLimit": 125,
+      "momentum_roc_pct": 46.76,
+      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
+      "volume_confirmation": "NORMAL_VOLUME",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
       "ItemName": "Steel warhammer",
       "CurrentPrice": 262,
       "DailyAverage": 179,
@@ -337,6 +337,17 @@
       "BuyLimit": 125,
       "momentum_roc_pct": 42.43,
       "momentum_signal": "NO_MOMENTUM",
+      "volume_confirmation": "HIGH_VOLUME_SURGE",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Ranging potion(4)",
+      "CurrentPrice": 5932,
+      "DailyAverage": 4200,
+      "BuyLimit": 2000,
+      "momentum_roc_pct": 41.24,
+      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
       "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
@@ -474,17 +485,6 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Ranging potion(2)",
-      "CurrentPrice": 2423,
-      "DailyAverage": 1828,
-      "BuyLimit": 2000,
-      "momentum_roc_pct": 32.55,
-      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
-      "volume_confirmation": "HIGH_VOLUME_SURGE",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
       "ItemName": "Loar remains",
       "CurrentPrice": 162,
       "DailyAverage": 123,
@@ -514,6 +514,17 @@
       "momentum_roc_pct": 29.44,
       "momentum_signal": "NO_MOMENTUM",
       "volume_confirmation": "MODERATE_VOLUME_SURGE",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Ruby ring",
+      "CurrentPrice": 1398,
+      "DailyAverage": 1087,
+      "BuyLimit": 10000,
+      "momentum_roc_pct": 28.61,
+      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
+      "volume_confirmation": "NORMAL_VOLUME",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
@@ -558,17 +569,6 @@
       "momentum_roc_pct": 27.59,
       "momentum_signal": "NO_MOMENTUM",
       "volume_confirmation": "HIGH_VOLUME_SURGE",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Steel kiteshield",
-      "CurrentPrice": 404,
-      "DailyAverage": 320,
-      "BuyLimit": 125,
-      "momentum_roc_pct": 26.25,
-      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
-      "volume_confirmation": "NORMAL_VOLUME",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     }
