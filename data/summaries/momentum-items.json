@@ -1,5 +1,5 @@
 {
-  "updated": "2025-06-20T13:05:30.954762+00:00",
+  "updated": "2025-06-20T13:07:24.611050+00:00",
   "strategy": "MOMENTUM_TRADING",
   "methodology": "ROC_Based_Trend_Following",
   "description": "Items showing upward price momentum - ride the trend strategy",
@@ -11,9 +11,9 @@
   },
   "momentum_intelligence": {
     "total_momentum_opportunities": 50,
-    "strong_momentum_count": 3,
+    "strong_momentum_count": 4,
     "high_volume_count": 23,
-    "avg_momentum_strength": 148.55
+    "avg_momentum_strength": 123.97
   },
   "trading_strategy": {
     "approach": "Buy items showing upward momentum, sell when momentum weakens",
@@ -30,17 +30,6 @@
       "momentum_roc_pct": 2927.36,
       "momentum_signal": "WEAK_UPWARD_MOMENTUM",
       "volume_confirmation": "MODERATE_VOLUME_SURGE",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Shade robe",
-      "CurrentPrice": 20000,
-      "DailyAverage": 1392,
-      "BuyLimit": 125,
-      "momentum_roc_pct": 1336.78,
-      "momentum_signal": "NO_MOMENTUM",
-      "volume_confirmation": "NORMAL_VOLUME",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
@@ -68,10 +57,10 @@
     },
     {
       "ItemName": "Iron chainbody",
-      "CurrentPrice": 151,
+      "CurrentPrice": 199,
       "DailyAverage": 62,
       "BuyLimit": 125,
-      "momentum_roc_pct": 143.55,
+      "momentum_roc_pct": 220.97,
       "momentum_signal": "NO_MOMENTUM",
       "volume_confirmation": "MODERATE_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
@@ -111,11 +100,11 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Mushroom spore",
-      "CurrentPrice": 358,
-      "DailyAverage": 184,
-      "BuyLimit": 200,
-      "momentum_roc_pct": 94.57,
+      "ItemName": "Bronze scimitar",
+      "CurrentPrice": 102,
+      "DailyAverage": 48,
+      "BuyLimit": 125,
+      "momentum_roc_pct": 112.5,
       "momentum_signal": "WEAK_UPWARD_MOMENTUM",
       "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
@@ -144,12 +133,12 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Black full helm",
-      "CurrentPrice": 913,
-      "DailyAverage": 528,
-      "BuyLimit": 125,
-      "momentum_roc_pct": 72.92,
-      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
+      "ItemName": "Purple firelighter",
+      "CurrentPrice": 228,
+      "DailyAverage": 124,
+      "BuyLimit": 250,
+      "momentum_roc_pct": 83.87,
+      "momentum_signal": "STRONG_UPWARD_MOMENTUM",
       "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
@@ -342,17 +331,6 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Blue d'hide vambraces",
-      "CurrentPrice": 2087,
-      "DailyAverage": 1489,
-      "BuyLimit": 125,
-      "momentum_roc_pct": 40.16,
-      "momentum_signal": "MODERATE_UPWARD_MOMENTUM",
-      "volume_confirmation": "NORMAL_VOLUME",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
       "ItemName": "Coif",
       "CurrentPrice": 86,
       "DailyAverage": 62,
@@ -408,17 +386,6 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Hunter spear tips",
-      "CurrentPrice": 4,
-      "DailyAverage": 3,
-      "BuyLimit": 10000,
-      "momentum_roc_pct": 33.33,
-      "momentum_signal": "NO_MOMENTUM",
-      "volume_confirmation": "NORMAL_VOLUME",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
       "ItemName": "Vial of water",
       "CurrentPrice": 4,
       "DailyAverage": 3,
@@ -447,6 +414,17 @@
       "BuyLimit": 2000,
       "momentum_roc_pct": 30.59,
       "momentum_signal": "NO_MOMENTUM",
+      "volume_confirmation": "NORMAL_VOLUME",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Lemon",
+      "CurrentPrice": 130,
+      "DailyAverage": 100,
+      "BuyLimit": 13000,
+      "momentum_roc_pct": 30.0,
+      "momentum_signal": "MODERATE_UPWARD_MOMENTUM",
       "volume_confirmation": "NORMAL_VOLUME",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
@@ -485,22 +463,11 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Seaweed",
-      "CurrentPrice": 14,
-      "DailyAverage": 11,
-      "BuyLimit": 13000,
-      "momentum_roc_pct": 27.27,
-      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
-      "volume_confirmation": "HIGH_VOLUME_SURGE",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Supercompost",
-      "CurrentPrice": 14,
-      "DailyAverage": 11,
-      "BuyLimit": 2000,
-      "momentum_roc_pct": 27.27,
+      "ItemName": "Raw tuna",
+      "CurrentPrice": 110,
+      "DailyAverage": 87,
+      "BuyLimit": 15000,
+      "momentum_roc_pct": 26.44,
       "momentum_signal": "WEAK_UPWARD_MOMENTUM",
       "volume_confirmation": "NORMAL_VOLUME",
       "strategy_type": "TREND_FOLLOWING",
@@ -540,6 +507,17 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
+      "ItemName": "Iron nails",
+      "CurrentPrice": 15,
+      "DailyAverage": 12,
+      "BuyLimit": 13000,
+      "momentum_roc_pct": 25.0,
+      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
+      "volume_confirmation": "NORMAL_VOLUME",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
       "ItemName": "Yanillian seed",
       "CurrentPrice": 5,
       "DailyAverage": 4,
@@ -569,6 +547,28 @@
       "momentum_roc_pct": 24.35,
       "momentum_signal": "WEAK_UPWARD_MOMENTUM",
       "volume_confirmation": "NORMAL_VOLUME",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Dashing kebbit fur",
+      "CurrentPrice": 72,
+      "DailyAverage": 58,
+      "BuyLimit": 10000,
+      "momentum_roc_pct": 24.14,
+      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
+      "volume_confirmation": "NORMAL_VOLUME",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Pat of butter",
+      "CurrentPrice": 31,
+      "DailyAverage": 25,
+      "BuyLimit": 11000,
+      "momentum_roc_pct": 24.0,
+      "momentum_signal": "NO_MOMENTUM",
+      "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     }
