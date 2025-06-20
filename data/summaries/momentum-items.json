@@ -1,5 +1,5 @@
 {
-  "updated": "2025-06-20T11:42:39.438143+00:00",
+  "updated": "2025-06-20T11:44:20.290614+00:00",
   "strategy": "MOMENTUM_TRADING",
   "methodology": "ROC_Based_Trend_Following",
   "description": "Items showing upward price momentum - ride the trend strategy",
@@ -11,9 +11,9 @@
   },
   "momentum_intelligence": {
     "total_momentum_opportunities": 50,
-    "strong_momentum_count": 2,
+    "strong_momentum_count": 1,
     "high_volume_count": 25,
-    "avg_momentum_strength": 92.63
+    "avg_momentum_strength": 71.64
   },
   "trading_strategy": {
     "approach": "Buy items showing upward momentum, sell when momentum weakens",
@@ -22,17 +22,6 @@
     "best_market_conditions": "Trending/volatile markets"
   },
   "items": [
-    {
-      "ItemName": "Iron dagger",
-      "CurrentPrice": 1000,
-      "DailyAverage": 88,
-      "BuyLimit": 125,
-      "momentum_roc_pct": 1036.36,
-      "momentum_signal": "NO_MOMENTUM",
-      "volume_confirmation": "HIGH_VOLUME_SURGE",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
     {
       "ItemName": "Mithril med helm",
       "CurrentPrice": 294,
@@ -239,17 +228,6 @@
       "momentum_roc_pct": 72.41,
       "momentum_signal": "NO_MOMENTUM",
       "volume_confirmation": "NORMAL_VOLUME",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Leather gloves",
-      "CurrentPrice": 24,
-      "DailyAverage": 14,
-      "BuyLimit": 125,
-      "momentum_roc_pct": 71.43,
-      "momentum_signal": "STRONG_UPWARD_MOMENTUM",
-      "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
@@ -463,6 +441,17 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
+      "ItemName": "Watermelon seed",
+      "CurrentPrice": 119,
+      "DailyAverage": 89,
+      "BuyLimit": 200,
+      "momentum_roc_pct": 33.71,
+      "momentum_signal": "NO_MOMENTUM",
+      "volume_confirmation": "NORMAL_VOLUME",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
       "ItemName": "Attack potion(1)",
       "CurrentPrice": 4,
       "DailyAverage": 3,
@@ -492,17 +481,6 @@
       "momentum_roc_pct": 31.71,
       "momentum_signal": "NO_MOMENTUM",
       "volume_confirmation": "HIGH_VOLUME_SURGE",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Watermelon seed",
-      "CurrentPrice": 117,
-      "DailyAverage": 89,
-      "BuyLimit": 200,
-      "momentum_roc_pct": 31.46,
-      "momentum_signal": "NO_MOMENTUM",
-      "volume_confirmation": "NORMAL_VOLUME",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
@@ -567,6 +545,28 @@
       "DailyAverage": 160,
       "BuyLimit": 13000,
       "momentum_roc_pct": 28.13,
+      "momentum_signal": "NO_MOMENTUM",
+      "volume_confirmation": "HIGH_VOLUME_SURGE",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Ranging potion(4)",
+      "CurrentPrice": 5381,
+      "DailyAverage": 4200,
+      "BuyLimit": 2000,
+      "momentum_roc_pct": 28.12,
+      "momentum_signal": "NO_MOMENTUM",
+      "volume_confirmation": "HIGH_VOLUME_SURGE",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Toad's legs",
+      "CurrentPrice": 444,
+      "DailyAverage": 348,
+      "BuyLimit": 13000,
+      "momentum_roc_pct": 27.59,
       "momentum_signal": "NO_MOMENTUM",
       "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
