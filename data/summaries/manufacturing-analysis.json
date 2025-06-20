@@ -1,5 +1,5 @@
 {
-  "updated": "2025-06-20T08:31:56.453307+00:00",
+  "updated": "2025-06-20T08:35:36.211858+00:00",
   "items": [
     {
       "ItemName": "Kodai wand",
@@ -18,20 +18,12 @@
       "LowMaxProfit": 7264116.0
     },
     {
-      "ItemName": "Torva platebody",
-      "RecipeType": "Use Broken Armour and 2 Bandosian Components on Anvil (90 smithing)",
-      "HighMargin": 1226094.0,
-      "LowMargin": 2726094.0,
-      "HighMaxProfit": 9808752.0,
-      "LowMaxProfit": 21808752.0
-    },
-    {
       "ItemName": "Cadantine blood potion (unf)",
       "RecipeType": "Create Unfinished Blood Potions (Zahur)",
-      "HighMargin": 683.0,
-      "LowMargin": 637.0,
-      "HighMaxProfit": 7513000.0,
-      "LowMaxProfit": 7007000.0
+      "HighMargin": 681.0,
+      "LowMargin": 635.0,
+      "HighMaxProfit": 7491000.0,
+      "LowMaxProfit": 6985000.0
     },
     {
       "ItemName": "Zamorak godsword",
@@ -44,26 +36,26 @@
     {
       "ItemName": "Kwuarm potion (unf)",
       "RecipeType": "Create Unfinished Potions (Zahur)",
-      "HighMargin": 301.0,
-      "LowMargin": 157.0,
-      "HighMaxProfit": 3913000.0,
-      "LowMaxProfit": 2041000.0
+      "HighMargin": 295.0,
+      "LowMargin": 151.0,
+      "HighMaxProfit": 3835000.0,
+      "LowMaxProfit": 1963000.0
+    },
+    {
+      "ItemName": "Torva full helm",
+      "RecipeType": "Use Broken Armour and 1 Bandosian Component on Anvil (90 smithing)",
+      "HighMargin": 834386.0,
+      "LowMargin": 834386.0,
+      "HighMaxProfit": 3337544.0,
+      "LowMaxProfit": 3337544.0
     },
     {
       "ItemName": "Nihil Dust",
       "RecipeType": "Crushing Nihil Shards (Wesley)",
-      "HighMargin": 238.0,
-      "LowMargin": 592.0,
-      "HighMaxProfit": 3190152.0,
-      "LowMaxProfit": 7935168.0
-    },
-    {
-      "ItemName": "Avantoe potion (unf)",
-      "RecipeType": "Create Unfinished Potions (Zahur)",
-      "HighMargin": 213.0,
-      "LowMargin": 165.0,
-      "HighMaxProfit": 2769000.0,
-      "LowMaxProfit": 2145000.0
+      "HighMargin": 237.0,
+      "LowMargin": 591.0,
+      "HighMaxProfit": 3176748.0,
+      "LowMaxProfit": 7921764.0
     },
     {
       "ItemName": "Crushed nest",
@@ -100,26 +92,34 @@
     {
       "ItemName": "Toadflax potion (unf)",
       "RecipeType": "Create Unfinished Potions (Zahur)",
-      "HighMargin": 174.0,
-      "LowMargin": 91.0,
-      "HighMaxProfit": 2262000.0,
-      "LowMaxProfit": 1183000.0
+      "HighMargin": 164.0,
+      "LowMargin": 89.0,
+      "HighMaxProfit": 2132000.0,
+      "LowMaxProfit": 1157000.0
     },
     {
       "ItemName": "Tarromin potion (unf)",
       "RecipeType": "Create Unfinished Potions (Zahur)",
-      "HighMargin": 165.0,
-      "LowMargin": 155.0,
-      "HighMaxProfit": 2145000.0,
-      "LowMaxProfit": 2015000.0
+      "HighMargin": 159.0,
+      "LowMargin": 149.0,
+      "HighMaxProfit": 2067000.0,
+      "LowMaxProfit": 1937000.0
     },
     {
       "ItemName": "Cadantine potion (unf)",
       "RecipeType": "Create Unfinished Potions (Zahur)",
       "HighMargin": 181.0,
-      "LowMargin": 111.0,
+      "LowMargin": 109.0,
       "HighMaxProfit": 1991000.0,
-      "LowMaxProfit": 1221000.0
+      "LowMaxProfit": 1199000.0
+    },
+    {
+      "ItemName": "Avantoe potion (unf)",
+      "RecipeType": "Create Unfinished Potions (Zahur)",
+      "HighMargin": 122.0,
+      "LowMargin": 74.0,
+      "HighMaxProfit": 1586000.0,
+      "LowMaxProfit": 962000.0
     },
     {
       "ItemName": "Venator bow (uncharged)",
@@ -130,44 +130,52 @@
       "LowMaxProfit": -15633.0
     },
     {
-      "ItemName": "Bastion potion(4)",
-      "RecipeType": "Decant 3 to 4 (Bob Barter)",
-      "HighMargin": 982.0,
-      "LowMargin": 907.0,
-      "HighMaxProfit": 1473368.0,
-      "LowMaxProfit": 1360840.0
-    },
-    {
       "ItemName": "Torstol potion (unf)",
       "RecipeType": "Create Unfinished Potions (Zahur)",
       "HighMargin": 124.0,
-      "LowMargin": -23.0,
+      "LowMargin": -26.0,
       "HighMaxProfit": 1364000.0,
-      "LowMaxProfit": -253000.0
+      "LowMaxProfit": -286000.0
+    },
+    {
+      "ItemName": "Bastion potion(4)",
+      "RecipeType": "Decant 3 to 4 (Bob Barter)",
+      "HighMargin": 907.0,
+      "LowMargin": 907.0,
+      "HighMaxProfit": 1360840.0,
+      "LowMaxProfit": 1360840.0
+    },
+    {
+      "ItemName": "Bandos godsword",
+      "RecipeType": "Combine hilt and godsword blade",
+      "HighMargin": 310825.0,
+      "LowMargin": -85174.0,
+      "HighMaxProfit": 1243300.0,
+      "LowMaxProfit": -340696.0
     },
     {
       "ItemName": "Snapdragon potion (unf)",
       "RecipeType": "Create Unfinished Potions (Zahur)",
-      "HighMargin": 109.0,
-      "LowMargin": 72.0,
-      "HighMaxProfit": 1199000.0,
-      "LowMaxProfit": 792000.0
+      "HighMargin": 110.0,
+      "LowMargin": 74.0,
+      "HighMaxProfit": 1210000.0,
+      "LowMaxProfit": 814000.0
     },
     {
       "ItemName": "Ranarr potion (unf)",
       "RecipeType": "Create Unfinished Potions (Zahur)",
-      "HighMargin": 105.0,
-      "LowMargin": 92.0,
-      "HighMaxProfit": 1155000.0,
-      "LowMaxProfit": 1012000.0
+      "HighMargin": 102.0,
+      "LowMargin": 89.0,
+      "HighMaxProfit": 1122000.0,
+      "LowMaxProfit": 979000.0
     },
     {
       "ItemName": "Dragonfire shield",
       "RecipeType": "Use Anti-dragon shield and Draconic Visage on Anvil (90 smithing)",
-      "HighMargin": 194703.0,
-      "LowMargin": 85952.0,
-      "HighMaxProfit": 973515.0,
-      "LowMaxProfit": 429760.0
+      "HighMargin": 209703.0,
+      "LowMargin": 100952.0,
+      "HighMaxProfit": 1048515.0,
+      "LowMaxProfit": 504760.0
     },
     {
       "ItemName": "Guthan's platebody",
@@ -180,26 +188,34 @@
     {
       "ItemName": "Black mask",
       "RecipeType": "Uncharge Black mask (10)",
-      "HighMargin": 35954.0,
+      "HighMargin": 36445.0,
       "LowMargin": 15138.0,
-      "HighMaxProfit": 862896.0,
+      "HighMaxProfit": 874680.0,
       "LowMaxProfit": 363312.0
     },
     {
       "ItemName": "Prayer potion(4)",
       "RecipeType": "Decant 3 to 4 (Bob Barter)",
-      "HighMargin": 575.0,
-      "LowMargin": 330.0,
-      "HighMaxProfit": 862716.0,
-      "LowMaxProfit": 495124.0
+      "HighMargin": 565.0,
+      "LowMargin": 305.0,
+      "HighMaxProfit": 847712.0,
+      "LowMaxProfit": 457614.0
     },
     {
       "ItemName": "Ahrim's robeskirt",
       "RecipeType": "Repair Broken Armour (POH calculated at 80 smithing)",
       "HighMargin": 52000.0,
-      "LowMargin": -17994.0,
+      "LowMargin": -7121.0,
       "HighMaxProfit": 780000.0,
-      "LowMaxProfit": -269910.0
+      "LowMaxProfit": -106815.0
+    },
+    {
+      "ItemName": "Dragon hunter lance",
+      "RecipeType": "Combine Hydra Claw with Zamorakian Hasta",
+      "HighMargin": 87407.0,
+      "LowMargin": 904599.0,
+      "HighMaxProfit": 699256.0,
+      "LowMaxProfit": 7236792.0
     },
     {
       "ItemName": "Karil's leathertop",
@@ -210,20 +226,12 @@
       "LowMaxProfit": 324750.0
     },
     {
-      "ItemName": "Unicorn horn dust",
-      "RecipeType": "Crushing Unicorn Horns (Wesley)",
-      "HighMargin": 52.0,
-      "LowMargin": 48.0,
-      "HighMaxProfit": 676000.0,
-      "LowMaxProfit": 624000.0
-    },
-    {
       "ItemName": "Armadyl godsword",
       "RecipeType": "Combine hilt and godsword blade",
       "HighMargin": 164371.0,
-      "LowMargin": 117788.0,
+      "LowMargin": 71917.0,
       "HighMaxProfit": 657484.0,
-      "LowMaxProfit": 471152.0
+      "LowMaxProfit": 287668.0
     },
     {
       "ItemName": "Lantadyme potion (unf)",
@@ -268,18 +276,26 @@
     {
       "ItemName": "Combat potion(4)",
       "RecipeType": "Decant 3 to 4 (Bob Barter)",
-      "HighMargin": 317.0,
+      "HighMargin": 338.0,
       "LowMargin": 285.0,
-      "HighMaxProfit": 475619.0,
+      "HighMaxProfit": 507127.0,
       "LowMaxProfit": 427607.0
     },
     {
-      "ItemName": "Dharok's platelegs",
-      "RecipeType": "Repair Broken Armour (POH calculated at 80 smithing)",
-      "HighMargin": 31667.0,
-      "LowMargin": 12276.0,
-      "HighMaxProfit": 475005.0,
-      "LowMaxProfit": 184140.0
+      "ItemName": "Guam potion (unf)",
+      "RecipeType": "Create Unfinished Potions (Zahur)",
+      "HighMargin": 56.0,
+      "LowMargin": 31.0,
+      "HighMaxProfit": 478464.0,
+      "LowMaxProfit": 264864.0
+    },
+    {
+      "ItemName": "Unicorn horn dust",
+      "RecipeType": "Crushing Unicorn Horns (Wesley)",
+      "HighMargin": 34.0,
+      "LowMargin": 48.0,
+      "HighMaxProfit": 442000.0,
+      "LowMaxProfit": 624000.0
     },
     {
       "ItemName": "Super energy(4)",
@@ -296,6 +312,14 @@
       "LowMargin": 255.0,
       "HighMaxProfit": 390098.0,
       "LowMaxProfit": 382596.0
+    },
+    {
+      "ItemName": "Dharok's platelegs",
+      "RecipeType": "Repair Broken Armour (POH calculated at 80 smithing)",
+      "HighMargin": 24891.0,
+      "LowMargin": 18019.0,
+      "HighMaxProfit": 373365.0,
+      "LowMaxProfit": 270285.0
     },
     {
       "ItemName": "Ancient brew(4)",
@@ -316,26 +340,10 @@
     {
       "ItemName": "Karil's leatherskirt",
       "RecipeType": "Repair Broken Armour (POH calculated at 80 smithing)",
-      "HighMargin": 20322.0,
-      "LowMargin": 8193.0,
-      "HighMaxProfit": 304830.0,
-      "LowMaxProfit": 122895.0
-    },
-    {
-      "ItemName": "Saradomin brew(4)",
-      "RecipeType": "Decant 3 to 4 (Bob Barter)",
-      "HighMargin": 192.0,
-      "LowMargin": 78.0,
-      "HighMaxProfit": 288072.0,
-      "LowMaxProfit": 117029.0
-    },
-    {
-      "ItemName": "Ranging potion(4)",
-      "RecipeType": "Decant 3 to 4 (Bob Barter)",
-      "HighMargin": 190.0,
-      "LowMargin": -14.0,
-      "HighMaxProfit": 285071.0,
-      "LowMaxProfit": -21005.0
+      "HighMargin": 20533.0,
+      "LowMargin": 7798.0,
+      "HighMaxProfit": 307995.0,
+      "LowMaxProfit": 116970.0
     },
     {
       "ItemName": "Guthan's chainskirt",
@@ -362,6 +370,14 @@
       "LowMaxProfit": 141105.0
     },
     {
+      "ItemName": "Stamina potion(4)",
+      "RecipeType": "Decant 3 to 4 (Bob Barter)",
+      "HighMargin": 161.0,
+      "LowMargin": 28.0,
+      "HighMaxProfit": 241560.0,
+      "LowMaxProfit": 42011.0
+    },
+    {
       "ItemName": "Super attack(4)",
       "RecipeType": "Decant 3 to 4 (Bob Barter)",
       "HighMargin": 157.0,
@@ -372,26 +388,10 @@
     {
       "ItemName": "Ahrim's staff",
       "RecipeType": "Repair Broken Weapon (POH calculated at 80 smithing)",
-      "HighMargin": 15553.0,
+      "HighMargin": 15428.0,
       "LowMargin": 4216.0,
-      "HighMaxProfit": 233295.0,
+      "HighMaxProfit": 231420.0,
       "LowMaxProfit": 63240.0
-    },
-    {
-      "ItemName": "Guam potion (unf)",
-      "RecipeType": "Create Unfinished Potions (Zahur)",
-      "HighMargin": 27.0,
-      "LowMargin": 2.0,
-      "HighMaxProfit": 230688.0,
-      "LowMaxProfit": 17088.0
-    },
-    {
-      "ItemName": "Stamina potion(4)",
-      "RecipeType": "Decant 3 to 4 (Bob Barter)",
-      "HighMargin": 139.0,
-      "LowMargin": 28.0,
-      "HighMaxProfit": 208552.0,
-      "LowMaxProfit": 42011.0
     },
     {
       "ItemName": "Karil's coif",
@@ -402,12 +402,12 @@
       "LowMaxProfit": 51030.0
     },
     {
-      "ItemName": "Bandos godsword",
-      "RecipeType": "Combine hilt and godsword blade",
-      "HighMargin": 30926.0,
-      "LowMargin": 31826.0,
-      "HighMaxProfit": 123704.0,
-      "LowMaxProfit": 127304.0
+      "ItemName": "Super restore(4)",
+      "RecipeType": "Decant 3 to 4 (Bob Barter)",
+      "HighMargin": 77.0,
+      "LowMargin": 58.0,
+      "HighMaxProfit": 115529.0,
+      "LowMaxProfit": 87022.0
     },
     {
       "ItemName": "Goat horn dust",
@@ -421,17 +421,17 @@
       "ItemName": "Torag's platelegs",
       "RecipeType": "Repair Broken Armour (POH calculated at 80 smithing)",
       "HighMargin": 6733.0,
-      "LowMargin": 5120.0,
+      "LowMargin": 5257.0,
       "HighMaxProfit": 100995.0,
-      "LowMaxProfit": 76800.0
+      "LowMaxProfit": 78855.0
     },
     {
       "ItemName": "Ahrim's hood",
       "RecipeType": "Repair Broken Armour (POH calculated at 80 smithing)",
       "HighMargin": 5560.0,
-      "LowMargin": -537.0,
+      "LowMargin": -436.0,
       "HighMaxProfit": 83400.0,
-      "LowMaxProfit": -8055.0
+      "LowMaxProfit": -6540.0
     },
     {
       "ItemName": "Super strength(4)",
@@ -469,9 +469,17 @@
       "ItemName": "Voidwaker",
       "RecipeType": "Take Voidwaker Hilt Blade Gem and 500K GP to Madam Sikaro",
       "HighMargin": 2966736.0,
-      "LowMargin": 2966736.0,
+      "LowMargin": 2166737.0,
       "HighMaxProfit": 0,
       "LowMaxProfit": 0
+    },
+    {
+      "ItemName": "Torva platebody",
+      "RecipeType": "Use Broken Armour and 2 Bandosian Components on Anvil (90 smithing)",
+      "HighMargin": -191011.0,
+      "LowMargin": 2726094.0,
+      "HighMaxProfit": -1528088.0,
+      "LowMaxProfit": 21808752.0
     }
   ],
   "methodology": "VeryGranular"
