@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { audioSystem } from "@/lib/audio";
 
 // High-Low Spread Analysis (Basic Flipping)
 interface FlippingItem {
@@ -316,6 +317,7 @@ export default function AnalyticsPage() {
   const [, setCached] = useState(false);
   const [activeTab, setActiveTab] = useState<AnalyticsTab>("dips");
   const [isRefreshing, setIsRefreshing] = useState(false);
+  const [audioEnabled, setAudioEnabled] = useState(audioSystem.isEnabled());
 
   const fetchData = async (isInstantRefresh = false) => {
     try {
@@ -399,6 +401,11 @@ export default function AnalyticsPage() {
       setDataUpdated(latestDataUpdate ? new Date(latestDataUpdate) : null);
       setCached(transformedData.cached);
       setError(null);
+
+      // Play soft notification sound for data refresh
+      if (isInstantRefresh) {
+        audioSystem.playDataRefreshSound();
+      }
 
       console.log("Analytics data processed successfully from database!");
       console.log(
@@ -513,7 +520,7 @@ export default function AnalyticsPage() {
           <p className="text-lg font-serif">{error}</p>
           <button
             onClick={() => fetchData()}
-            className="mt-4 border-4 border-black bg-black text-white px-6 py-3 font-bold text-lg font-serif hover:bg-white hover:text-black transition-colors duration-200"
+            className="mt-4 border-4 border-black bg-black text-white px-6 py-2 font-bold text-lg font-serif hover:bg-white hover:text-black transition-colors duration-200"
           >
             Retry Analysis
           </button>
@@ -533,7 +540,7 @@ export default function AnalyticsPage() {
   }
 
   return (
-    <div className="space-y-4 md:space-y-6 text-white min-h-screen mt-4 md:mt-6 px-2">
+    <div className="space-y-4 text-white min-h-screen mt-4 px-2">
       {/* Streamlined Header */}
       <div className="flex flex-col md:items-start gap-2">
         {lastUpdate && (
@@ -554,9 +561,35 @@ export default function AnalyticsPage() {
                 Data: {dataUpdated.toLocaleString()}
               </p>
             )}
-            <p className="text-xs md:text-sm text-blue-400">
-              Instant webhook updates
-            </p>
+            <div className="flex items-center gap-2">
+              <p className="text-xs md:text-sm text-blue-400">
+                Instant webhook updates
+              </p>
+              {/* Tiny Audio Toggle */}
+              <button
+                onClick={() => {
+                  const newEnabled = !audioEnabled;
+                  audioSystem.setEnabled(newEnabled);
+                  setAudioEnabled(newEnabled);
+                  if (newEnabled) {
+                    audioSystem.testSound();
+                  }
+                }}
+                className={`px-1 py-0.5 text-xs border transition-colors ${
+                  audioEnabled
+                    ? "border-green-400 text-green-400 hover:bg-green-400 hover:text-black"
+                    : "border-gray-500 text-gray-500 hover:border-gray-400 hover:text-gray-400"
+                }`}
+                style={{ fontSize: "8px", lineHeight: "10px" }}
+                title={
+                  audioEnabled
+                    ? "Audio notifications enabled"
+                    : "Audio notifications disabled"
+                }
+              >
+                🔊
+              </button>
+            </div>
           </div>
         )}
       </div>
@@ -576,7 +609,7 @@ export default function AnalyticsPage() {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-3 md:px-8 py-3 md:py-4 font-semibold text-sm md:text-xl font-serif border-r border-gray-600 transition-colors ${
+              className={`px-3 md:px-8 py-2  font-semibold text-sm md:text-xl font-serif border-r border-gray-600 transition-colors ${
                 activeTab === tab
                   ? "bg-white text-black"
                   : "bg-gray-800 text-white hover:bg-gray-700"
@@ -609,22 +642,22 @@ function FlippingTable({ data }: { data: FlippingItem[] }) {
       <table className="w-full border-collapse font-serif min-w-[800px]">
         <thead>
           <tr className="bg-gray-800">
-            <th className="border-b border-gray-600 p-3 md:p-6 text-left font-semibold text-sm md:text-xl text-white">
+            <th className="border-b border-gray-600 p-2 text-left font-semibold text-sm md:text-xl text-white">
               Item
             </th>
-            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
               Buy Range
             </th>
-            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
               Sell Range
             </th>
-            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
               Daily Profit
             </th>
-            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
               ROI
             </th>
-            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
               Buy Limit
             </th>
           </tr>
@@ -632,7 +665,7 @@ function FlippingTable({ data }: { data: FlippingItem[] }) {
         <tbody>
           {data.slice(0, 20).map((item, index) => (
             <tr key={`flip-${item.id}-${index}`} className="hover:bg-gray-800">
-              <td className="border-b border-gray-600 p-3 md:p-6">
+              <td className="border-b border-gray-600 p-2">
                 <div className="flex items-center gap-2 md:gap-4">
                   <div className="text-sm md:text-lg font-medium text-gray-300">
                     #{index + 1}
@@ -649,7 +682,7 @@ function FlippingTable({ data }: { data: FlippingItem[] }) {
                   </div>
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+              <td className="border-b border-gray-600 p-2 text-right">
                 <div className="text-sm md:text-lg font-semibold text-blue-400">
                   {item.buyRange}
                 </div>
@@ -657,7 +690,7 @@ function FlippingTable({ data }: { data: FlippingItem[] }) {
                   Suggested buy prices
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+              <td className="border-b border-gray-600 p-2 text-right">
                 <div className="text-sm md:text-lg font-semibold text-green-400">
                   {item.sellRange}
                 </div>
@@ -665,17 +698,17 @@ function FlippingTable({ data }: { data: FlippingItem[] }) {
                   Suggested sell prices
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+              <td className="border-b border-gray-600  text-right">
                 <div className="text-sm md:text-lg font-bold text-green-400">
                   {formatGP(item.dailyProfit)} gp
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+              <td className="border-b border-gray-600 p-2 text-right">
                 <div className="text-sm md:text-lg font-bold text-green-400">
                   {item.roi.toFixed(1)}%
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+              <td className="border-b border-gray-600 p-2 text-right">
                 <div className="text-sm md:text-lg font-medium text-white">
                   {item.buyLimit.toLocaleString()}
                 </div>
@@ -694,19 +727,19 @@ function DipsTable({ data }: { data: DipItem[] }) {
       <table className="w-full border-collapse font-serif min-w-[700px]">
         <thead>
           <tr className="bg-gray-800">
-            <th className="border-b border-gray-600 p-3 md:p-6 text-left font-semibold text-sm md:text-xl text-white">
+            <th className="border-b border-gray-600 p-2 text-left font-semibold text-sm md:text-xl text-white">
               Item
             </th>
-            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
               Buy Range
             </th>
-            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
+            <th className="border-b border-gray-600  text-right font-semibold text-sm md:text-xl text-white">
               Sell Target
             </th>
-            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
               Price Drop
             </th>
-            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
               Estimated Profit
             </th>
           </tr>
@@ -714,7 +747,7 @@ function DipsTable({ data }: { data: DipItem[] }) {
         <tbody>
           {data.slice(0, 20).map((item, index) => (
             <tr key={`dip-${item.id}-${index}`} className="hover:bg-gray-800">
-              <td className="border-b border-gray-600 p-3 md:p-6">
+              <td className="border-b border-gray-600 p-2">
                 <div className="flex items-center gap-2 md:gap-4">
                   <div className="text-sm md:text-lg font-medium text-gray-300">
                     #{index + 1}
@@ -731,7 +764,7 @@ function DipsTable({ data }: { data: DipItem[] }) {
                   </div>
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+              <td className="border-b border-gray-600  text-right">
                 <div className="text-sm md:text-lg font-semibold text-blue-400">
                   {item.buyRange}
                 </div>
@@ -739,7 +772,7 @@ function DipsTable({ data }: { data: DipItem[] }) {
                   Buy during dip
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+              <td className="border-b border-gray-600 p-2 text-right">
                 <div className="text-sm md:text-lg font-semibold text-green-400">
                   {item.sellRange}
                 </div>
@@ -747,12 +780,12 @@ function DipsTable({ data }: { data: DipItem[] }) {
                   Recovery target
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+              <td className="border-b border-gray-600 p-2 text-right">
                 <div className="text-sm md:text-lg font-bold text-red-400">
                   -{item.priceDropPercent.toFixed(1)}%
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+              <td className="border-b border-gray-600 p-2 text-right">
                 <div className="text-sm md:text-lg font-bold text-green-400">
                   {formatGP(item.estimatedProfit)} gp
                 </div>
@@ -771,19 +804,19 @@ function AlchemyTable({ data }: { data: AlchemyItem[] }) {
       <table className="w-full border-collapse font-serif min-w-[600px]">
         <thead>
           <tr>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-3 md:p-4 text-left font-bold text-sm md:text-lg">
+            <th className="border-b border-gray-600 bg-gray-800 text-white p-2  text-left font-bold text-sm md:text-lg">
               Item
             </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-3 md:p-4 text-right font-bold text-sm md:text-lg">
+            <th className="border-b border-gray-600 bg-gray-800 text-white p-2  text-right font-bold text-sm md:text-lg">
               Current Price
             </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-3 md:p-4 text-right font-bold text-sm md:text-lg">
+            <th className="border-b border-gray-600 bg-gray-800 text-white p-2  text-right font-bold text-sm md:text-lg">
               Price Floor
             </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-3 md:p-4 text-right font-bold text-sm md:text-lg">
+            <th className="border-b border-gray-600 bg-gray-800 text-white p-2  text-right font-bold text-sm md:text-lg">
               Profit Margin
             </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-3 md:p-4 text-right font-bold text-sm md:text-lg">
+            <th className="border-b border-gray-600 bg-gray-800 text-white p-2  text-right font-bold text-sm md:text-lg">
               ROI
             </th>
           </tr>
@@ -794,8 +827,8 @@ function AlchemyTable({ data }: { data: AlchemyItem[] }) {
               key={`alchemy-${item.id}-${index}`}
               className="hover:bg-gray-800"
             >
-              <td className="border-b border-gray-600 p-3 md:p-4 font-semibold text-white">
-                <div className="flex items-center gap-2 md:gap-3">
+              <td className="border-b border-gray-600 p-2  font-semibold text-white">
+                <div className="flex items-center gap-2 md:gap-2">
                   <div className="text-sm md:text-base text-gray-300">
                     #{index + 1}
                   </div>
@@ -811,18 +844,18 @@ function AlchemyTable({ data }: { data: AlchemyItem[] }) {
                   </div>
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-3 md:p-4 text-right font-semibold text-white text-sm md:text-base">
+              <td className="border-b border-gray-600 p-2  text-right font-semibold text-white text-sm md:text-base">
                 {formatGP(item.currentPrice)} gp
               </td>
-              <td className="border-b border-gray-600 p-3 md:p-4 text-right text-white text-sm md:text-base">
+              <td className="border-b border-gray-600 p-2  text-right text-white text-sm md:text-base">
                 {formatGP(item.priceFloor)} gp
               </td>
-              <td className="border-b border-gray-600 p-3 md:p-4 text-right">
+              <td className="border-b border-gray-600 p-2  text-right">
                 <div className="font-bold text-green-400 text-sm md:text-base">
                   {formatGP(item.profitMargin)} gp
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-3 md:p-4 text-right">
+              <td className="border-b border-gray-600 p-2  text-right">
                 <div className="font-bold text-green-400 text-sm md:text-base">
                   {item.roi.toFixed(1)}%
                 </div>
@@ -841,22 +874,22 @@ function ProcessingTable({ data }: { data: ProcessingItem[] }) {
       <table className="w-full border-collapse font-serif min-w-[900px]">
         <thead>
           <tr>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-3 md:p-4 text-left font-bold text-sm md:text-lg">
+            <th className="border-b border-gray-600 bg-gray-800 text-white p-2  text-left font-bold text-sm md:text-lg">
               Item
             </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-3 md:p-4 text-right font-bold text-sm md:text-lg">
+            <th className="border-b border-gray-600 bg-gray-800 text-white p-2  text-right font-bold text-sm md:text-lg">
               Buy Range
             </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-3 md:p-4 text-right font-bold text-sm md:text-lg">
+            <th className="border-b border-gray-600 bg-gray-800 text-white p-2  text-right font-bold text-sm md:text-lg">
               Sell Range
             </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-3 md:p-4 text-right font-bold text-sm md:text-lg">
+            <th className="border-b border-gray-600 bg-gray-800 text-white p-2  text-right font-bold text-sm md:text-lg">
               Max Profit
             </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-3 md:p-4 text-right font-bold text-sm md:text-lg">
+            <th className="border-b border-gray-600 bg-gray-800 text-white p-2  text-right font-bold text-sm md:text-lg">
               Capital Required
             </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-3 md:p-4 text-center font-bold text-sm md:text-lg">
+            <th className="border-b border-gray-600 bg-gray-800 text-white p-2  text-center font-bold text-sm md:text-lg">
               Recipe Instructions
             </th>
           </tr>
@@ -867,8 +900,8 @@ function ProcessingTable({ data }: { data: ProcessingItem[] }) {
               key={`processing-${item.id}-${index}`}
               className="hover:bg-gray-800"
             >
-              <td className="border-b border-gray-600 p-3 md:p-4 font-semibold text-white">
-                <div className="flex items-center gap-2 md:gap-3">
+              <td className="border-b border-gray-600 p-2  font-semibold text-white">
+                <div className="flex items-center gap-2 md:gap-2">
                   <div className="text-sm md:text-base text-gray-300">
                     #{index + 1}
                   </div>
@@ -884,7 +917,7 @@ function ProcessingTable({ data }: { data: ProcessingItem[] }) {
                   </div>
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-3 md:p-4 text-right">
+              <td className="border-b border-gray-600 p-2  text-right">
                 <div className="font-semibold text-blue-400 text-sm md:text-base">
                   {item.buyRange}
                 </div>
@@ -892,7 +925,7 @@ function ProcessingTable({ data }: { data: ProcessingItem[] }) {
                   Ingredient costs
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-3 md:p-4 text-right">
+              <td className="border-b border-gray-600 p-2  text-right">
                 <div className="font-semibold text-green-400 text-sm md:text-base">
                   {item.sellRange}
                 </div>
@@ -900,12 +933,12 @@ function ProcessingTable({ data }: { data: ProcessingItem[] }) {
                   Finished product
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-3 md:p-4 text-right">
+              <td className="border-b border-gray-600 p-2  text-right">
                 <div className="font-bold text-green-400 text-sm md:text-base">
                   {formatGP(item.maxProfit)} gp
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-3 md:p-4 text-right">
+              <td className="border-b border-gray-600 p-2  text-right">
                 <div className="font-semibold text-orange-400 text-sm md:text-base">
                   {formatGP(item.capitalRequired)} gp
                 </div>
@@ -913,7 +946,7 @@ function ProcessingTable({ data }: { data: ProcessingItem[] }) {
                   Investment needed
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-3 md:p-4 text-center text-white">
+              <td className="border-b border-gray-600 p-2  text-center text-white">
                 <div className="text-xs md:text-sm text-gray-300">
                   {item.recipeType}
                 </div>
@@ -932,22 +965,22 @@ function MomentumTable({ data }: { data: MomentumItem[] }) {
       <table className="w-full border-collapse font-serif min-w-[800px]">
         <thead>
           <tr className="bg-gray-800">
-            <th className="border-b border-gray-600 p-3 md:p-6 text-left font-semibold text-sm md:text-xl text-white">
+            <th className="border-b border-gray-600 p-2 text-left font-semibold text-sm md:text-xl text-white">
               Item
             </th>
-            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
               Buy Range
             </th>
-            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
-              Momentum ROC
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
+              ROC
             </th>
-            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
               Signal Strength
             </th>
-            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
               Volume Confirmation
             </th>
-            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
               Buy Limit
             </th>
           </tr>
@@ -958,7 +991,7 @@ function MomentumTable({ data }: { data: MomentumItem[] }) {
               key={`momentum-${item.id}-${index}`}
               className="hover:bg-gray-800"
             >
-              <td className="border-b border-gray-600 p-3 md:p-6">
+              <td className="border-b border-gray-600 p-2">
                 <div className="flex items-center gap-2 md:gap-4">
                   <div className="text-sm md:text-lg font-medium text-gray-300">
                     #{index + 1}
@@ -978,7 +1011,7 @@ function MomentumTable({ data }: { data: MomentumItem[] }) {
                   </div>
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+              <td className="border-b border-gray-600 p-2 text-right">
                 <div className="text-sm md:text-lg font-semibold text-blue-400">
                   {item.buyRange}
                 </div>
@@ -986,7 +1019,7 @@ function MomentumTable({ data }: { data: MomentumItem[] }) {
                   Ride the momentum
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+              <td className="border-b border-gray-600 p-2 text-right">
                 <div
                   className={`text-sm md:text-lg font-bold ${
                     item.momentumROC > 10
@@ -1002,7 +1035,7 @@ function MomentumTable({ data }: { data: MomentumItem[] }) {
                   Rate of Change
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+              <td className="border-b border-gray-600 p-2 text-right">
                 <div
                   className={`text-sm md:text-lg font-bold ${
                     item.momentumSignal === "STRONG_UPWARD_MOMENTUM"
@@ -1017,7 +1050,7 @@ function MomentumTable({ data }: { data: MomentumItem[] }) {
                   {item.momentumSignal.replace("_", " ")}
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+              <td className="border-b border-gray-600 p-2 text-right">
                 <div
                   className={`text-sm md:text-lg font-medium ${
                     item.volumeConfirmation === "HIGH_VOLUME_SURGE"
@@ -1030,7 +1063,7 @@ function MomentumTable({ data }: { data: MomentumItem[] }) {
                   {item.volumeConfirmation.replace("_", " ")}
                 </div>
               </td>
-              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+              <td className="border-b border-gray-600 p-2 text-right">
                 <div className="text-sm md:text-lg font-medium text-white">
                   {item.buyLimit.toLocaleString()}
                 </div>

@@ -27,13 +27,9 @@ export default function RootLayout({
         <div className="min-h-screen">
           <header className="border-b-4 border-gray-600 bg-gray-900 p-2">
             <div className="max-w-7xl mx-auto">
-              <h1 className="text-6xl md:text-8xl font-bold leading-none tracking-tight font-serif text-white">
+              <h1 className="text-6xl md:text-8xl font-bold tracking-tight font-serif text-white mt-1 md:mt-3">
                 OSRS GE
               </h1>
-              <p className="text-lg md:text-xl leading-relaxed mt-4 max-w-2xl font-serif text-gray-300">
-                Real-time Grand Exchange profit analysis for Old School
-                RuneScape
-              </p>
             </div>
           </header>
           <main className="max-w-7xl mx-auto">{children}</main>
