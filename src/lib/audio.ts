@@ -13,7 +13,8 @@ export class SimpleAudioSystem {
   private initializeAudioContext(): void {
     if (typeof window !== 'undefined') {
       try {
-        this.audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
+        const AudioContextClass = window.AudioContext || (window as typeof window & { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
+        this.audioContext = new AudioContextClass();
       } catch (error) {
         console.warn('Audio context not supported:', error);
       }
