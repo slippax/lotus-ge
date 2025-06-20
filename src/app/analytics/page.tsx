@@ -64,6 +64,22 @@ interface ProcessingItem {
   capitalRequired: number;
 }
 
+// Momentum Trading (Trend Following)
+interface MomentumItem {
+  id: number;
+  name: string;
+  currentPrice: number;
+  dailyAverage: number;
+  momentumROC: number;
+  momentumSignal: string;
+  volumeConfirmation: string;
+  buyLimit: number;
+  members: boolean;
+  buyRange: string;
+  trendDirection: string;
+  strategyType: string;
+}
+
 // Volume Analysis Data - Removed (using database data only)
 
 interface ComprehensiveAnalytics {
@@ -71,12 +87,13 @@ interface ComprehensiveAnalytics {
   dips: DipItem[];
   alchemy: AlchemyItem[];
   processing: ProcessingItem[];
+  momentum: MomentumItem[];
   volume: never[]; // Empty array - volume analysis removed
   timestamp: number;
   cached: boolean;
 }
 
-type AnalyticsTab = "flipping" | "dips" | "alchemy" | "processing";
+type AnalyticsTab = "flipping" | "dips" | "alchemy" | "processing" | "momentum";
 
 // Helper function for formatting in OSRS style with decimal precision
 function formatGP(amount: number) {
@@ -249,6 +266,45 @@ function transformManufacturingDataFromAPI(
   });
 }
 
+interface RawMomentumData {
+  ItemName?: string;
+  CurrentPrice?: number;
+  DailyAverage?: number;
+  BuyLimit?: number;
+  momentum_roc_pct?: number;
+  momentum_signal?: string;
+  volume_confirmation?: string;
+  strategy_type?: string;
+  recommended_action?: string;
+}
+
+function transformMomentumDataFromAPI(data: RawMomentumData[]): MomentumItem[] {
+  return data.slice(0, 50).map((item, index) => {
+    const currentPrice = item.CurrentPrice || 0;
+    const dailyAverage = item.DailyAverage || 0;
+
+    return {
+      id: index + 1,
+      name: item.ItemName || "Unknown Item",
+      currentPrice,
+      dailyAverage,
+      momentumROC: item.momentum_roc_pct || 0,
+      momentumSignal: item.momentum_signal || "NO_MOMENTUM",
+      volumeConfirmation: item.volume_confirmation || "NORMAL_VOLUME",
+      buyLimit: item.BuyLimit || 0,
+      members: true, // Most momentum items are members items
+      buyRange: `${formatGP(currentPrice * 0.98)} - ${formatGP(
+        currentPrice * 1.02
+      )}`,
+      trendDirection:
+        item.momentum_roc_pct && item.momentum_roc_pct > 0
+          ? "UPWARD"
+          : "SIDEWAYS",
+      strategyType: item.strategy_type || "TREND_FOLLOWING",
+    };
+  });
+}
+
 // transformVolumeData function removed - using database data only
 
 // Local strategy processing functions removed - using API data only
@@ -287,17 +343,20 @@ export default function AnalyticsPage() {
         dipsResponse,
         alchemyResponse,
         manufacturingResponse,
+        momentumResponse,
       ] = await Promise.all([
         fetch(`/api/osrs/highlow-spread${timestamp}`, fetchOptions),
         fetch(`/api/osrs/dip-detection${timestamp}`, fetchOptions),
         fetch(`/api/osrs/alchemy-floors${timestamp}`, fetchOptions),
         fetch(`/api/osrs/manufacturing-analysis${timestamp}`, fetchOptions),
+        fetch(`/api/osrs/momentum-analysis${timestamp}`, fetchOptions),
       ]);
 
       const flippingResult = await flippingResponse.json();
       const dipsResult = await dipsResponse.json();
       const alchemyResult = await alchemyResponse.json();
       const manufacturingResult = await manufacturingResponse.json();
+      const momentumResult = await momentumResponse.json();
 
       const flippingData = flippingResult.success ? flippingResult.data : [];
       const dipsData = dipsResult.success ? dipsResult.data : [];
@@ -305,6 +364,7 @@ export default function AnalyticsPage() {
       const manufacturingData = manufacturingResult.success
         ? manufacturingResult.data
         : [];
+      const momentumData = momentumResult.success ? momentumResult.data : [];
 
       // Use the earliest data timestamp from all APIs
       const dataTimestamps = [
@@ -312,6 +372,7 @@ export default function AnalyticsPage() {
         dipsResult.dataUpdated,
         alchemyResult.dataUpdated,
         manufacturingResult.dataUpdated,
+        momentumResult.dataUpdated,
       ].filter(Boolean);
 
       const latestDataUpdate =
@@ -327,6 +388,7 @@ export default function AnalyticsPage() {
         dips: transformDipsDataFromAPI(dipsData),
         alchemy: transformAlchemyDataFromAPI(alchemyData),
         processing: transformManufacturingDataFromAPI(manufacturingData),
+        momentum: transformMomentumDataFromAPI(momentumData),
         volume: [], // Empty since we removed volume analysis
         timestamp: Date.now(),
         cached: false,
@@ -405,6 +467,8 @@ export default function AnalyticsPage() {
         return "High-Low Spread";
       case "dips":
         return "Market Dips";
+      case "momentum":
+        return "Momentum";
       case "alchemy":
         return "Alchemy Floors";
       case "processing":
@@ -503,7 +567,13 @@ export default function AnalyticsPage() {
       <div className="border border-gray-600 overflow-hidden bg-gray-900">
         <div className="grid grid-cols-2 md:flex bg-gray-800">
           {(
-            ["dips", "processing", "flipping", "alchemy"] as AnalyticsTab[]
+            [
+              "dips",
+              "momentum",
+              "processing",
+              "flipping",
+              "alchemy",
+            ] as AnalyticsTab[]
           ).map((tab) => (
             <button
               key={tab}
@@ -523,6 +593,7 @@ export default function AnalyticsPage() {
           {/* Tab Content */}
           {activeTab === "flipping" && <FlippingTable data={data.flipping} />}
           {activeTab === "dips" && <DipsTable data={data.dips} />}
+          {activeTab === "momentum" && <MomentumTable data={data.momentum} />}
           {activeTab === "alchemy" && <AlchemyTable data={data.alchemy} />}
           {activeTab === "processing" && (
             <ProcessingTable data={data.processing} />
@@ -847,6 +918,123 @@ function ProcessingTable({ data }: { data: ProcessingItem[] }) {
               <td className="border-b border-gray-600 p-3 md:p-4 text-center text-white">
                 <div className="text-xs md:text-sm text-gray-300">
                   {item.recipeType}
+                </div>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+function MomentumTable({ data }: { data: MomentumItem[] }) {
+  return (
+    <div className="border border-gray-600 overflow-x-auto">
+      <table className="w-full border-collapse font-serif min-w-[800px]">
+        <thead>
+          <tr className="bg-gray-800">
+            <th className="border-b border-gray-600 p-3 md:p-6 text-left font-semibold text-sm md:text-xl text-white">
+              Item
+            </th>
+            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
+              Buy Range
+            </th>
+            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
+              Momentum ROC
+            </th>
+            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
+              Signal Strength
+            </th>
+            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
+              Volume Confirmation
+            </th>
+            <th className="border-b border-gray-600 p-3 md:p-6 text-right font-semibold text-sm md:text-xl text-white">
+              Buy Limit
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.slice(0, 20).map((item, index) => (
+            <tr
+              key={`momentum-${item.id}-${index}`}
+              className="hover:bg-gray-800"
+            >
+              <td className="border-b border-gray-600 p-3 md:p-6">
+                <div className="flex items-center gap-2 md:gap-4">
+                  <div className="text-sm md:text-lg font-medium text-gray-300">
+                    #{index + 1}
+                  </div>
+                  <div>
+                    <div className="text-sm md:text-xl font-semibold text-white">
+                      {item.name}
+                    </div>
+                    {item.members && (
+                      <div className="text-xs md:text-sm text-blue-400 font-medium">
+                        Members
+                      </div>
+                    )}
+                    <div className="text-xs md:text-sm text-gray-400">
+                      {item.strategyType}
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+                <div className="text-sm md:text-lg font-semibold text-blue-400">
+                  {item.buyRange}
+                </div>
+                <div className="text-xs md:text-sm text-gray-400">
+                  Ride the momentum
+                </div>
+              </td>
+              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+                <div
+                  className={`text-sm md:text-lg font-bold ${
+                    item.momentumROC > 10
+                      ? "text-green-400"
+                      : item.momentumROC > 5
+                      ? "text-yellow-400"
+                      : "text-orange-400"
+                  }`}
+                >
+                  +{item.momentumROC.toFixed(1)}%
+                </div>
+                <div className="text-xs md:text-sm text-gray-400">
+                  Rate of Change
+                </div>
+              </td>
+              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+                <div
+                  className={`text-sm md:text-lg font-bold ${
+                    item.momentumSignal === "STRONG_UPWARD_MOMENTUM"
+                      ? "text-green-400"
+                      : item.momentumSignal === "MODERATE_UPWARD_MOMENTUM"
+                      ? "text-yellow-400"
+                      : item.momentumSignal === "WEAK_UPWARD_MOMENTUM"
+                      ? "text-orange-400"
+                      : "text-gray-400"
+                  }`}
+                >
+                  {item.momentumSignal.replace("_", " ")}
+                </div>
+              </td>
+              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+                <div
+                  className={`text-sm md:text-lg font-medium ${
+                    item.volumeConfirmation === "HIGH_VOLUME_SURGE"
+                      ? "text-green-400"
+                      : item.volumeConfirmation === "MODERATE_VOLUME_SURGE"
+                      ? "text-yellow-400"
+                      : "text-gray-400"
+                  }`}
+                >
+                  {item.volumeConfirmation.replace("_", " ")}
+                </div>
+              </td>
+              <td className="border-b border-gray-600 p-3 md:p-6 text-right">
+                <div className="text-sm md:text-lg font-medium text-white">
+                  {item.buyLimit.toLocaleString()}
                 </div>
               </td>
             </tr>

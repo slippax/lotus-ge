@@ -42,8 +42,21 @@ async function fetchAlchemyData() {
           "Cache-Control": "no-cache",
         },
       });
+
+      // If GitHub API fails (rate limit, etc.), fall back to raw URL
+      if (!githubResponse.ok) {
+        console.log("GitHub API failed, falling back to raw URL");
+        const githubUrl = "https://raw.githubusercontent.com/slippax/lotus-ge/main/data/summaries/alchemy-floors.json";
+        githubResponse = await fetch(`${githubUrl}?t=${Date.now()}`, {
+          headers: {
+            "User-Agent": "OSRS Data Seeker - Alchemy Analysis",
+            "Cache-Control": "no-cache",
+          },
+        });
+      }
     } catch {
       // Fallback to raw CDN if API fails
+      console.log("GitHub API exception, falling back to raw URL");
       const githubUrl = "https://raw.githubusercontent.com/slippax/lotus-ge/main/data/summaries/alchemy-floors.json";
       githubResponse = await fetch(`${githubUrl}?t=${Date.now()}`, {
         headers: {

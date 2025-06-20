@@ -800,6 +800,137 @@ def generate_summary_files(conn):
 
     logging.info(f"✓ Generated dipped items summary: {len(dipped_items)} items")
 
+    # Generate separate momentum opportunities file
+    generate_momentum_analysis(conn)
+
+def generate_momentum_analysis(conn):
+    """Generate momentum trading opportunities using research-based ROC methodology"""
+    cursor = conn.cursor()
+
+    logging.info("Generating momentum analysis using ROC methodology")
+
+    # Find items with strong upward momentum (research-based ROC > 5%)
+    cursor.execute('''
+        SELECT
+            mappingname as ItemName,
+            low as CurrentPrice,
+            VeryGranularDailyMeanLow as DailyAverage,
+            mappinglimit as BuyLimit,
+
+            -- ROC Momentum calculation (research formula)
+            ROUND(((CAST(low AS REAL) / CAST(VeryGranularDailyMeanLow AS REAL)) - 1) * 100, 2) as momentum_roc_pct,
+
+            -- Momentum classification
+            CASE
+                WHEN low > VeryGranularFiveMinuteMeanLow
+                AND VeryGranularFiveMinuteMeanLow > VeryGranularHourlyMeanLow
+                AND VeryGranularHourlyMeanLow > VeryGranularDailyMeanLow
+                THEN 'STRONG_UPWARD_MOMENTUM'
+
+                WHEN low > VeryGranularFiveMinuteMeanLow
+                AND VeryGranularFiveMinuteMeanLow > VeryGranularHourlyMeanLow
+                THEN 'MODERATE_UPWARD_MOMENTUM'
+
+                WHEN low > VeryGranularFiveMinuteMeanLow
+                THEN 'WEAK_UPWARD_MOMENTUM'
+
+                ELSE 'NO_MOMENTUM'
+            END as momentum_signal,
+
+            -- Volume surge detection (momentum confirmation)
+            CASE
+                WHEN VeryGranularDailyMeanVolumeLow > WeeklyMeanVolumeLow * 1.5
+                THEN 'HIGH_VOLUME_SURGE'
+                WHEN VeryGranularDailyMeanVolumeLow > WeeklyMeanVolumeLow * 1.2
+                THEN 'MODERATE_VOLUME_SURGE'
+                ELSE 'NORMAL_VOLUME'
+            END as volume_confirmation
+
+        FROM MasterTable
+        WHERE low > 0
+        AND VeryGranularFiveMinuteMeanLow > 0
+        AND VeryGranularHourlyMeanLow > 0
+        AND VeryGranularDailyMeanLow > 0
+        AND WeeklyMeanVolumeLow > 0
+
+        -- Filter for momentum items only (ROC > 2% minimum)
+        AND ((CAST(low AS REAL) / CAST(VeryGranularDailyMeanLow AS REAL)) - 1) * 100 > 2
+
+        -- Filter for reasonable trading volume
+        AND mappinglimit > 100
+
+        ORDER BY momentum_roc_pct DESC
+        LIMIT 50
+    ''')
+
+    results = cursor.fetchall()
+
+    momentum_items = []
+    for row in results:
+        momentum_items.append({
+            'ItemName': row[0],
+            'CurrentPrice': row[1],
+            'DailyAverage': int(row[2]) if row[2] else 0,
+            'BuyLimit': row[3] if row[3] else 0,
+            'momentum_roc_pct': float(row[4]) if row[4] else 0.0,
+            'momentum_signal': row[5] if len(row) > 5 else 'NO_MOMENTUM',
+            'volume_confirmation': row[6] if len(row) > 6 else 'NORMAL_VOLUME',
+            'strategy_type': 'TREND_FOLLOWING',
+            'recommended_action': 'BUY_AND_RIDE_MOMENTUM'
+        })
+
+    # Add time-of-day context
+    current_hour = datetime.now(timezone.utc).hour
+
+    if 18 <= current_hour <= 22:
+        trading_context = {
+            'activity_level': 'PEAK_ACTIVITY',
+            'description': 'UK Evening - Best time for momentum trading',
+            'momentum_reliability': 'HIGH'
+        }
+    elif 6 <= current_hour <= 12:
+        trading_context = {
+            'activity_level': 'LOW_ACTIVITY',
+            'description': 'UK Morning - Lower momentum reliability',
+            'momentum_reliability': 'LOW'
+        }
+    else:
+        trading_context = {
+            'activity_level': 'MODERATE_ACTIVITY',
+            'description': 'UK Afternoon - Moderate momentum signals',
+            'momentum_reliability': 'MODERATE'
+        }
+
+    # Save momentum analysis
+    with open('data/summaries/momentum-items.json', 'w') as f:
+        json.dump({
+            'updated': datetime.now(timezone.utc).isoformat(),
+            'strategy': 'MOMENTUM_TRADING',
+            'methodology': 'ROC_Based_Trend_Following',
+            'description': 'Items showing upward price momentum - ride the trend strategy',
+            'collection_context': {
+                'trading_window': trading_context['activity_level'],
+                'collection_hour_gmt': current_hour,
+                'description': trading_context['description'],
+                'momentum_reliability': trading_context['momentum_reliability']
+            },
+            'momentum_intelligence': {
+                'total_momentum_opportunities': len(momentum_items),
+                'strong_momentum_count': len([item for item in momentum_items if item.get('momentum_signal') == 'STRONG_UPWARD_MOMENTUM']),
+                'high_volume_count': len([item for item in momentum_items if item.get('volume_confirmation') == 'HIGH_VOLUME_SURGE']),
+                'avg_momentum_strength': round(sum([item.get('momentum_roc_pct', 0) for item in momentum_items]) / max(1, len(momentum_items)), 2)
+            },
+            'trading_strategy': {
+                'approach': 'Buy items showing upward momentum, sell when momentum weakens',
+                'hold_time': '1-7 days typically',
+                'risk_level': 'MODERATE_TO_HIGH',
+                'best_market_conditions': 'Trending/volatile markets'
+            },
+            'items': momentum_items
+        }, f, indent=2)
+
+    logging.info(f"✓ Generated momentum analysis summary: {len(momentum_items)} items")
+
 def generate_manufacturing_summary(conn):
     """Generate manufacturing analysis summary using EXACT research methodology"""
     cursor = conn.cursor()
