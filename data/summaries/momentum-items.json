@@ -1,5 +1,5 @@
 {
-  "updated": "2025-06-20T18:40:30.614939+00:00",
+  "updated": "2025-06-20T18:45:30.902587+00:00",
   "strategy": "MOMENTUM_TRADING",
   "methodology": "ROC_Based_Trend_Following",
   "description": "Items showing upward price momentum - ride the trend strategy",
@@ -13,7 +13,7 @@
     "total_momentum_opportunities": 50,
     "strong_momentum_count": 5,
     "high_volume_count": 23,
-    "avg_momentum_strength": 87.75
+    "avg_momentum_strength": 187.53
   },
   "trading_strategy": {
     "approach": "Buy items showing upward momentum, sell when momentum weakens",
@@ -24,10 +24,10 @@
   "items": [
     {
       "ItemName": "Bone bolts",
-      "CurrentPrice": 91,
+      "CurrentPrice": 450,
       "DailyAverage": 7,
       "BuyLimit": 11000,
-      "momentum_roc_pct": 1200.0,
+      "momentum_roc_pct": 6328.57,
       "momentum_signal": "WEAK_UPWARD_MOMENTUM",
       "volume_confirmation": "MODERATE_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
@@ -56,17 +56,6 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Iron chainbody",
-      "CurrentPrice": 181,
-      "DailyAverage": 72,
-      "BuyLimit": 125,
-      "momentum_roc_pct": 151.39,
-      "momentum_signal": "NO_MOMENTUM",
-      "volume_confirmation": "NORMAL_VOLUME",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
       "ItemName": "Bronze scimitar",
       "CurrentPrice": 150,
       "DailyAverage": 62,
@@ -74,17 +63,6 @@
       "momentum_roc_pct": 141.94,
       "momentum_signal": "WEAK_UPWARD_MOMENTUM",
       "volume_confirmation": "NORMAL_VOLUME",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Apple tree seed",
-      "CurrentPrice": 12,
-      "DailyAverage": 5,
-      "BuyLimit": 200,
-      "momentum_roc_pct": 140.0,
-      "momentum_signal": "NO_MOMENTUM",
-      "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
@@ -100,23 +78,34 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
+      "ItemName": "Steel full helm",
+      "CurrentPrice": 315,
+      "DailyAverage": 143,
+      "BuyLimit": 125,
+      "momentum_roc_pct": 120.28,
+      "momentum_signal": "MODERATE_UPWARD_MOMENTUM",
+      "volume_confirmation": "NORMAL_VOLUME",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Apple tree seed",
+      "CurrentPrice": 11,
+      "DailyAverage": 5,
+      "BuyLimit": 200,
+      "momentum_roc_pct": 120.0,
+      "momentum_signal": "NO_MOMENTUM",
+      "volume_confirmation": "HIGH_VOLUME_SURGE",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
       "ItemName": "Magic shield",
       "CurrentPrice": 2070,
       "DailyAverage": 993,
       "BuyLimit": 125,
       "momentum_roc_pct": 108.46,
       "momentum_signal": "WEAK_UPWARD_MOMENTUM",
-      "volume_confirmation": "HIGH_VOLUME_SURGE",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Studded chaps",
-      "CurrentPrice": 1410,
-      "DailyAverage": 701,
-      "BuyLimit": 125,
-      "momentum_roc_pct": 101.14,
-      "momentum_signal": "STRONG_UPWARD_MOMENTUM",
       "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
@@ -133,35 +122,13 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Raw mackerel",
-      "CurrentPrice": 58,
-      "DailyAverage": 31,
-      "BuyLimit": 15000,
-      "momentum_roc_pct": 87.1,
-      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
-      "volume_confirmation": "HIGH_VOLUME_SURGE",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Steel platelegs",
-      "CurrentPrice": 743,
-      "DailyAverage": 418,
+      "ItemName": "Iron chainbody",
+      "CurrentPrice": 144,
+      "DailyAverage": 72,
       "BuyLimit": 125,
-      "momentum_roc_pct": 77.75,
-      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
-      "volume_confirmation": "NORMAL_VOLUME",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Steel plateskirt",
-      "CurrentPrice": 876,
-      "DailyAverage": 506,
-      "BuyLimit": 125,
-      "momentum_roc_pct": 73.12,
+      "momentum_roc_pct": 100.0,
       "momentum_signal": "NO_MOMENTUM",
-      "volume_confirmation": "MODERATE_VOLUME_SURGE",
+      "volume_confirmation": "NORMAL_VOLUME",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
@@ -210,12 +177,23 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Mithril chainbody",
-      "CurrentPrice": 2044,
-      "DailyAverage": 1325,
-      "BuyLimit": 125,
-      "momentum_roc_pct": 54.26,
-      "momentum_signal": "MODERATE_UPWARD_MOMENTUM",
+      "ItemName": "Rosemary seed",
+      "CurrentPrice": 11,
+      "DailyAverage": 7,
+      "BuyLimit": 600,
+      "momentum_roc_pct": 57.14,
+      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
+      "volume_confirmation": "HIGH_VOLUME_SURGE",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Banana tree seed",
+      "CurrentPrice": 31,
+      "DailyAverage": 20,
+      "BuyLimit": 200,
+      "momentum_roc_pct": 55.0,
+      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
       "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
@@ -243,6 +221,17 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
+      "ItemName": "Mithril chainbody",
+      "CurrentPrice": 2000,
+      "DailyAverage": 1325,
+      "BuyLimit": 125,
+      "momentum_roc_pct": 50.94,
+      "momentum_signal": "MODERATE_UPWARD_MOMENTUM",
+      "volume_confirmation": "HIGH_VOLUME_SURGE",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
       "ItemName": "Mind rune",
       "CurrentPrice": 3,
       "DailyAverage": 2,
@@ -250,6 +239,17 @@
       "momentum_roc_pct": 50.0,
       "momentum_signal": "NO_MOMENTUM",
       "volume_confirmation": "HIGH_VOLUME_SURGE",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Monk's robe",
+      "CurrentPrice": 336,
+      "DailyAverage": 224,
+      "BuyLimit": 125,
+      "momentum_roc_pct": 50.0,
+      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
+      "volume_confirmation": "NORMAL_VOLUME",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
@@ -287,12 +287,23 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Spice",
-      "CurrentPrice": 52,
-      "DailyAverage": 35,
-      "BuyLimit": 11000,
-      "momentum_roc_pct": 48.57,
-      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
+      "ItemName": "Purple dye",
+      "CurrentPrice": 574,
+      "DailyAverage": 403,
+      "BuyLimit": 150,
+      "momentum_roc_pct": 42.43,
+      "momentum_signal": "STRONG_UPWARD_MOMENTUM",
+      "volume_confirmation": "NORMAL_VOLUME",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Snakeskin boots",
+      "CurrentPrice": 549,
+      "DailyAverage": 386,
+      "BuyLimit": 125,
+      "momentum_roc_pct": 42.23,
+      "momentum_signal": "MODERATE_UPWARD_MOMENTUM",
       "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
@@ -320,11 +331,11 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Steel full helm",
-      "CurrentPrice": 198,
-      "DailyAverage": 143,
-      "BuyLimit": 125,
-      "momentum_roc_pct": 38.46,
+      "ItemName": "Blue skirt",
+      "CurrentPrice": 530,
+      "DailyAverage": 384,
+      "BuyLimit": 150,
+      "momentum_roc_pct": 38.02,
       "momentum_signal": "MODERATE_UPWARD_MOMENTUM",
       "volume_confirmation": "NORMAL_VOLUME",
       "strategy_type": "TREND_FOLLOWING",
@@ -364,13 +375,13 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Purple dye",
-      "CurrentPrice": 534,
-      "DailyAverage": 403,
-      "BuyLimit": 150,
-      "momentum_roc_pct": 32.51,
-      "momentum_signal": "NO_MOMENTUM",
-      "volume_confirmation": "NORMAL_VOLUME",
+      "ItemName": "Orange tree seed",
+      "CurrentPrice": 40,
+      "DailyAverage": 30,
+      "BuyLimit": 200,
+      "momentum_roc_pct": 33.33,
+      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
+      "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
@@ -382,17 +393,6 @@
       "momentum_roc_pct": 31.82,
       "momentum_signal": "WEAK_UPWARD_MOMENTUM",
       "volume_confirmation": "NORMAL_VOLUME",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Chef's hat",
-      "CurrentPrice": 791,
-      "DailyAverage": 601,
-      "BuyLimit": 150,
-      "momentum_roc_pct": 31.61,
-      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
-      "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
@@ -474,44 +474,11 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Rosemary seed",
-      "CurrentPrice": 9,
-      "DailyAverage": 7,
-      "BuyLimit": 600,
-      "momentum_roc_pct": 28.57,
-      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
-      "volume_confirmation": "HIGH_VOLUME_SURGE",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Raw tuna",
-      "CurrentPrice": 114,
-      "DailyAverage": 89,
-      "BuyLimit": 15000,
-      "momentum_roc_pct": 28.09,
-      "momentum_signal": "STRONG_UPWARD_MOMENTUM",
-      "volume_confirmation": "NORMAL_VOLUME",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
       "ItemName": "Split log",
       "CurrentPrice": 1222,
       "DailyAverage": 958,
       "BuyLimit": 11000,
       "momentum_roc_pct": 27.56,
-      "momentum_signal": "NO_MOMENTUM",
-      "volume_confirmation": "NORMAL_VOLUME",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Lantern lens",
-      "CurrentPrice": 28,
-      "DailyAverage": 22,
-      "BuyLimit": 10000,
-      "momentum_roc_pct": 27.27,
       "momentum_signal": "NO_MOMENTUM",
       "volume_confirmation": "NORMAL_VOLUME",
       "strategy_type": "TREND_FOLLOWING",
@@ -567,6 +534,39 @@
       "DailyAverage": 36,
       "BuyLimit": 500,
       "momentum_roc_pct": 25.0,
+      "momentum_signal": "NO_MOMENTUM",
+      "volume_confirmation": "HIGH_VOLUME_SURGE",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Green cape",
+      "CurrentPrice": 301,
+      "DailyAverage": 242,
+      "BuyLimit": 150,
+      "momentum_roc_pct": 24.38,
+      "momentum_signal": "NO_MOMENTUM",
+      "volume_confirmation": "NORMAL_VOLUME",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Raw tuna",
+      "CurrentPrice": 110,
+      "DailyAverage": 89,
+      "BuyLimit": 15000,
+      "momentum_roc_pct": 23.6,
+      "momentum_signal": "STRONG_UPWARD_MOMENTUM",
+      "volume_confirmation": "NORMAL_VOLUME",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Studded body",
+      "CurrentPrice": 456,
+      "DailyAverage": 371,
+      "BuyLimit": 125,
+      "momentum_roc_pct": 22.91,
       "momentum_signal": "NO_MOMENTUM",
       "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
