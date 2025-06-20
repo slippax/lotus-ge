@@ -267,40 +267,38 @@ function transformManufacturingDataFromAPI(
 }
 
 interface RawMomentumData {
-  ItemName?: string;
-  CurrentPrice?: number;
-  DailyAverage?: number;
-  BuyLimit?: number;
-  momentum_roc_pct?: number;
-  momentum_signal?: string;
-  volume_confirmation?: string;
-  strategy_type?: string;
-  recommended_action?: string;
+  id?: number;
+  name?: string;
+  currentPrice?: number;
+  dailyAverage?: number;
+  momentumROC?: number;
+  momentumSignal?: string;
+  volumeConfirmation?: string;
+  buyLimit?: number;
+  strategyType?: string;
+  trendDirection?: string;
 }
 
 function transformMomentumDataFromAPI(data: RawMomentumData[]): MomentumItem[] {
   return data.slice(0, 50).map((item, index) => {
-    const currentPrice = item.CurrentPrice || 0;
-    const dailyAverage = item.DailyAverage || 0;
+    const currentPrice = item.currentPrice || 0;
+    const dailyAverage = item.dailyAverage || 0;
 
     return {
-      id: index + 1,
-      name: item.ItemName || "Unknown Item",
+      id: item.id || index + 1,
+      name: item.name || "Unknown Item",
       currentPrice,
       dailyAverage,
-      momentumROC: item.momentum_roc_pct || 0,
-      momentumSignal: item.momentum_signal || "NO_MOMENTUM",
-      volumeConfirmation: item.volume_confirmation || "NORMAL_VOLUME",
-      buyLimit: item.BuyLimit || 0,
+      momentumROC: item.momentumROC || 0,
+      momentumSignal: item.momentumSignal || "NO_MOMENTUM",
+      volumeConfirmation: item.volumeConfirmation || "NORMAL_VOLUME",
+      buyLimit: item.buyLimit || 0,
       members: true, // Most momentum items are members items
       buyRange: `${formatGP(currentPrice * 0.98)} - ${formatGP(
         currentPrice * 1.02
       )}`,
-      trendDirection:
-        item.momentum_roc_pct && item.momentum_roc_pct > 0
-          ? "UPWARD"
-          : "SIDEWAYS",
-      strategyType: item.strategy_type || "TREND_FOLLOWING",
+      trendDirection: item.trendDirection || "UPWARD",
+      strategyType: item.strategyType || "TREND_FOLLOWING",
     };
   });
 }
