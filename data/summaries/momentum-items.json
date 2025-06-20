@@ -1,5 +1,5 @@
 {
-  "updated": "2025-06-20T13:53:19.452040+00:00",
+  "updated": "2025-06-20T13:55:30.381653+00:00",
   "strategy": "MOMENTUM_TRADING",
   "methodology": "ROC_Based_Trend_Following",
   "description": "Items showing upward price momentum - ride the trend strategy",
@@ -11,9 +11,9 @@
   },
   "momentum_intelligence": {
     "total_momentum_opportunities": 50,
-    "strong_momentum_count": 4,
-    "high_volume_count": 26,
-    "avg_momentum_strength": 79.57
+    "strong_momentum_count": 3,
+    "high_volume_count": 25,
+    "avg_momentum_strength": 79.52
   },
   "trading_strategy": {
     "approach": "Buy items showing upward momentum, sell when momentum weakens",
@@ -342,6 +342,17 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
+      "ItemName": "Eye of newt",
+      "CurrentPrice": 4,
+      "DailyAverage": 3,
+      "BuyLimit": 13000,
+      "momentum_roc_pct": 33.33,
+      "momentum_signal": "NO_MOMENTUM",
+      "volume_confirmation": "NORMAL_VOLUME",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
       "ItemName": "Hammerstone seed",
       "CurrentPrice": 4,
       "DailyAverage": 3,
@@ -452,17 +463,6 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Mithril arrow",
-      "CurrentPrice": 9,
-      "DailyAverage": 7,
-      "BuyLimit": 7000,
-      "momentum_roc_pct": 28.57,
-      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
-      "volume_confirmation": "NORMAL_VOLUME",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
       "ItemName": "Raw tuna",
       "CurrentPrice": 110,
       "DailyAverage": 87,
@@ -480,17 +480,6 @@
       "BuyLimit": 200,
       "momentum_roc_pct": 26.1,
       "momentum_signal": "WEAK_UPWARD_MOMENTUM",
-      "volume_confirmation": "HIGH_VOLUME_SURGE",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Black platebody",
-      "CurrentPrice": 4361,
-      "DailyAverage": 3471,
-      "BuyLimit": 125,
-      "momentum_roc_pct": 25.64,
-      "momentum_signal": "STRONG_UPWARD_MOMENTUM",
       "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
@@ -562,11 +551,22 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Spice",
-      "CurrentPrice": 42,
-      "DailyAverage": 34,
+      "ItemName": "Monk's robe top",
+      "CurrentPrice": 559,
+      "DailyAverage": 462,
+      "BuyLimit": 125,
+      "momentum_roc_pct": 21.0,
+      "momentum_signal": "NO_MOMENTUM",
+      "volume_confirmation": "NORMAL_VOLUME",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Toktz-xil-ul",
+      "CurrentPrice": 2353,
+      "DailyAverage": 1946,
       "BuyLimit": 11000,
-      "momentum_roc_pct": 23.53,
+      "momentum_roc_pct": 20.91,
       "momentum_signal": "NO_MOMENTUM",
       "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
