@@ -1,5 +1,5 @@
 {
-  "updated": "2025-06-21T13:10:35.775471+00:00",
+  "updated": "2025-06-21T13:15:30.759933+00:00",
   "strategy": "MOMENTUM_TRADING",
   "methodology": "ROC_Based_Trend_Following",
   "description": "Items showing upward price momentum - ride the trend strategy",
@@ -12,8 +12,8 @@
   "momentum_intelligence": {
     "total_momentum_opportunities": 50,
     "strong_momentum_count": 0,
-    "high_volume_count": 19,
-    "avg_momentum_strength": 71.36
+    "high_volume_count": 16,
+    "avg_momentum_strength": 76.5
   },
   "trading_strategy": {
     "approach": "Buy items showing upward momentum, sell when momentum weakens",
@@ -78,6 +78,17 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
+      "ItemName": "Desert boots",
+      "CurrentPrice": 410,
+      "DailyAverage": 128,
+      "BuyLimit": 150,
+      "momentum_roc_pct": 220.31,
+      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
+      "volume_confirmation": "NORMAL_VOLUME",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
       "ItemName": "Swamp paste",
       "CurrentPrice": 5,
       "DailyAverage": 2,
@@ -100,6 +111,17 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
+      "ItemName": "Adamant boots",
+      "CurrentPrice": 1677,
+      "DailyAverage": 750,
+      "BuyLimit": 125,
+      "momentum_roc_pct": 123.6,
+      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
+      "volume_confirmation": "NORMAL_VOLUME",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
       "ItemName": "Bronze spear",
       "CurrentPrice": 1192,
       "DailyAverage": 563,
@@ -111,12 +133,12 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Leather vambraces",
-      "CurrentPrice": 6,
-      "DailyAverage": 3,
+      "ItemName": "Snakeskin boots",
+      "CurrentPrice": 517,
+      "DailyAverage": 258,
       "BuyLimit": 125,
-      "momentum_roc_pct": 100.0,
-      "momentum_signal": "MODERATE_UPWARD_MOMENTUM",
+      "momentum_roc_pct": 100.39,
+      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
       "volume_confirmation": "NORMAL_VOLUME",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
@@ -155,35 +177,13 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Snakeskin boots",
-      "CurrentPrice": 448,
-      "DailyAverage": 258,
-      "BuyLimit": 125,
-      "momentum_roc_pct": 73.64,
+      "ItemName": "Team-50 cape",
+      "CurrentPrice": 428,
+      "DailyAverage": 269,
+      "BuyLimit": 150,
+      "momentum_roc_pct": 59.11,
       "momentum_signal": "WEAK_UPWARD_MOMENTUM",
       "volume_confirmation": "NORMAL_VOLUME",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Monk's robe",
-      "CurrentPrice": 316,
-      "DailyAverage": 202,
-      "BuyLimit": 125,
-      "momentum_roc_pct": 56.44,
-      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
-      "volume_confirmation": "HIGH_VOLUME_SURGE",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Shortbow",
-      "CurrentPrice": 73,
-      "DailyAverage": 47,
-      "BuyLimit": 18000,
-      "momentum_roc_pct": 55.32,
-      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
-      "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
@@ -195,6 +195,17 @@
       "momentum_roc_pct": 55.07,
       "momentum_signal": "MODERATE_UPWARD_MOMENTUM",
       "volume_confirmation": "HIGH_VOLUME_SURGE",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Iron arrowtips",
+      "CurrentPrice": 17,
+      "DailyAverage": 11,
+      "BuyLimit": 10000,
+      "momentum_roc_pct": 54.55,
+      "momentum_signal": "MODERATE_UPWARD_MOMENTUM",
+      "volume_confirmation": "NORMAL_VOLUME",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
@@ -276,6 +287,17 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
+      "ItemName": "Monk's robe",
+      "CurrentPrice": 292,
+      "DailyAverage": 202,
+      "BuyLimit": 125,
+      "momentum_roc_pct": 44.55,
+      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
+      "volume_confirmation": "HIGH_VOLUME_SURGE",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
       "ItemName": "Slayer's respite",
       "CurrentPrice": 100,
       "DailyAverage": 70,
@@ -298,28 +320,6 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Iron arrowtips",
-      "CurrentPrice": 15,
-      "DailyAverage": 11,
-      "BuyLimit": 10000,
-      "momentum_roc_pct": 36.36,
-      "momentum_signal": "NO_MOMENTUM",
-      "volume_confirmation": "NORMAL_VOLUME",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Iron nails",
-      "CurrentPrice": 16,
-      "DailyAverage": 12,
-      "BuyLimit": 13000,
-      "momentum_roc_pct": 33.33,
-      "momentum_signal": "NO_MOMENTUM",
-      "volume_confirmation": "HIGH_VOLUME_SURGE",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
       "ItemName": "Leather cowl",
       "CurrentPrice": 4,
       "DailyAverage": 3,
@@ -331,24 +331,13 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Opal bolt tips",
-      "CurrentPrice": 52,
-      "DailyAverage": 39,
-      "BuyLimit": 11000,
-      "momentum_roc_pct": 33.33,
-      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
-      "volume_confirmation": "NORMAL_VOLUME",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Vial of water",
+      "ItemName": "Leather vambraces",
       "CurrentPrice": 4,
       "DailyAverage": 3,
-      "BuyLimit": 13000,
+      "BuyLimit": 125,
       "momentum_roc_pct": 33.33,
-      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
-      "volume_confirmation": "HIGH_VOLUME_SURGE",
+      "momentum_signal": "NO_MOMENTUM",
+      "volume_confirmation": "NORMAL_VOLUME",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
@@ -397,13 +386,24 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Bone bolts",
-      "CurrentPrice": 24,
-      "DailyAverage": 19,
-      "BuyLimit": 11000,
-      "momentum_roc_pct": 26.32,
-      "momentum_signal": "NO_MOMENTUM",
+      "ItemName": "Restore potion(3)",
+      "CurrentPrice": 132,
+      "DailyAverage": 102,
+      "BuyLimit": 2000,
+      "momentum_roc_pct": 29.41,
+      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
       "volume_confirmation": "NORMAL_VOLUME",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Bronze nails",
+      "CurrentPrice": 9,
+      "DailyAverage": 7,
+      "BuyLimit": 13000,
+      "momentum_roc_pct": 28.57,
+      "momentum_signal": "MODERATE_UPWARD_MOMENTUM",
+      "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
@@ -430,12 +430,23 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Mithril dart",
-      "CurrentPrice": 5,
-      "DailyAverage": 4,
-      "BuyLimit": 7000,
-      "momentum_roc_pct": 25.0,
-      "momentum_signal": "NO_MOMENTUM",
+      "ItemName": "Mithril boots",
+      "CurrentPrice": 1000,
+      "DailyAverage": 805,
+      "BuyLimit": 125,
+      "momentum_roc_pct": 24.22,
+      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
+      "volume_confirmation": "NORMAL_VOLUME",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Necklace of passage(5)",
+      "CurrentPrice": 1500,
+      "DailyAverage": 1209,
+      "BuyLimit": 10000,
+      "momentum_roc_pct": 24.07,
+      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
       "volume_confirmation": "NORMAL_VOLUME",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
@@ -474,6 +485,28 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
+      "ItemName": "Strawberry",
+      "CurrentPrice": 57,
+      "DailyAverage": 47,
+      "BuyLimit": 11000,
+      "momentum_roc_pct": 21.28,
+      "momentum_signal": "MODERATE_UPWARD_MOMENTUM",
+      "volume_confirmation": "NORMAL_VOLUME",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
+      "ItemName": "Black platelegs",
+      "CurrentPrice": 1663,
+      "DailyAverage": 1384,
+      "BuyLimit": 125,
+      "momentum_roc_pct": 20.16,
+      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
+      "volume_confirmation": "HIGH_VOLUME_SURGE",
+      "strategy_type": "TREND_FOLLOWING",
+      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
+    },
+    {
       "ItemName": "Steel 2h sword",
       "CurrentPrice": 820,
       "DailyAverage": 693,
@@ -492,28 +525,6 @@
       "momentum_roc_pct": 18.2,
       "momentum_signal": "MODERATE_UPWARD_MOMENTUM",
       "volume_confirmation": "NORMAL_VOLUME",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Necklace of passage(5)",
-      "CurrentPrice": 1429,
-      "DailyAverage": 1209,
-      "BuyLimit": 10000,
-      "momentum_roc_pct": 18.2,
-      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
-      "volume_confirmation": "NORMAL_VOLUME",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Adamant scimitar",
-      "CurrentPrice": 1823,
-      "DailyAverage": 1543,
-      "BuyLimit": 125,
-      "momentum_roc_pct": 18.15,
-      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
-      "volume_confirmation": "HIGH_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
@@ -551,24 +562,13 @@
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     },
     {
-      "ItemName": "Snakeskin bandana",
-      "CurrentPrice": 426,
-      "DailyAverage": 364,
+      "ItemName": "Studded chaps",
+      "CurrentPrice": 1000,
+      "DailyAverage": 855,
       "BuyLimit": 125,
-      "momentum_roc_pct": 17.03,
-      "momentum_signal": "WEAK_UPWARD_MOMENTUM",
-      "volume_confirmation": "HIGH_VOLUME_SURGE",
-      "strategy_type": "TREND_FOLLOWING",
-      "recommended_action": "BUY_AND_RIDE_MOMENTUM"
-    },
-    {
-      "ItemName": "Strawberry",
-      "CurrentPrice": 55,
-      "DailyAverage": 47,
-      "BuyLimit": 11000,
-      "momentum_roc_pct": 17.02,
-      "momentum_signal": "NO_MOMENTUM",
-      "volume_confirmation": "NORMAL_VOLUME",
+      "momentum_roc_pct": 16.96,
+      "momentum_signal": "MODERATE_UPWARD_MOMENTUM",
+      "volume_confirmation": "MODERATE_VOLUME_SURGE",
       "strategy_type": "TREND_FOLLOWING",
       "recommended_action": "BUY_AND_RIDE_MOMENTUM"
     }
