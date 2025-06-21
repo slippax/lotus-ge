@@ -693,14 +693,14 @@ def collect_osrs_data():
     # Generate lightweight summary files for fast API access
     generate_summary_files(conn)
 
-    # Generate manufacturing analysis summary
-    generate_manufacturing_summary(conn)
-
     # Generate alchemy floors summary
     generate_alchemy_summary(conn)
 
-    # Generate high-low spread summary
-    generate_highlow_summary(conn)
+    # Generate advanced market analysis summaries
+    generate_volatility_analysis(conn)
+    generate_volume_profile_analysis(conn)
+    generate_confluence_analysis(conn)
+    generate_recipe_arbitrage_analysis(conn)
 
     # Commit and close
     conn.commit()
@@ -800,232 +800,9 @@ def generate_summary_files(conn):
 
     logging.info(f"✓ Generated dipped items summary: {len(dipped_items)} items")
 
-    # Generate separate momentum opportunities file
-    generate_momentum_analysis(conn)
 
-def generate_momentum_analysis(conn):
-    """Generate momentum trading opportunities using research-based ROC methodology"""
-    cursor = conn.cursor()
 
-    logging.info("Generating momentum analysis using ROC methodology")
 
-    # Find items with strong upward momentum (research-based ROC > 5%)
-    cursor.execute('''
-        SELECT
-            mappingname as ItemName,
-            low as CurrentPrice,
-            VeryGranularDailyMeanLow as DailyAverage,
-            mappinglimit as BuyLimit,
-
-            -- ROC Momentum calculation (research formula)
-            ROUND(((CAST(low AS REAL) / CAST(VeryGranularDailyMeanLow AS REAL)) - 1) * 100, 2) as momentum_roc_pct,
-
-            -- Momentum classification
-            CASE
-                WHEN low > VeryGranularFiveMinuteMeanLow
-                AND VeryGranularFiveMinuteMeanLow > VeryGranularHourlyMeanLow
-                AND VeryGranularHourlyMeanLow > VeryGranularDailyMeanLow
-                THEN 'STRONG_UPWARD_MOMENTUM'
-
-                WHEN low > VeryGranularFiveMinuteMeanLow
-                AND VeryGranularFiveMinuteMeanLow > VeryGranularHourlyMeanLow
-                THEN 'MODERATE_UPWARD_MOMENTUM'
-
-                WHEN low > VeryGranularFiveMinuteMeanLow
-                THEN 'WEAK_UPWARD_MOMENTUM'
-
-                ELSE 'NO_MOMENTUM'
-            END as momentum_signal,
-
-            -- Volume surge detection (momentum confirmation)
-            CASE
-                WHEN VeryGranularDailyMeanVolumeLow > WeeklyMeanVolumeLow * 1.5
-                THEN 'HIGH_VOLUME_SURGE'
-                WHEN VeryGranularDailyMeanVolumeLow > WeeklyMeanVolumeLow * 1.2
-                THEN 'MODERATE_VOLUME_SURGE'
-                ELSE 'NORMAL_VOLUME'
-            END as volume_confirmation
-
-        FROM MasterTable
-        WHERE low > 0
-        AND VeryGranularFiveMinuteMeanLow > 0
-        AND VeryGranularHourlyMeanLow > 0
-        AND VeryGranularDailyMeanLow > 0
-        AND WeeklyMeanVolumeLow > 0
-
-        -- Filter for momentum items only (ROC > 2% minimum)
-        AND ((CAST(low AS REAL) / CAST(VeryGranularDailyMeanLow AS REAL)) - 1) * 100 > 2
-
-        -- Filter for reasonable trading volume
-        AND mappinglimit > 100
-
-        ORDER BY momentum_roc_pct DESC
-        LIMIT 50
-    ''')
-
-    results = cursor.fetchall()
-
-    momentum_items = []
-    for row in results:
-        momentum_items.append({
-            'ItemName': row[0],
-            'CurrentPrice': row[1],
-            'DailyAverage': int(row[2]) if row[2] else 0,
-            'BuyLimit': row[3] if row[3] else 0,
-            'momentum_roc_pct': float(row[4]) if row[4] else 0.0,
-            'momentum_signal': row[5] if len(row) > 5 else 'NO_MOMENTUM',
-            'volume_confirmation': row[6] if len(row) > 6 else 'NORMAL_VOLUME',
-            'strategy_type': 'TREND_FOLLOWING',
-            'recommended_action': 'BUY_AND_RIDE_MOMENTUM'
-        })
-
-    # Add time-of-day context
-    current_hour = datetime.now(timezone.utc).hour
-
-    if 18 <= current_hour <= 22:
-        trading_context = {
-            'activity_level': 'PEAK_ACTIVITY',
-            'description': 'UK Evening - Best time for momentum trading',
-            'momentum_reliability': 'HIGH'
-        }
-    elif 6 <= current_hour <= 12:
-        trading_context = {
-            'activity_level': 'LOW_ACTIVITY',
-            'description': 'UK Morning - Lower momentum reliability',
-            'momentum_reliability': 'LOW'
-        }
-    else:
-        trading_context = {
-            'activity_level': 'MODERATE_ACTIVITY',
-            'description': 'UK Afternoon - Moderate momentum signals',
-            'momentum_reliability': 'MODERATE'
-        }
-
-    # Save momentum analysis
-    with open('data/summaries/momentum-items.json', 'w') as f:
-        json.dump({
-            'updated': datetime.now(timezone.utc).isoformat(),
-            'strategy': 'MOMENTUM_TRADING',
-            'methodology': 'ROC_Based_Trend_Following',
-            'description': 'Items showing upward price momentum - ride the trend strategy',
-            'collection_context': {
-                'trading_window': trading_context['activity_level'],
-                'collection_hour_gmt': current_hour,
-                'description': trading_context['description'],
-                'momentum_reliability': trading_context['momentum_reliability']
-            },
-            'momentum_intelligence': {
-                'total_momentum_opportunities': len(momentum_items),
-                'strong_momentum_count': len([item for item in momentum_items if item.get('momentum_signal') == 'STRONG_UPWARD_MOMENTUM']),
-                'high_volume_count': len([item for item in momentum_items if item.get('volume_confirmation') == 'HIGH_VOLUME_SURGE']),
-                'avg_momentum_strength': round(sum([item.get('momentum_roc_pct', 0) for item in momentum_items]) / max(1, len(momentum_items)), 2)
-            },
-            'trading_strategy': {
-                'approach': 'Buy items showing upward momentum, sell when momentum weakens',
-                'hold_time': '1-7 days typically',
-                'risk_level': 'MODERATE_TO_HIGH',
-                'best_market_conditions': 'Trending/volatile markets'
-            },
-            'items': momentum_items
-        }, f, indent=2)
-
-    logging.info(f"✓ Generated momentum analysis summary: {len(momentum_items)} items")
-
-def generate_manufacturing_summary(conn):
-    """Generate manufacturing analysis summary using EXACT research methodology"""
-    cursor = conn.cursor()
-
-    # Check if MasterTable exists
-    cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='MasterTable'")
-    if not cursor.fetchone():
-        logging.warning("MasterTable not found - skipping manufacturing analysis")
-        return
-
-    # Use EXACT table-based methodology from Report #3
-    logging.info("Generating manufacturing analysis using VeryGranular methodology")
-
-    # Cleanup any existing temporary tables first
-    cursor.executescript("DROP TABLE IF EXISTS LowEffortRecipeTable; DROP TABLE IF EXISTS LowEffortRecipeTableTax; DROP TABLE IF EXISTS MaxTax; DROP TABLE IF EXISTS MinTax; DROP TABLE IF EXISTS LowEffortRecipeTable1; DROP TABLE IF EXISTS LowEffortRecipeTable2; DROP TABLE IF EXISTS FinalOutput")
-
-    # Step 1: Create LowEffortRecipeTable (line 113)
-    cursor.execute("CREATE TABLE LowEffortRecipeTable AS SELECT * FROM MasterTable WHERE ProductName IS NOT NULL")
-
-    # Step 2: Add ingredient price columns (line 114)
-    cursor.executescript("ALTER TABLE LowEffortRecipeTable ADD ingredient1lowprice; ALTER TABLE LowEffortRecipeTable ADD ingredient2lowprice; ALTER TABLE LowEffortRecipeTable ADD ingredient3lowprice")
-
-    # Step 3: Update ingredient prices (line 115)
-    cursor.executescript("UPDATE LowEffortRecipeTable SET ingredient1lowprice = coalesce((SELECT MasterTable.low FROM MasterTable WHERE LowEffortRecipeTable.ingredient1id = MasterTable.id), 0); UPDATE LowEffortRecipeTable SET ingredient2lowprice = coalesce((SELECT MasterTable.low FROM MasterTable WHERE LowEffortRecipeTable.ingredient2id = MasterTable.id), 0); UPDATE LowEffortRecipeTable SET ingredient3lowprice = coalesce((SELECT MasterTable.low FROM MasterTable WHERE LowEffortRecipeTable.ingredient3id = MasterTable.id), 0)")
-
-    # Step 4: Add ingredient buylimit columns (line 116)
-    cursor.executescript("ALTER TABLE LowEffortRecipeTable ADD ingredient1buylimit; ALTER TABLE LowEffortRecipeTable ADD ingredient2buylimit; ALTER TABLE LowEffortRecipeTable ADD ingredient3buylimit")
-
-    # Step 5: Update ingredient buylimits (line 117)
-    cursor.executescript("UPDATE LowEffortRecipeTable SET ingredient1buylimit = (SELECT MasterTable.mappinglimit FROM MasterTable WHERE LowEffortRecipeTable.ingredient1id = MasterTable.id); UPDATE LowEffortRecipeTable SET ingredient2buylimit = (SELECT MasterTable.mappinglimit FROM MasterTable WHERE LowEffortRecipeTable.ingredient2id = MasterTable.id); UPDATE LowEffortRecipeTable SET ingredient3buylimit = (SELECT MasterTable.mappinglimit FROM MasterTable WHERE LowEffortRecipeTable.ingredient3id = MasterTable.id)")
-
-    # Step 6: Add ingredient volume columns (line 118)
-    cursor.executescript("ALTER TABLE LowEffortRecipeTable ADD ingredient1hourlylowvolume; ALTER TABLE LowEffortRecipeTable ADD ingredient2hourlylowvolume; ALTER TABLE LowEffortRecipeTable ADD ingredient3hourlylowvolume")
-
-    # Step 7: Update ingredient volumes (line 119)
-    cursor.executescript("UPDATE LowEffortRecipeTable SET ingredient1hourlylowvolume = (SELECT MasterTable.GranularDailyMeanVolumeLow FROM MasterTable WHERE LowEffortRecipeTable.ingredient1id = MasterTable.id); UPDATE LowEffortRecipeTable SET ingredient2hourlylowvolume = (SELECT MasterTable.GranularDailyMeanVolumeLow FROM MasterTable WHERE LowEffortRecipeTable.ingredient2id = MasterTable.id); UPDATE LowEffortRecipeTable SET ingredient3hourlylowvolume = (SELECT MasterTable.GranularDailyMeanVolumeLow FROM MasterTable WHERE LowEffortRecipeTable.ingredient3id = MasterTable.id)")
-
-    # Step 8: Create LowEffortRecipeTableTax (line 120)
-    cursor.execute("CREATE TABLE LowEffortRecipeTableTax AS SELECT * FROM LowEffortRecipeTable")
-
-    # Step 9: Add Tax column (line 121)
-    cursor.execute("ALTER TABLE LowEffortRecipeTableTax ADD COLUMN Tax")
-
-    # Step 10: Create MaxTax and MinTax tables (lines 122-123)
-    cursor.execute("CREATE TABLE MaxTax AS SELECT * FROM LowEffortRecipeTableTax WHERE round(GranularDailyMeanHigh) > 500000000")
-    cursor.execute("CREATE TABLE MinTax AS SELECT * FROM LowEffortRecipeTableTax WHERE round(GranularDailyMeanHigh) <= 500000000")
-
-    # Step 11: Drop intermediate tables (line 124)
-    cursor.executescript("DROP TABLE LowEffortRecipeTableTax; DROP TABLE LowEffortRecipeTable")
-
-    # Step 12: Update Tax values (lines 125-126)
-    cursor.execute("UPDATE MaxTax SET Tax = 5000000 + ProcessingCost")
-    cursor.execute("UPDATE MinTax SET Tax = round((GranularDailyMeanHigh * 0.01) - 0.5) + ProcessingCost")
-
-    # Step 13: Recreate LowEffortRecipeTable (line 127)
-    cursor.execute("CREATE TABLE LowEffortRecipeTable AS SELECT * FROM MaxTax UNION SELECT * FROM MinTax")
-
-    # Step 14: Create LowEffortRecipeTable1 with EXACT EffectiveBuyLimit logic (line 128)
-    cursor.execute("CREATE TABLE LowEffortRecipeTable1 AS SELECT *, (ingredient1lowprice * ingredient1Qty) + (ingredient2lowprice * ingredient2Qty) + (ingredient3lowprice * ingredient3Qty) AS TotalLowCost, min(coalesce(ingredient1buylimit / ingredient1Qty, 'none'), coalesce(ingredient2buylimit / ingredient2Qty, 'none'), coalesce(ingredient3buylimit / ingredient3Qty, 'none'), coalesce((ingredient1hourlylowvolume * 4) / ingredient1Qty, 'none'), coalesce((ingredient2hourlylowvolume * 4) / ingredient2Qty, 'none'), coalesce((ingredient3hourlylowvolume * 4) / ingredient3Qty, 'none')) AS EffectiveBuyLimit FROM LowEffortRecipeTable")
-
-    # Step 15: Create LowEffortRecipeTable2 (line 129)
-    cursor.execute("CREATE TABLE LowEffortRecipeTable2 AS SELECT *, round(QtyProduced * (high - TotalLowCost - Tax)) AS HighMargin, round(QtyProduced * (low - TotalLowCost - Tax)) AS LowMargin FROM LowEffortRecipeTable1")
-
-    # Step 16: Create FinalOutput (line 130)
-    cursor.execute("CREATE TABLE FinalOutput AS SELECT ProductName AS ItemName, RecipeType, HighMargin, LowMargin, round(HighMargin * EffectiveBuyLimit) AS HighMaxProfit, round(LowMargin * EffectiveBuyLimit) AS LowMaxProfit FROM LowEffortRecipeTable2 WHERE HighMargin + LowMargin > 0  ORDER BY HighMaxProfit DESC")
-
-    # Step 17: Get results (line 133 equivalent)
-    cursor.execute("SELECT * FROM FinalOutput")
-
-    # Fetch results before cleanup
-    results = cursor.fetchall()
-
-    manufacturing_items = []
-    for row in results:
-        manufacturing_items.append({
-            'ItemName': row[0],
-            'RecipeType': row[1],
-            'HighMargin': row[2] if row[2] else 0,
-            'LowMargin': row[3] if row[3] else 0,
-            'HighMaxProfit': row[4] if row[4] else 0,
-            'LowMaxProfit': row[5] if row[5] else 0
-        })
-
-    # Step 18: Cleanup tables (line 137 equivalent)
-    cursor.executescript("DROP TABLE IF EXISTS LowEffortRecipeTable; DROP TABLE IF EXISTS LowEffortRecipeTableTax; DROP TABLE IF EXISTS MaxTax; DROP TABLE IF EXISTS MinTax; DROP TABLE IF EXISTS LowEffortRecipeTable; DROP TABLE IF EXISTS LowEffortRecipeTable1; DROP TABLE IF EXISTS LowEffortRecipeTable2; DROP TABLE IF EXISTS FinalOutput")
-
-    # Save manufacturing summary
-    with open('data/summaries/manufacturing-analysis.json', 'w') as f:
-        json.dump({
-            'updated': datetime.now(timezone.utc).isoformat(),
-            'items': manufacturing_items,
-            'methodology': 'VeryGranular'
-        }, f, indent=2)
-
-    logging.info(f"✓ Generated manufacturing analysis summary: {len(manufacturing_items)} items")
 
 def generate_alchemy_summary(conn):
     """Generate alchemy floors summary using EXACT research methodology"""
@@ -1100,80 +877,526 @@ def generate_alchemy_summary(conn):
 
     logging.info(f"✓ Generated alchemy floors summary: {len(alchemy_items)} items")
 
-def generate_highlow_summary(conn):
-    """Generate high-low spread summary using EXACT research methodology"""
+
+
+def generate_volatility_analysis(conn):
+    """Generate volatility breakout analysis using multi-timeframe Min/Max data"""
     cursor = conn.cursor()
+
+    logging.info("Generating volatility breakout analysis using VeryGranular methodology")
 
     # Check if MasterTable exists
     cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='MasterTable'")
     if not cursor.fetchone():
-        logging.warning("MasterTable not found - skipping high-low analysis")
+        logging.warning("MasterTable not found - skipping volatility analysis")
         return
 
-    # Use EXACT table-based methodology from Report #4
-    logging.info("Generating high-low spread analysis using VeryGranular methodology")
+    # Identify volatility compression and potential breakouts
+    cursor.execute('''
+        SELECT
+            mappingname as ItemName,
+            low as CurrentPrice,
+            mappinglimit as BuyLimit,
 
-    # Cleanup any existing temporary tables first
-    cursor.executescript("DROP TABLE IF EXISTS MasterTableTax; DROP TABLE IF EXISTS MaxTax; DROP TABLE IF EXISTS MinTax; DROP TABLE IF EXISTS DailyCSVwithTax; DROP TABLE IF EXISTS NoBuyLimit; DROP TABLE IF EXISTS WithBuyLimit; DROP TABLE IF EXISTS DailyCSVwithProfit; DROP TABLE IF EXISTS FinalOutput")
+            -- Calculate volatility ranges for different timeframes
+            (VeryGranularDailyMaxLow - VeryGranularDailyMinLow) as DailyRange,
+            (WeeklyMaxLow - WeeklyMinLow) as WeeklyRange,
+            (MonthlyMaxLow - MonthlyMinLow) as MonthlyRange,
 
-    # Step 1: Create MasterTableTax (line 140)
-    cursor.execute("CREATE TABLE MasterTableTax AS SELECT * FROM MasterTable")
+            -- Volatility compression ratio (daily vs weekly)
+            ROUND(
+                CAST((VeryGranularDailyMaxLow - VeryGranularDailyMinLow) AS REAL) /
+                CAST((WeeklyMaxLow - WeeklyMinLow) AS REAL) * 100, 2
+            ) as CompressionRatio,
 
-    # Step 2: Add Tax column (line 141)
-    cursor.execute("ALTER TABLE MasterTableTax ADD COLUMN Tax")
+            -- Breakout potential (current price vs range boundaries)
+            CASE
+                WHEN low >= (VeryGranularDailyMaxLow * 0.95) THEN 'UPPER_BREAKOUT_IMMINENT'
+                WHEN low <= (VeryGranularDailyMinLow * 1.05) THEN 'LOWER_BREAKOUT_IMMINENT'
+                WHEN low > VeryGranularDailyMeanLow THEN 'UPPER_BIAS'
+                WHEN low < VeryGranularDailyMeanLow THEN 'LOWER_BIAS'
+                ELSE 'NEUTRAL'
+            END as BreakoutDirection,
 
-    # Step 3: Create MaxTax and MinTax tables (lines 142-143)
-    cursor.execute("CREATE TABLE MaxTax AS SELECT * FROM MasterTableTax WHERE round(GranularDailyMeanHigh) > 500000000")
-    cursor.execute("CREATE TABLE MinTax AS SELECT * FROM MasterTableTax WHERE round(GranularDailyMeanHigh) <= 500000000")
+            -- Volume confirmation for breakout
+            CASE
+                WHEN VeryGranularDailyMeanVolumeLow > WeeklyMeanVolumeLow * 1.3
+                THEN 'HIGH_VOLUME_CONFIRMATION'
+                WHEN VeryGranularDailyMeanVolumeLow > WeeklyMeanVolumeLow * 1.1
+                THEN 'MODERATE_VOLUME_CONFIRMATION'
+                ELSE 'LOW_VOLUME'
+            END as VolumeConfirmation,
 
-    # Step 4: Update Tax values (lines 144-145)
-    cursor.execute("UPDATE MaxTax SET Tax = 5000000")
-    cursor.execute("UPDATE MinTax SET Tax = round((GranularDailyMeanHigh * 0.01) - 0.5)")
+            -- Potential profit calculation (assuming 10% breakout move)
+            ROUND((low * 0.10) * mappinglimit, 0) as PotentialBreakoutProfit,
 
-    # Step 5: Create DailyCSVwithTax (line 146)
-    cursor.execute("CREATE TABLE DailyCSVwithTax AS SELECT * FROM MaxTax UNION SELECT * FROM MinTax")
+            -- Risk score (lower compression = higher breakout probability)
+            CASE
+                WHEN (VeryGranularDailyMaxLow - VeryGranularDailyMinLow) < (WeeklyMaxLow - WeeklyMinLow) * 0.3
+                THEN 'HIGH_COMPRESSION'
+                WHEN (VeryGranularDailyMaxLow - VeryGranularDailyMinLow) < (WeeklyMaxLow - WeeklyMinLow) * 0.5
+                THEN 'MODERATE_COMPRESSION'
+                ELSE 'LOW_COMPRESSION'
+            END as CompressionLevel
 
-    # Step 6: Create NoBuyLimit and WithBuyLimit tables (lines 147-148)
-    cursor.execute("CREATE TABLE NoBuyLimit AS SELECT *, ((GranularDailyMeanHigh - GranularDailyMeanLow - Tax) * 24 * MIN(GranularDailyMeanVolumeLow, GranularDailyMeanVolumeHigh)) AS NoBuyLimitProfit FROM DailyCSVwithTax")
-    cursor.execute("CREATE TABLE WithBuyLimit AS SELECT id, ((GranularDailyMeanHigh - GranularDailyMeanLow - Tax) * mappinglimit) AS WithBuyLimitProfit FROM DailyCSVwithTax")
+        FROM MasterTable
+        WHERE low > 0
+        AND VeryGranularDailyMaxLow > 0
+        AND VeryGranularDailyMinLow > 0
+        AND WeeklyMaxLow > 0
+        AND WeeklyMinLow > 0
+        AND MonthlyMaxLow > 0
+        AND MonthlyMinLow > 0
+        AND mappinglimit > 100
 
-    # Step 7: Create DailyCSVwithProfit (line 149)
-    cursor.execute("CREATE TABLE DailyCSVwithProfit AS SELECT *, MIN(NoBuyLimit.NoBuyLimitProfit, COALESCE(WithBuyLimit.WithBuyLimitProfit, 'NONE')) AS AdjustedPotentialDailyProfit FROM NoBuyLimit, WithBuyLimit WHERE NoBuyLimit.id = WithBuyLimit.id")
+        -- Filter for compressed volatility (daily range < 50% of weekly range)
+        AND (VeryGranularDailyMaxLow - VeryGranularDailyMinLow) < (WeeklyMaxLow - WeeklyMinLow) * 0.5
 
-    # Step 8: Create FinalOutput (line 150)
-    cursor.execute("CREATE TABLE FinalOutput AS SELECT *, ((GranularDailyMeanHigh - GranularDailyMeanLow - Tax) / GranularDailyMeanLow) * 100 AS ROI FROM DailyCSVwithProfit ORDER BY AdjustedPotentialDailyProfit DESC")
+        -- Filter for reasonable price levels (avoid penny stocks)
+        AND low > 1000
 
-    # Step 9: Get results with EXACT WHERE clause (line 153)
-    cursor.execute("SELECT mappingname AS ItemName, round(GranularDailyMeanVolumeLow * 24) AS LowVol, round(GranularDailyMeanVolumeHigh * 24) AS HighVol, round(GranularDailyMeanLow) AS LowPrice, round(GranularDailyMeanHigh) AS HighPrice, round(AdjustedPotentialDailyProfit) AS DailyProfit, mappinglimit AS BuyLimit, round(ROI) AS pctROI FROM FinalOutput WHERE ROI > 4 AND AdjustedPotentialDailyProfit > 500000 AND MIN(GranularDailyMeanVolumeHigh, GranularDailyMeanVolumeLow) > 4 AND (MonthlyMeanVolumeLow + MonthlyMeanVolumeHigh) > 12 * (GranularDailyMeanVolumeLow + GranularDailyMeanVolumeHigh) AND MonthlyMaxHigh > MonthlyMaxLow AND (high - low - tax) > 0 AND MonthlyMedianVolumeHigh > 0 AND MonthlyMedianVolumeLow > 0 AND GranularDailyMedianVolumeHigh > 0 AND GranularDailyMedianVolumeLow > 0")
+        ORDER BY CompressionRatio ASC, PotentialBreakoutProfit DESC
+        LIMIT 50
+    ''')
 
-    # Fetch results before cleanup
     results = cursor.fetchall()
 
-    # Step 10: Cleanup tables (line 157 equivalent)
-    cursor.executescript("DROP TABLE IF EXISTS MasterTableTax; DROP TABLE IF EXISTS MaxTax; DROP TABLE IF EXISTS MinTax; DROP TABLE IF EXISTS DailyCSVwithTax; DROP TABLE IF EXISTS NoBuyLimit; DROP TABLE IF EXISTS WithBuyLimit; DROP TABLE IF EXISTS DailyCSVwithProfit; DROP TABLE IF EXISTS FinalOutput")
-
-    highlow_items = []
+    volatility_items = []
     for row in results:
-        highlow_items.append({
+        volatility_items.append({
             'ItemName': row[0],
-            'LowVol': row[1] if row[1] else 0,
-            'HighVol': row[2] if row[2] else 0,
-            'LowPrice': row[3] if row[3] else 0,
-            'HighPrice': row[4] if row[4] else 0,
-            'DailyProfit': row[5] if row[5] else 0,
-            'BuyLimit': row[6] if row[6] else 0,
-            'pctROI': row[7] if row[7] else 0
+            'CurrentPrice': row[1] if row[1] else 0,
+            'BuyLimit': row[2] if row[2] else 0,
+            'DailyRange': row[3] if row[3] else 0,
+            'WeeklyRange': row[4] if row[4] else 0,
+            'MonthlyRange': row[5] if row[5] else 0,
+            'CompressionRatio': float(row[6]) if row[6] else 0.0,
+            'BreakoutDirection': row[7] if row[7] else 'NEUTRAL',
+            'VolumeConfirmation': row[8] if row[8] else 'LOW_VOLUME',
+            'PotentialBreakoutProfit': row[9] if row[9] else 0,
+            'CompressionLevel': row[10] if row[10] else 'LOW_COMPRESSION'
         })
 
-    # Save high-low summary
-    with open('data/summaries/highlow-spread.json', 'w') as f:
+    # Save volatility analysis summary
+    with open('data/summaries/volatility-breakout.json', 'w') as f:
         json.dump({
             'updated': datetime.now(timezone.utc).isoformat(),
-            'items': highlow_items,
-            'methodology': 'VeryGranular'
+            'items': volatility_items,
+            'methodology': 'VeryGranular_VolatilityCompression'
         }, f, indent=2)
 
-    logging.info(f"✓ Generated high-low spread summary: {len(highlow_items)} items")
+    logging.info(f"✓ Generated volatility breakout summary: {len(volatility_items)} items")
+
+def generate_volume_profile_analysis(conn):
+    """Generate volume profile analysis to detect accumulation/distribution patterns"""
+    cursor = conn.cursor()
+
+    logging.info("Generating volume profile analysis using VeryGranular methodology")
+
+    # Check if MasterTable exists
+    cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='MasterTable'")
+    if not cursor.fetchone():
+        logging.warning("MasterTable not found - skipping volume profile analysis")
+        return
+
+    # Analyze volume patterns at different price levels
+    cursor.execute('''
+        SELECT
+            mappingname as ItemName,
+            low as CurrentPrice,
+            high as CurrentHigh,
+            mappinglimit as BuyLimit,
+
+            -- Volume analysis at different price levels
+            VeryGranularDailyMeanVolumeLow as LowPriceVolume,
+            VeryGranularDailyMeanVolumeHigh as HighPriceVolume,
+            WeeklyMeanVolumeLow as WeeklyLowVolume,
+            WeeklyMeanVolumeHigh as WeeklyHighVolume,
+
+            -- Volume imbalance detection
+            ROUND(
+                CAST(VeryGranularDailyMeanVolumeLow AS REAL) /
+                CAST(VeryGranularDailyMeanVolumeHigh AS REAL), 2
+            ) as VolumeImbalanceRatio,
+
+            -- Accumulation/Distribution signal
+            CASE
+                WHEN VeryGranularDailyMeanVolumeLow > VeryGranularDailyMeanVolumeHigh * 2
+                THEN 'STRONG_ACCUMULATION'
+                WHEN VeryGranularDailyMeanVolumeLow > VeryGranularDailyMeanVolumeHigh * 1.5
+                THEN 'MODERATE_ACCUMULATION'
+                WHEN VeryGranularDailyMeanVolumeHigh > VeryGranularDailyMeanVolumeLow * 2
+                THEN 'STRONG_DISTRIBUTION'
+                WHEN VeryGranularDailyMeanVolumeHigh > VeryGranularDailyMeanVolumeLow * 1.5
+                THEN 'MODERATE_DISTRIBUTION'
+                ELSE 'BALANCED'
+            END as VolumePattern,
+
+            -- Volume surge detection
+            CASE
+                WHEN VeryGranularDailyMeanVolumeLow > WeeklyMeanVolumeLow * 3
+                THEN 'EXTREME_VOLUME_SURGE'
+                WHEN VeryGranularDailyMeanVolumeLow > WeeklyMeanVolumeLow * 2
+                THEN 'HIGH_VOLUME_SURGE'
+                WHEN VeryGranularDailyMeanVolumeLow > WeeklyMeanVolumeLow * 1.5
+                THEN 'MODERATE_VOLUME_SURGE'
+                ELSE 'NORMAL_VOLUME'
+            END as VolumeSurge,
+
+            -- Smart money indicator (high volume + price near lows)
+            CASE
+                WHEN VeryGranularDailyMeanVolumeLow > WeeklyMeanVolumeLow * 1.5
+                AND low <= VeryGranularDailyMeanLow * 1.02
+                THEN 'SMART_MONEY_ACCUMULATION'
+                WHEN VeryGranularDailyMeanVolumeHigh > WeeklyMeanVolumeHigh * 1.5
+                AND high >= VeryGranularDailyMeanHigh * 0.98
+                THEN 'SMART_MONEY_DISTRIBUTION'
+                ELSE 'NO_SMART_MONEY_SIGNAL'
+            END as SmartMoneySignal,
+
+            -- Potential profit based on volume pattern
+            CASE
+                WHEN VeryGranularDailyMeanVolumeLow > VeryGranularDailyMeanVolumeHigh * 1.5
+                THEN ROUND((VeryGranularDailyMeanLow - low) * mappinglimit, 0)
+                ELSE 0
+            END as AccumulationProfit
+
+        FROM MasterTable
+        WHERE low > 0
+        AND high > 0
+        AND VeryGranularDailyMeanVolumeLow > 0
+        AND VeryGranularDailyMeanVolumeHigh > 0
+        AND WeeklyMeanVolumeLow > 0
+        AND WeeklyMeanVolumeHigh > 0
+        AND mappinglimit > 100
+
+        -- Filter for significant volume activity
+        AND (VeryGranularDailyMeanVolumeLow + VeryGranularDailyMeanVolumeHigh) > 100
+
+        -- Filter for items with volume imbalance
+        AND ABS(VeryGranularDailyMeanVolumeLow - VeryGranularDailyMeanVolumeHigh) >
+            (VeryGranularDailyMeanVolumeLow + VeryGranularDailyMeanVolumeHigh) * 0.3
+
+        ORDER BY VolumeImbalanceRatio DESC
+        LIMIT 50
+    ''')
+
+    results = cursor.fetchall()
+
+    volume_items = []
+    for row in results:
+        volume_items.append({
+            'ItemName': row[0],
+            'CurrentPrice': row[1] if row[1] else 0,
+            'CurrentHigh': row[2] if row[2] else 0,
+            'BuyLimit': row[3] if row[3] else 0,
+            'LowPriceVolume': row[4] if row[4] else 0,
+            'HighPriceVolume': row[5] if row[5] else 0,
+            'WeeklyLowVolume': row[6] if row[6] else 0,
+            'WeeklyHighVolume': row[7] if row[7] else 0,
+            'VolumeImbalanceRatio': float(row[8]) if row[8] else 0.0,
+            'VolumePattern': row[9] if row[9] else 'BALANCED',
+            'VolumeSurge': row[10] if row[10] else 'NORMAL_VOLUME',
+            'SmartMoneySignal': row[11] if row[11] else 'NO_SMART_MONEY_SIGNAL',
+            'AccumulationProfit': row[12] if row[12] else 0
+        })
+
+    # Save volume profile summary
+    with open('data/summaries/volume-profile.json', 'w') as f:
+        json.dump({
+            'updated': datetime.now(timezone.utc).isoformat(),
+            'items': volume_items,
+            'methodology': 'VeryGranular_VolumeProfile'
+        }, f, indent=2)
+
+    logging.info(f"✓ Generated volume profile summary: {len(volume_items)} items")
+
+def generate_confluence_analysis(conn):
+    """Generate multi-timeframe confluence analysis for strong directional signals"""
+    cursor = conn.cursor()
+
+    logging.info("Generating confluence analysis using VeryGranular methodology")
+
+    # Check if MasterTable exists
+    cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='MasterTable'")
+    if not cursor.fetchone():
+        logging.warning("MasterTable not found - skipping confluence analysis")
+        return
+
+    # Analyze multi-timeframe alignment
+    cursor.execute('''
+        SELECT
+            mappingname as ItemName,
+            low as CurrentPrice,
+            mappinglimit as BuyLimit,
+
+            -- Current price vs all timeframe means
+            VeryGranularFiveMinuteMeanLow as FiveMinMean,
+            VeryGranularHourlyMeanLow as HourlyMean,
+            VeryGranularDailyMeanLow as DailyMean,
+            WeeklyMeanLow as WeeklyMean,
+            MonthlyMeanLow as MonthlyMean,
+
+            -- Confluence scoring (how many timeframes align)
+            (CASE WHEN low > VeryGranularFiveMinuteMeanLow THEN 1 ELSE 0 END +
+             CASE WHEN VeryGranularFiveMinuteMeanLow > VeryGranularHourlyMeanLow THEN 1 ELSE 0 END +
+             CASE WHEN VeryGranularHourlyMeanLow > VeryGranularDailyMeanLow THEN 1 ELSE 0 END +
+             CASE WHEN VeryGranularDailyMeanLow > WeeklyMeanLow THEN 1 ELSE 0 END +
+             CASE WHEN WeeklyMeanLow > MonthlyMeanLow THEN 1 ELSE 0 END) as BullishConfluence,
+
+            (CASE WHEN low < VeryGranularFiveMinuteMeanLow THEN 1 ELSE 0 END +
+             CASE WHEN VeryGranularFiveMinuteMeanLow < VeryGranularHourlyMeanLow THEN 1 ELSE 0 END +
+             CASE WHEN VeryGranularHourlyMeanLow < VeryGranularDailyMeanLow THEN 1 ELSE 0 END +
+             CASE WHEN VeryGranularDailyMeanLow < WeeklyMeanLow THEN 1 ELSE 0 END +
+             CASE WHEN WeeklyMeanLow < MonthlyMeanLow THEN 1 ELSE 0 END) as BearishConfluence,
+
+            -- Signal strength
+            CASE
+                WHEN (CASE WHEN low > VeryGranularFiveMinuteMeanLow THEN 1 ELSE 0 END +
+                      CASE WHEN VeryGranularFiveMinuteMeanLow > VeryGranularHourlyMeanLow THEN 1 ELSE 0 END +
+                      CASE WHEN VeryGranularHourlyMeanLow > VeryGranularDailyMeanLow THEN 1 ELSE 0 END +
+                      CASE WHEN VeryGranularDailyMeanLow > WeeklyMeanLow THEN 1 ELSE 0 END +
+                      CASE WHEN WeeklyMeanLow > MonthlyMeanLow THEN 1 ELSE 0 END) >= 4
+                THEN 'STRONG_BULLISH'
+                WHEN (CASE WHEN low > VeryGranularFiveMinuteMeanLow THEN 1 ELSE 0 END +
+                      CASE WHEN VeryGranularFiveMinuteMeanLow > VeryGranularHourlyMeanLow THEN 1 ELSE 0 END +
+                      CASE WHEN VeryGranularHourlyMeanLow > VeryGranularDailyMeanLow THEN 1 ELSE 0 END +
+                      CASE WHEN VeryGranularDailyMeanLow > WeeklyMeanLow THEN 1 ELSE 0 END +
+                      CASE WHEN WeeklyMeanLow > MonthlyMeanLow THEN 1 ELSE 0 END) = 3
+                THEN 'MODERATE_BULLISH'
+                WHEN (CASE WHEN low < VeryGranularFiveMinuteMeanLow THEN 1 ELSE 0 END +
+                      CASE WHEN VeryGranularFiveMinuteMeanLow < VeryGranularHourlyMeanLow THEN 1 ELSE 0 END +
+                      CASE WHEN VeryGranularHourlyMeanLow < VeryGranularDailyMeanLow THEN 1 ELSE 0 END +
+                      CASE WHEN VeryGranularDailyMeanLow < WeeklyMeanLow THEN 1 ELSE 0 END +
+                      CASE WHEN WeeklyMeanLow < MonthlyMeanLow THEN 1 ELSE 0 END) >= 4
+                THEN 'STRONG_BEARISH'
+                WHEN (CASE WHEN low < VeryGranularFiveMinuteMeanLow THEN 1 ELSE 0 END +
+                      CASE WHEN VeryGranularFiveMinuteMeanLow < VeryGranularHourlyMeanLow THEN 1 ELSE 0 END +
+                      CASE WHEN VeryGranularHourlyMeanLow < VeryGranularDailyMeanLow THEN 1 ELSE 0 END +
+                      CASE WHEN VeryGranularDailyMeanLow < WeeklyMeanLow THEN 1 ELSE 0 END +
+                      CASE WHEN WeeklyMeanLow < MonthlyMeanLow THEN 1 ELSE 0 END) = 3
+                THEN 'MODERATE_BEARISH'
+                ELSE 'MIXED_SIGNALS'
+            END as SignalStrength,
+
+            -- Volume confirmation
+            CASE
+                WHEN VeryGranularDailyMeanVolumeLow > WeeklyMeanVolumeLow * 1.5
+                THEN 'VOLUME_CONFIRMED'
+                WHEN VeryGranularDailyMeanVolumeLow > WeeklyMeanVolumeLow * 1.2
+                THEN 'VOLUME_SUPPORTED'
+                ELSE 'WEAK_VOLUME'
+            END as VolumeConfirmation,
+
+            -- Potential profit calculation
+            ROUND(
+                CASE
+                    WHEN (CASE WHEN low > VeryGranularFiveMinuteMeanLow THEN 1 ELSE 0 END +
+                          CASE WHEN VeryGranularFiveMinuteMeanLow > VeryGranularHourlyMeanLow THEN 1 ELSE 0 END +
+                          CASE WHEN VeryGranularHourlyMeanLow > VeryGranularDailyMeanLow THEN 1 ELSE 0 END +
+                          CASE WHEN VeryGranularDailyMeanLow > WeeklyMeanLow THEN 1 ELSE 0 END +
+                          CASE WHEN WeeklyMeanLow > MonthlyMeanLow THEN 1 ELSE 0 END) >= 4
+                    THEN (WeeklyMeanLow - low) * mappinglimit
+                    ELSE 0
+                END, 0
+            ) as PotentialProfit
+
+        FROM MasterTable
+        WHERE low > 0
+        AND VeryGranularFiveMinuteMeanLow > 0
+        AND VeryGranularHourlyMeanLow > 0
+        AND VeryGranularDailyMeanLow > 0
+        AND WeeklyMeanLow > 0
+        AND MonthlyMeanLow > 0
+        AND mappinglimit > 100
+
+        -- Filter for strong confluence (3+ timeframes aligned)
+        AND ((CASE WHEN low > VeryGranularFiveMinuteMeanLow THEN 1 ELSE 0 END +
+              CASE WHEN VeryGranularFiveMinuteMeanLow > VeryGranularHourlyMeanLow THEN 1 ELSE 0 END +
+              CASE WHEN VeryGranularHourlyMeanLow > VeryGranularDailyMeanLow THEN 1 ELSE 0 END +
+              CASE WHEN VeryGranularDailyMeanLow > WeeklyMeanLow THEN 1 ELSE 0 END +
+              CASE WHEN WeeklyMeanLow > MonthlyMeanLow THEN 1 ELSE 0 END) >= 3
+             OR
+             (CASE WHEN low < VeryGranularFiveMinuteMeanLow THEN 1 ELSE 0 END +
+              CASE WHEN VeryGranularFiveMinuteMeanLow < VeryGranularHourlyMeanLow THEN 1 ELSE 0 END +
+              CASE WHEN VeryGranularHourlyMeanLow < VeryGranularDailyMeanLow THEN 1 ELSE 0 END +
+              CASE WHEN VeryGranularDailyMeanLow < WeeklyMeanLow THEN 1 ELSE 0 END +
+              CASE WHEN WeeklyMeanLow < MonthlyMeanLow THEN 1 ELSE 0 END) >= 3)
+
+        ORDER BY BullishConfluence DESC, PotentialProfit DESC
+        LIMIT 50
+    ''')
+
+    results = cursor.fetchall()
+
+    confluence_items = []
+    for row in results:
+        confluence_items.append({
+            'ItemName': row[0],
+            'CurrentPrice': row[1] if row[1] else 0,
+            'BuyLimit': row[2] if row[2] else 0,
+            'FiveMinMean': row[3] if row[3] else 0,
+            'HourlyMean': row[4] if row[4] else 0,
+            'DailyMean': row[5] if row[5] else 0,
+            'WeeklyMean': row[6] if row[6] else 0,
+            'MonthlyMean': row[7] if row[7] else 0,
+            'BullishConfluence': row[8] if row[8] else 0,
+            'BearishConfluence': row[9] if row[9] else 0,
+            'SignalStrength': row[10] if row[10] else 'MIXED_SIGNALS',
+            'VolumeConfirmation': row[11] if row[11] else 'WEAK_VOLUME',
+            'PotentialProfit': row[12] if row[12] else 0
+        })
+
+    # Save confluence analysis summary
+    with open('data/summaries/confluence-analysis.json', 'w') as f:
+        json.dump({
+            'updated': datetime.now(timezone.utc).isoformat(),
+            'items': confluence_items,
+            'methodology': 'VeryGranular_MultiTimeframeConfluence'
+        }, f, indent=2)
+
+    logging.info(f"✓ Generated confluence analysis summary: {len(confluence_items)} items")
+
+def generate_recipe_arbitrage_analysis(conn):
+    """Generate recipe arbitrage analysis using ingredient vs product pricing"""
+    cursor = conn.cursor()
+
+    logging.info("Generating recipe arbitrage analysis using VeryGranular methodology")
+
+    # Check if required tables exist
+    cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='MasterTable'")
+    if not cursor.fetchone():
+        logging.warning("MasterTable not found - skipping recipe arbitrage analysis")
+        return
+
+    cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='Recipes'")
+    if not cursor.fetchone():
+        logging.warning("Recipes table not found - skipping recipe arbitrage analysis")
+        return
+
+    # Analyze recipe arbitrage opportunities
+    cursor.execute('''
+        SELECT
+            r.ProductName as ProductName,
+            p.low as ProductPrice,
+            p.mappinglimit as ProductBuyLimit,
+
+            -- Ingredient 1 data
+            i1.mappingname as Ingredient1Name,
+            i1.low as Ingredient1Price,
+            r.ingredient1Qty as Ingredient1Qty,
+
+            -- Ingredient 2 data (if exists)
+            i2.mappingname as Ingredient2Name,
+            i2.low as Ingredient2Price,
+            r.ingredient2Qty as Ingredient2Qty,
+
+            -- Ingredient 3 data (if exists)
+            i3.mappingname as Ingredient3Name,
+            i3.low as Ingredient3Price,
+            r.ingredient3Qty as Ingredient3Qty,
+
+            -- Cost calculations
+            (COALESCE(i1.low * CAST(r.ingredient1Qty AS INTEGER), 0) +
+             COALESCE(i2.low * CAST(r.ingredient2Qty AS INTEGER), 0) +
+             COALESCE(i3.low * CAST(r.ingredient3Qty AS INTEGER), 0) +
+             COALESCE(r.ProcessingCost, 0)) as TotalIngredientCost,
+
+            -- Profit calculations
+            (p.low * r.QtyProduced) -
+            (COALESCE(i1.low * CAST(r.ingredient1Qty AS INTEGER), 0) +
+             COALESCE(i2.low * CAST(r.ingredient2Qty AS INTEGER), 0) +
+             COALESCE(i3.low * CAST(r.ingredient3Qty AS INTEGER), 0) +
+             COALESCE(r.ProcessingCost, 0)) as ProfitPerCraft,
+
+            -- ROI calculation
+            ROUND(
+                ((p.low * r.QtyProduced) -
+                 (COALESCE(i1.low * CAST(r.ingredient1Qty AS INTEGER), 0) +
+                  COALESCE(i2.low * CAST(r.ingredient2Qty AS INTEGER), 0) +
+                  COALESCE(i3.low * CAST(r.ingredient3Qty AS INTEGER), 0) +
+                  COALESCE(r.ProcessingCost, 0))) /
+                CAST((COALESCE(i1.low * CAST(r.ingredient1Qty AS INTEGER), 0) +
+                      COALESCE(i2.low * CAST(r.ingredient2Qty AS INTEGER), 0) +
+                      COALESCE(i3.low * CAST(r.ingredient3Qty AS INTEGER), 0) +
+                      COALESCE(r.ProcessingCost, 0)) AS REAL) * 100, 2
+            ) as ROI,
+
+            -- Recipe type and efficiency
+            r.RecipeType as RecipeType,
+            r.QtyProduced as QtyProduced,
+
+            -- Volume analysis for feasibility
+            CASE
+                WHEN p.VeryGranularDailyMeanVolumeLow > 100
+                AND i1.VeryGranularDailyMeanVolumeLow > 100
+                THEN 'HIGH_LIQUIDITY'
+                WHEN p.VeryGranularDailyMeanVolumeLow > 50
+                AND i1.VeryGranularDailyMeanVolumeLow > 50
+                THEN 'MODERATE_LIQUIDITY'
+                ELSE 'LOW_LIQUIDITY'
+            END as LiquidityLevel
+
+        FROM Recipes r
+        JOIN MasterTable p ON r.id = p.id
+        LEFT JOIN MasterTable i1 ON r.ingredient1id = i1.id
+        LEFT JOIN MasterTable i2 ON r.ingredient2id = i2.id
+        LEFT JOIN MasterTable i3 ON r.ingredient3id = i3.id
+
+        WHERE p.low > 0
+        AND i1.low > 0
+        AND r.ingredient1Qty IS NOT NULL
+        AND r.ingredient1Qty != ''
+
+        -- Filter for profitable recipes (ROI > 5%)
+        AND ((p.low * r.QtyProduced) -
+             (COALESCE(i1.low * CAST(r.ingredient1Qty AS INTEGER), 0) +
+              COALESCE(i2.low * CAST(r.ingredient2Qty AS INTEGER), 0) +
+              COALESCE(i3.low * CAST(r.ingredient3Qty AS INTEGER), 0) +
+              COALESCE(r.ProcessingCost, 0))) >
+            (COALESCE(i1.low * CAST(r.ingredient1Qty AS INTEGER), 0) +
+             COALESCE(i2.low * CAST(r.ingredient2Qty AS INTEGER), 0) +
+             COALESCE(i3.low * CAST(r.ingredient3Qty AS INTEGER), 0) +
+             COALESCE(r.ProcessingCost, 0)) * 0.05
+
+        ORDER BY ROI DESC
+        LIMIT 50
+    ''')
+
+    results = cursor.fetchall()
+
+    arbitrage_items = []
+    for row in results:
+        arbitrage_items.append({
+            'ProductName': row[0],
+            'ProductPrice': row[1] if row[1] else 0,
+            'ProductBuyLimit': row[2] if row[2] else 0,
+            'Ingredient1Name': row[3] if row[3] else '',
+            'Ingredient1Price': row[4] if row[4] else 0,
+            'Ingredient1Qty': row[5] if row[5] else '',
+            'Ingredient2Name': row[6] if row[6] else '',
+            'Ingredient2Price': row[7] if row[7] else 0,
+            'Ingredient2Qty': row[8] if row[8] else '',
+            'Ingredient3Name': row[9] if row[9] else '',
+            'Ingredient3Price': row[10] if row[10] else 0,
+            'Ingredient3Qty': row[11] if row[11] else '',
+            'TotalIngredientCost': row[12] if row[12] else 0,
+            'ProfitPerCraft': row[13] if row[13] else 0,
+            'ROI': float(row[14]) if row[14] else 0.0,
+            'RecipeType': row[15] if row[15] else '',
+            'QtyProduced': row[16] if row[16] else 0,
+            'LiquidityLevel': row[17] if row[17] else 'LOW_LIQUIDITY'
+        })
+
+    # Save recipe arbitrage summary
+    with open('data/summaries/recipe-arbitrage.json', 'w') as f:
+        json.dump({
+            'updated': datetime.now(timezone.utc).isoformat(),
+            'items': arbitrage_items,
+            'methodology': 'VeryGranular_RecipeArbitrage'
+        }, f, indent=2)
+
+    logging.info(f"✓ Generated recipe arbitrage summary: {len(arbitrage_items)} items")
 
 if __name__ == "__main__":
     collect_osrs_data()

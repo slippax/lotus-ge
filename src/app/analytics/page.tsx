@@ -3,22 +3,6 @@
 import { useState, useEffect } from "react";
 import { audioSystem } from "@/lib/audio";
 
-// High-Low Spread Analysis (Basic Flipping)
-interface FlippingItem {
-  id: number;
-  name: string;
-  lowPrice: number;
-  highPrice: number;
-  lowVolume: number;
-  highVolume: number;
-  dailyProfit: number;
-  buyLimit: number;
-  roi: number;
-  members: boolean;
-  buyRange: string;
-  sellRange: string;
-}
-
 // Shock & Dip Detection (Market Recovery)
 interface DipItem {
   id: number;
@@ -48,53 +32,78 @@ interface AlchemyItem {
   members: boolean;
 }
 
-// Low-Effort Processing (Manufacturing)
-interface ProcessingItem {
-  id: number;
-  name: string;
-  recipeType: string;
-  highMargin: number;
-  lowMargin: number;
-  maxProfit: number;
-  ingredients: string[];
-  processingCost: number;
-  members: boolean;
-  ingredientCost: number;
-  buyRange: string;
-  sellRange: string;
-  capitalRequired: number;
-}
+// Volume Analysis Data - Removed (using database data only)
 
-// Momentum Trading (Trend Following)
-interface MomentumItem {
+// Volatility Breakout Analysis
+interface VolatilityItem {
   id: number;
   name: string;
   currentPrice: number;
-  dailyAverage: number;
-  momentumROC: number;
-  momentumSignal: string;
-  volumeConfirmation: string;
   buyLimit: number;
-  members: boolean;
-  buyRange: string;
-  trendDirection: string;
-  strategyType: string;
+  compressionRatio: number;
+  breakoutDirection: string;
+  volumeConfirmation: string;
+  potentialBreakoutProfit: number;
+  compressionLevel: string;
 }
 
-// Volume Analysis Data - Removed (using database data only)
+// Volume Profile Analysis
+interface VolumeProfileItem {
+  id: number;
+  name: string;
+  currentPrice: number;
+  buyLimit: number;
+  volumePattern: string;
+  volumeSurge: string;
+  smartMoneySignal: string;
+  accumulationProfit: number;
+}
+
+// Multi-Timeframe Confluence
+interface ConfluenceItem {
+  id: number;
+  name: string;
+  currentPrice: number;
+  buyLimit: number;
+  bullishConfluence: number;
+  bearishConfluence: number;
+  signalStrength: string;
+  volumeConfirmation: string;
+  potentialProfit: number;
+}
+
+// Recipe Arbitrage
+interface RecipeArbitrageItem {
+  id: number;
+  productName: string;
+  productPrice: number;
+  productBuyLimit: number;
+  ingredient1Name: string;
+  totalIngredientCost: number;
+  profitPerCraft: number;
+  roi: number;
+  recipeType: string;
+  liquidityLevel: string;
+}
 
 interface ComprehensiveAnalytics {
-  flipping: FlippingItem[];
   dips: DipItem[];
   alchemy: AlchemyItem[];
-  processing: ProcessingItem[];
-  momentum: MomentumItem[];
-  volume: never[]; // Empty array - volume analysis removed
+  volatility: VolatilityItem[];
+  volumeProfile: VolumeProfileItem[];
+  confluence: ConfluenceItem[];
+  recipeArbitrage: RecipeArbitrageItem[];
   timestamp: number;
   cached: boolean;
 }
 
-type AnalyticsTab = "flipping" | "dips" | "alchemy" | "processing" | "momentum";
+type AnalyticsTab =
+  | "dips"
+  | "alchemy"
+  | "volatility"
+  | "volumeProfile"
+  | "confluence"
+  | "recipeArbitrage";
 
 // Helper function for formatting in OSRS style with decimal precision
 function formatGP(amount: number) {
@@ -113,44 +122,6 @@ function formatGP(amount: number) {
 }
 
 // Data transformation functions for API responses
-interface RawFlippingData {
-  id?: number;
-  name?: string;
-  lowPrice?: number;
-  currentLow?: number;
-  highPrice?: number;
-  currentHigh?: number;
-  lowVolume24h?: number;
-  highVolume24h?: number;
-  dailyProfit?: number;
-  buyLimit?: number;
-  roi?: number;
-  members?: boolean;
-}
-
-function transformFlippingDataFromAPI(data: RawFlippingData[]): FlippingItem[] {
-  return data.slice(0, 50).map((item) => {
-    const lowPrice = item.lowPrice || item.currentLow || 0;
-    const highPrice = item.highPrice || item.currentHigh || 0;
-
-    return {
-      id: item.id || 0,
-      name: item.name || "Unknown Item",
-      lowPrice,
-      highPrice,
-      lowVolume: item.lowVolume24h || 0,
-      highVolume: item.highVolume24h || 0,
-      dailyProfit: item.dailyProfit || 0,
-      buyLimit: item.buyLimit || 0,
-      roi: item.roi || 0,
-      members: item.members || false,
-      buyRange: `${formatGP(lowPrice * 0.98)} - ${formatGP(lowPrice * 1.02)}`,
-      sellRange: `${formatGP(highPrice * 0.98)} - ${formatGP(
-        highPrice * 1.02
-      )}`,
-    };
-  });
-}
 
 interface RawDipData {
   id?: number;
@@ -220,88 +191,117 @@ function transformAlchemyDataFromAPI(data: RawAlchemyData[]): AlchemyItem[] {
   }));
 }
 
-interface RawManufacturingData {
-  id?: string | number;
-  productName?: string;
-  recipeType?: string;
-  ingredientCost?: number;
-  productPrice?: number;
-  profitPerUnit?: number;
-  maxProfit4h?: number;
-  buyLimit?: number;
-  processingCost?: number;
-  skillRequired?: {
-    skill?: string;
-  };
-  capitalRequired?: number;
-}
-
-function transformManufacturingDataFromAPI(
-  data: RawManufacturingData[]
-): ProcessingItem[] {
-  return data.slice(0, 50).map((item) => {
-    const ingredientCost = item.ingredientCost || 0;
-    const productPrice = item.productPrice || 0;
-    const itemId =
-      typeof item.id === "string" ? parseInt(item.id) : item.id || 0;
-
-    return {
-      id: itemId,
-      name: item.productName || "Unknown Recipe",
-      recipeType: item.recipeType || "Unknown",
-      highMargin: item.profitPerUnit || 0,
-      lowMargin: (item.profitPerUnit || 0) * 0.8,
-      maxProfit: item.maxProfit4h || 0,
-      ingredients: [],
-      processingCost: item.processingCost || 0,
-      members: true,
-      ingredientCost,
-      buyRange: `${formatGP(ingredientCost * 0.98)} - ${formatGP(
-        ingredientCost * 1.02
-      )}`,
-      sellRange: `${formatGP(productPrice * 0.98)} - ${formatGP(
-        productPrice * 1.02
-      )}`,
-      capitalRequired: item.capitalRequired || 0,
-    };
-  });
-}
-
-interface RawMomentumData {
+// Transform functions for new analysis types
+interface RawVolatilityData {
   id?: number;
   name?: string;
   currentPrice?: number;
-  dailyAverage?: number;
-  momentumROC?: number;
-  momentumSignal?: string;
-  volumeConfirmation?: string;
   buyLimit?: number;
-  strategyType?: string;
-  trendDirection?: string;
+  compressionRatio?: number;
+  breakoutDirection?: string;
+  volumeConfirmation?: string;
+  potentialBreakoutProfit?: number;
+  compressionLevel?: string;
 }
 
-function transformMomentumDataFromAPI(data: RawMomentumData[]): MomentumItem[] {
-  return data.slice(0, 50).map((item, index) => {
-    const currentPrice = item.currentPrice || 0;
-    const dailyAverage = item.dailyAverage || 0;
+function transformVolatilityDataFromAPI(
+  data: RawVolatilityData[]
+): VolatilityItem[] {
+  return data.slice(0, 50).map((item, index) => ({
+    id: item.id || index + 1,
+    name: item.name || "Unknown Item",
+    currentPrice: item.currentPrice || 0,
+    buyLimit: item.buyLimit || 0,
+    compressionRatio: item.compressionRatio || 0,
+    breakoutDirection: item.breakoutDirection || "NEUTRAL",
+    volumeConfirmation: item.volumeConfirmation || "LOW_VOLUME",
+    potentialBreakoutProfit: item.potentialBreakoutProfit || 0,
+    compressionLevel: item.compressionLevel || "LOW_COMPRESSION",
+  }));
+}
 
-    return {
-      id: item.id || index + 1,
-      name: item.name || "Unknown Item",
-      currentPrice,
-      dailyAverage,
-      momentumROC: item.momentumROC || 0,
-      momentumSignal: item.momentumSignal || "NO_MOMENTUM",
-      volumeConfirmation: item.volumeConfirmation || "NORMAL_VOLUME",
-      buyLimit: item.buyLimit || 0,
-      members: true, // Most momentum items are members items
-      buyRange: `${formatGP(currentPrice * 0.98)} - ${formatGP(
-        currentPrice * 1.02
-      )}`,
-      trendDirection: item.trendDirection || "UPWARD",
-      strategyType: item.strategyType || "TREND_FOLLOWING",
-    };
-  });
+interface RawVolumeProfileData {
+  id?: number;
+  name?: string;
+  currentPrice?: number;
+  buyLimit?: number;
+  volumePattern?: string;
+  volumeSurge?: string;
+  smartMoneySignal?: string;
+  accumulationProfit?: number;
+}
+
+function transformVolumeProfileDataFromAPI(
+  data: RawVolumeProfileData[]
+): VolumeProfileItem[] {
+  return data.slice(0, 50).map((item, index) => ({
+    id: item.id || index + 1,
+    name: item.name || "Unknown Item",
+    currentPrice: item.currentPrice || 0,
+    buyLimit: item.buyLimit || 0,
+    volumePattern: item.volumePattern || "BALANCED",
+    volumeSurge: item.volumeSurge || "NORMAL_VOLUME",
+    smartMoneySignal: item.smartMoneySignal || "NO_SMART_MONEY_SIGNAL",
+    accumulationProfit: item.accumulationProfit || 0,
+  }));
+}
+
+interface RawConfluenceData {
+  id?: number;
+  name?: string;
+  currentPrice?: number;
+  buyLimit?: number;
+  bullishConfluence?: number;
+  bearishConfluence?: number;
+  signalStrength?: string;
+  volumeConfirmation?: string;
+  potentialProfit?: number;
+}
+
+function transformConfluenceDataFromAPI(
+  data: RawConfluenceData[]
+): ConfluenceItem[] {
+  return data.slice(0, 50).map((item, index) => ({
+    id: item.id || index + 1,
+    name: item.name || "Unknown Item",
+    currentPrice: item.currentPrice || 0,
+    buyLimit: item.buyLimit || 0,
+    bullishConfluence: item.bullishConfluence || 0,
+    bearishConfluence: item.bearishConfluence || 0,
+    signalStrength: item.signalStrength || "MIXED_SIGNALS",
+    volumeConfirmation: item.volumeConfirmation || "WEAK_VOLUME",
+    potentialProfit: item.potentialProfit || 0,
+  }));
+}
+
+interface RawRecipeArbitrageData {
+  id?: number;
+  productName?: string;
+  productPrice?: number;
+  productBuyLimit?: number;
+  ingredient1Name?: string;
+  totalIngredientCost?: number;
+  profitPerCraft?: number;
+  roi?: number;
+  recipeType?: string;
+  liquidityLevel?: string;
+}
+
+function transformRecipeArbitrageDataFromAPI(
+  data: RawRecipeArbitrageData[]
+): RecipeArbitrageItem[] {
+  return data.slice(0, 50).map((item, index) => ({
+    id: item.id || index + 1,
+    productName: item.productName || "Unknown Product",
+    productPrice: item.productPrice || 0,
+    productBuyLimit: item.productBuyLimit || 0,
+    ingredient1Name: item.ingredient1Name || "",
+    totalIngredientCost: item.totalIngredientCost || 0,
+    profitPerCraft: item.profitPerCraft || 0,
+    roi: item.roi || 0,
+    recipeType: item.recipeType || "",
+    liquidityLevel: item.liquidityLevel || "LOW_LIQUIDITY",
+  }));
 }
 
 // transformVolumeData function removed - using database data only
@@ -339,40 +339,51 @@ export default function AnalyticsPage() {
         : {};
 
       const [
-        flippingResponse,
         dipsResponse,
         alchemyResponse,
-        manufacturingResponse,
-        momentumResponse,
+        volatilityResponse,
+        volumeProfileResponse,
+        confluenceResponse,
+        recipeArbitrageResponse,
       ] = await Promise.all([
-        fetch(`/api/osrs/highlow-spread${timestamp}`, fetchOptions),
         fetch(`/api/osrs/dip-detection${timestamp}`, fetchOptions),
         fetch(`/api/osrs/alchemy-floors${timestamp}`, fetchOptions),
-        fetch(`/api/osrs/manufacturing-analysis${timestamp}`, fetchOptions),
-        fetch(`/api/osrs/momentum-analysis${timestamp}`, fetchOptions),
+        fetch(`/api/osrs/volatility-breakout${timestamp}`, fetchOptions),
+        fetch(`/api/osrs/volume-profile${timestamp}`, fetchOptions),
+        fetch(`/api/osrs/confluence${timestamp}`, fetchOptions),
+        fetch(`/api/osrs/recipe-arbitrage${timestamp}`, fetchOptions),
       ]);
 
-      const flippingResult = await flippingResponse.json();
       const dipsResult = await dipsResponse.json();
       const alchemyResult = await alchemyResponse.json();
-      const manufacturingResult = await manufacturingResponse.json();
-      const momentumResult = await momentumResponse.json();
+      const volatilityResult = await volatilityResponse.json();
+      const volumeProfileResult = await volumeProfileResponse.json();
+      const confluenceResult = await confluenceResponse.json();
+      const recipeArbitrageResult = await recipeArbitrageResponse.json();
 
-      const flippingData = flippingResult.success ? flippingResult.data : [];
       const dipsData = dipsResult.success ? dipsResult.data : [];
       const alchemyData = alchemyResult.success ? alchemyResult.data : [];
-      const manufacturingData = manufacturingResult.success
-        ? manufacturingResult.data
+      const volatilityData = volatilityResult.success
+        ? volatilityResult.data
         : [];
-      const momentumData = momentumResult.success ? momentumResult.data : [];
+      const volumeProfileData = volumeProfileResult.success
+        ? volumeProfileResult.data
+        : [];
+      const confluenceData = confluenceResult.success
+        ? confluenceResult.data
+        : [];
+      const recipeArbitrageData = recipeArbitrageResult.success
+        ? recipeArbitrageResult.data
+        : [];
 
       // Use the earliest data timestamp from all APIs
       const dataTimestamps = [
-        flippingResult.dataUpdated,
         dipsResult.dataUpdated,
         alchemyResult.dataUpdated,
-        manufacturingResult.dataUpdated,
-        momentumResult.dataUpdated,
+        volatilityResult.dataUpdated,
+        volumeProfileResult.dataUpdated,
+        confluenceResult.dataUpdated,
+        recipeArbitrageResult.dataUpdated,
       ].filter(Boolean);
 
       const latestDataUpdate =
@@ -384,12 +395,13 @@ export default function AnalyticsPage() {
 
       // Transform data to match existing interface (all from lightweight APIs)
       const transformedData: ComprehensiveAnalytics = {
-        flipping: transformFlippingDataFromAPI(flippingData),
         dips: transformDipsDataFromAPI(dipsData),
         alchemy: transformAlchemyDataFromAPI(alchemyData),
-        processing: transformManufacturingDataFromAPI(manufacturingData),
-        momentum: transformMomentumDataFromAPI(momentumData),
-        volume: [], // Empty since we removed volume analysis
+        volatility: transformVolatilityDataFromAPI(volatilityData),
+        volumeProfile: transformVolumeProfileDataFromAPI(volumeProfileData),
+        confluence: transformConfluenceDataFromAPI(confluenceData),
+        recipeArbitrage:
+          transformRecipeArbitrageDataFromAPI(recipeArbitrageData),
         timestamp: Date.now(),
         cached: false,
       };
@@ -468,16 +480,18 @@ export default function AnalyticsPage() {
 
   const getTabTitle = (tab: AnalyticsTab) => {
     switch (tab) {
-      case "flipping":
-        return "High-Low Spread";
       case "dips":
         return "Market Dips";
-      case "momentum":
-        return "Momentum";
       case "alchemy":
         return "Alchemy Floors";
-      case "processing":
-        return "Manufacturing";
+      case "volatility":
+        return "Volatility Breakouts";
+      case "volumeProfile":
+        return "Volume Profile";
+      case "confluence":
+        return "Multi-Timeframe";
+      case "recipeArbitrage":
+        return "Recipe Arbitrage";
     }
   };
 
@@ -600,10 +614,11 @@ export default function AnalyticsPage() {
           {(
             [
               "dips",
-              "momentum",
-              "processing",
-              "flipping",
               "alchemy",
+              "volatility",
+              "volumeProfile",
+              "confluence",
+              "recipeArbitrage",
             ] as AnalyticsTab[]
           ).map((tab) => (
             <button
@@ -622,12 +637,19 @@ export default function AnalyticsPage() {
 
         <div className="overflow-x-auto">
           {/* Tab Content */}
-          {activeTab === "flipping" && <FlippingTable data={data.flipping} />}
           {activeTab === "dips" && <DipsTable data={data.dips} />}
-          {activeTab === "momentum" && <MomentumTable data={data.momentum} />}
           {activeTab === "alchemy" && <AlchemyTable data={data.alchemy} />}
-          {activeTab === "processing" && (
-            <ProcessingTable data={data.processing} />
+          {activeTab === "volatility" && (
+            <VolatilityTable data={data.volatility} />
+          )}
+          {activeTab === "volumeProfile" && (
+            <VolumeProfileTable data={data.volumeProfile} />
+          )}
+          {activeTab === "confluence" && (
+            <ConfluenceTable data={data.confluence} />
+          )}
+          {activeTab === "recipeArbitrage" && (
+            <RecipeArbitrageTable data={data.recipeArbitrage} />
           )}
         </div>
       </div>
@@ -636,90 +658,6 @@ export default function AnalyticsPage() {
 }
 
 // Table Components for each strategy
-function FlippingTable({ data }: { data: FlippingItem[] }) {
-  return (
-    <div className="border border-gray-600 overflow-x-auto">
-      <table className="w-full border-collapse font-serif min-w-[800px]">
-        <thead>
-          <tr className="bg-gray-800">
-            <th className="border-b border-gray-600 p-2 text-left font-semibold text-sm md:text-xl text-white">
-              Item
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Buy Range
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Sell Range
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Daily Profit
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              ROI
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Buy Limit
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.slice(0, 20).map((item, index) => (
-            <tr key={`flip-${item.id}-${index}`} className="hover:bg-gray-800">
-              <td className="border-b border-gray-600 p-2">
-                <div className="flex items-center gap-2 md:gap-4">
-                  <div className="text-sm md:text-lg font-medium text-gray-300">
-                    #{index + 1}
-                  </div>
-                  <div>
-                    <div className="text-sm md:text-xl font-semibold text-white">
-                      {item.name}
-                    </div>
-                    {item.members && (
-                      <div className="text-xs md:text-sm text-blue-400 font-medium">
-                        Members
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div className="text-sm md:text-lg font-semibold text-blue-400">
-                  {item.buyRange}
-                </div>
-                <div className="text-xs md:text-sm text-gray-400">
-                  Suggested buy prices
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div className="text-sm md:text-lg font-semibold text-green-400">
-                  {item.sellRange}
-                </div>
-                <div className="text-xs md:text-sm text-gray-400">
-                  Suggested sell prices
-                </div>
-              </td>
-              <td className="border-b border-gray-600  text-right">
-                <div className="text-sm md:text-lg font-bold text-green-400">
-                  {formatGP(item.dailyProfit)} gp
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div className="text-sm md:text-lg font-bold text-green-400">
-                  {item.roi.toFixed(1)}%
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div className="text-sm md:text-lg font-medium text-white">
-                  {item.buyLimit.toLocaleString()}
-                </div>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-}
 
 function DipsTable({ data }: { data: DipItem[] }) {
   return (
@@ -868,127 +806,38 @@ function AlchemyTable({ data }: { data: AlchemyItem[] }) {
   );
 }
 
-function ProcessingTable({ data }: { data: ProcessingItem[] }) {
+// New Advanced Analysis Table Components
+
+function VolatilityTable({ data }: { data: VolatilityItem[] }) {
   return (
     <div className="border border-gray-600 overflow-x-auto">
       <table className="w-full border-collapse font-serif min-w-[900px]">
-        <thead>
-          <tr>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-2  text-left font-bold text-sm md:text-lg">
-              Item
-            </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-2  text-right font-bold text-sm md:text-lg">
-              Buy Range
-            </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-2  text-right font-bold text-sm md:text-lg">
-              Sell Range
-            </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-2  text-right font-bold text-sm md:text-lg">
-              Max Profit
-            </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-2  text-right font-bold text-sm md:text-lg">
-              Capital Required
-            </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-2  text-center font-bold text-sm md:text-lg">
-              Recipe Instructions
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.slice(0, 20).map((item, index) => (
-            <tr
-              key={`processing-${item.id}-${index}`}
-              className="hover:bg-gray-800"
-            >
-              <td className="border-b border-gray-600 p-2  font-semibold text-white">
-                <div className="flex items-center gap-2 md:gap-2">
-                  <div className="text-sm md:text-base text-gray-300">
-                    #{index + 1}
-                  </div>
-                  <div>
-                    <div className="text-sm md:text-base font-bold">
-                      {item.name}
-                    </div>
-                    {item.members && (
-                      <div className="text-xs md:text-sm text-blue-400">
-                        Members
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2  text-right">
-                <div className="font-semibold text-blue-400 text-sm md:text-base">
-                  {item.buyRange}
-                </div>
-                <div className="text-xs md:text-sm text-gray-400">
-                  Ingredient costs
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2  text-right">
-                <div className="font-semibold text-green-400 text-sm md:text-base">
-                  {item.sellRange}
-                </div>
-                <div className="text-xs md:text-sm text-gray-400">
-                  Finished product
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2  text-right">
-                <div className="font-bold text-green-400 text-sm md:text-base">
-                  {formatGP(item.maxProfit)} gp
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2  text-right">
-                <div className="font-semibold text-orange-400 text-sm md:text-base">
-                  {formatGP(item.capitalRequired)} gp
-                </div>
-                <div className="text-xs md:text-sm text-gray-400">
-                  Investment needed
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2  text-center text-white">
-                <div className="text-xs md:text-sm text-gray-300">
-                  {item.recipeType}
-                </div>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-}
-
-function MomentumTable({ data }: { data: MomentumItem[] }) {
-  return (
-    <div className="border border-gray-600 overflow-x-auto">
-      <table className="w-full border-collapse font-serif min-w-[800px]">
         <thead>
           <tr className="bg-gray-800">
             <th className="border-b border-gray-600 p-2 text-left font-semibold text-sm md:text-xl text-white">
               Item
             </th>
             <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Buy Range
+              Current Price
             </th>
             <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              ROC
+              Compression
             </th>
             <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Signal Strength
+              Breakout Direction
             </th>
             <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
               Volume Confirmation
             </th>
             <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Buy Limit
+              Potential Profit
             </th>
           </tr>
         </thead>
         <tbody>
           {data.slice(0, 20).map((item, index) => (
             <tr
-              key={`momentum-${item.id}-${index}`}
+              key={`volatility-${item.id}-${index}`}
               className="hover:bg-gray-800"
             >
               <td className="border-b border-gray-600 p-2">
@@ -1000,62 +849,53 @@ function MomentumTable({ data }: { data: MomentumItem[] }) {
                     <div className="text-sm md:text-xl font-semibold text-white">
                       {item.name}
                     </div>
-                    {item.members && (
-                      <div className="text-xs md:text-sm text-blue-400 font-medium">
-                        Members
-                      </div>
-                    )}
                     <div className="text-xs md:text-sm text-gray-400">
-                      {item.strategyType}
+                      {item.compressionLevel}
                     </div>
                   </div>
                 </div>
               </td>
               <td className="border-b border-gray-600 p-2 text-right">
-                <div className="text-sm md:text-lg font-semibold text-blue-400">
-                  {item.buyRange}
-                </div>
-                <div className="text-xs md:text-sm text-gray-400">
-                  Ride the momentum
+                <div className="text-sm md:text-lg font-semibold text-white">
+                  {formatGP(item.currentPrice)} gp
                 </div>
               </td>
               <td className="border-b border-gray-600 p-2 text-right">
                 <div
                   className={`text-sm md:text-lg font-bold ${
-                    item.momentumROC > 10
-                      ? "text-green-400"
-                      : item.momentumROC > 5
+                    item.compressionRatio < 30
+                      ? "text-red-400"
+                      : item.compressionRatio < 50
                       ? "text-yellow-400"
-                      : "text-orange-400"
+                      : "text-green-400"
                   }`}
                 >
-                  +{item.momentumROC.toFixed(1)}%
+                  {item.compressionRatio.toFixed(1)}%
                 </div>
                 <div className="text-xs md:text-sm text-gray-400">
-                  Rate of Change
+                  Daily vs Weekly
                 </div>
               </td>
               <td className="border-b border-gray-600 p-2 text-right">
                 <div
                   className={`text-sm md:text-lg font-bold ${
-                    item.momentumSignal === "STRONG_UPWARD_MOMENTUM"
+                    item.breakoutDirection.includes("UPPER")
                       ? "text-green-400"
-                      : item.momentumSignal === "MODERATE_UPWARD_MOMENTUM"
-                      ? "text-yellow-400"
-                      : item.momentumSignal === "WEAK_UPWARD_MOMENTUM"
-                      ? "text-orange-400"
+                      : item.breakoutDirection.includes("LOWER")
+                      ? "text-red-400"
                       : "text-gray-400"
                   }`}
                 >
-                  {item.momentumSignal.replace("_", " ")}
+                  {item.breakoutDirection.replace("_", " ")}
                 </div>
               </td>
               <td className="border-b border-gray-600 p-2 text-right">
                 <div
                   className={`text-sm md:text-lg font-medium ${
-                    item.volumeConfirmation === "HIGH_VOLUME_SURGE"
+                    item.volumeConfirmation === "HIGH_VOLUME_CONFIRMATION"
                       ? "text-green-400"
-                      : item.volumeConfirmation === "MODERATE_VOLUME_SURGE"
+                      : item.volumeConfirmation ===
+                        "MODERATE_VOLUME_CONFIRMATION"
                       ? "text-yellow-400"
                       : "text-gray-400"
                   }`}
@@ -1064,8 +904,8 @@ function MomentumTable({ data }: { data: MomentumItem[] }) {
                 </div>
               </td>
               <td className="border-b border-gray-600 p-2 text-right">
-                <div className="text-sm md:text-lg font-medium text-white">
-                  {item.buyLimit.toLocaleString()}
+                <div className="text-sm md:text-lg font-bold text-green-400">
+                  {formatGP(item.potentialBreakoutProfit)} gp
                 </div>
               </td>
             </tr>
@@ -1076,4 +916,312 @@ function MomentumTable({ data }: { data: MomentumItem[] }) {
   );
 }
 
-// VolumeTable component removed - using database data only
+function VolumeProfileTable({ data }: { data: VolumeProfileItem[] }) {
+  return (
+    <div className="border border-gray-600 overflow-x-auto">
+      <table className="w-full border-collapse font-serif min-w-[900px]">
+        <thead>
+          <tr className="bg-gray-800">
+            <th className="border-b border-gray-600 p-2 text-left font-semibold text-sm md:text-xl text-white">
+              Item
+            </th>
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
+              Current Price
+            </th>
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
+              Volume Pattern
+            </th>
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
+              Volume Surge
+            </th>
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
+              Smart Money Signal
+            </th>
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
+              Accumulation Profit
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.slice(0, 20).map((item, index) => (
+            <tr
+              key={`volume-${item.id}-${index}`}
+              className="hover:bg-gray-800"
+            >
+              <td className="border-b border-gray-600 p-2">
+                <div className="flex items-center gap-2 md:gap-4">
+                  <div className="text-sm md:text-lg font-medium text-gray-300">
+                    #{index + 1}
+                  </div>
+                  <div>
+                    <div className="text-sm md:text-xl font-semibold text-white">
+                      {item.name}
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td className="border-b border-gray-600 p-2 text-right">
+                <div className="text-sm md:text-lg font-semibold text-white">
+                  {formatGP(item.currentPrice)} gp
+                </div>
+              </td>
+              <td className="border-b border-gray-600 p-2 text-right">
+                <div
+                  className={`text-sm md:text-lg font-bold ${
+                    item.volumePattern.includes("ACCUMULATION")
+                      ? "text-green-400"
+                      : item.volumePattern.includes("DISTRIBUTION")
+                      ? "text-red-400"
+                      : "text-gray-400"
+                  }`}
+                >
+                  {item.volumePattern.replace("_", " ")}
+                </div>
+              </td>
+              <td className="border-b border-gray-600 p-2 text-right">
+                <div
+                  className={`text-sm md:text-lg font-medium ${
+                    item.volumeSurge === "EXTREME_VOLUME_SURGE"
+                      ? "text-red-400"
+                      : item.volumeSurge === "HIGH_VOLUME_SURGE"
+                      ? "text-yellow-400"
+                      : item.volumeSurge === "MODERATE_VOLUME_SURGE"
+                      ? "text-green-400"
+                      : "text-gray-400"
+                  }`}
+                >
+                  {item.volumeSurge.replace("_", " ")}
+                </div>
+              </td>
+              <td className="border-b border-gray-600 p-2 text-right">
+                <div
+                  className={`text-sm md:text-lg font-bold ${
+                    item.smartMoneySignal.includes("ACCUMULATION")
+                      ? "text-green-400"
+                      : item.smartMoneySignal.includes("DISTRIBUTION")
+                      ? "text-red-400"
+                      : "text-gray-400"
+                  }`}
+                >
+                  {item.smartMoneySignal.replace("_", " ")}
+                </div>
+              </td>
+              <td className="border-b border-gray-600 p-2 text-right">
+                <div className="text-sm md:text-lg font-bold text-green-400">
+                  {formatGP(item.accumulationProfit)} gp
+                </div>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+function ConfluenceTable({ data }: { data: ConfluenceItem[] }) {
+  return (
+    <div className="border border-gray-600 overflow-x-auto">
+      <table className="w-full border-collapse font-serif min-w-[900px]">
+        <thead>
+          <tr className="bg-gray-800">
+            <th className="border-b border-gray-600 p-2 text-left font-semibold text-sm md:text-xl text-white">
+              Item
+            </th>
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
+              Current Price
+            </th>
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
+              Bullish Confluence
+            </th>
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
+              Signal Strength
+            </th>
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
+              Volume Confirmation
+            </th>
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
+              Potential Profit
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.slice(0, 20).map((item, index) => (
+            <tr
+              key={`confluence-${item.id}-${index}`}
+              className="hover:bg-gray-800"
+            >
+              <td className="border-b border-gray-600 p-2">
+                <div className="flex items-center gap-2 md:gap-4">
+                  <div className="text-sm md:text-lg font-medium text-gray-300">
+                    #{index + 1}
+                  </div>
+                  <div>
+                    <div className="text-sm md:text-xl font-semibold text-white">
+                      {item.name}
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td className="border-b border-gray-600 p-2 text-right">
+                <div className="text-sm md:text-lg font-semibold text-white">
+                  {formatGP(item.currentPrice)} gp
+                </div>
+              </td>
+              <td className="border-b border-gray-600 p-2 text-right">
+                <div
+                  className={`text-sm md:text-lg font-bold ${
+                    item.bullishConfluence >= 4
+                      ? "text-green-400"
+                      : item.bullishConfluence >= 3
+                      ? "text-yellow-400"
+                      : "text-gray-400"
+                  }`}
+                >
+                  {item.bullishConfluence}/5
+                </div>
+                <div className="text-xs md:text-sm text-gray-400">
+                  Timeframes Aligned
+                </div>
+              </td>
+              <td className="border-b border-gray-600 p-2 text-right">
+                <div
+                  className={`text-sm md:text-lg font-bold ${
+                    item.signalStrength === "STRONG_BULLISH"
+                      ? "text-green-400"
+                      : item.signalStrength === "MODERATE_BULLISH"
+                      ? "text-yellow-400"
+                      : item.signalStrength === "STRONG_BEARISH"
+                      ? "text-red-400"
+                      : item.signalStrength === "MODERATE_BEARISH"
+                      ? "text-orange-400"
+                      : "text-gray-400"
+                  }`}
+                >
+                  {item.signalStrength.replace("_", " ")}
+                </div>
+              </td>
+              <td className="border-b border-gray-600 p-2 text-right">
+                <div
+                  className={`text-sm md:text-lg font-medium ${
+                    item.volumeConfirmation === "VOLUME_CONFIRMED"
+                      ? "text-green-400"
+                      : item.volumeConfirmation === "VOLUME_SUPPORTED"
+                      ? "text-yellow-400"
+                      : "text-gray-400"
+                  }`}
+                >
+                  {item.volumeConfirmation.replace("_", " ")}
+                </div>
+              </td>
+              <td className="border-b border-gray-600 p-2 text-right">
+                <div className="text-sm md:text-lg font-bold text-green-400">
+                  {formatGP(item.potentialProfit)} gp
+                </div>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+function RecipeArbitrageTable({ data }: { data: RecipeArbitrageItem[] }) {
+  return (
+    <div className="border border-gray-600 overflow-x-auto">
+      <table className="w-full border-collapse font-serif min-w-[900px]">
+        <thead>
+          <tr className="bg-gray-800">
+            <th className="border-b border-gray-600 p-2 text-left font-semibold text-sm md:text-xl text-white">
+              Product
+            </th>
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
+              Product Price
+            </th>
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
+              Ingredient Cost
+            </th>
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
+              Profit Per Craft
+            </th>
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
+              ROI
+            </th>
+            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
+              Liquidity
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.slice(0, 20).map((item, index) => (
+            <tr
+              key={`recipe-${item.id}-${index}`}
+              className="hover:bg-gray-800"
+            >
+              <td className="border-b border-gray-600 p-2">
+                <div className="flex items-center gap-2 md:gap-4">
+                  <div className="text-sm md:text-lg font-medium text-gray-300">
+                    #{index + 1}
+                  </div>
+                  <div>
+                    <div className="text-sm md:text-xl font-semibold text-white">
+                      {item.productName}
+                    </div>
+                    <div className="text-xs md:text-sm text-gray-400">
+                      {item.recipeType}
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td className="border-b border-gray-600 p-2 text-right">
+                <div className="text-sm md:text-lg font-semibold text-white">
+                  {formatGP(item.productPrice)} gp
+                </div>
+              </td>
+              <td className="border-b border-gray-600 p-2 text-right">
+                <div className="text-sm md:text-lg font-semibold text-blue-400">
+                  {formatGP(item.totalIngredientCost)} gp
+                </div>
+                <div className="text-xs md:text-sm text-gray-400">
+                  {item.ingredient1Name}
+                </div>
+              </td>
+              <td className="border-b border-gray-600 p-2 text-right">
+                <div className="text-sm md:text-lg font-bold text-green-400">
+                  {formatGP(item.profitPerCraft)} gp
+                </div>
+              </td>
+              <td className="border-b border-gray-600 p-2 text-right">
+                <div
+                  className={`text-sm md:text-lg font-bold ${
+                    item.roi > 20
+                      ? "text-green-400"
+                      : item.roi > 10
+                      ? "text-yellow-400"
+                      : "text-orange-400"
+                  }`}
+                >
+                  {item.roi.toFixed(1)}%
+                </div>
+              </td>
+              <td className="border-b border-gray-600 p-2 text-right">
+                <div
+                  className={`text-sm md:text-lg font-medium ${
+                    item.liquidityLevel === "HIGH_LIQUIDITY"
+                      ? "text-green-400"
+                      : item.liquidityLevel === "MODERATE_LIQUIDITY"
+                      ? "text-yellow-400"
+                      : "text-red-400"
+                  }`}
+                >
+                  {item.liquidityLevel.replace("_", " ")}
+                </div>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
