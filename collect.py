@@ -1054,10 +1054,12 @@ def generate_volume_profile_analysis(conn):
                 ELSE 'NO_SMART_MONEY_SIGNAL'
             END as SmartMoneySignal,
 
-            -- Potential profit based on volume pattern
+            -- Potential profit based on volume pattern (Wyckoff methodology)
             CASE
+                WHEN VeryGranularDailyMeanVolumeLow > VeryGranularDailyMeanVolumeHigh * 2
+                THEN ROUND((high - low) * mappinglimit, 0)  -- Strong accumulation: target recent high
                 WHEN VeryGranularDailyMeanVolumeLow > VeryGranularDailyMeanVolumeHigh * 1.5
-                THEN ROUND((VeryGranularDailyMeanLow - low) * mappinglimit, 0)
+                THEN ROUND((low * 0.05) * mappinglimit, 0)  -- Moderate accumulation: 5% target
                 ELSE 0
             END as AccumulationProfit
 
@@ -1188,7 +1190,7 @@ def generate_confluence_analysis(conn):
                 ELSE 'WEAK_VOLUME'
             END as VolumeConfirmation,
 
-            -- Potential profit calculation
+            -- Potential profit calculation (professional methodology)
             ROUND(
                 CASE
                     WHEN (CASE WHEN low > VeryGranularFiveMinuteMeanLow THEN 1 ELSE 0 END +
@@ -1196,7 +1198,19 @@ def generate_confluence_analysis(conn):
                           CASE WHEN VeryGranularHourlyMeanLow > VeryGranularDailyMeanLow THEN 1 ELSE 0 END +
                           CASE WHEN VeryGranularDailyMeanLow > WeeklyMeanLow THEN 1 ELSE 0 END +
                           CASE WHEN WeeklyMeanLow > MonthlyMeanLow THEN 1 ELSE 0 END) >= 4
-                    THEN (WeeklyMeanLow - low) * mappinglimit
+                    THEN (low * 0.10) * mappinglimit  -- 10% target for strong confluence
+                    WHEN (CASE WHEN low > VeryGranularFiveMinuteMeanLow THEN 1 ELSE 0 END +
+                          CASE WHEN VeryGranularFiveMinuteMeanLow > VeryGranularHourlyMeanLow THEN 1 ELSE 0 END +
+                          CASE WHEN VeryGranularHourlyMeanLow > VeryGranularDailyMeanLow THEN 1 ELSE 0 END +
+                          CASE WHEN VeryGranularDailyMeanLow > WeeklyMeanLow THEN 1 ELSE 0 END +
+                          CASE WHEN WeeklyMeanLow > MonthlyMeanLow THEN 1 ELSE 0 END) = 3
+                    THEN (low * 0.07) * mappinglimit  -- 7% target for moderate confluence
+                    WHEN (CASE WHEN low > VeryGranularFiveMinuteMeanLow THEN 1 ELSE 0 END +
+                          CASE WHEN VeryGranularFiveMinuteMeanLow > VeryGranularHourlyMeanLow THEN 1 ELSE 0 END +
+                          CASE WHEN VeryGranularHourlyMeanLow > VeryGranularDailyMeanLow THEN 1 ELSE 0 END +
+                          CASE WHEN VeryGranularDailyMeanLow > WeeklyMeanLow THEN 1 ELSE 0 END +
+                          CASE WHEN WeeklyMeanLow > MonthlyMeanLow THEN 1 ELSE 0 END) = 2
+                    THEN (low * 0.05) * mappinglimit  -- 5% target for weak confluence
                     ELSE 0
                 END, 0
             ) as PotentialProfit
