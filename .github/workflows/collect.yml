@@ -107,19 +107,25 @@ jobs:
           fi
 
           # Upload updated database back to Dropbox with error handling using fresh token
-          HTTP_CODE=$(curl -X POST https://content.dropboxapi.com/2/files/upload \
+          UPLOAD_RESPONSE=$(curl -X POST https://content.dropboxapi.com/2/files/upload \
             --header "Authorization: Bearer $FRESH_DROPBOX_TOKEN" \
             --header "Dropbox-API-Arg: {\"path\": \"/osrsmarketdata.sqlite\", \"mode\": \"overwrite\"}" \
             --header "Content-Type: application/octet-stream" \
             --data-binary @data/osrsmarketdata.sqlite \
-            --write-out "%{http_code}" \
+            --write-out "HTTPSTATUS:%{http_code}" \
             --silent)
+
+          # Extract HTTP status code from response
+          HTTP_CODE=$(echo "$UPLOAD_RESPONSE" | grep -o "HTTPSTATUS:[0-9]*" | cut -d: -f2)
+          RESPONSE_BODY=$(echo "$UPLOAD_RESPONSE" | sed 's/HTTPSTATUS:[0-9]*$//')
 
           if [ "$HTTP_CODE" = "200" ]; then
             echo "✅ Successfully uploaded updated database to Dropbox"
+            echo "📁 File info: $(echo "$RESPONSE_BODY" | python3 -c "import sys, json; data=json.load(sys.stdin); print(f\"{data['name']} ({data['size']} bytes)\")" 2>/dev/null || echo "Upload confirmed")"
           else
             echo "❌ Failed to upload database to Dropbox"
             echo "HTTP Status Code: $HTTP_CODE"
+            echo "Response: $RESPONSE_BODY"
             echo "🚨 WARNING: Database changes not backed up to Dropbox!"
             exit 1
           fi
