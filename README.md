@@ -2,6 +2,6 @@ This is an OSRS market siphon. It is used to collect data from the OSRS Wiki API
 
 "Market SHOCK" analysis is the key tab. This serves as the most efficient approach to generate consistent profits by flipping shocked items immediately after the price drop.
 
-More to come.
+DB is stored in a private Dropbox as per the yml workflow. 
 
 https://lotusge.up.railway.app/analytics
