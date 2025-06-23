@@ -135,8 +135,18 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "OSRS Data Collector"
 
+          # Debug: Check what files exist
+          echo "🔍 Files in data directory:"
+          ls -la data/ || echo "No data directory"
+          echo "🔍 Files in data/summaries directory:"
+          ls -la data/summaries/ || echo "No summaries directory"
+
           # Only commit analysis results, not the raw database
           git add data/summaries/ data/*.json data/*.csv 2>/dev/null || true
+
+          # Debug: Check what's staged
+          echo "🔍 Staged changes:"
+          git diff --staged --name-only || echo "No staged changes"
 
           if ! git diff --staged --quiet; then
             git commit -m "Data collection: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
