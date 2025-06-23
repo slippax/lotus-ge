@@ -136,7 +136,7 @@ jobs:
           git config --local user.name "OSRS Data Collector"
 
           # Only commit analysis results, not the raw database
-          git add data/*.json data/*.csv 2>/dev/null || true
+          git add data/summaries/ data/*.json data/*.csv 2>/dev/null || true
 
           if ! git diff --staged --quiet; then
             git commit -m "Data collection: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
