@@ -40,4 +40,8 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-
+# Database files (stored in Dropbox, not Git)
+data/*.sqlite
+data/*.db
+*.sqlite
+*.db

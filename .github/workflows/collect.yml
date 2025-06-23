@@ -130,15 +130,18 @@ jobs:
             exit 1
           fi
 
-      - name: Commit and push data
+      - name: Commit and push analysis results
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "OSRS Data Collector"
-          git add data/
+
+          # Only commit analysis results, not the raw database
+          git add data/*.json data/*.csv 2>/dev/null || true
+
           if ! git diff --staged --quiet; then
             git commit -m "Data collection: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
             git push
-            echo "✓ Data committed and pushed"
+            echo "✓ Analysis results committed and pushed"
 
             # Notify users of instant data update
             curl -X POST "https://ntfy.sh/osrs-ge-lotus-updates" \
