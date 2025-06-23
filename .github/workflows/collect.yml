@@ -141,12 +141,20 @@ jobs:
           echo "🔍 Files in data/summaries directory:"
           ls -la data/summaries/ || echo "No summaries directory"
 
+          # Check git status before adding
+          echo "🔍 Git status before add:"
+          git status --porcelain data/summaries/ || echo "No changes detected"
+
           # Only commit analysis results, not the raw database
           git add data/summaries/ data/*.json data/*.csv 2>/dev/null || true
 
           # Debug: Check what's staged
           echo "🔍 Staged changes:"
           git diff --staged --name-only || echo "No staged changes"
+
+          # Show actual differences
+          echo "🔍 Summary file timestamps:"
+          head -3 data/summaries/*.json | grep -E "(updated|==)" || echo "No timestamp info"
 
           if ! git diff --staged --quiet; then
             git commit -m "Data collection: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
