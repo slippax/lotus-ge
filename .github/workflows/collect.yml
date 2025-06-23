@@ -35,8 +35,8 @@ jobs:
             -d client_secret="${{ secrets.DROPBOX_APP_SECRET }}" \
             --silent)
 
-          # Extract access token from response
-          ACCESS_TOKEN=$(echo "$RESPONSE" | sed -n 's/.*"access_token":"\([^"]*\)".*/\1/p')
+          # Extract access token from response using Python
+          ACCESS_TOKEN=$(echo "$RESPONSE" | python3 -c "import sys, json; print(json.load(sys.stdin)['access_token'])" 2>/dev/null || echo "")
 
           if [ -z "$ACCESS_TOKEN" ]; then
             echo "❌ Failed to refresh Dropbox access token"
