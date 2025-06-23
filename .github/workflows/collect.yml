@@ -36,7 +36,7 @@ jobs:
             --silent)
 
           # Extract access token from response
-          ACCESS_TOKEN=$(echo "$RESPONSE" | grep -o '"access_token":"[^"]*' | cut -d'"' -f4)
+          ACCESS_TOKEN=$(echo "$RESPONSE" | sed -n 's/.*"access_token":"\([^"]*\)".*/\1/p')
 
           if [ -z "$ACCESS_TOKEN" ]; then
             echo "❌ Failed to refresh Dropbox access token"
