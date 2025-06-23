@@ -146,7 +146,10 @@ jobs:
           git status --porcelain data/summaries/ || echo "No changes detected"
 
           # Only commit analysis results, not the raw database
-          git add data/summaries/ data/*.json data/*.csv 2>/dev/null || true
+          echo "🔍 Running git add command..."
+          git add data/summaries/ || echo "Failed to add summaries directory"
+          git add data/*.json 2>/dev/null || echo "No JSON files in data root"
+          git add data/*.csv 2>/dev/null || echo "No CSV files in data root"
 
           # Debug: Check what's staged
           echo "🔍 Staged changes:"
