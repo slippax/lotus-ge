@@ -135,29 +135,10 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "OSRS Data Collector"
 
-          # Debug: Check what files exist
-          echo "🔍 Files in data directory:"
-          ls -la data/ || echo "No data directory"
-          echo "🔍 Files in data/summaries directory:"
-          ls -la data/summaries/ || echo "No summaries directory"
-
-          # Check git status before adding
-          echo "🔍 Git status before add:"
-          git status --porcelain data/summaries/ || echo "No changes detected"
-
-          # Only commit analysis results, not the raw database
-          echo "🔍 Running git add command..."
-          git add data/summaries/ || echo "Failed to add summaries directory"
-          git add data/*.json 2>/dev/null || echo "No JSON files in data root"
-          git add data/*.csv 2>/dev/null || echo "No CSV files in data root"
-
-          # Debug: Check what's staged
-          echo "🔍 Staged changes:"
-          git diff --staged --name-only || echo "No staged changes"
-
-          # Show actual differences
-          echo "🔍 Summary file timestamps:"
-          head -3 data/summaries/*.json | grep -E "(updated|==)" || echo "No timestamp info"
+          # Commit analysis results, not the raw database
+          git add data/summaries/
+          git add data/*.json 2>/dev/null || true
+          git add data/*.csv 2>/dev/null || true
 
           if ! git diff --staged --quiet; then
             git commit -m "Data collection: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
