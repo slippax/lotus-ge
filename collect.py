@@ -663,6 +663,44 @@ def collect_osrs_data():
 
     logging.info("Starting OSRS data collection...")
 
+    # CRITICAL SAFETY CHECK: Verify we have existing historical data
+    cursor = conn.cursor()
+
+    # Check if this is a fresh database (would indicate Dropbox download failed)
+    cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='marketdata'")
+    if not cursor.fetchone():
+        logging.error("🚨 CRITICAL: No marketdata table found - this appears to be a fresh database!")
+        logging.error("🚨 This indicates the Dropbox database download failed.")
+        logging.error("🚨 Proceeding would lose all historical data. ABORTING.")
+        conn.close()
+        sys.exit(1)
+
+    # Check if we have meaningful historical data (at least 1000 records)
+    cursor.execute("SELECT COUNT(*) FROM marketdata")
+    record_count = cursor.fetchone()[0]
+
+    if record_count < 1000:
+        logging.error(f"🚨 CRITICAL: Only {record_count} records in marketdata table!")
+        logging.error("🚨 This indicates we're working with a fresh/corrupted database.")
+        logging.error("🚨 Expected thousands of historical records. ABORTING to prevent data loss.")
+        conn.close()
+        sys.exit(1)
+
+    # Check data recency (should have data from within last 7 days)
+    current_time = int(time.time())
+    cursor.execute("SELECT MAX(timestamp) FROM marketdata")
+    latest_timestamp = cursor.fetchone()[0]
+
+    if not latest_timestamp or (current_time - latest_timestamp) > (7 * 24 * 3600):
+        days_old = (current_time - latest_timestamp) / (24 * 3600) if latest_timestamp else "unknown"
+        logging.error(f"🚨 CRITICAL: Latest data is {days_old} days old!")
+        logging.error("🚨 This indicates we're working with stale/corrupted database.")
+        logging.error("🚨 ABORTING to prevent overwriting good data with bad data.")
+        conn.close()
+        sys.exit(1)
+
+    logging.info(f"✅ Database validation passed: {record_count} records, latest data {(current_time - latest_timestamp) / 3600:.1f} hours old")
+
     # Collect historical market data and get latest timestamp
     latest_timestamp = collect_historical_data(conn)
 

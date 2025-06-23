@@ -26,24 +26,78 @@ jobs:
       - name: Download existing database
         run: |
           mkdir -p data
-          # Try to download existing database from Dropbox
-          curl -X POST https://content.dropboxapi.com/2/files/download \
+          echo "🔄 Attempting to download existing database from Dropbox..."
+
+          # Try to download existing database from Dropbox with detailed error reporting
+          HTTP_CODE=$(curl -X POST https://content.dropboxapi.com/2/files/download \
             --header "Authorization: Bearer ${{ secrets.DROPBOX_ACCESS_TOKEN }}" \
             --header "Dropbox-API-Arg: {\"path\": \"/osrsmarketdata.sqlite\"}" \
             --output data/osrsmarketdata.sqlite \
-            --fail --silent || echo "No existing database found, will create new one"
+            --write-out "%{http_code}" \
+            --silent)
+
+          if [ "$HTTP_CODE" = "200" ]; then
+            echo "✅ Successfully downloaded existing database from Dropbox"
+            ls -la data/osrsmarketdata.sqlite
+          else
+            echo "❌ Failed to download database from Dropbox"
+            echo "HTTP Status Code: $HTTP_CODE"
+
+            # Get detailed error information
+            echo "🔍 Attempting to get detailed error information..."
+            curl -X POST https://content.dropboxapi.com/2/files/download \
+              --header "Authorization: Bearer ${{ secrets.DROPBOX_ACCESS_TOKEN }}" \
+              --header "Dropbox-API-Arg: {\"path\": \"/osrsmarketdata.sqlite\"}" \
+              --output /dev/null \
+              --include \
+              --silent || true
+
+            echo "🚨 CRITICAL: Cannot proceed without existing database - this would lose historical data!"
+            echo "Please check:"
+            echo "1. Dropbox access token validity"
+            echo "2. Database file exists at /osrsmarketdata.sqlite in Dropbox"
+            echo "3. Dropbox API service status"
+            exit 1
+          fi
 
       - name: Collect OSRS data
         run: python collect.py
 
       - name: Upload updated database
         run: |
-          # Upload updated database back to Dropbox
-          curl -X POST https://content.dropboxapi.com/2/files/upload \
+          echo "🔄 Uploading updated database back to Dropbox..."
+
+          # Verify database file exists and has reasonable size
+          if [ ! -f "data/osrsmarketdata.sqlite" ]; then
+            echo "❌ Database file not found - cannot upload"
+            exit 1
+          fi
+
+          DB_SIZE=$(stat -f%z data/osrsmarketdata.sqlite 2>/dev/null || stat -c%s data/osrsmarketdata.sqlite 2>/dev/null)
+          echo "📊 Database size: $DB_SIZE bytes"
+
+          if [ "$DB_SIZE" -lt 1000 ]; then
+            echo "❌ Database file too small ($DB_SIZE bytes) - likely corrupted"
+            exit 1
+          fi
+
+          # Upload updated database back to Dropbox with error handling
+          HTTP_CODE=$(curl -X POST https://content.dropboxapi.com/2/files/upload \
             --header "Authorization: Bearer ${{ secrets.DROPBOX_ACCESS_TOKEN }}" \
             --header "Dropbox-API-Arg: {\"path\": \"/osrsmarketdata.sqlite\", \"mode\": \"overwrite\"}" \
             --header "Content-Type: application/octet-stream" \
-            --data-binary @data/osrsmarketdata.sqlite
+            --data-binary @data/osrsmarketdata.sqlite \
+            --write-out "%{http_code}" \
+            --silent)
+
+          if [ "$HTTP_CODE" = "200" ]; then
+            echo "✅ Successfully uploaded updated database to Dropbox"
+          else
+            echo "❌ Failed to upload database to Dropbox"
+            echo "HTTP Status Code: $HTTP_CODE"
+            echo "🚨 WARNING: Database changes not backed up to Dropbox!"
+            exit 1
+          fi
 
       - name: Commit and push data
         run: |
