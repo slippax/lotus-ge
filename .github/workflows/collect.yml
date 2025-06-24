@@ -106,18 +106,55 @@ jobs:
             exit 1
           fi
 
-          # Upload updated database back to Dropbox with error handling using fresh token
-          UPLOAD_RESPONSE=$(curl -X POST https://content.dropboxapi.com/2/files/upload \
-            --header "Authorization: Bearer $FRESH_DROPBOX_TOKEN" \
-            --header "Dropbox-API-Arg: {\"path\": \"/osrsmarketdata.sqlite\", \"mode\": \"overwrite\"}" \
-            --header "Content-Type: application/octet-stream" \
-            --data-binary @data/osrsmarketdata.sqlite \
-            --write-out "HTTPSTATUS:%{http_code}" \
-            --silent)
+          # Use chunked upload for large files (>150MB) or regular upload for smaller files
+          if [ "$DB_SIZE" -gt 157286400 ]; then
+            echo "🔄 Using chunked upload for large database..."
 
-          # Extract HTTP status code from response
-          HTTP_CODE=$(echo "$UPLOAD_RESPONSE" | grep -o "HTTPSTATUS:[0-9]*" | cut -d: -f2)
-          RESPONSE_BODY=$(echo "$UPLOAD_RESPONSE" | sed 's/HTTPSTATUS:[0-9]*$//')
+            # Start upload session
+            SESSION_RESPONSE=$(curl -X POST https://content.dropboxapi.com/2/files/upload_session/start \
+              --header "Authorization: Bearer $FRESH_DROPBOX_TOKEN" \
+              --header "Content-Type: application/octet-stream" \
+              --data-binary @data/osrsmarketdata.sqlite \
+              --silent)
+
+            SESSION_ID=$(echo "$SESSION_RESPONSE" | python3 -c "import sys, json; print(json.load(sys.stdin)['session_id'])" 2>/dev/null)
+
+            if [ -z "$SESSION_ID" ]; then
+              echo "❌ Failed to start upload session"
+              echo "Response: $SESSION_RESPONSE"
+              exit 1
+            fi
+
+            echo "✅ Upload session started: $SESSION_ID"
+
+            # Finish upload session
+            FINISH_RESPONSE=$(curl -X POST https://content.dropboxapi.com/2/files/upload_session/finish \
+              --header "Authorization: Bearer $FRESH_DROPBOX_TOKEN" \
+              --header "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \"$SESSION_ID\", \"offset\": $DB_SIZE}, \"commit\": {\"path\": \"/osrsmarketdata.sqlite\", \"mode\": \"overwrite\"}}" \
+              --header "Content-Type: application/octet-stream" \
+              --write-out "HTTPSTATUS:%{http_code}" \
+              --silent)
+
+            # Extract HTTP status code from response
+            HTTP_CODE=$(echo "$FINISH_RESPONSE" | grep -o "HTTPSTATUS:[0-9]*" | cut -d: -f2)
+            RESPONSE_BODY=$(echo "$FINISH_RESPONSE" | sed 's/HTTPSTATUS:[0-9]*$//')
+
+          else
+            echo "🔄 Using regular upload for smaller database..."
+
+            # Regular upload for smaller files
+            UPLOAD_RESPONSE=$(curl -X POST https://content.dropboxapi.com/2/files/upload \
+              --header "Authorization: Bearer $FRESH_DROPBOX_TOKEN" \
+              --header "Dropbox-API-Arg: {\"path\": \"/osrsmarketdata.sqlite\", \"mode\": \"overwrite\"}" \
+              --header "Content-Type: application/octet-stream" \
+              --data-binary @data/osrsmarketdata.sqlite \
+              --write-out "HTTPSTATUS:%{http_code}" \
+              --silent)
+
+            # Extract HTTP status code from response
+            HTTP_CODE=$(echo "$UPLOAD_RESPONSE" | grep -o "HTTPSTATUS:[0-9]*" | cut -d: -f2)
+            RESPONSE_BODY=$(echo "$UPLOAD_RESPONSE" | sed 's/HTTPSTATUS:[0-9]*$//')
+          fi
 
           if [ "$HTTP_CODE" = "200" ]; then
             echo "✅ Successfully uploaded updated database to Dropbox"
