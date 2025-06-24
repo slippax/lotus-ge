@@ -109,31 +109,48 @@ jobs:
           # Use chunked upload for large files (>150MB) or regular upload for smaller files
           if [ "$DB_SIZE" -gt 157286400 ]; then
             echo "🔄 Using chunked upload for large database..."
+            echo "🔍 Debug: Starting upload session for $DB_SIZE bytes"
 
             # Start upload session
             SESSION_RESPONSE=$(curl -X POST https://content.dropboxapi.com/2/files/upload_session/start \
               --header "Authorization: Bearer $FRESH_DROPBOX_TOKEN" \
               --header "Content-Type: application/octet-stream" \
               --data-binary @data/osrsmarketdata.sqlite \
+              --write-out "HTTPSTATUS:%{http_code}" \
               --silent)
 
-            SESSION_ID=$(echo "$SESSION_RESPONSE" | python3 -c "import sys, json; print(json.load(sys.stdin)['session_id'])" 2>/dev/null)
+            echo "🔍 Debug: Session response: $SESSION_RESPONSE"
+
+            # Extract session info
+            SESSION_HTTP_CODE=$(echo "$SESSION_RESPONSE" | grep -o "HTTPSTATUS:[0-9]*" | cut -d: -f2)
+            SESSION_BODY=$(echo "$SESSION_RESPONSE" | sed 's/HTTPSTATUS:[0-9]*$//')
+
+            if [ "$SESSION_HTTP_CODE" != "200" ]; then
+              echo "❌ Failed to start upload session (HTTP $SESSION_HTTP_CODE)"
+              echo "Response: $SESSION_BODY"
+              exit 1
+            fi
+
+            SESSION_ID=$(echo "$SESSION_BODY" | python3 -c "import sys, json; print(json.load(sys.stdin)['session_id'])" 2>/dev/null)
 
             if [ -z "$SESSION_ID" ]; then
-              echo "❌ Failed to start upload session"
-              echo "Response: $SESSION_RESPONSE"
+              echo "❌ Failed to extract session ID"
+              echo "Response: $SESSION_BODY"
               exit 1
             fi
 
             echo "✅ Upload session started: $SESSION_ID"
+            echo "🔍 Debug: Finishing upload session..."
 
-            # Finish upload session
+            # Finish upload session (no data, just commit)
             FINISH_RESPONSE=$(curl -X POST https://content.dropboxapi.com/2/files/upload_session/finish \
               --header "Authorization: Bearer $FRESH_DROPBOX_TOKEN" \
               --header "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \"$SESSION_ID\", \"offset\": $DB_SIZE}, \"commit\": {\"path\": \"/osrsmarketdata.sqlite\", \"mode\": \"overwrite\"}}" \
               --header "Content-Type: application/octet-stream" \
               --write-out "HTTPSTATUS:%{http_code}" \
               --silent)
+
+            echo "🔍 Debug: Finish response: $FINISH_RESPONSE"
 
             # Extract HTTP status code from response
             HTTP_CODE=$(echo "$FINISH_RESPONSE" | grep -o "HTTPSTATUS:[0-9]*" | cut -d: -f2)
