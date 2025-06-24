@@ -109,17 +109,18 @@ jobs:
           # Use chunked upload for large files (>150MB) or regular upload for smaller files
           if [ "$DB_SIZE" -gt 157286400 ]; then
             echo "🔄 Using chunked upload for large database..."
-            echo "🔍 Debug: Starting upload session for $DB_SIZE bytes"
+            echo "🔍 Uploading $DB_SIZE bytes in chunks..."
 
-            # Start upload session
+            # Start upload session with first chunk (100MB)
+            CHUNK_SIZE=104857600  # 100MB chunks
+
+            echo "🔍 Starting session with first chunk..."
             SESSION_RESPONSE=$(curl -X POST https://content.dropboxapi.com/2/files/upload_session/start \
               --header "Authorization: Bearer $FRESH_DROPBOX_TOKEN" \
               --header "Content-Type: application/octet-stream" \
-              --data-binary @data/osrsmarketdata.sqlite \
+              --data-binary @<(head -c $CHUNK_SIZE data/osrsmarketdata.sqlite) \
               --write-out "HTTPSTATUS:%{http_code}" \
               --silent)
-
-            echo "🔍 Debug: Session response: $SESSION_RESPONSE"
 
             # Extract session info
             SESSION_HTTP_CODE=$(echo "$SESSION_RESPONSE" | grep -o "HTTPSTATUS:[0-9]*" | cut -d: -f2)
@@ -140,17 +141,46 @@ jobs:
             fi
 
             echo "✅ Upload session started: $SESSION_ID"
-            echo "🔍 Debug: Finishing upload session..."
 
-            # Finish upload session (no data, just commit)
+            # Upload remaining chunks
+            OFFSET=$CHUNK_SIZE
+            while [ $OFFSET -lt $DB_SIZE ]; do
+              REMAINING=$((DB_SIZE - OFFSET))
+              CURRENT_CHUNK_SIZE=$CHUNK_SIZE
+              if [ $REMAINING -lt $CHUNK_SIZE ]; then
+                CURRENT_CHUNK_SIZE=$REMAINING
+              fi
+
+              echo "🔍 Uploading chunk at offset $OFFSET (size: $CURRENT_CHUNK_SIZE)"
+
+              APPEND_RESPONSE=$(curl -X POST https://content.dropboxapi.com/2/files/upload_session/append_v2 \
+                --header "Authorization: Bearer $FRESH_DROPBOX_TOKEN" \
+                --header "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \"$SESSION_ID\", \"offset\": $OFFSET}}" \
+                --header "Content-Type: application/octet-stream" \
+                --data-binary @<(tail -c +$((OFFSET + 1)) data/osrsmarketdata.sqlite | head -c $CURRENT_CHUNK_SIZE) \
+                --write-out "HTTPSTATUS:%{http_code}" \
+                --silent)
+
+              APPEND_HTTP_CODE=$(echo "$APPEND_RESPONSE" | grep -o "HTTPSTATUS:[0-9]*" | cut -d: -f2)
+
+              if [ "$APPEND_HTTP_CODE" != "200" ]; then
+                echo "❌ Failed to append chunk (HTTP $APPEND_HTTP_CODE)"
+                echo "Response: $APPEND_RESPONSE"
+                exit 1
+              fi
+
+              OFFSET=$((OFFSET + CURRENT_CHUNK_SIZE))
+            done
+
+            echo "✅ All chunks uploaded, finishing session..."
+
+            # Finish upload session
             FINISH_RESPONSE=$(curl -X POST https://content.dropboxapi.com/2/files/upload_session/finish \
               --header "Authorization: Bearer $FRESH_DROPBOX_TOKEN" \
               --header "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \"$SESSION_ID\", \"offset\": $DB_SIZE}, \"commit\": {\"path\": \"/osrsmarketdata.sqlite\", \"mode\": \"overwrite\"}}" \
               --header "Content-Type: application/octet-stream" \
               --write-out "HTTPSTATUS:%{http_code}" \
               --silent)
-
-            echo "🔍 Debug: Finish response: $FINISH_RESPONSE"
 
             # Extract HTTP status code from response
             HTTP_CODE=$(echo "$FINISH_RESPONSE" | grep -o "HTTPSTATUS:[0-9]*" | cut -d: -f2)
