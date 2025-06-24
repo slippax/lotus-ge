@@ -653,6 +653,36 @@ def create_master_table(conn):
     logging.info(f"✓ MasterTable created with {count} items and fresh statistical data")
 
 
+def perform_database_maintenance(conn):
+    """Perform database maintenance to prevent bloat and optimize performance"""
+    cursor = conn.cursor()
+
+    logging.info("🔧 Performing database maintenance...")
+
+    # Get database size before maintenance
+    cursor.execute("PRAGMA page_count")
+    page_count_before = cursor.fetchone()[0]
+    cursor.execute("PRAGMA page_size")
+    page_size = cursor.fetchone()[0]
+    size_before_mb = (page_count_before * page_size) / (1024 * 1024)
+
+    # VACUUM operation to reclaim deleted space and defragment
+    logging.info("🔄 Running VACUUM to optimize database...")
+    cursor.execute("VACUUM")
+
+    # Get database size after maintenance
+    cursor.execute("PRAGMA page_count")
+    page_count_after = cursor.fetchone()[0]
+    size_after_mb = (page_count_after * page_size) / (1024 * 1024)
+
+    space_saved_mb = size_before_mb - size_after_mb
+
+    if space_saved_mb > 1:
+        logging.info(f"✅ Database optimized: {size_before_mb:.1f}MB → {size_after_mb:.1f}MB (saved {space_saved_mb:.1f}MB)")
+    else:
+        logging.info(f"✅ Database maintenance completed: {size_after_mb:.1f}MB (already optimized)")
+
+
 def collect_osrs_data():
     """Main function to collect OSRS market data with advanced methodology"""
     setup_logging()
@@ -739,6 +769,9 @@ def collect_osrs_data():
     generate_volume_profile_analysis(conn)
     generate_confluence_analysis(conn)
     generate_recipe_arbitrage_analysis(conn)
+
+    # Database maintenance to prevent bloat
+    perform_database_maintenance(conn)
 
     # Commit and close
     conn.commit()
