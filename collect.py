@@ -895,8 +895,8 @@ def generate_alchemy_summary(conn):
     # Step 2: Create NatureRunePrice table (line 95)
     cursor.execute("CREATE TABLE NatureRunePrice AS SELECT (GranularDailyMeanLow + GranularDailyMeanHigh) / 2 AS NatureRunePrice FROM MasterTable WHERE id=561")
 
-    # Step 3: Create PriceFloor table (line 96)
-    cursor.execute("CREATE TABLE PriceFloor AS SELECT id, round(((MasterTable.mappinghighalch - NatureRunePrice.NatureRunePrice - (JagexExchangeRate.BondPrice / (403200 * (BlackMarketRate / JagexExchangeRate.JagexExchangeRate)))) * 0.99) + 0.5) AS PriceFloor FROM MasterTable, NatureRunePrice, JagexExchangeRate, BlackMarketRate")
+    # Step 3: Create PriceFloor table (line 96) - Fixed to avoid cartesian product
+    cursor.execute("CREATE TABLE PriceFloor AS SELECT id, round(((MasterTable.mappinghighalch - NatureRunePrice.NatureRunePrice - (JagexExchangeRate.BondPrice / (403200 * (BlackMarketRate.exchangerate / JagexExchangeRate.JagexExchangeRate)))) * 0.99) + 0.5) AS PriceFloor FROM MasterTable CROSS JOIN NatureRunePrice CROSS JOIN JagexExchangeRate CROSS JOIN (SELECT exchangerate FROM BlackMarket ORDER BY timestamp DESC LIMIT 1) AS BlackMarketRate")
 
     # Step 4: Create MasterTableTax (line 97)
     cursor.execute("CREATE TABLE MasterTableTax AS SELECT * FROM MasterTable INNER JOIN PriceFloor ON MasterTable.id = PriceFloor.id")
@@ -914,8 +914,8 @@ def generate_alchemy_summary(conn):
     # Step 8: Create DailyCSVwithProfit (line 102)
     cursor.execute("CREATE TABLE DailyCSVwithProfit AS SELECT *, MIN(NoBuyLimit.NoBuyLimitProfit, COALESCE(WithBuyLimit.WithBuyLimitProfit, 'NONE')) AS AdjustedPotentialDailyProfit FROM NoBuyLimit, WithBuyLimit WHERE NoBuyLimit.id = WithBuyLimit.id")
 
-    # Step 9: Create FinalOutput (line 103)
-    cursor.execute("CREATE TABLE FinalOutput AS SELECT mappingname AS ItemName, low AS LowPrice, PriceFloor, mappinglimit AS BuyLimit, (PriceFloor - low - Tax) AS ProfitPerUnit, ((PriceFloor - low - Tax) / low) * 100 AS pctROI FROM DailyCSVwithProfit, JagexExchangeRate, BlackMarketRate WHERE mappinglimit > (4800 * (BlackMarketRate) / (JagexExchangeRate.JagexExchangeRate)) AND (GranularDailyMeanVolumeHigh + GranularDailyMeanVolumeLow) / 2 > 4800 * (BlackMarketRate) / (JagexExchangeRate.JagexExchangeRate) AND pctROI > 1 ORDER BY AdjustedPotentialDailyProfit DESC")
+    # Step 9: Create FinalOutput (line 103) - Fixed to avoid cartesian product
+    cursor.execute("CREATE TABLE FinalOutput AS SELECT mappingname AS ItemName, low AS LowPrice, PriceFloor, mappinglimit AS BuyLimit, (PriceFloor - low - Tax) AS ProfitPerUnit, ((PriceFloor - low - Tax) / low) * 100 AS pctROI FROM DailyCSVwithProfit CROSS JOIN JagexExchangeRate CROSS JOIN (SELECT exchangerate FROM BlackMarket ORDER BY timestamp DESC LIMIT 1) AS BlackMarketRate WHERE mappinglimit > (4800 * (BlackMarketRate.exchangerate) / (JagexExchangeRate.JagexExchangeRate)) AND (GranularDailyMeanVolumeHigh + GranularDailyMeanVolumeLow) / 2 > 4800 * (BlackMarketRate.exchangerate) / (JagexExchangeRate.JagexExchangeRate) AND pctROI > 1 ORDER BY AdjustedPotentialDailyProfit DESC")
 
     # Step 10: Get results (line 106 equivalent)
     cursor.execute("SELECT ItemName, LowPrice, round(PriceFloor) AS PriceFloor, BuyLimit, printf('%.2f', pctROI) AS pctROI FROM FinalOutput")
