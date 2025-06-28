@@ -1,14 +1,14 @@
 {
-  "updated": "2025-06-28T12:35:39.782121+00:00",
+  "updated": "2025-06-28T12:40:36.915955+00:00",
   "items": [
     {
       "ItemName": "Emerald dragon bolts (e)",
       "CurrentPrice": 3002,
       "BuyLimit": 11000,
-      "DailyRange": 2,
+      "DailyRange": 1,
       "WeeklyRange": 3096,
       "MonthlyRange": 3096,
-      "CompressionRatio": 0.06,
+      "CompressionRatio": 0.03,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 3302200.0,
@@ -31,10 +31,10 @@
       "ItemName": "Ruby amulet",
       "CurrentPrice": 1155,
       "BuyLimit": 10000,
-      "DailyRange": 141,
+      "DailyRange": 140,
       "WeeklyRange": 5466,
       "MonthlyRange": 5466,
-      "CompressionRatio": 2.58,
+      "CompressionRatio": 2.56,
       "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 1155000.0,
@@ -80,6 +80,19 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
+      "ItemName": "Nail beast nails",
+      "CurrentPrice": 506,
+      "BuyLimit": 11000,
+      "DailyRange": 6,
+      "WeeklyRange": 86,
+      "MonthlyRange": 86,
+      "CompressionRatio": 6.98,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 556600.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
       "ItemName": "Adamant dart(p++)",
       "CurrentPrice": 356,
       "BuyLimit": 11000,
@@ -107,28 +120,15 @@
     },
     {
       "ItemName": "Maple shortbow (u)",
-      "CurrentPrice": 100,
+      "CurrentPrice": 90,
       "BuyLimit": 10000,
       "DailyRange": 25,
       "WeeklyRange": 207,
       "MonthlyRange": 207,
       "CompressionRatio": 12.08,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "BreakoutDirection": "UPPER_BIAS",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 100000.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
-      "ItemName": "Onyx dragon bolts (e)",
-      "CurrentPrice": 10000,
-      "BuyLimit": 11000,
-      "DailyRange": 353,
-      "WeeklyRange": 2812,
-      "MonthlyRange": 2812,
-      "CompressionRatio": 12.55,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 11000000.0,
+      "PotentialBreakoutProfit": 90000.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -184,6 +184,19 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
+      "ItemName": "Gold tiara",
+      "CurrentPrice": 100,
+      "BuyLimit": 10000,
+      "DailyRange": 5,
+      "WeeklyRange": 21,
+      "MonthlyRange": 21,
+      "CompressionRatio": 23.81,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 100000.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
       "ItemName": "Jade amulet (u)",
       "CurrentPrice": 760,
       "BuyLimit": 10000,
@@ -198,7 +211,7 @@
     },
     {
       "ItemName": "Ardougne teleport (tablet)",
-      "CurrentPrice": 545,
+      "CurrentPrice": 529,
       "BuyLimit": 10000,
       "DailyRange": 20,
       "WeeklyRange": 79,
@@ -206,33 +219,20 @@
       "CompressionRatio": 25.32,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 545000.0,
+      "PotentialBreakoutProfit": 529000.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
       "ItemName": "Dwarven stout",
-      "CurrentPrice": 60,
+      "CurrentPrice": 77,
       "BuyLimit": 2000,
       "DailyRange": 17,
       "WeeklyRange": 60,
       "MonthlyRange": 60,
       "CompressionRatio": 28.33,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 12000.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
-      "ItemName": "Nail beast nails",
-      "CurrentPrice": 506,
-      "BuyLimit": 11000,
-      "DailyRange": 25,
-      "WeeklyRange": 86,
-      "MonthlyRange": 86,
-      "CompressionRatio": 29.07,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 556600.0,
+      "PotentialBreakoutProfit": 15400.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -289,15 +289,15 @@
     },
     {
       "ItemName": "Hard leather",
-      "CurrentPrice": 359,
+      "CurrentPrice": 334,
       "BuyLimit": 13000,
       "DailyRange": 25,
       "WeeklyRange": 73,
       "MonthlyRange": 73,
       "CompressionRatio": 34.25,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 466700.0,
+      "PotentialBreakoutProfit": 434200.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -311,6 +311,19 @@
       "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 3173300.0,
+      "CompressionLevel": "MODERATE_COMPRESSION"
+    },
+    {
+      "ItemName": "Onyx dragon bolts (e)",
+      "CurrentPrice": 10000,
+      "BuyLimit": 11000,
+      "DailyRange": 991,
+      "WeeklyRange": 2812,
+      "MonthlyRange": 2812,
+      "CompressionRatio": 35.24,
+      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 11000000.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -415,19 +428,6 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 11228800.0,
-      "CompressionLevel": "MODERATE_COMPRESSION"
-    },
-    {
-      "ItemName": "Amethyst dart(p)",
-      "CurrentPrice": 562,
-      "BuyLimit": 11000,
-      "DailyRange": 252,
-      "WeeklyRange": 539,
-      "MonthlyRange": 539,
-      "CompressionRatio": 46.75,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 618200.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
