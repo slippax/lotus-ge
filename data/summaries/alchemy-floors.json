@@ -1,6 +1,13 @@
 {
-  "updated": "2025-06-29T23:35:30.641220+00:00",
+  "updated": "2025-06-29T23:40:33.754972+00:00",
   "items": [
+    {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8825,
+      "PriceFloor": 9010.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.08
+    },
     {
       "ItemName": "Phoenix necklace",
       "LowPrice": 2111,
@@ -31,10 +38,17 @@
     },
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 552,
+      "LowPrice": 549,
       "PriceFloor": 564.0,
       "BuyLimit": 18000,
-      "pctROI": 1.27
+      "pctROI": 1.82
+    },
+    {
+      "ItemName": "Rune javelin heads",
+      "LowPrice": 585,
+      "PriceFloor": 605.0,
+      "BuyLimit": 10000,
+      "pctROI": 2.39
     }
   ],
   "methodology": "VeryGranular"
