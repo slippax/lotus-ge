@@ -1,5 +1,5 @@
 {
-  "updated": "2025-07-01T22:05:31.800677+00:00",
+  "updated": "2025-07-01T22:10:36.512953+00:00",
   "items": [
     {
       "ItemName": "Air battlestaff",
@@ -16,6 +16,13 @@
       "pctROI": 2.56
     },
     {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1261,
+      "PriceFloor": 1320.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.65
+    },
+    {
       "ItemName": "Yew shortbow",
       "LowPrice": 240,
       "PriceFloor": 275.0,
@@ -28,13 +35,6 @@
       "PriceFloor": 958.0,
       "BuyLimit": 10000,
       "pctROI": 5.21
-    },
-    {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 2020,
-      "PriceFloor": 2071.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.53
     }
   ],
   "methodology": "VeryGranular"
