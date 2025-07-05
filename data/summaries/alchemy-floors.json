@@ -1,5 +1,5 @@
 {
-  "updated": "2025-07-05T04:30:37.360729+00:00",
+  "updated": "2025-07-05T04:35:33.660751+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -16,11 +16,18 @@
       "pctROI": 1.18
     },
     {
+      "ItemName": "Combat bracelet",
+      "LowPrice": 12026,
+      "PriceFloor": 12300.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.26
+    },
+    {
       "ItemName": "Rune javelin heads",
-      "LowPrice": 519,
+      "LowPrice": 520,
       "PriceFloor": 604.0,
       "BuyLimit": 10000,
-      "pctROI": 15.22
+      "pctROI": 15.0
     },
     {
       "ItemName": "Magic longbow",
@@ -31,10 +38,10 @@
     },
     {
       "ItemName": "Dragon javelin heads",
-      "LowPrice": 887,
+      "LowPrice": 901,
       "PriceFloor": 961.0,
       "BuyLimit": 10000,
-      "pctROI": 7.33
+      "pctROI": 5.66
     }
   ],
   "methodology": "VeryGranular"
