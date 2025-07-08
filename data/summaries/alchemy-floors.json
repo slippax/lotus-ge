@@ -1,13 +1,6 @@
 {
-  "updated": "2025-07-08T17:25:44.081142+00:00",
+  "updated": "2025-07-08T17:30:36.981969+00:00",
   "items": [
-    {
-      "ItemName": "Fire battlestaff",
-      "LowPrice": 8801,
-      "PriceFloor": 9008.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.33
-    },
     {
       "ItemName": "Water battlestaff",
       "LowPrice": 8802,
@@ -17,10 +10,17 @@
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8457,
+      "LowPrice": 8456,
       "PriceFloor": 8711.0,
       "BuyLimit": 11000,
-      "pctROI": 1.97
+      "pctROI": 1.99
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8822,
+      "PriceFloor": 9008.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.09
     },
     {
       "ItemName": "Magic longbow",
@@ -38,17 +38,17 @@
     },
     {
       "ItemName": "Rune javelin heads",
-      "LowPrice": 510,
+      "LowPrice": 511,
       "PriceFloor": 603.0,
       "BuyLimit": 10000,
-      "pctROI": 17.06
+      "pctROI": 16.83
     },
     {
       "ItemName": "Dragon javelin heads",
-      "LowPrice": 903,
+      "LowPrice": 901,
       "PriceFloor": 960.0,
       "BuyLimit": 10000,
-      "pctROI": 5.32
+      "pctROI": 5.55
     },
     {
       "ItemName": "Amethyst javelin heads",
@@ -56,6 +56,13 @@
       "PriceFloor": 704.0,
       "BuyLimit": 10000,
       "pctROI": 2.2
+    },
+    {
+      "ItemName": "Atlatl dart",
+      "LowPrice": 91,
+      "PriceFloor": 92.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.1
     }
   ],
   "methodology": "VeryGranular"
