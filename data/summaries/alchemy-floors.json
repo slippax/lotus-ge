@@ -1,5 +1,5 @@
 {
-  "updated": "2025-07-09T19:40:35.413385+00:00",
+  "updated": "2025-07-09T19:45:32.480467+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -10,10 +10,17 @@
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8539,
+      "LowPrice": 8500,
       "PriceFloor": 8712.0,
       "BuyLimit": 11000,
-      "pctROI": 1.01
+      "pctROI": 1.47
+    },
+    {
+      "ItemName": "Yew shortbow",
+      "LowPrice": 210,
+      "PriceFloor": 278.0,
+      "BuyLimit": 18000,
+      "pctROI": 31.43
     },
     {
       "ItemName": "Magic longbow",
@@ -31,10 +38,10 @@
     },
     {
       "ItemName": "Dragon javelin heads",
-      "LowPrice": 896,
+      "LowPrice": 893,
       "PriceFloor": 961.0,
       "BuyLimit": 10000,
-      "pctROI": 6.25
+      "pctROI": 6.61
     },
     {
       "ItemName": "Atlatl dart",
@@ -42,13 +49,6 @@
       "PriceFloor": 93.0,
       "BuyLimit": 11000,
       "pctROI": 22.37
-    },
-    {
-      "ItemName": "Yew shortbow",
-      "LowPrice": 270,
-      "PriceFloor": 278.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.22
     }
   ],
   "methodology": "VeryGranular"
