@@ -1,5 +1,5 @@
 {
-  "updated": "2025-07-16T09:15:34.803965+00:00",
+  "updated": "2025-07-16T09:20:37.367674+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -17,10 +17,17 @@
     },
     {
       "ItemName": "Rune javelin heads",
-      "LowPrice": 534,
+      "LowPrice": 549,
       "PriceFloor": 605.0,
       "BuyLimit": 10000,
-      "pctROI": 12.17
+      "pctROI": 9.11
+    },
+    {
+      "ItemName": "Dragon javelin heads",
+      "LowPrice": 909,
+      "PriceFloor": 962.0,
+      "BuyLimit": 10000,
+      "pctROI": 4.84
     },
     {
       "ItemName": "Diamond bracelet",
@@ -28,20 +35,6 @@
       "PriceFloor": 2075.0,
       "BuyLimit": 10000,
       "pctROI": 1.73
-    },
-    {
-      "ItemName": "Dragon javelin heads",
-      "LowPrice": 920,
-      "PriceFloor": 962.0,
-      "BuyLimit": 10000,
-      "pctROI": 3.59
-    },
-    {
-      "ItemName": "Atlatl dart",
-      "LowPrice": 93,
-      "PriceFloor": 94.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.08
     }
   ],
   "methodology": "VeryGranular"
