@@ -1,5 +1,5 @@
 {
-  "updated": "2025-07-17T02:40:37.403736+00:00",
+  "updated": "2025-07-17T02:45:39.224052+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -24,10 +24,17 @@
     },
     {
       "ItemName": "Rune javelin heads",
-      "LowPrice": 547,
+      "LowPrice": 531,
       "PriceFloor": 605.0,
       "BuyLimit": 10000,
-      "pctROI": 9.51
+      "pctROI": 12.81
+    },
+    {
+      "ItemName": "Dragon javelin heads",
+      "LowPrice": 901,
+      "PriceFloor": 962.0,
+      "BuyLimit": 10000,
+      "pctROI": 5.77
     },
     {
       "ItemName": "Ruby bracelet",
@@ -35,13 +42,6 @@
       "PriceFloor": 1184.0,
       "BuyLimit": 10000,
       "pctROI": 1.56
-    },
-    {
-      "ItemName": "Dragon javelin heads",
-      "LowPrice": 936,
-      "PriceFloor": 962.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.82
     }
   ],
   "methodology": "VeryGranular"
