@@ -1,5 +1,5 @@
 {
-  "updated": "2025-07-17T01:00:37.631422+00:00",
+  "updated": "2025-07-17T01:05:34.268538+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -16,11 +16,18 @@
       "pctROI": 5.12
     },
     {
+      "ItemName": "Phoenix necklace",
+      "LowPrice": 2089,
+      "PriceFloor": 2209.0,
+      "BuyLimit": 10000,
+      "pctROI": 4.69
+    },
+    {
       "ItemName": "Dragon javelin heads",
-      "LowPrice": 885,
+      "LowPrice": 884,
       "PriceFloor": 962.0,
       "BuyLimit": 10000,
-      "pctROI": 7.68
+      "pctROI": 7.81
     },
     {
       "ItemName": "Rune javelin heads",
@@ -28,13 +35,6 @@
       "PriceFloor": 605.0,
       "BuyLimit": 10000,
       "pctROI": 12.38
-    },
-    {
-      "ItemName": "Phoenix necklace",
-      "LowPrice": 2150,
-      "PriceFloor": 2209.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.72
     }
   ],
   "methodology": "VeryGranular"
