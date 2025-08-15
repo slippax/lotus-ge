@@ -1,5 +1,5 @@
 {
-  "updated": "2025-08-15T05:15:33.560592+00:00",
+  "updated": "2025-08-15T05:20:32.129540+00:00",
   "items": [
     {
       "ItemName": "Yew longbow",
@@ -9,11 +9,18 @@
       "pctROI": 15.32
     },
     {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1280,
+      "PriceFloor": 1337.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.44
+    },
+    {
       "ItemName": "Rune javelin heads",
-      "LowPrice": 554,
+      "LowPrice": 556,
       "PriceFloor": 618.0,
       "BuyLimit": 10000,
-      "pctROI": 10.47
+      "pctROI": 10.07
     },
     {
       "ItemName": "Dragon javelin heads",
@@ -23,25 +30,11 @@
       "pctROI": 5.0
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1305,
-      "PriceFloor": 1337.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.46
-    },
-    {
       "ItemName": "Amethyst javelin heads",
       "LowPrice": 703,
       "PriceFloor": 719.0,
       "BuyLimit": 10000,
       "pctROI": 1.28
-    },
-    {
-      "ItemName": "Atlatl dart",
-      "LowPrice": 101,
-      "PriceFloor": 107.0,
-      "BuyLimit": 11000,
-      "pctROI": 4.95
     }
   ],
   "methodology": "VeryGranular"
