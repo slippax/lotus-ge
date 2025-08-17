@@ -1,12 +1,19 @@
 {
-  "updated": "2025-08-17T09:45:31.782717+00:00",
+  "updated": "2025-08-17T09:50:38.155969+00:00",
   "items": [
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 504,
+      "LowPrice": 510,
       "PriceFloor": 576.0,
       "BuyLimit": 18000,
-      "pctROI": 13.29
+      "pctROI": 11.96
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1264,
+      "PriceFloor": 1336.0,
+      "BuyLimit": 18000,
+      "pctROI": 4.67
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -16,13 +23,6 @@
       "pctROI": 1.03
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1281,
-      "PriceFloor": 1336.0,
-      "BuyLimit": 18000,
-      "pctROI": 3.28
-    },
-    {
       "ItemName": "Dragon javelin heads",
       "LowPrice": 892,
       "PriceFloor": 974.0,
@@ -30,18 +30,18 @@
       "pctROI": 8.18
     },
     {
+      "ItemName": "Rune javelin heads",
+      "LowPrice": 546,
+      "PriceFloor": 617.0,
+      "BuyLimit": 10000,
+      "pctROI": 11.9
+    },
+    {
       "ItemName": "Atlatl dart",
       "LowPrice": 71,
       "PriceFloor": 106.0,
       "BuyLimit": 11000,
       "pctROI": 47.89
-    },
-    {
-      "ItemName": "Demon tear",
-      "LowPrice": 109,
-      "PriceFloor": 112.0,
-      "BuyLimit": 13000,
-      "pctROI": 1.83
     }
   ],
   "methodology": "VeryGranular"
