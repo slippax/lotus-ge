@@ -1,6 +1,13 @@
 {
-  "updated": "2025-08-18T02:40:32.727512+00:00",
+  "updated": "2025-08-18T02:45:32.998936+00:00",
   "items": [
+    {
+      "ItemName": "Old school bond",
+      "LowPrice": 12810000,
+      "AvgLow": 13507919,
+      "BuyLimit": 100,
+      "pctROI": 4.39
+    },
     {
       "ItemName": "Dragonstone amulet",
       "LowPrice": 11100,
@@ -17,10 +24,10 @@
     },
     {
       "ItemName": "Dragonstone ring",
-      "LowPrice": 11025,
+      "LowPrice": 11000,
       "AvgLow": 11342,
       "BuyLimit": 10000,
-      "pctROI": 1.85
+      "pctROI": 2.08
     },
     {
       "ItemName": "Bagged plant 3",
@@ -30,11 +37,32 @@
       "pctROI": 3.09
     },
     {
+      "ItemName": "Obsidian platelegs",
+      "LowPrice": 640000,
+      "AvgLow": 673945,
+      "BuyLimit": 70,
+      "pctROI": 4.25
+    },
+    {
+      "ItemName": "Burning claw",
+      "LowPrice": 1901000,
+      "AvgLow": 2097794,
+      "BuyLimit": 8,
+      "pctROI": 9.25
+    },
+    {
       "ItemName": "Godsword shard 1",
       "LowPrice": 153010,
       "AvgLow": 158297,
       "BuyLimit": 11000,
       "pctROI": 2.42
+    },
+    {
+      "ItemName": "Dragonstone",
+      "LowPrice": 10793,
+      "AvgLow": 11009,
+      "BuyLimit": 11000,
+      "pctROI": 0.98
     },
     {
       "ItemName": "Ensouled troll head",
@@ -44,13 +72,6 @@
       "pctROI": 92.52
     },
     {
-      "ItemName": "Dragonstone",
-      "LowPrice": 10800,
-      "AvgLow": 11009,
-      "BuyLimit": 11000,
-      "pctROI": 0.92
-    },
-    {
       "ItemName": "Contract of sensory clouding",
       "LowPrice": 25000,
       "AvgLow": 41844,
@@ -58,32 +79,11 @@
       "pctROI": 65.7
     },
     {
-      "ItemName": "Onyx bolts",
-      "LowPrice": 8411,
-      "AvgLow": 8564,
-      "BuyLimit": 11000,
-      "pctROI": 0.81
-    },
-    {
       "ItemName": "Volcanic ash",
       "LowPrice": 33,
       "AvgLow": 84,
       "BuyLimit": 13000,
       "pctROI": 154.55
-    },
-    {
-      "ItemName": "White bead",
-      "LowPrice": 1250,
-      "AvgLow": 1771,
-      "BuyLimit": 11000,
-      "pctROI": 40.32
-    },
-    {
-      "ItemName": "Emerald bracelet",
-      "LowPrice": 720,
-      "AvgLow": 787,
-      "BuyLimit": 10000,
-      "pctROI": 8.33
     },
     {
       "ItemName": "Battlemage potion(4)",
@@ -101,31 +101,45 @@
     },
     {
       "ItemName": "Adamantite ore",
-      "LowPrice": 658,
+      "LowPrice": 635,
       "AvgLow": 765,
       "BuyLimit": 4500,
-      "pctROI": 15.2
+      "pctROI": 19.37
     },
     {
-      "ItemName": "Chef's delight",
-      "LowPrice": 275,
-      "AvgLow": 499,
-      "BuyLimit": 2000,
-      "pctROI": 80.0
+      "ItemName": "Yew sapling",
+      "LowPrice": 16222,
+      "AvgLow": 19133,
+      "BuyLimit": 200,
+      "pctROI": 16.77
+    },
+    {
+      "ItemName": "Dragon dart",
+      "LowPrice": 1357,
+      "AvgLow": 1408,
+      "BuyLimit": 11000,
+      "pctROI": 2.73
     },
     {
       "ItemName": "Heavy ballista",
-      "LowPrice": 965002,
+      "LowPrice": 971919,
       "AvgLow": 1029897,
       "BuyLimit": 8,
-      "pctROI": 5.66
+      "pctROI": 4.91
+    },
+    {
+      "ItemName": "Dragonstone bolt tips",
+      "LowPrice": 580,
+      "AvgLow": 617,
+      "BuyLimit": 11000,
+      "pctROI": 5.34
     },
     {
       "ItemName": "Bloodbark body",
-      "LowPrice": 141000,
+      "LowPrice": 141100,
       "AvgLow": 147383,
       "BuyLimit": 70,
-      "pctROI": 3.48
+      "pctROI": 3.41
     },
     {
       "ItemName": "Celastrus sapling",
@@ -163,11 +177,25 @@
       "pctROI": 29.58
     },
     {
+      "ItemName": "Jangerberries",
+      "LowPrice": 268,
+      "AvgLow": 290,
+      "BuyLimit": 13000,
+      "pctROI": 7.46
+    },
+    {
       "ItemName": "Ring of the gods",
       "LowPrice": 1088258,
       "AvgLow": 1128191,
       "BuyLimit": 8,
       "pctROI": 2.63
+    },
+    {
+      "ItemName": "Black kiteshield (g)",
+      "LowPrice": 121603,
+      "AvgLow": 145242,
+      "BuyLimit": 8,
+      "pctROI": 18.25
     },
     {
       "ItemName": "Yew seed",
@@ -198,13 +226,6 @@
       "pctROI": 72.88
     },
     {
-      "ItemName": "Snape grass seed",
-      "LowPrice": 8246,
-      "AvgLow": 9025,
-      "BuyLimit": 200,
-      "pctROI": 8.36
-    },
-    {
       "ItemName": "Defence potion(4)",
       "LowPrice": 542,
       "AvgLow": 615,
@@ -212,11 +233,32 @@
       "pctROI": 12.36
     },
     {
+      "ItemName": "Snape grass seed",
+      "LowPrice": 8266,
+      "AvgLow": 9025,
+      "BuyLimit": 200,
+      "pctROI": 8.09
+    },
+    {
       "ItemName": "Amulet of power (t)",
       "LowPrice": 370000,
       "AvgLow": 400250,
       "BuyLimit": 5,
       "pctROI": 7.09
+    },
+    {
+      "ItemName": "Granite gloves",
+      "LowPrice": 95005,
+      "AvgLow": 111859,
+      "BuyLimit": 8,
+      "pctROI": 16.56
+    },
+    {
+      "ItemName": "Green d'hide body",
+      "LowPrice": 3143,
+      "AvgLow": 4189,
+      "BuyLimit": 125,
+      "pctROI": 31.98
     },
     {
       "ItemName": "Black skirt (g)",
