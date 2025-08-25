@@ -1,6 +1,13 @@
 {
-  "updated": "2025-08-25T10:50:34.374900+00:00",
+  "updated": "2025-08-25T10:55:32.903923+00:00",
   "items": [
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8821,
+      "PriceFloor": 9024.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.28
+    },
     {
       "ItemName": "Combat bracelet",
       "LowPrice": 12001,
@@ -9,32 +16,32 @@
       "pctROI": 1.59
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8830,
-      "PriceFloor": 9024.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.18
-    },
-    {
       "ItemName": "Yew longbow",
-      "LowPrice": 512,
+      "LowPrice": 525,
       "PriceFloor": 578.0,
       "BuyLimit": 18000,
-      "pctROI": 11.91
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1280,
-      "PriceFloor": 1338.0,
-      "BuyLimit": 18000,
-      "pctROI": 3.52
+      "pctROI": 9.14
     },
     {
       "ItemName": "Rune javelin heads",
-      "LowPrice": 557,
+      "LowPrice": 552,
       "PriceFloor": 619.0,
       "BuyLimit": 10000,
-      "pctROI": 10.05
+      "pctROI": 11.05
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1294,
+      "PriceFloor": 1338.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.4
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 422,
+      "PriceFloor": 448.0,
+      "BuyLimit": 11000,
+      "pctROI": 5.21
     },
     {
       "ItemName": "Atlatl dart",
@@ -49,13 +56,6 @@
       "PriceFloor": 114.0,
       "BuyLimit": 11000,
       "pctROI": 15.31
-    },
-    {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 434,
-      "PriceFloor": 448.0,
-      "BuyLimit": 11000,
-      "pctROI": 2.3
     }
   ],
   "methodology": "VeryGranular"
