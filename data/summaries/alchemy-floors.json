@@ -1,12 +1,19 @@
 {
-  "updated": "2025-08-25T09:35:36.926422+00:00",
+  "updated": "2025-08-25T09:40:40.313973+00:00",
   "items": [
     {
+      "ItemName": "Combat bracelet",
+      "LowPrice": 12000,
+      "PriceFloor": 12315.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.6
+    },
+    {
       "ItemName": "Yew longbow",
-      "LowPrice": 515,
+      "LowPrice": 509,
       "PriceFloor": 578.0,
       "BuyLimit": 18000,
-      "pctROI": 11.26
+      "pctROI": 12.57
     },
     {
       "ItemName": "Magic longbow",
@@ -30,18 +37,18 @@
       "pctROI": 9.27
     },
     {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 423,
-      "PriceFloor": 448.0,
-      "BuyLimit": 11000,
-      "pctROI": 4.96
-    },
-    {
       "ItemName": "Atlatl dart",
-      "LowPrice": 87,
+      "LowPrice": 85,
       "PriceFloor": 108.0,
       "BuyLimit": 11000,
-      "pctROI": 22.99
+      "pctROI": 25.88
+    },
+    {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 2045,
+      "PriceFloor": 2089.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.17
     },
     {
       "ItemName": "Demonic tallow",
@@ -49,6 +56,13 @@
       "PriceFloor": 114.0,
       "BuyLimit": 11000,
       "pctROI": 15.31
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 435,
+      "PriceFloor": 448.0,
+      "BuyLimit": 11000,
+      "pctROI": 2.07
     }
   ],
   "methodology": "VeryGranular"
