@@ -1,33 +1,47 @@
 {
-  "updated": "2025-08-25T05:10:34.856091+00:00",
+  "updated": "2025-08-25T05:15:33.567145+00:00",
   "items": [
     {
+      "ItemName": "Combat bracelet",
+      "LowPrice": 12001,
+      "PriceFloor": 12315.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.59
+    },
+    {
       "ItemName": "Yew longbow",
-      "LowPrice": 511,
+      "LowPrice": 508,
       "PriceFloor": 578.0,
       "BuyLimit": 18000,
-      "pctROI": 12.13
+      "pctROI": 12.8
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1282,
+      "LowPrice": 1281,
       "PriceFloor": 1338.0,
       "BuyLimit": 18000,
-      "pctROI": 3.35
+      "pctROI": 3.43
     },
     {
       "ItemName": "Rune javelin heads",
-      "LowPrice": 553,
+      "LowPrice": 556,
       "PriceFloor": 619.0,
       "BuyLimit": 10000,
-      "pctROI": 10.85
+      "pctROI": 10.25
+    },
+    {
+      "ItemName": "Dragon javelin heads",
+      "LowPrice": 915,
+      "PriceFloor": 976.0,
+      "BuyLimit": 10000,
+      "pctROI": 5.68
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 418,
+      "LowPrice": 420,
       "PriceFloor": 448.0,
       "BuyLimit": 11000,
-      "pctROI": 6.22
+      "pctROI": 5.71
     },
     {
       "ItemName": "Diamond bracelet",
@@ -35,13 +49,6 @@
       "PriceFloor": 2089.0,
       "BuyLimit": 10000,
       "pctROI": 1.07
-    },
-    {
-      "ItemName": "Dragon javelin heads",
-      "LowPrice": 945,
-      "PriceFloor": 976.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.33
     },
     {
       "ItemName": "Jade amulet",
@@ -63,13 +70,6 @@
       "PriceFloor": 114.0,
       "BuyLimit": 11000,
       "pctROI": 14.14
-    },
-    {
-      "ItemName": "Demon tear",
-      "LowPrice": 109,
-      "PriceFloor": 114.0,
-      "BuyLimit": 13000,
-      "pctROI": 3.67
     }
   ],
   "methodology": "VeryGranular"
