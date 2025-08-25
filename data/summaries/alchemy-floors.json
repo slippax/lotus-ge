@@ -1,5 +1,5 @@
 {
-  "updated": "2025-08-25T14:55:39.144007+00:00",
+  "updated": "2025-08-25T15:00:39.707286+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -17,17 +17,31 @@
     },
     {
       "ItemName": "Rune javelin heads",
-      "LowPrice": 550,
+      "LowPrice": 540,
       "PriceFloor": 619.0,
       "BuyLimit": 10000,
-      "pctROI": 11.45
+      "pctROI": 13.52
+    },
+    {
+      "ItemName": "Dragon javelin heads",
+      "LowPrice": 938,
+      "PriceFloor": 976.0,
+      "BuyLimit": 10000,
+      "pctROI": 3.09
     },
     {
       "ItemName": "Atlatl dart",
-      "LowPrice": 85,
+      "LowPrice": 84,
       "PriceFloor": 108.0,
       "BuyLimit": 11000,
-      "pctROI": 25.88
+      "pctROI": 27.38
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 425,
+      "PriceFloor": 448.0,
+      "BuyLimit": 11000,
+      "pctROI": 4.47
     },
     {
       "ItemName": "Demonic tallow",
@@ -35,13 +49,6 @@
       "PriceFloor": 114.0,
       "BuyLimit": 11000,
       "pctROI": 15.31
-    },
-    {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 435,
-      "PriceFloor": 448.0,
-      "BuyLimit": 11000,
-      "pctROI": 2.07
     }
   ],
   "methodology": "VeryGranular"
