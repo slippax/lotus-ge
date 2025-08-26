@@ -1,6 +1,13 @@
 {
-  "updated": "2025-08-26T14:25:34.349765+00:00",
+  "updated": "2025-08-26T14:30:33.335096+00:00",
   "items": [
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1260,
+      "PriceFloor": 1337.0,
+      "BuyLimit": 18000,
+      "pctROI": 5.08
+    },
     {
       "ItemName": "Yew longbow",
       "LowPrice": 521,
@@ -16,18 +23,11 @@
       "pctROI": 3.53
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1281,
-      "PriceFloor": 1337.0,
-      "BuyLimit": 18000,
-      "pctROI": 3.36
-    },
-    {
       "ItemName": "Rune javelin heads",
-      "LowPrice": 552,
+      "LowPrice": 551,
       "PriceFloor": 618.0,
       "BuyLimit": 10000,
-      "pctROI": 10.87
+      "pctROI": 11.07
     },
     {
       "ItemName": "Diamond bracelet",
@@ -38,24 +38,24 @@
     },
     {
       "ItemName": "Atlatl dart",
-      "LowPrice": 92,
+      "LowPrice": 94,
       "PriceFloor": 107.0,
       "BuyLimit": 11000,
-      "pctROI": 15.22
-    },
-    {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 435,
-      "PriceFloor": 447.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.84
+      "pctROI": 12.77
     },
     {
       "ItemName": "Demon tear",
-      "LowPrice": 110,
+      "LowPrice": 103,
       "PriceFloor": 113.0,
       "BuyLimit": 13000,
-      "pctROI": 1.82
+      "pctROI": 8.74
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 436,
+      "PriceFloor": 447.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.61
     }
   ],
   "methodology": "VeryGranular"
