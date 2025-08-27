@@ -1,5 +1,5 @@
 {
-  "updated": "2025-08-27T09:05:38.038963+00:00",
+  "updated": "2025-08-27T09:10:37.893749+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -37,11 +37,25 @@
       "pctROI": 19.1
     },
     {
+      "ItemName": "Dragon javelin heads",
+      "LowPrice": 955,
+      "PriceFloor": 975.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.15
+    },
+    {
       "ItemName": "Demon tear",
-      "LowPrice": 108,
+      "LowPrice": 105,
       "PriceFloor": 113.0,
       "BuyLimit": 13000,
-      "pctROI": 3.7
+      "pctROI": 6.67
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 436,
+      "PriceFloor": 447.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.61
     }
   ],
   "methodology": "VeryGranular"
