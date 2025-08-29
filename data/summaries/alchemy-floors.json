@@ -1,12 +1,33 @@
 {
-  "updated": "2025-08-29T19:50:36.059413+00:00",
+  "updated": "2025-08-29T19:55:34.390200+00:00",
   "items": [
     {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1295,
+      "PriceFloor": 1337.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.24
+    },
+    {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 2020,
+      "PriceFloor": 2088.0,
+      "BuyLimit": 10000,
+      "pctROI": 2.38
+    },
+    {
+      "ItemName": "Dragon javelin heads",
+      "LowPrice": 935,
+      "PriceFloor": 975.0,
+      "BuyLimit": 10000,
+      "pctROI": 3.32
+    },
+    {
       "ItemName": "Atlatl dart",
-      "LowPrice": 86,
+      "LowPrice": 85,
       "PriceFloor": 107.0,
       "BuyLimit": 11000,
-      "pctROI": 23.26
+      "pctROI": 24.71
     },
     {
       "ItemName": "Demon tear",
@@ -14,13 +35,6 @@
       "PriceFloor": 113.0,
       "BuyLimit": 13000,
       "pctROI": 6.67
-    },
-    {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 436,
-      "PriceFloor": 447.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.61
     }
   ],
   "methodology": "VeryGranular"
