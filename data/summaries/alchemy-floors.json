@@ -1,5 +1,5 @@
 {
-  "updated": "2025-08-29T15:10:38.189395+00:00",
+  "updated": "2025-08-29T15:15:33.115191+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -9,18 +9,32 @@
       "pctROI": 2.32
     },
     {
+      "ItemName": "Dragon javelin heads",
+      "LowPrice": 932,
+      "PriceFloor": 975.0,
+      "BuyLimit": 10000,
+      "pctROI": 3.65
+    },
+    {
       "ItemName": "Rune javelin heads",
-      "LowPrice": 573,
+      "LowPrice": 580,
       "PriceFloor": 618.0,
       "BuyLimit": 10000,
-      "pctROI": 6.81
+      "pctROI": 5.52
     },
     {
       "ItemName": "Atlatl dart",
-      "LowPrice": 85,
+      "LowPrice": 88,
       "PriceFloor": 107.0,
       "BuyLimit": 11000,
-      "pctROI": 24.71
+      "pctROI": 20.45
+    },
+    {
+      "ItemName": "Demon tear",
+      "LowPrice": 110,
+      "PriceFloor": 113.0,
+      "BuyLimit": 13000,
+      "pctROI": 1.82
     }
   ],
   "methodology": "VeryGranular"
