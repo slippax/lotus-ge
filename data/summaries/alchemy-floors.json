@@ -1,6 +1,13 @@
 {
-  "updated": "2025-08-31T10:50:38.101650+00:00",
+  "updated": "2025-08-31T10:55:36.430289+00:00",
   "items": [
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1275,
+      "PriceFloor": 1337.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.84
+    },
     {
       "ItemName": "Phoenix necklace",
       "LowPrice": 2131,
@@ -9,25 +16,11 @@
       "pctROI": 3.24
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1298,
-      "PriceFloor": 1337.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.0
-    },
-    {
-      "ItemName": "Demon tear",
-      "LowPrice": 92,
-      "PriceFloor": 113.0,
-      "BuyLimit": 13000,
-      "pctROI": 21.74
-    },
-    {
       "ItemName": "Atlatl dart",
-      "LowPrice": 83,
+      "LowPrice": 81,
       "PriceFloor": 107.0,
       "BuyLimit": 11000,
-      "pctROI": 27.71
+      "pctROI": 30.86
     },
     {
       "ItemName": "Yew longbow",
@@ -37,11 +30,18 @@
       "pctROI": 2.33
     },
     {
+      "ItemName": "Demon tear",
+      "LowPrice": 95,
+      "PriceFloor": 113.0,
+      "BuyLimit": 13000,
+      "pctROI": 17.89
+    },
+    {
       "ItemName": "Ring of dueling(8)",
-      "LowPrice": 555,
+      "LowPrice": 556,
       "PriceFloor": 574.0,
       "BuyLimit": 15000,
-      "pctROI": 2.52
+      "pctROI": 2.34
     }
   ],
   "methodology": "VeryGranular"
