@@ -1,6 +1,13 @@
 {
-  "updated": "2025-09-03T18:15:31.680805+00:00",
+  "updated": "2025-09-03T18:20:37.453899+00:00",
   "items": [
+    {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 2025,
+      "PriceFloor": 2087.0,
+      "BuyLimit": 10000,
+      "pctROI": 2.07
+    },
     {
       "ItemName": "Dragon javelin heads",
       "LowPrice": 926,
@@ -9,18 +16,18 @@
       "pctROI": 4.21
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1309,
-      "PriceFloor": 1336.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.07
-    },
-    {
       "ItemName": "Yew longbow",
-      "LowPrice": 562,
+      "LowPrice": 559,
       "PriceFloor": 576.0,
       "BuyLimit": 18000,
-      "pctROI": 1.6
+      "pctROI": 2.15
+    },
+    {
+      "ItemName": "Atlatl dart",
+      "LowPrice": 90,
+      "PriceFloor": 106.0,
+      "BuyLimit": 11000,
+      "pctROI": 16.67
     },
     {
       "ItemName": "Binding necklace",
@@ -28,13 +35,6 @@
       "PriceFloor": 662.0,
       "BuyLimit": 10000,
       "pctROI": 2.5
-    },
-    {
-      "ItemName": "Atlatl dart",
-      "LowPrice": 94,
-      "PriceFloor": 106.0,
-      "BuyLimit": 11000,
-      "pctROI": 11.7
     }
   ],
   "methodology": "VeryGranular"
