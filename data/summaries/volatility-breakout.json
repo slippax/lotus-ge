@@ -1,5 +1,5 @@
 {
-  "updated": "2025-09-04T20:10:35.243263+00:00",
+  "updated": "2025-09-04T20:15:53.772010+00:00",
   "items": [
     {
       "ItemName": "Secateurs attachment",
@@ -51,6 +51,19 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 1163000.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Raw herring",
+      "CurrentPrice": 300,
+      "BuyLimit": 15000,
+      "DailyRange": 52,
+      "WeeklyRange": 872,
+      "MonthlyRange": 891,
+      "CompressionRatio": 5.96,
+      "BreakoutDirection": "UPPER_BIAS",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 450000.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -119,34 +132,8 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Raw herring",
-      "CurrentPrice": 315,
-      "BuyLimit": 15000,
-      "DailyRange": 71,
-      "WeeklyRange": 872,
-      "MonthlyRange": 891,
-      "CompressionRatio": 8.14,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 472500.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
-      "ItemName": "Zamorak's grapes",
-      "CurrentPrice": 1557,
-      "BuyLimit": 11000,
-      "DailyRange": 33,
-      "WeeklyRange": 404,
-      "MonthlyRange": 538,
-      "CompressionRatio": 8.17,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 1712700.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
       "ItemName": "Emerald ring",
-      "CurrentPrice": 761,
+      "CurrentPrice": 756,
       "BuyLimit": 10000,
       "DailyRange": 157,
       "WeeklyRange": 1729,
@@ -154,7 +141,20 @@
       "CompressionRatio": 9.08,
       "BreakoutDirection": "UPPER_BIAS",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 761000.0,
+      "PotentialBreakoutProfit": 756000.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Zamorak's grapes",
+      "CurrentPrice": 1557,
+      "BuyLimit": 11000,
+      "DailyRange": 42,
+      "WeeklyRange": 404,
+      "MonthlyRange": 538,
+      "CompressionRatio": 10.4,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 1712700.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -184,26 +184,13 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Araxyte venom sack",
-      "CurrentPrice": 1210,
-      "BuyLimit": 11000,
-      "DailyRange": 159,
-      "WeeklyRange": 1086,
-      "MonthlyRange": 1908,
-      "CompressionRatio": 14.64,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 1331000.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
       "ItemName": "Raw manta ray",
       "CurrentPrice": 1906,
       "BuyLimit": 15000,
-      "DailyRange": 187,
+      "DailyRange": 170,
       "WeeklyRange": 1223,
       "MonthlyRange": 2110,
-      "CompressionRatio": 15.29,
+      "CompressionRatio": 13.9,
       "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 2859000.0,
@@ -224,7 +211,7 @@
     },
     {
       "ItemName": "Dark crab",
-      "CurrentPrice": 1540,
+      "CurrentPrice": 1543,
       "BuyLimit": 10000,
       "DailyRange": 78,
       "WeeklyRange": 472,
@@ -232,7 +219,7 @@
       "CompressionRatio": 16.53,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 1540000.0,
+      "PotentialBreakoutProfit": 1543000.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -249,19 +236,6 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Manta ray",
-      "CurrentPrice": 2113,
-      "BuyLimit": 10000,
-      "DailyRange": 207,
-      "WeeklyRange": 1142,
-      "MonthlyRange": 2373,
-      "CompressionRatio": 18.13,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 2113000.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
       "ItemName": "Potato with butter",
       "CurrentPrice": 375,
       "BuyLimit": 13000,
@@ -275,16 +249,29 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Cup of hot water",
-      "CurrentPrice": 255,
-      "BuyLimit": 13000,
-      "DailyRange": 17,
-      "WeeklyRange": 89,
-      "MonthlyRange": 140,
-      "CompressionRatio": 19.1,
+      "ItemName": "Araxyte venom sack",
+      "CurrentPrice": 1211,
+      "BuyLimit": 11000,
+      "DailyRange": 208,
+      "WeeklyRange": 1086,
+      "MonthlyRange": 1908,
+      "CompressionRatio": 19.15,
       "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 331500.0,
+      "PotentialBreakoutProfit": 1332100.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Manta ray",
+      "CurrentPrice": 2125,
+      "BuyLimit": 10000,
+      "DailyRange": 223,
+      "WeeklyRange": 1142,
+      "MonthlyRange": 2373,
+      "CompressionRatio": 19.53,
+      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 2125000.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -314,6 +301,32 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
+      "ItemName": "Mort myre fungus",
+      "CurrentPrice": 588,
+      "BuyLimit": 13000,
+      "DailyRange": 119,
+      "WeeklyRange": 520,
+      "MonthlyRange": 684,
+      "CompressionRatio": 22.88,
+      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 764400.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Burning amulet(5)",
+      "CurrentPrice": 7138,
+      "BuyLimit": 10000,
+      "DailyRange": 473,
+      "WeeklyRange": 2060,
+      "MonthlyRange": 3690,
+      "CompressionRatio": 22.96,
+      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 7138000.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
       "ItemName": "Tuna potato",
       "CurrentPrice": 1481,
       "BuyLimit": 13000,
@@ -327,21 +340,8 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Mort myre fungus",
-      "CurrentPrice": 587,
-      "BuyLimit": 13000,
-      "DailyRange": 121,
-      "WeeklyRange": 520,
-      "MonthlyRange": 684,
-      "CompressionRatio": 23.27,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 763100.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
       "ItemName": "Barrows teleport (tablet)",
-      "CurrentPrice": 2950,
+      "CurrentPrice": 2953,
       "BuyLimit": 10000,
       "DailyRange": 164,
       "WeeklyRange": 685,
@@ -349,12 +349,12 @@
       "CompressionRatio": 23.94,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 2950000.0,
+      "PotentialBreakoutProfit": 2953000.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
       "ItemName": "Sapphire ring",
-      "CurrentPrice": 541,
+      "CurrentPrice": 536,
       "BuyLimit": 10000,
       "DailyRange": 373,
       "WeeklyRange": 1467,
@@ -362,7 +362,7 @@
       "CompressionRatio": 25.43,
       "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 541000.0,
+      "PotentialBreakoutProfit": 536000.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -376,32 +376,6 @@
       "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 865800.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
-      "ItemName": "Burning amulet(5)",
-      "CurrentPrice": 7138,
-      "BuyLimit": 10000,
-      "DailyRange": 526,
-      "WeeklyRange": 2060,
-      "MonthlyRange": 3690,
-      "CompressionRatio": 25.53,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 7138000.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
-      "ItemName": "Mithril bolts (unf)",
-      "CurrentPrice": 88,
-      "BuyLimit": 13000,
-      "DailyRange": 10,
-      "WeeklyRange": 39,
-      "MonthlyRange": 43,
-      "CompressionRatio": 25.64,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 114400.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -419,15 +393,28 @@
     },
     {
       "ItemName": "Games necklace(8)",
-      "CurrentPrice": 779,
+      "CurrentPrice": 760,
       "BuyLimit": 10000,
-      "DailyRange": 43,
+      "DailyRange": 42,
       "WeeklyRange": 151,
       "MonthlyRange": 316,
-      "CompressionRatio": 28.48,
+      "CompressionRatio": 27.81,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 779000.0,
+      "PotentialBreakoutProfit": 760000.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Tuna and corn",
+      "CurrentPrice": 1023,
+      "BuyLimit": 13000,
+      "DailyRange": 71,
+      "WeeklyRange": 250,
+      "MonthlyRange": 408,
+      "CompressionRatio": 28.4,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 1329900.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -497,7 +484,7 @@
     },
     {
       "ItemName": "Yew longbow (u)",
-      "CurrentPrice": 322,
+      "CurrentPrice": 321,
       "BuyLimit": 10000,
       "DailyRange": 26,
       "WeeklyRange": 76,
@@ -505,7 +492,7 @@
       "CompressionRatio": 34.21,
       "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 322000.0,
+      "PotentialBreakoutProfit": 321000.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -522,8 +509,21 @@
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
+      "ItemName": "Mithril bolts (unf)",
+      "CurrentPrice": 88,
+      "BuyLimit": 13000,
+      "DailyRange": 14,
+      "WeeklyRange": 39,
+      "MonthlyRange": 43,
+      "CompressionRatio": 35.9,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 114400.0,
+      "CompressionLevel": "MODERATE_COMPRESSION"
+    },
+    {
       "ItemName": "Soaked page",
-      "CurrentPrice": 3276,
+      "CurrentPrice": 3279,
       "BuyLimit": 11000,
       "DailyRange": 314,
       "WeeklyRange": 874,
@@ -531,7 +531,7 @@
       "CompressionRatio": 35.93,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 3603600.0,
+      "PotentialBreakoutProfit": 3606900.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -601,7 +601,7 @@
     },
     {
       "ItemName": "Catherby teleport (tablet)",
-      "CurrentPrice": 1100,
+      "CurrentPrice": 1113,
       "BuyLimit": 10000,
       "DailyRange": 78,
       "WeeklyRange": 205,
@@ -609,7 +609,7 @@
       "CompressionRatio": 38.05,
       "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 1100000.0,
+      "PotentialBreakoutProfit": 1113000.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -640,7 +640,7 @@
     },
     {
       "ItemName": "Soul rune",
-      "CurrentPrice": 290,
+      "CurrentPrice": 289,
       "BuyLimit": 25000,
       "DailyRange": 39,
       "WeeklyRange": 96,
@@ -648,7 +648,7 @@
       "CompressionRatio": 40.63,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 725000.0,
+      "PotentialBreakoutProfit": 722500.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     }
   ],
