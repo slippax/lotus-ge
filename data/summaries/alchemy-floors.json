@@ -1,19 +1,40 @@
 {
-  "updated": "2025-09-10T22:00:52.591092+00:00",
+  "updated": "2025-09-10T22:05:36.929614+00:00",
   "items": [
     {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8815,
+      "PriceFloor": 9018.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.28
+    },
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8820,
+      "PriceFloor": 9018.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.22
+    },
+    {
       "ItemName": "Yew longbow",
-      "LowPrice": 460,
+      "LowPrice": 462,
       "PriceFloor": 572.0,
       "BuyLimit": 18000,
-      "pctROI": 23.26
+      "pctROI": 22.73
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1243,
+      "LowPrice": 1220,
       "PriceFloor": 1332.0,
       "BuyLimit": 18000,
-      "pctROI": 6.11
+      "pctROI": 8.11
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8835,
+      "PriceFloor": 9018.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.05
     },
     {
       "ItemName": "Dragon javelin heads",
@@ -37,18 +58,18 @@
       "pctROI": 8.49
     },
     {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 2023,
-      "PriceFloor": 2083.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.98
-    },
-    {
       "ItemName": "Dragonstone bolts (e)",
       "LowPrice": 404,
       "PriceFloor": 442.0,
       "BuyLimit": 11000,
       "pctROI": 8.42
+    },
+    {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 2035,
+      "PriceFloor": 2083.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.38
     }
   ],
   "methodology": "VeryGranular"
