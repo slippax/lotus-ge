@@ -1,12 +1,19 @@
 {
-  "updated": "2025-09-10T05:05:36.605758+00:00",
+  "updated": "2025-09-10T05:10:35.906493+00:00",
   "items": [
     {
-      "ItemName": "Fire battlestaff",
-      "LowPrice": 8815,
+      "ItemName": "Magic longbow",
+      "LowPrice": 1200,
+      "PriceFloor": 1333.0,
+      "BuyLimit": 18000,
+      "pctROI": 10.0
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8820,
       "PriceFloor": 9019.0,
       "BuyLimit": 18000,
-      "pctROI": 1.29
+      "pctROI": 1.24
     },
     {
       "ItemName": "Yew longbow",
@@ -14,13 +21,6 @@
       "PriceFloor": 573.0,
       "BuyLimit": 18000,
       "pctROI": 22.94
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1226,
-      "PriceFloor": 1333.0,
-      "BuyLimit": 18000,
-      "pctROI": 7.67
     },
     {
       "ItemName": "Dragon javelin heads",
@@ -31,10 +31,10 @@
     },
     {
       "ItemName": "Rune javelin heads",
-      "LowPrice": 554,
+      "LowPrice": 553,
       "PriceFloor": 614.0,
       "BuyLimit": 10000,
-      "pctROI": 9.75
+      "pctROI": 9.95
     },
     {
       "ItemName": "Abyssal bracelet(5)",
