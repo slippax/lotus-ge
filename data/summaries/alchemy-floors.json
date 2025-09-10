@@ -1,12 +1,19 @@
 {
-  "updated": "2025-09-10T02:25:43.238227+00:00",
+  "updated": "2025-09-10T02:30:33.205788+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1190,
+      "LowPrice": 1200,
       "PriceFloor": 1334.0,
       "BuyLimit": 18000,
-      "pctROI": 11.01
+      "pctROI": 10.08
+    },
+    {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8815,
+      "PriceFloor": 9020.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.3
     },
     {
       "ItemName": "Water battlestaff",
@@ -23,13 +30,6 @@
       "pctROI": 20.55
     },
     {
-      "ItemName": "Fire battlestaff",
-      "LowPrice": 8840,
-      "PriceFloor": 9020.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.02
-    },
-    {
       "ItemName": "Air battlestaff",
       "LowPrice": 8841,
       "PriceFloor": 9020.0,
@@ -44,25 +44,32 @@
       "pctROI": 11.85
     },
     {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8550,
+      "PriceFloor": 8723.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.01
+    },
+    {
       "ItemName": "Rune javelin heads",
-      "LowPrice": 552,
+      "LowPrice": 551,
       "PriceFloor": 615.0,
       "BuyLimit": 10000,
-      "pctROI": 10.33
+      "pctROI": 10.53
     },
     {
       "ItemName": "Diamond bracelet",
-      "LowPrice": 2038,
+      "LowPrice": 2028,
       "PriceFloor": 2085.0,
       "BuyLimit": 10000,
-      "pctROI": 1.32
+      "pctROI": 1.82
     },
     {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 423,
-      "PriceFloor": 444.0,
-      "BuyLimit": 11000,
-      "pctROI": 4.02
+      "ItemName": "Abyssal bracelet(5)",
+      "LowPrice": 2252,
+      "PriceFloor": 2308.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.47
     },
     {
       "ItemName": "Binding necklace",
@@ -70,6 +77,13 @@
       "PriceFloor": 660.0,
       "BuyLimit": 10000,
       "pctROI": 2.03
+    },
+    {
+      "ItemName": "Atlatl dart",
+      "LowPrice": 101,
+      "PriceFloor": 104.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.98
     }
   ],
   "methodology": "VeryGranular"
