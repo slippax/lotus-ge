@@ -1,6 +1,20 @@
 {
-  "updated": "2025-09-10T04:00:32.343105+00:00",
+  "updated": "2025-09-10T04:05:37.275112+00:00",
   "items": [
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1205,
+      "PriceFloor": 1333.0,
+      "BuyLimit": 18000,
+      "pctROI": 9.54
+    },
+    {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8815,
+      "PriceFloor": 9019.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.29
+    },
     {
       "ItemName": "Yew longbow",
       "LowPrice": 461,
@@ -9,25 +23,32 @@
       "pctROI": 23.21
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1229,
-      "PriceFloor": 1333.0,
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8823,
+      "PriceFloor": 9019.0,
       "BuyLimit": 18000,
-      "pctROI": 7.4
+      "pctROI": 1.2
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8527,
+      "PriceFloor": 8722.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.27
     },
     {
       "ItemName": "Dragon javelin heads",
-      "LowPrice": 854,
+      "LowPrice": 868,
       "PriceFloor": 971.0,
       "BuyLimit": 10000,
-      "pctROI": 12.65
+      "pctROI": 10.83
     },
     {
       "ItemName": "Rune javelin heads",
-      "LowPrice": 560,
+      "LowPrice": 550,
       "PriceFloor": 614.0,
       "BuyLimit": 10000,
-      "pctROI": 8.57
+      "pctROI": 10.55
     },
     {
       "ItemName": "Diamond bracelet",
@@ -42,13 +63,6 @@
       "PriceFloor": 659.0,
       "BuyLimit": 10000,
       "pctROI": 1.87
-    },
-    {
-      "ItemName": "Atlatl dart",
-      "LowPrice": 100,
-      "PriceFloor": 103.0,
-      "BuyLimit": 11000,
-      "pctROI": 2.0
     }
   ],
   "methodology": "VeryGranular"
