@@ -1,19 +1,19 @@
 {
-  "updated": "2025-09-11T15:05:35.430611+00:00",
+  "updated": "2025-09-11T15:10:51.198459+00:00",
   "items": [
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8763,
+      "PriceFloor": 9016.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.86
+    },
     {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8819,
       "PriceFloor": 9016.0,
       "BuyLimit": 18000,
       "pctROI": 1.21
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8825,
-      "PriceFloor": 9016.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.14
     },
     {
       "ItemName": "Water battlestaff",
@@ -31,10 +31,17 @@
     },
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 505,
+      "LowPrice": 503,
       "PriceFloor": 570.0,
       "BuyLimit": 18000,
-      "pctROI": 11.88
+      "pctROI": 12.33
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8540,
+      "PriceFloor": 8719.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.08
     },
     {
       "ItemName": "Dragon javelin heads",
@@ -59,10 +66,10 @@
     },
     {
       "ItemName": "Binding necklace",
-      "LowPrice": 613,
+      "LowPrice": 617,
       "PriceFloor": 656.0,
       "BuyLimit": 10000,
-      "pctROI": 6.04
+      "pctROI": 5.35
     }
   ],
   "methodology": "VeryGranular"
