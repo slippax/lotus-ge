@@ -1,12 +1,12 @@
 {
-  "updated": "2025-09-12T08:35:41.945836+00:00",
+  "updated": "2025-09-12T08:40:35.700517+00:00",
   "items": [
     {
       "ItemName": "Ruby amulet (u)",
-      "LowPrice": 51,
+      "LowPrice": 525,
       "PriceFloor": 1010.0,
       "BuyLimit": 10000,
-      "pctROI": 1860.78
+      "pctROI": 90.48
     },
     {
       "ItemName": "Earth battlestaff",
@@ -14,6 +14,13 @@
       "PriceFloor": 9014.0,
       "BuyLimit": 18000,
       "pctROI": 1.35
+    },
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8821,
+      "PriceFloor": 9014.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.17
     },
     {
       "ItemName": "Magic longbow",
@@ -30,6 +37,13 @@
       "pctROI": 2.85
     },
     {
+      "ItemName": "Rune javelin heads",
+      "LowPrice": 559,
+      "PriceFloor": 609.0,
+      "BuyLimit": 10000,
+      "pctROI": 7.87
+    },
+    {
       "ItemName": "Dragon javelin heads",
       "LowPrice": 922,
       "PriceFloor": 966.0,
@@ -37,25 +51,18 @@
       "pctROI": 3.8
     },
     {
-      "ItemName": "Rune javelin heads",
-      "LowPrice": 570,
-      "PriceFloor": 609.0,
-      "BuyLimit": 10000,
-      "pctROI": 5.79
-    },
-    {
-      "ItemName": "Yew longbow",
-      "LowPrice": 549,
-      "PriceFloor": 568.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.55
-    },
-    {
       "ItemName": "Binding necklace",
       "LowPrice": 623,
       "PriceFloor": 654.0,
       "BuyLimit": 10000,
       "pctROI": 4.01
+    },
+    {
+      "ItemName": "Yew longbow",
+      "LowPrice": 550,
+      "PriceFloor": 568.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.36
     }
   ],
   "methodology": "VeryGranular"
