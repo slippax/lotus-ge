@@ -1,19 +1,19 @@
 {
-  "updated": "2025-09-12T06:05:48.358685+00:00",
+  "updated": "2025-09-12T06:10:38.402398+00:00",
   "items": [
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8805,
-      "PriceFloor": 9014.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.35
-    },
     {
       "ItemName": "Water battlestaff",
       "LowPrice": 8821,
       "PriceFloor": 9014.0,
       "BuyLimit": 18000,
       "pctROI": 1.17
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8830,
+      "PriceFloor": 9014.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.06
     },
     {
       "ItemName": "Air battlestaff",
@@ -31,17 +31,24 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1255,
+      "LowPrice": 1264,
       "PriceFloor": 1328.0,
       "BuyLimit": 18000,
-      "pctROI": 4.78
+      "pctROI": 4.03
     },
     {
-      "ItemName": "Rune javelin heads",
-      "LowPrice": 545,
-      "PriceFloor": 609.0,
+      "ItemName": "Dragon javelin heads",
+      "LowPrice": 889,
+      "PriceFloor": 966.0,
       "BuyLimit": 10000,
-      "pctROI": 10.64
+      "pctROI": 7.65
+    },
+    {
+      "ItemName": "Yew longbow",
+      "LowPrice": 531,
+      "PriceFloor": 568.0,
+      "BuyLimit": 18000,
+      "pctROI": 6.03
     },
     {
       "ItemName": "Diamond bracelet",
@@ -51,25 +58,18 @@
       "pctROI": 2.85
     },
     {
-      "ItemName": "Yew longbow",
-      "LowPrice": 536,
-      "PriceFloor": 568.0,
-      "BuyLimit": 18000,
-      "pctROI": 5.04
-    },
-    {
-      "ItemName": "Dragon javelin heads",
-      "LowPrice": 918,
-      "PriceFloor": 966.0,
+      "ItemName": "Rune javelin heads",
+      "LowPrice": 550,
+      "PriceFloor": 609.0,
       "BuyLimit": 10000,
-      "pctROI": 4.25
+      "pctROI": 9.64
     },
     {
       "ItemName": "Binding necklace",
-      "LowPrice": 623,
+      "LowPrice": 631,
       "PriceFloor": 654.0,
       "BuyLimit": 10000,
-      "pctROI": 4.01
+      "pctROI": 2.69
     }
   ],
   "methodology": "VeryGranular"
