@@ -1,6 +1,13 @@
 {
-  "updated": "2025-09-18T15:50:41.361374+00:00",
+  "updated": "2025-09-18T15:55:34.984103+00:00",
   "items": [
+    {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1977,
+      "PriceFloor": 2075.0,
+      "BuyLimit": 10000,
+      "pctROI": 3.95
+    },
     {
       "ItemName": "Magic longbow",
       "LowPrice": 1272,
@@ -10,17 +17,10 @@
     },
     {
       "ItemName": "Dragon javelin heads",
-      "LowPrice": 890,
+      "LowPrice": 892,
       "PriceFloor": 962.0,
       "BuyLimit": 10000,
-      "pctROI": 7.08
-    },
-    {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 2001,
-      "PriceFloor": 2075.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.7
+      "pctROI": 6.84
     },
     {
       "ItemName": "Rune javelin heads",
@@ -30,18 +30,18 @@
       "pctROI": 9.51
     },
     {
-      "ItemName": "Yew longbow",
-      "LowPrice": 534,
-      "PriceFloor": 564.0,
-      "BuyLimit": 18000,
-      "pctROI": 4.68
-    },
-    {
       "ItemName": "Phoenix necklace",
       "LowPrice": 2161,
       "PriceFloor": 2209.0,
       "BuyLimit": 10000,
       "pctROI": 1.2
+    },
+    {
+      "ItemName": "Yew longbow",
+      "LowPrice": 545,
+      "PriceFloor": 564.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.57
     }
   ],
   "methodology": "VeryGranular"
