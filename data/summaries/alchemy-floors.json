@@ -1,5 +1,5 @@
 {
-  "updated": "2025-09-22T09:50:33.939142+00:00",
+  "updated": "2025-09-22T09:55:41.455755+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -7,6 +7,20 @@
       "PriceFloor": 9010.0,
       "BuyLimit": 18000,
       "pctROI": 2.23
+    },
+    {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8750,
+      "PriceFloor": 9010.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.94
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8805,
+      "PriceFloor": 9010.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.31
     },
     {
       "ItemName": "Abyssal bracelet(5)",
@@ -23,25 +37,11 @@
       "pctROI": 4.85
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1261,
-      "PriceFloor": 1324.0,
-      "BuyLimit": 18000,
-      "pctROI": 3.97
-    },
-    {
       "ItemName": "Dragon javelin heads",
-      "LowPrice": 864,
+      "LowPrice": 865,
       "PriceFloor": 962.0,
       "BuyLimit": 10000,
-      "pctROI": 10.3
-    },
-    {
-      "ItemName": "Rune javelin heads",
-      "LowPrice": 538,
-      "PriceFloor": 605.0,
-      "BuyLimit": 10000,
-      "pctROI": 11.34
+      "pctROI": 10.17
     },
     {
       "ItemName": "Diamond amulet (u)",
@@ -51,11 +51,18 @@
       "pctROI": 3.24
     },
     {
+      "ItemName": "Rune javelin heads",
+      "LowPrice": 540,
+      "PriceFloor": 605.0,
+      "BuyLimit": 10000,
+      "pctROI": 10.93
+    },
+    {
       "ItemName": "Phoenix necklace",
-      "LowPrice": 2130,
+      "LowPrice": 2135,
       "PriceFloor": 2209.0,
       "BuyLimit": 10000,
-      "pctROI": 2.68
+      "pctROI": 2.44
     }
   ],
   "methodology": "VeryGranular"
