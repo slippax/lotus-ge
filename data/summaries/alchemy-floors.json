@@ -1,12 +1,26 @@
 {
-  "updated": "2025-09-24T03:25:31.560317+00:00",
+  "updated": "2025-09-24T03:30:42.732049+00:00",
   "items": [
     {
       "ItemName": "Water battlestaff",
-      "LowPrice": 8775,
+      "LowPrice": 8753,
       "PriceFloor": 9009.0,
       "BuyLimit": 18000,
-      "pctROI": 1.64
+      "pctROI": 1.9
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8777,
+      "PriceFloor": 9009.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.62
+    },
+    {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8800,
+      "PriceFloor": 9009.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.35
     },
     {
       "ItemName": "Earth battlestaff",
@@ -14,20 +28,6 @@
       "PriceFloor": 9009.0,
       "BuyLimit": 18000,
       "pctROI": 1.27
-    },
-    {
-      "ItemName": "Diamond necklace",
-      "LowPrice": 1855,
-      "PriceFloor": 1985.0,
-      "BuyLimit": 18000,
-      "pctROI": 5.98
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8821,
-      "PriceFloor": 9009.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.11
     },
     {
       "ItemName": "Diamond bracelet",
@@ -65,11 +65,18 @@
       "pctROI": 14.34
     },
     {
+      "ItemName": "Diamond necklace",
+      "LowPrice": 1925,
+      "PriceFloor": 1985.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.13
+    },
+    {
       "ItemName": "Ruby necklace",
-      "LowPrice": 1051,
+      "LowPrice": 1057,
       "PriceFloor": 1094.0,
       "BuyLimit": 18000,
-      "pctROI": 3.14
+      "pctROI": 2.55
     }
   ],
   "methodology": "VeryGranular"
