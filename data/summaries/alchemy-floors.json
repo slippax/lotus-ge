@@ -1,6 +1,13 @@
 {
-  "updated": "2025-09-24T08:40:35.943793+00:00",
+  "updated": "2025-09-24T08:45:48.297929+00:00",
   "items": [
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8810,
+      "PriceFloor": 9009.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.24
+    },
     {
       "ItemName": "Diamond bracelet",
       "LowPrice": 1900,
@@ -10,10 +17,17 @@
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8521,
+      "LowPrice": 8537,
       "PriceFloor": 8712.0,
       "BuyLimit": 11000,
-      "pctROI": 1.22
+      "pctROI": 1.03
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1262,
+      "PriceFloor": 1323.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.8
     },
     {
       "ItemName": "Diamond necklace",
@@ -24,24 +38,24 @@
     },
     {
       "ItemName": "Rune javelin heads",
-      "LowPrice": 518,
+      "LowPrice": 521,
       "PriceFloor": 604.0,
       "BuyLimit": 10000,
-      "pctROI": 15.44
+      "pctROI": 14.78
+    },
+    {
+      "ItemName": "Diamond ring",
+      "LowPrice": 1815,
+      "PriceFloor": 1896.0,
+      "BuyLimit": 10000,
+      "pctROI": 3.47
     },
     {
       "ItemName": "Dragon javelin heads",
-      "LowPrice": 877,
+      "LowPrice": 893,
       "PriceFloor": 961.0,
       "BuyLimit": 10000,
-      "pctROI": 8.55
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1269,
-      "PriceFloor": 1323.0,
-      "BuyLimit": 18000,
-      "pctROI": 3.23
+      "pctROI": 6.61
     },
     {
       "ItemName": "Diamond amulet (u)",
@@ -51,25 +65,11 @@
       "pctROI": 3.07
     },
     {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 1060,
-      "PriceFloor": 1094.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.26
-    },
-    {
       "ItemName": "Phoenix necklace",
       "LowPrice": 2159,
       "PriceFloor": 2208.0,
       "BuyLimit": 10000,
       "pctROI": 1.25
-    },
-    {
-      "ItemName": "Emerald amulet (u)",
-      "LowPrice": 529,
-      "PriceFloor": 560.0,
-      "BuyLimit": 10000,
-      "pctROI": 4.91
     }
   ],
   "methodology": "VeryGranular"
