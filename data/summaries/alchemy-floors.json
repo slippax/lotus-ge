@@ -1,5 +1,5 @@
 {
-  "updated": "2025-10-01T20:50:42.451146+00:00",
+  "updated": "2025-10-01T20:55:35.167252+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -10,10 +10,17 @@
     },
     {
       "ItemName": "Water battlestaff",
-      "LowPrice": 8754,
+      "LowPrice": 8751,
       "PriceFloor": 9007.0,
       "BuyLimit": 18000,
-      "pctROI": 1.86
+      "pctROI": 1.9
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8800,
+      "PriceFloor": 9007.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.33
     },
     {
       "ItemName": "Earth battlestaff",
@@ -23,32 +30,25 @@
       "pctROI": 1.33
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8804,
-      "PriceFloor": 9007.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.28
-    },
-    {
       "ItemName": "Diamond bracelet",
-      "LowPrice": 1910,
+      "LowPrice": 1909,
       "PriceFloor": 2072.0,
       "BuyLimit": 10000,
-      "pctROI": 7.43
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1232,
-      "PriceFloor": 1321.0,
-      "BuyLimit": 18000,
-      "pctROI": 6.17
+      "pctROI": 7.49
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8500,
+      "LowPrice": 8493,
       "PriceFloor": 8710.0,
       "BuyLimit": 11000,
-      "pctROI": 1.45
+      "pctROI": 1.53
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1233,
+      "PriceFloor": 1321.0,
+      "BuyLimit": 18000,
+      "pctROI": 6.08
     },
     {
       "ItemName": "Dragon javelin heads",
@@ -59,10 +59,17 @@
     },
     {
       "ItemName": "Rune javelin heads",
-      "LowPrice": 505,
+      "LowPrice": 506,
       "PriceFloor": 602.0,
       "BuyLimit": 10000,
-      "pctROI": 18.02
+      "pctROI": 17.79
+    },
+    {
+      "ItemName": "Ruby necklace",
+      "LowPrice": 1044,
+      "PriceFloor": 1092.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.64
     },
     {
       "ItemName": "Emerald necklace",
@@ -72,11 +79,11 @@
       "pctROI": 5.08
     },
     {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 1051,
-      "PriceFloor": 1092.0,
+      "ItemName": "Redwood shield",
+      "LowPrice": 533,
+      "PriceFloor": 561.0,
       "BuyLimit": 18000,
-      "pctROI": 2.95
+      "pctROI": 4.32
     }
   ],
   "methodology": "VeryGranular"
