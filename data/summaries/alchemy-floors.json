@@ -1,5 +1,5 @@
 {
-  "updated": "2025-10-02T21:45:41.736477+00:00",
+  "updated": "2025-10-02T21:50:35.107733+00:00",
   "items": [
     {
       "ItemName": "Water battlestaff",
@@ -9,6 +9,13 @@
       "pctROI": 3.66
     },
     {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8651,
+      "PriceFloor": 9008.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.09
+    },
+    {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8728,
       "PriceFloor": 9008.0,
@@ -16,11 +23,18 @@
       "pctROI": 2.18
     },
     {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8800,
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8401,
+      "PriceFloor": 8711.0,
+      "BuyLimit": 11000,
+      "pctROI": 2.65
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8796,
       "PriceFloor": 9008.0,
       "BuyLimit": 18000,
-      "pctROI": 1.34
+      "pctROI": 1.39
     },
     {
       "ItemName": "Diamond bracelet",
@@ -31,17 +45,10 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1218,
+      "LowPrice": 1242,
       "PriceFloor": 1322.0,
       "BuyLimit": 18000,
-      "pctROI": 7.47
-    },
-    {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8513,
-      "PriceFloor": 8711.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.3
+      "pctROI": 5.39
     },
     {
       "ItemName": "Dragon javelin heads",
@@ -52,10 +59,10 @@
     },
     {
       "ItemName": "Rune javelin heads",
-      "LowPrice": 493,
+      "LowPrice": 494,
       "PriceFloor": 603.0,
       "BuyLimit": 10000,
-      "pctROI": 21.1
+      "pctROI": 20.85
     },
     {
       "ItemName": "Emerald amulet (u)",
@@ -63,13 +70,6 @@
       "PriceFloor": 559.0,
       "BuyLimit": 10000,
       "pctROI": 11.69
-    },
-    {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 1051,
-      "PriceFloor": 1093.0,
-      "BuyLimit": 18000,
-      "pctROI": 3.04
     },
     {
       "ItemName": "Diamond necklace",
@@ -80,10 +80,17 @@
     },
     {
       "ItemName": "Emerald necklace",
-      "LowPrice": 622,
+      "LowPrice": 617,
       "PriceFloor": 648.0,
       "BuyLimit": 18000,
-      "pctROI": 3.22
+      "pctROI": 4.05
+    },
+    {
+      "ItemName": "Ruby necklace",
+      "LowPrice": 1071,
+      "PriceFloor": 1093.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.12
     }
   ],
   "methodology": "VeryGranular"
