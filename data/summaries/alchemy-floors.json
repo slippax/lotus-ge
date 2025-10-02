@@ -1,5 +1,5 @@
 {
-  "updated": "2025-10-02T02:20:33.680922+00:00",
+  "updated": "2025-10-02T02:25:35.270903+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -7,6 +7,13 @@
       "PriceFloor": 9007.0,
       "BuyLimit": 18000,
       "pctROI": 3.53
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8649,
+      "PriceFloor": 9007.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.1
     },
     {
       "ItemName": "Water battlestaff",
@@ -17,17 +24,10 @@
     },
     {
       "ItemName": "Fire battlestaff",
-      "LowPrice": 8794,
+      "LowPrice": 8750,
       "PriceFloor": 9007.0,
       "BuyLimit": 18000,
-      "pctROI": 1.4
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8804,
-      "PriceFloor": 9007.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.28
+      "pctROI": 1.91
     },
     {
       "ItemName": "Diamond bracelet",
@@ -45,31 +45,17 @@
     },
     {
       "ItemName": "Rune javelin heads",
-      "LowPrice": 477,
+      "LowPrice": 470,
       "PriceFloor": 602.0,
       "BuyLimit": 10000,
-      "pctROI": 24.95
+      "pctROI": 26.81
     },
     {
       "ItemName": "Dragon javelin heads",
-      "LowPrice": 857,
+      "LowPrice": 840,
       "PriceFloor": 959.0,
       "BuyLimit": 10000,
-      "pctROI": 10.85
-    },
-    {
-      "ItemName": "Emerald necklace",
-      "LowPrice": 611,
-      "PriceFloor": 647.0,
-      "BuyLimit": 18000,
-      "pctROI": 4.91
-    },
-    {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 1053,
-      "PriceFloor": 1092.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.75
+      "pctROI": 13.1
     },
     {
       "ItemName": "Redwood shield",
@@ -77,6 +63,13 @@
       "PriceFloor": 561.0,
       "BuyLimit": 18000,
       "pctROI": 4.91
+    },
+    {
+      "ItemName": "Emerald necklace",
+      "LowPrice": 620,
+      "PriceFloor": 647.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.39
     }
   ],
   "methodology": "VeryGranular"
