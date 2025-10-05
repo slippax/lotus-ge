@@ -1,5 +1,5 @@
 {
-  "updated": "2025-10-05T16:40:35.277675+00:00",
+  "updated": "2025-10-05T16:45:38.033589+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -17,10 +17,17 @@
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8450,
+      "LowPrice": 8425,
       "PriceFloor": 8709.0,
       "BuyLimit": 11000,
-      "pctROI": 2.04
+      "pctROI": 2.34
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8805,
+      "PriceFloor": 9006.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.26
     },
     {
       "ItemName": "Air battlestaff",
@@ -38,10 +45,10 @@
     },
     {
       "ItemName": "Dragon javelin heads",
-      "LowPrice": 827,
+      "LowPrice": 828,
       "PriceFloor": 958.0,
       "BuyLimit": 10000,
-      "pctROI": 14.75
+      "pctROI": 14.61
     },
     {
       "ItemName": "Yew shield",
@@ -52,10 +59,10 @@
     },
     {
       "ItemName": "Rune javelin heads",
-      "LowPrice": 507,
+      "LowPrice": 505,
       "PriceFloor": 601.0,
       "BuyLimit": 10000,
-      "pctROI": 17.36
+      "pctROI": 17.82
     },
     {
       "ItemName": "Magic shortbow",
@@ -63,13 +70,6 @@
       "PriceFloor": 750.0,
       "BuyLimit": 18000,
       "pctROI": 2.2
-    },
-    {
-      "ItemName": "Emerald necklace",
-      "LowPrice": 626,
-      "PriceFloor": 646.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.24
     }
   ],
   "methodology": "VeryGranular"
