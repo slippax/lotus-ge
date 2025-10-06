@@ -1,5 +1,5 @@
 {
-  "updated": "2025-10-06T13:00:36.096095+00:00",
+  "updated": "2025-10-06T13:05:41.234952+00:00",
   "items": [
     {
       "ItemName": "Rune dart(p++)",
@@ -25,6 +25,19 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 7070000.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Olive oil(4)",
+      "CurrentPrice": 54,
+      "BuyLimit": 10000,
+      "DailyRange": 1,
+      "WeeklyRange": 16,
+      "MonthlyRange": 27,
+      "CompressionRatio": 6.25,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 54000.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -237,15 +250,15 @@
     },
     {
       "ItemName": "Vile ashes",
-      "CurrentPrice": 79,
+      "CurrentPrice": 71,
       "BuyLimit": 3000,
       "DailyRange": 11,
       "WeeklyRange": 52,
       "MonthlyRange": 71,
       "CompressionRatio": 21.15,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "BreakoutDirection": "NEUTRAL",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 23700.0,
+      "PotentialBreakoutProfit": 21300.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -276,15 +289,15 @@
     },
     {
       "ItemName": "Harralander",
-      "CurrentPrice": 636,
+      "CurrentPrice": 608,
       "BuyLimit": 13000,
       "DailyRange": 89,
       "WeeklyRange": 382,
       "MonthlyRange": 524,
       "CompressionRatio": 23.3,
-      "BreakoutDirection": "UPPER_BIAS",
+      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 826800.0,
+      "PotentialBreakoutProfit": 790400.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -406,7 +419,7 @@
     },
     {
       "ItemName": "Monkfish",
-      "CurrentPrice": 425,
+      "CurrentPrice": 426,
       "BuyLimit": 13000,
       "DailyRange": 46,
       "WeeklyRange": 153,
@@ -414,7 +427,7 @@
       "CompressionRatio": 30.07,
       "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 552500.0,
+      "PotentialBreakoutProfit": 553800.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -523,7 +536,7 @@
     },
     {
       "ItemName": "Lava dragon bones",
-      "CurrentPrice": 6500,
+      "CurrentPrice": 6430,
       "BuyLimit": 7500,
       "DailyRange": 1873,
       "WeeklyRange": 5027,
@@ -531,20 +544,20 @@
       "CompressionRatio": 37.26,
       "BreakoutDirection": "LOWER_BIAS",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 4875000.0,
+      "PotentialBreakoutProfit": 4822500.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
       "ItemName": "Orange",
-      "CurrentPrice": 251,
+      "CurrentPrice": 281,
       "BuyLimit": 13000,
       "DailyRange": 96,
       "WeeklyRange": 244,
       "MonthlyRange": 249,
       "CompressionRatio": 39.34,
-      "BreakoutDirection": "LOWER_BIAS",
+      "BreakoutDirection": "UPPER_BIAS",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 326300.0,
+      "PotentialBreakoutProfit": 365300.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -627,28 +640,15 @@
     },
     {
       "ItemName": "Limpwurt root",
-      "CurrentPrice": 304,
+      "CurrentPrice": 311,
       "BuyLimit": 13000,
       "DailyRange": 26,
       "WeeklyRange": 62,
       "MonthlyRange": 147,
       "CompressionRatio": 41.94,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 395200.0,
-      "CompressionLevel": "MODERATE_COMPRESSION"
-    },
-    {
-      "ItemName": "Jerboa tail",
-      "CurrentPrice": 60,
-      "BuyLimit": 18000,
-      "DailyRange": 13,
-      "WeeklyRange": 31,
-      "MonthlyRange": 84,
-      "CompressionRatio": 41.94,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 108000.0,
+      "PotentialBreakoutProfit": 404300.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     }
   ],
