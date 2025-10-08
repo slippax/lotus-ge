@@ -1,5 +1,5 @@
 {
-  "updated": "2025-10-08T12:30:40.137010+00:00",
+  "updated": "2025-10-08T12:35:36.789081+00:00",
   "items": [
     {
       "ItemName": "Water battlestaff",
@@ -17,10 +17,10 @@
     },
     {
       "ItemName": "Magic shortbow",
-      "LowPrice": 641,
+      "LowPrice": 651,
       "PriceFloor": 748.0,
       "BuyLimit": 18000,
-      "pctROI": 15.6
+      "pctROI": 13.82
     },
     {
       "ItemName": "Magic longbow",
@@ -31,10 +31,17 @@
     },
     {
       "ItemName": "Dragon javelin heads",
-      "LowPrice": 825,
+      "LowPrice": 824,
       "PriceFloor": 956.0,
       "BuyLimit": 10000,
-      "pctROI": 14.79
+      "pctROI": 14.93
+    },
+    {
+      "ItemName": "Rune javelin heads",
+      "LowPrice": 495,
+      "PriceFloor": 599.0,
+      "BuyLimit": 10000,
+      "pctROI": 20.0
     },
     {
       "ItemName": "Diamond bracelet",
@@ -42,13 +49,6 @@
       "PriceFloor": 2070.0,
       "BuyLimit": 10000,
       "pctROI": 4.97
-    },
-    {
-      "ItemName": "Rune javelin heads",
-      "LowPrice": 499,
-      "PriceFloor": 599.0,
-      "BuyLimit": 10000,
-      "pctROI": 19.04
     }
   ],
   "methodology": "VeryGranular"
