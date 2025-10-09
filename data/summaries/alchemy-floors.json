@@ -1,6 +1,13 @@
 {
-  "updated": "2025-10-09T12:05:39.765217+00:00",
+  "updated": "2025-10-09T12:10:34.792413+00:00",
   "items": [
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8800,
+      "PriceFloor": 9004.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.3
+    },
     {
       "ItemName": "Earth battlestaff",
       "LowPrice": 8811,
@@ -10,10 +17,10 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1206,
+      "LowPrice": 1220,
       "PriceFloor": 1318.0,
       "BuyLimit": 18000,
-      "pctROI": 8.21
+      "pctROI": 6.97
     },
     {
       "ItemName": "Diamond bracelet",
@@ -42,6 +49,13 @@
       "PriceFloor": 956.0,
       "BuyLimit": 10000,
       "pctROI": 12.74
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 408,
+      "PriceFloor": 428.0,
+      "BuyLimit": 11000,
+      "pctROI": 3.92
     }
   ],
   "methodology": "VeryGranular"
