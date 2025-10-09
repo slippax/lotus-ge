@@ -1,12 +1,19 @@
 {
-  "updated": "2025-10-09T02:10:38.823509+00:00",
+  "updated": "2025-10-09T02:15:36.098212+00:00",
   "items": [
     {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8811,
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8772,
       "PriceFloor": 9004.0,
       "BuyLimit": 18000,
-      "pctROI": 1.17
+      "pctROI": 1.62
+    },
+    {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8825,
+      "PriceFloor": 9004.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.01
     },
     {
       "ItemName": "Magic longbow",
@@ -24,17 +31,10 @@
     },
     {
       "ItemName": "Dragon javelin heads",
-      "LowPrice": 850,
+      "LowPrice": 861,
       "PriceFloor": 956.0,
       "BuyLimit": 10000,
-      "pctROI": 11.41
-    },
-    {
-      "ItemName": "Magic shortbow",
-      "LowPrice": 695,
-      "PriceFloor": 748.0,
-      "BuyLimit": 18000,
-      "pctROI": 6.62
+      "pctROI": 9.99
     },
     {
       "ItemName": "Diamond bracelet",
@@ -42,6 +42,13 @@
       "PriceFloor": 2070.0,
       "BuyLimit": 10000,
       "pctROI": 4.17
+    },
+    {
+      "ItemName": "Magic shortbow",
+      "LowPrice": 701,
+      "PriceFloor": 748.0,
+      "BuyLimit": 18000,
+      "pctROI": 5.71
     }
   ],
   "methodology": "VeryGranular"
