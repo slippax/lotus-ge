@@ -1,5 +1,5 @@
 {
-  "updated": "2025-10-13T22:30:43.835535+00:00",
+  "updated": "2025-10-13T22:35:35.934412+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -7,6 +7,13 @@
       "PriceFloor": 9002.0,
       "BuyLimit": 18000,
       "pctROI": 1.8
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8764,
+      "PriceFloor": 9002.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.69
     },
     {
       "ItemName": "Magic longbow",
@@ -17,10 +24,17 @@
     },
     {
       "ItemName": "Diamond bracelet",
-      "LowPrice": 1839,
+      "LowPrice": 1845,
       "PriceFloor": 2068.0,
       "BuyLimit": 10000,
-      "pctROI": 11.36
+      "pctROI": 11.0
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8435,
+      "PriceFloor": 8705.0,
+      "BuyLimit": 11000,
+      "pctROI": 2.17
     },
     {
       "ItemName": "Dragon javelin heads",
@@ -31,17 +45,10 @@
     },
     {
       "ItemName": "Rune javelin heads",
-      "LowPrice": 506,
+      "LowPrice": 513,
       "PriceFloor": 597.0,
       "BuyLimit": 10000,
-      "pctROI": 17.0
-    },
-    {
-      "ItemName": "Gold bracelet",
-      "LowPrice": 106,
-      "PriceFloor": 122.0,
-      "BuyLimit": 18000,
-      "pctROI": 14.15
+      "pctROI": 15.4
     }
   ],
   "methodology": "VeryGranular"
