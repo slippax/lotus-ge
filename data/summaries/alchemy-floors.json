@@ -1,5 +1,5 @@
 {
-  "updated": "2025-10-15T13:35:33.833264+00:00",
+  "updated": "2025-10-15T13:40:36.987429+00:00",
   "items": [
     {
       "ItemName": "Air battlestaff",
@@ -7,6 +7,13 @@
       "PriceFloor": 9002.0,
       "BuyLimit": 18000,
       "pctROI": 3.54
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8705,
+      "PriceFloor": 9002.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.38
     },
     {
       "ItemName": "Fire battlestaff",
@@ -23,18 +30,11 @@
       "pctROI": 2.38
     },
     {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8706,
-      "PriceFloor": 9002.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.37
-    },
-    {
       "ItemName": "Magic longbow",
-      "LowPrice": 1191,
+      "LowPrice": 1210,
       "PriceFloor": 1316.0,
       "BuyLimit": 18000,
-      "pctROI": 9.4
+      "pctROI": 7.69
     },
     {
       "ItemName": "Diamond bracelet",
@@ -45,10 +45,17 @@
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8491,
+      "LowPrice": 8500,
       "PriceFloor": 8705.0,
       "BuyLimit": 11000,
-      "pctROI": 1.5
+      "pctROI": 1.39
+    },
+    {
+      "ItemName": "Rune javelin heads",
+      "LowPrice": 503,
+      "PriceFloor": 597.0,
+      "BuyLimit": 10000,
+      "pctROI": 17.69
     },
     {
       "ItemName": "Dragon javelin heads",
@@ -56,13 +63,6 @@
       "PriceFloor": 954.0,
       "BuyLimit": 10000,
       "pctROI": 9.63
-    },
-    {
-      "ItemName": "Rune javelin heads",
-      "LowPrice": 529,
-      "PriceFloor": 597.0,
-      "BuyLimit": 10000,
-      "pctROI": 11.91
     }
   ],
   "methodology": "VeryGranular"
