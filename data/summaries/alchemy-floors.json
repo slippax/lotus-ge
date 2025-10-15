@@ -1,13 +1,6 @@
 {
-  "updated": "2025-10-15T18:10:31.547969+00:00",
+  "updated": "2025-10-15T18:15:36.202208+00:00",
   "items": [
-    {
-      "ItemName": "Fire battlestaff",
-      "LowPrice": 8705,
-      "PriceFloor": 9002.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.38
-    },
     {
       "ItemName": "Earth battlestaff",
       "LowPrice": 8707,
@@ -16,18 +9,25 @@
       "pctROI": 2.35
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8711,
-      "PriceFloor": 9002.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.31
-    },
-    {
       "ItemName": "Water battlestaff",
       "LowPrice": 8725,
       "PriceFloor": 9002.0,
       "BuyLimit": 18000,
       "pctROI": 2.14
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8772,
+      "PriceFloor": 9002.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.6
+    },
+    {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8784,
+      "PriceFloor": 9002.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.46
     },
     {
       "ItemName": "Magic longbow",
@@ -59,10 +59,10 @@
     },
     {
       "ItemName": "Rune javelin heads",
-      "LowPrice": 520,
+      "LowPrice": 522,
       "PriceFloor": 597.0,
       "BuyLimit": 10000,
-      "pctROI": 13.85
+      "pctROI": 13.41
     }
   ],
   "methodology": "VeryGranular"
