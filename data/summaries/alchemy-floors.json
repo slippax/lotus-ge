@@ -1,5 +1,5 @@
 {
-  "updated": "2025-10-17T23:50:49.266078+00:00",
+  "updated": "2025-10-17T23:55:36.370040+00:00",
   "items": [
     {
       "ItemName": "Water battlestaff",
@@ -9,11 +9,18 @@
       "pctROI": 5.4
     },
     {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8575,
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8600,
       "PriceFloor": 9003.0,
       "BuyLimit": 18000,
-      "pctROI": 3.94
+      "pctROI": 3.64
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8615,
+      "PriceFloor": 9003.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.46
     },
     {
       "ItemName": "Air battlestaff",
@@ -24,17 +31,17 @@
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8264,
+      "LowPrice": 8272,
       "PriceFloor": 8706.0,
       "BuyLimit": 11000,
-      "pctROI": 4.3
+      "pctROI": 4.19
     },
     {
-      "ItemName": "Fire battlestaff",
-      "LowPrice": 8701,
-      "PriceFloor": 9003.0,
+      "ItemName": "Magic longbow",
+      "LowPrice": 1196,
+      "PriceFloor": 1317.0,
       "BuyLimit": 18000,
-      "pctROI": 2.44
+      "pctROI": 9.03
     },
     {
       "ItemName": "Diamond bracelet",
@@ -42,13 +49,6 @@
       "PriceFloor": 2069.0,
       "BuyLimit": 10000,
       "pctROI": 7.56
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1233,
-      "PriceFloor": 1317.0,
-      "BuyLimit": 18000,
-      "pctROI": 5.76
     },
     {
       "ItemName": "Dragon javelin heads",
@@ -66,17 +66,10 @@
     },
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 512,
+      "LowPrice": 519,
       "PriceFloor": 557.0,
       "BuyLimit": 18000,
-      "pctROI": 7.81
-    },
-    {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 1058,
-      "PriceFloor": 1088.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.89
+      "pctROI": 6.36
     },
     {
       "ItemName": "Magic shortbow",
@@ -84,6 +77,13 @@
       "PriceFloor": 747.0,
       "BuyLimit": 18000,
       "pctROI": 2.64
+    },
+    {
+      "ItemName": "Ruby necklace",
+      "LowPrice": 1060,
+      "PriceFloor": 1088.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.7
     }
   ],
   "methodology": "VeryGranular"
