@@ -1,12 +1,26 @@
 {
-  "updated": "2025-10-17T04:55:38.713717+00:00",
+  "updated": "2025-10-17T05:00:36.425220+00:00",
   "items": [
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8603,
+      "PriceFloor": 9003.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.6
+    },
     {
       "ItemName": "Water battlestaff",
       "LowPrice": 8603,
       "PriceFloor": 9003.0,
       "BuyLimit": 18000,
       "pctROI": 3.6
+    },
+    {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8617,
+      "PriceFloor": 9003.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.44
     },
     {
       "ItemName": "Earth battlestaff",
@@ -16,25 +30,11 @@
       "pctROI": 3.04
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8704,
-      "PriceFloor": 9003.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.4
-    },
-    {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8290,
+      "LowPrice": 8202,
       "PriceFloor": 8706.0,
       "BuyLimit": 11000,
-      "pctROI": 3.97
-    },
-    {
-      "ItemName": "Fire battlestaff",
-      "LowPrice": 8716,
-      "PriceFloor": 9003.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.26
+      "pctROI": 5.08
     },
     {
       "ItemName": "Magic longbow",
@@ -51,25 +51,32 @@
       "pctROI": 6.77
     },
     {
-      "ItemName": "Rune javelin heads",
-      "LowPrice": 482,
-      "PriceFloor": 598.0,
-      "BuyLimit": 10000,
-      "pctROI": 23.03
-    },
-    {
       "ItemName": "Dragon javelin heads",
-      "LowPrice": 862,
+      "LowPrice": 835,
       "PriceFloor": 955.0,
       "BuyLimit": 10000,
-      "pctROI": 9.74
+      "pctROI": 13.29
+    },
+    {
+      "ItemName": "Rune javelin heads",
+      "LowPrice": 504,
+      "PriceFloor": 598.0,
+      "BuyLimit": 10000,
+      "pctROI": 17.66
     },
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 526,
+      "LowPrice": 516,
       "PriceFloor": 557.0,
       "BuyLimit": 18000,
-      "pctROI": 4.94
+      "pctROI": 6.98
+    },
+    {
+      "ItemName": "Magic shortbow",
+      "LowPrice": 724,
+      "PriceFloor": 747.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.21
     }
   ],
   "methodology": "VeryGranular"
