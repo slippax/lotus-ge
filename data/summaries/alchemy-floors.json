@@ -1,19 +1,12 @@
 {
-  "updated": "2025-10-19T20:40:35.270158+00:00",
+  "updated": "2025-10-19T20:45:47.801088+00:00",
   "items": [
     {
       "ItemName": "Air battlestaff",
-      "LowPrice": 8580,
+      "LowPrice": 8600,
       "PriceFloor": 9003.0,
       "BuyLimit": 18000,
-      "pctROI": 3.88
-    },
-    {
-      "ItemName": "Fire battlestaff",
-      "LowPrice": 8589,
-      "PriceFloor": 9003.0,
-      "BuyLimit": 18000,
-      "pctROI": 3.77
+      "pctROI": 3.64
     },
     {
       "ItemName": "Earth battlestaff",
@@ -21,6 +14,13 @@
       "PriceFloor": 9003.0,
       "BuyLimit": 18000,
       "pctROI": 3.34
+    },
+    {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8627,
+      "PriceFloor": 9003.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.32
     },
     {
       "ItemName": "Water battlestaff",
@@ -31,10 +31,10 @@
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8287,
+      "LowPrice": 8288,
       "PriceFloor": 8706.0,
       "BuyLimit": 11000,
-      "pctROI": 4.01
+      "pctROI": 3.99
     },
     {
       "ItemName": "Diamond bracelet",
@@ -45,17 +45,24 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1196,
+      "LowPrice": 1208,
       "PriceFloor": 1317.0,
       "BuyLimit": 18000,
-      "pctROI": 9.03
+      "pctROI": 7.95
     },
     {
       "ItemName": "Dragon javelin heads",
-      "LowPrice": 838,
+      "LowPrice": 828,
       "PriceFloor": 955.0,
       "BuyLimit": 10000,
-      "pctROI": 12.89
+      "pctROI": 14.25
+    },
+    {
+      "ItemName": "Rune javelin heads",
+      "LowPrice": 513,
+      "PriceFloor": 598.0,
+      "BuyLimit": 10000,
+      "pctROI": 15.59
     },
     {
       "ItemName": "Yew longbow",
@@ -70,13 +77,6 @@
       "PriceFloor": 747.0,
       "BuyLimit": 18000,
       "pctROI": 4.96
-    },
-    {
-      "ItemName": "Rune javelin heads",
-      "LowPrice": 541,
-      "PriceFloor": 598.0,
-      "BuyLimit": 10000,
-      "pctROI": 9.61
     }
   ],
   "methodology": "VeryGranular"
