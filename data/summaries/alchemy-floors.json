@@ -1,5 +1,5 @@
 {
-  "updated": "2025-10-19T10:50:36.525554+00:00",
+  "updated": "2025-10-19T10:55:34.347317+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -16,6 +16,13 @@
       "pctROI": 3.04
     },
     {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8656,
+      "PriceFloor": 9003.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.97
+    },
+    {
       "ItemName": "Air battlestaff",
       "LowPrice": 8658,
       "PriceFloor": 9003.0,
@@ -23,18 +30,18 @@
       "pctROI": 2.95
     },
     {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8696,
-      "PriceFloor": 9003.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.5
-    },
-    {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8365,
+      "LowPrice": 8375,
       "PriceFloor": 8706.0,
       "BuyLimit": 11000,
-      "pctROI": 3.04
+      "pctROI": 2.91
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1185,
+      "PriceFloor": 1317.0,
+      "BuyLimit": 18000,
+      "pctROI": 10.04
     },
     {
       "ItemName": "Diamond bracelet",
@@ -42,13 +49,6 @@
       "PriceFloor": 2069.0,
       "BuyLimit": 10000,
       "pctROI": 11.36
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1188,
-      "PriceFloor": 1317.0,
-      "BuyLimit": 18000,
-      "pctROI": 9.76
     },
     {
       "ItemName": "Dragon javelin heads",
@@ -59,17 +59,24 @@
     },
     {
       "ItemName": "Rune javelin heads",
-      "LowPrice": 520,
+      "LowPrice": 521,
       "PriceFloor": 598.0,
       "BuyLimit": 10000,
-      "pctROI": 14.04
+      "pctROI": 13.82
+    },
+    {
+      "ItemName": "Magic shortbow",
+      "LowPrice": 707,
+      "PriceFloor": 747.0,
+      "BuyLimit": 18000,
+      "pctROI": 4.67
     },
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 525,
+      "LowPrice": 522,
       "PriceFloor": 557.0,
       "BuyLimit": 18000,
-      "pctROI": 5.14
+      "pctROI": 5.75
     },
     {
       "ItemName": "Diamond amulet (u)",
@@ -77,13 +84,6 @@
       "PriceFloor": 1890.0,
       "BuyLimit": 10000,
       "pctROI": 2.3
-    },
-    {
-      "ItemName": "Magic shortbow",
-      "LowPrice": 731,
-      "PriceFloor": 747.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.23
     }
   ],
   "methodology": "VeryGranular"
