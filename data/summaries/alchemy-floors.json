@@ -1,6 +1,20 @@
 {
-  "updated": "2025-10-21T06:40:57.324775+00:00",
+  "updated": "2025-10-21T06:45:47.953394+00:00",
   "items": [
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8743,
+      "PriceFloor": 9003.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.94
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8747,
+      "PriceFloor": 9003.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.9
+    },
     {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8758,
@@ -10,10 +24,17 @@
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8400,
+      "LowPrice": 8444,
       "PriceFloor": 8706.0,
       "BuyLimit": 11000,
-      "pctROI": 2.61
+      "pctROI": 2.07
+    },
+    {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1883,
+      "PriceFloor": 2069.0,
+      "BuyLimit": 10000,
+      "pctROI": 8.82
     },
     {
       "ItemName": "Magic longbow",
@@ -23,25 +44,11 @@
       "pctROI": 7.59
     },
     {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1884,
-      "PriceFloor": 2069.0,
-      "BuyLimit": 10000,
-      "pctROI": 8.76
-    },
-    {
       "ItemName": "Phoenix necklace",
       "LowPrice": 2051,
       "PriceFloor": 2202.0,
       "BuyLimit": 10000,
       "pctROI": 6.29
-    },
-    {
-      "ItemName": "Dragon javelin heads",
-      "LowPrice": 833,
-      "PriceFloor": 955.0,
-      "BuyLimit": 10000,
-      "pctROI": 13.57
     },
     {
       "ItemName": "Yew longbow",
@@ -51,18 +58,25 @@
       "pctROI": 10.84
     },
     {
+      "ItemName": "Dragon javelin heads",
+      "LowPrice": 877,
+      "PriceFloor": 955.0,
+      "BuyLimit": 10000,
+      "pctROI": 7.87
+    },
+    {
       "ItemName": "Rune javelin heads",
-      "LowPrice": 513,
+      "LowPrice": 540,
       "PriceFloor": 598.0,
       "BuyLimit": 10000,
-      "pctROI": 15.59
+      "pctROI": 9.81
     },
     {
       "ItemName": "Magic shortbow",
-      "LowPrice": 710,
+      "LowPrice": 728,
       "PriceFloor": 747.0,
       "BuyLimit": 18000,
-      "pctROI": 4.23
+      "pctROI": 1.65
     }
   ],
   "methodology": "VeryGranular"
