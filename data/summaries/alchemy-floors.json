@@ -1,47 +1,54 @@
 {
-  "updated": "2025-10-22T15:50:40.250036+00:00",
+  "updated": "2025-10-22T15:55:46.009940+00:00",
   "items": [
     {
-      "ItemName": "Fire battlestaff",
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8611,
+      "PriceFloor": 9004.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.52
+    },
+    {
+      "ItemName": "Water battlestaff",
       "LowPrice": 8650,
       "PriceFloor": 9004.0,
       "BuyLimit": 18000,
       "pctROI": 3.05
     },
     {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8736,
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8656,
       "PriceFloor": 9004.0,
       "BuyLimit": 18000,
-      "pctROI": 2.04
-    },
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8776,
-      "PriceFloor": 9004.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.57
+      "pctROI": 2.98
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8443,
+      "LowPrice": 8449,
       "PriceFloor": 8707.0,
       "BuyLimit": 11000,
-      "pctROI": 2.1
+      "pctROI": 2.02
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8809,
-      "PriceFloor": 9004.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.19
+      "ItemName": "Combat bracelet",
+      "LowPrice": 11985,
+      "PriceFloor": 12295.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.57
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1210,
+      "LowPrice": 1208,
       "PriceFloor": 1318.0,
       "BuyLimit": 18000,
-      "pctROI": 7.85
+      "pctROI": 8.03
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8823,
+      "PriceFloor": 9004.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.03
     },
     {
       "ItemName": "Diamond bracelet",
@@ -59,17 +66,17 @@
     },
     {
       "ItemName": "Dragon javelin heads",
-      "LowPrice": 846,
+      "LowPrice": 847,
       "PriceFloor": 956.0,
       "BuyLimit": 10000,
-      "pctROI": 11.94
+      "pctROI": 11.81
     },
     {
       "ItemName": "Rune javelin heads",
-      "LowPrice": 515,
+      "LowPrice": 500,
       "PriceFloor": 599.0,
       "BuyLimit": 10000,
-      "pctROI": 15.34
+      "pctROI": 18.8
     },
     {
       "ItemName": "Magic shortbow",
@@ -77,13 +84,6 @@
       "PriceFloor": 748.0,
       "BuyLimit": 18000,
       "pctROI": 1.37
-    },
-    {
-      "ItemName": "Yew longbow",
-      "LowPrice": 546,
-      "PriceFloor": 558.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.28
     }
   ],
   "methodology": "VeryGranular"
