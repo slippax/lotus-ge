@@ -1,6 +1,13 @@
 {
-  "updated": "2025-10-22T11:15:44.610355+00:00",
+  "updated": "2025-10-22T11:20:42.811903+00:00",
   "items": [
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8650,
+      "PriceFloor": 9004.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.05
+    },
     {
       "ItemName": "Air battlestaff",
       "LowPrice": 8652,
@@ -10,17 +17,17 @@
     },
     {
       "ItemName": "Water battlestaff",
-      "LowPrice": 8652,
+      "LowPrice": 8700,
       "PriceFloor": 9004.0,
       "BuyLimit": 18000,
-      "pctROI": 3.03
+      "pctROI": 2.46
     },
     {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8660,
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8755,
       "PriceFloor": 9004.0,
       "BuyLimit": 18000,
-      "pctROI": 2.93
+      "pctROI": 1.82
     },
     {
       "ItemName": "Combat bracelet",
@@ -28,6 +35,13 @@
       "PriceFloor": 12295.0,
       "BuyLimit": 10000,
       "pctROI": 2.08
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8400,
+      "PriceFloor": 8707.0,
+      "BuyLimit": 11000,
+      "pctROI": 2.62
     },
     {
       "ItemName": "Magic longbow",
@@ -44,13 +58,6 @@
       "pctROI": 7.44
     },
     {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8500,
-      "PriceFloor": 8707.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.41
-    },
-    {
       "ItemName": "Phoenix necklace",
       "LowPrice": 2063,
       "PriceFloor": 2203.0,
@@ -59,10 +66,10 @@
     },
     {
       "ItemName": "Dragon javelin heads",
-      "LowPrice": 877,
+      "LowPrice": 836,
       "PriceFloor": 956.0,
       "BuyLimit": 10000,
-      "pctROI": 7.98
+      "pctROI": 13.28
     },
     {
       "ItemName": "Rune javelin heads",
@@ -70,6 +77,13 @@
       "PriceFloor": 599.0,
       "BuyLimit": 10000,
       "pctROI": 13.36
+    },
+    {
+      "ItemName": "Magic shortbow",
+      "LowPrice": 730,
+      "PriceFloor": 748.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.51
     }
   ],
   "methodology": "VeryGranular"
