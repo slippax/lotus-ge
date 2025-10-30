@@ -1,12 +1,26 @@
 {
-  "updated": "2025-10-30T21:40:50.713090+00:00",
+  "updated": "2025-10-30T21:45:39.617657+00:00",
   "items": [
     {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8769,
+      "PriceFloor": 9006.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.68
+    },
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8800,
+      "PriceFloor": 9006.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.32
+    },
+    {
       "ItemName": "Magic longbow",
-      "LowPrice": 1211,
+      "LowPrice": 1210,
       "PriceFloor": 1320.0,
       "BuyLimit": 18000,
-      "pctROI": 7.93
+      "pctROI": 8.02
     },
     {
       "ItemName": "Earth battlestaff",
@@ -14,6 +28,13 @@
       "PriceFloor": 9006.0,
       "BuyLimit": 18000,
       "pctROI": 1.02
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8500,
+      "PriceFloor": 8709.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.44
     },
     {
       "ItemName": "Diamond bracelet",
@@ -35,13 +56,6 @@
       "PriceFloor": 601.0,
       "BuyLimit": 10000,
       "pctROI": 23.96
-    },
-    {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8525,
-      "PriceFloor": 8709.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.14
     }
   ],
   "methodology": "VeryGranular"
