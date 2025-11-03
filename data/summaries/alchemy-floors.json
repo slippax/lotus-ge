@@ -1,5 +1,5 @@
 {
-  "updated": "2025-11-03T21:30:33.705755+00:00",
+  "updated": "2025-11-03T21:35:34.662542+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -9,11 +9,25 @@
       "pctROI": 1.4
     },
     {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8814,
+      "PriceFloor": 9006.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.16
+    },
+    {
       "ItemName": "Water battlestaff",
       "LowPrice": 8815,
       "PriceFloor": 9006.0,
       "BuyLimit": 18000,
       "pctROI": 1.15
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8820,
+      "PriceFloor": 9006.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.09
     },
     {
       "ItemName": "Magic longbow",
@@ -23,18 +37,11 @@
       "pctROI": 7.4
     },
     {
-      "ItemName": "Dragon javelin heads",
-      "LowPrice": 840,
-      "PriceFloor": 958.0,
-      "BuyLimit": 10000,
-      "pctROI": 12.98
-    },
-    {
       "ItemName": "Diamond bracelet",
-      "LowPrice": 1959,
+      "LowPrice": 1958,
       "PriceFloor": 2071.0,
       "BuyLimit": 10000,
-      "pctROI": 4.7
+      "pctROI": 4.75
     },
     {
       "ItemName": "Rune javelin heads",
@@ -42,6 +49,13 @@
       "PriceFloor": 601.0,
       "BuyLimit": 10000,
       "pctROI": 17.82
+    },
+    {
+      "ItemName": "Dragon javelin heads",
+      "LowPrice": 877,
+      "PriceFloor": 958.0,
+      "BuyLimit": 10000,
+      "pctROI": 8.21
     }
   ],
   "methodology": "VeryGranular"
