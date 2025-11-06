@@ -1,6 +1,13 @@
 {
-  "updated": "2025-11-06T12:30:35.027667+00:00",
+  "updated": "2025-11-06T12:35:34.955978+00:00",
   "items": [
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1231,
+      "PriceFloor": 1320.0,
+      "BuyLimit": 18000,
+      "pctROI": 6.17
+    },
     {
       "ItemName": "Diamond bracelet",
       "LowPrice": 1931,
@@ -10,17 +17,24 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 856,
+      "LowPrice": 858,
       "PriceFloor": 958.0,
       "BuyLimit": 10000,
-      "pctROI": 10.86
+      "pctROI": 10.61
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1260,
-      "PriceFloor": 1320.0,
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 507,
+      "PriceFloor": 601.0,
+      "BuyLimit": 10000,
+      "pctROI": 17.36
+    },
+    {
+      "ItemName": "Yew longbow",
+      "LowPrice": 517,
+      "PriceFloor": 560.0,
       "BuyLimit": 18000,
-      "pctROI": 3.73
+      "pctROI": 7.35
     },
     {
       "ItemName": "Phoenix necklace",
@@ -28,20 +42,6 @@
       "PriceFloor": 2205.0,
       "BuyLimit": 10000,
       "pctROI": 2.97
-    },
-    {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 540,
-      "PriceFloor": 601.0,
-      "BuyLimit": 10000,
-      "pctROI": 10.19
-    },
-    {
-      "ItemName": "Yew longbow",
-      "LowPrice": 549,
-      "PriceFloor": 560.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.09
     }
   ],
   "methodology": "VeryGranular"
