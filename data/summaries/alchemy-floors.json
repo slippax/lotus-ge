@@ -1,19 +1,26 @@
 {
-  "updated": "2025-11-08T13:25:36.525517+00:00",
+  "updated": "2025-11-08T13:30:41.219841+00:00",
   "items": [
+    {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1980,
+      "PriceFloor": 2075.0,
+      "BuyLimit": 10000,
+      "pctROI": 3.79
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1273,
+      "PriceFloor": 1324.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.99
+    },
     {
       "ItemName": "Dragon javelin tips",
       "LowPrice": 894,
       "PriceFloor": 962.0,
       "BuyLimit": 10000,
       "pctROI": 6.6
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1280,
-      "PriceFloor": 1324.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.42
     },
     {
       "ItemName": "Diamond amulet (u)",
@@ -42,13 +49,6 @@
       "PriceFloor": 427.0,
       "BuyLimit": 10000,
       "pctROI": 8.46
-    },
-    {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 2027,
-      "PriceFloor": 2075.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.38
     }
   ],
   "methodology": "VeryGranular"
