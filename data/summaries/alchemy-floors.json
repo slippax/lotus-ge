@@ -1,6 +1,13 @@
 {
-  "updated": "2025-11-17T20:45:34.155697+00:00",
+  "updated": "2025-11-17T20:50:36.283356+00:00",
   "items": [
+    {
+      "ItemName": "Gold necklace",
+      "LowPrice": 35,
+      "PriceFloor": 72.0,
+      "BuyLimit": 18000,
+      "pctROI": 105.71
+    },
     {
       "ItemName": "Magic longbow",
       "LowPrice": 1275,
@@ -10,10 +17,10 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 906,
+      "LowPrice": 905,
       "PriceFloor": 963.0,
       "BuyLimit": 10000,
-      "pctROI": 5.3
+      "pctROI": 5.41
     },
     {
       "ItemName": "Rune javelin tips",
@@ -31,10 +38,17 @@
     },
     {
       "ItemName": "Ruby necklace",
-      "LowPrice": 1072,
+      "LowPrice": 1073,
       "PriceFloor": 1096.0,
       "BuyLimit": 18000,
-      "pctROI": 1.31
+      "pctROI": 1.21
+    },
+    {
+      "ItemName": "Emerald necklace",
+      "LowPrice": 638,
+      "PriceFloor": 651.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.1
     }
   ],
   "methodology": "VeryGranular"
