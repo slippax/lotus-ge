@@ -1,20 +1,35 @@
 {
-  "updated": "2025-11-19T11:35:44.589108+00:00",
+  "updated": "2025-11-19T11:40:34.770407+00:00",
   "items": [
     {
       "ItemName": "Runite bar",
-      "CurrentPrice": 12294,
+      "CurrentPrice": 12300,
       "BuyLimit": 10000,
       "FiveMinMean": 12295,
       "HourlyMean": 12284,
       "DailyMean": 12324,
       "WeeklyMean": 12270,
       "MonthlyMean": 12255,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_SUPPORTED",
+      "PotentialProfit": 12300000.0
+    },
+    {
+      "ItemName": "Adamantite bar",
+      "CurrentPrice": 1965,
+      "BuyLimit": 10000,
+      "FiveMinMean": 1961,
+      "HourlyMean": 1982,
+      "DailyMean": 1970,
+      "WeeklyMean": 1988,
+      "MonthlyMean": 1923,
       "BullishConfluence": 3,
       "BearishConfluence": 2,
       "SignalStrength": "MODERATE_BULLISH",
-      "VolumeConfirmation": "VOLUME_SUPPORTED",
-      "PotentialProfit": 8605800.0
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 1375500.0
     },
     {
       "ItemName": "Death rune",
@@ -45,21 +60,6 @@
       "SignalStrength": "MODERATE_BEARISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
       "PotentialProfit": 5212900.0
-    },
-    {
-      "ItemName": "Adamantite bar",
-      "CurrentPrice": 1950,
-      "BuyLimit": 10000,
-      "FiveMinMean": 1961,
-      "HourlyMean": 1982,
-      "DailyMean": 1970,
-      "WeeklyMean": 1988,
-      "MonthlyMean": 1923,
-      "BullishConfluence": 2,
-      "BearishConfluence": 3,
-      "SignalStrength": "MODERATE_BEARISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 975000.0
     },
     {
       "ItemName": "Rune nails",
@@ -93,7 +93,7 @@
     },
     {
       "ItemName": "Bracelet of ethereum (uncharged)",
-      "CurrentPrice": 42656,
+      "CurrentPrice": 42744,
       "BuyLimit": 10000,
       "FiveMinMean": 42800,
       "HourlyMean": 42788,
@@ -123,7 +123,7 @@
     },
     {
       "ItemName": "Snape grass seed",
-      "CurrentPrice": 5856,
+      "CurrentPrice": 5830,
       "BuyLimit": 200,
       "FiveMinMean": 5882,
       "HourlyMean": 5882,
