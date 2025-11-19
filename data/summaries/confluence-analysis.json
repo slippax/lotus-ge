@@ -1,24 +1,54 @@
 {
-  "updated": "2025-11-19T12:35:35.780979+00:00",
+  "updated": "2025-11-19T12:40:34.730189+00:00",
   "items": [
     {
       "ItemName": "Death rune",
-      "CurrentPrice": 141,
+      "CurrentPrice": 142,
       "BuyLimit": 25000,
       "FiveMinMean": 141,
       "HourlyMean": 142,
       "DailyMean": 141,
       "WeeklyMean": 138,
       "MonthlyMean": 136,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 355000.0
+    },
+    {
+      "ItemName": "Emerald ring",
+      "CurrentPrice": 654,
+      "BuyLimit": 10000,
+      "FiveMinMean": 642,
+      "HourlyMean": 642,
+      "DailyMean": 652,
+      "WeeklyMean": 647,
+      "MonthlyMean": 637,
       "BullishConfluence": 3,
       "BearishConfluence": 1,
       "SignalStrength": "MODERATE_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 246750.0
+      "PotentialProfit": 457800.0
+    },
+    {
+      "ItemName": "Runite bolts (unf)",
+      "CurrentPrice": 266,
+      "BuyLimit": 13000,
+      "FiveMinMean": 263,
+      "HourlyMean": 263,
+      "DailyMean": 268,
+      "WeeklyMean": 234,
+      "MonthlyMean": 224,
+      "BullishConfluence": 3,
+      "BearishConfluence": 1,
+      "SignalStrength": "MODERATE_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 242060.0
     },
     {
       "ItemName": "Battlestaff",
-      "CurrentPrice": 7950,
+      "CurrentPrice": 8001,
       "BuyLimit": 11000,
       "FiveMinMean": 8072,
       "HourlyMean": 7991,
@@ -29,7 +59,7 @@
       "BearishConfluence": 3,
       "SignalStrength": "MODERATE_BEARISH",
       "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 4372500.0
+      "PotentialProfit": 4400550.0
     },
     {
       "ItemName": "Magic seed",
@@ -48,7 +78,7 @@
     },
     {
       "ItemName": "Magic logs",
-      "CurrentPrice": 936,
+      "CurrentPrice": 937,
       "BuyLimit": 12000,
       "FiveMinMean": 940,
       "HourlyMean": 941,
@@ -59,7 +89,7 @@
       "BearishConfluence": 3,
       "SignalStrength": "MODERATE_BEARISH",
       "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 561600.0
+      "PotentialProfit": 562200.0
     },
     {
       "ItemName": "Mystic robe bottom",
@@ -92,21 +122,6 @@
       "PotentialProfit": 810.0
     },
     {
-      "ItemName": "Dragonstone bolt tips",
-      "CurrentPrice": 478,
-      "BuyLimit": 11000,
-      "FiveMinMean": 469,
-      "HourlyMean": 469,
-      "DailyMean": 474,
-      "WeeklyMean": 506,
-      "MonthlyMean": 526,
-      "BullishConfluence": 1,
-      "BearishConfluence": 3,
-      "SignalStrength": "MODERATE_BEARISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 0
-    },
-    {
       "ItemName": "Limpwurt root",
       "CurrentPrice": 282,
       "BuyLimit": 13000,
@@ -123,7 +138,7 @@
     },
     {
       "ItemName": "Ranarr seed",
-      "CurrentPrice": 27650,
+      "CurrentPrice": 27201,
       "BuyLimit": 200,
       "FiveMinMean": 27113,
       "HourlyMean": 27402,
@@ -138,7 +153,7 @@
     },
     {
       "ItemName": "Runite ore",
-      "CurrentPrice": 9861,
+      "CurrentPrice": 9855,
       "BuyLimit": 4500,
       "FiveMinMean": 9861,
       "HourlyMean": 9894,
@@ -146,14 +161,14 @@
       "WeeklyMean": 10001,
       "MonthlyMean": 10075,
       "BullishConfluence": 1,
-      "BearishConfluence": 3,
-      "SignalStrength": "MODERATE_BEARISH",
+      "BearishConfluence": 4,
+      "SignalStrength": "STRONG_BEARISH",
       "VolumeConfirmation": "WEAK_VOLUME",
       "PotentialProfit": 0
     },
     {
       "ItemName": "Shark",
-      "CurrentPrice": 606,
+      "CurrentPrice": 602,
       "BuyLimit": 10000,
       "FiveMinMean": 600,
       "HourlyMean": 600,
@@ -167,15 +182,30 @@
       "PotentialProfit": 0
     },
     {
+      "ItemName": "Dragonstone bolt tips",
+      "CurrentPrice": 469,
+      "BuyLimit": 11000,
+      "FiveMinMean": 469,
+      "HourlyMean": 469,
+      "DailyMean": 474,
+      "WeeklyMean": 506,
+      "MonthlyMean": 526,
+      "BullishConfluence": 0,
+      "BearishConfluence": 3,
+      "SignalStrength": "MODERATE_BEARISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 0
+    },
+    {
       "ItemName": "Super restore(4)",
-      "CurrentPrice": 13302,
+      "CurrentPrice": 13063,
       "BuyLimit": 2000,
       "FiveMinMean": 13063,
       "HourlyMean": 13073,
       "DailyMean": 13115,
       "WeeklyMean": 13341,
       "MonthlyMean": 14352,
-      "BullishConfluence": 1,
+      "BullishConfluence": 0,
       "BearishConfluence": 4,
       "SignalStrength": "STRONG_BEARISH",
       "VolumeConfirmation": "WEAK_VOLUME",
