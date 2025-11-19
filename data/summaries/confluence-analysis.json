@@ -1,36 +1,6 @@
 {
-  "updated": "2025-11-19T10:50:35.869145+00:00",
+  "updated": "2025-11-19T10:55:36.986351+00:00",
   "items": [
-    {
-      "ItemName": "Runite ore",
-      "CurrentPrice": 10066,
-      "BuyLimit": 4500,
-      "FiveMinMean": 10025,
-      "HourlyMean": 10020,
-      "DailyMean": 10003,
-      "WeeklyMean": 10001,
-      "MonthlyMean": 10075,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 4529700.0
-    },
-    {
-      "ItemName": "Mithril ore",
-      "CurrentPrice": 131,
-      "BuyLimit": 13000,
-      "FiveMinMean": 129,
-      "HourlyMean": 130,
-      "DailyMean": 129,
-      "WeeklyMean": 123,
-      "MonthlyMean": 120,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_SUPPORTED",
-      "PotentialProfit": 170300.0
-    },
     {
       "ItemName": "Ancient emblem",
       "CurrentPrice": 497001,
@@ -45,6 +15,21 @@
       "SignalStrength": "MODERATE_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
       "PotentialProfit": 8697518.0
+    },
+    {
+      "ItemName": "Runite ore",
+      "CurrentPrice": 10025,
+      "BuyLimit": 4500,
+      "FiveMinMean": 10025,
+      "HourlyMean": 10020,
+      "DailyMean": 10003,
+      "WeeklyMean": 10001,
+      "MonthlyMean": 10075,
+      "BullishConfluence": 3,
+      "BearishConfluence": 1,
+      "SignalStrength": "MODERATE_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 3157875.0
     },
     {
       "ItemName": "Khazard teleport (tablet)",
@@ -62,19 +47,19 @@
       "PotentialProfit": 1823500.0
     },
     {
-      "ItemName": "Divine ranging potion(4)",
-      "CurrentPrice": 5476,
+      "ItemName": "Prayer potion(3)",
+      "CurrentPrice": 6441,
       "BuyLimit": 2000,
-      "FiveMinMean": 5372,
-      "HourlyMean": 5476,
-      "DailyMean": 5002,
-      "WeeklyMean": 4807,
-      "MonthlyMean": 4982,
+      "FiveMinMean": 6440,
+      "HourlyMean": 6376,
+      "DailyMean": 6363,
+      "WeeklyMean": 6487,
+      "MonthlyMean": 7055,
       "BullishConfluence": 3,
       "BearishConfluence": 2,
       "SignalStrength": "MODERATE_BULLISH",
-      "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 766640.0
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 901740.0
     },
     {
       "ItemName": "Runite bolts (unf)",
@@ -92,6 +77,36 @@
       "PotentialProfit": 239330.0
     },
     {
+      "ItemName": "Coal",
+      "CurrentPrice": 218,
+      "BuyLimit": 13000,
+      "FiveMinMean": 213,
+      "HourlyMean": 212,
+      "DailyMean": 214,
+      "WeeklyMean": 217,
+      "MonthlyMean": 200,
+      "BullishConfluence": 3,
+      "BearishConfluence": 2,
+      "SignalStrength": "MODERATE_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 198380.0
+    },
+    {
+      "ItemName": "Mithril ore",
+      "CurrentPrice": 129,
+      "BuyLimit": 13000,
+      "FiveMinMean": 129,
+      "HourlyMean": 130,
+      "DailyMean": 129,
+      "WeeklyMean": 123,
+      "MonthlyMean": 120,
+      "BullishConfluence": 3,
+      "BearishConfluence": 1,
+      "SignalStrength": "MODERATE_BULLISH",
+      "VolumeConfirmation": "VOLUME_SUPPORTED",
+      "PotentialProfit": 117390.0
+    },
+    {
       "ItemName": "Uncut dragonstone",
       "CurrentPrice": 14560,
       "BuyLimit": 10000,
@@ -107,23 +122,23 @@
       "PotentialProfit": 7280000.0
     },
     {
-      "ItemName": "Prayer potion(3)",
-      "CurrentPrice": 6401,
+      "ItemName": "Divine super combat potion(3)",
+      "CurrentPrice": 14620,
       "BuyLimit": 2000,
-      "FiveMinMean": 6440,
-      "HourlyMean": 6376,
-      "DailyMean": 6363,
-      "WeeklyMean": 6487,
-      "MonthlyMean": 7055,
+      "FiveMinMean": 14058,
+      "HourlyMean": 14099,
+      "DailyMean": 14672,
+      "WeeklyMean": 14670,
+      "MonthlyMean": 15499,
       "BullishConfluence": 2,
       "BearishConfluence": 3,
       "SignalStrength": "MODERATE_BEARISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 640100.0
+      "PotentialProfit": 1462000.0
     },
     {
       "ItemName": "Logs",
-      "CurrentPrice": 300,
+      "CurrentPrice": 301,
       "BuyLimit": 15000,
       "FiveMinMean": 343,
       "HourlyMean": 369,
@@ -134,7 +149,7 @@
       "BearishConfluence": 3,
       "SignalStrength": "MODERATE_BEARISH",
       "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 225000.0
+      "PotentialProfit": 225750.0
     },
     {
       "ItemName": "Guam seed",
@@ -164,21 +179,6 @@
       "BearishConfluence": 4,
       "SignalStrength": "STRONG_BEARISH",
       "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 0
-    },
-    {
-      "ItemName": "Divine super combat potion(3)",
-      "CurrentPrice": 14058,
-      "BuyLimit": 2000,
-      "FiveMinMean": 14058,
-      "HourlyMean": 14099,
-      "DailyMean": 14672,
-      "WeeklyMean": 14670,
-      "MonthlyMean": 15499,
-      "BullishConfluence": 1,
-      "BearishConfluence": 3,
-      "SignalStrength": "MODERATE_BEARISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
       "PotentialProfit": 0
     },
     {
