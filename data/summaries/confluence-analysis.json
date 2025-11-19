@@ -1,5 +1,5 @@
 {
-  "updated": "2025-11-19T08:00:37.762182+00:00",
+  "updated": "2025-11-19T08:05:36.405595+00:00",
   "items": [
     {
       "ItemName": "Icy basalt",
@@ -90,21 +90,6 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
       "PotentialProfit": 31979250.0
-    },
-    {
-      "ItemName": "Runite bar",
-      "CurrentPrice": 12346,
-      "BuyLimit": 10000,
-      "FiveMinMean": 12304,
-      "HourlyMean": 12463,
-      "DailyMean": 12316,
-      "WeeklyMean": 12270,
-      "MonthlyMean": 12255,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_SUPPORTED",
-      "PotentialProfit": 12346000.0
     },
     {
       "ItemName": "Onyx bolts",
@@ -302,6 +287,21 @@
       "PotentialProfit": 868000.0
     },
     {
+      "ItemName": "Camelot teleport (tablet)",
+      "CurrentPrice": 520,
+      "BuyLimit": 15000,
+      "FiveMinMean": 490,
+      "HourlyMean": 496,
+      "DailyMean": 467,
+      "WeeklyMean": 431,
+      "MonthlyMean": 425,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 780000.0
+    },
+    {
       "ItemName": "Ardougne teleport (tablet)",
       "CurrentPrice": 774,
       "BuyLimit": 10000,
@@ -378,7 +378,7 @@
     },
     {
       "ItemName": "Logs",
-      "CurrentPrice": 396,
+      "CurrentPrice": 391,
       "BuyLimit": 15000,
       "FiveMinMean": 387,
       "HourlyMean": 378,
@@ -389,7 +389,7 @@
       "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 594000.0
+      "PotentialProfit": 586500.0
     },
     {
       "ItemName": "Super energy(3)",
@@ -527,21 +527,6 @@
       "PotentialProfit": 163800.0
     },
     {
-      "ItemName": "Efh salt",
-      "CurrentPrice": 150,
-      "BuyLimit": 10000,
-      "FiveMinMean": 147,
-      "HourlyMean": 147,
-      "DailyMean": 136,
-      "WeeklyMean": 124,
-      "MonthlyMean": 105,
-      "BullishConfluence": 4,
-      "BearishConfluence": 0,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 150000.0
-    },
-    {
       "ItemName": "Mithril nails",
       "CurrentPrice": 114,
       "BuyLimit": 13000,
@@ -630,21 +615,6 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
       "PotentialProfit": 16380.0
-    },
-    {
-      "ItemName": "Steel platebody",
-      "CurrentPrice": 875,
-      "BuyLimit": 125,
-      "FiveMinMean": 850,
-      "HourlyMean": 855,
-      "DailyMean": 846,
-      "WeeklyMean": 843,
-      "MonthlyMean": 796,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 10938.0
     },
     {
       "ItemName": "Calquat tree seed",
@@ -750,6 +720,36 @@
       "SignalStrength": "MODERATE_BULLISH",
       "VolumeConfirmation": "VOLUME_SUPPORTED",
       "PotentialProfit": 11764830.0
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "CurrentPrice": 8993,
+      "BuyLimit": 18000,
+      "FiveMinMean": 9009,
+      "HourlyMean": 8982,
+      "DailyMean": 8969,
+      "WeeklyMean": 8969,
+      "MonthlyMean": 8882,
+      "BullishConfluence": 3,
+      "BearishConfluence": 1,
+      "SignalStrength": "MODERATE_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 11331180.0
+    },
+    {
+      "ItemName": "Fire battlestaff",
+      "CurrentPrice": 8983,
+      "BuyLimit": 18000,
+      "FiveMinMean": 8996,
+      "HourlyMean": 8994,
+      "DailyMean": 8955,
+      "WeeklyMean": 8977,
+      "MonthlyMean": 8871,
+      "BullishConfluence": 3,
+      "BearishConfluence": 2,
+      "SignalStrength": "MODERATE_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 11318580.0
     }
   ],
   "methodology": "VeryGranular_MultiTimeframeConfluence"
