@@ -1,5 +1,5 @@
 {
-  "updated": "2025-11-24T10:45:36.747668+00:00",
+  "updated": "2025-11-24T10:50:52.979734+00:00",
   "items": [
     {
       "ItemName": "Rune dart(p++)",
@@ -18,11 +18,11 @@
       "ItemName": "Dragon cannonball",
       "CurrentPrice": 6030,
       "BuyLimit": 11000,
-      "DailyRange": 2263,
+      "DailyRange": 1713,
       "WeeklyRange": 292896,
       "MonthlyRange": 292896,
-      "CompressionRatio": 0.77,
-      "BreakoutDirection": "UPPER_BIAS",
+      "CompressionRatio": 0.58,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 6633000.0,
       "CompressionLevel": "HIGH_COMPRESSION"
@@ -44,10 +44,10 @@
       "ItemName": "Nihil shard",
       "CurrentPrice": 7519,
       "BuyLimit": 30000,
-      "DailyRange": 19,
+      "DailyRange": 18,
       "WeeklyRange": 1033,
       "MonthlyRange": 1245,
-      "CompressionRatio": 1.84,
+      "CompressionRatio": 1.74,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 22557000.0,
@@ -109,10 +109,10 @@
       "ItemName": "Khazard teleport (tablet)",
       "CurrentPrice": 1214,
       "BuyLimit": 10000,
-      "DailyRange": 386,
+      "DailyRange": 287,
       "WeeklyRange": 3724,
       "MonthlyRange": 3724,
-      "CompressionRatio": 10.37,
+      "CompressionRatio": 7.71,
       "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 1214000.0,
@@ -236,16 +236,16 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Orange",
-      "CurrentPrice": 63,
-      "BuyLimit": 13000,
-      "DailyRange": 4,
-      "WeeklyRange": 29,
-      "MonthlyRange": 79,
-      "CompressionRatio": 13.79,
+      "ItemName": "Gold amulet",
+      "CurrentPrice": 171,
+      "BuyLimit": 18000,
+      "DailyRange": 9,
+      "WeeklyRange": 63,
+      "MonthlyRange": 82,
+      "CompressionRatio": 14.29,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 81900.0,
+      "PotentialBreakoutProfit": 307800.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -275,19 +275,6 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Gold amulet",
-      "CurrentPrice": 171,
-      "BuyLimit": 18000,
-      "DailyRange": 10,
-      "WeeklyRange": 63,
-      "MonthlyRange": 82,
-      "CompressionRatio": 15.87,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 307800.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
       "ItemName": "Lumberyard teleport",
       "CurrentPrice": 7314,
       "BuyLimit": 15000,
@@ -301,13 +288,26 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
+      "ItemName": "Magpie impling jar",
+      "CurrentPrice": 17600,
+      "BuyLimit": 18000,
+      "DailyRange": 380,
+      "WeeklyRange": 2206,
+      "MonthlyRange": 2963,
+      "CompressionRatio": 17.23,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 31680000.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
       "ItemName": "Ardougne teleport (tablet)",
       "CurrentPrice": 429,
       "BuyLimit": 10000,
-      "DailyRange": 72,
+      "DailyRange": 73,
       "WeeklyRange": 415,
       "MonthlyRange": 618,
-      "CompressionRatio": 17.35,
+      "CompressionRatio": 17.59,
       "BreakoutDirection": "UPPER_BIAS",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 429000.0,
@@ -406,7 +406,7 @@
     },
     {
       "ItemName": "Soft clay",
-      "CurrentPrice": 123,
+      "CurrentPrice": 126,
       "BuyLimit": 13000,
       "DailyRange": 13,
       "WeeklyRange": 55,
@@ -414,7 +414,7 @@
       "CompressionRatio": 23.64,
       "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 159900.0,
+      "PotentialBreakoutProfit": 163800.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -445,7 +445,7 @@
     },
     {
       "ItemName": "Eclectic impling jar",
-      "CurrentPrice": 3111,
+      "CurrentPrice": 3107,
       "BuyLimit": 18000,
       "DailyRange": 89,
       "WeeklyRange": 356,
@@ -453,7 +453,7 @@
       "CompressionRatio": 25.0,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 5599800.0,
+      "PotentialBreakoutProfit": 5592600.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -600,19 +600,6 @@
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
-      "ItemName": "Blood rune",
-      "CurrentPrice": 211,
-      "BuyLimit": 25000,
-      "DailyRange": 10,
-      "WeeklyRange": 32,
-      "MonthlyRange": 34,
-      "CompressionRatio": 31.25,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 527500.0,
-      "CompressionLevel": "MODERATE_COMPRESSION"
-    },
-    {
       "ItemName": "Plank",
       "CurrentPrice": 177,
       "BuyLimit": 13000,
@@ -627,15 +614,15 @@
     },
     {
       "ItemName": "Oak plank",
-      "CurrentPrice": 329,
+      "CurrentPrice": 340,
       "BuyLimit": 13000,
       "DailyRange": 35,
       "WeeklyRange": 110,
       "MonthlyRange": 189,
       "CompressionRatio": 31.82,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 427700.0,
+      "PotentialBreakoutProfit": 442000.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -649,6 +636,19 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 308000.0,
+      "CompressionLevel": "MODERATE_COMPRESSION"
+    },
+    {
+      "ItemName": "Onyx dragon bolts (e)",
+      "CurrentPrice": 9003,
+      "BuyLimit": 11000,
+      "DailyRange": 92,
+      "WeeklyRange": 288,
+      "MonthlyRange": 446,
+      "CompressionRatio": 31.94,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 9903300.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     }
   ],
