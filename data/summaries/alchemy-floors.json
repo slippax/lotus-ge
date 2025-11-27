@@ -1,12 +1,33 @@
 {
-  "updated": "2025-11-27T01:40:35.443923+00:00",
+  "updated": "2025-11-27T01:45:35.052362+00:00",
   "items": [
     {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8811,
+      "PriceFloor": 9007.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.2
+    },
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8827,
+      "PriceFloor": 9007.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.02
+    },
+    {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8536,
+      "LowPrice": 8500,
       "PriceFloor": 8710.0,
       "BuyLimit": 11000,
-      "pctROI": 1.02
+      "pctROI": 1.45
+    },
+    {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1250,
+      "PriceFloor": 1285.0,
+      "BuyLimit": 13000,
+      "pctROI": 1.84
     }
   ],
   "methodology": "VeryGranular"
