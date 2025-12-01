@@ -1,12 +1,19 @@
 {
-  "updated": "2025-12-01T03:40:33.446177+00:00",
+  "updated": "2025-12-01T03:45:38.951051+00:00",
   "items": [
     {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8821,
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8712,
       "PriceFloor": 9010.0,
       "BuyLimit": 18000,
-      "pctROI": 1.12
+      "pctROI": 2.39
+    },
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8800,
+      "PriceFloor": 9010.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.36
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -16,18 +23,11 @@
       "pctROI": 7.59
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1257,
-      "PriceFloor": 1324.0,
-      "BuyLimit": 18000,
-      "pctROI": 4.3
-    },
-    {
       "ItemName": "Yew longbow",
-      "LowPrice": 507,
+      "LowPrice": 509,
       "PriceFloor": 564.0,
       "BuyLimit": 18000,
-      "pctROI": 10.26
+      "pctROI": 9.82
     },
     {
       "ItemName": "Jade amulet (u)",
@@ -37,11 +37,18 @@
       "pctROI": 21.9
     },
     {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1280,
+      "PriceFloor": 1324.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.42
+    },
+    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 557,
+      "LowPrice": 556,
       "PriceFloor": 605.0,
       "BuyLimit": 10000,
-      "pctROI": 7.54
+      "pctROI": 7.73
     }
   ],
   "methodology": "VeryGranular"
