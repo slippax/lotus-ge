@@ -1,5 +1,5 @@
 {
-  "updated": "2025-12-06T02:15:32.705208+00:00",
+  "updated": "2025-12-06T02:20:33.314926+00:00",
   "items": [
     {
       "ItemName": "Mahogany repair kit",
@@ -16,11 +16,25 @@
       "pctROI": 8.8
     },
     {
+      "ItemName": "Teak repair kit",
+      "LowPrice": 365,
+      "PriceFloor": 404.0,
+      "BuyLimit": 13000,
+      "pctROI": 9.59
+    },
+    {
       "ItemName": "Yew longbow",
-      "LowPrice": 546,
+      "LowPrice": 543,
       "PriceFloor": 571.0,
       "BuyLimit": 18000,
-      "pctROI": 3.66
+      "pctROI": 4.24
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1303,
+      "PriceFloor": 1331.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.15
     }
   ],
   "methodology": "VeryGranular"
