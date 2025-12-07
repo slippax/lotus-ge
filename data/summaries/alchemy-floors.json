@@ -1,6 +1,20 @@
 {
-  "updated": "2025-12-07T01:25:35.626795+00:00",
+  "updated": "2025-12-07T01:30:37.080678+00:00",
   "items": [
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8697,
+      "PriceFloor": 9020.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.68
+    },
+    {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8711,
+      "PriceFloor": 9020.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.51
+    },
     {
       "ItemName": "Mahogany repair kit",
       "LowPrice": 1024,
@@ -10,24 +24,10 @@
     },
     {
       "ItemName": "Water battlestaff",
-      "LowPrice": 8749,
+      "LowPrice": 8792,
       "PriceFloor": 9020.0,
       "BuyLimit": 18000,
-      "pctROI": 2.07
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8801,
-      "PriceFloor": 9020.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.47
-    },
-    {
-      "ItemName": "Fire battlestaff",
-      "LowPrice": 8825,
-      "PriceFloor": 9020.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.19
+      "pctROI": 1.57
     },
     {
       "ItemName": "Yew longbow",
@@ -37,11 +37,11 @@
       "pctROI": 20.81
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1261,
-      "PriceFloor": 1334.0,
-      "BuyLimit": 18000,
-      "pctROI": 4.76
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8550,
+      "PriceFloor": 8723.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.01
     },
     {
       "ItemName": "Diamond bracelet",
@@ -63,6 +63,13 @@
       "PriceFloor": 407.0,
       "BuyLimit": 13000,
       "pctROI": 6.9
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1305,
+      "PriceFloor": 1334.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.23
     }
   ],
   "methodology": "VeryGranular"
