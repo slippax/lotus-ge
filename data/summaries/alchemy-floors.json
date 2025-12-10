@@ -1,5 +1,5 @@
 {
-  "updated": "2025-12-10T16:35:32.655120+00:00",
+  "updated": "2025-12-10T16:40:35.882883+00:00",
   "items": [
     {
       "ItemName": "Mahogany repair kit",
@@ -17,6 +17,13 @@
     },
     {
       "ItemName": "Earth battlestaff",
+      "LowPrice": 8802,
+      "PriceFloor": 9018.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.43
+    },
+    {
+      "ItemName": "Water battlestaff",
       "LowPrice": 8815,
       "PriceFloor": 9018.0,
       "BuyLimit": 18000,
@@ -49,20 +56,6 @@
       "PriceFloor": 2083.0,
       "BuyLimit": 10000,
       "pctROI": 3.0
-    },
-    {
-      "ItemName": "Teak repair kit",
-      "LowPrice": 360,
-      "PriceFloor": 405.0,
-      "BuyLimit": 13000,
-      "pctROI": 11.39
-    },
-    {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 946,
-      "PriceFloor": 970.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.59
     }
   ],
   "methodology": "VeryGranular"
