@@ -1,5 +1,5 @@
 {
-  "updated": "2025-12-13T09:10:35.302523+00:00",
+  "updated": "2025-12-13T09:15:31.950026+00:00",
   "items": [
     {
       "ItemName": "Mahogany repair kit",
@@ -10,10 +10,17 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1232,
+      "LowPrice": 1230,
       "PriceFloor": 1337.0,
       "BuyLimit": 18000,
-      "pctROI": 7.47
+      "pctROI": 7.64
+    },
+    {
+      "ItemName": "Yew longbow",
+      "LowPrice": 500,
+      "PriceFloor": 577.0,
+      "BuyLimit": 18000,
+      "pctROI": 14.4
     },
     {
       "ItemName": "Teak repair kit",
@@ -23,18 +30,18 @@
       "pctROI": 30.55
     },
     {
-      "ItemName": "Yew longbow",
-      "LowPrice": 510,
-      "PriceFloor": 577.0,
-      "BuyLimit": 18000,
-      "pctROI": 12.16
-    },
-    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 540,
+      "LowPrice": 517,
       "PriceFloor": 618.0,
       "BuyLimit": 10000,
-      "pctROI": 13.33
+      "pctROI": 18.38
+    },
+    {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 951,
+      "PriceFloor": 975.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.58
     }
   ],
   "methodology": "VeryGranular"
