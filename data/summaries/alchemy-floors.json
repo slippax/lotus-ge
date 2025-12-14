@@ -1,6 +1,13 @@
 {
-  "updated": "2025-12-14T20:45:34.051050+00:00",
+  "updated": "2025-12-14T20:50:34.915474+00:00",
   "items": [
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8726,
+      "PriceFloor": 9025.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.4
+    },
     {
       "ItemName": "Air battlestaff",
       "LowPrice": 8767,
@@ -16,39 +23,32 @@
       "pctROI": 18.35
     },
     {
-      "ItemName": "Water battlestaff",
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8801,
+      "PriceFloor": 9025.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.52
+    },
+    {
+      "ItemName": "Earth battlestaff",
       "LowPrice": 8802,
       "PriceFloor": 9025.0,
       "BuyLimit": 18000,
       "pctROI": 1.51
     },
     {
-      "ItemName": "Fire battlestaff",
-      "LowPrice": 8819,
-      "PriceFloor": 9025.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.32
-    },
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8826,
-      "PriceFloor": 9025.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.23
-    },
-    {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8500,
-      "PriceFloor": 8728.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.66
+      "ItemName": "Teak repair kit",
+      "LowPrice": 291,
+      "PriceFloor": 412.0,
+      "BuyLimit": 13000,
+      "pctROI": 40.21
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1240,
+      "LowPrice": 1242,
       "PriceFloor": 1339.0,
       "BuyLimit": 18000,
-      "pctROI": 6.94
+      "pctROI": 6.76
     },
     {
       "ItemName": "Yew longbow",
@@ -58,18 +58,18 @@
       "pctROI": 15.26
     },
     {
-      "ItemName": "Teak repair kit",
-      "LowPrice": 309,
-      "PriceFloor": 412.0,
-      "BuyLimit": 13000,
-      "pctROI": 32.04
-    },
-    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 507,
+      "LowPrice": 505,
       "PriceFloor": 620.0,
       "BuyLimit": 10000,
-      "pctROI": 21.1
+      "pctROI": 21.58
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8550,
+      "PriceFloor": 8728.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.06
     },
     {
       "ItemName": "Diamond bracelet",
@@ -77,13 +77,6 @@
       "PriceFloor": 2090.0,
       "BuyLimit": 10000,
       "pctROI": 2.88
-    },
-    {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 945,
-      "PriceFloor": 977.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.43
     }
   ],
   "methodology": "VeryGranular"
