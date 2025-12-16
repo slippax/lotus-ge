@@ -1,13 +1,6 @@
 {
-  "updated": "2025-12-16T11:00:41.696003+00:00",
+  "updated": "2025-12-16T11:05:37.306473+00:00",
   "items": [
-    {
-      "ItemName": "Fire battlestaff",
-      "LowPrice": 8557,
-      "PriceFloor": 9025.0,
-      "BuyLimit": 18000,
-      "pctROI": 4.42
-    },
     {
       "ItemName": "Air battlestaff",
       "LowPrice": 8785,
@@ -23,6 +16,13 @@
       "pctROI": 17.49
     },
     {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8800,
+      "PriceFloor": 9025.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.53
+    },
+    {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1694,
       "PriceFloor": 1897.0,
@@ -30,11 +30,11 @@
       "pctROI": 10.92
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1225,
-      "PriceFloor": 1339.0,
-      "BuyLimit": 18000,
-      "pctROI": 8.24
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8450,
+      "PriceFloor": 8728.0,
+      "BuyLimit": 11000,
+      "pctROI": 2.26
     },
     {
       "ItemName": "Yew longbow",
@@ -44,25 +44,32 @@
       "pctROI": 19.58
     },
     {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8549,
-      "PriceFloor": 8728.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.08
-    },
-    {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 523,
-      "PriceFloor": 620.0,
-      "BuyLimit": 10000,
-      "pctROI": 17.4
+      "ItemName": "Magic longbow",
+      "LowPrice": 1242,
+      "PriceFloor": 1339.0,
+      "BuyLimit": 18000,
+      "pctROI": 6.76
     },
     {
       "ItemName": "Teak repair kit",
-      "LowPrice": 340,
+      "LowPrice": 332,
       "PriceFloor": 412.0,
       "BuyLimit": 13000,
-      "pctROI": 20.0
+      "pctROI": 22.89
+    },
+    {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 524,
+      "PriceFloor": 620.0,
+      "BuyLimit": 10000,
+      "pctROI": 17.18
+    },
+    {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 953,
+      "PriceFloor": 977.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.57
     }
   ],
   "methodology": "VeryGranular"
