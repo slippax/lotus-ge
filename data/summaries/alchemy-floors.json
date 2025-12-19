@@ -1,5 +1,5 @@
 {
-  "updated": "2025-12-19T20:25:45.548703+00:00",
+  "updated": "2025-12-19T20:30:36.030608+00:00",
   "items": [
     {
       "ItemName": "Yew longbow",
@@ -16,11 +16,25 @@
       "pctROI": 18.42
     },
     {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8815,
+      "PriceFloor": 9027.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.38
+    },
+    {
       "ItemName": "Magic longbow",
       "LowPrice": 1209,
       "PriceFloor": 1341.0,
       "BuyLimit": 18000,
       "pctROI": 9.84
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8828,
+      "PriceFloor": 9027.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.23
     },
     {
       "ItemName": "Camphor repair kit",
@@ -30,18 +44,18 @@
       "pctROI": 7.49
     },
     {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8495,
-      "PriceFloor": 8730.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.74
-    },
-    {
       "ItemName": "Teak repair kit",
       "LowPrice": 300,
       "PriceFloor": 414.0,
       "BuyLimit": 13000,
       "pctROI": 36.67
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8537,
+      "PriceFloor": 8730.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.24
     },
     {
       "ItemName": "Rune javelin tips",
@@ -63,6 +77,13 @@
       "PriceFloor": 1914.0,
       "BuyLimit": 10000,
       "pctROI": 1.28
+    },
+    {
+      "ItemName": "Atlatl dart",
+      "LowPrice": 104,
+      "PriceFloor": 111.0,
+      "BuyLimit": 11000,
+      "pctROI": 5.77
     }
   ],
   "methodology": "VeryGranular"
