@@ -1,19 +1,26 @@
 {
-  "updated": "2025-12-21T20:25:35.991375+00:00",
+  "updated": "2025-12-21T20:30:34.425898+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
-      "LowPrice": 8765,
+      "LowPrice": 8760,
       "PriceFloor": 9027.0,
       "BuyLimit": 18000,
-      "pctROI": 1.96
+      "pctROI": 2.02
+    },
+    {
+      "ItemName": "Yew longbow",
+      "LowPrice": 430,
+      "PriceFloor": 581.0,
+      "BuyLimit": 18000,
+      "pctROI": 33.95
     },
     {
       "ItemName": "Air battlestaff",
-      "LowPrice": 8800,
+      "LowPrice": 8793,
       "PriceFloor": 9027.0,
       "BuyLimit": 18000,
-      "pctROI": 1.56
+      "pctROI": 1.64
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -21,13 +28,6 @@
       "PriceFloor": 1305.0,
       "BuyLimit": 13000,
       "pctROI": 16.92
-    },
-    {
-      "ItemName": "Yew longbow",
-      "LowPrice": 442,
-      "PriceFloor": 581.0,
-      "BuyLimit": 18000,
-      "pctROI": 30.32
     },
     {
       "ItemName": "Magic longbow",
@@ -45,38 +45,24 @@
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8500,
+      "LowPrice": 8528,
       "PriceFloor": 8730.0,
       "BuyLimit": 11000,
-      "pctROI": 1.68
+      "pctROI": 1.35
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 509,
+      "LowPrice": 508,
       "PriceFloor": 622.0,
       "BuyLimit": 10000,
-      "pctROI": 21.02
+      "pctROI": 21.26
     },
     {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 911,
-      "PriceFloor": 979.0,
-      "BuyLimit": 10000,
-      "pctROI": 6.48
-    },
-    {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 2025,
-      "PriceFloor": 2092.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.32
-    },
-    {
-      "ItemName": "Teak repair kit",
-      "LowPrice": 374,
-      "PriceFloor": 414.0,
-      "BuyLimit": 13000,
-      "pctROI": 9.63
+      "ItemName": "Atlatl dart",
+      "LowPrice": 90,
+      "PriceFloor": 111.0,
+      "BuyLimit": 11000,
+      "pctROI": 22.22
     },
     {
       "ItemName": "Dragonstone bolts (e)",
@@ -84,13 +70,6 @@
       "PriceFloor": 451.0,
       "BuyLimit": 11000,
       "pctROI": 4.2
-    },
-    {
-      "ItemName": "Atlatl dart",
-      "LowPrice": 95,
-      "PriceFloor": 111.0,
-      "BuyLimit": 11000,
-      "pctROI": 15.79
     }
   ],
   "methodology": "VeryGranular"
