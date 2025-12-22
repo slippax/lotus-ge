@@ -1,6 +1,13 @@
 {
-  "updated": "2025-12-22T12:30:36.891223+00:00",
+  "updated": "2025-12-22T12:35:49.578813+00:00",
   "items": [
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8766,
+      "PriceFloor": 9026.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.94
+    },
     {
       "ItemName": "Yew longbow",
       "LowPrice": 438,
@@ -16,13 +23,6 @@
       "pctROI": 9.67
     },
     {
-      "ItemName": "Camphor repair kit",
-      "LowPrice": 1726,
-      "PriceFloor": 1898.0,
-      "BuyLimit": 13000,
-      "pctROI": 8.92
-    },
-    {
       "ItemName": "Mahogany repair kit",
       "LowPrice": 1150,
       "PriceFloor": 1304.0,
@@ -31,17 +31,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 500,
+      "LowPrice": 501,
       "PriceFloor": 621.0,
       "BuyLimit": 10000,
-      "pctROI": 23.0
-    },
-    {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8551,
-      "PriceFloor": 8729.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.06
+      "pctROI": 22.75
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -58,18 +51,18 @@
       "pctROI": 2.83
     },
     {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 433,
-      "PriceFloor": 450.0,
-      "BuyLimit": 11000,
-      "pctROI": 3.0
+      "ItemName": "Camphor repair kit",
+      "LowPrice": 1855,
+      "PriceFloor": 1898.0,
+      "BuyLimit": 13000,
+      "pctROI": 1.35
     },
     {
       "ItemName": "Atlatl dart",
-      "LowPrice": 97,
+      "LowPrice": 84,
       "PriceFloor": 110.0,
       "BuyLimit": 11000,
-      "pctROI": 12.37
+      "pctROI": 29.76
     },
     {
       "ItemName": "Teak repair kit",
@@ -77,6 +70,13 @@
       "PriceFloor": 413.0,
       "BuyLimit": 13000,
       "pctROI": 2.25
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 437,
+      "PriceFloor": 450.0,
+      "BuyLimit": 11000,
+      "pctROI": 2.06
     }
   ],
   "methodology": "VeryGranular"
