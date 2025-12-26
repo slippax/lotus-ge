@@ -1,6 +1,20 @@
 {
-  "updated": "2025-12-26T21:05:46.077242+00:00",
+  "updated": "2025-12-26T21:10:33.096810+00:00",
   "items": [
+    {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8824,
+      "PriceFloor": 9025.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.26
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8840,
+      "PriceFloor": 9025.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.07
+    },
     {
       "ItemName": "Mahogany repair kit",
       "LowPrice": 1159,
@@ -10,17 +24,10 @@
     },
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 497,
+      "LowPrice": 496,
       "PriceFloor": 579.0,
       "BuyLimit": 18000,
-      "pctROI": 15.49
-    },
-    {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8540,
-      "PriceFloor": 8728.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.18
+      "pctROI": 15.73
     },
     {
       "ItemName": "Magic longbow",
@@ -28,13 +35,6 @@
       "PriceFloor": 1339.0,
       "BuyLimit": 18000,
       "pctROI": 2.79
-    },
-    {
-      "ItemName": "Camphor repair kit",
-      "LowPrice": 1838,
-      "PriceFloor": 1897.0,
-      "BuyLimit": 13000,
-      "pctROI": 2.23
     },
     {
       "ItemName": "Diamond bracelet",
@@ -56,6 +56,13 @@
       "PriceFloor": 620.0,
       "BuyLimit": 10000,
       "pctROI": 1.15
+    },
+    {
+      "ItemName": "Atlatl dart",
+      "LowPrice": 105,
+      "PriceFloor": 109.0,
+      "BuyLimit": 11000,
+      "pctROI": 2.86
     }
   ],
   "methodology": "VeryGranular"
