@@ -1,6 +1,13 @@
 {
-  "updated": "2025-12-27T02:30:34.609403+00:00",
+  "updated": "2025-12-27T02:35:47.511720+00:00",
   "items": [
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8812,
+      "PriceFloor": 9025.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.4
+    },
     {
       "ItemName": "Mahogany repair kit",
       "LowPrice": 1159,
@@ -17,10 +24,17 @@
     },
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 491,
+      "LowPrice": 494,
       "PriceFloor": 579.0,
       "BuyLimit": 18000,
-      "pctROI": 16.9
+      "pctROI": 16.19
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8519,
+      "PriceFloor": 8728.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.43
     },
     {
       "ItemName": "Magic longbow",
@@ -37,13 +51,6 @@
       "pctROI": 12.87
     },
     {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 413,
-      "PriceFloor": 449.0,
-      "BuyLimit": 11000,
-      "pctROI": 7.75
-    },
-    {
       "ItemName": "Dragon javelin tips",
       "LowPrice": 935,
       "PriceFloor": 977.0,
@@ -58,11 +65,11 @@
       "pctROI": 2.33
     },
     {
-      "ItemName": "Atlatl dart",
-      "LowPrice": 103,
-      "PriceFloor": 109.0,
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 425,
+      "PriceFloor": 449.0,
       "BuyLimit": 11000,
-      "pctROI": 4.85
+      "pctROI": 4.71
     }
   ],
   "methodology": "VeryGranular"
