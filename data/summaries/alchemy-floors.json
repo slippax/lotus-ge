@@ -1,5 +1,5 @@
 {
-  "updated": "2025-12-30T11:05:36.173725+00:00",
+  "updated": "2025-12-30T11:10:36.008485+00:00",
   "items": [
     {
       "ItemName": "Yew longbow",
@@ -16,6 +16,13 @@
       "pctROI": 9.04
     },
     {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1260,
+      "PriceFloor": 1339.0,
+      "BuyLimit": 18000,
+      "pctROI": 5.24
+    },
+    {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1798,
       "PriceFloor": 1897.0,
@@ -23,18 +30,11 @@
       "pctROI": 4.51
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1280,
-      "PriceFloor": 1339.0,
-      "BuyLimit": 18000,
-      "pctROI": 3.59
-    },
-    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 557,
+      "LowPrice": 553,
       "PriceFloor": 620.0,
       "BuyLimit": 10000,
-      "pctROI": 10.23
+      "pctROI": 11.03
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -45,10 +45,17 @@
     },
     {
       "ItemName": "Atlatl dart",
-      "LowPrice": 95,
+      "LowPrice": 103,
       "PriceFloor": 109.0,
       "BuyLimit": 11000,
-      "pctROI": 13.68
+      "pctROI": 4.85
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 440,
+      "PriceFloor": 449.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.14
     }
   ],
   "methodology": "VeryGranular"
