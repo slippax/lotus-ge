@@ -1,6 +1,13 @@
 {
-  "updated": "2026-01-04T05:25:35.563954+00:00",
+  "updated": "2026-01-04T05:30:48.703543+00:00",
   "items": [
+    {
+      "ItemName": "Camphor repair kit",
+      "LowPrice": 1695,
+      "PriceFloor": 1896.0,
+      "BuyLimit": 13000,
+      "pctROI": 10.8
+    },
     {
       "ItemName": "Yew longbow",
       "LowPrice": 455,
@@ -30,25 +37,18 @@
       "pctROI": 3.43
     },
     {
-      "ItemName": "Camphor repair kit",
-      "LowPrice": 1810,
-      "PriceFloor": 1896.0,
-      "BuyLimit": 13000,
-      "pctROI": 3.76
-    },
-    {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 525,
-      "PriceFloor": 619.0,
-      "BuyLimit": 10000,
-      "pctROI": 16.76
-    },
-    {
       "ItemName": "Diamond bracelet",
       "LowPrice": 2010,
       "PriceFloor": 2089.0,
       "BuyLimit": 10000,
       "pctROI": 2.94
+    },
+    {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 570,
+      "PriceFloor": 619.0,
+      "BuyLimit": 10000,
+      "pctROI": 7.54
     }
   ],
   "methodology": "VeryGranular"
