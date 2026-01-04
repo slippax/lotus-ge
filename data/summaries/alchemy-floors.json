@@ -1,5 +1,5 @@
 {
-  "updated": "2026-01-04T09:35:33.435800+00:00",
+  "updated": "2026-01-04T09:40:35.899328+00:00",
   "items": [
     {
       "ItemName": "Yew longbow",
@@ -16,6 +16,13 @@
       "pctROI": 8.74
     },
     {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8465,
+      "PriceFloor": 8727.0,
+      "BuyLimit": 11000,
+      "pctROI": 2.07
+    },
+    {
       "ItemName": "Magic longbow",
       "LowPrice": 1237,
       "PriceFloor": 1338.0,
@@ -23,11 +30,11 @@
       "pctROI": 7.11
     },
     {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8515,
-      "PriceFloor": 8727.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.47
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1168,
+      "PriceFloor": 1302.0,
+      "BuyLimit": 13000,
+      "pctROI": 10.36
     },
     {
       "ItemName": "Rune javelin tips",
@@ -44,25 +51,18 @@
       "pctROI": 2.99
     },
     {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1226,
-      "PriceFloor": 1302.0,
-      "BuyLimit": 13000,
-      "pctROI": 5.14
-    },
-    {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 923,
-      "PriceFloor": 976.0,
-      "BuyLimit": 10000,
-      "pctROI": 4.77
-    },
-    {
       "ItemName": "Dragonstone bolts (e)",
       "LowPrice": 431,
       "PriceFloor": 448.0,
       "BuyLimit": 11000,
       "pctROI": 3.02
+    },
+    {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 955,
+      "PriceFloor": 976.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.26
     }
   ],
   "methodology": "VeryGranular"
