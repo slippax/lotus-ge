@@ -1,6 +1,13 @@
 {
-  "updated": "2026-01-04T07:15:30.821884+00:00",
+  "updated": "2026-01-04T07:20:32.988216+00:00",
   "items": [
+    {
+      "ItemName": "Manta ray",
+      "LowPrice": 2520,
+      "AvgLow": 2725,
+      "BuyLimit": 10000,
+      "pctROI": 7.06
+    },
     {
       "ItemName": "Bagged plant 2",
       "LowPrice": 5500,
@@ -23,11 +30,25 @@
       "pctROI": 171.08
     },
     {
-      "ItemName": "Stamina potion(4)",
-      "LowPrice": 8790,
-      "AvgLow": 8966,
+      "ItemName": "Antipoison(4)",
+      "LowPrice": 63,
+      "AvgLow": 195,
       "BuyLimit": 2000,
-      "pctROI": 0.99
+      "pctROI": 207.94
+    },
+    {
+      "ItemName": "Berserker ring",
+      "LowPrice": 2700000,
+      "AvgLow": 2758861,
+      "BuyLimit": 8,
+      "pctROI": 1.16
+    },
+    {
+      "ItemName": "Black bead",
+      "LowPrice": 2511,
+      "AvgLow": 2791,
+      "BuyLimit": 11000,
+      "pctROI": 10.08
     },
     {
       "ItemName": "Mole slippers",
@@ -35,13 +56,6 @@
       "AvgLow": 230714,
       "BuyLimit": 4,
       "pctROI": 21.29
-    },
-    {
-      "ItemName": "Ancient d'hide body",
-      "LowPrice": 121054,
-      "AvgLow": 137908,
-      "BuyLimit": 8,
-      "pctROI": 12.78
     }
   ],
   "methodology": "VeryGranular"
