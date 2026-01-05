@@ -1,6 +1,13 @@
 {
-  "updated": "2026-01-05T13:20:35.297874+00:00",
+  "updated": "2026-01-05T13:25:34.593055+00:00",
   "items": [
+    {
+      "ItemName": "Yew longbow",
+      "LowPrice": 450,
+      "PriceFloor": 578.0,
+      "BuyLimit": 18000,
+      "pctROI": 27.33
+    },
     {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1713,
@@ -9,25 +16,11 @@
       "pctROI": 9.63
     },
     {
-      "ItemName": "Yew longbow",
-      "LowPrice": 458,
-      "PriceFloor": 578.0,
-      "BuyLimit": 18000,
-      "pctROI": 25.11
-    },
-    {
       "ItemName": "Mahogany repair kit",
       "LowPrice": 1171,
       "PriceFloor": 1302.0,
       "BuyLimit": 13000,
       "pctROI": 10.08
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1261,
-      "PriceFloor": 1338.0,
-      "BuyLimit": 18000,
-      "pctROI": 5.08
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -38,10 +31,17 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 540,
+      "LowPrice": 531,
       "PriceFloor": 619.0,
       "BuyLimit": 10000,
-      "pctROI": 13.52
+      "pctROI": 15.44
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1280,
+      "PriceFloor": 1338.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.52
     },
     {
       "ItemName": "Diamond bracelet",
@@ -52,10 +52,10 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 935,
+      "LowPrice": 954,
       "PriceFloor": 976.0,
       "BuyLimit": 10000,
-      "pctROI": 3.42
+      "pctROI": 1.36
     }
   ],
   "methodology": "VeryGranular"
