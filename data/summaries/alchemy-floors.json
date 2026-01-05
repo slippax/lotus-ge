@@ -1,6 +1,13 @@
 {
-  "updated": "2026-01-05T10:00:36.054313+00:00",
+  "updated": "2026-01-05T10:05:34.464947+00:00",
   "items": [
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8805,
+      "PriceFloor": 9024.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.47
+    },
     {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1702,
@@ -23,18 +30,32 @@
       "pctROI": 27.05
     },
     {
+      "ItemName": "Ironwood repair kit",
+      "LowPrice": 2030,
+      "PriceFloor": 2193.0,
+      "BuyLimit": 13000,
+      "pctROI": 7.0
+    },
+    {
       "ItemName": "Magic longbow",
-      "LowPrice": 1261,
+      "LowPrice": 1230,
       "PriceFloor": 1338.0,
       "BuyLimit": 18000,
-      "pctROI": 5.08
+      "pctROI": 7.72
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 550,
+      "LowPrice": 525,
       "PriceFloor": 619.0,
       "BuyLimit": 10000,
-      "pctROI": 11.45
+      "pctROI": 16.76
+    },
+    {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 924,
+      "PriceFloor": 976.0,
+      "BuyLimit": 10000,
+      "pctROI": 4.65
     },
     {
       "ItemName": "Diamond amulet (u)",
@@ -52,10 +73,10 @@
     },
     {
       "ItemName": "Frozen tear",
-      "LowPrice": 106,
+      "LowPrice": 108,
       "PriceFloor": 114.0,
       "BuyLimit": 13000,
-      "pctROI": 6.6
+      "pctROI": 4.63
     }
   ],
   "methodology": "VeryGranular"
