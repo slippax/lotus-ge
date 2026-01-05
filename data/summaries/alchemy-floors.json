@@ -1,6 +1,13 @@
 {
-  "updated": "2026-01-05T09:45:31.807152+00:00",
+  "updated": "2026-01-05T09:50:35.170713+00:00",
   "items": [
+    {
+      "ItemName": "Yew longbow",
+      "LowPrice": 445,
+      "PriceFloor": 578.0,
+      "BuyLimit": 18000,
+      "pctROI": 28.76
+    },
     {
       "ItemName": "Mahogany repair kit",
       "LowPrice": 1112,
@@ -16,13 +23,6 @@
       "pctROI": 10.34
     },
     {
-      "ItemName": "Yew longbow",
-      "LowPrice": 452,
-      "PriceFloor": 578.0,
-      "BuyLimit": 18000,
-      "pctROI": 26.77
-    },
-    {
       "ItemName": "Ironwood repair kit",
       "LowPrice": 2030,
       "PriceFloor": 2193.0,
@@ -31,24 +31,17 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1236,
+      "LowPrice": 1261,
       "PriceFloor": 1338.0,
       "BuyLimit": 18000,
-      "pctROI": 7.2
-    },
-    {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8500,
-      "PriceFloor": 8727.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.65
+      "pctROI": 5.08
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 531,
+      "LowPrice": 523,
       "PriceFloor": 619.0,
       "BuyLimit": 10000,
-      "pctROI": 15.44
+      "pctROI": 17.21
     },
     {
       "ItemName": "Diamond amulet (u)",
@@ -63,6 +56,13 @@
       "PriceFloor": 411.0,
       "BuyLimit": 13000,
       "pctROI": 3.3
+    },
+    {
+      "ItemName": "Frozen tear",
+      "LowPrice": 101,
+      "PriceFloor": 114.0,
+      "BuyLimit": 13000,
+      "pctROI": 11.88
     }
   ],
   "methodology": "VeryGranular"
