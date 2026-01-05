@@ -1,12 +1,19 @@
 {
-  "updated": "2026-01-05T02:25:34.482449+00:00",
+  "updated": "2026-01-05T02:30:36.028598+00:00",
   "items": [
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 440,
+      "LowPrice": 436,
       "PriceFloor": 578.0,
       "BuyLimit": 18000,
-      "pctROI": 30.23
+      "pctROI": 31.42
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8803,
+      "PriceFloor": 9024.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.49
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -16,25 +23,11 @@
       "pctROI": 12.58
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8833,
-      "PriceFloor": 9024.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.14
-    },
-    {
       "ItemName": "Magic longbow",
-      "LowPrice": 1261,
+      "LowPrice": 1254,
       "PriceFloor": 1338.0,
       "BuyLimit": 18000,
-      "pctROI": 5.08
-    },
-    {
-      "ItemName": "Ironwood repair kit",
-      "LowPrice": 2100,
-      "PriceFloor": 2193.0,
-      "BuyLimit": 13000,
-      "pctROI": 3.43
+      "pctROI": 5.66
     },
     {
       "ItemName": "Rune javelin tips",
@@ -42,6 +35,13 @@
       "PriceFloor": 619.0,
       "BuyLimit": 10000,
       "pctROI": 16.32
+    },
+    {
+      "ItemName": "Ironwood repair kit",
+      "LowPrice": 2119,
+      "PriceFloor": 2193.0,
+      "BuyLimit": 13000,
+      "pctROI": 2.5
     },
     {
       "ItemName": "Teak repair kit",
@@ -56,13 +56,6 @@
       "PriceFloor": 976.0,
       "BuyLimit": 10000,
       "pctROI": 5.11
-    },
-    {
-      "ItemName": "Diamond amulet (u)",
-      "LowPrice": 1860,
-      "PriceFloor": 1911.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.72
     }
   ],
   "methodology": "VeryGranular"
