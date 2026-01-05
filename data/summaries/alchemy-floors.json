@@ -1,6 +1,13 @@
 {
-  "updated": "2026-01-05T03:10:35.702643+00:00",
+  "updated": "2026-01-05T03:15:33.679760+00:00",
   "items": [
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8800,
+      "PriceFloor": 9024.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.52
+    },
     {
       "ItemName": "Yew longbow",
       "LowPrice": 443,
@@ -16,25 +23,11 @@
       "pctROI": 15.09
     },
     {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8498,
-      "PriceFloor": 8727.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.67
-    },
-    {
       "ItemName": "Magic longbow",
-      "LowPrice": 1260,
+      "LowPrice": 1229,
       "PriceFloor": 1338.0,
       "BuyLimit": 18000,
-      "pctROI": 5.16
-    },
-    {
-      "ItemName": "Ironwood repair kit",
-      "LowPrice": 2100,
-      "PriceFloor": 2193.0,
-      "BuyLimit": 13000,
-      "pctROI": 3.43
+      "pctROI": 7.81
     },
     {
       "ItemName": "Rune javelin tips",
@@ -49,13 +42,6 @@
       "PriceFloor": 976.0,
       "BuyLimit": 10000,
       "pctROI": 4.65
-    },
-    {
-      "ItemName": "Teak repair kit",
-      "LowPrice": 374,
-      "PriceFloor": 411.0,
-      "BuyLimit": 13000,
-      "pctROI": 8.82
     }
   ],
   "methodology": "VeryGranular"
