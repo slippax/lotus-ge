@@ -1,5 +1,5 @@
 {
-  "updated": "2026-01-07T00:35:37.353049+00:00",
+  "updated": "2026-01-07T00:40:33.337285+00:00",
   "items": [
     {
       "ItemName": "Yew longbow",
@@ -9,18 +9,18 @@
       "pctROI": 27.05
     },
     {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1215,
+      "PriceFloor": 1338.0,
+      "BuyLimit": 18000,
+      "pctROI": 9.05
+    },
+    {
       "ItemName": "Ironwood repair kit",
       "LowPrice": 2020,
       "PriceFloor": 2193.0,
       "BuyLimit": 13000,
       "pctROI": 7.52
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1218,
-      "PriceFloor": 1338.0,
-      "BuyLimit": 18000,
-      "pctROI": 8.78
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -38,10 +38,17 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 540,
+      "LowPrice": 550,
       "PriceFloor": 619.0,
       "BuyLimit": 10000,
-      "pctROI": 13.52
+      "pctROI": 11.45
+    },
+    {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 2014,
+      "PriceFloor": 2089.0,
+      "BuyLimit": 10000,
+      "pctROI": 2.73
     },
     {
       "ItemName": "Frozen tear",
@@ -49,20 +56,6 @@
       "PriceFloor": 114.0,
       "BuyLimit": 13000,
       "pctROI": 11.88
-    },
-    {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 955,
-      "PriceFloor": 976.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.26
-    },
-    {
-      "ItemName": "Atlatl dart",
-      "LowPrice": 104,
-      "PriceFloor": 108.0,
-      "BuyLimit": 11000,
-      "pctROI": 2.88
     }
   ],
   "methodology": "VeryGranular"
