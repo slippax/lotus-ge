@@ -1,19 +1,19 @@
 {
-  "updated": "2026-01-07T23:45:34.307026+00:00",
+  "updated": "2026-01-07T23:50:33.234600+00:00",
   "items": [
-    {
-      "ItemName": "Yew longbow",
-      "LowPrice": 462,
-      "PriceFloor": 578.0,
-      "BuyLimit": 18000,
-      "pctROI": 24.03
-    },
     {
       "ItemName": "Mahogany repair kit",
       "LowPrice": 1142,
       "PriceFloor": 1302.0,
       "BuyLimit": 13000,
       "pctROI": 12.87
+    },
+    {
+      "ItemName": "Yew longbow",
+      "LowPrice": 475,
+      "PriceFloor": 578.0,
+      "BuyLimit": 18000,
+      "pctROI": 20.63
     },
     {
       "ItemName": "Magic longbow",
@@ -52,10 +52,17 @@
     },
     {
       "ItemName": "Frozen tear",
-      "LowPrice": 106,
+      "LowPrice": 105,
       "PriceFloor": 114.0,
       "BuyLimit": 13000,
-      "pctROI": 6.6
+      "pctROI": 7.62
+    },
+    {
+      "ItemName": "Atlatl dart",
+      "LowPrice": 103,
+      "PriceFloor": 108.0,
+      "BuyLimit": 11000,
+      "pctROI": 3.88
     }
   ],
   "methodology": "VeryGranular"
