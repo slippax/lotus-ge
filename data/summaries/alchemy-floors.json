@@ -1,5 +1,5 @@
 {
-  "updated": "2026-01-08T04:10:34.573279+00:00",
+  "updated": "2026-01-08T04:15:48.467317+00:00",
   "items": [
     {
       "ItemName": "Camphor repair kit",
@@ -10,10 +10,17 @@
     },
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 481,
+      "LowPrice": 480,
       "PriceFloor": 578.0,
       "BuyLimit": 18000,
-      "pctROI": 19.13
+      "pctROI": 19.38
+    },
+    {
+      "ItemName": "Ironwood repair kit",
+      "LowPrice": 2074,
+      "PriceFloor": 2193.0,
+      "BuyLimit": 13000,
+      "pctROI": 4.73
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -24,31 +31,38 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1258,
+      "LowPrice": 1260,
       "PriceFloor": 1338.0,
       "BuyLimit": 18000,
-      "pctROI": 5.33
+      "pctROI": 5.16
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 540,
+      "LowPrice": 545,
       "PriceFloor": 619.0,
       "BuyLimit": 10000,
-      "pctROI": 13.52
+      "pctROI": 12.48
+    },
+    {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 955,
+      "PriceFloor": 976.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.26
     },
     {
       "ItemName": "Frozen tear",
-      "LowPrice": 105,
+      "LowPrice": 106,
       "PriceFloor": 114.0,
       "BuyLimit": 13000,
-      "pctROI": 7.62
+      "pctROI": 6.6
     },
     {
       "ItemName": "Atlatl dart",
-      "LowPrice": 103,
+      "LowPrice": 105,
       "PriceFloor": 108.0,
       "BuyLimit": 11000,
-      "pctROI": 3.88
+      "pctROI": 1.9
     }
   ],
   "methodology": "VeryGranular"
