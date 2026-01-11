@@ -1,12 +1,19 @@
 {
-  "updated": "2026-01-11T22:55:33.908132+00:00",
+  "updated": "2026-01-11T23:00:53.597779+00:00",
   "items": [
     {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1252,
+      "PriceFloor": 1340.0,
+      "BuyLimit": 18000,
+      "pctROI": 5.99
+    },
+    {
       "ItemName": "Mahogany repair kit",
-      "LowPrice": 1191,
+      "LowPrice": 1192,
       "PriceFloor": 1304.0,
       "BuyLimit": 13000,
-      "pctROI": 8.4
+      "pctROI": 8.31
     },
     {
       "ItemName": "Camphor repair kit",
@@ -17,17 +24,10 @@
     },
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 522,
+      "LowPrice": 521,
       "PriceFloor": 580.0,
       "BuyLimit": 18000,
-      "pctROI": 10.15
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1275,
-      "PriceFloor": 1340.0,
-      "BuyLimit": 18000,
-      "pctROI": 4.08
+      "pctROI": 10.36
     },
     {
       "ItemName": "Yellow fin",
@@ -56,6 +56,13 @@
       "PriceFloor": 2195.0,
       "BuyLimit": 13000,
       "pctROI": 2.21
+    },
+    {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 2045,
+      "PriceFloor": 2091.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.27
     }
   ],
   "methodology": "VeryGranular"
