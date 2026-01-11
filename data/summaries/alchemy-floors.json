@@ -1,12 +1,19 @@
 {
-  "updated": "2026-01-11T10:50:35.594214+00:00",
+  "updated": "2026-01-11T10:55:34.318861+00:00",
   "items": [
     {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8800,
+      "PriceFloor": 9026.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.55
+    },
+    {
       "ItemName": "Yew longbow",
-      "LowPrice": 440,
+      "LowPrice": 468,
       "PriceFloor": 580.0,
       "BuyLimit": 18000,
-      "pctROI": 30.68
+      "pctROI": 22.86
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -23,13 +30,6 @@
       "pctROI": 4.56
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1290,
-      "PriceFloor": 1340.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.87
-    },
-    {
       "ItemName": "Ironwood repair kit",
       "LowPrice": 2127,
       "PriceFloor": 2195.0,
@@ -44,6 +44,13 @@
       "pctROI": 6.72
     },
     {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 563,
+      "PriceFloor": 621.0,
+      "BuyLimit": 10000,
+      "pctROI": 9.24
+    },
+    {
       "ItemName": "Teak repair kit",
       "LowPrice": 369,
       "PriceFloor": 413.0,
@@ -51,18 +58,11 @@
       "pctROI": 10.84
     },
     {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 570,
-      "PriceFloor": 621.0,
-      "BuyLimit": 10000,
-      "pctROI": 7.89
-    },
-    {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 2041,
-      "PriceFloor": 2091.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.47
+      "ItemName": "Atlatl dart",
+      "LowPrice": 104,
+      "PriceFloor": 110.0,
+      "BuyLimit": 11000,
+      "pctROI": 4.81
     }
   ],
   "methodology": "VeryGranular"
