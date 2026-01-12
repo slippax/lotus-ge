@@ -1,5 +1,5 @@
 {
-  "updated": "2026-01-12T20:25:34.485067+00:00",
+  "updated": "2026-01-12T20:30:38.340193+00:00",
   "items": [
     {
       "ItemName": "Camphor repair kit",
@@ -37,6 +37,13 @@
       "pctROI": 3.35
     },
     {
+      "ItemName": "Yellow fin",
+      "LowPrice": 52,
+      "PriceFloor": 116.0,
+      "BuyLimit": 11000,
+      "pctROI": 121.15
+    },
+    {
       "ItemName": "Teak repair kit",
       "LowPrice": 379,
       "PriceFloor": 413.0,
@@ -44,25 +51,18 @@
       "pctROI": 7.92
     },
     {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 935,
-      "PriceFloor": 978.0,
-      "BuyLimit": 10000,
-      "pctROI": 3.64
-    },
-    {
-      "ItemName": "Yellow fin",
-      "LowPrice": 93,
-      "PriceFloor": 116.0,
-      "BuyLimit": 11000,
-      "pctROI": 23.66
-    },
-    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 607,
+      "LowPrice": 593,
       "PriceFloor": 621.0,
       "BuyLimit": 10000,
-      "pctROI": 1.32
+      "pctROI": 3.71
+    },
+    {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 955,
+      "PriceFloor": 978.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.47
     }
   ],
   "methodology": "VeryGranular"
