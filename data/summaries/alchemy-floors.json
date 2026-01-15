@@ -1,5 +1,5 @@
 {
-  "updated": "2026-01-15T03:05:50.240406+00:00",
+  "updated": "2026-01-15T03:10:37.123627+00:00",
   "items": [
     {
       "ItemName": "Mahogany repair kit",
@@ -23,6 +23,13 @@
       "pctROI": 9.13
     },
     {
+      "ItemName": "Ironwood repair kit",
+      "LowPrice": 2120,
+      "PriceFloor": 2194.0,
+      "BuyLimit": 13000,
+      "pctROI": 2.5
+    },
+    {
       "ItemName": "Magic longbow",
       "LowPrice": 1300,
       "PriceFloor": 1339.0,
@@ -31,17 +38,17 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 569,
+      "LowPrice": 570,
       "PriceFloor": 620.0,
       "BuyLimit": 10000,
-      "pctROI": 7.91
+      "pctROI": 7.72
     },
     {
       "ItemName": "Teak repair kit",
-      "LowPrice": 385,
+      "LowPrice": 386,
       "PriceFloor": 412.0,
       "BuyLimit": 13000,
-      "pctROI": 5.97
+      "pctROI": 5.7
     },
     {
       "ItemName": "Yellow fin",
@@ -49,13 +56,6 @@
       "PriceFloor": 115.0,
       "BuyLimit": 11000,
       "pctROI": 20.0
-    },
-    {
-      "ItemName": "Ruby amulet (u)",
-      "LowPrice": 1000,
-      "PriceFloor": 1021.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.1
     }
   ],
   "methodology": "VeryGranular"
