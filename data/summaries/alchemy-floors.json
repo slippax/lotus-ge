@@ -1,12 +1,19 @@
 {
-  "updated": "2026-01-19T15:25:38.007498+00:00",
+  "updated": "2026-01-19T15:30:38.171336+00:00",
   "items": [
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 508,
+      "LowPrice": 496,
       "PriceFloor": 575.0,
       "BuyLimit": 18000,
-      "pctROI": 12.2
+      "pctROI": 14.92
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1265,
+      "PriceFloor": 1335.0,
+      "BuyLimit": 18000,
+      "pctROI": 4.51
     },
     {
       "ItemName": "Camphor repair kit",
@@ -16,18 +23,11 @@
       "pctROI": 3.71
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1280,
-      "PriceFloor": 1335.0,
-      "BuyLimit": 18000,
-      "pctROI": 3.28
-    },
-    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 540,
+      "LowPrice": 530,
       "PriceFloor": 616.0,
       "BuyLimit": 10000,
-      "pctROI": 12.96
+      "pctROI": 15.09
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -35,6 +35,13 @@
       "PriceFloor": 717.0,
       "BuyLimit": 10000,
       "pctROI": 5.5
+    },
+    {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 942,
+      "PriceFloor": 973.0,
+      "BuyLimit": 10000,
+      "pctROI": 2.34
     }
   ],
   "methodology": "VeryGranular"
