@@ -1,12 +1,26 @@
 {
-  "updated": "2026-01-26T08:25:35.490709+00:00",
+  "updated": "2026-01-26T08:30:43.889265+00:00",
   "items": [
     {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8811,
+      "PriceFloor": 9018.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.33
+    },
+    {
       "ItemName": "Yew longbow",
-      "LowPrice": 470,
+      "LowPrice": 474,
       "PriceFloor": 572.0,
       "BuyLimit": 18000,
-      "pctROI": 20.64
+      "pctROI": 19.62
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1240,
+      "PriceFloor": 1332.0,
+      "BuyLimit": 18000,
+      "pctROI": 6.37
     },
     {
       "ItemName": "Camphor repair kit",
@@ -16,18 +30,11 @@
       "pctROI": 6.0
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1257,
-      "PriceFloor": 1332.0,
-      "BuyLimit": 18000,
-      "pctROI": 4.93
-    },
-    {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 856,
-      "PriceFloor": 970.0,
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 505,
+      "PriceFloor": 613.0,
       "BuyLimit": 10000,
-      "pctROI": 12.27
+      "pctROI": 20.2
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -37,11 +44,11 @@
       "pctROI": 6.38
     },
     {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 520,
-      "PriceFloor": 613.0,
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 875,
+      "PriceFloor": 970.0,
       "BuyLimit": 10000,
-      "pctROI": 16.73
+      "pctROI": 9.83
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -56,6 +63,13 @@
       "PriceFloor": 2083.0,
       "BuyLimit": 10000,
       "pctROI": 3.05
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 432,
+      "PriceFloor": 442.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.39
     }
   ],
   "methodology": "VeryGranular"
