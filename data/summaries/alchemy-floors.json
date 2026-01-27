@@ -1,12 +1,26 @@
 {
-  "updated": "2026-01-27T14:30:36.186810+00:00",
+  "updated": "2026-01-27T14:35:35.306320+00:00",
   "items": [
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 495,
+      "LowPrice": 493,
       "PriceFloor": 572.0,
       "BuyLimit": 18000,
-      "pctROI": 14.55
+      "pctROI": 15.01
+    },
+    {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1190,
+      "PriceFloor": 1296.0,
+      "BuyLimit": 13000,
+      "pctROI": 7.9
+    },
+    {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 505,
+      "PriceFloor": 613.0,
+      "BuyLimit": 10000,
+      "pctROI": 20.2
     },
     {
       "ItemName": "Magic longbow",
@@ -21,20 +35,6 @@
       "PriceFloor": 714.0,
       "BuyLimit": 10000,
       "pctROI": 14.59
-    },
-    {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 517,
-      "PriceFloor": 613.0,
-      "BuyLimit": 10000,
-      "pctROI": 17.41
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1220,
-      "PriceFloor": 1296.0,
-      "BuyLimit": 13000,
-      "pctROI": 5.25
     },
     {
       "ItemName": "Diamond bracelet",
@@ -63,6 +63,13 @@
       "PriceFloor": 572.0,
       "BuyLimit": 18000,
       "pctROI": 2.16
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 426,
+      "PriceFloor": 442.0,
+      "BuyLimit": 11000,
+      "pctROI": 2.82
     }
   ],
   "methodology": "VeryGranular"
