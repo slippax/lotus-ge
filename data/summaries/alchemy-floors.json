@@ -1,5 +1,5 @@
 {
-  "updated": "2026-01-27T13:30:35.545515+00:00",
+  "updated": "2026-01-27T13:35:31.968577+00:00",
   "items": [
     {
       "ItemName": "Yew longbow",
@@ -24,10 +24,24 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 509,
+      "LowPrice": 508,
       "PriceFloor": 613.0,
       "BuyLimit": 10000,
-      "pctROI": 19.25
+      "pctROI": 19.49
+    },
+    {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 880,
+      "PriceFloor": 970.0,
+      "BuyLimit": 10000,
+      "pctROI": 9.2
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1275,
+      "PriceFloor": 1332.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.45
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -37,32 +51,11 @@
       "pctROI": 11.34
     },
     {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 890,
-      "PriceFloor": 970.0,
-      "BuyLimit": 10000,
-      "pctROI": 7.98
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1280,
-      "PriceFloor": 1332.0,
-      "BuyLimit": 18000,
-      "pctROI": 3.05
-    },
-    {
       "ItemName": "Redwood shield",
       "LowPrice": 555,
       "PriceFloor": 572.0,
       "BuyLimit": 18000,
       "pctROI": 2.16
-    },
-    {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 432,
-      "PriceFloor": 442.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.39
     }
   ],
   "methodology": "VeryGranular"
