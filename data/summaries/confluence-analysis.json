@@ -1,5 +1,5 @@
 {
-  "updated": "2026-01-28T15:15:48.513065+00:00",
+  "updated": "2026-01-28T15:17:36.880077+00:00",
   "items": [
     {
       "ItemName": "Purple sweets",
@@ -47,6 +47,21 @@
       "PotentialProfit": 2511600.0
     },
     {
+      "ItemName": "Diamond",
+      "CurrentPrice": 1800,
+      "BuyLimit": 11000,
+      "FiveMinMean": 1766,
+      "HourlyMean": 1760,
+      "DailyMean": 1751,
+      "WeeklyMean": 1739,
+      "MonthlyMean": 1696,
+      "BullishConfluence": 5,
+      "BearishConfluence": 0,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 1980000.0
+    },
+    {
       "ItemName": "Adamantite bar",
       "CurrentPrice": 1867,
       "BuyLimit": 10000,
@@ -90,6 +105,21 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
       "PotentialProfit": 1417500.0
+    },
+    {
+      "ItemName": "Snapdragon seed",
+      "CurrentPrice": 49000,
+      "BuyLimit": 200,
+      "FiveMinMean": 48031,
+      "HourlyMean": 47674,
+      "DailyMean": 46595,
+      "WeeklyMean": 45756,
+      "MonthlyMean": 42217,
+      "BullishConfluence": 5,
+      "BearishConfluence": 0,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 980000.0
     },
     {
       "ItemName": "Chinchompa",
@@ -150,21 +180,6 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
       "PotentialProfit": 12500.0
-    },
-    {
-      "ItemName": "Supercompost",
-      "CurrentPrice": 60,
-      "BuyLimit": 2000,
-      "FiveMinMean": 59,
-      "HourlyMean": 54,
-      "DailyMean": 49,
-      "WeeklyMean": 34,
-      "MonthlyMean": 27,
-      "BullishConfluence": 5,
-      "BearishConfluence": 0,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_SUPPORTED",
-      "PotentialProfit": 12000.0
     },
     {
       "ItemName": "Bandos hilt",
@@ -315,6 +330,21 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
       "PotentialProfit": 12301000.0
+    },
+    {
+      "ItemName": "Dragon necklace",
+      "CurrentPrice": 11469,
+      "BuyLimit": 10000,
+      "FiveMinMean": 11468,
+      "HourlyMean": 11468,
+      "DailyMean": 11441,
+      "WeeklyMean": 11398,
+      "MonthlyMean": 11321,
+      "BullishConfluence": 4,
+      "BearishConfluence": 0,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 11469000.0
     },
     {
       "ItemName": "Onyx bolt tips",
@@ -572,19 +602,19 @@
       "PotentialProfit": 2256800.0
     },
     {
-      "ItemName": "Diamond",
-      "CurrentPrice": 1755,
+      "ItemName": "Coconut",
+      "CurrentPrice": 1960,
       "BuyLimit": 11000,
-      "FiveMinMean": 1766,
-      "HourlyMean": 1760,
-      "DailyMean": 1751,
-      "WeeklyMean": 1739,
-      "MonthlyMean": 1696,
+      "FiveMinMean": 1915,
+      "HourlyMean": 1944,
+      "DailyMean": 1871,
+      "WeeklyMean": 1738,
+      "MonthlyMean": 1608,
       "BullishConfluence": 4,
       "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 1930500.0
+      "PotentialProfit": 2156000.0
     },
     {
       "ItemName": "Aether rune",
@@ -707,21 +737,6 @@
       "PotentialProfit": 985000.0
     },
     {
-      "ItemName": "Snapdragon seed",
-      "CurrentPrice": 47957,
-      "BuyLimit": 200,
-      "FiveMinMean": 48031,
-      "HourlyMean": 47674,
-      "DailyMean": 46595,
-      "WeeklyMean": 45756,
-      "MonthlyMean": 42217,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 959140.0
-    },
-    {
       "ItemName": "Weapon poison(++)",
       "CurrentPrice": 4523,
       "BuyLimit": 2000,
@@ -735,21 +750,6 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_SUPPORTED",
       "PotentialProfit": 904600.0
-    },
-    {
-      "ItemName": "Games necklace(8)",
-      "CurrentPrice": 737,
-      "BuyLimit": 10000,
-      "FiveMinMean": 736,
-      "HourlyMean": 736,
-      "DailyMean": 730,
-      "WeeklyMean": 713,
-      "MonthlyMean": 689,
-      "BullishConfluence": 4,
-      "BearishConfluence": 0,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 737000.0
     }
   ],
   "methodology": "VeryGranular_MultiTimeframeConfluence"
