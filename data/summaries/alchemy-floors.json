@@ -1,6 +1,13 @@
 {
-  "updated": "2026-01-29T05:20:48.289774+00:00",
+  "updated": "2026-01-29T05:25:32.557379+00:00",
   "items": [
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1235,
+      "PriceFloor": 1332.0,
+      "BuyLimit": 18000,
+      "pctROI": 6.8
+    },
     {
       "ItemName": "Mahogany repair kit",
       "LowPrice": 1176,
@@ -10,10 +17,10 @@
     },
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 489,
+      "LowPrice": 492,
       "PriceFloor": 572.0,
       "BuyLimit": 18000,
-      "pctROI": 15.95
+      "pctROI": 15.24
     },
     {
       "ItemName": "Camphor repair kit",
@@ -23,32 +30,11 @@
       "pctROI": 5.41
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1254,
-      "PriceFloor": 1332.0,
-      "BuyLimit": 18000,
-      "pctROI": 5.18
-    },
-    {
       "ItemName": "Rune javelin tips",
       "LowPrice": 506,
       "PriceFloor": 613.0,
       "BuyLimit": 10000,
       "pctROI": 19.96
-    },
-    {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1982,
-      "PriceFloor": 2083.0,
-      "BuyLimit": 10000,
-      "pctROI": 4.09
-    },
-    {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 887,
-      "PriceFloor": 970.0,
-      "BuyLimit": 10000,
-      "pctROI": 8.34
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -58,11 +44,18 @@
       "pctROI": 10.82
     },
     {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 900,
+      "PriceFloor": 970.0,
+      "BuyLimit": 10000,
+      "pctROI": 6.78
+    },
+    {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 416,
+      "LowPrice": 425,
       "PriceFloor": 442.0,
       "BuyLimit": 11000,
-      "pctROI": 5.29
+      "pctROI": 3.06
     }
   ],
   "methodology": "VeryGranular"
