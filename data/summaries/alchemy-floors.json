@@ -1,6 +1,13 @@
 {
-  "updated": "2026-01-29T20:10:36.480110+00:00",
+  "updated": "2026-01-29T20:15:36.436675+00:00",
   "items": [
+    {
+      "ItemName": "Camphor repair kit",
+      "LowPrice": 1716,
+      "PriceFloor": 1890.0,
+      "BuyLimit": 13000,
+      "pctROI": 9.09
+    },
     {
       "ItemName": "Yew longbow",
       "LowPrice": 460,
@@ -17,17 +24,10 @@
     },
     {
       "ItemName": "Mahogany repair kit",
-      "LowPrice": 1186,
+      "LowPrice": 1187,
       "PriceFloor": 1296.0,
       "BuyLimit": 13000,
-      "pctROI": 8.26
-    },
-    {
-      "ItemName": "Camphor repair kit",
-      "LowPrice": 1775,
-      "PriceFloor": 1890.0,
-      "BuyLimit": 13000,
-      "pctROI": 5.46
+      "pctROI": 8.17
     },
     {
       "ItemName": "Rune javelin tips",
@@ -59,10 +59,17 @@
     },
     {
       "ItemName": "Amethyst javelin tips",
-      "LowPrice": 637,
+      "LowPrice": 650,
       "PriceFloor": 714.0,
       "BuyLimit": 10000,
-      "pctROI": 10.99
+      "pctROI": 8.77
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 432,
+      "PriceFloor": 442.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.39
     }
   ],
   "methodology": "VeryGranular"
