@@ -1,5 +1,5 @@
 {
-  "updated": "2026-01-30T12:35:34.664365+00:00",
+  "updated": "2026-01-30T12:40:34.389160+00:00",
   "items": [
     {
       "ItemName": "Extended anti-venom+(4)",
@@ -7,6 +7,13 @@
       "AvgLow": 18134,
       "BuyLimit": 2000,
       "pctROI": 6.76
+    },
+    {
+      "ItemName": "Enchant ruby or topaz",
+      "LowPrice": 478,
+      "AvgLow": 865,
+      "BuyLimit": 10000,
+      "pctROI": 79.29
     },
     {
       "ItemName": "Extended anti-venom+(2)",
@@ -37,13 +44,6 @@
       "pctROI": 4.36
     },
     {
-      "ItemName": "Amethyst dart",
-      "LowPrice": 227,
-      "AvgLow": 245,
-      "BuyLimit": 11000,
-      "pctROI": 7.05
-    },
-    {
       "ItemName": "Dwarven stout(m)",
       "LowPrice": 14002,
       "AvgLow": 14371,
@@ -58,25 +58,11 @@
       "pctROI": 5.16
     },
     {
-      "ItemName": "Splitbark helm",
-      "LowPrice": 10816,
-      "AvgLow": 12857,
-      "BuyLimit": 70,
-      "pctROI": 17.69
-    },
-    {
       "ItemName": "Soft clay",
       "LowPrice": 122,
       "AvgLow": 133,
       "BuyLimit": 13000,
       "pctROI": 8.2
-    },
-    {
-      "ItemName": "Mithril arrowtips",
-      "LowPrice": 25,
-      "AvgLow": 36,
-      "BuyLimit": 10000,
-      "pctROI": 44.0
     }
   ],
   "methodology": "VeryGranular"
