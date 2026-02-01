@@ -1,12 +1,19 @@
 {
-  "updated": "2026-02-01T18:25:38.184505+00:00",
+  "updated": "2026-02-01T18:30:33.560085+00:00",
   "items": [
     {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8813,
-      "PriceFloor": 9017.0,
+      "ItemName": "Ironwood repair kit",
+      "LowPrice": 1414,
+      "PriceFloor": 2186.0,
+      "BuyLimit": 13000,
+      "pctROI": 53.11
+    },
+    {
+      "ItemName": "Yew longbow",
+      "LowPrice": 447,
+      "PriceFloor": 571.0,
       "BuyLimit": 18000,
-      "pctROI": 1.29
+      "pctROI": 26.62
     },
     {
       "ItemName": "Magic longbow",
@@ -14,20 +21,6 @@
       "PriceFloor": 1331.0,
       "BuyLimit": 18000,
       "pctROI": 9.38
-    },
-    {
-      "ItemName": "Yew longbow",
-      "LowPrice": 453,
-      "PriceFloor": 571.0,
-      "BuyLimit": 18000,
-      "pctROI": 24.94
-    },
-    {
-      "ItemName": "Ironwood repair kit",
-      "LowPrice": 2020,
-      "PriceFloor": 2186.0,
-      "BuyLimit": 13000,
-      "pctROI": 7.18
     },
     {
       "ItemName": "Camphor repair kit",
@@ -44,13 +37,6 @@
       "pctROI": 31.17
     },
     {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1173,
-      "PriceFloor": 1295.0,
-      "BuyLimit": 13000,
-      "pctROI": 9.38
-    },
-    {
       "ItemName": "Magic shortbow",
       "LowPrice": 700,
       "PriceFloor": 761.0,
@@ -63,6 +49,13 @@
       "PriceFloor": 969.0,
       "BuyLimit": 10000,
       "pctROI": 9.71
+    },
+    {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1220,
+      "PriceFloor": 1295.0,
+      "BuyLimit": 13000,
+      "pctROI": 5.16
     },
     {
       "ItemName": "Phoenix necklace",
@@ -87,10 +80,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 412,
+      "LowPrice": 413,
       "PriceFloor": 441.0,
       "BuyLimit": 11000,
-      "pctROI": 6.07
+      "pctROI": 5.81
     }
   ],
   "methodology": "VeryGranular"
