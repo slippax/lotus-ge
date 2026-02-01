@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-01T03:10:37.853114+00:00",
+  "updated": "2026-02-01T03:15:35.518627+00:00",
   "items": [
     {
       "ItemName": "Air battlestaff",
@@ -7,13 +7,6 @@
       "PriceFloor": 9017.0,
       "BuyLimit": 18000,
       "pctROI": 1.39
-    },
-    {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8812,
-      "PriceFloor": 9017.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.31
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -24,10 +17,17 @@
     },
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 470,
+      "LowPrice": 466,
       "PriceFloor": 571.0,
       "BuyLimit": 18000,
-      "pctROI": 20.43
+      "pctROI": 21.46
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1223,
+      "PriceFloor": 1331.0,
+      "BuyLimit": 18000,
+      "pctROI": 7.77
     },
     {
       "ItemName": "Combat bracelet",
@@ -38,24 +38,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 467,
+      "LowPrice": 468,
       "PriceFloor": 612.0,
       "BuyLimit": 10000,
-      "pctROI": 29.76
-    },
-    {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1929,
-      "PriceFloor": 2082.0,
-      "BuyLimit": 10000,
-      "pctROI": 6.89
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1245,
-      "PriceFloor": 1331.0,
-      "BuyLimit": 18000,
-      "pctROI": 5.86
+      "pctROI": 29.49
     },
     {
       "ItemName": "Camphor repair kit",
@@ -63,6 +49,13 @@
       "PriceFloor": 1889.0,
       "BuyLimit": 13000,
       "pctROI": 5.41
+    },
+    {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1951,
+      "PriceFloor": 2082.0,
+      "BuyLimit": 10000,
+      "pctROI": 5.69
     },
     {
       "ItemName": "Phoenix necklace",
@@ -84,13 +77,6 @@
       "PriceFloor": 2186.0,
       "BuyLimit": 13000,
       "pctROI": 2.12
-    },
-    {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 428,
-      "PriceFloor": 441.0,
-      "BuyLimit": 11000,
-      "pctROI": 2.1
     }
   ],
   "methodology": "VeryGranular"
