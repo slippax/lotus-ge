@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-02T14:15:34.922844+00:00",
+  "updated": "2026-02-02T14:20:33.849068+00:00",
   "items": [
     {
       "ItemName": "Yew longbow",
@@ -24,10 +24,17 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1206,
+      "LowPrice": 1205,
       "PriceFloor": 1330.0,
       "BuyLimit": 18000,
-      "pctROI": 9.2
+      "pctROI": 9.29
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8815,
+      "PriceFloor": 9016.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.26
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -49,6 +56,13 @@
       "PriceFloor": 2185.0,
       "BuyLimit": 13000,
       "pctROI": 5.3
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8525,
+      "PriceFloor": 8719.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.26
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -73,10 +87,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 418,
+      "LowPrice": 420,
       "PriceFloor": 440.0,
       "BuyLimit": 11000,
-      "pctROI": 4.31
+      "pctROI": 3.81
     }
   ],
   "methodology": "VeryGranular"
