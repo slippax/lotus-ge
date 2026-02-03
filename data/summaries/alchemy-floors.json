@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-03T21:35:42.005059+00:00",
+  "updated": "2026-02-03T21:40:48.972619+00:00",
   "items": [
     {
       "ItemName": "Air battlestaff",
@@ -17,13 +17,20 @@
     },
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 451,
+      "LowPrice": 450,
       "PriceFloor": 570.0,
       "BuyLimit": 18000,
-      "pctROI": 25.28
+      "pctROI": 25.56
     },
     {
       "ItemName": "Fire battlestaff",
+      "LowPrice": 8825,
+      "PriceFloor": 9016.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.14
+    },
+    {
+      "ItemName": "Water battlestaff",
       "LowPrice": 8825,
       "PriceFloor": 9016.0,
       "BuyLimit": 18000,
@@ -45,10 +52,17 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 465,
+      "LowPrice": 470,
       "PriceFloor": 611.0,
       "BuyLimit": 10000,
-      "pctROI": 30.11
+      "pctROI": 28.72
+    },
+    {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1938,
+      "PriceFloor": 2081.0,
+      "BuyLimit": 10000,
+      "pctROI": 6.35
     },
     {
       "ItemName": "Camphor repair kit",
@@ -66,17 +80,10 @@
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8539,
+      "LowPrice": 8534,
       "PriceFloor": 8719.0,
       "BuyLimit": 11000,
-      "pctROI": 1.09
-    },
-    {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1989,
-      "PriceFloor": 2081.0,
-      "BuyLimit": 10000,
-      "pctROI": 3.62
+      "pctROI": 1.15
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -87,10 +94,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 426,
+      "LowPrice": 422,
       "PriceFloor": 440.0,
       "BuyLimit": 11000,
-      "pctROI": 2.35
+      "pctROI": 3.32
     }
   ],
   "methodology": "VeryGranular"
