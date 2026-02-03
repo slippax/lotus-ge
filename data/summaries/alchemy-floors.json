@@ -1,6 +1,13 @@
 {
-  "updated": "2026-02-03T17:20:44.308620+00:00",
+  "updated": "2026-02-03T17:25:36.693429+00:00",
   "items": [
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8760,
+      "PriceFloor": 9016.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.89
+    },
     {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8777,
@@ -44,11 +51,18 @@
       "pctROI": 1.09
     },
     {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8476,
+      "PriceFloor": 8719.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.84
+    },
+    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 468,
+      "LowPrice": 472,
       "PriceFloor": 611.0,
       "BuyLimit": 10000,
-      "pctROI": 29.27
+      "pctROI": 28.18
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -73,10 +87,17 @@
     },
     {
       "ItemName": "Amethyst javelin tips",
-      "LowPrice": 678,
+      "LowPrice": 638,
       "PriceFloor": 712.0,
       "BuyLimit": 10000,
-      "pctROI": 3.98
+      "pctROI": 10.5
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 429,
+      "PriceFloor": 440.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.63
     }
   ],
   "methodology": "VeryGranular"
