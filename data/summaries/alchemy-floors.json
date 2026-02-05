@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-05T13:45:36.337531+00:00",
+  "updated": "2026-02-05T13:50:35.880875+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -9,13 +9,6 @@
       "pctROI": 1.88
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8800,
-      "PriceFloor": 9016.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.43
-    },
-    {
       "ItemName": "Water battlestaff",
       "LowPrice": 8806,
       "PriceFloor": 9016.0,
@@ -23,11 +16,18 @@
       "pctROI": 1.36
     },
     {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8813,
+      "PriceFloor": 9016.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.28
+    },
+    {
       "ItemName": "Yew longbow",
-      "LowPrice": 454,
+      "LowPrice": 460,
       "PriceFloor": 570.0,
       "BuyLimit": 18000,
-      "pctROI": 24.45
+      "pctROI": 22.83
     },
     {
       "ItemName": "Camphor repair kit",
@@ -52,17 +52,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 452,
+      "LowPrice": 460,
       "PriceFloor": 611.0,
       "BuyLimit": 10000,
-      "pctROI": 33.85
-    },
-    {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8516,
-      "PriceFloor": 8719.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.36
+      "pctROI": 31.52
     },
     {
       "ItemName": "Ruby amulet (u)",
@@ -84,13 +77,6 @@
       "PriceFloor": 712.0,
       "BuyLimit": 10000,
       "pctROI": 10.16
-    },
-    {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 430,
-      "PriceFloor": 440.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.4
     }
   ],
   "methodology": "VeryGranular"
