@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-05T06:50:33.314841+00:00",
+  "updated": "2026-02-05T06:55:34.448357+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -30,11 +30,25 @@
       "pctROI": 8.84
     },
     {
+      "ItemName": "Camphor repair kit",
+      "LowPrice": 1725,
+      "PriceFloor": 1888.0,
+      "BuyLimit": 13000,
+      "pctROI": 8.41
+    },
+    {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8497,
+      "LowPrice": 8481,
       "PriceFloor": 8719.0,
       "BuyLimit": 11000,
-      "pctROI": 1.59
+      "pctROI": 1.78
+    },
+    {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1162,
+      "PriceFloor": 1294.0,
+      "BuyLimit": 13000,
+      "pctROI": 10.33
     },
     {
       "ItemName": "Rune javelin tips",
@@ -42,20 +56,6 @@
       "PriceFloor": 611.0,
       "BuyLimit": 10000,
       "pctROI": 29.83
-    },
-    {
-      "ItemName": "Camphor repair kit",
-      "LowPrice": 1765,
-      "PriceFloor": 1888.0,
-      "BuyLimit": 13000,
-      "pctROI": 5.95
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1184,
-      "PriceFloor": 1294.0,
-      "BuyLimit": 13000,
-      "pctROI": 8.28
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -73,10 +73,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 428,
+      "LowPrice": 427,
       "PriceFloor": 440.0,
       "BuyLimit": 11000,
-      "pctROI": 1.87
+      "pctROI": 2.11
     }
   ],
   "methodology": "VeryGranular"
