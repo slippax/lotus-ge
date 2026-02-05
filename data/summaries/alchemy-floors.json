@@ -1,12 +1,12 @@
 {
-  "updated": "2026-02-05T20:25:40.315242+00:00",
+  "updated": "2026-02-05T20:30:41.543197+00:00",
   "items": [
     {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8707,
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8702,
       "PriceFloor": 9015.0,
       "BuyLimit": 18000,
-      "pctROI": 2.5
+      "pctROI": 2.56
     },
     {
       "ItemName": "Earth battlestaff",
@@ -16,6 +16,13 @@
       "pctROI": 2.42
     },
     {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8750,
+      "PriceFloor": 9015.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.0
+    },
+    {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8775,
       "PriceFloor": 9015.0,
@@ -23,18 +30,11 @@
       "pctROI": 1.71
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8795,
-      "PriceFloor": 9015.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.48
-    },
-    {
       "ItemName": "Yew longbow",
-      "LowPrice": 460,
+      "LowPrice": 451,
       "PriceFloor": 569.0,
       "BuyLimit": 18000,
-      "pctROI": 22.61
+      "pctROI": 25.06
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -52,10 +52,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 464,
+      "LowPrice": 455,
       "PriceFloor": 610.0,
       "BuyLimit": 10000,
-      "pctROI": 30.17
+      "pctROI": 32.75
     },
     {
       "ItemName": "Camphor repair kit",
@@ -65,18 +65,18 @@
       "pctROI": 5.89
     },
     {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 836,
+      "PriceFloor": 967.0,
+      "BuyLimit": 10000,
+      "pctROI": 14.59
+    },
+    {
       "ItemName": "Ironwood repair kit",
       "LowPrice": 2070,
       "PriceFloor": 2184.0,
       "BuyLimit": 13000,
       "pctROI": 4.49
-    },
-    {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 838,
-      "PriceFloor": 967.0,
-      "BuyLimit": 10000,
-      "pctROI": 14.32
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -91,13 +91,6 @@
       "PriceFloor": 711.0,
       "BuyLimit": 10000,
       "pctROI": 4.61
-    },
-    {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 430,
-      "PriceFloor": 439.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.16
     }
   ],
   "methodology": "VeryGranular"
