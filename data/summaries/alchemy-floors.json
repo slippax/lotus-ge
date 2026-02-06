@@ -1,8 +1,15 @@
 {
-  "updated": "2026-02-06T00:15:34.762079+00:00",
+  "updated": "2026-02-06T00:20:34.304568+00:00",
   "items": [
     {
-      "ItemName": "Fire battlestaff",
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8800,
+      "PriceFloor": 9015.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.42
+    },
+    {
+      "ItemName": "Water battlestaff",
       "LowPrice": 8800,
       "PriceFloor": 9015.0,
       "BuyLimit": 18000,
@@ -23,11 +30,18 @@
       "pctROI": 1.27
     },
     {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8815,
+      "PriceFloor": 9015.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.25
+    },
+    {
       "ItemName": "Yew longbow",
-      "LowPrice": 454,
+      "LowPrice": 457,
       "PriceFloor": 569.0,
       "BuyLimit": 18000,
-      "pctROI": 24.23
+      "pctROI": 23.41
     },
     {
       "ItemName": "Magic longbow",
@@ -37,18 +51,11 @@
       "pctROI": 8.31
     },
     {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8830,
-      "PriceFloor": 9015.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.08
-    },
-    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 467,
+      "LowPrice": 457,
       "PriceFloor": 610.0,
       "BuyLimit": 10000,
-      "pctROI": 29.34
+      "pctROI": 32.17
     },
     {
       "ItemName": "Camphor repair kit",
@@ -77,13 +84,6 @@
       "PriceFloor": 711.0,
       "BuyLimit": 10000,
       "pctROI": 8.31
-    },
-    {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 428,
-      "PriceFloor": 439.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.64
     }
   ],
   "methodology": "VeryGranular"
