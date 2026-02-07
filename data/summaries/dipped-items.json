@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-07T00:00:40.390717+00:00",
+  "updated": "2026-02-07T00:05:38.599217+00:00",
   "items": [
     {
       "ItemName": "Abyssal dagger",
@@ -7,6 +7,13 @@
       "AvgLow": 2164872,
       "BuyLimit": 8,
       "pctROI": 5.5
+    },
+    {
+      "ItemName": "Super combat potion(2)",
+      "LowPrice": 7290,
+      "AvgLow": 7785,
+      "BuyLimit": 2000,
+      "pctROI": 5.73
     },
     {
       "ItemName": "Superantipoison(4)",
@@ -37,13 +44,6 @@
       "pctROI": 1381180.0
     },
     {
-      "ItemName": "Super energy(4)",
-      "LowPrice": 3040,
-      "AvgLow": 3338,
-      "BuyLimit": 2000,
-      "pctROI": 8.72
-    },
-    {
       "ItemName": "Dwarven stout(m)",
       "LowPrice": 14129,
       "AvgLow": 14845,
@@ -51,11 +51,25 @@
       "pctROI": 4.02
     },
     {
+      "ItemName": "Adamant arrow",
+      "LowPrice": 66,
+      "AvgLow": 79,
+      "BuyLimit": 11000,
+      "pctROI": 19.7
+    },
+    {
       "ItemName": "Gryphon feather",
       "LowPrice": 16,
       "AvgLow": 27,
       "BuyLimit": 11000,
       "pctROI": 68.75
+    },
+    {
+      "ItemName": "Red boots",
+      "LowPrice": 837,
+      "AvgLow": 1642,
+      "BuyLimit": 150,
+      "pctROI": 94.27
     }
   ],
   "methodology": "VeryGranular"
