@@ -1,13 +1,6 @@
 {
-  "updated": "2026-02-07T18:05:36.186112+00:00",
+  "updated": "2026-02-07T18:10:48.451346+00:00",
   "items": [
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8705,
-      "PriceFloor": 9015.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.53
-    },
     {
       "ItemName": "Water battlestaff",
       "LowPrice": 8714,
@@ -17,10 +10,17 @@
     },
     {
       "ItemName": "Air battlestaff",
-      "LowPrice": 8719,
+      "LowPrice": 8717,
       "PriceFloor": 9015.0,
       "BuyLimit": 18000,
-      "pctROI": 2.36
+      "pctROI": 2.39
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8750,
+      "PriceFloor": 9015.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.0
     },
     {
       "ItemName": "Fire battlestaff",
@@ -79,18 +79,18 @@
       "pctROI": 3.0
     },
     {
-      "ItemName": "Yew shield",
-      "LowPrice": 150,
-      "PriceFloor": 189.0,
-      "BuyLimit": 18000,
-      "pctROI": 25.33
-    },
-    {
       "ItemName": "Amethyst javelin tips",
       "LowPrice": 650,
       "PriceFloor": 711.0,
       "BuyLimit": 10000,
       "pctROI": 8.31
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 429,
+      "PriceFloor": 439.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.4
     }
   ],
   "methodology": "VeryGranular"
