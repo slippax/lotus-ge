@@ -1,6 +1,13 @@
 {
-  "updated": "2026-02-07T16:15:35.346918+00:00",
+  "updated": "2026-02-07T16:20:48.318603+00:00",
   "items": [
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8700,
+      "PriceFloor": 9015.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.59
+    },
     {
       "ItemName": "Earth battlestaff",
       "LowPrice": 8705,
@@ -10,17 +17,10 @@
     },
     {
       "ItemName": "Water battlestaff",
-      "LowPrice": 8714,
+      "LowPrice": 8719,
       "PriceFloor": 9015.0,
       "BuyLimit": 18000,
-      "pctROI": 2.42
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8730,
-      "PriceFloor": 9015.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.23
+      "pctROI": 2.36
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -52,10 +52,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 432,
+      "LowPrice": 444,
       "PriceFloor": 610.0,
       "BuyLimit": 10000,
-      "pctROI": 39.81
+      "pctROI": 36.04
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -72,18 +72,18 @@
       "pctROI": 24.5
     },
     {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 2001,
-      "PriceFloor": 2080.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.95
-    },
-    {
       "ItemName": "Amethyst javelin tips",
       "LowPrice": 650,
       "PriceFloor": 711.0,
       "BuyLimit": 10000,
       "pctROI": 8.31
+    },
+    {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 2027,
+      "PriceFloor": 2080.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.63
     }
   ],
   "methodology": "VeryGranular"
