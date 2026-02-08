@@ -1,26 +1,26 @@
 {
-  "updated": "2026-02-08T14:05:37.544343+00:00",
+  "updated": "2026-02-08T14:10:36.039916+00:00",
   "items": [
     {
-      "ItemName": "Water battlestaff",
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8725,
+      "PriceFloor": 9016.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.3
+    },
+    {
+      "ItemName": "Air battlestaff",
       "LowPrice": 8750,
       "PriceFloor": 9016.0,
       "BuyLimit": 18000,
       "pctROI": 2.01
     },
     {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8755,
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8750,
       "PriceFloor": 9016.0,
       "BuyLimit": 18000,
-      "pctROI": 1.95
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8756,
-      "PriceFloor": 9016.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.94
+      "pctROI": 2.01
     },
     {
       "ItemName": "Fire battlestaff",
@@ -87,10 +87,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 430,
+      "LowPrice": 429,
       "PriceFloor": 440.0,
       "BuyLimit": 11000,
-      "pctROI": 1.4
+      "pctROI": 1.63
     }
   ],
   "methodology": "VeryGranular"
