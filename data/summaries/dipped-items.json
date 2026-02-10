@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-10T04:30:36.569791+00:00",
+  "updated": "2026-02-10T04:35:43.491125+00:00",
   "items": [
     {
       "ItemName": "Dragon knife",
@@ -16,11 +16,18 @@
       "pctROI": 23.47
     },
     {
-      "ItemName": "Antipoison(4)",
+      "ItemName": "Blood essence",
+      "LowPrice": 116001,
+      "AvgLow": 118501,
+      "BuyLimit": 500,
+      "pctROI": 1.13
+    },
+    {
+      "ItemName": "Potato",
       "LowPrice": 10,
-      "AvgLow": 187,
-      "BuyLimit": 2000,
-      "pctROI": 1760.0
+      "AvgLow": 24,
+      "BuyLimit": 13000,
+      "pctROI": 140.0
     },
     {
       "ItemName": "Rune full helm (g)",
@@ -28,6 +35,13 @@
       "AvgLow": 96380,
       "BuyLimit": 8,
       "pctROI": 27.22
+    },
+    {
+      "ItemName": "Proselyte hauberk",
+      "LowPrice": 4610,
+      "AvgLow": 6577,
+      "BuyLimit": 70,
+      "pctROI": 41.26
     },
     {
       "ItemName": "Mole slippers",
@@ -42,13 +56,6 @@
       "AvgLow": 283,
       "BuyLimit": 2000,
       "pctROI": 24.89
-    },
-    {
-      "ItemName": "Armadyl coif",
-      "LowPrice": 69000,
-      "AvgLow": 82920,
-      "BuyLimit": 8,
-      "pctROI": 18.97
     }
   ],
   "methodology": "VeryGranular"
