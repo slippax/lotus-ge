@@ -1,6 +1,13 @@
 {
-  "updated": "2026-02-10T08:50:36.739735+00:00",
+  "updated": "2026-02-10T08:55:39.164086+00:00",
   "items": [
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8700,
+      "PriceFloor": 9015.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.59
+    },
     {
       "ItemName": "Air battlestaff",
       "LowPrice": 8750,
@@ -10,17 +17,10 @@
     },
     {
       "ItemName": "Water battlestaff",
-      "LowPrice": 8769,
+      "LowPrice": 8765,
       "PriceFloor": 9015.0,
       "BuyLimit": 18000,
-      "pctROI": 1.78
-    },
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8788,
-      "PriceFloor": 9015.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.56
+      "pctROI": 1.83
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -38,24 +38,17 @@
     },
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 465,
+      "LowPrice": 466,
       "PriceFloor": 569.0,
       "BuyLimit": 18000,
-      "pctROI": 21.29
-    },
-    {
-      "ItemName": "Combat bracelet",
-      "LowPrice": 12024,
-      "PriceFloor": 12306.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.32
+      "pctROI": 21.03
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 812,
+      "LowPrice": 815,
       "PriceFloor": 967.0,
       "BuyLimit": 10000,
-      "pctROI": 17.98
+      "pctROI": 17.55
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -73,10 +66,17 @@
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8515,
+      "LowPrice": 8506,
       "PriceFloor": 8718.0,
       "BuyLimit": 11000,
-      "pctROI": 1.36
+      "pctROI": 1.47
+    },
+    {
+      "ItemName": "Combat bracelet",
+      "LowPrice": 12055,
+      "PriceFloor": 12306.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.06
     },
     {
       "ItemName": "Diamond bracelet",
@@ -108,10 +108,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 428,
+      "LowPrice": 425,
       "PriceFloor": 439.0,
       "BuyLimit": 11000,
-      "pctROI": 1.64
+      "pctROI": 2.35
     }
   ],
   "methodology": "VeryGranular"
