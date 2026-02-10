@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-10T10:05:36.521715+00:00",
+  "updated": "2026-02-10T10:10:41.838515+00:00",
   "items": [
     {
       "ItemName": "Rain bow",
@@ -30,6 +30,21 @@
       "SignalStrength": "MODERATE_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
       "PotentialProfit": 206850.0
+    },
+    {
+      "ItemName": "Iron bar",
+      "CurrentPrice": 170,
+      "BuyLimit": 10000,
+      "FiveMinMean": 171,
+      "HourlyMean": 170,
+      "DailyMean": 168,
+      "WeeklyMean": 169,
+      "MonthlyMean": 188,
+      "BullishConfluence": 2,
+      "BearishConfluence": 3,
+      "SignalStrength": "MODERATE_BEARISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 85000.0
     }
   ],
   "methodology": "VeryGranular_MultiTimeframeConfluence"
