@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-11T14:00:43.247945+00:00",
+  "updated": "2026-02-11T14:05:36.705711+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -7,13 +7,6 @@
       "PriceFloor": 9015.0,
       "BuyLimit": 18000,
       "pctROI": 2.0
-    },
-    {
-      "ItemName": "Fire battlestaff",
-      "LowPrice": 8756,
-      "PriceFloor": 9015.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.93
     },
     {
       "ItemName": "Air battlestaff",
@@ -30,11 +23,18 @@
       "pctROI": 1.63
     },
     {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8793,
+      "PriceFloor": 9015.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.5
+    },
+    {
       "ItemName": "Mahogany repair kit",
-      "LowPrice": 1129,
+      "LowPrice": 1122,
       "PriceFloor": 1293.0,
       "BuyLimit": 13000,
-      "pctROI": 13.46
+      "pctROI": 14.17
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -45,10 +45,10 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1223,
+      "LowPrice": 1221,
       "PriceFloor": 1329.0,
       "BuyLimit": 18000,
-      "pctROI": 7.6
+      "pctROI": 7.78
     },
     {
       "ItemName": "Yew longbow",
@@ -59,10 +59,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 446,
+      "LowPrice": 445,
       "PriceFloor": 610.0,
       "BuyLimit": 10000,
-      "pctROI": 35.43
+      "pctROI": 35.73
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -72,25 +72,18 @@
       "pctROI": 5.15
     },
     {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1951,
+      "PriceFloor": 2080.0,
+      "BuyLimit": 10000,
+      "pctROI": 5.59
+    },
+    {
       "ItemName": "Dragon javelin tips",
       "LowPrice": 855,
       "PriceFloor": 967.0,
       "BuyLimit": 10000,
       "pctROI": 12.05
-    },
-    {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 2027,
-      "PriceFloor": 2080.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.63
-    },
-    {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 426,
-      "PriceFloor": 439.0,
-      "BuyLimit": 11000,
-      "pctROI": 2.11
     }
   ],
   "methodology": "VeryGranular"
