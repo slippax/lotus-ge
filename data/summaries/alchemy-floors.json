@@ -1,13 +1,6 @@
 {
-  "updated": "2026-02-12T19:50:43.382151+00:00",
+  "updated": "2026-02-12T19:55:42.194300+00:00",
   "items": [
-    {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8740,
-      "PriceFloor": 9015.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.12
-    },
     {
       "ItemName": "Earth battlestaff",
       "LowPrice": 8750,
@@ -17,6 +10,13 @@
     },
     {
       "ItemName": "Fire battlestaff",
+      "LowPrice": 8760,
+      "PriceFloor": 9015.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.88
+    },
+    {
+      "ItemName": "Water battlestaff",
       "LowPrice": 8760,
       "PriceFloor": 9015.0,
       "BuyLimit": 18000,
@@ -44,18 +44,18 @@
       "pctROI": 9.21
     },
     {
+      "ItemName": "Yew longbow",
+      "LowPrice": 469,
+      "PriceFloor": 569.0,
+      "BuyLimit": 18000,
+      "pctROI": 20.26
+    },
+    {
       "ItemName": "Mahogany repair kit",
       "LowPrice": 1150,
       "PriceFloor": 1293.0,
       "BuyLimit": 13000,
       "pctROI": 11.39
-    },
-    {
-      "ItemName": "Yew longbow",
-      "LowPrice": 470,
-      "PriceFloor": 569.0,
-      "BuyLimit": 18000,
-      "pctROI": 20.0
     },
     {
       "ItemName": "Combat bracelet",
@@ -84,13 +84,6 @@
       "PriceFloor": 711.0,
       "BuyLimit": 10000,
       "pctROI": 5.86
-    },
-    {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 427,
-      "PriceFloor": 439.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.87
     }
   ],
   "methodology": "VeryGranular"
