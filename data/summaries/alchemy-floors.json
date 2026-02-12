@@ -1,6 +1,13 @@
 {
-  "updated": "2026-02-12T07:40:48.157342+00:00",
+  "updated": "2026-02-12T07:45:34.994448+00:00",
   "items": [
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8750,
+      "PriceFloor": 9015.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.0
+    },
     {
       "ItemName": "Water battlestaff",
       "LowPrice": 8779,
@@ -77,13 +84,6 @@
       "PriceFloor": 711.0,
       "BuyLimit": 10000,
       "pctROI": 6.34
-    },
-    {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 427,
-      "PriceFloor": 439.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.87
     }
   ],
   "methodology": "VeryGranular"
