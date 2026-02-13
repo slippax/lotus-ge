@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-13T13:55:46.553726+00:00",
+  "updated": "2026-02-13T14:00:57.005971+00:00",
   "items": [
     {
       "ItemName": "Amethyst arrow(p+)",
@@ -29,7 +29,7 @@
     },
     {
       "ItemName": "Lemon",
-      "CurrentPrice": 99,
+      "CurrentPrice": 100,
       "BuyLimit": 13000,
       "DailyRange": 2,
       "WeeklyRange": 44,
@@ -37,7 +37,7 @@
       "CompressionRatio": 4.55,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 128700.0,
+      "PotentialBreakoutProfit": 130000.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -83,13 +83,26 @@
       "ItemName": "Basalt",
       "CurrentPrice": 728,
       "BuyLimit": 10000,
-      "DailyRange": 75,
+      "DailyRange": 52,
       "WeeklyRange": 545,
       "MonthlyRange": 559,
-      "CompressionRatio": 13.76,
+      "CompressionRatio": 9.54,
       "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 728000.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Clay",
+      "CurrentPrice": 79,
+      "BuyLimit": 13000,
+      "DailyRange": 3,
+      "WeeklyRange": 28,
+      "MonthlyRange": 100,
+      "CompressionRatio": 10.71,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 102700.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -146,7 +159,7 @@
     },
     {
       "ItemName": "Soft clay",
-      "CurrentPrice": 133,
+      "CurrentPrice": 138,
       "BuyLimit": 13000,
       "DailyRange": 8,
       "WeeklyRange": 46,
@@ -154,20 +167,7 @@
       "CompressionRatio": 17.39,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 172900.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
-      "ItemName": "Clay",
-      "CurrentPrice": 79,
-      "BuyLimit": 13000,
-      "DailyRange": 5,
-      "WeeklyRange": 28,
-      "MonthlyRange": 100,
-      "CompressionRatio": 17.86,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 102700.0,
+      "PotentialBreakoutProfit": 179400.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -178,9 +178,35 @@
       "WeeklyRange": 109,
       "MonthlyRange": 143,
       "CompressionRatio": 18.35,
-      "BreakoutDirection": "LOWER_BIAS",
+      "BreakoutDirection": "NEUTRAL",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 41400.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Arctic pine logs",
+      "CurrentPrice": 590,
+      "BuyLimit": 11000,
+      "DailyRange": 70,
+      "WeeklyRange": 347,
+      "MonthlyRange": 423,
+      "CompressionRatio": 20.17,
+      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 649000.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Opal bolts (e)",
+      "CurrentPrice": 50,
+      "BuyLimit": 11000,
+      "DailyRange": 8,
+      "WeeklyRange": 39,
+      "MonthlyRange": 42,
+      "CompressionRatio": 20.51,
+      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 55000.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -197,29 +223,16 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Combat potion(3)",
-      "CurrentPrice": 226,
-      "BuyLimit": 2000,
-      "DailyRange": 13,
-      "WeeklyRange": 61,
-      "MonthlyRange": 257,
-      "CompressionRatio": 21.31,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 45200.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
       "ItemName": "Bronze bar",
-      "CurrentPrice": 60,
+      "CurrentPrice": 59,
       "BuyLimit": 10000,
       "DailyRange": 8,
       "WeeklyRange": 37,
       "MonthlyRange": 50,
       "CompressionRatio": 21.62,
-      "BreakoutDirection": "NEUTRAL",
+      "BreakoutDirection": "LOWER_BIAS",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 60000.0,
+      "PotentialBreakoutProfit": 59000.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -236,16 +249,16 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Arctic pine logs",
-      "CurrentPrice": 590,
-      "BuyLimit": 11000,
-      "DailyRange": 80,
-      "WeeklyRange": 347,
-      "MonthlyRange": 423,
-      "CompressionRatio": 23.05,
+      "ItemName": "Combat potion(3)",
+      "CurrentPrice": 226,
+      "BuyLimit": 2000,
+      "DailyRange": 14,
+      "WeeklyRange": 61,
+      "MonthlyRange": 257,
+      "CompressionRatio": 22.95,
       "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 649000.0,
+      "PotentialBreakoutProfit": 45200.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -272,19 +285,6 @@
       "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 721800.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
-      "ItemName": "Raw herring",
-      "CurrentPrice": 61,
-      "BuyLimit": 15000,
-      "DailyRange": 7,
-      "WeeklyRange": 30,
-      "MonthlyRange": 36,
-      "CompressionRatio": 23.33,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 91500.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -315,7 +315,7 @@
     },
     {
       "ItemName": "Earth talisman",
-      "CurrentPrice": 540,
+      "CurrentPrice": 535,
       "BuyLimit": 11000,
       "DailyRange": 38,
       "WeeklyRange": 157,
@@ -323,7 +323,7 @@
       "CompressionRatio": 24.2,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 594000.0,
+      "PotentialBreakoutProfit": 588500.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -350,19 +350,6 @@
       "BreakoutDirection": "UPPER_BIAS",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 68000.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
-      "ItemName": "Cup of hot water",
-      "CurrentPrice": 394,
-      "BuyLimit": 13000,
-      "DailyRange": 35,
-      "WeeklyRange": 136,
-      "MonthlyRange": 312,
-      "CompressionRatio": 25.74,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 512200.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -429,6 +416,19 @@
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 53950000.0,
       "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Raw herring",
+      "CurrentPrice": 69,
+      "BuyLimit": 15000,
+      "DailyRange": 9,
+      "WeeklyRange": 30,
+      "MonthlyRange": 36,
+      "CompressionRatio": 30.0,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 103500.0,
+      "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
       "ItemName": "Adamant javelin tips",
@@ -523,7 +523,7 @@
     },
     {
       "ItemName": "Teleport to house (tablet)",
-      "CurrentPrice": 619,
+      "CurrentPrice": 612,
       "BuyLimit": 15000,
       "DailyRange": 22,
       "WeeklyRange": 67,
@@ -531,7 +531,7 @@
       "CompressionRatio": 32.84,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 928500.0,
+      "PotentialBreakoutProfit": 918000.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -574,8 +574,21 @@
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
+      "ItemName": "Falador teleport (tablet)",
+      "CurrentPrice": 575,
+      "BuyLimit": 15000,
+      "DailyRange": 68,
+      "WeeklyRange": 196,
+      "MonthlyRange": 214,
+      "CompressionRatio": 34.69,
+      "BreakoutDirection": "LOWER_BIAS",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 862500.0,
+      "CompressionLevel": "MODERATE_COMPRESSION"
+    },
+    {
       "ItemName": "Extended super antifire(4)",
-      "CurrentPrice": 22613,
+      "CurrentPrice": 23050,
       "BuyLimit": 2000,
       "DailyRange": 1491,
       "WeeklyRange": 4286,
@@ -583,7 +596,20 @@
       "CompressionRatio": 34.79,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 4522600.0,
+      "PotentialBreakoutProfit": 4610000.0,
+      "CompressionLevel": "MODERATE_COMPRESSION"
+    },
+    {
+      "ItemName": "Cup of hot water",
+      "CurrentPrice": 394,
+      "BuyLimit": 13000,
+      "DailyRange": 48,
+      "WeeklyRange": 136,
+      "MonthlyRange": 312,
+      "CompressionRatio": 35.29,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 512200.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -614,7 +640,7 @@
     },
     {
       "ItemName": "Raw trout",
-      "CurrentPrice": 61,
+      "CurrentPrice": 62,
       "BuyLimit": 15000,
       "DailyRange": 5,
       "WeeklyRange": 14,
@@ -622,33 +648,7 @@
       "CompressionRatio": 35.71,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 91500.0,
-      "CompressionLevel": "MODERATE_COMPRESSION"
-    },
-    {
-      "ItemName": "Yew shortbow (u)",
-      "CurrentPrice": 185,
-      "BuyLimit": 10000,
-      "DailyRange": 16,
-      "WeeklyRange": 43,
-      "MonthlyRange": 295,
-      "CompressionRatio": 37.21,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 185000.0,
-      "CompressionLevel": "MODERATE_COMPRESSION"
-    },
-    {
-      "ItemName": "Sawmill voucher",
-      "CurrentPrice": 3200,
-      "BuyLimit": 10000,
-      "DailyRange": 283,
-      "WeeklyRange": 760,
-      "MonthlyRange": 1344,
-      "CompressionRatio": 37.24,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 3200000.0,
+      "PotentialBreakoutProfit": 93000.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     }
   ],
