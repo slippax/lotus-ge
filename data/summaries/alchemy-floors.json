@@ -1,13 +1,6 @@
 {
-  "updated": "2026-02-13T21:05:40.509714+00:00",
+  "updated": "2026-02-13T21:10:43.909959+00:00",
   "items": [
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8750,
-      "PriceFloor": 9014.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.99
-    },
     {
       "ItemName": "Earth battlestaff",
       "LowPrice": 8760,
@@ -17,10 +10,17 @@
     },
     {
       "ItemName": "Water battlestaff",
-      "LowPrice": 8791,
+      "LowPrice": 8779,
       "PriceFloor": 9014.0,
       "BuyLimit": 18000,
-      "pctROI": 1.51
+      "pctROI": 1.65
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8785,
+      "PriceFloor": 9014.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.58
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -66,17 +66,17 @@
     },
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 469,
+      "LowPrice": 475,
       "PriceFloor": 568.0,
       "BuyLimit": 18000,
-      "pctROI": 20.04
+      "pctROI": 18.53
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 460,
+      "LowPrice": 463,
       "PriceFloor": 609.0,
       "BuyLimit": 10000,
-      "pctROI": 31.09
+      "pctROI": 30.24
     },
     {
       "ItemName": "Jade bracelet",
@@ -87,17 +87,24 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 853,
+      "LowPrice": 851,
       "PriceFloor": 966.0,
       "BuyLimit": 10000,
-      "pctROI": 12.19
+      "pctROI": 12.46
     },
     {
       "ItemName": "Diamond bracelet",
-      "LowPrice": 1961,
+      "LowPrice": 1989,
       "PriceFloor": 2079.0,
       "BuyLimit": 10000,
-      "pctROI": 5.0
+      "pctROI": 3.52
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 415,
+      "PriceFloor": 438.0,
+      "BuyLimit": 11000,
+      "pctROI": 4.58
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -105,13 +112,6 @@
       "PriceFloor": 710.0,
       "BuyLimit": 10000,
       "pctROI": 2.18
-    },
-    {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 425,
-      "PriceFloor": 438.0,
-      "BuyLimit": 11000,
-      "pctROI": 2.12
     }
   ],
   "methodology": "VeryGranular"
