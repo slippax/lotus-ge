@@ -1,19 +1,19 @@
 {
-  "updated": "2026-02-15T20:40:36.524781+00:00",
+  "updated": "2026-02-15T20:45:37.266088+00:00",
   "items": [
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8710,
-      "PriceFloor": 9013.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.45
-    },
     {
       "ItemName": "Water battlestaff",
       "LowPrice": 8716,
       "PriceFloor": 9013.0,
       "BuyLimit": 18000,
       "pctROI": 2.37
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8757,
+      "PriceFloor": 9013.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.9
     },
     {
       "ItemName": "Fire battlestaff",
@@ -23,11 +23,11 @@
       "pctROI": 1.4
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8805,
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8806,
       "PriceFloor": 9013.0,
       "BuyLimit": 18000,
-      "pctROI": 1.34
+      "pctROI": 1.33
     },
     {
       "ItemName": "Magic longbow",
@@ -37,11 +37,18 @@
       "pctROI": 9.32
     },
     {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8450,
+      "PriceFloor": 8716.0,
+      "BuyLimit": 11000,
+      "pctROI": 2.12
+    },
+    {
       "ItemName": "Mahogany repair kit",
-      "LowPrice": 1141,
+      "LowPrice": 1140,
       "PriceFloor": 1291.0,
       "BuyLimit": 13000,
-      "pctROI": 12.09
+      "pctROI": 12.19
     },
     {
       "ItemName": "Yew longbow",
@@ -52,31 +59,24 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 453,
+      "LowPrice": 458,
       "PriceFloor": 608.0,
       "BuyLimit": 10000,
-      "pctROI": 32.89
+      "pctROI": 31.44
     },
     {
       "ItemName": "Ironwood repair kit",
-      "LowPrice": 2050,
+      "LowPrice": 2062,
       "PriceFloor": 2182.0,
       "BuyLimit": 13000,
-      "pctROI": 5.41
-    },
-    {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8500,
-      "PriceFloor": 8716.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.52
+      "pctROI": 4.8
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 831,
+      "LowPrice": 865,
       "PriceFloor": 965.0,
       "BuyLimit": 10000,
-      "pctROI": 15.04
+      "pctROI": 10.52
     },
     {
       "ItemName": "Diamond bracelet",
@@ -91,6 +91,13 @@
       "PriceFloor": 709.0,
       "BuyLimit": 10000,
       "pctROI": 4.15
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 427,
+      "PriceFloor": 437.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.41
     }
   ],
   "methodology": "VeryGranular"
