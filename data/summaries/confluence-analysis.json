@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-17T09:10:38.321322+00:00",
+  "updated": "2026-02-17T09:15:36.869080+00:00",
   "items": [
     {
       "ItemName": "Raw anglerfish",
@@ -15,6 +15,21 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
       "PotentialProfit": 2823000.0
+    },
+    {
+      "ItemName": "Dragon dart",
+      "CurrentPrice": 1500,
+      "BuyLimit": 11000,
+      "FiveMinMean": 1466,
+      "HourlyMean": 1461,
+      "DailyMean": 1459,
+      "WeeklyMean": 1416,
+      "MonthlyMean": 1331,
+      "BullishConfluence": 5,
+      "BearishConfluence": 0,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 1650000.0
     },
     {
       "ItemName": "Divine ranging potion(4)",
@@ -90,6 +105,21 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
       "PotentialProfit": 136000.0
+    },
+    {
+      "ItemName": "Adamant platebody",
+      "CurrentPrice": 9751,
+      "BuyLimit": 125,
+      "FiveMinMean": 9718,
+      "HourlyMean": 9672,
+      "DailyMean": 9656,
+      "WeeklyMean": 9632,
+      "MonthlyMean": 9580,
+      "BullishConfluence": 5,
+      "BearishConfluence": 0,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 121888.0
     },
     {
       "ItemName": "Zenyte shard",
@@ -407,21 +437,6 @@
       "PotentialProfit": 1580800.0
     },
     {
-      "ItemName": "Dragon dart",
-      "CurrentPrice": 1388,
-      "BuyLimit": 11000,
-      "FiveMinMean": 1466,
-      "HourlyMean": 1461,
-      "DailyMean": 1459,
-      "WeeklyMean": 1416,
-      "MonthlyMean": 1331,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 1526800.0
-    },
-    {
       "ItemName": "Prayer potion(3)",
       "CurrentPrice": 6215,
       "BuyLimit": 2000,
@@ -735,21 +750,6 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
       "PotentialProfit": 342000.0
-    },
-    {
-      "ItemName": "Mahogany logs",
-      "CurrentPrice": 277,
-      "BuyLimit": 11000,
-      "FiveMinMean": 275,
-      "HourlyMean": 278,
-      "DailyMean": 269,
-      "WeeklyMean": 259,
-      "MonthlyMean": 248,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 304700.0
     }
   ],
   "methodology": "VeryGranular_MultiTimeframeConfluence"
