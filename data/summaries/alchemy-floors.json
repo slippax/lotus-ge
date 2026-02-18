@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-18T06:25:35.338156+00:00",
+  "updated": "2026-02-18T06:30:37.741422+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -7,13 +7,6 @@
       "PriceFloor": 9013.0,
       "BuyLimit": 18000,
       "pctROI": 2.37
-    },
-    {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8763,
-      "PriceFloor": 9013.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.83
     },
     {
       "ItemName": "Air battlestaff",
@@ -24,10 +17,17 @@
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8417,
+      "LowPrice": 8418,
       "PriceFloor": 8716.0,
       "BuyLimit": 11000,
-      "pctROI": 2.52
+      "pctROI": 2.51
+    },
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8803,
+      "PriceFloor": 9013.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.36
     },
     {
       "ItemName": "Magic longbow",
@@ -58,6 +58,13 @@
       "pctROI": 10.26
     },
     {
+      "ItemName": "Yew longbow",
+      "LowPrice": 481,
+      "PriceFloor": 567.0,
+      "BuyLimit": 18000,
+      "pctROI": 16.84
+    },
+    {
       "ItemName": "Dragon javelin tips",
       "LowPrice": 812,
       "PriceFloor": 965.0,
@@ -72,18 +79,18 @@
       "pctROI": 30.3
     },
     {
-      "ItemName": "Yew longbow",
-      "LowPrice": 497,
-      "PriceFloor": 567.0,
-      "BuyLimit": 18000,
-      "pctROI": 13.08
-    },
-    {
       "ItemName": "Amethyst javelin tips",
       "LowPrice": 664,
       "PriceFloor": 709.0,
       "BuyLimit": 10000,
       "pctROI": 5.72
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 423,
+      "PriceFloor": 437.0,
+      "BuyLimit": 11000,
+      "pctROI": 2.36
     }
   ],
   "methodology": "VeryGranular"
