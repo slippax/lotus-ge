@@ -1,13 +1,6 @@
 {
-  "updated": "2026-02-20T09:50:35.277224+00:00",
+  "updated": "2026-02-20T09:55:35.779225+00:00",
   "items": [
-    {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8770,
-      "PriceFloor": 9013.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.74
-    },
     {
       "ItemName": "Earth battlestaff",
       "LowPrice": 8780,
@@ -16,11 +9,18 @@
       "pctROI": 1.63
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8788,
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8780,
       "PriceFloor": 9013.0,
       "BuyLimit": 18000,
-      "pctROI": 1.54
+      "pctROI": 1.63
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8800,
+      "PriceFloor": 9013.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.4
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -30,6 +30,13 @@
       "pctROI": 2.12
     },
     {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8820,
+      "PriceFloor": 9013.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.17
+    },
+    {
       "ItemName": "Magic longbow",
       "LowPrice": 1211,
       "PriceFloor": 1327.0,
@@ -37,11 +44,18 @@
       "pctROI": 8.51
     },
     {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 806,
+      "PriceFloor": 965.0,
+      "BuyLimit": 10000,
+      "pctROI": 18.61
+    },
+    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 453,
+      "LowPrice": 452,
       "PriceFloor": 608.0,
       "BuyLimit": 10000,
-      "pctROI": 32.89
+      "pctROI": 33.19
     },
     {
       "ItemName": "Yew longbow",
@@ -49,13 +63,6 @@
       "PriceFloor": 567.0,
       "BuyLimit": 18000,
       "pctROI": 16.36
-    },
-    {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 825,
-      "PriceFloor": 965.0,
-      "BuyLimit": 10000,
-      "pctROI": 15.88
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -84,6 +91,13 @@
       "PriceFloor": 709.0,
       "BuyLimit": 10000,
       "pctROI": 9.35
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 424,
+      "PriceFloor": 437.0,
+      "BuyLimit": 11000,
+      "pctROI": 2.12
     }
   ],
   "methodology": "VeryGranular"
