@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-21T20:05:33.296442+00:00",
+  "updated": "2026-02-21T20:10:34.553515+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -58,6 +58,13 @@
       "pctROI": 1.52
     },
     {
+      "ItemName": "Teak repair kit",
+      "LowPrice": 302,
+      "PriceFloor": 400.0,
+      "BuyLimit": 13000,
+      "pctROI": 31.13
+    },
+    {
       "ItemName": "Yew longbow",
       "LowPrice": 496,
       "PriceFloor": 567.0,
@@ -77,13 +84,6 @@
       "PriceFloor": 709.0,
       "BuyLimit": 10000,
       "pctROI": 7.5
-    },
-    {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 2014,
-      "PriceFloor": 2078.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.18
     }
   ],
   "methodology": "VeryGranular"
