@@ -1,12 +1,19 @@
 {
-  "updated": "2026-02-24T22:50:32.413930+00:00",
+  "updated": "2026-02-24T22:55:34.263435+00:00",
   "items": [
     {
       "ItemName": "Air battlestaff",
-      "LowPrice": 8740,
+      "LowPrice": 8688,
       "PriceFloor": 9013.0,
       "BuyLimit": 18000,
-      "pctROI": 2.09
+      "pctROI": 2.7
+    },
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8724,
+      "PriceFloor": 9013.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.28
     },
     {
       "ItemName": "Earth battlestaff",
@@ -14,13 +21,6 @@
       "PriceFloor": 9013.0,
       "BuyLimit": 18000,
       "pctROI": 1.98
-    },
-    {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8773,
-      "PriceFloor": 9013.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.71
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -37,25 +37,18 @@
       "pctROI": 8.24
     },
     {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1152,
-      "PriceFloor": 1291.0,
-      "BuyLimit": 13000,
-      "pctROI": 11.02
-    },
-    {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 809,
+      "LowPrice": 810,
       "PriceFloor": 965.0,
       "BuyLimit": 10000,
-      "pctROI": 18.17
+      "pctROI": 18.02
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 458,
+      "LowPrice": 460,
       "PriceFloor": 608.0,
       "BuyLimit": 10000,
-      "pctROI": 31.44
+      "pctROI": 30.87
     },
     {
       "ItemName": "Yew longbow",
@@ -65,11 +58,25 @@
       "pctROI": 15.16
     },
     {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1200,
+      "PriceFloor": 1291.0,
+      "BuyLimit": 13000,
+      "pctROI": 6.58
+    },
+    {
       "ItemName": "Amethyst javelin tips",
       "LowPrice": 657,
       "PriceFloor": 709.0,
       "BuyLimit": 10000,
       "pctROI": 6.85
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 425,
+      "PriceFloor": 437.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.88
     }
   ],
   "methodology": "VeryGranular"
