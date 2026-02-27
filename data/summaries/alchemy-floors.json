@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-27T03:10:36.744979+00:00",
+  "updated": "2026-02-27T03:15:39.561042+00:00",
   "items": [
     {
       "ItemName": "Air battlestaff",
@@ -16,6 +16,13 @@
       "pctROI": 1.86
     },
     {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8762,
+      "PriceFloor": 9013.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.84
+    },
+    {
       "ItemName": "Water battlestaff",
       "LowPrice": 8774,
       "PriceFloor": 9013.0,
@@ -23,18 +30,18 @@
       "pctROI": 1.7
     },
     {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8799,
-      "PriceFloor": 9013.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.41
-    },
-    {
       "ItemName": "Magic longbow",
       "LowPrice": 1211,
       "PriceFloor": 1327.0,
       "BuyLimit": 18000,
       "pctROI": 8.51
+    },
+    {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1147,
+      "PriceFloor": 1291.0,
+      "BuyLimit": 13000,
+      "pctROI": 11.51
     },
     {
       "ItemName": "Rune javelin tips",
@@ -45,10 +52,10 @@
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8500,
+      "LowPrice": 8501,
       "PriceFloor": 8716.0,
       "BuyLimit": 11000,
-      "pctROI": 1.52
+      "pctROI": 1.51
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -59,17 +66,10 @@
     },
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 495,
+      "LowPrice": 500,
       "PriceFloor": 567.0,
       "BuyLimit": 18000,
-      "pctROI": 13.54
-    },
-    {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1988,
-      "PriceFloor": 2078.0,
-      "BuyLimit": 10000,
-      "pctROI": 3.52
+      "pctROI": 12.4
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -77,13 +77,6 @@
       "PriceFloor": 709.0,
       "BuyLimit": 10000,
       "pctROI": 8.0
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1250,
-      "PriceFloor": 1291.0,
-      "BuyLimit": 13000,
-      "pctROI": 2.32
     }
   ],
   "methodology": "VeryGranular"
