@@ -1,12 +1,12 @@
 {
-  "updated": "2026-02-28T19:15:36.626773+00:00",
+  "updated": "2026-02-28T19:20:34.425843+00:00",
   "items": [
     {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8790,
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8800,
       "PriceFloor": 9012.0,
       "BuyLimit": 18000,
-      "pctROI": 1.5
+      "pctROI": 1.39
     },
     {
       "ItemName": "Fire battlestaff",
@@ -14,6 +14,13 @@
       "PriceFloor": 9012.0,
       "BuyLimit": 18000,
       "pctROI": 1.39
+    },
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8812,
+      "PriceFloor": 9012.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.25
     },
     {
       "ItemName": "Magic longbow",
@@ -30,13 +37,6 @@
       "pctROI": 1.14
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8822,
-      "PriceFloor": 9012.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.13
-    },
-    {
       "ItemName": "Onyx bolts (e)",
       "LowPrice": 8475,
       "PriceFloor": 8715.0,
@@ -45,10 +45,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 450,
+      "LowPrice": 440,
       "PriceFloor": 607.0,
       "BuyLimit": 10000,
-      "pctROI": 33.56
+      "pctROI": 36.59
     },
     {
       "ItemName": "Camphor repair kit",
@@ -65,13 +65,6 @@
       "pctROI": 16.88
     },
     {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 820,
-      "PriceFloor": 964.0,
-      "BuyLimit": 10000,
-      "pctROI": 16.46
-    },
-    {
       "ItemName": "Mahogany repair kit",
       "LowPrice": 1175,
       "PriceFloor": 1290.0,
@@ -79,11 +72,11 @@
       "pctROI": 8.77
     },
     {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1996,
-      "PriceFloor": 2077.0,
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 825,
+      "PriceFloor": 964.0,
       "BuyLimit": 10000,
-      "pctROI": 3.06
+      "pctROI": 15.76
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -98,6 +91,13 @@
       "PriceFloor": 708.0,
       "BuyLimit": 10000,
       "pctROI": 4.94
+    },
+    {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 2027,
+      "PriceFloor": 2077.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.48
     }
   ],
   "methodology": "VeryGranular"
