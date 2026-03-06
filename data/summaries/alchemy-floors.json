@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-06T06:35:35.515742+00:00",
+  "updated": "2026-03-06T06:40:32.629525+00:00",
   "items": [
     {
       "ItemName": "Water battlestaff",
@@ -9,18 +9,18 @@
       "pctROI": 1.94
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8776,
-      "PriceFloor": 9010.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.64
-    },
-    {
       "ItemName": "Magic longbow",
       "LowPrice": 1170,
       "PriceFloor": 1324.0,
       "BuyLimit": 18000,
       "pctROI": 12.05
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8785,
+      "PriceFloor": 9010.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.54
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -45,10 +45,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 441,
+      "LowPrice": 445,
       "PriceFloor": 605.0,
       "BuyLimit": 10000,
-      "pctROI": 35.83
+      "pctROI": 34.61
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -56,20 +56,6 @@
       "PriceFloor": 962.0,
       "BuyLimit": 10000,
       "pctROI": 19.13
-    },
-    {
-      "ItemName": "Ironwood repair kit",
-      "LowPrice": 2058,
-      "PriceFloor": 2179.0,
-      "BuyLimit": 13000,
-      "pctROI": 4.86
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1220,
-      "PriceFloor": 1288.0,
-      "BuyLimit": 13000,
-      "pctROI": 4.59
     },
     {
       "ItemName": "Diamond bracelet",
@@ -84,6 +70,13 @@
       "PriceFloor": 706.0,
       "BuyLimit": 10000,
       "pctROI": 6.72
+    },
+    {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1250,
+      "PriceFloor": 1288.0,
+      "BuyLimit": 13000,
+      "pctROI": 2.08
     }
   ],
   "methodology": "VeryGranular"
