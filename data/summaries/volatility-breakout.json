@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-06T14:35:37.512094+00:00",
+  "updated": "2026-03-06T14:40:53.137635+00:00",
   "items": [
     {
       "ItemName": "Opal necklace",
@@ -12,6 +12,19 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 704000.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Uncooked apple pie",
+      "CurrentPrice": 405,
+      "BuyLimit": 13000,
+      "DailyRange": 1,
+      "WeeklyRange": 81,
+      "MonthlyRange": 103,
+      "CompressionRatio": 1.23,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 526500.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -197,19 +210,6 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Raw marlin",
-      "CurrentPrice": 7458,
-      "BuyLimit": 15000,
-      "DailyRange": 99,
-      "WeeklyRange": 556,
-      "MonthlyRange": 1352,
-      "CompressionRatio": 17.81,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 11187000.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
       "ItemName": "Teleport to house (tablet)",
       "CurrentPrice": 909,
       "BuyLimit": 15000,
@@ -223,29 +223,16 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Grimy avantoe",
-      "CurrentPrice": 1949,
-      "BuyLimit": 13000,
-      "DailyRange": 60,
-      "WeeklyRange": 297,
-      "MonthlyRange": 616,
-      "CompressionRatio": 20.2,
+      "ItemName": "Raw marlin",
+      "CurrentPrice": 7458,
+      "BuyLimit": 15000,
+      "DailyRange": 105,
+      "WeeklyRange": 556,
+      "MonthlyRange": 1352,
+      "CompressionRatio": 18.88,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 2533700.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
-      "ItemName": "Ring of wealth",
-      "CurrentPrice": 11611,
-      "BuyLimit": 10000,
-      "DailyRange": 97,
-      "WeeklyRange": 475,
-      "MonthlyRange": 643,
-      "CompressionRatio": 20.42,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 11611000.0,
+      "PotentialBreakoutProfit": 11187000.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -314,6 +301,19 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
+      "ItemName": "Hard leather",
+      "CurrentPrice": 192,
+      "BuyLimit": 13000,
+      "DailyRange": 14,
+      "WeeklyRange": 63,
+      "MonthlyRange": 85,
+      "CompressionRatio": 22.22,
+      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 249600.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
       "ItemName": "Magic potion(4)",
       "CurrentPrice": 170,
       "BuyLimit": 2000,
@@ -327,6 +327,19 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
+      "ItemName": "Grimy avantoe",
+      "CurrentPrice": 1931,
+      "BuyLimit": 13000,
+      "DailyRange": 68,
+      "WeeklyRange": 297,
+      "MonthlyRange": 616,
+      "CompressionRatio": 22.9,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 2510300.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
       "ItemName": "Topaz bracelet",
       "CurrentPrice": 3158,
       "BuyLimit": 10000,
@@ -337,19 +350,6 @@
       "BreakoutDirection": "UPPER_BIAS",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 3158000.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
-      "ItemName": "Hard leather",
-      "CurrentPrice": 192,
-      "BuyLimit": 13000,
-      "DailyRange": 16,
-      "WeeklyRange": 63,
-      "MonthlyRange": 85,
-      "CompressionRatio": 25.4,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 249600.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -444,8 +444,21 @@
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
+      "ItemName": "Green dragon leather",
+      "CurrentPrice": 1805,
+      "BuyLimit": 13000,
+      "DailyRange": 74,
+      "WeeklyRange": 229,
+      "MonthlyRange": 553,
+      "CompressionRatio": 32.31,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 2346500.0,
+      "CompressionLevel": "MODERATE_COMPRESSION"
+    },
+    {
       "ItemName": "Dragon arrowtips",
-      "CurrentPrice": 2888,
+      "CurrentPrice": 2902,
       "BuyLimit": 10000,
       "DailyRange": 144,
       "WeeklyRange": 438,
@@ -453,20 +466,7 @@
       "CompressionRatio": 32.88,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 2888000.0,
-      "CompressionLevel": "MODERATE_COMPRESSION"
-    },
-    {
-      "ItemName": "Green dragon leather",
-      "CurrentPrice": 1805,
-      "BuyLimit": 13000,
-      "DailyRange": 76,
-      "WeeklyRange": 229,
-      "MonthlyRange": 553,
-      "CompressionRatio": 33.19,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 2346500.0,
+      "PotentialBreakoutProfit": 2902000.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -496,19 +496,6 @@
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
-      "ItemName": "Cooked chicken",
-      "CurrentPrice": 62,
-      "BuyLimit": 6000,
-      "DailyRange": 12,
-      "WeeklyRange": 34,
-      "MonthlyRange": 65,
-      "CompressionRatio": 35.29,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 37200.0,
-      "CompressionLevel": "MODERATE_COMPRESSION"
-    },
-    {
       "ItemName": "Potato with butter",
       "CurrentPrice": 415,
       "BuyLimit": 13000,
@@ -519,6 +506,19 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 539500.0,
+      "CompressionLevel": "MODERATE_COMPRESSION"
+    },
+    {
+      "ItemName": "Hunter potion(4)",
+      "CurrentPrice": 550,
+      "BuyLimit": 2000,
+      "DailyRange": 165,
+      "WeeklyRange": 464,
+      "MonthlyRange": 772,
+      "CompressionRatio": 35.56,
+      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 110000.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -588,15 +588,28 @@
     },
     {
       "ItemName": "Dragon arrow",
-      "CurrentPrice": 2790,
+      "CurrentPrice": 2802,
       "BuyLimit": 11000,
       "DailyRange": 185,
       "WeeklyRange": 480,
       "MonthlyRange": 574,
       "CompressionRatio": 38.54,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 3069000.0,
+      "PotentialBreakoutProfit": 3082200.0,
+      "CompressionLevel": "MODERATE_COMPRESSION"
+    },
+    {
+      "ItemName": "Demonic tallow",
+      "CurrentPrice": 250,
+      "BuyLimit": 11000,
+      "DailyRange": 12,
+      "WeeklyRange": 31,
+      "MonthlyRange": 74,
+      "CompressionRatio": 38.71,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 275000.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -626,29 +639,16 @@
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
-      "ItemName": "Nihil shard",
-      "CurrentPrice": 5971,
-      "BuyLimit": 30000,
-      "DailyRange": 500,
-      "WeeklyRange": 1275,
-      "MonthlyRange": 1676,
-      "CompressionRatio": 39.22,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 17913000.0,
-      "CompressionLevel": "MODERATE_COMPRESSION"
-    },
-    {
-      "ItemName": "Chocolate cake",
-      "CurrentPrice": 400,
-      "BuyLimit": 6000,
-      "DailyRange": 132,
-      "WeeklyRange": 335,
-      "MonthlyRange": 335,
-      "CompressionRatio": 39.4,
+      "ItemName": "Anglerfish",
+      "CurrentPrice": 2005,
+      "BuyLimit": 10000,
+      "DailyRange": 80,
+      "WeeklyRange": 205,
+      "MonthlyRange": 446,
+      "CompressionRatio": 39.02,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 240000.0,
+      "PotentialBreakoutProfit": 2005000.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     }
   ],
