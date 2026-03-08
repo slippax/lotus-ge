@@ -1,6 +1,13 @@
 {
-  "updated": "2026-03-08T00:00:40.378039+00:00",
+  "updated": "2026-03-08T00:05:31.047516+00:00",
   "items": [
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8625,
+      "PriceFloor": 9009.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.41
+    },
     {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8720,
@@ -14,13 +21,6 @@
       "PriceFloor": 9009.0,
       "BuyLimit": 18000,
       "pctROI": 1.66
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8782,
-      "PriceFloor": 9009.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.56
     },
     {
       "ItemName": "Earth battlestaff",
@@ -37,6 +37,13 @@
       "pctROI": 9.62
     },
     {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8470,
+      "PriceFloor": 8712.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.83
+    },
+    {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1735,
       "PriceFloor": 1881.0,
@@ -44,25 +51,18 @@
       "pctROI": 7.38
     },
     {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8482,
-      "PriceFloor": 8712.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.69
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 447,
+      "PriceFloor": 604.0,
+      "BuyLimit": 10000,
+      "pctROI": 33.78
     },
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 473,
+      "LowPrice": 475,
       "PriceFloor": 563.0,
       "BuyLimit": 18000,
-      "pctROI": 17.97
-    },
-    {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 446,
-      "PriceFloor": 604.0,
-      "BuyLimit": 10000,
-      "pctROI": 34.08
+      "pctROI": 17.47
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -70,6 +70,13 @@
       "PriceFloor": 961.0,
       "BuyLimit": 10000,
       "pctROI": 18.41
+    },
+    {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1175,
+      "PriceFloor": 1287.0,
+      "BuyLimit": 13000,
+      "pctROI": 8.51
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -84,13 +91,6 @@
       "PriceFloor": 2074.0,
       "BuyLimit": 10000,
       "pctROI": 3.58
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1225,
-      "PriceFloor": 1287.0,
-      "BuyLimit": 13000,
-      "pctROI": 4.08
     }
   ],
   "methodology": "VeryGranular"
