@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-08T01:20:33.632918+00:00",
+  "updated": "2026-03-08T01:25:30.702906+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -9,6 +9,13 @@
       "pctROI": 2.77
     },
     {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8701,
+      "PriceFloor": 9009.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.51
+    },
+    {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8720,
       "PriceFloor": 9009.0,
@@ -16,18 +23,11 @@
       "pctROI": 2.28
     },
     {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8751,
-      "PriceFloor": 9009.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.92
-    },
-    {
       "ItemName": "Air battlestaff",
-      "LowPrice": 8782,
+      "LowPrice": 8765,
       "PriceFloor": 9009.0,
       "BuyLimit": 18000,
-      "pctROI": 1.56
+      "pctROI": 1.76
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -45,10 +45,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 431,
+      "LowPrice": 430,
       "PriceFloor": 604.0,
       "BuyLimit": 10000,
-      "pctROI": 38.75
+      "pctROI": 39.07
     },
     {
       "ItemName": "Yew longbow",
@@ -72,18 +72,18 @@
       "pctROI": 8.42
     },
     {
-      "ItemName": "Ironwood repair kit",
-      "LowPrice": 2073,
-      "PriceFloor": 2178.0,
-      "BuyLimit": 13000,
-      "pctROI": 4.05
-    },
-    {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1799,
       "PriceFloor": 1881.0,
       "BuyLimit": 13000,
       "pctROI": 3.56
+    },
+    {
+      "ItemName": "Ironwood repair kit",
+      "LowPrice": 2120,
+      "PriceFloor": 2178.0,
+      "BuyLimit": 13000,
+      "pctROI": 1.75
     }
   ],
   "methodology": "VeryGranular"
