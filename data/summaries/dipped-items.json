@@ -1,6 +1,13 @@
 {
-  "updated": "2026-03-08T00:40:36.669375+00:00",
+  "updated": "2026-03-08T00:45:34.564904+00:00",
   "items": [
+    {
+      "ItemName": "Old school bond",
+      "LowPrice": 12000123,
+      "AvgLow": 12332980,
+      "BuyLimit": 100,
+      "pctROI": 1.75
+    },
     {
       "ItemName": "Lumberyard teleport",
       "LowPrice": 5200,
@@ -51,13 +58,6 @@
       "pctROI": 1200.0
     },
     {
-      "ItemName": "Yew seed",
-      "LowPrice": 25600,
-      "AvgLow": 27846,
-      "BuyLimit": 200,
-      "pctROI": 7.69
-    },
-    {
       "ItemName": "Gold amulet (u)",
       "LowPrice": 121,
       "AvgLow": 137,
@@ -72,18 +72,18 @@
       "pctROI": 7.04
     },
     {
-      "ItemName": "Amethyst bolt tips",
-      "LowPrice": 152,
-      "AvgLow": 173,
-      "BuyLimit": 11000,
-      "pctROI": 13.16
-    },
-    {
       "ItemName": "Black d'hide chaps (t)",
       "LowPrice": 7000,
       "AvgLow": 31697,
       "BuyLimit": 8,
       "pctROI": 348.3
+    },
+    {
+      "ItemName": "Logs",
+      "LowPrice": 10,
+      "AvgLow": 23,
+      "BuyLimit": 15000,
+      "pctROI": 130.0
     },
     {
       "ItemName": "Saradomin kiteshield",
@@ -98,13 +98,6 @@
       "AvgLow": 30242,
       "BuyLimit": 8,
       "pctROI": 89.35
-    },
-    {
-      "ItemName": "Saradomin platelegs",
-      "LowPrice": 25300,
-      "AvgLow": 39815,
-      "BuyLimit": 8,
-      "pctROI": 55.8
     }
   ],
   "methodology": "VeryGranular"
