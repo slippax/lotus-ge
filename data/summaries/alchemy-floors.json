@@ -1,13 +1,6 @@
 {
-  "updated": "2026-03-09T18:00:44.199391+00:00",
+  "updated": "2026-03-09T18:05:35.590355+00:00",
   "items": [
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8702,
-      "PriceFloor": 9007.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.47
-    },
     {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8731,
@@ -16,11 +9,18 @@
       "pctROI": 2.13
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8762,
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8750,
       "PriceFloor": 9007.0,
       "BuyLimit": 18000,
-      "pctROI": 1.77
+      "pctROI": 1.91
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8768,
+      "PriceFloor": 9007.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.7
     },
     {
       "ItemName": "Water battlestaff",
@@ -31,17 +31,10 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1200,
+      "LowPrice": 1197,
       "PriceFloor": 1321.0,
       "BuyLimit": 18000,
-      "pctROI": 9.0
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1133,
-      "PriceFloor": 1285.0,
-      "BuyLimit": 13000,
-      "pctROI": 12.36
+      "pctROI": 9.27
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -58,6 +51,13 @@
       "pctROI": 34.54
     },
     {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 805,
+      "PriceFloor": 959.0,
+      "BuyLimit": 10000,
+      "pctROI": 18.01
+    },
+    {
       "ItemName": "Yew longbow",
       "LowPrice": 477,
       "PriceFloor": 561.0,
@@ -65,11 +65,11 @@
       "pctROI": 16.56
     },
     {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 810,
-      "PriceFloor": 959.0,
-      "BuyLimit": 10000,
-      "pctROI": 17.28
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1185,
+      "PriceFloor": 1285.0,
+      "BuyLimit": 13000,
+      "pctROI": 7.43
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -87,10 +87,10 @@
     },
     {
       "ItemName": "Amethyst javelin tips",
-      "LowPrice": 656,
+      "LowPrice": 657,
       "PriceFloor": 703.0,
       "BuyLimit": 10000,
-      "pctROI": 6.1
+      "pctROI": 5.94
     }
   ],
   "methodology": "VeryGranular"
