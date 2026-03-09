@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-09T19:55:35.847770+00:00",
+  "updated": "2026-03-09T20:00:42.658991+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -10,6 +10,13 @@
     },
     {
       "ItemName": "Water battlestaff",
+      "LowPrice": 8733,
+      "PriceFloor": 9007.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.11
+    },
+    {
+      "ItemName": "Air battlestaff",
       "LowPrice": 8769,
       "PriceFloor": 9007.0,
       "BuyLimit": 18000,
@@ -31,10 +38,10 @@
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8459,
+      "LowPrice": 8458,
       "PriceFloor": 8710.0,
       "BuyLimit": 11000,
-      "pctROI": 1.94
+      "pctROI": 1.95
     },
     {
       "ItemName": "Camphor repair kit",
@@ -45,10 +52,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 441,
+      "LowPrice": 440,
       "PriceFloor": 602.0,
       "BuyLimit": 10000,
-      "pctROI": 35.15
+      "pctROI": 35.45
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -86,18 +93,11 @@
       "pctROI": 3.48
     },
     {
-      "ItemName": "Dragon javelin",
-      "LowPrice": 10,
-      "PriceFloor": 68.0,
-      "BuyLimit": 11000,
-      "pctROI": 580.0
-    },
-    {
       "ItemName": "Amethyst javelin tips",
-      "LowPrice": 663,
+      "LowPrice": 665,
       "PriceFloor": 703.0,
       "BuyLimit": 10000,
-      "pctROI": 4.98
+      "pctROI": 4.66
     }
   ],
   "methodology": "VeryGranular"
