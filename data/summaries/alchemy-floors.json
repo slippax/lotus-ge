@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-12T03:35:33.154955+00:00",
+  "updated": "2026-03-12T03:40:51.919116+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -7,13 +7,6 @@
       "PriceFloor": 9007.0,
       "BuyLimit": 18000,
       "pctROI": 2.93
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8701,
-      "PriceFloor": 9007.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.48
     },
     {
       "ItemName": "Fire battlestaff",
@@ -30,6 +23,13 @@
       "pctROI": 1.62
     },
     {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8782,
+      "PriceFloor": 9007.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.54
+    },
+    {
       "ItemName": "Magic longbow",
       "LowPrice": 1185,
       "PriceFloor": 1321.0,
@@ -38,24 +38,10 @@
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8465,
+      "LowPrice": 8450,
       "PriceFloor": 8710.0,
       "BuyLimit": 11000,
-      "pctROI": 1.87
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1160,
-      "PriceFloor": 1285.0,
-      "BuyLimit": 13000,
-      "pctROI": 9.74
-    },
-    {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 451,
-      "PriceFloor": 602.0,
-      "BuyLimit": 10000,
-      "pctROI": 32.15
+      "pctROI": 2.05
     },
     {
       "ItemName": "Camphor repair kit",
@@ -65,11 +51,25 @@
       "pctROI": 6.34
     },
     {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1162,
+      "PriceFloor": 1285.0,
+      "BuyLimit": 13000,
+      "pctROI": 9.55
+    },
+    {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 455,
+      "PriceFloor": 602.0,
+      "BuyLimit": 10000,
+      "pctROI": 30.99
+    },
+    {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 807,
+      "LowPrice": 811,
       "PriceFloor": 959.0,
       "BuyLimit": 10000,
-      "pctROI": 17.72
+      "pctROI": 17.14
     },
     {
       "ItemName": "Yew longbow",
@@ -84,13 +84,6 @@
       "PriceFloor": 703.0,
       "BuyLimit": 10000,
       "pctROI": 10.13
-    },
-    {
-      "ItemName": "Ironwood repair kit",
-      "LowPrice": 2133,
-      "PriceFloor": 2176.0,
-      "BuyLimit": 13000,
-      "pctROI": 1.03
     }
   ],
   "methodology": "VeryGranular"
