@@ -1,19 +1,12 @@
 {
-  "updated": "2026-03-14T07:00:35.898783+00:00",
+  "updated": "2026-03-14T07:05:32.673181+00:00",
   "items": [
     {
       "ItemName": "Water battlestaff",
-      "LowPrice": 8711,
+      "LowPrice": 8710,
       "PriceFloor": 9006.0,
       "BuyLimit": 18000,
-      "pctROI": 2.35
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8778,
-      "PriceFloor": 9006.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.57
+      "pctROI": 2.37
     },
     {
       "ItemName": "Earth battlestaff",
@@ -28,6 +21,13 @@
       "PriceFloor": 1320.0,
       "BuyLimit": 18000,
       "pctROI": 10.48
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8793,
+      "PriceFloor": 9006.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.4
     },
     {
       "ItemName": "Fire battlestaff",
@@ -72,6 +72,13 @@
       "pctROI": 14.43
     },
     {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1950,
+      "PriceFloor": 2071.0,
+      "BuyLimit": 10000,
+      "pctROI": 5.18
+    },
+    {
       "ItemName": "Ironwood repair kit",
       "LowPrice": 2100,
       "PriceFloor": 2175.0,
@@ -84,13 +91,6 @@
       "PriceFloor": 702.0,
       "BuyLimit": 10000,
       "pctROI": 10.32
-    },
-    {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1989,
-      "PriceFloor": 2071.0,
-      "BuyLimit": 10000,
-      "pctROI": 3.12
     }
   ],
   "methodology": "VeryGranular"
