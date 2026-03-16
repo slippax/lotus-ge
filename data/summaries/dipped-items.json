@@ -1,6 +1,13 @@
 {
-  "updated": "2026-03-16T00:10:34.750491+00:00",
+  "updated": "2026-03-16T00:15:39.165636+00:00",
   "items": [
+    {
+      "ItemName": "Iorwerth camp teleport",
+      "LowPrice": 200,
+      "AvgLow": 2127,
+      "BuyLimit": 10000,
+      "pctROI": 953.0
+    },
     {
       "ItemName": "Gilded med helm",
       "LowPrice": 1201000,
@@ -23,18 +30,11 @@
       "pctROI": 6.29
     },
     {
-      "ItemName": "Grimy dwarf weed",
-      "LowPrice": 1631,
-      "AvgLow": 1749,
-      "BuyLimit": 11000,
-      "pctROI": 6.19
-    },
-    {
       "ItemName": "Archer helm",
-      "LowPrice": 32000,
+      "LowPrice": 32001,
       "AvgLow": 38447,
       "BuyLimit": 70,
-      "pctROI": 18.95
+      "pctROI": 18.94
     },
     {
       "ItemName": "Extended anti-venom+(3)",
@@ -58,20 +58,6 @@
       "pctROI": 18.13
     },
     {
-      "ItemName": "Diamond ring",
-      "LowPrice": 1833,
-      "AvgLow": 1870,
-      "BuyLimit": 10000,
-      "pctROI": 1.04
-    },
-    {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 1108,
-      "AvgLow": 1129,
-      "BuyLimit": 18000,
-      "pctROI": 0.9
-    },
-    {
       "ItemName": "Sapphire ring",
       "LowPrice": 440,
       "AvgLow": 459,
@@ -80,10 +66,24 @@
     },
     {
       "ItemName": "Steam rune",
-      "LowPrice": 81,
+      "LowPrice": 80,
       "AvgLow": 88,
       "BuyLimit": 18000,
-      "pctROI": 8.64
+      "pctROI": 10.0
+    },
+    {
+      "ItemName": "Adamant chainbody",
+      "LowPrice": 1500,
+      "AvgLow": 2550,
+      "BuyLimit": 125,
+      "pctROI": 68.33
+    },
+    {
+      "ItemName": "Bandos d'hide boots",
+      "LowPrice": 221172,
+      "AvgLow": 239211,
+      "BuyLimit": 8,
+      "pctROI": 7.07
     },
     {
       "ItemName": "Mithril gold-trimmed set (lg)",
@@ -105,13 +105,6 @@
       "AvgLow": 73310,
       "BuyLimit": 15,
       "pctROI": 10.46
-    },
-    {
-      "ItemName": "Bandos d'hide boots",
-      "LowPrice": 224134,
-      "AvgLow": 239211,
-      "BuyLimit": 8,
-      "pctROI": 5.66
     }
   ],
   "methodology": "VeryGranular"
