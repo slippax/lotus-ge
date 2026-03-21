@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-21T06:50:32.804372+00:00",
+  "updated": "2026-03-21T06:55:32.135442+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -37,6 +37,13 @@
       "pctROI": 27.41
     },
     {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1182,
+      "PriceFloor": 1284.0,
+      "BuyLimit": 13000,
+      "pctROI": 7.61
+    },
+    {
       "ItemName": "Yew longbow",
       "LowPrice": 515,
       "PriceFloor": 560.0,
@@ -44,18 +51,18 @@
       "pctROI": 7.77
     },
     {
-      "ItemName": "Amethyst javelin tips",
-      "LowPrice": 649,
-      "PriceFloor": 702.0,
-      "BuyLimit": 10000,
-      "pctROI": 7.09
-    },
-    {
       "ItemName": "Ironwood repair kit",
-      "LowPrice": 2125,
+      "LowPrice": 2121,
       "PriceFloor": 2175.0,
       "BuyLimit": 13000,
-      "pctROI": 1.36
+      "pctROI": 1.56
+    },
+    {
+      "ItemName": "Amethyst javelin tips",
+      "LowPrice": 655,
+      "PriceFloor": 702.0,
+      "BuyLimit": 10000,
+      "pctROI": 6.11
     },
     {
       "ItemName": "Diamond amulet (u)",
@@ -63,13 +70,6 @@
       "PriceFloor": 1893.0,
       "BuyLimit": 10000,
       "pctROI": 1.9
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1250,
-      "PriceFloor": 1284.0,
-      "BuyLimit": 13000,
-      "pctROI": 1.76
     }
   ],
   "methodology": "VeryGranular"
