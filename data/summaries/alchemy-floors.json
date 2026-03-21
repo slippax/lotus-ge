@@ -1,12 +1,19 @@
 {
-  "updated": "2026-03-21T13:15:36.400393+00:00",
+  "updated": "2026-03-21T13:20:36.467343+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1179,
+      "LowPrice": 1180,
       "PriceFloor": 1319.0,
       "BuyLimit": 18000,
-      "pctROI": 10.77
+      "pctROI": 10.68
+    },
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8800,
+      "PriceFloor": 9005.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.31
     },
     {
       "ItemName": "Camphor repair kit",
@@ -16,6 +23,13 @@
       "pctROI": 9.35
     },
     {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8805,
+      "PriceFloor": 9005.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.25
+    },
+    {
       "ItemName": "Dragon javelin tips",
       "LowPrice": 799,
       "PriceFloor": 957.0,
@@ -23,18 +37,25 @@
       "pctROI": 18.65
     },
     {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1911,
-      "PriceFloor": 2071.0,
-      "BuyLimit": 10000,
-      "pctROI": 7.33
-    },
-    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 455,
+      "LowPrice": 463,
       "PriceFloor": 600.0,
       "BuyLimit": 10000,
-      "pctROI": 30.55
+      "pctROI": 28.29
+    },
+    {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1183,
+      "PriceFloor": 1283.0,
+      "BuyLimit": 13000,
+      "pctROI": 7.44
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8535,
+      "PriceFloor": 8708.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.01
     },
     {
       "ItemName": "Yew longbow",
@@ -51,11 +72,18 @@
       "pctROI": 2.77
     },
     {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1213,
-      "PriceFloor": 1283.0,
-      "BuyLimit": 13000,
-      "pctROI": 4.78
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1989,
+      "PriceFloor": 2071.0,
+      "BuyLimit": 10000,
+      "pctROI": 3.12
+    },
+    {
+      "ItemName": "Amethyst javelin tips",
+      "LowPrice": 655,
+      "PriceFloor": 701.0,
+      "BuyLimit": 10000,
+      "pctROI": 5.95
     },
     {
       "ItemName": "Jade bracelet",
@@ -70,13 +98,6 @@
       "PriceFloor": 1892.0,
       "BuyLimit": 10000,
       "pctROI": 1.74
-    },
-    {
-      "ItemName": "Amethyst javelin tips",
-      "LowPrice": 666,
-      "PriceFloor": 701.0,
-      "BuyLimit": 10000,
-      "pctROI": 4.2
     }
   ],
   "methodology": "VeryGranular"
