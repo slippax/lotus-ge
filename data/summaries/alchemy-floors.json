@@ -1,12 +1,19 @@
 {
-  "updated": "2026-03-21T03:20:38.202961+00:00",
+  "updated": "2026-03-21T03:25:32.883027+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1175,
+      "LowPrice": 1170,
       "PriceFloor": 1320.0,
       "BuyLimit": 18000,
-      "pctROI": 11.23
+      "pctROI": 11.71
+    },
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8790,
+      "PriceFloor": 9006.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.43
     },
     {
       "ItemName": "Camphor repair kit",
@@ -24,24 +31,17 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 788,
+      "LowPrice": 786,
       "PriceFloor": 958.0,
       "BuyLimit": 10000,
-      "pctROI": 20.43
-    },
-    {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1910,
-      "PriceFloor": 2071.0,
-      "BuyLimit": 10000,
-      "pctROI": 7.38
+      "pctROI": 20.74
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 470,
+      "LowPrice": 449,
       "PriceFloor": 601.0,
       "BuyLimit": 10000,
-      "pctROI": 26.6
+      "pctROI": 32.52
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -49,6 +49,13 @@
       "PriceFloor": 1284.0,
       "BuyLimit": 13000,
       "pctROI": 8.16
+    },
+    {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1950,
+      "PriceFloor": 2071.0,
+      "BuyLimit": 10000,
+      "pctROI": 5.18
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -65,18 +72,18 @@
       "pctROI": 6.73
     },
     {
-      "ItemName": "Amethyst javelin tips",
-      "LowPrice": 651,
-      "PriceFloor": 702.0,
-      "BuyLimit": 10000,
-      "pctROI": 6.76
-    },
-    {
       "ItemName": "Ironwood repair kit",
       "LowPrice": 2126,
       "PriceFloor": 2175.0,
       "BuyLimit": 13000,
       "pctROI": 1.32
+    },
+    {
+      "ItemName": "Amethyst javelin tips",
+      "LowPrice": 679,
+      "PriceFloor": 702.0,
+      "BuyLimit": 10000,
+      "pctROI": 2.36
     }
   ],
   "methodology": "VeryGranular"
