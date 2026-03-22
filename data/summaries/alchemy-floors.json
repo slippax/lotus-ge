@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-22T14:55:34.471218+00:00",
+  "updated": "2026-03-22T15:00:39.349248+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -10,6 +10,13 @@
     },
     {
       "ItemName": "Earth battlestaff",
+      "LowPrice": 8783,
+      "PriceFloor": 9005.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.5
+    },
+    {
+      "ItemName": "Water battlestaff",
       "LowPrice": 8800,
       "PriceFloor": 9005.0,
       "BuyLimit": 18000,
@@ -21,13 +28,6 @@
       "PriceFloor": 9005.0,
       "BuyLimit": 18000,
       "pctROI": 1.28
-    },
-    {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8811,
-      "PriceFloor": 9005.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.18
     },
     {
       "ItemName": "Fire battlestaff",
@@ -52,10 +52,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 474,
+      "LowPrice": 465,
       "PriceFloor": 600.0,
       "BuyLimit": 10000,
-      "pctROI": 25.32
+      "pctROI": 27.74
     },
     {
       "ItemName": "Mahogany repair kit",
