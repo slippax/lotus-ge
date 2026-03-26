@@ -1,6 +1,13 @@
 {
-  "updated": "2026-03-26T16:05:38.192805+00:00",
+  "updated": "2026-03-26T16:10:39.166019+00:00",
   "items": [
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8787,
+      "PriceFloor": 9005.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.46
+    },
     {
       "ItemName": "Magic longbow",
       "LowPrice": 1190,
@@ -16,25 +23,18 @@
       "pctROI": 9.03
     },
     {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8455,
-      "PriceFloor": 8708.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.96
-    },
-    {
       "ItemName": "Ironwood repair kit",
-      "LowPrice": 2013,
+      "LowPrice": 2000,
       "PriceFloor": 2174.0,
       "BuyLimit": 13000,
-      "pctROI": 6.95
+      "pctROI": 7.65
     },
     {
       "ItemName": "Earth battlestaff",
-      "LowPrice": 8815,
+      "LowPrice": 8820,
       "PriceFloor": 9005.0,
       "BuyLimit": 18000,
-      "pctROI": 1.13
+      "pctROI": 1.08
     },
     {
       "ItemName": "Combat bracelet",
@@ -65,11 +65,25 @@
       "pctROI": 7.1
     },
     {
+      "ItemName": "Binding necklace",
+      "LowPrice": 512,
+      "PriceFloor": 645.0,
+      "BuyLimit": 10000,
+      "pctROI": 24.8
+    },
+    {
       "ItemName": "Rune javelin tips",
       "LowPrice": 468,
       "PriceFloor": 600.0,
       "BuyLimit": 10000,
       "pctROI": 26.92
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8530,
+      "PriceFloor": 8708.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.07
     },
     {
       "ItemName": "Yew longbow",
@@ -91,13 +105,6 @@
       "PriceFloor": 701.0,
       "BuyLimit": 10000,
       "pctROI": 3.27
-    },
-    {
-      "ItemName": "Binding necklace",
-      "LowPrice": 621,
-      "PriceFloor": 645.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.9
     }
   ],
   "methodology": "VeryGranular"
