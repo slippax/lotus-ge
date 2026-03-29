@@ -1,6 +1,13 @@
 {
-  "updated": "2026-03-29T16:05:38.362837+00:00",
+  "updated": "2026-03-29T16:10:48.912939+00:00",
   "items": [
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8763,
+      "PriceFloor": 9007.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.76
+    },
     {
       "ItemName": "Magic longbow",
       "LowPrice": 1165,
@@ -17,10 +24,10 @@
     },
     {
       "ItemName": "Combat bracelet",
-      "LowPrice": 12008,
+      "LowPrice": 12000,
       "PriceFloor": 12298.0,
       "BuyLimit": 10000,
-      "pctROI": 1.4
+      "pctROI": 1.47
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -28,13 +35,6 @@
       "PriceFloor": 959.0,
       "BuyLimit": 10000,
       "pctROI": 20.1
-    },
-    {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 453,
-      "PriceFloor": 602.0,
-      "BuyLimit": 10000,
-      "pctROI": 31.57
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -49,6 +49,13 @@
       "PriceFloor": 2072.0,
       "BuyLimit": 10000,
       "pctROI": 7.1
+    },
+    {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 461,
+      "PriceFloor": 602.0,
+      "BuyLimit": 10000,
+      "pctROI": 29.28
     },
     {
       "ItemName": "Yew longbow",
@@ -70,13 +77,6 @@
       "PriceFloor": 703.0,
       "BuyLimit": 10000,
       "pctROI": 6.91
-    },
-    {
-      "ItemName": "Rune cannonball",
-      "LowPrice": 614,
-      "PriceFloor": 632.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.95
     }
   ],
   "methodology": "VeryGranular"
