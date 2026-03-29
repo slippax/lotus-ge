@@ -1,12 +1,19 @@
 {
-  "updated": "2026-03-29T17:25:37.874684+00:00",
+  "updated": "2026-03-29T17:30:33.879962+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1173,
+      "LowPrice": 1176,
       "PriceFloor": 1321.0,
       "BuyLimit": 18000,
-      "pctROI": 11.51
+      "pctROI": 11.22
+    },
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8800,
+      "PriceFloor": 9007.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.33
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -23,18 +30,18 @@
       "pctROI": 1.44
     },
     {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8827,
-      "PriceFloor": 9007.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.02
-    },
-    {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 792,
+      "LowPrice": 812,
       "PriceFloor": 959.0,
       "BuyLimit": 10000,
-      "pctROI": 19.95
+      "pctROI": 17.0
+    },
+    {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 458,
+      "PriceFloor": 602.0,
+      "BuyLimit": 10000,
+      "pctROI": 30.13
     },
     {
       "ItemName": "Diamond bracelet",
@@ -42,13 +49,6 @@
       "PriceFloor": 2072.0,
       "BuyLimit": 10000,
       "pctROI": 7.15
-    },
-    {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 459,
-      "PriceFloor": 602.0,
-      "BuyLimit": 10000,
-      "pctROI": 29.85
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -59,10 +59,10 @@
     },
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 500,
+      "LowPrice": 510,
       "PriceFloor": 561.0,
       "BuyLimit": 18000,
-      "pctROI": 11.2
+      "pctROI": 9.02
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -70,6 +70,13 @@
       "PriceFloor": 703.0,
       "BuyLimit": 10000,
       "pctROI": 6.58
+    },
+    {
+      "ItemName": "Rune cannonball",
+      "LowPrice": 607,
+      "PriceFloor": 632.0,
+      "BuyLimit": 11000,
+      "pctROI": 3.13
     }
   ],
   "methodology": "VeryGranular"
