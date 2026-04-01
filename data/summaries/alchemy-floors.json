@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-01T04:00:42.932692+00:00",
+  "updated": "2026-04-01T04:05:39.551355+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -16,6 +16,13 @@
       "pctROI": 11.79
     },
     {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8800,
+      "PriceFloor": 9007.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.33
+    },
+    {
       "ItemName": "Water battlestaff",
       "LowPrice": 8802,
       "PriceFloor": 9007.0,
@@ -30,13 +37,6 @@
       "pctROI": 2.05
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8816,
-      "PriceFloor": 9007.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.15
-    },
-    {
       "ItemName": "Ironwood repair kit",
       "LowPrice": 2026,
       "PriceFloor": 2176.0,
@@ -45,17 +45,17 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 803,
+      "LowPrice": 802,
       "PriceFloor": 959.0,
       "BuyLimit": 10000,
-      "pctROI": 18.31
+      "pctROI": 18.45
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 451,
+      "LowPrice": 452,
       "PriceFloor": 602.0,
       "BuyLimit": 10000,
-      "pctROI": 32.15
+      "pctROI": 31.86
     },
     {
       "ItemName": "Diamond bracelet",
@@ -84,13 +84,6 @@
       "PriceFloor": 703.0,
       "BuyLimit": 10000,
       "pctROI": 8.41
-    },
-    {
-      "ItemName": "Diamond amulet (u)",
-      "LowPrice": 1856,
-      "PriceFloor": 1894.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.08
     }
   ],
   "methodology": "VeryGranular"
