@@ -1,6 +1,13 @@
 {
-  "updated": "2026-04-02T00:30:44.879252+00:00",
+  "updated": "2026-04-02T00:35:33.550516+00:00",
   "items": [
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8776,
+      "PriceFloor": 9006.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.6
+    },
     {
       "ItemName": "Magic longbow",
       "LowPrice": 1176,
@@ -14,13 +21,6 @@
       "PriceFloor": 9006.0,
       "BuyLimit": 18000,
       "pctROI": 1.41
-    },
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8800,
-      "PriceFloor": 9006.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.32
     },
     {
       "ItemName": "Air battlestaff",
@@ -37,25 +37,11 @@
       "pctROI": 1.03
     },
     {
-      "ItemName": "Dragon thrownaxe",
-      "LowPrice": 100,
-      "PriceFloor": 245.0,
-      "BuyLimit": 11000,
-      "pctROI": 143.0
-    },
-    {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 804,
+      "LowPrice": 803,
       "PriceFloor": 958.0,
       "BuyLimit": 10000,
-      "pctROI": 18.03
-    },
-    {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 456,
-      "PriceFloor": 601.0,
-      "BuyLimit": 10000,
-      "pctROI": 30.48
+      "pctROI": 18.18
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -65,11 +51,18 @@
       "pctROI": 1.44
     },
     {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 461,
+      "PriceFloor": 601.0,
+      "BuyLimit": 10000,
+      "pctROI": 29.07
+    },
+    {
       "ItemName": "Diamond bracelet",
-      "LowPrice": 1918,
+      "LowPrice": 1920,
       "PriceFloor": 2071.0,
       "BuyLimit": 10000,
-      "pctROI": 6.93
+      "pctROI": 6.82
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -86,18 +79,25 @@
       "pctROI": 5.74
     },
     {
+      "ItemName": "Yew longbow",
+      "LowPrice": 518,
+      "PriceFloor": 560.0,
+      "BuyLimit": 18000,
+      "pctROI": 7.14
+    },
+    {
+      "ItemName": "Dragon thrownaxe",
+      "LowPrice": 190,
+      "PriceFloor": 245.0,
+      "BuyLimit": 11000,
+      "pctROI": 27.89
+    },
+    {
       "ItemName": "Amethyst javelin tips",
       "LowPrice": 644,
       "PriceFloor": 702.0,
       "BuyLimit": 10000,
       "pctROI": 7.92
-    },
-    {
-      "ItemName": "Yew longbow",
-      "LowPrice": 530,
-      "PriceFloor": 560.0,
-      "BuyLimit": 18000,
-      "pctROI": 4.72
     }
   ],
   "methodology": "VeryGranular"
