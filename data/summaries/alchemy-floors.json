@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-05T11:50:34.068259+00:00",
+  "updated": "2026-04-05T11:55:34.806262+00:00",
   "items": [
     {
       "ItemName": "Air battlestaff",
@@ -37,18 +37,18 @@
       "pctROI": 1.33
     },
     {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1850,
+      "PriceFloor": 2071.0,
+      "BuyLimit": 10000,
+      "pctROI": 10.86
+    },
+    {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1710,
       "PriceFloor": 1877.0,
       "BuyLimit": 13000,
       "pctROI": 8.71
-    },
-    {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1860,
-      "PriceFloor": 2071.0,
-      "BuyLimit": 10000,
-      "pctROI": 10.27
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -65,11 +65,18 @@
       "pctROI": 17.91
     },
     {
+      "ItemName": "Ironwood repair kit",
+      "LowPrice": 2046,
+      "PriceFloor": 2174.0,
+      "BuyLimit": 13000,
+      "pctROI": 5.23
+    },
+    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 465,
+      "LowPrice": 462,
       "PriceFloor": 600.0,
       "BuyLimit": 10000,
-      "pctROI": 27.74
+      "pctROI": 28.57
     },
     {
       "ItemName": "Yew longbow",
@@ -79,25 +86,18 @@
       "pctROI": 11.24
     },
     {
-      "ItemName": "Ironwood repair kit",
-      "LowPrice": 2082,
-      "PriceFloor": 2174.0,
-      "BuyLimit": 13000,
-      "pctROI": 3.41
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1237,
-      "PriceFloor": 1283.0,
-      "BuyLimit": 13000,
-      "pctROI": 2.75
-    },
-    {
       "ItemName": "Amethyst javelin tips",
       "LowPrice": 660,
       "PriceFloor": 701.0,
       "BuyLimit": 10000,
       "pctROI": 5.15
+    },
+    {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1251,
+      "PriceFloor": 1283.0,
+      "BuyLimit": 13000,
+      "pctROI": 1.6
     }
   ],
   "methodology": "VeryGranular"
