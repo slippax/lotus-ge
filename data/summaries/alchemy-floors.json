@@ -1,12 +1,26 @@
 {
-  "updated": "2026-04-06T09:10:35.203327+00:00",
+  "updated": "2026-04-06T09:15:34.808678+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
-      "LowPrice": 8730,
+      "LowPrice": 8725,
       "PriceFloor": 9004.0,
       "BuyLimit": 18000,
-      "pctROI": 2.11
+      "pctROI": 2.17
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8770,
+      "PriceFloor": 9004.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.64
+    },
+    {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8770,
+      "PriceFloor": 9004.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.64
     },
     {
       "ItemName": "Camphor repair kit",
@@ -31,24 +45,24 @@
     },
     {
       "ItemName": "Diamond bracelet",
-      "LowPrice": 1835,
+      "LowPrice": 1881,
       "PriceFloor": 2070.0,
       "BuyLimit": 10000,
-      "pctROI": 11.72
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8801,
-      "PriceFloor": 9004.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.28
+      "pctROI": 8.98
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 795,
+      "LowPrice": 803,
       "PriceFloor": 956.0,
       "BuyLimit": 10000,
-      "pctROI": 19.12
+      "pctROI": 17.93
+    },
+    {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 457,
+      "PriceFloor": 599.0,
+      "BuyLimit": 10000,
+      "pctROI": 29.98
     },
     {
       "ItemName": "Combat bracelet",
@@ -66,17 +80,10 @@
     },
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 480,
+      "LowPrice": 485,
       "PriceFloor": 558.0,
       "BuyLimit": 18000,
-      "pctROI": 15.21
-    },
-    {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 464,
-      "PriceFloor": 599.0,
-      "BuyLimit": 10000,
-      "pctROI": 28.02
+      "pctROI": 14.02
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -91,6 +98,13 @@
       "PriceFloor": 700.0,
       "BuyLimit": 10000,
       "pctROI": 6.62
+    },
+    {
+      "ItemName": "Phoenix necklace",
+      "LowPrice": 2155,
+      "PriceFloor": 2203.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.21
     }
   ],
   "methodology": "VeryGranular"
