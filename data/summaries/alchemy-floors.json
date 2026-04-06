@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-06T02:10:34.190714+00:00",
+  "updated": "2026-04-06T02:15:36.270317+00:00",
   "items": [
     {
       "ItemName": "Water battlestaff",
@@ -44,11 +44,18 @@
       "pctROI": 1.08
     },
     {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1140,
+      "PriceFloor": 1282.0,
+      "BuyLimit": 13000,
+      "pctROI": 11.4
+    },
+    {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 788,
+      "LowPrice": 786,
       "PriceFloor": 956.0,
       "BuyLimit": 10000,
-      "pctROI": 20.18
+      "pctROI": 20.48
     },
     {
       "ItemName": "Diamond bracelet",
@@ -65,13 +72,6 @@
       "pctROI": 31.13
     },
     {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8495,
-      "PriceFloor": 8707.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.47
-    },
-    {
       "ItemName": "Ironwood repair kit",
       "LowPrice": 2051,
       "PriceFloor": 2173.0,
@@ -86,11 +86,11 @@
       "pctROI": 11.94
     },
     {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1202,
-      "PriceFloor": 1282.0,
-      "BuyLimit": 13000,
-      "pctROI": 5.66
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8525,
+      "PriceFloor": 8707.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.11
     },
     {
       "ItemName": "Phoenix necklace",
@@ -105,6 +105,13 @@
       "PriceFloor": 700.0,
       "BuyLimit": 10000,
       "pctROI": 6.45
+    },
+    {
+      "ItemName": "Diamond ring",
+      "LowPrice": 1840,
+      "PriceFloor": 1891.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.79
     }
   ],
   "methodology": "VeryGranular"
