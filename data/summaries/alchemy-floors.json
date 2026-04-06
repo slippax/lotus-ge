@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-06T22:20:40.223649+00:00",
+  "updated": "2026-04-06T22:25:36.260274+00:00",
   "items": [
     {
       "ItemName": "Air battlestaff",
@@ -7,6 +7,13 @@
       "PriceFloor": 9003.0,
       "BuyLimit": 18000,
       "pctROI": 2.1
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8750,
+      "PriceFloor": 9003.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.86
     },
     {
       "ItemName": "Magic longbow",
@@ -21,13 +28,6 @@
       "PriceFloor": 1875.0,
       "BuyLimit": 13000,
       "pctROI": 10.4
-    },
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8791,
-      "PriceFloor": 9003.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.39
     },
     {
       "ItemName": "Water battlestaff",
@@ -80,10 +80,10 @@
     },
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 502,
+      "LowPrice": 493,
       "PriceFloor": 557.0,
       "BuyLimit": 18000,
-      "pctROI": 9.96
+      "pctROI": 11.97
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -91,13 +91,6 @@
       "PriceFloor": 699.0,
       "BuyLimit": 10000,
       "pctROI": 9.65
-    },
-    {
-      "ItemName": "Diamond amulet (u)",
-      "LowPrice": 1850,
-      "PriceFloor": 1890.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.19
     }
   ],
   "methodology": "VeryGranular"
