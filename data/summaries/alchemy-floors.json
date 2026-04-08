@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-08T18:40:43.253338+00:00",
+  "updated": "2026-04-08T18:45:50.898172+00:00",
   "items": [
     {
       "ItemName": "Air battlestaff",
@@ -10,10 +10,17 @@
     },
     {
       "ItemName": "Earth battlestaff",
-      "LowPrice": 8755,
+      "LowPrice": 8750,
       "PriceFloor": 9003.0,
       "BuyLimit": 18000,
-      "pctROI": 1.8
+      "pctROI": 1.86
+    },
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8765,
+      "PriceFloor": 9003.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.69
     },
     {
       "ItemName": "Camphor repair kit",
@@ -24,17 +31,10 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1185,
+      "LowPrice": 1191,
       "PriceFloor": 1317.0,
       "BuyLimit": 18000,
-      "pctROI": 10.04
-    },
-    {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8815,
-      "PriceFloor": 9003.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.11
+      "pctROI": 9.49
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -45,10 +45,10 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 813,
+      "LowPrice": 803,
       "PriceFloor": 955.0,
       "BuyLimit": 10000,
-      "pctROI": 16.36
+      "pctROI": 17.81
     },
     {
       "ItemName": "Diamond bracelet",
@@ -59,17 +59,17 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 466,
+      "LowPrice": 469,
       "PriceFloor": 598.0,
       "BuyLimit": 10000,
-      "pctROI": 27.25
+      "pctROI": 26.44
     },
     {
       "ItemName": "Mahogany repair kit",
-      "LowPrice": 1192,
+      "LowPrice": 1194,
       "PriceFloor": 1281.0,
       "BuyLimit": 13000,
-      "pctROI": 6.46
+      "pctROI": 6.28
     },
     {
       "ItemName": "Yew longbow",
@@ -91,6 +91,13 @@
       "PriceFloor": 699.0,
       "BuyLimit": 10000,
       "pctROI": 8.79
+    },
+    {
+      "ItemName": "Phoenix necklace",
+      "LowPrice": 2137,
+      "PriceFloor": 2202.0,
+      "BuyLimit": 10000,
+      "pctROI": 2.01
     }
   ],
   "methodology": "VeryGranular"
