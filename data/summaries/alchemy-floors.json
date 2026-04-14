@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-14T23:15:35.817269+00:00",
+  "updated": "2026-04-14T23:20:42.843251+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -16,6 +16,13 @@
       "pctROI": 17.37
     },
     {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8750,
+      "PriceFloor": 9003.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.86
+    },
+    {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8760,
       "PriceFloor": 9003.0,
@@ -23,25 +30,11 @@
       "pctROI": 1.75
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8765,
-      "PriceFloor": 9003.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.69
-    },
-    {
-      "ItemName": "Ironwood repair kit",
-      "LowPrice": 2000,
-      "PriceFloor": 2172.0,
-      "BuyLimit": 13000,
-      "pctROI": 7.55
-    },
-    {
       "ItemName": "Water battlestaff",
-      "LowPrice": 8811,
+      "LowPrice": 8814,
       "PriceFloor": 9003.0,
       "BuyLimit": 18000,
-      "pctROI": 1.16
+      "pctROI": 1.12
     },
     {
       "ItemName": "Diamond bracelet",
@@ -79,6 +72,13 @@
       "pctROI": 7.91
     },
     {
+      "ItemName": "Ironwood repair kit",
+      "LowPrice": 2061,
+      "PriceFloor": 2172.0,
+      "BuyLimit": 13000,
+      "pctROI": 4.37
+    },
+    {
       "ItemName": "Yew longbow",
       "LowPrice": 510,
       "PriceFloor": 557.0,
@@ -87,10 +87,10 @@
     },
     {
       "ItemName": "Amethyst javelin tips",
-      "LowPrice": 641,
+      "LowPrice": 651,
       "PriceFloor": 699.0,
       "BuyLimit": 10000,
-      "pctROI": 8.11
+      "pctROI": 6.45
     }
   ],
   "methodology": "VeryGranular"
