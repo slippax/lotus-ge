@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-15T15:35:51.056970+00:00",
+  "updated": "2026-04-15T15:40:39.025493+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -17,10 +17,10 @@
     },
     {
       "ItemName": "Air battlestaff",
-      "LowPrice": 8820,
+      "LowPrice": 8808,
       "PriceFloor": 9004.0,
       "BuyLimit": 18000,
-      "pctROI": 1.07
+      "pctROI": 1.2
     },
     {
       "ItemName": "Rune javelin tips",
@@ -28,13 +28,6 @@
       "PriceFloor": 599.0,
       "BuyLimit": 10000,
       "pctROI": 34.69
-    },
-    {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8490,
-      "PriceFloor": 8707.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.53
     },
     {
       "ItemName": "Diamond bracelet",
@@ -51,6 +44,13 @@
       "pctROI": 17.06
     },
     {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8500,
+      "PriceFloor": 8707.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.41
+    },
+    {
       "ItemName": "Mahogany repair kit",
       "LowPrice": 1173,
       "PriceFloor": 1282.0,
@@ -65,18 +65,18 @@
       "pctROI": 12.86
     },
     {
-      "ItemName": "Diamond amulet (u)",
-      "LowPrice": 1820,
-      "PriceFloor": 1891.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.91
-    },
-    {
       "ItemName": "Amethyst javelin tips",
       "LowPrice": 641,
       "PriceFloor": 700.0,
       "BuyLimit": 10000,
       "pctROI": 8.11
+    },
+    {
+      "ItemName": "Diamond amulet (u)",
+      "LowPrice": 1850,
+      "PriceFloor": 1891.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.24
     }
   ],
   "methodology": "VeryGranular"
