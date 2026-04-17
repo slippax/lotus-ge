@@ -1,12 +1,19 @@
 {
-  "updated": "2026-04-17T17:10:39.892276+00:00",
+  "updated": "2026-04-17T17:15:37.343102+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1183,
+      "LowPrice": 1185,
       "PriceFloor": 1318.0,
       "BuyLimit": 18000,
-      "pctROI": 10.31
+      "pctROI": 10.13
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8801,
+      "PriceFloor": 9004.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.28
     },
     {
       "ItemName": "Diamond bracelet",
@@ -14,6 +21,13 @@
       "PriceFloor": 2070.0,
       "BuyLimit": 10000,
       "pctROI": 8.58
+    },
+    {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1185,
+      "PriceFloor": 1282.0,
+      "BuyLimit": 13000,
+      "pctROI": 7.17
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -35,13 +49,6 @@
       "PriceFloor": 558.0,
       "BuyLimit": 18000,
       "pctROI": 7.59
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1230,
-      "PriceFloor": 1282.0,
-      "BuyLimit": 13000,
-      "pctROI": 3.25
     }
   ],
   "methodology": "VeryGranular"
