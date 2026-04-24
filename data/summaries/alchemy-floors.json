@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-24T02:20:35.156532+00:00",
+  "updated": "2026-04-24T02:25:34.702268+00:00",
   "items": [
     {
       "ItemName": "Camphor repair kit",
@@ -9,11 +9,18 @@
       "pctROI": 9.51
     },
     {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8810,
+      "PriceFloor": 9000.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.14
+    },
+    {
       "ItemName": "Magic longbow",
-      "LowPrice": 1223,
+      "LowPrice": 1214,
       "PriceFloor": 1313.0,
       "BuyLimit": 18000,
-      "pctROI": 6.3
+      "pctROI": 7.08
     },
     {
       "ItemName": "Rune javelin tips",
@@ -37,13 +44,6 @@
       "pctROI": 4.43
     },
     {
-      "ItemName": "Yew longbow",
-      "LowPrice": 526,
-      "PriceFloor": 553.0,
-      "BuyLimit": 18000,
-      "pctROI": 4.18
-    },
-    {
       "ItemName": "Amethyst javelin tips",
       "LowPrice": 659,
       "PriceFloor": 695.0,
@@ -56,6 +56,13 @@
       "PriceFloor": 1278.0,
       "BuyLimit": 13000,
       "pctROI": 1.28
+    },
+    {
+      "ItemName": "Yew longbow",
+      "LowPrice": 542,
+      "PriceFloor": 553.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.11
     }
   ],
   "methodology": "VeryGranular"
