@@ -1,8 +1,15 @@
 {
-  "updated": "2026-04-29T19:10:36.930041+00:00",
+  "updated": "2026-04-29T19:15:44.742649+00:00",
   "items": [
     {
       "ItemName": "Air battlestaff",
+      "LowPrice": 8800,
+      "PriceFloor": 8992.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.17
+    },
+    {
+      "ItemName": "Water battlestaff",
       "LowPrice": 8800,
       "PriceFloor": 8992.0,
       "BuyLimit": 18000,
@@ -31,10 +38,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 557,
+      "LowPrice": 555,
       "PriceFloor": 586.0,
       "BuyLimit": 10000,
-      "pctROI": 4.31
+      "pctROI": 4.68
     }
   ],
   "methodology": "VeryGranular"
