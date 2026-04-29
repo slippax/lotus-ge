@@ -1,12 +1,19 @@
 {
-  "updated": "2026-04-29T15:45:41.898867+00:00",
+  "updated": "2026-04-29T15:50:45.212796+00:00",
   "items": [
     {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1260,
+      "PriceFloor": 1306.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.62
+    },
+    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 532,
+      "LowPrice": 535,
       "PriceFloor": 587.0,
       "BuyLimit": 10000,
-      "pctROI": 9.4
+      "pctROI": 8.79
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -14,13 +21,6 @@
       "PriceFloor": 944.0,
       "BuyLimit": 10000,
       "pctROI": 3.66
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1280,
-      "PriceFloor": 1306.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.02
     }
   ],
   "methodology": "VeryGranular"
