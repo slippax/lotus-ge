@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-30T17:15:45.703528+00:00",
+  "updated": "2026-04-30T17:21:04.839025+00:00",
   "items": [
     {
       "ProductName": "Kebbit Teeth Dust",
@@ -126,7 +126,7 @@
       "ProductPrice": 3890,
       "ProductBuyLimit": 2000,
       "Ingredient1Name": "Super strength(3)",
-      "Ingredient1Price": 2812,
+      "Ingredient1Price": 2805,
       "Ingredient1Qty": "1.333",
       "Ingredient2Name": "",
       "Ingredient2Price": 0,
@@ -134,9 +134,9 @@
       "Ingredient3Name": "",
       "Ingredient3Price": 0,
       "Ingredient3Qty": "0",
-      "TotalIngredientCost": 2812,
-      "ProfitPerCraft": 1078,
-      "ROI": 38.34,
+      "TotalIngredientCost": 2805,
+      "ProfitPerCraft": 1085,
+      "ROI": 38.68,
       "RecipeType": "Decant 3 to 4 (Bob Barter)",
       "QtyProduced": 1,
       "LiquidityLevel": "HIGH_LIQUIDITY"
@@ -163,7 +163,7 @@
     },
     {
       "ProductName": "Super restore(4)",
-      "ProductPrice": 10836,
+      "ProductPrice": 10823,
       "ProductBuyLimit": 2000,
       "Ingredient1Name": "Super restore(3)",
       "Ingredient1Price": 7910,
@@ -175,8 +175,8 @@
       "Ingredient3Price": 0,
       "Ingredient3Qty": "0",
       "TotalIngredientCost": 7910,
-      "ProfitPerCraft": 2926,
-      "ROI": 36.99,
+      "ProfitPerCraft": 2913,
+      "ROI": 36.83,
       "RecipeType": "Decant 3 to 4 (Bob Barter)",
       "QtyProduced": 1,
       "LiquidityLevel": "HIGH_LIQUIDITY"
@@ -262,6 +262,26 @@
       "LiquidityLevel": "HIGH_LIQUIDITY"
     },
     {
+      "ProductName": "Dharok's greataxe",
+      "ProductPrice": 2752167,
+      "ProductBuyLimit": 15,
+      "Ingredient1Name": "Dharok's greataxe 0",
+      "Ingredient1Price": 2037313,
+      "Ingredient1Qty": "1",
+      "Ingredient2Name": "",
+      "Ingredient2Price": 0,
+      "Ingredient2Qty": "0",
+      "Ingredient3Name": "",
+      "Ingredient3Price": 0,
+      "Ingredient3Qty": "0",
+      "TotalIngredientCost": 2097313,
+      "ProfitPerCraft": 654854,
+      "ROI": 31.22,
+      "RecipeType": "Repair Broken Weapon (POH calculated at 80 smithing)",
+      "QtyProduced": 1,
+      "LiquidityLevel": "LOW_LIQUIDITY"
+    },
+    {
       "ProductName": "Verac's helm",
       "ProductPrice": 139705,
       "ProductBuyLimit": 15,
@@ -342,26 +362,6 @@
       "LiquidityLevel": "HIGH_LIQUIDITY"
     },
     {
-      "ProductName": "Dharok's greataxe",
-      "ProductPrice": 2500000,
-      "ProductBuyLimit": 15,
-      "Ingredient1Name": "Dharok's greataxe 0",
-      "Ingredient1Price": 2037313,
-      "Ingredient1Qty": "1",
-      "Ingredient2Name": "",
-      "Ingredient2Price": 0,
-      "Ingredient2Qty": "0",
-      "Ingredient3Name": "",
-      "Ingredient3Price": 0,
-      "Ingredient3Qty": "0",
-      "TotalIngredientCost": 2097313,
-      "ProfitPerCraft": 402687,
-      "ROI": 19.2,
-      "RecipeType": "Repair Broken Weapon (POH calculated at 80 smithing)",
-      "QtyProduced": 1,
-      "LiquidityLevel": "LOW_LIQUIDITY"
-    },
-    {
       "ProductName": "Ancient brew(4)",
       "ProductPrice": 3093,
       "ProductBuyLimit": 2000,
@@ -383,7 +383,7 @@
     },
     {
       "ProductName": "Torag's helm",
-      "ProductPrice": 156000,
+      "ProductPrice": 156279,
       "ProductBuyLimit": 15,
       "Ingredient1Name": "Torag's helm 0",
       "Ingredient1Price": 104000,
@@ -395,8 +395,8 @@
       "Ingredient3Price": 0,
       "Ingredient3Qty": "0",
       "TotalIngredientCost": 140000,
-      "ProfitPerCraft": 16000,
-      "ROI": 11.43,
+      "ProfitPerCraft": 16279,
+      "ROI": 11.63,
       "RecipeType": "Repair Broken Armour (POH calculated at 80 smithing)",
       "QtyProduced": 1,
       "LiquidityLevel": "LOW_LIQUIDITY"
@@ -540,6 +540,26 @@
       "RecipeType": "Repair Broken Armour (POH calculated at 80 smithing)",
       "QtyProduced": 1,
       "LiquidityLevel": "LOW_LIQUIDITY"
+    },
+    {
+      "ProductName": "Cadantine potion (unf)",
+      "ProductPrice": 3250,
+      "ProductBuyLimit": 10000,
+      "Ingredient1Name": "Cadantine",
+      "Ingredient1Price": 2891,
+      "Ingredient1Qty": "1",
+      "Ingredient2Name": "Vial of water",
+      "Ingredient2Price": 3,
+      "Ingredient2Qty": "1",
+      "Ingredient3Name": "",
+      "Ingredient3Price": 0,
+      "Ingredient3Qty": "0",
+      "TotalIngredientCost": 3094,
+      "ProfitPerCraft": 156,
+      "ROI": 5.04,
+      "RecipeType": "Create Unfinished Potions (Zahur)",
+      "QtyProduced": 1,
+      "LiquidityLevel": "HIGH_LIQUIDITY"
     }
   ],
   "methodology": "VeryGranular_RecipeArbitrage"
