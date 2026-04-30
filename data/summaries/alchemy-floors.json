@@ -1,6 +1,13 @@
 {
-  "updated": "2026-04-30T22:45:38.413357+00:00",
+  "updated": "2026-04-30T22:50:54.331303+00:00",
   "items": [
+    {
+      "ItemName": "Teak repair kit",
+      "LowPrice": 150,
+      "PriceFloor": 377.0,
+      "BuyLimit": 13000,
+      "pctROI": 149.33
+    },
     {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1745,
@@ -10,10 +17,17 @@
     },
     {
       "ItemName": "Diamond bracelet",
-      "LowPrice": 1940,
+      "LowPrice": 1942,
       "PriceFloor": 2055.0,
       "BuyLimit": 10000,
-      "pctROI": 4.9
+      "pctROI": 4.79
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1240,
+      "PriceFloor": 1303.0,
+      "BuyLimit": 18000,
+      "pctROI": 4.03
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -23,11 +37,11 @@
       "pctROI": 4.72
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1270,
-      "PriceFloor": 1303.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.57
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 571,
+      "PriceFloor": 585.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.58
     }
   ],
   "methodology": "VeryGranular"
