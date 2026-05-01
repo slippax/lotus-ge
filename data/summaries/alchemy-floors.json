@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-01T22:30:45.213049+00:00",
+  "updated": "2026-05-01T22:35:33.707571+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -9,6 +9,13 @@
       "pctROI": 3.45
     },
     {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 2000,
+      "PriceFloor": 2053.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.65
+    },
+    {
       "ItemName": "Rune javelin tips",
       "LowPrice": 547,
       "PriceFloor": 583.0,
@@ -16,18 +23,18 @@
       "pctROI": 5.67
     },
     {
+      "ItemName": "Amethyst javelin tips",
+      "LowPrice": 660,
+      "PriceFloor": 684.0,
+      "BuyLimit": 10000,
+      "pctROI": 2.73
+    },
+    {
       "ItemName": "Dragon javelin tips",
       "LowPrice": 919,
       "PriceFloor": 939.0,
       "BuyLimit": 10000,
       "pctROI": 1.2
-    },
-    {
-      "ItemName": "Amethyst javelin tips",
-      "LowPrice": 668,
-      "PriceFloor": 684.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.5
     }
   ],
   "methodology": "VeryGranular"
