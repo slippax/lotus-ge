@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-01T20:00:58.003086+00:00",
+  "updated": "2026-05-01T20:05:43.511729+00:00",
   "items": [
     {
       "ItemName": "Air battlestaff",
@@ -10,10 +10,17 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1268,
+      "LowPrice": 1244,
       "PriceFloor": 1301.0,
       "BuyLimit": 18000,
-      "pctROI": 1.58
+      "pctROI": 3.54
+    },
+    {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1980,
+      "PriceFloor": 2053.0,
+      "BuyLimit": 10000,
+      "pctROI": 2.68
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -23,18 +30,11 @@
       "pctROI": 3.56
     },
     {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 2010,
-      "PriceFloor": 2053.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.14
-    },
-    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 560,
+      "LowPrice": 569,
       "PriceFloor": 583.0,
       "BuyLimit": 10000,
-      "pctROI": 3.21
+      "pctROI": 1.58
     }
   ],
   "methodology": "VeryGranular"
