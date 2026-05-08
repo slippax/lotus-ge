@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-08T01:15:51.921897+00:00",
+  "updated": "2026-05-08T01:20:46.405730+00:00",
   "items": [
     {
       "ItemName": "Haemostatic dressing (4)",
@@ -18,10 +18,10 @@
       "ItemName": "Cooked sunlight antelope",
       "CurrentPrice": 1221,
       "BuyLimit": 10000,
-      "DailyRange": 257,
+      "DailyRange": 213,
       "WeeklyRange": 18551,
       "MonthlyRange": 18774,
-      "CompressionRatio": 1.39,
+      "CompressionRatio": 1.15,
       "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 1221000.0,
@@ -132,6 +132,19 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
+      "ItemName": "Dragon cannonball",
+      "CurrentPrice": 1396,
+      "BuyLimit": 11000,
+      "DailyRange": 20,
+      "WeeklyRange": 351,
+      "MonthlyRange": 365,
+      "CompressionRatio": 5.7,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 1535600.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
       "ItemName": "Jade dragon bolts (e)",
       "CurrentPrice": 1273,
       "BuyLimit": 11000,
@@ -145,16 +158,16 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Dragon cannonball",
-      "CurrentPrice": 1396,
+      "ItemName": "Amethyst dart(p++)",
+      "CurrentPrice": 1013,
       "BuyLimit": 11000,
-      "DailyRange": 21,
-      "WeeklyRange": 351,
-      "MonthlyRange": 365,
-      "CompressionRatio": 5.98,
+      "DailyRange": 18,
+      "WeeklyRange": 288,
+      "MonthlyRange": 565,
+      "CompressionRatio": 6.25,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 1535600.0,
+      "PotentialBreakoutProfit": 1114300.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -275,19 +288,6 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Jerboa tail",
-      "CurrentPrice": 112,
-      "BuyLimit": 18000,
-      "DailyRange": 7,
-      "WeeklyRange": 45,
-      "MonthlyRange": 79,
-      "CompressionRatio": 15.56,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 201600.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
       "ItemName": "Secateurs attachment",
       "CurrentPrice": 121,
       "BuyLimit": 10000,
@@ -298,32 +298,6 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "MODERATE_VOLUME_CONFIRMATION",
       "PotentialBreakoutProfit": 121000.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
-      "ItemName": "Raw summer pie",
-      "CurrentPrice": 1807,
-      "BuyLimit": 13000,
-      "DailyRange": 77,
-      "WeeklyRange": 452,
-      "MonthlyRange": 1151,
-      "CompressionRatio": 17.04,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 2349100.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
-      "ItemName": "Raw yellowfin",
-      "CurrentPrice": 1207,
-      "BuyLimit": 15000,
-      "DailyRange": 14,
-      "WeeklyRange": 81,
-      "MonthlyRange": 210,
-      "CompressionRatio": 17.28,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 1810500.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -353,6 +327,19 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
+      "ItemName": "Magpie impling jar",
+      "CurrentPrice": 22000,
+      "BuyLimit": 18000,
+      "DailyRange": 155,
+      "WeeklyRange": 739,
+      "MonthlyRange": 3037,
+      "CompressionRatio": 20.97,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 39600000.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
       "ItemName": "Phoenix necklace",
       "CurrentPrice": 2255,
       "BuyLimit": 10000,
@@ -363,6 +350,19 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 2255000.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Cadantine blood potion (unf)",
+      "CurrentPrice": 13164,
+      "BuyLimit": 10000,
+      "DailyRange": 139,
+      "WeeklyRange": 628,
+      "MonthlyRange": 1456,
+      "CompressionRatio": 22.13,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 13164000.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -419,7 +419,7 @@
     },
     {
       "ItemName": "Black dragonhide",
-      "CurrentPrice": 3840,
+      "CurrentPrice": 3785,
       "BuyLimit": 11000,
       "DailyRange": 79,
       "WeeklyRange": 312,
@@ -427,7 +427,7 @@
       "CompressionRatio": 25.32,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 4224000.0,
+      "PotentialBreakoutProfit": 4163500.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -457,26 +457,13 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Cadantine blood potion (unf)",
-      "CurrentPrice": 13164,
-      "BuyLimit": 10000,
-      "DailyRange": 162,
-      "WeeklyRange": 628,
-      "MonthlyRange": 1456,
-      "CompressionRatio": 25.8,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 13164000.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
       "ItemName": "Diabolic worms",
       "CurrentPrice": 2420,
       "BuyLimit": 8000,
-      "DailyRange": 129,
+      "DailyRange": 126,
       "WeeklyRange": 473,
       "MonthlyRange": 1026,
-      "CompressionRatio": 27.27,
+      "CompressionRatio": 26.64,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 1936000.0,
@@ -522,6 +509,19 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
+      "ItemName": "Adamant brutal",
+      "CurrentPrice": 276,
+      "BuyLimit": 11000,
+      "DailyRange": 36,
+      "WeeklyRange": 123,
+      "MonthlyRange": 147,
+      "CompressionRatio": 29.27,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 303600.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
       "ItemName": "Elkhorn coral",
       "CurrentPrice": 1911,
       "BuyLimit": 13000,
@@ -562,7 +562,7 @@
     },
     {
       "ItemName": "Blue dragonhide",
-      "CurrentPrice": 1873,
+      "CurrentPrice": 1840,
       "BuyLimit": 13000,
       "DailyRange": 77,
       "WeeklyRange": 241,
@@ -570,7 +570,20 @@
       "CompressionRatio": 31.95,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 2434900.0,
+      "PotentialBreakoutProfit": 2392000.0,
+      "CompressionLevel": "MODERATE_COMPRESSION"
+    },
+    {
+      "ItemName": "Mind altar teleport (tablet)",
+      "CurrentPrice": 2001,
+      "BuyLimit": 10000,
+      "DailyRange": 938,
+      "WeeklyRange": 2932,
+      "MonthlyRange": 3350,
+      "CompressionRatio": 31.99,
+      "BreakoutDirection": "LOWER_BIAS",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 2001000.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -587,21 +600,21 @@
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
-      "ItemName": "Adamant brutal",
-      "CurrentPrice": 276,
-      "BuyLimit": 11000,
-      "DailyRange": 40,
-      "WeeklyRange": 123,
-      "MonthlyRange": 147,
-      "CompressionRatio": 32.52,
+      "ItemName": "Teak logs",
+      "CurrentPrice": 121,
+      "BuyLimit": 13000,
+      "DailyRange": 5,
+      "WeeklyRange": 15,
+      "MonthlyRange": 24,
+      "CompressionRatio": 33.33,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 303600.0,
+      "PotentialBreakoutProfit": 157300.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
       "ItemName": "Atlatl dart shaft",
-      "CurrentPrice": 91,
+      "CurrentPrice": 90,
       "BuyLimit": 11000,
       "DailyRange": 3,
       "WeeklyRange": 9,
@@ -609,20 +622,20 @@
       "CompressionRatio": 33.33,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 100100.0,
+      "PotentialBreakoutProfit": 99000.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
-      "ItemName": "Mind altar teleport (tablet)",
-      "CurrentPrice": 2001,
+      "ItemName": "Bones to peaches (tablet)",
+      "CurrentPrice": 936,
       "BuyLimit": 10000,
-      "DailyRange": 980,
-      "WeeklyRange": 2932,
-      "MonthlyRange": 3350,
-      "CompressionRatio": 33.42,
-      "BreakoutDirection": "LOWER_BIAS",
+      "DailyRange": 70,
+      "WeeklyRange": 207,
+      "MonthlyRange": 670,
+      "CompressionRatio": 33.82,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 2001000.0,
+      "PotentialBreakoutProfit": 936000.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -636,19 +649,6 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 225500.0,
-      "CompressionLevel": "MODERATE_COMPRESSION"
-    },
-    {
-      "ItemName": "Burning amulet(5)",
-      "CurrentPrice": 3007,
-      "BuyLimit": 10000,
-      "DailyRange": 235,
-      "WeeklyRange": 654,
-      "MonthlyRange": 802,
-      "CompressionRatio": 35.93,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 3007000.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     }
   ],
