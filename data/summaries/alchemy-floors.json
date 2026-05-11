@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-11T22:30:42.983571+00:00",
+  "updated": "2026-05-11T22:35:36.092537+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -9,11 +9,18 @@
       "pctROI": 5.39
     },
     {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1213,
+      "PriceFloor": 1269.0,
+      "BuyLimit": 13000,
+      "pctROI": 3.63
+    },
+    {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 881,
+      "LowPrice": 880,
       "PriceFloor": 942.0,
       "BuyLimit": 10000,
-      "pctROI": 5.9
+      "pctROI": 6.02
     },
     {
       "ItemName": "Rune javelin tips",
@@ -28,13 +35,6 @@
       "PriceFloor": 2056.0,
       "BuyLimit": 10000,
       "pctROI": 1.6
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1243,
-      "PriceFloor": 1269.0,
-      "BuyLimit": 13000,
-      "pctROI": 1.13
     }
   ],
   "methodology": "VeryGranular"
