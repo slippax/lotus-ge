@@ -1,6 +1,13 @@
 {
-  "updated": "2026-05-11T10:20:51.483477+00:00",
+  "updated": "2026-05-11T10:25:35.530505+00:00",
   "items": [
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8805,
+      "PriceFloor": 8992.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.11
+    },
     {
       "ItemName": "Onyx bolts (e)",
       "LowPrice": 8518,
@@ -17,10 +24,17 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 892,
+      "LowPrice": 905,
       "PriceFloor": 943.0,
       "BuyLimit": 10000,
-      "pctROI": 4.71
+      "pctROI": 3.2
+    },
+    {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 563,
+      "PriceFloor": 586.0,
+      "BuyLimit": 10000,
+      "pctROI": 3.2
     }
   ],
   "methodology": "VeryGranular"
