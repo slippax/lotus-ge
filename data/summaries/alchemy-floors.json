@@ -1,6 +1,13 @@
 {
-  "updated": "2026-05-13T00:25:40.224006+00:00",
+  "updated": "2026-05-13T00:31:02.562612+00:00",
   "items": [
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8450,
+      "PriceFloor": 8693.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.86
+    },
     {
       "ItemName": "Mahogany repair kit",
       "LowPrice": 1202,
@@ -10,17 +17,24 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1265,
+      "LowPrice": 1259,
       "PriceFloor": 1303.0,
       "BuyLimit": 18000,
-      "pctROI": 1.98
+      "pctROI": 2.46
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 890,
+      "LowPrice": 880,
       "PriceFloor": 941.0,
       "BuyLimit": 10000,
-      "pctROI": 4.72
+      "pctROI": 5.91
+    },
+    {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 556,
+      "PriceFloor": 585.0,
+      "BuyLimit": 10000,
+      "pctROI": 4.32
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -28,13 +42,6 @@
       "PriceFloor": 685.0,
       "BuyLimit": 10000,
       "pctROI": 3.35
-    },
-    {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 563,
-      "PriceFloor": 585.0,
-      "BuyLimit": 10000,
-      "pctROI": 3.02
     }
   ],
   "methodology": "VeryGranular"
