@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-13T07:00:49.741292+00:00",
+  "updated": "2026-05-13T07:05:33.860424+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -23,6 +23,13 @@
       "pctROI": 1.07
     },
     {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1213,
+      "PriceFloor": 1267.0,
+      "BuyLimit": 13000,
+      "pctROI": 3.46
+    },
+    {
       "ItemName": "Magic longbow",
       "LowPrice": 1259,
       "PriceFloor": 1302.0,
@@ -35,13 +42,6 @@
       "PriceFloor": 940.0,
       "BuyLimit": 10000,
       "pctROI": 5.68
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1231,
-      "PriceFloor": 1267.0,
-      "BuyLimit": 13000,
-      "pctROI": 1.95
     }
   ],
   "methodology": "VeryGranular"
