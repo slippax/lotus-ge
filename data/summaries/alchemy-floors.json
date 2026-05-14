@@ -1,6 +1,13 @@
 {
-  "updated": "2026-05-14T15:15:47.997531+00:00",
+  "updated": "2026-05-14T15:20:51.785144+00:00",
   "items": [
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8805,
+      "PriceFloor": 8988.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.07
+    },
     {
       "ItemName": "Magic longbow",
       "LowPrice": 1231,
@@ -16,18 +23,18 @@
       "pctROI": 3.72
     },
     {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 534,
-      "PriceFloor": 583.0,
-      "BuyLimit": 10000,
-      "pctROI": 8.24
-    },
-    {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 910,
+      "LowPrice": 881,
       "PriceFloor": 939.0,
       "BuyLimit": 10000,
-      "pctROI": 2.2
+      "pctROI": 5.56
+    },
+    {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 536,
+      "PriceFloor": 583.0,
+      "BuyLimit": 10000,
+      "pctROI": 7.84
     }
   ],
   "methodology": "VeryGranular"
