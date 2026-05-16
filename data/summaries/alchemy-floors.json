@@ -1,6 +1,13 @@
 {
-  "updated": "2026-05-16T01:15:36.715244+00:00",
+  "updated": "2026-05-16T01:20:35.197060+00:00",
   "items": [
+    {
+      "ItemName": "Ironwood repair kit",
+      "LowPrice": 2000,
+      "PriceFloor": 2156.0,
+      "BuyLimit": 13000,
+      "pctROI": 6.75
+    },
     {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8802,
@@ -44,25 +51,18 @@
       "pctROI": 4.42
     },
     {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 520,
+      "PriceFloor": 582.0,
+      "BuyLimit": 10000,
+      "pctROI": 10.96
+    },
+    {
       "ItemName": "Dragon javelin tips",
       "LowPrice": 883,
       "PriceFloor": 938.0,
       "BuyLimit": 10000,
       "pctROI": 5.21
-    },
-    {
-      "ItemName": "Ironwood repair kit",
-      "LowPrice": 2101,
-      "PriceFloor": 2156.0,
-      "BuyLimit": 13000,
-      "pctROI": 1.62
-    },
-    {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 540,
-      "PriceFloor": 582.0,
-      "BuyLimit": 10000,
-      "pctROI": 6.85
     }
   ],
   "methodology": "VeryGranular"
