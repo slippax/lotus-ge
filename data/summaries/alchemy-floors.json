@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-17T06:15:46.586902+00:00",
+  "updated": "2026-05-17T06:20:41.337924+00:00",
   "items": [
     {
       "ItemName": "Camphor repair kit",
@@ -9,11 +9,18 @@
       "pctROI": 9.9
     },
     {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8810,
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8800,
       "PriceFloor": 8989.0,
       "BuyLimit": 18000,
-      "pctROI": 1.02
+      "pctROI": 1.14
+    },
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8800,
+      "PriceFloor": 8989.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.14
     },
     {
       "ItemName": "Magic longbow",
@@ -21,6 +28,13 @@
       "PriceFloor": 1302.0,
       "BuyLimit": 18000,
       "pctROI": 4.63
+    },
+    {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1184,
+      "PriceFloor": 1267.0,
+      "BuyLimit": 13000,
+      "pctROI": 6.0
     },
     {
       "ItemName": "Rune javelin tips",
@@ -42,13 +56,6 @@
       "PriceFloor": 2054.0,
       "BuyLimit": 10000,
       "pctROI": 2.21
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1231,
-      "PriceFloor": 1267.0,
-      "BuyLimit": 13000,
-      "pctROI": 1.95
     }
   ],
   "methodology": "VeryGranular"
