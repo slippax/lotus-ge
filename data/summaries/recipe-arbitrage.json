@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-17T06:50:36.659730+00:00",
+  "updated": "2026-05-17T06:55:38.102006+00:00",
   "items": [
     {
       "ProductName": "Magic potion(4)",
@@ -22,26 +22,6 @@
       "LiquidityLevel": "HIGH_LIQUIDITY"
     },
     {
-      "ProductName": "Energy potion(4)",
-      "ProductPrice": 228,
-      "ProductBuyLimit": 2000,
-      "Ingredient1Name": "Energy potion(3)",
-      "Ingredient1Price": 146,
-      "Ingredient1Qty": "1.333",
-      "Ingredient2Name": "",
-      "Ingredient2Price": 0,
-      "Ingredient2Qty": "0",
-      "Ingredient3Name": "",
-      "Ingredient3Price": 0,
-      "Ingredient3Qty": "0",
-      "TotalIngredientCost": 146,
-      "ProfitPerCraft": 82,
-      "ROI": 56.16,
-      "RecipeType": "Decant 3 to 4 (Bob Barter)",
-      "QtyProduced": 1,
-      "LiquidityLevel": "HIGH_LIQUIDITY"
-    },
-    {
       "ProductName": "Kebbit Teeth Dust",
       "ProductPrice": 654,
       "ProductBuyLimit": 10000,
@@ -58,6 +38,26 @@
       "ProfitPerCraft": 220,
       "ROI": 50.69,
       "RecipeType": "Crushing Kebbit Teeth (Wesley)",
+      "QtyProduced": 1,
+      "LiquidityLevel": "HIGH_LIQUIDITY"
+    },
+    {
+      "ProductName": "Energy potion(4)",
+      "ProductPrice": 228,
+      "ProductBuyLimit": 2000,
+      "Ingredient1Name": "Energy potion(3)",
+      "Ingredient1Price": 155,
+      "Ingredient1Qty": "1.333",
+      "Ingredient2Name": "",
+      "Ingredient2Price": 0,
+      "Ingredient2Qty": "0",
+      "Ingredient3Name": "",
+      "Ingredient3Price": 0,
+      "Ingredient3Qty": "0",
+      "TotalIngredientCost": 155,
+      "ProfitPerCraft": 73,
+      "ROI": 47.1,
+      "RecipeType": "Decant 3 to 4 (Bob Barter)",
       "QtyProduced": 1,
       "LiquidityLevel": "HIGH_LIQUIDITY"
     },
@@ -203,7 +203,7 @@
     },
     {
       "ProductName": "Super energy(4)",
-      "ProductPrice": 2655,
+      "ProductPrice": 2656,
       "ProductBuyLimit": 2000,
       "Ingredient1Name": "Super energy(3)",
       "Ingredient1Price": 1933,
@@ -215,8 +215,8 @@
       "Ingredient3Price": 0,
       "Ingredient3Qty": "0",
       "TotalIngredientCost": 1933,
-      "ProfitPerCraft": 722,
-      "ROI": 37.35,
+      "ProfitPerCraft": 723,
+      "ROI": 37.4,
       "RecipeType": "Decant 3 to 4 (Bob Barter)",
       "QtyProduced": 1,
       "LiquidityLevel": "HIGH_LIQUIDITY"
@@ -242,6 +242,26 @@
       "LiquidityLevel": "HIGH_LIQUIDITY"
     },
     {
+      "ProductName": "Super restore(4)",
+      "ProductPrice": 11324,
+      "ProductBuyLimit": 2000,
+      "Ingredient1Name": "Super restore(3)",
+      "Ingredient1Price": 8286,
+      "Ingredient1Qty": "1.333",
+      "Ingredient2Name": "",
+      "Ingredient2Price": 0,
+      "Ingredient2Qty": "0",
+      "Ingredient3Name": "",
+      "Ingredient3Price": 0,
+      "Ingredient3Qty": "0",
+      "TotalIngredientCost": 8286,
+      "ProfitPerCraft": 3038,
+      "ROI": 36.66,
+      "RecipeType": "Decant 3 to 4 (Bob Barter)",
+      "QtyProduced": 1,
+      "LiquidityLevel": "HIGH_LIQUIDITY"
+    },
+    {
       "ProductName": "Super attack(4)",
       "ProductPrice": 2409,
       "ProductBuyLimit": 2000,
@@ -257,26 +277,6 @@
       "TotalIngredientCost": 1763,
       "ProfitPerCraft": 646,
       "ROI": 36.64,
-      "RecipeType": "Decant 3 to 4 (Bob Barter)",
-      "QtyProduced": 1,
-      "LiquidityLevel": "HIGH_LIQUIDITY"
-    },
-    {
-      "ProductName": "Super restore(4)",
-      "ProductPrice": 11324,
-      "ProductBuyLimit": 2000,
-      "Ingredient1Name": "Super restore(3)",
-      "Ingredient1Price": 8328,
-      "Ingredient1Qty": "1.333",
-      "Ingredient2Name": "",
-      "Ingredient2Price": 0,
-      "Ingredient2Qty": "0",
-      "Ingredient3Name": "",
-      "Ingredient3Price": 0,
-      "Ingredient3Qty": "0",
-      "TotalIngredientCost": 8328,
-      "ProfitPerCraft": 2996,
-      "ROI": 35.98,
       "RecipeType": "Decant 3 to 4 (Bob Barter)",
       "QtyProduced": 1,
       "LiquidityLevel": "HIGH_LIQUIDITY"
@@ -443,7 +443,7 @@
     },
     {
       "ProductName": "Verac's plateskirt",
-      "ProductPrice": 301209,
+      "ProductPrice": 301585,
       "ProductBuyLimit": 15,
       "Ingredient1Name": "Verac's plateskirt 0",
       "Ingredient1Price": 235289,
@@ -455,8 +455,8 @@
       "Ingredient3Price": 0,
       "Ingredient3Qty": "0",
       "TotalIngredientCost": 283289,
-      "ProfitPerCraft": 17920,
-      "ROI": 6.33,
+      "ProfitPerCraft": 18296,
+      "ROI": 6.46,
       "RecipeType": "Repair Broken Armour (POH calculated at 80 smithing)",
       "QtyProduced": 1,
       "LiquidityLevel": "LOW_LIQUIDITY"
@@ -500,6 +500,26 @@
       "RecipeType": "Repair Broken Armour (POH calculated at 80 smithing)",
       "QtyProduced": 1,
       "LiquidityLevel": "LOW_LIQUIDITY"
+    },
+    {
+      "ProductName": "Kwuarm potion (unf)",
+      "ProductPrice": 2800,
+      "ProductBuyLimit": 10000,
+      "Ingredient1Name": "Kwuarm",
+      "Ingredient1Price": 2452,
+      "Ingredient1Qty": "1",
+      "Ingredient2Name": "Vial of water",
+      "Ingredient2Price": 4,
+      "Ingredient2Qty": "1",
+      "Ingredient3Name": "",
+      "Ingredient3Price": 0,
+      "Ingredient3Qty": "0",
+      "TotalIngredientCost": 2656,
+      "ProfitPerCraft": 144,
+      "ROI": 5.42,
+      "RecipeType": "Create Unfinished Potions (Zahur)",
+      "QtyProduced": 1,
+      "LiquidityLevel": "HIGH_LIQUIDITY"
     }
   ],
   "methodology": "VeryGranular_RecipeArbitrage"
