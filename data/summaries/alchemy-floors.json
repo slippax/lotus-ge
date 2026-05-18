@@ -1,6 +1,13 @@
 {
-  "updated": "2026-05-18T04:35:37.124818+00:00",
+  "updated": "2026-05-18T04:40:38.029020+00:00",
   "items": [
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8755,
+      "PriceFloor": 8988.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.64
+    },
     {
       "ItemName": "Water battlestaff",
       "LowPrice": 8800,
@@ -24,10 +31,10 @@
     },
     {
       "ItemName": "Camphor repair kit",
-      "LowPrice": 1739,
+      "LowPrice": 1764,
       "PriceFloor": 1860.0,
       "BuyLimit": 13000,
-      "pctROI": 5.92
+      "pctROI": 4.42
     },
     {
       "ItemName": "Rune javelin tips",
@@ -56,13 +63,6 @@
       "PriceFloor": 939.0,
       "BuyLimit": 10000,
       "pctROI": 7.51
-    },
-    {
-      "ItemName": "Amethyst javelin tips",
-      "LowPrice": 664,
-      "PriceFloor": 684.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.11
     }
   ],
   "methodology": "VeryGranular"
