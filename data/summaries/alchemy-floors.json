@@ -1,8 +1,15 @@
 {
-  "updated": "2026-05-19T18:15:39.066187+00:00",
+  "updated": "2026-05-19T18:20:46.674240+00:00",
   "items": [
     {
       "ItemName": "Air battlestaff",
+      "LowPrice": 8800,
+      "PriceFloor": 8988.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.13
+    },
+    {
+      "ItemName": "Fire battlestaff",
       "LowPrice": 8800,
       "PriceFloor": 8988.0,
       "BuyLimit": 18000,
@@ -31,17 +38,10 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 875,
+      "LowPrice": 874,
       "PriceFloor": 939.0,
       "BuyLimit": 10000,
-      "pctROI": 6.29
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1228,
-      "PriceFloor": 1266.0,
-      "BuyLimit": 13000,
-      "pctROI": 2.12
+      "pctROI": 6.41
     }
   ],
   "methodology": "VeryGranular"
