@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-21T19:45:47.185576+00:00",
+  "updated": "2026-05-21T19:50:36.838586+00:00",
   "items": [
     {
       "ItemName": "Zenyte shard",
@@ -92,6 +92,21 @@
       "PotentialProfit": 42174000.0
     },
     {
+      "ItemName": "Mort'ton teleport",
+      "CurrentPrice": 16569,
+      "BuyLimit": 10000,
+      "FiveMinMean": 16178,
+      "HourlyMean": 16171,
+      "DailyMean": 16179,
+      "WeeklyMean": 16156,
+      "MonthlyMean": 15683,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 16569000.0
+    },
+    {
       "ItemName": "Nihil shard",
       "CurrentPrice": 5095,
       "BuyLimit": 30000,
@@ -152,6 +167,21 @@
       "PotentialProfit": 3902250.0
     },
     {
+      "ItemName": "Extended anti-venom+(4)",
+      "CurrentPrice": 19091,
+      "BuyLimit": 2000,
+      "FiveMinMean": 18813,
+      "HourlyMean": 18900,
+      "DailyMean": 18806,
+      "WeeklyMean": 18800,
+      "MonthlyMean": 17978,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 3818200.0
+    },
+    {
       "ItemName": "Blue dragon leather",
       "CurrentPrice": 2550,
       "BuyLimit": 13000,
@@ -165,21 +195,6 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
       "PotentialProfit": 3315000.0
-    },
-    {
-      "ItemName": "Uncut diamond",
-      "CurrentPrice": 3252,
-      "BuyLimit": 10000,
-      "FiveMinMean": 3124,
-      "HourlyMean": 3077,
-      "DailyMean": 3067,
-      "WeeklyMean": 3025,
-      "MonthlyMean": 3052,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 3252000.0
     },
     {
       "ItemName": "Black chinchompa",
@@ -197,38 +212,23 @@
       "PotentialProfit": 3246100.0
     },
     {
-      "ItemName": "Dragon arrowtips",
-      "CurrentPrice": 2987,
+      "ItemName": "Uncut diamond",
+      "CurrentPrice": 3227,
       "BuyLimit": 10000,
-      "FiveMinMean": 2973,
-      "HourlyMean": 2969,
-      "DailyMean": 2933,
-      "WeeklyMean": 2965,
-      "MonthlyMean": 2952,
+      "FiveMinMean": 3124,
+      "HourlyMean": 3077,
+      "DailyMean": 3067,
+      "WeeklyMean": 3025,
+      "MonthlyMean": 3052,
       "BullishConfluence": 4,
       "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 2987000.0
-    },
-    {
-      "ItemName": "Soaked page",
-      "CurrentPrice": 2704,
-      "BuyLimit": 11000,
-      "FiveMinMean": 2700,
-      "HourlyMean": 2699,
-      "DailyMean": 2721,
-      "WeeklyMean": 2656,
-      "MonthlyMean": 2549,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 2974400.0
+      "PotentialProfit": 3227000.0
     },
     {
       "ItemName": "Blue dragonhide",
-      "CurrentPrice": 2200,
+      "CurrentPrice": 2176,
       "BuyLimit": 13000,
       "FiveMinMean": 2237,
       "HourlyMean": 2198,
@@ -239,7 +239,7 @@
       "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_SUPPORTED",
-      "PotentialProfit": 2860000.0
+      "PotentialProfit": 2828800.0
     },
     {
       "ItemName": "Death talisman",
@@ -347,8 +347,68 @@
       "PotentialProfit": 2025000.0
     },
     {
+      "ItemName": "Lantadyme",
+      "CurrentPrice": 1800,
+      "BuyLimit": 11000,
+      "FiveMinMean": 1788,
+      "HourlyMean": 1795,
+      "DailyMean": 1770,
+      "WeeklyMean": 1730,
+      "MonthlyMean": 1723,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_SUPPORTED",
+      "PotentialProfit": 1980000.0
+    },
+    {
+      "ItemName": "Yellow bead",
+      "CurrentPrice": 1381,
+      "BuyLimit": 11000,
+      "FiveMinMean": 1305,
+      "HourlyMean": 1239,
+      "DailyMean": 1459,
+      "WeeklyMean": 1421,
+      "MonthlyMean": 1283,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_SUPPORTED",
+      "PotentialProfit": 1519100.0
+    },
+    {
+      "ItemName": "Black bead",
+      "CurrentPrice": 1374,
+      "BuyLimit": 11000,
+      "FiveMinMean": 1313,
+      "HourlyMean": 1310,
+      "DailyMean": 1276,
+      "WeeklyMean": 1193,
+      "MonthlyMean": 1207,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 1511400.0
+    },
+    {
+      "ItemName": "Ring of dueling(8)",
+      "CurrentPrice": 920,
+      "BuyLimit": 15000,
+      "FiveMinMean": 913,
+      "HourlyMean": 916,
+      "DailyMean": 910,
+      "WeeklyMean": 890,
+      "MonthlyMean": 840,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_SUPPORTED",
+      "PotentialProfit": 1380000.0
+    },
+    {
       "ItemName": "Magic logs",
-      "CurrentPrice": 940,
+      "CurrentPrice": 956,
       "BuyLimit": 12000,
       "FiveMinMean": 956,
       "HourlyMean": 945,
@@ -356,25 +416,10 @@
       "WeeklyMean": 934,
       "MonthlyMean": 913,
       "BullishConfluence": 4,
-      "BearishConfluence": 1,
+      "BearishConfluence": 0,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 1128000.0
-    },
-    {
-      "ItemName": "Raw shark",
-      "CurrentPrice": 694,
-      "BuyLimit": 15000,
-      "FiveMinMean": 681,
-      "HourlyMean": 683,
-      "DailyMean": 678,
-      "WeeklyMean": 621,
-      "MonthlyMean": 615,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_SUPPORTED",
-      "PotentialProfit": 1041000.0
+      "PotentialProfit": 1147200.0
     },
     {
       "ItemName": "Yanillian hops",
@@ -393,7 +438,7 @@
     },
     {
       "ItemName": "Rune cannonball",
-      "CurrentPrice": 857,
+      "CurrentPrice": 850,
       "BuyLimit": 11000,
       "FiveMinMean": 882,
       "HourlyMean": 864,
@@ -404,7 +449,37 @@
       "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 942700.0
+      "PotentialProfit": 935000.0
+    },
+    {
+      "ItemName": "Soul rune",
+      "CurrentPrice": 373,
+      "BuyLimit": 25000,
+      "FiveMinMean": 371,
+      "HourlyMean": 371,
+      "DailyMean": 370,
+      "WeeklyMean": 366,
+      "MonthlyMean": 357,
+      "BullishConfluence": 4,
+      "BearishConfluence": 0,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 932500.0
+    },
+    {
+      "ItemName": "Red chinchompa",
+      "CurrentPrice": 1276,
+      "BuyLimit": 7000,
+      "FiveMinMean": 1265,
+      "HourlyMean": 1250,
+      "DailyMean": 1266,
+      "WeeklyMean": 1239,
+      "MonthlyMean": 1221,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 893200.0
     },
     {
       "ItemName": "Steel bar",
@@ -422,6 +497,21 @@
       "PotentialProfit": 620000.0
     },
     {
+      "ItemName": "Death rune",
+      "CurrentPrice": 212,
+      "BuyLimit": 25000,
+      "FiveMinMean": 210,
+      "HourlyMean": 207,
+      "DailyMean": 207,
+      "WeeklyMean": 193,
+      "MonthlyMean": 189,
+      "BullishConfluence": 4,
+      "BearishConfluence": 0,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_SUPPORTED",
+      "PotentialProfit": 530000.0
+    },
+    {
       "ItemName": "Celastrus seed",
       "CurrentPrice": 22776,
       "BuyLimit": 200,
@@ -435,6 +525,21 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_SUPPORTED",
       "PotentialProfit": 455520.0
+    },
+    {
+      "ItemName": "Gold necklace",
+      "CurrentPrice": 178,
+      "BuyLimit": 18000,
+      "FiveMinMean": 175,
+      "HourlyMean": 166,
+      "DailyMean": 171,
+      "WeeklyMean": 152,
+      "MonthlyMean": 147,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 320400.0
     },
     {
       "ItemName": "Superantipoison(4)",
@@ -467,38 +572,8 @@
       "PotentialProfit": 230100.0
     },
     {
-      "ItemName": "Numulite",
-      "CurrentPrice": 47,
-      "BuyLimit": 30000,
-      "FiveMinMean": 46,
-      "HourlyMean": 46,
-      "DailyMean": 45,
-      "WeeklyMean": 44,
-      "MonthlyMean": 41,
-      "BullishConfluence": 4,
-      "BearishConfluence": 0,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 141000.0
-    },
-    {
-      "ItemName": "Ultracompost",
-      "CurrentPrice": 552,
-      "BuyLimit": 2000,
-      "FiveMinMean": 551,
-      "HourlyMean": 549,
-      "DailyMean": 525,
-      "WeeklyMean": 515,
-      "MonthlyMean": 518,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 110400.0
-    },
-    {
       "ItemName": "Silver bar",
-      "CurrentPrice": 100,
+      "CurrentPrice": 105,
       "BuyLimit": 10000,
       "FiveMinMean": 105,
       "HourlyMean": 102,
@@ -506,10 +581,10 @@
       "WeeklyMean": 98,
       "MonthlyMean": 93,
       "BullishConfluence": 4,
-      "BearishConfluence": 1,
+      "BearishConfluence": 0,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 100000.0
+      "PotentialProfit": 105000.0
     },
     {
       "ItemName": "Bucket of milk",
@@ -528,7 +603,7 @@
     },
     {
       "ItemName": "Adamant 2h sword",
-      "CurrentPrice": 3570,
+      "CurrentPrice": 3551,
       "BuyLimit": 125,
       "FiveMinMean": 3550,
       "HourlyMean": 3545,
@@ -539,7 +614,7 @@
       "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 44625.0
+      "PotentialProfit": 44388.0
     },
     {
       "ItemName": "Yew bird house",
@@ -602,8 +677,23 @@
       "PotentialProfit": 31875.0
     },
     {
+      "ItemName": "Shrimps",
+      "CurrentPrice": 29,
+      "BuyLimit": 6000,
+      "FiveMinMean": 25,
+      "HourlyMean": 21,
+      "DailyMean": 26,
+      "WeeklyMean": 24,
+      "MonthlyMean": 21,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 17400.0
+    },
+    {
       "ItemName": "Supercompost",
-      "CurrentPrice": 76,
+      "CurrentPrice": 75,
       "BuyLimit": 2000,
       "FiveMinMean": 77,
       "HourlyMean": 75,
@@ -614,21 +704,6 @@
       "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 15200.0
-    },
-    {
-      "ItemName": "Iron arrowtips",
-      "CurrentPrice": 15,
-      "BuyLimit": 10000,
-      "FiveMinMean": 9,
-      "HourlyMean": 9,
-      "DailyMean": 8,
-      "WeeklyMean": 6,
-      "MonthlyMean": 5,
-      "BullishConfluence": 4,
-      "BearishConfluence": 0,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "WEAK_VOLUME",
       "PotentialProfit": 15000.0
     },
     {
@@ -662,21 +737,6 @@
       "PotentialProfit": 5625.0
     },
     {
-      "ItemName": "Watermelon seed",
-      "CurrentPrice": 224,
-      "BuyLimit": 200,
-      "FiveMinMean": 218,
-      "HourlyMean": 202,
-      "DailyMean": 182,
-      "WeeklyMean": 191,
-      "MonthlyMean": 180,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 4480.0
-    },
-    {
       "ItemName": "Black dagger",
       "CurrentPrice": 311,
       "BuyLimit": 125,
@@ -690,66 +750,6 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_SUPPORTED",
       "PotentialProfit": 3888.0
-    },
-    {
-      "ItemName": "Blue firelighter",
-      "CurrentPrice": 72,
-      "BuyLimit": 250,
-      "FiveMinMean": 115,
-      "HourlyMean": 109,
-      "DailyMean": 106,
-      "WeeklyMean": 97,
-      "MonthlyMean": 86,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 1800.0
-    },
-    {
-      "ItemName": "Yellow dye",
-      "CurrentPrice": 118,
-      "BuyLimit": 150,
-      "FiveMinMean": 113,
-      "HourlyMean": 111,
-      "DailyMean": 108,
-      "WeeklyMean": 107,
-      "MonthlyMean": 158,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 1770.0
-    },
-    {
-      "ItemName": "White firelighter",
-      "CurrentPrice": 61,
-      "BuyLimit": 250,
-      "FiveMinMean": 216,
-      "HourlyMean": 169,
-      "DailyMean": 135,
-      "WeeklyMean": 87,
-      "MonthlyMean": 78,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 1525.0
-    },
-    {
-      "ItemName": "Tarromin seed",
-      "CurrentPrice": 25,
-      "BuyLimit": 600,
-      "FiveMinMean": 24,
-      "HourlyMean": 14,
-      "DailyMean": 16,
-      "WeeklyMean": 14,
-      "MonthlyMean": 10,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 1500.0
     }
   ],
   "methodology": "VeryGranular_MultiTimeframeConfluence"
