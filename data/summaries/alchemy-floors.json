@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-22T14:45:40.432110+00:00",
+  "updated": "2026-05-22T14:50:42.001222+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -9,18 +9,18 @@
       "pctROI": 1.13
     },
     {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8480,
-      "PriceFloor": 8691.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.47
-    },
-    {
       "ItemName": "Magic longbow",
       "LowPrice": 1223,
       "PriceFloor": 1301.0,
       "BuyLimit": 18000,
       "pctROI": 5.31
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8500,
+      "PriceFloor": 8691.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.24
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -31,10 +31,17 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 845,
+      "LowPrice": 847,
       "PriceFloor": 939.0,
       "BuyLimit": 10000,
-      "pctROI": 10.06
+      "pctROI": 9.8
+    },
+    {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 500,
+      "PriceFloor": 583.0,
+      "BuyLimit": 10000,
+      "pctROI": 15.6
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -56,13 +63,6 @@
       "PriceFloor": 1860.0,
       "BuyLimit": 13000,
       "pctROI": 2.22
-    },
-    {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 540,
-      "PriceFloor": 583.0,
-      "BuyLimit": 10000,
-      "pctROI": 7.04
     }
   ],
   "methodology": "VeryGranular"
