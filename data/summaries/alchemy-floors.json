@@ -1,6 +1,13 @@
 {
-  "updated": "2026-05-22T15:35:36.590048+00:00",
+  "updated": "2026-05-22T15:40:41.854825+00:00",
   "items": [
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8800,
+      "PriceFloor": 8988.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.13
+    },
     {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8800,
@@ -9,11 +16,11 @@
       "pctROI": 1.13
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8803,
-      "PriceFloor": 8988.0,
+      "ItemName": "Magic longbow",
+      "LowPrice": 1221,
+      "PriceFloor": 1301.0,
       "BuyLimit": 18000,
-      "pctROI": 1.09
+      "pctROI": 5.49
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -23,13 +30,6 @@
       "pctROI": 10.06
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1242,
-      "PriceFloor": 1301.0,
-      "BuyLimit": 18000,
-      "pctROI": 3.7
-    },
-    {
       "ItemName": "Ironwood repair kit",
       "LowPrice": 2088,
       "PriceFloor": 2157.0,
@@ -37,18 +37,18 @@
       "pctROI": 2.3
     },
     {
-      "ItemName": "Amethyst javelin tips",
-      "LowPrice": 620,
-      "PriceFloor": 684.0,
-      "BuyLimit": 10000,
-      "pctROI": 9.35
-    },
-    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 525,
+      "LowPrice": 520,
       "PriceFloor": 583.0,
       "BuyLimit": 10000,
-      "pctROI": 10.1
+      "pctROI": 11.15
+    },
+    {
+      "ItemName": "Amethyst javelin tips",
+      "LowPrice": 626,
+      "PriceFloor": 684.0,
+      "BuyLimit": 10000,
+      "pctROI": 8.31
     }
   ],
   "methodology": "VeryGranular"
