@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-26T08:00:47.498369+00:00",
+  "updated": "2026-05-26T08:05:48.247120+00:00",
   "items": [
     {
       "ItemName": "Amethyst arrow(p+)",
@@ -25,6 +25,19 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 139100.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Chocolate cake",
+      "CurrentPrice": 400,
+      "BuyLimit": 6000,
+      "DailyRange": 14,
+      "WeeklyRange": 288,
+      "MonthlyRange": 350,
+      "CompressionRatio": 4.86,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 240000.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -64,19 +77,6 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 270000.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
-      "ItemName": "Chocolate cake",
-      "CurrentPrice": 400,
-      "BuyLimit": 6000,
-      "DailyRange": 21,
-      "WeeklyRange": 288,
-      "MonthlyRange": 350,
-      "CompressionRatio": 7.29,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 240000.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -197,13 +197,26 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
+      "ItemName": "Amethyst javelin",
+      "CurrentPrice": 201,
+      "BuyLimit": 11000,
+      "DailyRange": 18,
+      "WeeklyRange": 94,
+      "MonthlyRange": 94,
+      "CompressionRatio": 19.15,
+      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 221100.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
       "ItemName": "Efaritay's aid",
       "CurrentPrice": 6041,
       "BuyLimit": 10000,
-      "DailyRange": 633,
+      "DailyRange": 616,
       "WeeklyRange": 3061,
       "MonthlyRange": 3076,
-      "CompressionRatio": 20.68,
+      "CompressionRatio": 20.12,
       "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 6041000.0,
@@ -220,19 +233,6 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 96000.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
-      "ItemName": "Amethyst javelin",
-      "CurrentPrice": 201,
-      "BuyLimit": 11000,
-      "DailyRange": 20,
-      "WeeklyRange": 94,
-      "MonthlyRange": 94,
-      "CompressionRatio": 21.28,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 221100.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -285,19 +285,6 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 2107600.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
-      "ItemName": "Ring of wealth",
-      "CurrentPrice": 11532,
-      "BuyLimit": 10000,
-      "DailyRange": 224,
-      "WeeklyRange": 960,
-      "MonthlyRange": 960,
-      "CompressionRatio": 23.33,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 11532000.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -392,32 +379,6 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Urium remains",
-      "CurrentPrice": 9600,
-      "BuyLimit": 7500,
-      "DailyRange": 483,
-      "WeeklyRange": 1794,
-      "MonthlyRange": 4054,
-      "CompressionRatio": 26.92,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 7200000.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
-      "ItemName": "Varrock teleport (tablet)",
-      "CurrentPrice": 621,
-      "BuyLimit": 15000,
-      "DailyRange": 22,
-      "WeeklyRange": 81,
-      "MonthlyRange": 195,
-      "CompressionRatio": 27.16,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 931500.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
       "ItemName": "Topaz amulet (u)",
       "CurrentPrice": 2620,
       "BuyLimit": 10000,
@@ -444,6 +405,19 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
+      "ItemName": "Varrock teleport (tablet)",
+      "CurrentPrice": 621,
+      "BuyLimit": 15000,
+      "DailyRange": 24,
+      "WeeklyRange": 81,
+      "MonthlyRange": 195,
+      "CompressionRatio": 29.63,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 931500.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
       "ItemName": "Steel knife",
       "CurrentPrice": 65,
       "BuyLimit": 7000,
@@ -457,16 +431,42 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
+      "ItemName": "Ring of wealth",
+      "CurrentPrice": 11532,
+      "BuyLimit": 10000,
+      "DailyRange": 286,
+      "WeeklyRange": 960,
+      "MonthlyRange": 960,
+      "CompressionRatio": 29.79,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 11532000.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Lava dragon bones",
+      "CurrentPrice": 5733,
+      "BuyLimit": 7500,
+      "DailyRange": 263,
+      "WeeklyRange": 876,
+      "MonthlyRange": 1031,
+      "CompressionRatio": 30.02,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 4299750.0,
+      "CompressionLevel": "MODERATE_COMPRESSION"
+    },
+    {
       "ItemName": "Blue dragonhide",
-      "CurrentPrice": 1872,
+      "CurrentPrice": 1910,
       "BuyLimit": 13000,
       "DailyRange": 154,
       "WeeklyRange": 505,
       "MonthlyRange": 505,
       "CompressionRatio": 30.5,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 2433600.0,
+      "PotentialBreakoutProfit": 2483000.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -480,6 +480,19 @@
       "BreakoutDirection": "UPPER_BIAS",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 135000.0,
+      "CompressionLevel": "MODERATE_COMPRESSION"
+    },
+    {
+      "ItemName": "Urium remains",
+      "CurrentPrice": 9600,
+      "BuyLimit": 7500,
+      "DailyRange": 554,
+      "WeeklyRange": 1794,
+      "MonthlyRange": 4054,
+      "CompressionRatio": 30.88,
+      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 7200000.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -561,6 +574,19 @@
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
+      "ItemName": "Adamant cannonball",
+      "CurrentPrice": 598,
+      "BuyLimit": 11000,
+      "DailyRange": 129,
+      "WeeklyRange": 370,
+      "MonthlyRange": 370,
+      "CompressionRatio": 34.86,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 657800.0,
+      "CompressionLevel": "MODERATE_COMPRESSION"
+    },
+    {
       "ItemName": "Cup of hot water",
       "CurrentPrice": 500,
       "BuyLimit": 13000,
@@ -587,21 +613,8 @@
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
-      "ItemName": "Adamant cannonball",
-      "CurrentPrice": 598,
-      "BuyLimit": 11000,
-      "DailyRange": 137,
-      "WeeklyRange": 370,
-      "MonthlyRange": 370,
-      "CompressionRatio": 37.03,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 657800.0,
-      "CompressionLevel": "MODERATE_COMPRESSION"
-    },
-    {
       "ItemName": "Amethyst javelin tips",
-      "CurrentPrice": 647,
+      "CurrentPrice": 663,
       "BuyLimit": 10000,
       "DailyRange": 23,
       "WeeklyRange": 60,
@@ -609,7 +622,7 @@
       "CompressionRatio": 38.33,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 647000.0,
+      "PotentialBreakoutProfit": 663000.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -636,19 +649,6 @@
       "BreakoutDirection": "LOWER_BIAS",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 100000.0,
-      "CompressionLevel": "MODERATE_COMPRESSION"
-    },
-    {
-      "ItemName": "Gold ring",
-      "CurrentPrice": 162,
-      "BuyLimit": 18000,
-      "DailyRange": 4,
-      "WeeklyRange": 10,
-      "MonthlyRange": 20,
-      "CompressionRatio": 40.0,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 291600.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     }
   ],
