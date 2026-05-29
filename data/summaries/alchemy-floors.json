@@ -1,12 +1,26 @@
 {
-  "updated": "2026-05-29T06:25:39.048966+00:00",
+  "updated": "2026-05-29T06:30:37.847308+00:00",
   "items": [
     {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8810,
+      "PriceFloor": 8992.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.06
+    },
+    {
       "ItemName": "Magic longbow",
-      "LowPrice": 1224,
+      "LowPrice": 1200,
       "PriceFloor": 1305.0,
       "BuyLimit": 18000,
-      "pctROI": 5.56
+      "pctROI": 7.67
+    },
+    {
+      "ItemName": "Camphor repair kit",
+      "LowPrice": 1750,
+      "PriceFloor": 1864.0,
+      "BuyLimit": 13000,
+      "pctROI": 5.49
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -28,13 +42,6 @@
       "PriceFloor": 2057.0,
       "BuyLimit": 10000,
       "pctROI": 2.52
-    },
-    {
-      "ItemName": "Camphor repair kit",
-      "LowPrice": 1813,
-      "PriceFloor": 1864.0,
-      "BuyLimit": 13000,
-      "pctROI": 1.82
     }
   ],
   "methodology": "VeryGranular"
