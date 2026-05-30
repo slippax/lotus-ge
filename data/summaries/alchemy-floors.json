@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-30T08:00:39.391679+00:00",
+  "updated": "2026-05-30T08:05:38.644251+00:00",
   "items": [
     {
       "ItemName": "Water battlestaff",
@@ -17,10 +17,17 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1221,
+      "LowPrice": 1205,
       "PriceFloor": 1305.0,
       "BuyLimit": 18000,
-      "pctROI": 5.81
+      "pctROI": 7.22
+    },
+    {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 853,
+      "PriceFloor": 943.0,
+      "BuyLimit": 10000,
+      "pctROI": 9.5
     },
     {
       "ItemName": "Rune javelin tips",
@@ -28,13 +35,6 @@
       "PriceFloor": 586.0,
       "BuyLimit": 10000,
       "pctROI": 11.73
-    },
-    {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 880,
-      "PriceFloor": 943.0,
-      "BuyLimit": 10000,
-      "pctROI": 6.14
     }
   ],
   "methodology": "VeryGranular"
