@@ -1,19 +1,19 @@
 {
-  "updated": "2026-06-01T04:40:41.063851+00:00",
+  "updated": "2026-06-01T04:45:38.121844+00:00",
   "items": [
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8721,
+      "PriceFloor": 8992.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.09
+    },
     {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1693,
       "PriceFloor": 1864.0,
       "BuyLimit": 13000,
       "pctROI": 9.04
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8805,
-      "PriceFloor": 8992.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.11
     },
     {
       "ItemName": "Earth battlestaff",
@@ -66,10 +66,17 @@
     },
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 521,
+      "LowPrice": 522,
       "PriceFloor": 545.0,
       "BuyLimit": 18000,
-      "pctROI": 3.65
+      "pctROI": 3.45
+    },
+    {
+      "ItemName": "Yellow fin",
+      "LowPrice": 55,
+      "PriceFloor": 82.0,
+      "BuyLimit": 11000,
+      "pctROI": 49.09
     }
   ],
   "methodology": "VeryGranular"
