@@ -1,18 +1,25 @@
 {
-  "updated": "2026-06-02T06:05:34.972242+00:00",
+  "updated": "2026-06-02T06:10:44.801011+00:00",
   "items": [
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8805,
+      "PriceFloor": 8989.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.08
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1206,
+      "PriceFloor": 1302.0,
+      "BuyLimit": 18000,
+      "pctROI": 6.88
+    },
     {
       "ItemName": "Ironwood repair kit",
       "LowPrice": 2031,
       "PriceFloor": 2158.0,
       "BuyLimit": 13000,
-      "pctROI": 5.22
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1225,
-      "PriceFloor": 1302.0,
-      "BuyLimit": 18000,
       "pctROI": 5.22
     },
     {
@@ -52,10 +59,10 @@
     },
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 521,
+      "LowPrice": 522,
       "PriceFloor": 542.0,
       "BuyLimit": 18000,
-      "pctROI": 3.07
+      "pctROI": 2.87
     }
   ],
   "methodology": "VeryGranular"
