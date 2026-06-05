@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-05T20:40:39.999867+00:00",
+  "updated": "2026-06-05T20:45:47.662077+00:00",
   "items": [
     {
       "ItemName": "Water battlestaff",
@@ -17,10 +17,17 @@
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8500,
+      "LowPrice": 8501,
       "PriceFloor": 8690.0,
       "BuyLimit": 11000,
-      "pctROI": 1.22
+      "pctROI": 1.21
+    },
+    {
+      "ItemName": "Camphor repair kit",
+      "LowPrice": 1757,
+      "PriceFloor": 1859.0,
+      "BuyLimit": 13000,
+      "pctROI": 4.78
     },
     {
       "ItemName": "Yew longbow",
@@ -30,25 +37,11 @@
       "pctROI": 11.69
     },
     {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1935,
-      "PriceFloor": 2052.0,
-      "BuyLimit": 10000,
-      "pctROI": 5.01
-    },
-    {
-      "ItemName": "Camphor repair kit",
-      "LowPrice": 1781,
-      "PriceFloor": 1859.0,
-      "BuyLimit": 13000,
-      "pctROI": 3.37
-    },
-    {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 852,
+      "LowPrice": 851,
       "PriceFloor": 938.0,
       "BuyLimit": 10000,
-      "pctROI": 9.04
+      "pctROI": 9.17
     },
     {
       "ItemName": "Rune javelin tips",
@@ -58,11 +51,25 @@
       "pctROI": 14.71
     },
     {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1980,
+      "PriceFloor": 2052.0,
+      "BuyLimit": 10000,
+      "pctROI": 2.63
+    },
+    {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1225,
+      "PriceFloor": 1265.0,
+      "BuyLimit": 13000,
+      "pctROI": 2.29
+    },
+    {
       "ItemName": "Yellow fin",
-      "LowPrice": 51,
+      "LowPrice": 47,
       "PriceFloor": 77.0,
       "BuyLimit": 11000,
-      "pctROI": 50.98
+      "pctROI": 63.83
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -70,13 +77,6 @@
       "PriceFloor": 683.0,
       "BuyLimit": 10000,
       "pctROI": 4.31
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1238,
-      "PriceFloor": 1265.0,
-      "BuyLimit": 13000,
-      "pctROI": 1.21
     }
   ],
   "methodology": "VeryGranular"
