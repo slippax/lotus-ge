@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-06T20:40:36.966391+00:00",
+  "updated": "2026-06-06T20:45:40.394559+00:00",
   "items": [
     {
       "ItemName": "Redwood shield",
@@ -7,6 +7,13 @@
       "PriceFloor": 539.0,
       "BuyLimit": 18000,
       "pctROI": 23.04
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8800,
+      "PriceFloor": 8986.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.1
     },
     {
       "ItemName": "Camphor repair kit",
@@ -31,10 +38,17 @@
     },
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 478,
+      "LowPrice": 473,
       "PriceFloor": 539.0,
       "BuyLimit": 18000,
-      "pctROI": 11.72
+      "pctROI": 12.9
+    },
+    {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1934,
+      "PriceFloor": 2051.0,
+      "BuyLimit": 10000,
+      "pctROI": 5.02
     },
     {
       "ItemName": "Rune javelin tips",
@@ -51,20 +65,6 @@
       "pctROI": 9.69
     },
     {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1970,
-      "PriceFloor": 2051.0,
-      "BuyLimit": 10000,
-      "pctROI": 3.1
-    },
-    {
-      "ItemName": "Amethyst javelin tips",
-      "LowPrice": 643,
-      "PriceFloor": 682.0,
-      "BuyLimit": 10000,
-      "pctROI": 5.13
-    },
-    {
       "ItemName": "Adamantite limbs",
       "LowPrice": 2,
       "PriceFloor": 729.0,
@@ -77,6 +77,13 @@
       "PriceFloor": 1264.0,
       "BuyLimit": 13000,
       "pctROI": 1.54
+    },
+    {
+      "ItemName": "Amethyst javelin tips",
+      "LowPrice": 666,
+      "PriceFloor": 682.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.5
     }
   ],
   "methodology": "VeryGranular"
