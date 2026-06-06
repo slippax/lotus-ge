@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-06T09:30:36.641367+00:00",
+  "updated": "2026-06-06T09:35:44.109248+00:00",
   "items": [
     {
       "ItemName": "Secateurs attachment",
@@ -25,6 +25,32 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 481000.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Gold amulet (u)",
+      "CurrentPrice": 140,
+      "BuyLimit": 18000,
+      "DailyRange": 3,
+      "WeeklyRange": 81,
+      "MonthlyRange": 88,
+      "CompressionRatio": 3.7,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 252000.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Rune dart(p)",
+      "CurrentPrice": 175,
+      "BuyLimit": 11000,
+      "DailyRange": 2,
+      "WeeklyRange": 40,
+      "MonthlyRange": 169,
+      "CompressionRatio": 5.0,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 192500.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -109,13 +135,26 @@
       "ItemName": "Raw marlin",
       "CurrentPrice": 3001,
       "BuyLimit": 15000,
-      "DailyRange": 123,
+      "DailyRange": 125,
       "WeeklyRange": 949,
       "MonthlyRange": 3619,
-      "CompressionRatio": 12.96,
+      "CompressionRatio": 13.17,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 4501500.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Umbral coral",
+      "CurrentPrice": 1966,
+      "BuyLimit": 11000,
+      "DailyRange": 61,
+      "WeeklyRange": 363,
+      "MonthlyRange": 860,
+      "CompressionRatio": 16.8,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 2162600.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -145,32 +184,6 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Mithril seeds",
-      "CurrentPrice": 1231,
-      "BuyLimit": 18000,
-      "DailyRange": 10,
-      "WeeklyRange": 52,
-      "MonthlyRange": 255,
-      "CompressionRatio": 19.23,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 2215800.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
-      "ItemName": "Umbral coral",
-      "CurrentPrice": 1966,
-      "BuyLimit": 11000,
-      "DailyRange": 71,
-      "WeeklyRange": 363,
-      "MonthlyRange": 860,
-      "CompressionRatio": 19.56,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 2162600.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
       "ItemName": "Olive oil(4)",
       "CurrentPrice": 57,
       "BuyLimit": 10000,
@@ -178,7 +191,7 @@
       "WeeklyRange": 167,
       "MonthlyRange": 170,
       "CompressionRatio": 20.96,
-      "BreakoutDirection": "LOWER_BIAS",
+      "BreakoutDirection": "NEUTRAL",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 57000.0,
       "CompressionLevel": "HIGH_COMPRESSION"
@@ -194,19 +207,6 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 315000.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
-      "ItemName": "Jade",
-      "CurrentPrice": 185,
-      "BuyLimit": 13000,
-      "DailyRange": 16,
-      "WeeklyRange": 72,
-      "MonthlyRange": 200,
-      "CompressionRatio": 22.22,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 240500.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -262,19 +262,6 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Gold amulet (u)",
-      "CurrentPrice": 140,
-      "BuyLimit": 18000,
-      "DailyRange": 20,
-      "WeeklyRange": 81,
-      "MonthlyRange": 88,
-      "CompressionRatio": 24.69,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 252000.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
       "ItemName": "Cooked dashing kebbit",
       "CurrentPrice": 1762,
       "BuyLimit": 6000,
@@ -314,16 +301,16 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Huasca potion (unf)",
-      "CurrentPrice": 8383,
-      "BuyLimit": 10000,
-      "DailyRange": 128,
-      "WeeklyRange": 454,
-      "MonthlyRange": 981,
-      "CompressionRatio": 28.19,
+      "ItemName": "Rubium splinters",
+      "CurrentPrice": 166,
+      "BuyLimit": 30000,
+      "DailyRange": 22,
+      "WeeklyRange": 83,
+      "MonthlyRange": 553,
+      "CompressionRatio": 26.51,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 8383000.0,
+      "PotentialBreakoutProfit": 498000.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -350,6 +337,19 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 2193800.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Huasca potion (unf)",
+      "CurrentPrice": 8252,
+      "BuyLimit": 10000,
+      "DailyRange": 131,
+      "WeeklyRange": 454,
+      "MonthlyRange": 981,
+      "CompressionRatio": 28.85,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 8252000.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -457,16 +457,29 @@
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
+      "ItemName": "Fish crate (empty)",
+      "CurrentPrice": 1688,
+      "BuyLimit": 250,
+      "DailyRange": 173,
+      "WeeklyRange": 500,
+      "MonthlyRange": 1025,
+      "CompressionRatio": 34.6,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 42200.0,
+      "CompressionLevel": "MODERATE_COMPRESSION"
+    },
+    {
       "ItemName": "Shark lure",
-      "CurrentPrice": 425,
+      "CurrentPrice": 407,
       "BuyLimit": 10000,
       "DailyRange": 41,
       "WeeklyRange": 116,
       "MonthlyRange": 119,
       "CompressionRatio": 35.34,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 425000.0,
+      "PotentialBreakoutProfit": 407000.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -497,7 +510,7 @@
     },
     {
       "ItemName": "Oak plank",
-      "CurrentPrice": 487,
+      "CurrentPrice": 497,
       "BuyLimit": 13000,
       "DailyRange": 22,
       "WeeklyRange": 61,
@@ -505,20 +518,7 @@
       "CompressionRatio": 36.07,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 633100.0,
-      "CompressionLevel": "MODERATE_COMPRESSION"
-    },
-    {
-      "ItemName": "Rubium splinters",
-      "CurrentPrice": 166,
-      "BuyLimit": 30000,
-      "DailyRange": 30,
-      "WeeklyRange": 83,
-      "MonthlyRange": 553,
-      "CompressionRatio": 36.14,
-      "BreakoutDirection": "UPPER_BIAS",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 498000.0,
+      "PotentialBreakoutProfit": 646100.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -536,7 +536,7 @@
     },
     {
       "ItemName": "Guam potion (unf)",
-      "CurrentPrice": 416,
+      "CurrentPrice": 415,
       "BuyLimit": 10000,
       "DailyRange": 35,
       "WeeklyRange": 95,
@@ -544,7 +544,7 @@
       "CompressionRatio": 36.84,
       "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 416000.0,
+      "PotentialBreakoutProfit": 415000.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -558,6 +558,19 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 477000.0,
+      "CompressionLevel": "MODERATE_COMPRESSION"
+    },
+    {
+      "ItemName": "Ruby bolts (e)",
+      "CurrentPrice": 146,
+      "BuyLimit": 11000,
+      "DailyRange": 15,
+      "WeeklyRange": 40,
+      "MonthlyRange": 52,
+      "CompressionRatio": 37.5,
+      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 160600.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -626,29 +639,16 @@
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
-      "ItemName": "Ruby bolts (e)",
-      "CurrentPrice": 146,
-      "BuyLimit": 11000,
-      "DailyRange": 17,
-      "WeeklyRange": 40,
-      "MonthlyRange": 52,
-      "CompressionRatio": 42.5,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 160600.0,
-      "CompressionLevel": "MODERATE_COMPRESSION"
-    },
-    {
-      "ItemName": "Silver ore",
-      "CurrentPrice": 67,
+      "ItemName": "Pie shell",
+      "CurrentPrice": 260,
       "BuyLimit": 13000,
-      "DailyRange": 3,
-      "WeeklyRange": 7,
-      "MonthlyRange": 7,
-      "CompressionRatio": 42.86,
+      "DailyRange": 13,
+      "WeeklyRange": 31,
+      "MonthlyRange": 49,
+      "CompressionRatio": 41.94,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 87100.0,
+      "PotentialBreakoutProfit": 338000.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     }
   ],
