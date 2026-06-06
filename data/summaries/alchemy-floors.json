@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-06T20:35:51.811187+00:00",
+  "updated": "2026-06-06T20:40:36.966391+00:00",
   "items": [
     {
       "ItemName": "Redwood shield",
@@ -17,10 +17,24 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1218,
+      "LowPrice": 1210,
       "PriceFloor": 1299.0,
       "BuyLimit": 18000,
-      "pctROI": 5.67
+      "pctROI": 6.36
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8500,
+      "PriceFloor": 8689.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.21
+    },
+    {
+      "ItemName": "Yew longbow",
+      "LowPrice": 478,
+      "PriceFloor": 539.0,
+      "BuyLimit": 18000,
+      "pctROI": 11.72
     },
     {
       "ItemName": "Rune javelin tips",
@@ -35,20 +49,6 @@
       "PriceFloor": 937.0,
       "BuyLimit": 10000,
       "pctROI": 9.69
-    },
-    {
-      "ItemName": "Yew longbow",
-      "LowPrice": 490,
-      "PriceFloor": 539.0,
-      "BuyLimit": 18000,
-      "pctROI": 8.98
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1202,
-      "PriceFloor": 1264.0,
-      "BuyLimit": 13000,
-      "pctROI": 4.16
     },
     {
       "ItemName": "Diamond bracelet",
@@ -70,6 +70,13 @@
       "PriceFloor": 729.0,
       "BuyLimit": 10000,
       "pctROI": 36000.0
+    },
+    {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1233,
+      "PriceFloor": 1264.0,
+      "BuyLimit": 13000,
+      "pctROI": 1.54
     }
   ],
   "methodology": "VeryGranular"
