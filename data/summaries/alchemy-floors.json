@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-10T17:10:56.975385+00:00",
+  "updated": "2026-06-10T17:15:39.136029+00:00",
   "items": [
     {
       "ItemName": "Water battlestaff",
@@ -16,18 +16,18 @@
       "pctROI": 1.06
     },
     {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1200,
+      "PriceFloor": 1299.0,
+      "BuyLimit": 18000,
+      "pctROI": 7.25
+    },
+    {
       "ItemName": "Onyx bolts (e)",
       "LowPrice": 8505,
       "PriceFloor": 8689.0,
       "BuyLimit": 11000,
       "pctROI": 1.15
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1228,
-      "PriceFloor": 1299.0,
-      "BuyLimit": 18000,
-      "pctROI": 4.8
     },
     {
       "ItemName": "Rune javelin tips",
@@ -44,25 +44,11 @@
       "pctROI": 11.14
     },
     {
-      "ItemName": "Camphor repair kit",
-      "LowPrice": 1776,
-      "PriceFloor": 1858.0,
-      "BuyLimit": 13000,
-      "pctROI": 3.6
-    },
-    {
       "ItemName": "Mahogany repair kit",
-      "LowPrice": 1203,
+      "LowPrice": 1201,
       "PriceFloor": 1264.0,
       "BuyLimit": 13000,
-      "pctROI": 4.07
-    },
-    {
-      "ItemName": "Yew longbow",
-      "LowPrice": 504,
-      "PriceFloor": 539.0,
-      "BuyLimit": 18000,
-      "pctROI": 5.95
+      "pctROI": 4.25
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -70,6 +56,13 @@
       "PriceFloor": 682.0,
       "BuyLimit": 10000,
       "pctROI": 7.3
+    },
+    {
+      "ItemName": "Yew longbow",
+      "LowPrice": 510,
+      "PriceFloor": 539.0,
+      "BuyLimit": 18000,
+      "pctROI": 4.71
     }
   ],
   "methodology": "VeryGranular"
