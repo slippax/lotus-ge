@@ -1,6 +1,13 @@
 {
-  "updated": "2026-06-15T14:00:57.182528+00:00",
+  "updated": "2026-06-15T14:05:38.898438+00:00",
   "items": [
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8795,
+      "PriceFloor": 8986.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.16
+    },
     {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8800,
@@ -45,10 +52,10 @@
     },
     {
       "ItemName": "Mahogany repair kit",
-      "LowPrice": 1208,
+      "LowPrice": 1182,
       "PriceFloor": 1264.0,
       "BuyLimit": 13000,
-      "pctROI": 3.64
+      "pctROI": 5.92
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -56,6 +63,13 @@
       "PriceFloor": 682.0,
       "BuyLimit": 10000,
       "pctROI": 3.52
+    },
+    {
+      "ItemName": "Yew longbow",
+      "LowPrice": 527,
+      "PriceFloor": 539.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.33
     }
   ],
   "methodology": "VeryGranular"
