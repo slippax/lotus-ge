@@ -1,12 +1,19 @@
 {
-  "updated": "2026-06-18T09:00:53.359766+00:00",
+  "updated": "2026-06-18T09:05:39.829884+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1160,
+      "LowPrice": 1157,
       "PriceFloor": 1299.0,
       "BuyLimit": 18000,
-      "pctROI": 10.95
+      "pctROI": 11.24
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8780,
+      "PriceFloor": 8986.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.33
     },
     {
       "ItemName": "Water battlestaff",
@@ -77,6 +84,13 @@
       "PriceFloor": 682.0,
       "BuyLimit": 10000,
       "pctROI": 4.32
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 400,
+      "PriceFloor": 409.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.25
     }
   ],
   "methodology": "VeryGranular"
