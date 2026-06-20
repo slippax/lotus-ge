@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-20T04:30:42.118310+00:00",
+  "updated": "2026-06-20T04:35:53.160589+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -37,6 +37,13 @@
       "pctROI": 9.47
     },
     {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8775,
+      "PriceFloor": 8990.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.44
+    },
+    {
       "ItemName": "Rune javelin tips",
       "LowPrice": 370,
       "PriceFloor": 585.0,
@@ -44,18 +51,18 @@
       "pctROI": 56.76
     },
     {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 725,
+      "PriceFloor": 941.0,
+      "BuyLimit": 10000,
+      "pctROI": 28.55
+    },
+    {
       "ItemName": "Earth battlestaff",
       "LowPrice": 8790,
       "PriceFloor": 8990.0,
       "BuyLimit": 18000,
       "pctROI": 1.26
-    },
-    {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 748,
-      "PriceFloor": 941.0,
-      "BuyLimit": 10000,
-      "pctROI": 24.6
     },
     {
       "ItemName": "Water battlestaff",
@@ -70,13 +77,6 @@
       "PriceFloor": 2055.0,
       "BuyLimit": 10000,
       "pctROI": 9.7
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8805,
-      "PriceFloor": 8990.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.09
     },
     {
       "ItemName": "Yew longbow",
@@ -107,11 +107,18 @@
       "pctROI": 2.11
     },
     {
+      "ItemName": "Diamond amulet (u)",
+      "LowPrice": 1835,
+      "PriceFloor": 1876.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.25
+    },
+    {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 390,
+      "LowPrice": 400,
       "PriceFloor": 413.0,
       "BuyLimit": 11000,
-      "pctROI": 4.87
+      "pctROI": 2.25
     }
   ],
   "methodology": "VeryGranular"
