@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-20T08:35:43.678301+00:00",
+  "updated": "2026-06-20T08:40:41.420325+00:00",
   "items": [
     {
       "ItemName": "Mahogany repair kit",
@@ -16,11 +16,18 @@
       "pctROI": 15.09
     },
     {
+      "ItemName": "Ironwood repair kit",
+      "LowPrice": 1953,
+      "PriceFloor": 2158.0,
+      "BuyLimit": 13000,
+      "pctROI": 9.42
+    },
+    {
       "ItemName": "Earth battlestaff",
-      "LowPrice": 8771,
+      "LowPrice": 8781,
       "PriceFloor": 8989.0,
       "BuyLimit": 18000,
-      "pctROI": 1.47
+      "pctROI": 1.36
     },
     {
       "ItemName": "Water battlestaff",
@@ -49,13 +56,6 @@
       "PriceFloor": 8989.0,
       "BuyLimit": 18000,
       "pctROI": 1.14
-    },
-    {
-      "ItemName": "Ironwood repair kit",
-      "LowPrice": 2000,
-      "PriceFloor": 2158.0,
-      "BuyLimit": 13000,
-      "pctROI": 6.85
     },
     {
       "ItemName": "Diamond bracelet",
@@ -91,6 +91,13 @@
       "PriceFloor": 685.0,
       "BuyLimit": 10000,
       "pctROI": 10.41
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 395,
+      "PriceFloor": 412.0,
+      "BuyLimit": 11000,
+      "pctROI": 3.29
     }
   ],
   "methodology": "VeryGranular"
