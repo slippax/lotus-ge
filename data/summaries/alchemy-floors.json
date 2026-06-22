@@ -1,13 +1,6 @@
 {
-  "updated": "2026-06-22T20:30:54.770943+00:00",
+  "updated": "2026-06-22T20:35:38.536907+00:00",
   "items": [
-    {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8705,
-      "PriceFloor": 8988.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.23
-    },
     {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1588,
@@ -21,13 +14,6 @@
       "PriceFloor": 1301.0,
       "BuyLimit": 18000,
       "pctROI": 16.04
-    },
-    {
-      "ItemName": "Opal amulet (u)",
-      "LowPrice": 17,
-      "PriceFloor": 315.0,
-      "BuyLimit": 10000,
-      "pctROI": 1735.29
     },
     {
       "ItemName": "Earth battlestaff",
@@ -44,6 +30,13 @@
       "pctROI": 14.92
     },
     {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8755,
+      "PriceFloor": 8988.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.64
+    },
+    {
       "ItemName": "Air battlestaff",
       "LowPrice": 8762,
       "PriceFloor": 8988.0,
@@ -58,18 +51,25 @@
       "pctROI": 16.22
     },
     {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 722,
-      "PriceFloor": 939.0,
-      "BuyLimit": 10000,
-      "pctROI": 28.81
-    },
-    {
       "ItemName": "Rune javelin tips",
       "LowPrice": 371,
       "PriceFloor": 583.0,
       "BuyLimit": 10000,
       "pctROI": 55.8
+    },
+    {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 736,
+      "PriceFloor": 939.0,
+      "BuyLimit": 10000,
+      "pctROI": 26.36
+    },
+    {
+      "ItemName": "Opal amulet (u)",
+      "LowPrice": 131,
+      "PriceFloor": 315.0,
+      "BuyLimit": 10000,
+      "pctROI": 138.17
     },
     {
       "ItemName": "Fire battlestaff",
@@ -121,11 +121,18 @@
       "pctROI": 8.06
     },
     {
+      "ItemName": "Diamond amulet (u)",
+      "LowPrice": 1824,
+      "PriceFloor": 1874.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.75
+    },
+    {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 398,
+      "LowPrice": 399,
       "PriceFloor": 411.0,
       "BuyLimit": 11000,
-      "pctROI": 2.26
+      "pctROI": 2.01
     }
   ],
   "methodology": "VeryGranular"
