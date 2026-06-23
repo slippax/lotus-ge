@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T01:05:44.537991+00:00",
+  "updated": "2026-06-23T01:10:40.532643+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -16,6 +16,13 @@
       "pctROI": 2.08
     },
     {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1037,
+      "PriceFloor": 1265.0,
+      "BuyLimit": 13000,
+      "pctROI": 20.83
+    },
+    {
       "ItemName": "Ironwood repair kit",
       "LowPrice": 1932,
       "PriceFloor": 2156.0,
@@ -24,10 +31,10 @@
     },
     {
       "ItemName": "Water battlestaff",
-      "LowPrice": 8756,
+      "LowPrice": 8755,
       "PriceFloor": 8987.0,
       "BuyLimit": 18000,
-      "pctROI": 1.62
+      "pctROI": 1.63
     },
     {
       "ItemName": "Earth battlestaff",
@@ -42,13 +49,6 @@
       "PriceFloor": 2052.0,
       "BuyLimit": 10000,
       "pctROI": 13.52
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1079,
-      "PriceFloor": 1265.0,
-      "BuyLimit": 13000,
-      "pctROI": 16.13
     },
     {
       "ItemName": "Amulet of glory(6)",
@@ -133,6 +133,13 @@
       "PriceFloor": 1873.0,
       "BuyLimit": 10000,
       "pctROI": 1.7
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 391,
+      "PriceFloor": 410.0,
+      "BuyLimit": 11000,
+      "pctROI": 3.84
     }
   ],
   "methodology": "VeryGranular"
