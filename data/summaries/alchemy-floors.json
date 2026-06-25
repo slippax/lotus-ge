@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-25T21:50:37.700227+00:00",
+  "updated": "2026-06-25T21:55:40.619249+00:00",
   "items": [
     {
       "ItemName": "Camphor repair kit",
@@ -17,10 +17,10 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1060,
+      "LowPrice": 1061,
       "PriceFloor": 1300.0,
       "BuyLimit": 18000,
-      "pctROI": 21.42
+      "pctROI": 21.3
     },
     {
       "ItemName": "Air battlestaff",
@@ -52,10 +52,17 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 695,
+      "LowPrice": 693,
       "PriceFloor": 938.0,
       "BuyLimit": 10000,
-      "pctROI": 33.67
+      "pctROI": 34.05
+    },
+    {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 366,
+      "PriceFloor": 582.0,
+      "BuyLimit": 10000,
+      "pctROI": 57.65
     },
     {
       "ItemName": "Diamond bracelet",
@@ -63,13 +70,6 @@
       "PriceFloor": 2052.0,
       "BuyLimit": 10000,
       "pctROI": 11.34
-    },
-    {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 372,
-      "PriceFloor": 582.0,
-      "BuyLimit": 10000,
-      "pctROI": 55.11
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -87,10 +87,10 @@
     },
     {
       "ItemName": "Amulet of glory(6)",
-      "LowPrice": 10000,
+      "LowPrice": 9999,
       "PriceFloor": 10249.0,
       "BuyLimit": 10000,
-      "pctROI": 1.47
+      "pctROI": 1.48
     },
     {
       "ItemName": "Yew longbow",
@@ -100,25 +100,18 @@
       "pctROI": 13.59
     },
     {
+      "ItemName": "Ruby necklace",
+      "LowPrice": 1009,
+      "PriceFloor": 1072.0,
+      "BuyLimit": 18000,
+      "pctROI": 5.25
+    },
+    {
       "ItemName": "Amethyst javelin tips",
       "LowPrice": 583,
       "PriceFloor": 683.0,
       "BuyLimit": 10000,
       "pctROI": 16.12
-    },
-    {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 1013,
-      "PriceFloor": 1072.0,
-      "BuyLimit": 18000,
-      "pctROI": 4.84
-    },
-    {
-      "ItemName": "Diamond necklace",
-      "LowPrice": 1897,
-      "PriceFloor": 1963.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.48
     },
     {
       "ItemName": "Diamond amulet (u)",
@@ -140,6 +133,13 @@
       "PriceFloor": 410.0,
       "BuyLimit": 11000,
       "pctROI": 8.27
+    },
+    {
+      "ItemName": "Teak repair kit",
+      "LowPrice": 353,
+      "PriceFloor": 374.0,
+      "BuyLimit": 13000,
+      "pctROI": 5.1
     }
   ],
   "methodology": "VeryGranular"
