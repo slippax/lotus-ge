@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-25T19:40:39.803837+00:00",
+  "updated": "2026-06-25T19:45:39.071652+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -10,17 +10,10 @@
     },
     {
       "ItemName": "Camphor repair kit",
-      "LowPrice": 1547,
+      "LowPrice": 1545,
       "PriceFloor": 1859.0,
       "BuyLimit": 13000,
-      "pctROI": 19.0
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 977,
-      "PriceFloor": 1265.0,
-      "BuyLimit": 13000,
-      "pctROI": 28.25
+      "pctROI": 19.16
     },
     {
       "ItemName": "Redwood shield",
@@ -30,11 +23,18 @@
       "pctROI": 52.86
     },
     {
-      "ItemName": "Fire battlestaff",
-      "LowPrice": 8729,
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1000,
+      "PriceFloor": 1265.0,
+      "BuyLimit": 13000,
+      "pctROI": 25.3
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8736,
       "PriceFloor": 8987.0,
       "BuyLimit": 18000,
-      "pctROI": 1.94
+      "pctROI": 1.85
     },
     {
       "ItemName": "Water battlestaff",
@@ -44,11 +44,25 @@
       "pctROI": 1.76
     },
     {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8750,
+      "PriceFloor": 8987.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.69
+    },
+    {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1814,
+      "PriceFloor": 2052.0,
+      "BuyLimit": 10000,
+      "pctROI": 12.02
+    },
+    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 366,
+      "LowPrice": 371,
       "PriceFloor": 582.0,
       "BuyLimit": 10000,
-      "pctROI": 57.65
+      "pctROI": 55.53
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -58,32 +72,18 @@
       "pctROI": 27.43
     },
     {
-      "ItemName": "Ironwood repair kit",
-      "LowPrice": 1982,
-      "PriceFloor": 2156.0,
-      "BuyLimit": 13000,
-      "pctROI": 7.72
-    },
-    {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1850,
-      "PriceFloor": 2052.0,
-      "BuyLimit": 10000,
-      "pctROI": 9.84
-    },
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8800,
-      "PriceFloor": 8987.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.11
-    },
-    {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8500,
+      "LowPrice": 8460,
       "PriceFloor": 8690.0,
       "BuyLimit": 11000,
-      "pctROI": 1.22
+      "pctROI": 1.7
+    },
+    {
+      "ItemName": "Amulet of glory(6)",
+      "LowPrice": 10001,
+      "PriceFloor": 10249.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.46
     },
     {
       "ItemName": "Diamond necklace",
@@ -100,6 +100,20 @@
       "pctROI": 11.46
     },
     {
+      "ItemName": "Ironwood repair kit",
+      "LowPrice": 2060,
+      "PriceFloor": 2156.0,
+      "BuyLimit": 13000,
+      "pctROI": 3.64
+    },
+    {
+      "ItemName": "Ruby necklace",
+      "LowPrice": 1011,
+      "PriceFloor": 1072.0,
+      "BuyLimit": 18000,
+      "pctROI": 5.04
+    },
+    {
       "ItemName": "Amethyst javelin tips",
       "LowPrice": 600,
       "PriceFloor": 683.0,
@@ -114,25 +128,18 @@
       "pctROI": 4.15
     },
     {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 1027,
-      "PriceFloor": 1072.0,
-      "BuyLimit": 18000,
-      "pctROI": 3.41
-    },
-    {
       "ItemName": "Emerald necklace",
-      "LowPrice": 595,
+      "LowPrice": 580,
       "PriceFloor": 626.0,
       "BuyLimit": 18000,
-      "pctROI": 4.2
+      "pctROI": 6.9
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 389,
+      "LowPrice": 372,
       "PriceFloor": 410.0,
       "BuyLimit": 11000,
-      "pctROI": 4.37
+      "pctROI": 9.14
     }
   ],
   "methodology": "VeryGranular"
