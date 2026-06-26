@@ -1,12 +1,19 @@
 {
-  "updated": "2026-06-26T14:45:44.617054+00:00",
+  "updated": "2026-06-26T14:50:43.644370+00:00",
   "items": [
     {
+      "ItemName": "Camphor repair kit",
+      "LowPrice": 1545,
+      "PriceFloor": 1858.0,
+      "BuyLimit": 13000,
+      "pctROI": 19.09
+    },
+    {
       "ItemName": "Magic longbow",
-      "LowPrice": 1092,
+      "LowPrice": 1090,
       "PriceFloor": 1299.0,
       "BuyLimit": 18000,
-      "pctROI": 17.86
+      "pctROI": 18.07
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -14,13 +21,6 @@
       "PriceFloor": 1264.0,
       "BuyLimit": 13000,
       "pctROI": 25.33
-    },
-    {
-      "ItemName": "Camphor repair kit",
-      "LowPrice": 1591,
-      "PriceFloor": 1858.0,
-      "BuyLimit": 13000,
-      "pctROI": 15.65
     },
     {
       "ItemName": "Water battlestaff",
@@ -37,20 +37,6 @@
       "pctROI": 1.73
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8751,
-      "PriceFloor": 8986.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.67
-    },
-    {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1799,
-      "PriceFloor": 2051.0,
-      "BuyLimit": 10000,
-      "pctROI": 12.9
-    },
-    {
       "ItemName": "Dragon javelin tips",
       "LowPrice": 698,
       "PriceFloor": 937.0,
@@ -58,11 +44,18 @@
       "pctROI": 32.95
     },
     {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1802,
+      "PriceFloor": 2051.0,
+      "BuyLimit": 10000,
+      "pctROI": 12.71
+    },
+    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 366,
+      "LowPrice": 373,
       "PriceFloor": 581.0,
       "BuyLimit": 10000,
-      "pctROI": 57.38
+      "pctROI": 54.42
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -70,6 +63,13 @@
       "PriceFloor": 2155.0,
       "BuyLimit": 13000,
       "pctROI": 7.02
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8800,
+      "PriceFloor": 8986.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.1
     },
     {
       "ItemName": "Fire battlestaff",
@@ -107,18 +107,18 @@
       "pctROI": 15.95
     },
     {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 1015,
-      "PriceFloor": 1071.0,
-      "BuyLimit": 18000,
-      "pctROI": 4.53
-    },
-    {
       "ItemName": "Diamond necklace",
       "LowPrice": 1911,
       "PriceFloor": 1962.0,
       "BuyLimit": 18000,
       "pctROI": 1.67
+    },
+    {
+      "ItemName": "Ruby necklace",
+      "LowPrice": 1029,
+      "PriceFloor": 1071.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.11
     },
     {
       "ItemName": "Diamond amulet (u)",
@@ -143,10 +143,10 @@
     },
     {
       "ItemName": "Teak repair kit",
-      "LowPrice": 351,
+      "LowPrice": 355,
       "PriceFloor": 373.0,
       "BuyLimit": 13000,
-      "pctROI": 5.41
+      "pctROI": 4.23
     }
   ],
   "methodology": "VeryGranular"
