@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-26T13:40:52.896103+00:00",
+  "updated": "2026-06-26T13:45:39.912332+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -24,10 +24,17 @@
     },
     {
       "ItemName": "Water battlestaff",
-      "LowPrice": 8730,
+      "LowPrice": 8725,
       "PriceFloor": 8986.0,
       "BuyLimit": 18000,
-      "pctROI": 1.91
+      "pctROI": 1.97
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8752,
+      "PriceFloor": 8986.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.66
     },
     {
       "ItemName": "Diamond bracelet",
@@ -38,10 +45,10 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 707,
+      "LowPrice": 700,
       "PriceFloor": 937.0,
       "BuyLimit": 10000,
-      "pctROI": 31.26
+      "pctROI": 32.57
     },
     {
       "ItemName": "Rune javelin tips",
@@ -51,18 +58,11 @@
       "pctROI": 54.84
     },
     {
-      "ItemName": "Earth battlestaff",
+      "ItemName": "Fire battlestaff",
       "LowPrice": 8800,
       "PriceFloor": 8986.0,
       "BuyLimit": 18000,
       "pctROI": 1.1
-    },
-    {
-      "ItemName": "Fire battlestaff",
-      "LowPrice": 8804,
-      "PriceFloor": 8986.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.06
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -79,25 +79,18 @@
       "pctROI": 1.55
     },
     {
-      "ItemName": "Diamond necklace",
-      "LowPrice": 1881,
-      "PriceFloor": 1962.0,
-      "BuyLimit": 18000,
-      "pctROI": 3.3
-    },
-    {
-      "ItemName": "Amulet of glory(6)",
-      "LowPrice": 10039,
-      "PriceFloor": 10248.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.07
-    },
-    {
       "ItemName": "Yew longbow",
-      "LowPrice": 476,
+      "LowPrice": 479,
       "PriceFloor": 539.0,
       "BuyLimit": 18000,
-      "pctROI": 12.18
+      "pctROI": 11.48
+    },
+    {
+      "ItemName": "Diamond necklace",
+      "LowPrice": 1891,
+      "PriceFloor": 1962.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.75
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -129,17 +122,17 @@
     },
     {
       "ItemName": "Emerald necklace",
-      "LowPrice": 600,
+      "LowPrice": 599,
       "PriceFloor": 625.0,
       "BuyLimit": 18000,
-      "pctROI": 3.17
+      "pctROI": 3.34
     },
     {
       "ItemName": "Teak repair kit",
-      "LowPrice": 350,
+      "LowPrice": 354,
       "PriceFloor": 373.0,
       "BuyLimit": 13000,
-      "pctROI": 5.71
+      "pctROI": 4.52
     }
   ],
   "methodology": "VeryGranular"
