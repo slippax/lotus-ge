@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T03:05:37.757965+00:00",
+  "updated": "2026-06-27T03:10:37.680280+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -7,13 +7,6 @@
       "PriceFloor": 1299.0,
       "BuyLimit": 18000,
       "pctROI": 20.73
-    },
-    {
-      "ItemName": "Fire battlestaff",
-      "LowPrice": 8700,
-      "PriceFloor": 8986.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.26
     },
     {
       "ItemName": "Air battlestaff",
@@ -44,6 +37,13 @@
       "pctROI": 1.68
     },
     {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8754,
+      "PriceFloor": 8986.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.63
+    },
+    {
       "ItemName": "Dragon javelin tips",
       "LowPrice": 692,
       "PriceFloor": 937.0,
@@ -66,10 +66,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 376,
+      "LowPrice": 391,
       "PriceFloor": 581.0,
       "BuyLimit": 10000,
-      "pctROI": 53.19
+      "pctROI": 47.31
     },
     {
       "ItemName": "Amulet of glory(6)",
@@ -129,10 +129,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 372,
+      "LowPrice": 375,
       "PriceFloor": 409.0,
       "BuyLimit": 11000,
-      "pctROI": 8.87
+      "pctROI": 8.0
     }
   ],
   "methodology": "VeryGranular"
