@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28T17:45:37.822312+00:00",
+  "updated": "2026-06-28T17:50:40.264767+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -16,13 +16,6 @@
       "pctROI": 21.09
     },
     {
-      "ItemName": "Camphor repair kit",
-      "LowPrice": 1551,
-      "PriceFloor": 1857.0,
-      "BuyLimit": 13000,
-      "pctROI": 18.57
-    },
-    {
       "ItemName": "Water battlestaff",
       "LowPrice": 8700,
       "PriceFloor": 8985.0,
@@ -35,6 +28,13 @@
       "PriceFloor": 1263.0,
       "BuyLimit": 13000,
       "pctROI": 24.6
+    },
+    {
+      "ItemName": "Camphor repair kit",
+      "LowPrice": 1600,
+      "PriceFloor": 1857.0,
+      "BuyLimit": 13000,
+      "pctROI": 14.94
     },
     {
       "ItemName": "Earth battlestaff",
@@ -51,18 +51,18 @@
       "pctROI": 42.4
     },
     {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8376,
-      "PriceFloor": 8688.0,
-      "BuyLimit": 11000,
-      "pctROI": 2.7
-    },
-    {
       "ItemName": "Air battlestaff",
       "LowPrice": 8763,
       "PriceFloor": 8985.0,
       "BuyLimit": 18000,
       "pctROI": 1.52
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8399,
+      "PriceFloor": 8688.0,
+      "BuyLimit": 11000,
+      "pctROI": 2.42
     },
     {
       "ItemName": "Rune javelin tips",
@@ -73,10 +73,10 @@
     },
     {
       "ItemName": "Diamond bracelet",
-      "LowPrice": 1831,
+      "LowPrice": 1830,
       "PriceFloor": 2050.0,
       "BuyLimit": 10000,
-      "pctROI": 10.87
+      "pctROI": 10.93
     },
     {
       "ItemName": "Yew longbow",
@@ -108,10 +108,17 @@
     },
     {
       "ItemName": "Phoenix necklace",
-      "LowPrice": 2093,
+      "LowPrice": 2090,
       "PriceFloor": 2183.0,
       "BuyLimit": 10000,
-      "pctROI": 3.3
+      "pctROI": 3.44
+    },
+    {
+      "ItemName": "Ruby necklace",
+      "LowPrice": 1034,
+      "PriceFloor": 1070.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.51
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -129,17 +136,10 @@
     },
     {
       "ItemName": "Emerald necklace",
-      "LowPrice": 600,
+      "LowPrice": 596,
       "PriceFloor": 624.0,
       "BuyLimit": 18000,
-      "pctROI": 3.0
-    },
-    {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 1049,
-      "PriceFloor": 1070.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.05
+      "pctROI": 3.69
     }
   ],
   "methodology": "VeryGranular"
