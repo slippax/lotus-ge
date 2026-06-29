@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-29T13:05:39.919515+00:00",
+  "updated": "2026-06-29T13:10:53.996470+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -31,10 +31,17 @@
     },
     {
       "ItemName": "Combat bracelet",
-      "LowPrice": 11852,
+      "LowPrice": 11851,
       "PriceFloor": 12275.0,
       "BuyLimit": 10000,
-      "pctROI": 2.54
+      "pctROI": 2.55
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8739,
+      "PriceFloor": 8985.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.8
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -72,20 +79,6 @@
       "pctROI": 1.96
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8800,
-      "PriceFloor": 8985.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.09
-    },
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8800,
-      "PriceFloor": 8985.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.09
-    },
-    {
       "ItemName": "Ironwood repair kit",
       "LowPrice": 2004,
       "PriceFloor": 2154.0,
@@ -98,6 +91,13 @@
       "PriceFloor": 538.0,
       "BuyLimit": 18000,
       "pctROI": 14.13
+    },
+    {
+      "ItemName": "Emerald necklace",
+      "LowPrice": 567,
+      "PriceFloor": 624.0,
+      "BuyLimit": 18000,
+      "pctROI": 8.99
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -133,13 +133,6 @@
       "PriceFloor": 1070.0,
       "BuyLimit": 18000,
       "pctROI": 1.05
-    },
-    {
-      "ItemName": "Emerald necklace",
-      "LowPrice": 610,
-      "PriceFloor": 624.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.31
     }
   ],
   "methodology": "VeryGranular"
