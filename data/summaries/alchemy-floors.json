@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-29T13:45:41.712460+00:00",
+  "updated": "2026-06-29T13:50:39.880112+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -9,18 +9,18 @@
       "pctROI": 20.75
     },
     {
-      "ItemName": "Camphor repair kit",
-      "LowPrice": 1563,
-      "PriceFloor": 1857.0,
-      "BuyLimit": 13000,
-      "pctROI": 17.66
-    },
-    {
       "ItemName": "Mahogany repair kit",
       "LowPrice": 995,
       "PriceFloor": 1263.0,
       "BuyLimit": 13000,
       "pctROI": 25.73
+    },
+    {
+      "ItemName": "Camphor repair kit",
+      "LowPrice": 1586,
+      "PriceFloor": 1857.0,
+      "BuyLimit": 13000,
+      "pctROI": 15.95
     },
     {
       "ItemName": "Water battlestaff",
@@ -51,6 +51,13 @@
       "pctROI": 1.67
     },
     {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8765,
+      "PriceFloor": 8985.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.49
+    },
+    {
       "ItemName": "Dragon javelin tips",
       "LowPrice": 693,
       "PriceFloor": 936.0,
@@ -59,10 +66,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 372,
+      "LowPrice": 371,
       "PriceFloor": 580.0,
       "BuyLimit": 10000,
-      "pctROI": 54.57
+      "pctROI": 54.99
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -84,13 +91,6 @@
       "PriceFloor": 2154.0,
       "BuyLimit": 13000,
       "pctROI": 6.38
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8804,
-      "PriceFloor": 8985.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.04
     },
     {
       "ItemName": "Yew longbow",
@@ -115,24 +115,31 @@
     },
     {
       "ItemName": "Emerald necklace",
-      "LowPrice": 585,
+      "LowPrice": 590,
       "PriceFloor": 624.0,
       "BuyLimit": 18000,
-      "pctROI": 5.64
+      "pctROI": 4.75
     },
     {
       "ItemName": "Phoenix necklace",
-      "LowPrice": 2123,
+      "LowPrice": 2126,
       "PriceFloor": 2183.0,
       "BuyLimit": 10000,
-      "pctROI": 1.84
+      "pctROI": 1.69
+    },
+    {
+      "ItemName": "Ruby necklace",
+      "LowPrice": 1045,
+      "PriceFloor": 1070.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.44
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 380,
+      "LowPrice": 381,
       "PriceFloor": 408.0,
       "BuyLimit": 11000,
-      "pctROI": 6.32
+      "pctROI": 6.04
     }
   ],
   "methodology": "VeryGranular"
