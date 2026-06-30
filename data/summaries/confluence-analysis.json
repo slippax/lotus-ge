@@ -1,24 +1,9 @@
 {
-  "updated": "2026-06-30T09:30:42.806242+00:00",
+  "updated": "2026-06-30T09:35:39.455962+00:00",
   "items": [
     {
-      "ItemName": "Earth orb",
-      "CurrentPrice": 1699,
-      "BuyLimit": 11000,
-      "FiveMinMean": 1690,
-      "HourlyMean": 1682,
-      "DailyMean": 1678,
-      "WeeklyMean": 1667,
-      "MonthlyMean": 1496,
-      "BullishConfluence": 5,
-      "BearishConfluence": 0,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 1868900.0
-    },
-    {
       "ItemName": "Prayer potion(4)",
-      "CurrentPrice": 8821,
+      "CurrentPrice": 8820,
       "BuyLimit": 2000,
       "FiveMinMean": 8746,
       "HourlyMean": 8743,
@@ -29,7 +14,7 @@
       "BearishConfluence": 0,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 1764200.0
+      "PotentialProfit": 1764000.0
     },
     {
       "ItemName": "Snape grass",
@@ -138,7 +123,7 @@
     },
     {
       "ItemName": "Dragon bones",
-      "CurrentPrice": 2986,
+      "CurrentPrice": 3015,
       "BuyLimit": 7500,
       "FiveMinMean": 3053,
       "HourlyMean": 3027,
@@ -149,7 +134,22 @@
       "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 2239500.0
+      "PotentialProfit": 2261250.0
+    },
+    {
+      "ItemName": "Earth orb",
+      "CurrentPrice": 1690,
+      "BuyLimit": 11000,
+      "FiveMinMean": 1690,
+      "HourlyMean": 1682,
+      "DailyMean": 1678,
+      "WeeklyMean": 1667,
+      "MonthlyMean": 1496,
+      "BullishConfluence": 4,
+      "BearishConfluence": 0,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 1859000.0
     },
     {
       "ItemName": "Water orb",
@@ -210,21 +210,6 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
       "PotentialProfit": 1046400.0
-    },
-    {
-      "ItemName": "Stamina potion(4)",
-      "CurrentPrice": 4142,
-      "BuyLimit": 2000,
-      "FiveMinMean": 4102,
-      "HourlyMean": 4071,
-      "DailyMean": 3959,
-      "WeeklyMean": 3940,
-      "MonthlyMean": 4077,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 828400.0
     },
     {
       "ItemName": "Chinchompa",
@@ -300,21 +285,6 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
       "PotentialProfit": 210600.0
-    },
-    {
-      "ItemName": "Bow string",
-      "CurrentPrice": 126,
-      "BuyLimit": 13000,
-      "FiveMinMean": 125,
-      "HourlyMean": 124,
-      "DailyMean": 126,
-      "WeeklyMean": 125,
-      "MonthlyMean": 114,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 163800.0
     },
     {
       "ItemName": "Adamant bolts",
@@ -632,6 +602,21 @@
       "PotentialProfit": 3280410.0
     },
     {
+      "ItemName": "Extended anti-venom+(4)",
+      "CurrentPrice": 20824,
+      "BuyLimit": 2000,
+      "FiveMinMean": 20402,
+      "HourlyMean": 20416,
+      "DailyMean": 20551,
+      "WeeklyMean": 19506,
+      "MonthlyMean": 18793,
+      "BullishConfluence": 3,
+      "BearishConfluence": 2,
+      "SignalStrength": "MODERATE_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 2915360.0
+    },
+    {
       "ItemName": "Burnt page",
       "CurrentPrice": 3423,
       "BuyLimit": 11000,
@@ -750,6 +735,21 @@
       "SignalStrength": "MODERATE_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
       "PotentialProfit": 1785140.0
+    },
+    {
+      "ItemName": "Super combat potion(4)",
+      "CurrentPrice": 12628,
+      "BuyLimit": 2000,
+      "FiveMinMean": 12672,
+      "HourlyMean": 12631,
+      "DailyMean": 12606,
+      "WeeklyMean": 12521,
+      "MonthlyMean": 12950,
+      "BullishConfluence": 3,
+      "BearishConfluence": 2,
+      "SignalStrength": "MODERATE_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 1767920.0
     }
   ],
   "methodology": "VeryGranular_MultiTimeframeConfluence"
