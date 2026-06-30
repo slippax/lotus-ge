@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30T04:40:40.493643+00:00",
+  "updated": "2026-06-30T04:45:54.470944+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -17,10 +17,10 @@
     },
     {
       "ItemName": "Mahogany repair kit",
-      "LowPrice": 991,
+      "LowPrice": 953,
       "PriceFloor": 1262.0,
       "BuyLimit": 13000,
-      "pctROI": 26.14
+      "pctROI": 31.16
     },
     {
       "ItemName": "Water battlestaff",
@@ -37,6 +37,13 @@
       "pctROI": 14.88
     },
     {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8725,
+      "PriceFloor": 8984.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.95
+    },
+    {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8730,
       "PriceFloor": 8984.0,
@@ -51,18 +58,11 @@
       "pctROI": 42.02
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8755,
-      "PriceFloor": 8984.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.6
-    },
-    {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8380,
+      "LowPrice": 8365,
       "PriceFloor": 8687.0,
       "BuyLimit": 11000,
-      "pctROI": 2.64
+      "pctROI": 2.82
     },
     {
       "ItemName": "Diamond bracelet",
@@ -84,13 +84,6 @@
       "PriceFloor": 537.0,
       "BuyLimit": 18000,
       "pctROI": 14.16
-    },
-    {
-      "ItemName": "Diamond amulet (u)",
-      "LowPrice": 1746,
-      "PriceFloor": 1871.0,
-      "BuyLimit": 10000,
-      "pctROI": 6.13
     },
     {
       "ItemName": "Ruby bracelet",
@@ -119,6 +112,13 @@
       "PriceFloor": 680.0,
       "BuyLimit": 10000,
       "pctROI": 6.98
+    },
+    {
+      "ItemName": "Diamond amulet (u)",
+      "LowPrice": 1833,
+      "PriceFloor": 1871.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.09
     }
   ],
   "methodology": "VeryGranular"
