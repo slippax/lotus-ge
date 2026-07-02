@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02T17:30:52.562884+00:00",
+  "updated": "2026-07-02T17:35:47.786707+00:00",
   "items": [
     {
       "ItemName": "Water battlestaff",
@@ -45,10 +45,17 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 710,
+      "LowPrice": 708,
       "PriceFloor": 935.0,
       "BuyLimit": 10000,
-      "pctROI": 30.42
+      "pctROI": 30.79
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8406,
+      "PriceFloor": 8687.0,
+      "BuyLimit": 11000,
+      "pctROI": 2.32
     },
     {
       "ItemName": "Rune javelin tips",
@@ -56,13 +63,6 @@
       "PriceFloor": 579.0,
       "BuyLimit": 10000,
       "pctROI": 55.14
-    },
-    {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8420,
-      "PriceFloor": 8687.0,
-      "BuyLimit": 11000,
-      "pctROI": 2.15
     },
     {
       "ItemName": "Air battlestaff",
@@ -107,18 +107,25 @@
       "pctROI": 4.2
     },
     {
-      "ItemName": "Phoenix necklace",
-      "LowPrice": 2120,
-      "PriceFloor": 2182.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.93
-    },
-    {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 369,
+      "LowPrice": 370,
       "PriceFloor": 407.0,
       "BuyLimit": 11000,
-      "pctROI": 9.21
+      "pctROI": 8.92
+    },
+    {
+      "ItemName": "Phoenix necklace",
+      "LowPrice": 2126,
+      "PriceFloor": 2182.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.65
+    },
+    {
+      "ItemName": "Emerald necklace",
+      "LowPrice": 600,
+      "PriceFloor": 623.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.83
     }
   ],
   "methodology": "VeryGranular"
