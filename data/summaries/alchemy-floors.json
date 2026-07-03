@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T04:50:43.975264+00:00",
+  "updated": "2026-07-03T04:55:34.134460+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -16,18 +16,25 @@
       "pctROI": 19.85
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1074,
-      "PriceFloor": 1296.0,
-      "BuyLimit": 18000,
-      "pctROI": 19.55
-    },
-    {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1547,
       "PriceFloor": 1855.0,
       "BuyLimit": 13000,
       "pctROI": 18.75
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1095,
+      "PriceFloor": 1296.0,
+      "BuyLimit": 18000,
+      "pctROI": 17.26
+    },
+    {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 994,
+      "PriceFloor": 1261.0,
+      "BuyLimit": 13000,
+      "pctROI": 25.65
     },
     {
       "ItemName": "Earth battlestaff",
@@ -37,6 +44,13 @@
       "pctROI": 2.07
     },
     {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8720,
+      "PriceFloor": 8983.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.0
+    },
+    {
       "ItemName": "Air battlestaff",
       "LowPrice": 8735,
       "PriceFloor": 8983.0,
@@ -44,39 +58,25 @@
       "pctROI": 1.82
     },
     {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1036,
-      "PriceFloor": 1261.0,
-      "BuyLimit": 13000,
-      "pctROI": 20.56
-    },
-    {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 688,
+      "LowPrice": 682,
       "PriceFloor": 934.0,
       "BuyLimit": 10000,
-      "pctROI": 34.45
+      "pctROI": 35.63
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8410,
+      "LowPrice": 8400,
       "PriceFloor": 8686.0,
       "BuyLimit": 11000,
-      "pctROI": 2.26
+      "pctROI": 2.38
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 373,
+      "LowPrice": 372,
       "PriceFloor": 578.0,
       "BuyLimit": 10000,
-      "pctROI": 53.62
-    },
-    {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8801,
-      "PriceFloor": 8983.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.06
+      "pctROI": 54.03
     },
     {
       "ItemName": "Yew longbow",
@@ -91,6 +91,13 @@
       "PriceFloor": 622.0,
       "BuyLimit": 10000,
       "pctROI": 22.95
+    },
+    {
+      "ItemName": "Diamond ring",
+      "LowPrice": 1763,
+      "PriceFloor": 1870.0,
+      "BuyLimit": 10000,
+      "pctROI": 5.05
     },
     {
       "ItemName": "Redwood shield",
@@ -119,13 +126,6 @@
       "PriceFloor": 406.0,
       "BuyLimit": 11000,
       "pctROI": 6.91
-    },
-    {
-      "ItemName": "Diamond ring",
-      "LowPrice": 1825,
-      "PriceFloor": 1870.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.48
     }
   ],
   "methodology": "VeryGranular"
