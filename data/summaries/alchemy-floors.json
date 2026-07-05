@@ -1,12 +1,19 @@
 {
-  "updated": "2026-07-05T22:05:40.927334+00:00",
+  "updated": "2026-07-05T22:10:51.276099+00:00",
   "items": [
     {
       "ItemName": "Air battlestaff",
-      "LowPrice": 8545,
+      "LowPrice": 8546,
       "PriceFloor": 8984.0,
       "BuyLimit": 18000,
-      "pctROI": 4.1
+      "pctROI": 4.08
+    },
+    {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8610,
+      "PriceFloor": 8984.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.31
     },
     {
       "ItemName": "Earth battlestaff",
@@ -21,13 +28,6 @@
       "PriceFloor": 1297.0,
       "BuyLimit": 18000,
       "pctROI": 17.78
-    },
-    {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8310,
-      "PriceFloor": 8687.0,
-      "BuyLimit": 11000,
-      "pctROI": 3.5
     },
     {
       "ItemName": "Water battlestaff",
@@ -51,18 +51,11 @@
       "pctROI": 12.76
     },
     {
-      "ItemName": "Fire battlestaff",
-      "LowPrice": 8752,
-      "PriceFloor": 8984.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.63
-    },
-    {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 710,
+      "LowPrice": 677,
       "PriceFloor": 935.0,
       "BuyLimit": 10000,
-      "pctROI": 30.42
+      "pctROI": 36.78
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -72,11 +65,18 @@
       "pctROI": 8.22
     },
     {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8441,
+      "PriceFloor": 8687.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.9
+    },
+    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 390,
+      "LowPrice": 400,
       "PriceFloor": 579.0,
       "BuyLimit": 10000,
-      "pctROI": 47.18
+      "pctROI": 43.5
     },
     {
       "ItemName": "Yew longbow",
@@ -126,20 +126,6 @@
       "PriceFloor": 407.0,
       "BuyLimit": 11000,
       "pctROI": 6.05
-    },
-    {
-      "ItemName": "Diamond amulet (u)",
-      "LowPrice": 1833,
-      "PriceFloor": 1871.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.09
-    },
-    {
-      "ItemName": "Emerald necklace",
-      "LowPrice": 610,
-      "PriceFloor": 623.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.15
     }
   ],
   "methodology": "VeryGranular"
