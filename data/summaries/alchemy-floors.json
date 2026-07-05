@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05T00:01:00.692674+00:00",
+  "updated": "2026-07-05T00:05:37.133113+00:00",
   "items": [
     {
       "ItemName": "Air battlestaff",
@@ -9,11 +9,18 @@
       "pctROI": 4.34
     },
     {
-      "ItemName": "Fire battlestaff",
-      "LowPrice": 8605,
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8600,
       "PriceFloor": 8983.0,
       "BuyLimit": 18000,
-      "pctROI": 3.36
+      "pctROI": 3.42
+    },
+    {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8603,
+      "PriceFloor": 8983.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.38
     },
     {
       "ItemName": "Earth battlestaff",
@@ -28,13 +35,6 @@
       "PriceFloor": 1296.0,
       "BuyLimit": 18000,
       "pctROI": 19.89
-    },
-    {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8735,
-      "PriceFloor": 8983.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.82
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -66,17 +66,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 375,
+      "LowPrice": 384,
       "PriceFloor": 578.0,
       "BuyLimit": 10000,
-      "pctROI": 52.8
-    },
-    {
-      "ItemName": "Yew longbow",
-      "LowPrice": 460,
-      "PriceFloor": 536.0,
-      "BuyLimit": 18000,
-      "pctROI": 15.43
+      "pctROI": 49.22
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -84,6 +77,13 @@
       "PriceFloor": 8686.0,
       "BuyLimit": 11000,
       "pctROI": 1.18
+    },
+    {
+      "ItemName": "Yew longbow",
+      "LowPrice": 480,
+      "PriceFloor": 536.0,
+      "BuyLimit": 18000,
+      "pctROI": 10.63
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -94,17 +94,17 @@
     },
     {
       "ItemName": "Ruby bracelet",
-      "LowPrice": 1096,
+      "LowPrice": 1097,
       "PriceFloor": 1157.0,
       "BuyLimit": 10000,
-      "pctROI": 4.56
+      "pctROI": 4.47
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 368,
+      "LowPrice": 369,
       "PriceFloor": 406.0,
       "BuyLimit": 11000,
-      "pctROI": 9.24
+      "pctROI": 8.94
     }
   ],
   "methodology": "VeryGranular"
