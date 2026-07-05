@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05T07:05:36.585815+00:00",
+  "updated": "2026-07-05T07:10:43.956932+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -16,6 +16,13 @@
       "pctROI": 2.24
     },
     {
+      "ItemName": "Camphor repair kit",
+      "LowPrice": 1571,
+      "PriceFloor": 1856.0,
+      "BuyLimit": 13000,
+      "pctROI": 17.0
+    },
+    {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8705,
       "PriceFloor": 8984.0,
@@ -23,25 +30,11 @@
       "pctROI": 2.18
     },
     {
-      "ItemName": "Camphor repair kit",
-      "LowPrice": 1584,
-      "PriceFloor": 1856.0,
-      "BuyLimit": 13000,
-      "pctROI": 16.04
-    },
-    {
       "ItemName": "Magic longbow",
-      "LowPrice": 1102,
+      "LowPrice": 1100,
       "PriceFloor": 1297.0,
       "BuyLimit": 18000,
-      "pctROI": 16.61
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8750,
-      "PriceFloor": 8984.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.66
+      "pctROI": 16.82
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -73,10 +66,17 @@
     },
     {
       "ItemName": "Ironwood repair kit",
-      "LowPrice": 1986,
+      "LowPrice": 1987,
       "PriceFloor": 2153.0,
       "BuyLimit": 13000,
-      "pctROI": 7.35
+      "pctROI": 7.3
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8799,
+      "PriceFloor": 8984.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.09
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -108,10 +108,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 372,
+      "LowPrice": 373,
       "PriceFloor": 407.0,
       "BuyLimit": 11000,
-      "pctROI": 8.33
+      "pctROI": 8.04
     }
   ],
   "methodology": "VeryGranular"
