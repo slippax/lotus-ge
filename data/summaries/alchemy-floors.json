@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T09:30:54.534054+00:00",
+  "updated": "2026-07-06T09:35:36.464901+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -10,10 +10,17 @@
     },
     {
       "ItemName": "Air battlestaff",
-      "LowPrice": 8660,
+      "LowPrice": 8693,
       "PriceFloor": 8984.0,
       "BuyLimit": 18000,
-      "pctROI": 2.71
+      "pctROI": 2.32
+    },
+    {
+      "ItemName": "Camphor repair kit",
+      "LowPrice": 1565,
+      "PriceFloor": 1856.0,
+      "BuyLimit": 13000,
+      "pctROI": 17.44
     },
     {
       "ItemName": "Magic longbow",
@@ -37,18 +44,11 @@
       "pctROI": 12.21
     },
     {
-      "ItemName": "Camphor repair kit",
-      "LowPrice": 1630,
-      "PriceFloor": 1856.0,
-      "BuyLimit": 13000,
-      "pctROI": 12.76
-    },
-    {
       "ItemName": "Mahogany repair kit",
-      "LowPrice": 1070,
+      "LowPrice": 1074,
       "PriceFloor": 1262.0,
       "BuyLimit": 13000,
-      "pctROI": 16.82
+      "pctROI": 16.39
     },
     {
       "ItemName": "Diamond bracelet",
@@ -59,10 +59,10 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 707,
+      "LowPrice": 701,
       "PriceFloor": 935.0,
       "BuyLimit": 10000,
-      "pctROI": 30.98
+      "pctROI": 32.1
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -94,10 +94,10 @@
     },
     {
       "ItemName": "Phoenix necklace",
-      "LowPrice": 2120,
+      "LowPrice": 2126,
       "PriceFloor": 2182.0,
       "BuyLimit": 10000,
-      "pctROI": 1.93
+      "pctROI": 1.65
     }
   ],
   "methodology": "VeryGranular"
