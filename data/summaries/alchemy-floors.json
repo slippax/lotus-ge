@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T20:45:35.409433+00:00",
+  "updated": "2026-07-06T20:50:51.582852+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -7,6 +7,20 @@
       "PriceFloor": 8984.0,
       "BuyLimit": 18000,
       "pctROI": 3.19
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8624,
+      "PriceFloor": 8984.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.14
+    },
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8629,
+      "PriceFloor": 8984.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.08
     },
     {
       "ItemName": "Magic longbow",
@@ -17,31 +31,31 @@
     },
     {
       "ItemName": "Air battlestaff",
-      "LowPrice": 8693,
+      "LowPrice": 8701,
       "PriceFloor": 8984.0,
       "BuyLimit": 18000,
-      "pctROI": 2.32
+      "pctROI": 2.23
     },
     {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8696,
-      "PriceFloor": 8984.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.29
-    },
-    {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8726,
-      "PriceFloor": 8984.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.94
+      "ItemName": "Camphor repair kit",
+      "LowPrice": 1630,
+      "PriceFloor": 1856.0,
+      "BuyLimit": 13000,
+      "pctROI": 12.76
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 682,
+      "LowPrice": 690,
       "PriceFloor": 935.0,
       "BuyLimit": 10000,
-      "pctROI": 35.78
+      "pctROI": 34.2
+    },
+    {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1069,
+      "PriceFloor": 1262.0,
+      "BuyLimit": 13000,
+      "pctROI": 16.93
     },
     {
       "ItemName": "Diamond bracelet",
@@ -66,24 +80,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 379,
+      "LowPrice": 376,
       "PriceFloor": 579.0,
       "BuyLimit": 10000,
-      "pctROI": 51.45
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1119,
-      "PriceFloor": 1262.0,
-      "BuyLimit": 13000,
-      "pctROI": 11.71
-    },
-    {
-      "ItemName": "Camphor repair kit",
-      "LowPrice": 1711,
-      "PriceFloor": 1856.0,
-      "BuyLimit": 13000,
-      "pctROI": 7.42
+      "pctROI": 52.66
     },
     {
       "ItemName": "Inoculation bracelet",
@@ -91,13 +91,6 @@
       "PriceFloor": 1297.0,
       "BuyLimit": 10000,
       "pctROI": 9.08
-    },
-    {
-      "ItemName": "Yew longbow",
-      "LowPrice": 476,
-      "PriceFloor": 537.0,
-      "BuyLimit": 18000,
-      "pctROI": 11.76
     },
     {
       "ItemName": "Ruby bracelet",
@@ -112,6 +105,13 @@
       "PriceFloor": 680.0,
       "BuyLimit": 10000,
       "pctROI": 9.42
+    },
+    {
+      "ItemName": "Yew longbow",
+      "LowPrice": 508,
+      "PriceFloor": 537.0,
+      "BuyLimit": 18000,
+      "pctROI": 4.72
     }
   ],
   "methodology": "VeryGranular"
