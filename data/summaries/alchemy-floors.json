@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T00:10:53.528479+00:00",
+  "updated": "2026-07-06T00:15:41.790632+00:00",
   "items": [
     {
       "ItemName": "Water battlestaff",
@@ -10,10 +10,17 @@
     },
     {
       "ItemName": "Fire battlestaff",
-      "LowPrice": 8613,
+      "LowPrice": 8612,
       "PriceFloor": 8984.0,
       "BuyLimit": 18000,
-      "pctROI": 3.27
+      "pctROI": 3.29
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8245,
+      "PriceFloor": 8687.0,
+      "BuyLimit": 11000,
+      "pctROI": 4.32
     },
     {
       "ItemName": "Earth battlestaff",
@@ -21,13 +28,6 @@
       "PriceFloor": 8984.0,
       "BuyLimit": 18000,
       "pctROI": 2.12
-    },
-    {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8300,
-      "PriceFloor": 8687.0,
-      "BuyLimit": 11000,
-      "pctROI": 3.63
     },
     {
       "ItemName": "Magic longbow",
@@ -51,18 +51,18 @@
       "pctROI": 12.76
     },
     {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 690,
-      "PriceFloor": 935.0,
-      "BuyLimit": 10000,
-      "pctROI": 34.2
-    },
-    {
       "ItemName": "Mahogany repair kit",
       "LowPrice": 1072,
       "PriceFloor": 1262.0,
       "BuyLimit": 13000,
       "pctROI": 16.6
+    },
+    {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 699,
+      "PriceFloor": 935.0,
+      "BuyLimit": 10000,
+      "pctROI": 32.47
     },
     {
       "ItemName": "Diamond bracelet",
@@ -73,17 +73,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 381,
+      "LowPrice": 378,
       "PriceFloor": 579.0,
       "BuyLimit": 10000,
-      "pctROI": 50.66
-    },
-    {
-      "ItemName": "Ironwood repair kit",
-      "LowPrice": 1991,
-      "PriceFloor": 2153.0,
-      "BuyLimit": 13000,
-      "pctROI": 7.08
+      "pctROI": 51.85
     },
     {
       "ItemName": "Yew longbow",
@@ -91,6 +84,13 @@
       "PriceFloor": 537.0,
       "BuyLimit": 18000,
       "pctROI": 18.22
+    },
+    {
+      "ItemName": "Ironwood repair kit",
+      "LowPrice": 2050,
+      "PriceFloor": 2153.0,
+      "BuyLimit": 13000,
+      "pctROI": 4.0
     },
     {
       "ItemName": "Ruby bracelet",
@@ -115,17 +115,17 @@
     },
     {
       "ItemName": "Diamond amulet (u)",
-      "LowPrice": 1834,
+      "LowPrice": 1833,
       "PriceFloor": 1871.0,
       "BuyLimit": 10000,
-      "pctROI": 1.04
+      "pctROI": 1.09
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 397,
+      "LowPrice": 398,
       "PriceFloor": 407.0,
       "BuyLimit": 11000,
-      "pctROI": 1.51
+      "pctROI": 1.26
     }
   ],
   "methodology": "VeryGranular"
