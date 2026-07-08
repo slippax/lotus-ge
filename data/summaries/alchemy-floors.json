@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-08T14:55:40.449251+00:00",
+  "updated": "2026-07-08T15:01:09.587161+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -16,11 +16,18 @@
       "pctROI": 18.58
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8703,
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8698,
       "PriceFloor": 8982.0,
       "BuyLimit": 18000,
-      "pctROI": 2.18
+      "pctROI": 2.24
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8702,
+      "PriceFloor": 8982.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.19
     },
     {
       "ItemName": "Fire battlestaff",
@@ -28,13 +35,6 @@
       "PriceFloor": 8982.0,
       "BuyLimit": 18000,
       "pctROI": 2.18
-    },
-    {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8710,
-      "PriceFloor": 8982.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.1
     },
     {
       "ItemName": "Camphor repair kit",
@@ -73,10 +73,17 @@
     },
     {
       "ItemName": "Ironwood repair kit",
-      "LowPrice": 2056,
+      "LowPrice": 2004,
       "PriceFloor": 2151.0,
       "BuyLimit": 13000,
-      "pctROI": 3.6
+      "pctROI": 6.29
+    },
+    {
+      "ItemName": "Yew longbow",
+      "LowPrice": 486,
+      "PriceFloor": 535.0,
+      "BuyLimit": 18000,
+      "pctROI": 9.05
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -84,13 +91,6 @@
       "PriceFloor": 678.0,
       "BuyLimit": 10000,
       "pctROI": 11.81
-    },
-    {
-      "ItemName": "Yew longbow",
-      "LowPrice": 495,
-      "PriceFloor": 535.0,
-      "BuyLimit": 18000,
-      "pctROI": 7.07
     },
     {
       "ItemName": "Binding necklace",
@@ -105,13 +105,6 @@
       "PriceFloor": 1958.0,
       "BuyLimit": 18000,
       "pctROI": 1.25
-    },
-    {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 1036,
-      "PriceFloor": 1067.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.03
     }
   ],
   "methodology": "VeryGranular"
