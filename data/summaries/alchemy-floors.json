@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09T14:50:54.914051+00:00",
+  "updated": "2026-07-09T14:55:34.813360+00:00",
   "items": [
     {
       "ItemName": "Air battlestaff",
@@ -23,6 +23,13 @@
       "pctROI": 12.72
     },
     {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8749,
+      "PriceFloor": 8980.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.62
+    },
+    {
       "ItemName": "Diamond bracelet",
       "LowPrice": 1806,
       "PriceFloor": 2045.0,
@@ -30,11 +37,11 @@
       "pctROI": 12.13
     },
     {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8775,
-      "PriceFloor": 8980.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.32
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8406,
+      "PriceFloor": 8683.0,
+      "BuyLimit": 11000,
+      "pctROI": 2.27
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -44,18 +51,11 @@
       "pctROI": 28.06
     },
     {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8414,
-      "PriceFloor": 8683.0,
-      "BuyLimit": 11000,
-      "pctROI": 2.17
-    },
-    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 371,
+      "LowPrice": 370,
       "PriceFloor": 575.0,
       "BuyLimit": 10000,
-      "pctROI": 53.64
+      "pctROI": 54.05
     },
     {
       "ItemName": "Fire battlestaff",
@@ -72,13 +72,6 @@
       "pctROI": 8.35
     },
     {
-      "ItemName": "Amulet of glory(6)",
-      "LowPrice": 10032,
-      "PriceFloor": 10242.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.08
-    },
-    {
       "ItemName": "Amethyst javelin tips",
       "LowPrice": 570,
       "PriceFloor": 676.0,
@@ -93,18 +86,25 @@
       "pctROI": 19.49
     },
     {
-      "ItemName": "Ironwood repair kit",
-      "LowPrice": 2057,
-      "PriceFloor": 2149.0,
-      "BuyLimit": 13000,
-      "pctROI": 3.45
-    },
-    {
       "ItemName": "Ruby necklace",
       "LowPrice": 1022,
       "PriceFloor": 1065.0,
       "BuyLimit": 18000,
       "pctROI": 3.23
+    },
+    {
+      "ItemName": "Ironwood repair kit",
+      "LowPrice": 2085,
+      "PriceFloor": 2149.0,
+      "BuyLimit": 13000,
+      "pctROI": 2.06
+    },
+    {
+      "ItemName": "Yew longbow",
+      "LowPrice": 497,
+      "PriceFloor": 533.0,
+      "BuyLimit": 18000,
+      "pctROI": 6.24
     },
     {
       "ItemName": "Diamond necklace",
@@ -119,13 +119,6 @@
       "PriceFloor": 619.0,
       "BuyLimit": 18000,
       "pctROI": 2.51
-    },
-    {
-      "ItemName": "Yew longbow",
-      "LowPrice": 515,
-      "PriceFloor": 533.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.52
     }
   ],
   "methodology": "VeryGranular"
