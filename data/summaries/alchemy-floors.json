@@ -1,6 +1,20 @@
 {
-  "updated": "2026-07-10T16:10:45.812454+00:00",
+  "updated": "2026-07-10T16:15:39.702834+00:00",
   "items": [
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8698,
+      "PriceFloor": 8979.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.21
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8700,
+      "PriceFloor": 8979.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.18
+    },
     {
       "ItemName": "Magic longbow",
       "LowPrice": 1091,
@@ -9,11 +23,11 @@
       "pctROI": 17.32
     },
     {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8730,
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8726,
       "PriceFloor": 8979.0,
       "BuyLimit": 18000,
-      "pctROI": 1.83
+      "pctROI": 1.88
     },
     {
       "ItemName": "Camphor repair kit",
@@ -23,32 +37,18 @@
       "pctROI": 12.59
     },
     {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8742,
-      "PriceFloor": 8979.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.69
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8750,
-      "PriceFloor": 8979.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.6
-    },
-    {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 704,
-      "PriceFloor": 930.0,
-      "BuyLimit": 10000,
-      "pctROI": 30.82
-    },
-    {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8775,
       "PriceFloor": 8979.0,
       "BuyLimit": 18000,
       "pctROI": 1.31
+    },
+    {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 729,
+      "PriceFloor": 930.0,
+      "BuyLimit": 10000,
+      "pctROI": 26.34
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -100,13 +100,6 @@
       "pctROI": 4.47
     },
     {
-      "ItemName": "Ironwood repair kit",
-      "LowPrice": 2071,
-      "PriceFloor": 2148.0,
-      "BuyLimit": 13000,
-      "pctROI": 2.7
-    },
-    {
       "ItemName": "Binding necklace",
       "LowPrice": 549,
       "PriceFloor": 618.0,
@@ -129,10 +122,10 @@
     },
     {
       "ItemName": "Ruby necklace",
-      "LowPrice": 1041,
+      "LowPrice": 1042,
       "PriceFloor": 1064.0,
       "BuyLimit": 18000,
-      "pctROI": 1.25
+      "pctROI": 1.15
     }
   ],
   "methodology": "VeryGranular"
