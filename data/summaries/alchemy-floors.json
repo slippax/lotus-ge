@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-10T17:50:45.587829+00:00",
+  "updated": "2026-07-10T17:55:39.079652+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -7,6 +7,13 @@
       "PriceFloor": 8978.0,
       "BuyLimit": 18000,
       "pctROI": 3.0
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8700,
+      "PriceFloor": 8978.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.17
     },
     {
       "ItemName": "Earth battlestaff",
@@ -24,10 +31,10 @@
     },
     {
       "ItemName": "Water battlestaff",
-      "LowPrice": 8742,
+      "LowPrice": 8740,
       "PriceFloor": 8978.0,
       "BuyLimit": 18000,
-      "pctROI": 1.68
+      "pctROI": 1.7
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -65,20 +72,6 @@
       "pctROI": 26.03
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8791,
-      "PriceFloor": 8978.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.11
-    },
-    {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8461,
-      "PriceFloor": 8681.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.58
-    },
-    {
       "ItemName": "Diamond amulet (u)",
       "LowPrice": 1717,
       "PriceFloor": 1865.0,
@@ -87,10 +80,17 @@
     },
     {
       "ItemName": "Amethyst javelin tips",
-      "LowPrice": 560,
+      "LowPrice": 554,
       "PriceFloor": 674.0,
       "BuyLimit": 10000,
-      "pctROI": 19.29
+      "pctROI": 20.58
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8500,
+      "PriceFloor": 8681.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.12
     },
     {
       "ItemName": "Binding necklace",
@@ -129,10 +129,10 @@
     },
     {
       "ItemName": "Ruby necklace",
-      "LowPrice": 1042,
+      "LowPrice": 1033,
       "PriceFloor": 1063.0,
       "BuyLimit": 18000,
-      "pctROI": 1.06
+      "pctROI": 1.94
     }
   ],
   "methodology": "VeryGranular"
