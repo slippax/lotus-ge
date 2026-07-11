@@ -1,15 +1,22 @@
 {
-  "updated": "2026-07-11T03:40:45.097165+00:00",
+  "updated": "2026-07-11T03:45:38.970146+00:00",
   "items": [
     {
-      "ItemName": "Earth battlestaff",
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8650,
+      "PriceFloor": 8976.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.74
+    },
+    {
+      "ItemName": "Water battlestaff",
       "LowPrice": 8700,
       "PriceFloor": 8976.0,
       "BuyLimit": 18000,
       "pctROI": 2.15
     },
     {
-      "ItemName": "Fire battlestaff",
+      "ItemName": "Earth battlestaff",
       "LowPrice": 8701,
       "PriceFloor": 8976.0,
       "BuyLimit": 18000,
@@ -23,18 +30,18 @@
       "pctROI": 16.94
     },
     {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8727,
+      "PriceFloor": 8976.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.83
+    },
+    {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1628,
       "PriceFloor": 1848.0,
       "BuyLimit": 13000,
       "pctROI": 12.41
-    },
-    {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8742,
-      "PriceFloor": 8976.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.66
     },
     {
       "ItemName": "Diamond bracelet",
@@ -58,32 +65,25 @@
       "pctROI": 15.86
     },
     {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 358,
-      "PriceFloor": 571.0,
-      "BuyLimit": 10000,
-      "pctROI": 58.1
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8775,
-      "PriceFloor": 8976.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.28
-    },
-    {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8440,
+      "LowPrice": 8400,
       "PriceFloor": 8679.0,
       "BuyLimit": 11000,
-      "pctROI": 1.81
+      "pctROI": 2.3
+    },
+    {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 359,
+      "PriceFloor": 571.0,
+      "BuyLimit": 10000,
+      "pctROI": 57.66
     },
     {
       "ItemName": "Ironwood repair kit",
-      "LowPrice": 2004,
+      "LowPrice": 2028,
       "PriceFloor": 2145.0,
       "BuyLimit": 13000,
-      "pctROI": 5.99
+      "pctROI": 4.73
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -107,11 +107,18 @@
       "pctROI": 3.07
     },
     {
+      "ItemName": "Teak repair kit",
+      "LowPrice": 340,
+      "PriceFloor": 363.0,
+      "BuyLimit": 13000,
+      "pctROI": 5.88
+    },
+    {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 386,
+      "LowPrice": 387,
       "PriceFloor": 399.0,
       "BuyLimit": 11000,
-      "pctROI": 2.59
+      "pctROI": 2.33
     }
   ],
   "methodology": "VeryGranular"
