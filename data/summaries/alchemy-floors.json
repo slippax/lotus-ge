@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11T11:15:37.155272+00:00",
+  "updated": "2026-07-11T11:20:40.504088+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -21,6 +21,13 @@
       "PriceFloor": 8976.0,
       "BuyLimit": 18000,
       "pctROI": 1.68
+    },
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8750,
+      "PriceFloor": 8976.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.57
     },
     {
       "ItemName": "Air battlestaff",
@@ -51,11 +58,18 @@
       "pctROI": 12.28
     },
     {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1072,
+      "PriceFloor": 1254.0,
+      "BuyLimit": 13000,
+      "pctROI": 15.86
+    },
+    {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 715,
+      "LowPrice": 705,
       "PriceFloor": 927.0,
       "BuyLimit": 10000,
-      "pctROI": 28.39
+      "pctROI": 30.21
     },
     {
       "ItemName": "Rune javelin tips",
@@ -63,13 +77,6 @@
       "PriceFloor": 571.0,
       "BuyLimit": 10000,
       "pctROI": 52.56
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1109,
-      "PriceFloor": 1254.0,
-      "BuyLimit": 13000,
-      "pctROI": 11.99
     },
     {
       "ItemName": "Combat bracelet",
@@ -114,13 +121,6 @@
       "pctROI": 6.25
     },
     {
-      "ItemName": "Yew longbow",
-      "LowPrice": 502,
-      "PriceFloor": 529.0,
-      "BuyLimit": 18000,
-      "pctROI": 4.38
-    },
-    {
       "ItemName": "Phoenix necklace",
       "LowPrice": 2120,
       "PriceFloor": 2174.0,
@@ -135,18 +135,11 @@
       "pctROI": 5.26
     },
     {
-      "ItemName": "Emerald necklace",
-      "LowPrice": 601,
-      "PriceFloor": 615.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.33
-    },
-    {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 387,
+      "LowPrice": 388,
       "PriceFloor": 399.0,
       "BuyLimit": 11000,
-      "pctROI": 2.33
+      "pctROI": 2.06
     }
   ],
   "methodology": "VeryGranular"
