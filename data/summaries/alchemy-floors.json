@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-12T01:40:56.099502+00:00",
+  "updated": "2026-07-12T01:45:41.313681+00:00",
   "items": [
     {
       "ItemName": "Water battlestaff",
@@ -16,6 +16,13 @@
       "pctROI": 3.0
     },
     {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1080,
+      "PriceFloor": 1288.0,
+      "BuyLimit": 18000,
+      "pctROI": 18.15
+    },
+    {
       "ItemName": "Air battlestaff",
       "LowPrice": 8700,
       "PriceFloor": 8975.0,
@@ -23,18 +30,11 @@
       "pctROI": 2.14
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1110,
-      "PriceFloor": 1288.0,
-      "BuyLimit": 18000,
-      "pctROI": 14.95
-    },
-    {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 676,
+      "LowPrice": 680,
       "PriceFloor": 926.0,
       "BuyLimit": 10000,
-      "pctROI": 35.65
+      "pctROI": 34.85
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -100,6 +100,13 @@
       "pctROI": 4.0
     },
     {
+      "ItemName": "Diamond necklace",
+      "LowPrice": 1901,
+      "PriceFloor": 1951.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.63
+    },
+    {
       "ItemName": "Binding necklace",
       "LowPrice": 555,
       "PriceFloor": 614.0,
@@ -114,13 +121,6 @@
       "pctROI": 2.53
     },
     {
-      "ItemName": "Yew longbow",
-      "LowPrice": 498,
-      "PriceFloor": 528.0,
-      "BuyLimit": 18000,
-      "pctROI": 5.02
-    },
-    {
       "ItemName": "Emerald necklace",
       "LowPrice": 592,
       "PriceFloor": 614.0,
@@ -128,11 +128,25 @@
       "pctROI": 2.7
     },
     {
+      "ItemName": "Ruby necklace",
+      "LowPrice": 1036,
+      "PriceFloor": 1060.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.35
+    },
+    {
       "ItemName": "Dragonstone bolts (e)",
       "LowPrice": 385,
       "PriceFloor": 398.0,
       "BuyLimit": 11000,
       "pctROI": 2.6
+    },
+    {
+      "ItemName": "Teak repair kit",
+      "LowPrice": 352,
+      "PriceFloor": 362.0,
+      "BuyLimit": 13000,
+      "pctROI": 1.99
     }
   ],
   "methodology": "VeryGranular"
