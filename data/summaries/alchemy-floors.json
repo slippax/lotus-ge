@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-13T07:20:44.549039+00:00",
+  "updated": "2026-07-13T07:25:34.702625+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -21,13 +21,6 @@
       "PriceFloor": 8975.0,
       "BuyLimit": 18000,
       "pctROI": 2.14
-    },
-    {
-      "ItemName": "Camphor repair kit",
-      "LowPrice": 1600,
-      "PriceFloor": 1847.0,
-      "BuyLimit": 13000,
-      "pctROI": 14.31
     },
     {
       "ItemName": "Air battlestaff",
@@ -56,6 +49,13 @@
       "PriceFloor": 10237.0,
       "BuyLimit": 10000,
       "pctROI": 2.37
+    },
+    {
+      "ItemName": "Camphor repair kit",
+      "LowPrice": 1652,
+      "PriceFloor": 1847.0,
+      "BuyLimit": 13000,
+      "pctROI": 10.71
     },
     {
       "ItemName": "Diamond bracelet",
@@ -101,10 +101,17 @@
     },
     {
       "ItemName": "Diamond amulet (u)",
-      "LowPrice": 1740,
+      "LowPrice": 1737,
       "PriceFloor": 1862.0,
       "BuyLimit": 10000,
-      "pctROI": 5.98
+      "pctROI": 6.16
+    },
+    {
+      "ItemName": "Diamond ring",
+      "LowPrice": 1763,
+      "PriceFloor": 1862.0,
+      "BuyLimit": 10000,
+      "pctROI": 4.59
     },
     {
       "ItemName": "Emerald necklace",
@@ -114,25 +121,11 @@
       "pctROI": 4.47
     },
     {
-      "ItemName": "Diamond ring",
-      "LowPrice": 1800,
-      "PriceFloor": 1862.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.44
-    },
-    {
       "ItemName": "Binding necklace",
       "LowPrice": 566,
       "PriceFloor": 614.0,
       "BuyLimit": 10000,
       "pctROI": 7.42
-    },
-    {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 1027,
-      "PriceFloor": 1060.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.24
     },
     {
       "ItemName": "Yew longbow",
@@ -142,11 +135,11 @@
       "pctROI": 2.55
     },
     {
-      "ItemName": "Teak repair kit",
-      "LowPrice": 354,
-      "PriceFloor": 362.0,
-      "BuyLimit": 13000,
-      "pctROI": 1.41
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 380,
+      "PriceFloor": 398.0,
+      "BuyLimit": 11000,
+      "pctROI": 3.95
     }
   ],
   "methodology": "VeryGranular"
