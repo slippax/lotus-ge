@@ -1,6 +1,19 @@
 {
-  "updated": "2026-07-13T17:45:46.103115+00:00",
+  "updated": "2026-07-13T17:51:04.211146+00:00",
   "items": [
+    {
+      "ItemName": "Emerald dragon bolts (e)",
+      "CurrentPrice": 1428,
+      "BuyLimit": 11000,
+      "DailyRange": 7,
+      "WeeklyRange": 531,
+      "MonthlyRange": 992,
+      "CompressionRatio": 1.32,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 1570800.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
     {
       "ItemName": "Raw summer pie",
       "CurrentPrice": 1704,
@@ -132,6 +145,19 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
+      "ItemName": "Runite bolts (p+)",
+      "CurrentPrice": 526,
+      "BuyLimit": 11000,
+      "DailyRange": 48,
+      "WeeklyRange": 357,
+      "MonthlyRange": 515,
+      "CompressionRatio": 13.45,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 578600.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
       "ItemName": "Cooked chicken",
       "CurrentPrice": 66,
       "BuyLimit": 6000,
@@ -223,19 +249,6 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Dragon knife(p++)",
-      "CurrentPrice": 5727,
-      "BuyLimit": 7000,
-      "DailyRange": 181,
-      "WeeklyRange": 771,
-      "MonthlyRange": 3000,
-      "CompressionRatio": 23.48,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 4008900.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
       "ItemName": "Sapphire dragon bolts (e)",
       "CurrentPrice": 2901,
       "BuyLimit": 11000,
@@ -250,7 +263,7 @@
     },
     {
       "ItemName": "Games necklace(8)",
-      "CurrentPrice": 740,
+      "CurrentPrice": 735,
       "BuyLimit": 10000,
       "DailyRange": 30,
       "WeeklyRange": 118,
@@ -258,7 +271,7 @@
       "CompressionRatio": 25.42,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 740000.0,
+      "PotentialBreakoutProfit": 735000.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -288,32 +301,6 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Bread",
-      "CurrentPrice": 72,
-      "BuyLimit": 6000,
-      "DailyRange": 16,
-      "WeeklyRange": 57,
-      "MonthlyRange": 89,
-      "CompressionRatio": 28.07,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 43200.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
-      "ItemName": "Ardougne teleport (tablet)",
-      "CurrentPrice": 490,
-      "BuyLimit": 10000,
-      "DailyRange": 24,
-      "WeeklyRange": 84,
-      "MonthlyRange": 162,
-      "CompressionRatio": 28.57,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 490000.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
       "ItemName": "Grimy dwarf weed",
       "CurrentPrice": 1379,
       "BuyLimit": 11000,
@@ -327,26 +314,39 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Dragon cannonball",
-      "CurrentPrice": 1035,
+      "ItemName": "Burnt page",
+      "CurrentPrice": 5800,
       "BuyLimit": 11000,
-      "DailyRange": 62,
-      "WeeklyRange": 204,
-      "MonthlyRange": 656,
-      "CompressionRatio": 30.39,
+      "DailyRange": 446,
+      "WeeklyRange": 1547,
+      "MonthlyRange": 3962,
+      "CompressionRatio": 28.83,
       "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 1138500.0,
-      "CompressionLevel": "MODERATE_COMPRESSION"
+      "PotentialBreakoutProfit": 6380000.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Bread",
+      "CurrentPrice": 72,
+      "BuyLimit": 6000,
+      "DailyRange": 17,
+      "WeeklyRange": 57,
+      "MonthlyRange": 89,
+      "CompressionRatio": 29.82,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 43200.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
       "ItemName": "Lumbridge teleport (tablet)",
       "CurrentPrice": 682,
       "BuyLimit": 10000,
-      "DailyRange": 44,
+      "DailyRange": 42,
       "WeeklyRange": 140,
       "MonthlyRange": 140,
-      "CompressionRatio": 31.43,
+      "CompressionRatio": 30.0,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 682000.0,
@@ -382,39 +382,13 @@
       "ItemName": "Raw pyre fox",
       "CurrentPrice": 1403,
       "BuyLimit": 13000,
-      "DailyRange": 287,
+      "DailyRange": 285,
       "WeeklyRange": 849,
       "MonthlyRange": 928,
-      "CompressionRatio": 33.8,
+      "CompressionRatio": 33.57,
       "BreakoutDirection": "UPPER_BIAS",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 1823900.0,
-      "CompressionLevel": "MODERATE_COMPRESSION"
-    },
-    {
-      "ItemName": "Burnt page",
-      "CurrentPrice": 5800,
-      "BuyLimit": 11000,
-      "DailyRange": 524,
-      "WeeklyRange": 1547,
-      "MonthlyRange": 3962,
-      "CompressionRatio": 33.87,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 6380000.0,
-      "CompressionLevel": "MODERATE_COMPRESSION"
-    },
-    {
-      "ItemName": "Orange",
-      "CurrentPrice": 135,
-      "BuyLimit": 13000,
-      "DailyRange": 23,
-      "WeeklyRange": 67,
-      "MonthlyRange": 361,
-      "CompressionRatio": 34.33,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 175500.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -444,16 +418,16 @@
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
-      "ItemName": "Emerald amulet",
-      "CurrentPrice": 696,
-      "BuyLimit": 10000,
-      "DailyRange": 108,
-      "WeeklyRange": 300,
-      "MonthlyRange": 412,
-      "CompressionRatio": 36.0,
+      "ItemName": "Toadflax",
+      "CurrentPrice": 1838,
+      "BuyLimit": 13000,
+      "DailyRange": 94,
+      "WeeklyRange": 265,
+      "MonthlyRange": 574,
+      "CompressionRatio": 35.47,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 696000.0,
+      "PotentialBreakoutProfit": 2389400.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -497,7 +471,7 @@
     },
     {
       "ItemName": "Amethyst arrow(p++)",
-      "CurrentPrice": 878,
+      "CurrentPrice": 889,
       "BuyLimit": 11000,
       "DailyRange": 72,
       "WeeklyRange": 196,
@@ -505,25 +479,25 @@
       "CompressionRatio": 36.73,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 965800.0,
+      "PotentialBreakoutProfit": 977900.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
-      "ItemName": "Raw shark",
-      "CurrentPrice": 701,
-      "BuyLimit": 15000,
-      "DailyRange": 32,
-      "WeeklyRange": 87,
-      "MonthlyRange": 93,
-      "CompressionRatio": 36.78,
+      "ItemName": "Ruby dragon bolts",
+      "CurrentPrice": 3005,
+      "BuyLimit": 11000,
+      "DailyRange": 110,
+      "WeeklyRange": 296,
+      "MonthlyRange": 589,
+      "CompressionRatio": 37.16,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 1051500.0,
+      "PotentialBreakoutProfit": 3305500.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
       "ItemName": "Searing page",
-      "CurrentPrice": 17643,
+      "CurrentPrice": 17231,
       "BuyLimit": 11000,
       "DailyRange": 843,
       "WeeklyRange": 2252,
@@ -531,7 +505,7 @@
       "CompressionRatio": 37.43,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 19407300.0,
+      "PotentialBreakoutProfit": 18954100.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -548,16 +522,16 @@
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
-      "ItemName": "Ruby dragon bolts",
-      "CurrentPrice": 3005,
-      "BuyLimit": 11000,
-      "DailyRange": 112,
-      "WeeklyRange": 296,
-      "MonthlyRange": 589,
-      "CompressionRatio": 37.84,
+      "ItemName": "Raw shark",
+      "CurrentPrice": 707,
+      "BuyLimit": 15000,
+      "DailyRange": 33,
+      "WeeklyRange": 87,
+      "MonthlyRange": 93,
+      "CompressionRatio": 37.93,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 3305500.0,
+      "PotentialBreakoutProfit": 1060500.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -571,19 +545,6 @@
       "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 634200.0,
-      "CompressionLevel": "MODERATE_COMPRESSION"
-    },
-    {
-      "ItemName": "Toadflax",
-      "CurrentPrice": 1845,
-      "BuyLimit": 13000,
-      "DailyRange": 102,
-      "WeeklyRange": 265,
-      "MonthlyRange": 574,
-      "CompressionRatio": 38.49,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 2398500.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -649,6 +610,45 @@
       "BreakoutDirection": "UPPER_BIAS",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 132000.0,
+      "CompressionLevel": "MODERATE_COMPRESSION"
+    },
+    {
+      "ItemName": "Halibut",
+      "CurrentPrice": 1908,
+      "BuyLimit": 10000,
+      "DailyRange": 136,
+      "WeeklyRange": 328,
+      "MonthlyRange": 651,
+      "CompressionRatio": 41.46,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 1908000.0,
+      "CompressionLevel": "MODERATE_COMPRESSION"
+    },
+    {
+      "ItemName": "Aldarium",
+      "CurrentPrice": 70015,
+      "BuyLimit": 13000,
+      "DailyRange": 6862,
+      "WeeklyRange": 16460,
+      "MonthlyRange": 22816,
+      "CompressionRatio": 41.69,
+      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 91019500.0,
+      "CompressionLevel": "MODERATE_COMPRESSION"
+    },
+    {
+      "ItemName": "Raw rabbit",
+      "CurrentPrice": 355,
+      "BuyLimit": 13000,
+      "DailyRange": 155,
+      "WeeklyRange": 369,
+      "MonthlyRange": 1161,
+      "CompressionRatio": 42.01,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 461500.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     }
   ],
