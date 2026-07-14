@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14T01:11:03.886247+00:00",
+  "updated": "2026-07-14T01:15:42.956603+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -7,6 +7,13 @@
       "PriceFloor": 8974.0,
       "BuyLimit": 18000,
       "pctROI": 2.13
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8710,
+      "PriceFloor": 8974.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.01
     },
     {
       "ItemName": "Water battlestaff",
@@ -23,25 +30,18 @@
       "pctROI": 14.97
     },
     {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8723,
+      "PriceFloor": 8974.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.86
+    },
+    {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1607,
       "PriceFloor": 1846.0,
       "BuyLimit": 13000,
       "pctROI": 13.75
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8747,
-      "PriceFloor": 8974.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.58
-    },
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8748,
-      "PriceFloor": 8974.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.57
     },
     {
       "ItemName": "Amulet of glory(6)",
@@ -52,10 +52,10 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 686,
+      "LowPrice": 685,
       "PriceFloor": 925.0,
       "BuyLimit": 10000,
-      "pctROI": 33.53
+      "pctROI": 33.72
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -133,13 +133,6 @@
       "PriceFloor": 527.0,
       "BuyLimit": 18000,
       "pctROI": 3.16
-    },
-    {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 390,
-      "PriceFloor": 397.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.03
     }
   ],
   "methodology": "VeryGranular"
