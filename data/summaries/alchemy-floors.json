@@ -1,12 +1,19 @@
 {
-  "updated": "2026-07-14T01:15:42.956603+00:00",
+  "updated": "2026-07-14T01:20:47.060728+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
-      "LowPrice": 8700,
+      "LowPrice": 8668,
       "PriceFloor": 8974.0,
       "BuyLimit": 18000,
-      "pctROI": 2.13
+      "pctROI": 2.5
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1092,
+      "PriceFloor": 1287.0,
+      "BuyLimit": 18000,
+      "pctROI": 16.76
     },
     {
       "ItemName": "Earth battlestaff",
@@ -23,25 +30,18 @@
       "pctROI": 1.99
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1109,
-      "PriceFloor": 1287.0,
-      "BuyLimit": 18000,
-      "pctROI": 14.97
-    },
-    {
       "ItemName": "Air battlestaff",
-      "LowPrice": 8723,
+      "LowPrice": 8746,
       "PriceFloor": 8974.0,
       "BuyLimit": 18000,
-      "pctROI": 1.86
+      "pctROI": 1.59
     },
     {
-      "ItemName": "Camphor repair kit",
-      "LowPrice": 1607,
-      "PriceFloor": 1846.0,
-      "BuyLimit": 13000,
-      "pctROI": 13.75
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 680,
+      "PriceFloor": 925.0,
+      "BuyLimit": 10000,
+      "pctROI": 34.71
     },
     {
       "ItemName": "Amulet of glory(6)",
@@ -51,11 +51,11 @@
       "pctROI": 2.35
     },
     {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 685,
-      "PriceFloor": 925.0,
-      "BuyLimit": 10000,
-      "pctROI": 33.72
+      "ItemName": "Camphor repair kit",
+      "LowPrice": 1659,
+      "PriceFloor": 1846.0,
+      "BuyLimit": 13000,
+      "pctROI": 10.19
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -107,6 +107,13 @@
       "pctROI": 3.01
     },
     {
+      "ItemName": "Diamond ring",
+      "LowPrice": 1766,
+      "PriceFloor": 1861.0,
+      "BuyLimit": 10000,
+      "pctROI": 4.36
+    },
+    {
       "ItemName": "Ruby necklace",
       "LowPrice": 1017,
       "PriceFloor": 1059.0,
@@ -114,25 +121,18 @@
       "pctROI": 3.15
     },
     {
-      "ItemName": "Diamond ring",
-      "LowPrice": 1800,
-      "PriceFloor": 1861.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.39
-    },
-    {
-      "ItemName": "Emerald necklace",
-      "LowPrice": 590,
-      "PriceFloor": 613.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.88
-    },
-    {
       "ItemName": "Yew longbow",
       "LowPrice": 506,
       "PriceFloor": 527.0,
       "BuyLimit": 18000,
       "pctROI": 3.16
+    },
+    {
+      "ItemName": "Emerald necklace",
+      "LowPrice": 599,
+      "PriceFloor": 613.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.34
     }
   ],
   "methodology": "VeryGranular"
