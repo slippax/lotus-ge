@@ -1,6 +1,13 @@
 {
-  "updated": "2026-07-14T05:20:53.130683+00:00",
+  "updated": "2026-07-14T05:25:37.043255+00:00",
   "items": [
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8626,
+      "PriceFloor": 8974.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.0
+    },
     {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8662,
@@ -10,13 +17,6 @@
     },
     {
       "ItemName": "Air battlestaff",
-      "LowPrice": 8700,
-      "PriceFloor": 8974.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.13
-    },
-    {
-      "ItemName": "Earth battlestaff",
       "LowPrice": 8700,
       "PriceFloor": 8974.0,
       "BuyLimit": 18000,
@@ -45,10 +45,10 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 686,
+      "LowPrice": 689,
       "PriceFloor": 925.0,
       "BuyLimit": 10000,
-      "pctROI": 33.53
+      "pctROI": 32.95
     },
     {
       "ItemName": "Camphor repair kit",
@@ -73,17 +73,17 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 370,
+      "LowPrice": 366,
       "PriceFloor": 569.0,
       "BuyLimit": 10000,
-      "pctROI": 52.43
+      "pctROI": 54.1
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8460,
+      "LowPrice": 8456,
       "PriceFloor": 8677.0,
       "BuyLimit": 11000,
-      "pctROI": 1.55
+      "pctROI": 1.6
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -107,13 +107,6 @@
       "pctROI": 3.01
     },
     {
-      "ItemName": "Diamond amulet (u)",
-      "LowPrice": 1773,
-      "PriceFloor": 1861.0,
-      "BuyLimit": 10000,
-      "pctROI": 3.95
-    },
-    {
       "ItemName": "Emerald necklace",
       "LowPrice": 586,
       "PriceFloor": 613.0,
@@ -121,7 +114,7 @@
       "pctROI": 3.58
     },
     {
-      "ItemName": "Diamond ring",
+      "ItemName": "Diamond amulet (u)",
       "LowPrice": 1806,
       "PriceFloor": 1861.0,
       "BuyLimit": 10000,
@@ -135,18 +128,11 @@
       "pctROI": 3.98
     },
     {
-      "ItemName": "Phoenix necklace",
-      "LowPrice": 2122,
-      "PriceFloor": 2172.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.37
-    },
-    {
       "ItemName": "Ruby necklace",
-      "LowPrice": 1033,
+      "LowPrice": 1035,
       "PriceFloor": 1059.0,
       "BuyLimit": 18000,
-      "pctROI": 1.55
+      "pctROI": 1.35
     }
   ],
   "methodology": "VeryGranular"
