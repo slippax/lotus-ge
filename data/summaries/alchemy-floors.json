@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15T15:25:47.619899+00:00",
+  "updated": "2026-07-15T15:30:54.593386+00:00",
   "items": [
     {
       "ItemName": "Water battlestaff",
@@ -23,13 +23,6 @@
       "pctROI": 2.13
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8705,
-      "PriceFloor": 8974.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.07
-    },
-    {
       "ItemName": "Ironwood repair kit",
       "LowPrice": 1915,
       "PriceFloor": 2143.0,
@@ -51,6 +44,13 @@
       "pctROI": 17.98
     },
     {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8752,
+      "PriceFloor": 8974.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.52
+    },
+    {
       "ItemName": "Dragon javelin tips",
       "LowPrice": 702,
       "PriceFloor": 925.0,
@@ -66,10 +66,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 365,
+      "LowPrice": 374,
       "PriceFloor": 569.0,
       "BuyLimit": 10000,
-      "pctROI": 54.52
+      "pctROI": 50.8
     },
     {
       "ItemName": "Diamond bracelet",
@@ -108,10 +108,10 @@
     },
     {
       "ItemName": "Ruby necklace",
-      "LowPrice": 1000,
+      "LowPrice": 1001,
       "PriceFloor": 1059.0,
       "BuyLimit": 18000,
-      "pctROI": 4.9
+      "pctROI": 4.8
     },
     {
       "ItemName": "Yew longbow",
@@ -135,18 +135,18 @@
       "pctROI": 3.06
     },
     {
+      "ItemName": "Ruby amulet (u)",
+      "LowPrice": 943,
+      "PriceFloor": 970.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.91
+    },
+    {
       "ItemName": "Magic shortbow",
       "LowPrice": 701,
       "PriceFloor": 717.0,
       "BuyLimit": 18000,
       "pctROI": 1.28
-    },
-    {
-      "ItemName": "Sapphire necklace",
-      "LowPrice": 381,
-      "PriceFloor": 390.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.57
     }
   ],
   "methodology": "VeryGranular"
