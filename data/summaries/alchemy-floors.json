@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-16T02:45:43.473627+00:00",
+  "updated": "2026-07-16T02:50:48.559999+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -16,13 +16,6 @@
       "pctROI": 2.72
     },
     {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8700,
-      "PriceFloor": 8974.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.13
-    },
-    {
       "ItemName": "Magic longbow",
       "LowPrice": 1104,
       "PriceFloor": 1287.0,
@@ -30,11 +23,11 @@
       "pctROI": 15.49
     },
     {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8362,
-      "PriceFloor": 8677.0,
-      "BuyLimit": 11000,
-      "pctROI": 2.74
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8750,
+      "PriceFloor": 8974.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.54
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -73,10 +66,17 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 380,
+      "LowPrice": 360,
       "PriceFloor": 569.0,
       "BuyLimit": 10000,
-      "pctROI": 48.42
+      "pctROI": 56.67
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8429,
+      "PriceFloor": 8677.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.92
     },
     {
       "ItemName": "Camphor repair kit",
@@ -107,18 +107,18 @@
       "pctROI": 7.82
     },
     {
+      "ItemName": "Ruby necklace",
+      "LowPrice": 1014,
+      "PriceFloor": 1059.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.45
+    },
+    {
       "ItemName": "Diamond necklace",
       "LowPrice": 1899,
       "PriceFloor": 1950.0,
       "BuyLimit": 18000,
       "pctROI": 1.69
-    },
-    {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 1020,
-      "PriceFloor": 1059.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.84
     },
     {
       "ItemName": "Yew longbow",
@@ -135,18 +135,18 @@
       "pctROI": 4.88
     },
     {
+      "ItemName": "Diamond amulet (u)",
+      "LowPrice": 1823,
+      "PriceFloor": 1861.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.1
+    },
+    {
       "ItemName": "Ruby amulet (u)",
       "LowPrice": 942,
       "PriceFloor": 970.0,
       "BuyLimit": 10000,
       "pctROI": 2.02
-    },
-    {
-      "ItemName": "Emerald ring",
-      "LowPrice": 511,
-      "PriceFloor": 524.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.57
     }
   ],
   "methodology": "VeryGranular"
