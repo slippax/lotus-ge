@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-17T01:35:49.657412+00:00",
+  "updated": "2026-07-17T01:40:43.617083+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -38,10 +38,10 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 677,
+      "LowPrice": 676,
       "PriceFloor": 924.0,
       "BuyLimit": 10000,
-      "pctROI": 35.16
+      "pctROI": 35.36
     },
     {
       "ItemName": "Water battlestaff",
@@ -52,10 +52,17 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 356,
+      "LowPrice": 355,
       "PriceFloor": 568.0,
       "BuyLimit": 10000,
-      "pctROI": 58.15
+      "pctROI": 58.59
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8460,
+      "PriceFloor": 8676.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.54
     },
     {
       "ItemName": "Combat bracelet",
@@ -63,13 +70,6 @@
       "PriceFloor": 12264.0,
       "BuyLimit": 10000,
       "pctROI": 1.18
-    },
-    {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8461,
-      "PriceFloor": 8676.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.52
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -107,25 +107,18 @@
       "pctROI": 4.84
     },
     {
-      "ItemName": "Phoenix necklace",
-      "LowPrice": 2101,
-      "PriceFloor": 2171.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.33
-    },
-    {
-      "ItemName": "Diamond amulet (u)",
-      "LowPrice": 1800,
-      "PriceFloor": 1860.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.33
-    },
-    {
       "ItemName": "Yew longbow",
       "LowPrice": 499,
       "PriceFloor": 526.0,
       "BuyLimit": 18000,
       "pctROI": 4.41
+    },
+    {
+      "ItemName": "Diamond amulet (u)",
+      "LowPrice": 1819,
+      "PriceFloor": 1860.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.26
     }
   ],
   "methodology": "VeryGranular"
