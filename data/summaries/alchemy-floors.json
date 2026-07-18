@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-18T14:10:45.443215+00:00",
+  "updated": "2026-07-18T14:15:51.160362+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -9,18 +9,18 @@
       "pctROI": 18.51
     },
     {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1018,
-      "PriceFloor": 1251.0,
-      "BuyLimit": 13000,
-      "pctROI": 21.71
-    },
-    {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1615,
       "PriceFloor": 1845.0,
       "BuyLimit": 13000,
       "pctROI": 13.13
+    },
+    {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1051,
+      "PriceFloor": 1251.0,
+      "BuyLimit": 13000,
+      "pctROI": 17.89
     },
     {
       "ItemName": "Fire battlestaff",
@@ -30,25 +30,18 @@
       "pctROI": 1.53
     },
     {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 686,
+      "PriceFloor": 924.0,
+      "BuyLimit": 10000,
+      "pctROI": 33.38
+    },
+    {
       "ItemName": "Air battlestaff",
       "LowPrice": 8760,
       "PriceFloor": 8973.0,
       "BuyLimit": 18000,
       "pctROI": 1.42
-    },
-    {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 701,
-      "PriceFloor": 924.0,
-      "BuyLimit": 10000,
-      "pctROI": 30.53
-    },
-    {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8400,
-      "PriceFloor": 8676.0,
-      "BuyLimit": 11000,
-      "pctROI": 2.26
     },
     {
       "ItemName": "Rune javelin tips",
@@ -63,6 +56,13 @@
       "PriceFloor": 2038.0,
       "BuyLimit": 10000,
       "pctROI": 10.76
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8415,
+      "PriceFloor": 8676.0,
+      "BuyLimit": 11000,
+      "pctROI": 2.08
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -80,10 +80,17 @@
     },
     {
       "ItemName": "Magic shortbow",
-      "LowPrice": 669,
+      "LowPrice": 668,
       "PriceFloor": 716.0,
       "BuyLimit": 18000,
-      "pctROI": 5.98
+      "pctROI": 6.14
+    },
+    {
+      "ItemName": "Diamond necklace",
+      "LowPrice": 1890,
+      "PriceFloor": 1949.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.12
     },
     {
       "ItemName": "Phoenix necklace",
@@ -91,13 +98,6 @@
       "PriceFloor": 2171.0,
       "BuyLimit": 10000,
       "pctROI": 2.33
-    },
-    {
-      "ItemName": "Diamond necklace",
-      "LowPrice": 1906,
-      "PriceFloor": 1949.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.26
     },
     {
       "ItemName": "Yew longbow",
@@ -112,13 +112,6 @@
       "PriceFloor": 1860.0,
       "BuyLimit": 10000,
       "pctROI": 1.54
-    },
-    {
-      "ItemName": "Emerald necklace",
-      "LowPrice": 592,
-      "PriceFloor": 612.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.36
     }
   ],
   "methodology": "VeryGranular"
