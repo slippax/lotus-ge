@@ -1,19 +1,19 @@
 {
-  "updated": "2026-07-20T11:50:38.662783+00:00",
+  "updated": "2026-07-20T11:55:36.019648+00:00",
   "items": [
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1071,
+      "PriceFloor": 1286.0,
+      "BuyLimit": 18000,
+      "pctROI": 18.95
+    },
     {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1563,
       "PriceFloor": 1845.0,
       "BuyLimit": 13000,
       "pctROI": 16.89
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1084,
-      "PriceFloor": 1286.0,
-      "BuyLimit": 18000,
-      "pctROI": 17.53
     },
     {
       "ItemName": "Fire battlestaff",
@@ -59,10 +59,17 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 391,
+      "LowPrice": 373,
       "PriceFloor": 568.0,
       "BuyLimit": 10000,
-      "pctROI": 43.99
+      "pctROI": 50.94
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8788,
+      "PriceFloor": 8973.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.09
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -93,13 +100,6 @@
       "pctROI": 2.41
     },
     {
-      "ItemName": "Ruby bracelet",
-      "LowPrice": 1072,
-      "PriceFloor": 1147.0,
-      "BuyLimit": 10000,
-      "pctROI": 5.97
-    },
-    {
       "ItemName": "Binding necklace",
       "LowPrice": 544,
       "PriceFloor": 612.0,
@@ -112,6 +112,13 @@
       "PriceFloor": 526.0,
       "BuyLimit": 18000,
       "pctROI": 3.17
+    },
+    {
+      "ItemName": "Ruby bracelet",
+      "LowPrice": 1115,
+      "PriceFloor": 1147.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.88
     }
   ],
   "methodology": "VeryGranular"
