@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-20T08:50:35.090351+00:00",
+  "updated": "2026-07-20T08:55:39.828507+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -86,6 +86,13 @@
       "pctROI": 1.13
     },
     {
+      "ItemName": "Binding necklace",
+      "LowPrice": 512,
+      "PriceFloor": 612.0,
+      "BuyLimit": 10000,
+      "pctROI": 18.36
+    },
+    {
       "ItemName": "Amethyst javelin tips",
       "LowPrice": 584,
       "PriceFloor": 669.0,
@@ -114,13 +121,6 @@
       "pctROI": 4.26
     },
     {
-      "ItemName": "Binding necklace",
-      "LowPrice": 564,
-      "PriceFloor": 612.0,
-      "BuyLimit": 10000,
-      "pctROI": 7.45
-    },
-    {
       "ItemName": "Yew longbow",
       "LowPrice": 504,
       "PriceFloor": 526.0,
@@ -129,10 +129,10 @@
     },
     {
       "ItemName": "Diamond amulet (u)",
-      "LowPrice": 1814,
+      "LowPrice": 1819,
       "PriceFloor": 1860.0,
       "BuyLimit": 10000,
-      "pctROI": 1.54
+      "pctROI": 1.26
     }
   ],
   "methodology": "VeryGranular"
