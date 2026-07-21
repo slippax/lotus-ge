@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-21T20:05:37.685306+00:00",
+  "updated": "2026-07-21T20:10:39.569228+00:00",
   "items": [
     {
       "ItemName": "Water battlestaff",
@@ -7,6 +7,13 @@
       "PriceFloor": 8970.0,
       "BuyLimit": 18000,
       "pctROI": 2.92
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8651,
+      "PriceFloor": 8970.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.66
     },
     {
       "ItemName": "Earth battlestaff",
@@ -21,13 +28,6 @@
       "PriceFloor": 1283.0,
       "BuyLimit": 18000,
       "pctROI": 16.61
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8702,
-      "PriceFloor": 8970.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.06
     },
     {
       "ItemName": "Camphor repair kit",
@@ -58,11 +58,11 @@
       "pctROI": 12.38
     },
     {
-      "ItemName": "Ironwood repair kit",
-      "LowPrice": 1951,
-      "PriceFloor": 2139.0,
-      "BuyLimit": 13000,
-      "pctROI": 8.56
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8405,
+      "PriceFloor": 8673.0,
+      "BuyLimit": 11000,
+      "pctROI": 2.17
     },
     {
       "ItemName": "Amulet of glory(6)",
@@ -79,13 +79,6 @@
       "pctROI": 54.27
     },
     {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8420,
-      "PriceFloor": 8673.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.98
-    },
-    {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8788,
       "PriceFloor": 8970.0,
@@ -93,11 +86,18 @@
       "pctROI": 1.06
     },
     {
+      "ItemName": "Ironwood repair kit",
+      "LowPrice": 2020,
+      "PriceFloor": 2139.0,
+      "BuyLimit": 13000,
+      "pctROI": 4.85
+    },
+    {
       "ItemName": "Amethyst javelin tips",
-      "LowPrice": 611,
+      "LowPrice": 585,
       "PriceFloor": 666.0,
       "BuyLimit": 10000,
-      "pctROI": 8.02
+      "pctROI": 12.82
     },
     {
       "ItemName": "Binding necklace",
@@ -105,6 +105,20 @@
       "PriceFloor": 609.0,
       "BuyLimit": 10000,
       "pctROI": 6.91
+    },
+    {
+      "ItemName": "Diamond necklace",
+      "LowPrice": 1907,
+      "PriceFloor": 1946.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.05
+    },
+    {
+      "ItemName": "Sapphire necklace",
+      "LowPrice": 374,
+      "PriceFloor": 387.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.67
     }
   ],
   "methodology": "VeryGranular"
