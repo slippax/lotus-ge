@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-21T09:20:42.709036+00:00",
+  "updated": "2026-07-21T09:25:43.412344+00:00",
   "items": [
     {
       "ProductName": "Energy potion(4)",
@@ -143,7 +143,7 @@
     },
     {
       "ProductName": "Super strength(4)",
-      "ProductPrice": 3324,
+      "ProductPrice": 3330,
       "ProductBuyLimit": 2000,
       "Ingredient1Name": "Super strength(3)",
       "Ingredient1Price": 2426,
@@ -155,8 +155,8 @@
       "Ingredient3Price": 0,
       "Ingredient3Qty": "0",
       "TotalIngredientCost": 2426,
-      "ProfitPerCraft": 898,
-      "ROI": 37.02,
+      "ProfitPerCraft": 904,
+      "ROI": 37.26,
       "RecipeType": "Decant 3 to 4 (Bob Barter)",
       "QtyProduced": 1,
       "LiquidityLevel": "HIGH_LIQUIDITY"
@@ -660,26 +660,6 @@
       "RecipeType": "Create Unfinished Blood Potions (Zahur)",
       "QtyProduced": 1,
       "LiquidityLevel": "HIGH_LIQUIDITY"
-    },
-    {
-      "ProductName": "Saradomin godsword",
-      "ProductPrice": 25000000,
-      "ProductBuyLimit": 8,
-      "Ingredient1Name": "Godsword blade",
-      "Ingredient1Price": 544000,
-      "Ingredient1Qty": "1",
-      "Ingredient2Name": "Saradomin hilt",
-      "Ingredient2Price": 23222000,
-      "Ingredient2Qty": "1",
-      "Ingredient3Name": "",
-      "Ingredient3Price": 0,
-      "Ingredient3Qty": "0",
-      "TotalIngredientCost": 23766000,
-      "ProfitPerCraft": 1234000,
-      "ROI": 5.19,
-      "RecipeType": "Combine hilt and godsword blade",
-      "QtyProduced": 1,
-      "LiquidityLevel": "LOW_LIQUIDITY"
     }
   ],
   "methodology": "VeryGranular_RecipeArbitrage"
