@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-23T13:35:38.382207+00:00",
+  "updated": "2026-07-23T13:40:40.081283+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -14,6 +14,13 @@
       "PriceFloor": 1283.0,
       "BuyLimit": 18000,
       "pctROI": 15.65
+    },
+    {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8712,
+      "PriceFloor": 8970.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.94
     },
     {
       "ItemName": "Water battlestaff",
@@ -45,10 +52,10 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 660,
+      "LowPrice": 675,
       "PriceFloor": 921.0,
       "BuyLimit": 10000,
-      "pctROI": 38.18
+      "pctROI": 35.11
     },
     {
       "ItemName": "Diamond bracelet",
@@ -93,11 +100,18 @@
       "pctROI": 1.29
     },
     {
+      "ItemName": "Diamond amulet (u)",
+      "LowPrice": 1780,
+      "PriceFloor": 1857.0,
+      "BuyLimit": 10000,
+      "pctROI": 3.31
+    },
+    {
       "ItemName": "Amethyst javelin tips",
-      "LowPrice": 607,
+      "LowPrice": 609,
       "PriceFloor": 666.0,
       "BuyLimit": 10000,
-      "pctROI": 8.73
+      "pctROI": 8.37
     },
     {
       "ItemName": "Yew longbow",
@@ -114,25 +128,18 @@
       "pctROI": 1.26
     },
     {
-      "ItemName": "Diamond amulet (u)",
-      "LowPrice": 1800,
-      "PriceFloor": 1857.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.17
-    },
-    {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 371,
-      "PriceFloor": 393.0,
-      "BuyLimit": 11000,
-      "pctROI": 5.12
-    },
-    {
       "ItemName": "Sapphire necklace",
       "LowPrice": 377,
       "PriceFloor": 387.0,
       "BuyLimit": 18000,
       "pctROI": 1.86
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 383,
+      "PriceFloor": 393.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.83
     }
   ],
   "methodology": "VeryGranular"
