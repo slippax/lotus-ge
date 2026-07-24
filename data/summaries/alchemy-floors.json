@@ -1,6 +1,13 @@
 {
-  "updated": "2026-07-24T00:35:42.760307+00:00",
+  "updated": "2026-07-24T00:40:44.672451+00:00",
   "items": [
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8575,
+      "PriceFloor": 8970.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.57
+    },
     {
       "ItemName": "Magic longbow",
       "LowPrice": 1071,
@@ -21,13 +28,6 @@
       "PriceFloor": 8970.0,
       "BuyLimit": 18000,
       "pctROI": 2.02
-    },
-    {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8713,
-      "PriceFloor": 8970.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.93
     },
     {
       "ItemName": "Air battlestaff",
@@ -51,6 +51,13 @@
       "pctROI": 2.36
     },
     {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1051,
+      "PriceFloor": 1248.0,
+      "BuyLimit": 13000,
+      "pctROI": 17.6
+    },
+    {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8750,
       "PriceFloor": 8970.0,
@@ -59,10 +66,10 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 680,
+      "LowPrice": 685,
       "PriceFloor": 921.0,
       "BuyLimit": 10000,
-      "pctROI": 34.12
+      "pctROI": 33.14
     },
     {
       "ItemName": "Diamond bracelet",
@@ -72,32 +79,25 @@
       "pctROI": 12.57
     },
     {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1064,
-      "PriceFloor": 1248.0,
-      "BuyLimit": 13000,
-      "pctROI": 16.17
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 371,
+      "PriceFloor": 565.0,
+      "BuyLimit": 10000,
+      "pctROI": 50.94
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8395,
+      "LowPrice": 8441,
       "PriceFloor": 8673.0,
       "BuyLimit": 11000,
-      "pctROI": 2.29
-    },
-    {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 360,
-      "PriceFloor": 565.0,
-      "BuyLimit": 10000,
-      "pctROI": 55.56
+      "pctROI": 1.73
     },
     {
       "ItemName": "Diamond necklace",
-      "LowPrice": 1851,
+      "LowPrice": 1850,
       "PriceFloor": 1946.0,
       "BuyLimit": 18000,
-      "pctROI": 4.11
+      "pctROI": 4.16
     },
     {
       "ItemName": "Phoenix necklace",
@@ -126,13 +126,6 @@
       "PriceFloor": 523.0,
       "BuyLimit": 18000,
       "pctROI": 1.57
-    },
-    {
-      "ItemName": "Sapphire necklace",
-      "LowPrice": 380,
-      "PriceFloor": 387.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.05
     }
   ],
   "methodology": "VeryGranular"
