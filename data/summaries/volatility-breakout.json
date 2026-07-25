@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-25T07:15:41.738306+00:00",
+  "updated": "2026-07-25T07:20:56.389821+00:00",
   "items": [
     {
       "ItemName": "Pineapple ring",
@@ -96,10 +96,10 @@
       "ItemName": "Cake",
       "CurrentPrice": 183,
       "BuyLimit": 6000,
-      "DailyRange": 19,
+      "DailyRange": 18,
       "WeeklyRange": 184,
       "MonthlyRange": 450,
-      "CompressionRatio": 10.33,
+      "CompressionRatio": 9.78,
       "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 109800.0,
@@ -116,6 +116,19 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 573000.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Dashing kebbit fur",
+      "CurrentPrice": 185,
+      "BuyLimit": 10000,
+      "DailyRange": 9,
+      "WeeklyRange": 74,
+      "MonthlyRange": 134,
+      "CompressionRatio": 12.16,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 185000.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -159,7 +172,7 @@
     },
     {
       "ItemName": "Seeking dragon arrow",
-      "CurrentPrice": 2504,
+      "CurrentPrice": 2475,
       "BuyLimit": 11000,
       "DailyRange": 98,
       "WeeklyRange": 602,
@@ -167,7 +180,20 @@
       "CompressionRatio": 16.28,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 2754400.0,
+      "PotentialBreakoutProfit": 2722500.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Uncooked apple pie",
+      "CurrentPrice": 335,
+      "BuyLimit": 13000,
+      "DailyRange": 10,
+      "WeeklyRange": 61,
+      "MonthlyRange": 157,
+      "CompressionRatio": 16.39,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 435500.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -210,19 +236,6 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Dashing kebbit fur",
-      "CurrentPrice": 185,
-      "BuyLimit": 10000,
-      "DailyRange": 13,
-      "WeeklyRange": 74,
-      "MonthlyRange": 134,
-      "CompressionRatio": 17.57,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 185000.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
       "ItemName": "Amethyst javelin",
       "CurrentPrice": 199,
       "BuyLimit": 11000,
@@ -262,19 +275,6 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Ranarr weed",
-      "CurrentPrice": 5412,
-      "BuyLimit": 11000,
-      "DailyRange": 19,
-      "WeeklyRange": 88,
-      "MonthlyRange": 290,
-      "CompressionRatio": 21.59,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 5953200.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
       "ItemName": "Bolt of linen",
       "CurrentPrice": 696,
       "BuyLimit": 13000,
@@ -298,19 +298,6 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 1338700.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
-      "ItemName": "Nail beast nails",
-      "CurrentPrice": 694,
-      "BuyLimit": 11000,
-      "DailyRange": 42,
-      "WeeklyRange": 182,
-      "MonthlyRange": 400,
-      "CompressionRatio": 23.08,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 763400.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -376,6 +363,19 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 98000.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Nail beast nails",
+      "CurrentPrice": 694,
+      "BuyLimit": 11000,
+      "DailyRange": 48,
+      "WeeklyRange": 182,
+      "MonthlyRange": 400,
+      "CompressionRatio": 26.37,
+      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 763400.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -574,8 +574,21 @@
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
+      "ItemName": "Papaya fruit",
+      "CurrentPrice": 1806,
+      "BuyLimit": 11000,
+      "DailyRange": 81,
+      "WeeklyRange": 232,
+      "MonthlyRange": 292,
+      "CompressionRatio": 34.91,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 1986600.0,
+      "CompressionLevel": "MODERATE_COMPRESSION"
+    },
+    {
       "ItemName": "Cotton yarn",
-      "CurrentPrice": 2499,
+      "CurrentPrice": 2500,
       "BuyLimit": 13000,
       "DailyRange": 377,
       "WeeklyRange": 1065,
@@ -583,7 +596,7 @@
       "CompressionRatio": 35.4,
       "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 3248700.0,
+      "PotentialBreakoutProfit": 3250000.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -601,15 +614,15 @@
     },
     {
       "ItemName": "Adamant cannonball",
-      "CurrentPrice": 295,
+      "CurrentPrice": 282,
       "BuyLimit": 11000,
       "DailyRange": 31,
       "WeeklyRange": 84,
       "MonthlyRange": 130,
       "CompressionRatio": 36.9,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 324500.0,
+      "PotentialBreakoutProfit": 310200.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -627,7 +640,7 @@
     },
     {
       "ItemName": "Raw marlin",
-      "CurrentPrice": 3369,
+      "CurrentPrice": 3335,
       "BuyLimit": 15000,
       "DailyRange": 192,
       "WeeklyRange": 519,
@@ -635,20 +648,7 @@
       "CompressionRatio": 36.99,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 5053500.0,
-      "CompressionLevel": "MODERATE_COMPRESSION"
-    },
-    {
-      "ItemName": "Moonlight antelope antler",
-      "CurrentPrice": 3895,
-      "BuyLimit": 18000,
-      "DailyRange": 246,
-      "WeeklyRange": 649,
-      "MonthlyRange": 4353,
-      "CompressionRatio": 37.9,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 7011000.0,
+      "PotentialBreakoutProfit": 5002500.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     }
   ],
