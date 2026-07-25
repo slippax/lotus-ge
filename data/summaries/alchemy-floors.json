@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-25T05:40:41.820373+00:00",
+  "updated": "2026-07-25T05:45:39.798279+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -17,10 +17,10 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1061,
+      "LowPrice": 1060,
       "PriceFloor": 1280.0,
       "BuyLimit": 18000,
-      "pctROI": 19.51
+      "pctROI": 19.62
     },
     {
       "ItemName": "Water battlestaff",
@@ -30,6 +30,13 @@
       "pctROI": 2.05
     },
     {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1012,
+      "PriceFloor": 1245.0,
+      "BuyLimit": 13000,
+      "pctROI": 21.84
+    },
+    {
       "ItemName": "Ironwood repair kit",
       "LowPrice": 1900,
       "PriceFloor": 2136.0,
@@ -37,18 +44,11 @@
       "pctROI": 11.32
     },
     {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1019,
-      "PriceFloor": 1245.0,
-      "BuyLimit": 13000,
-      "pctROI": 21.0
-    },
-    {
       "ItemName": "Diamond bracelet",
-      "LowPrice": 1744,
+      "LowPrice": 1756,
       "PriceFloor": 2032.0,
       "BuyLimit": 10000,
-      "pctROI": 15.37
+      "pctROI": 14.58
     },
     {
       "ItemName": "Camphor repair kit",
@@ -87,10 +87,17 @@
     },
     {
       "ItemName": "Combat bracelet",
-      "LowPrice": 12002,
+      "LowPrice": 11970,
       "PriceFloor": 12258.0,
       "BuyLimit": 10000,
-      "pctROI": 1.12
+      "pctROI": 1.39
+    },
+    {
+      "ItemName": "Phoenix necklace",
+      "LowPrice": 2052,
+      "PriceFloor": 2166.0,
+      "BuyLimit": 10000,
+      "pctROI": 4.53
     },
     {
       "ItemName": "Binding necklace",
@@ -107,13 +114,6 @@
       "pctROI": 10.05
     },
     {
-      "ItemName": "Phoenix necklace",
-      "LowPrice": 2104,
-      "PriceFloor": 2166.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.95
-    },
-    {
       "ItemName": "Yew longbow",
       "LowPrice": 495,
       "PriceFloor": 520.0,
@@ -121,18 +121,11 @@
       "pctROI": 4.04
     },
     {
-      "ItemName": "Diamond amulet (u)",
-      "LowPrice": 1801,
-      "PriceFloor": 1854.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.94
-    },
-    {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 377,
+      "LowPrice": 378,
       "PriceFloor": 390.0,
       "BuyLimit": 11000,
-      "pctROI": 2.65
+      "pctROI": 2.38
     }
   ],
   "methodology": "VeryGranular"
