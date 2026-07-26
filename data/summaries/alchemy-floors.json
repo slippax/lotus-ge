@@ -1,19 +1,19 @@
 {
-  "updated": "2026-07-26T07:00:48.812724+00:00",
+  "updated": "2026-07-26T07:05:40.459676+00:00",
   "items": [
-    {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8650,
-      "PriceFloor": 8965.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.61
-    },
     {
       "ItemName": "Earth battlestaff",
       "LowPrice": 8680,
       "PriceFloor": 8965.0,
       "BuyLimit": 18000,
       "pctROI": 2.26
+    },
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8687,
+      "PriceFloor": 8965.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.18
     },
     {
       "ItemName": "Magic longbow",
@@ -24,10 +24,24 @@
     },
     {
       "ItemName": "Fire battlestaff",
-      "LowPrice": 8725,
+      "LowPrice": 8702,
       "PriceFloor": 8965.0,
       "BuyLimit": 18000,
-      "pctROI": 1.73
+      "pctROI": 2.0
+    },
+    {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 670,
+      "PriceFloor": 916.0,
+      "BuyLimit": 10000,
+      "pctROI": 35.37
+    },
+    {
+      "ItemName": "Camphor repair kit",
+      "LowPrice": 1638,
+      "PriceFloor": 1837.0,
+      "BuyLimit": 13000,
+      "pctROI": 11.05
     },
     {
       "ItemName": "Air battlestaff",
@@ -42,13 +56,6 @@
       "PriceFloor": 2030.0,
       "BuyLimit": 10000,
       "pctROI": 12.61
-    },
-    {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 684,
-      "PriceFloor": 916.0,
-      "BuyLimit": 10000,
-      "pctROI": 32.6
     },
     {
       "ItemName": "Rune javelin tips",
@@ -72,25 +79,11 @@
       "pctROI": 11.71
     },
     {
-      "ItemName": "Camphor repair kit",
-      "LowPrice": 1692,
-      "PriceFloor": 1837.0,
-      "BuyLimit": 13000,
-      "pctROI": 7.51
-    },
-    {
       "ItemName": "Combat bracelet",
       "LowPrice": 11999,
       "PriceFloor": 12256.0,
       "BuyLimit": 10000,
       "pctROI": 1.13
-    },
-    {
-      "ItemName": "Amulet of glory(6)",
-      "LowPrice": 10000,
-      "PriceFloor": 10227.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.25
     },
     {
       "ItemName": "Binding necklace",
@@ -119,13 +112,6 @@
       "PriceFloor": 2134.0,
       "BuyLimit": 13000,
       "pctROI": 1.78
-    },
-    {
-      "ItemName": "Nihil shard",
-      "LowPrice": 2651,
-      "PriceFloor": 2728.0,
-      "BuyLimit": 30000,
-      "pctROI": 1.89
     }
   ],
   "methodology": "VeryGranular"
