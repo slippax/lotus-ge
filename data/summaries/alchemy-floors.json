@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-26T16:05:39.391612+00:00",
+  "updated": "2026-07-26T16:10:38.355079+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -30,6 +30,13 @@
       "pctROI": 19.42
     },
     {
+      "ItemName": "Camphor repair kit",
+      "LowPrice": 1626,
+      "PriceFloor": 1836.0,
+      "BuyLimit": 13000,
+      "pctROI": 11.81
+    },
+    {
       "ItemName": "Earth battlestaff",
       "LowPrice": 8744,
       "PriceFloor": 8964.0,
@@ -44,13 +51,6 @@
       "pctROI": 12.99
     },
     {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 680,
-      "PriceFloor": 915.0,
-      "BuyLimit": 10000,
-      "pctROI": 33.24
-    },
-    {
       "ItemName": "Rune javelin tips",
       "LowPrice": 331,
       "PriceFloor": 559.0,
@@ -58,25 +58,25 @@
       "pctROI": 67.37
     },
     {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 686,
+      "PriceFloor": 915.0,
+      "BuyLimit": 10000,
+      "pctROI": 32.07
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8400,
+      "PriceFloor": 8667.0,
+      "BuyLimit": 11000,
+      "pctROI": 2.15
+    },
+    {
       "ItemName": "Combat bracelet",
       "LowPrice": 12000,
       "PriceFloor": 12255.0,
       "BuyLimit": 10000,
       "pctROI": 1.11
-    },
-    {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8470,
-      "PriceFloor": 8667.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.31
-    },
-    {
-      "ItemName": "Camphor repair kit",
-      "LowPrice": 1746,
-      "PriceFloor": 1836.0,
-      "BuyLimit": 13000,
-      "pctROI": 4.12
     },
     {
       "ItemName": "Phoenix necklace",
@@ -115,10 +115,17 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 353,
+      "LowPrice": 365,
       "PriceFloor": 388.0,
       "BuyLimit": 11000,
-      "pctROI": 9.07
+      "pctROI": 5.48
+    },
+    {
+      "ItemName": "Magic shortbow",
+      "LowPrice": 689,
+      "PriceFloor": 707.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.6
     }
   ],
   "methodology": "VeryGranular"
