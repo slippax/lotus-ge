@@ -1,19 +1,19 @@
 {
-  "updated": "2026-07-27T11:15:39.786541+00:00",
+  "updated": "2026-07-27T11:20:41.396465+00:00",
   "items": [
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1065,
-      "PriceFloor": 1279.0,
-      "BuyLimit": 18000,
-      "pctROI": 18.97
-    },
     {
       "ItemName": "Earth battlestaff",
       "LowPrice": 8687,
       "PriceFloor": 8965.0,
       "BuyLimit": 18000,
       "pctROI": 2.18
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1083,
+      "PriceFloor": 1279.0,
+      "BuyLimit": 18000,
+      "pctROI": 16.99
     },
     {
       "ItemName": "Fire battlestaff",
@@ -30,13 +30,6 @@
       "pctROI": 19.86
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8740,
-      "PriceFloor": 8965.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.56
-    },
-    {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1636,
       "PriceFloor": 1837.0,
@@ -44,11 +37,18 @@
       "pctROI": 11.19
     },
     {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8745,
+      "PriceFloor": 8965.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.5
+    },
+    {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 675,
+      "LowPrice": 678,
       "PriceFloor": 916.0,
       "BuyLimit": 10000,
-      "pctROI": 34.37
+      "pctROI": 33.78
     },
     {
       "ItemName": "Water battlestaff",
@@ -56,13 +56,6 @@
       "PriceFloor": 8965.0,
       "BuyLimit": 18000,
       "pctROI": 1.44
-    },
-    {
-      "ItemName": "Dragonstone bracelet",
-      "LowPrice": 10783,
-      "PriceFloor": 11118.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.08
     },
     {
       "ItemName": "Diamond bracelet",
@@ -80,17 +73,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 372,
+      "LowPrice": 370,
       "PriceFloor": 560.0,
       "BuyLimit": 10000,
-      "pctROI": 49.19
-    },
-    {
-      "ItemName": "Combat bracelet",
-      "LowPrice": 12000,
-      "PriceFloor": 12256.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.12
+      "pctROI": 50.0
     },
     {
       "ItemName": "Binding necklace",
@@ -112,6 +98,13 @@
       "PriceFloor": 2134.0,
       "BuyLimit": 13000,
       "pctROI": 1.88
+    },
+    {
+      "ItemName": "Magic shortbow",
+      "LowPrice": 693,
+      "PriceFloor": 708.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.15
     }
   ],
   "methodology": "VeryGranular"
