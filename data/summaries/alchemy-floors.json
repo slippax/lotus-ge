@@ -1,13 +1,6 @@
 {
-  "updated": "2026-07-27T04:05:40.487229+00:00",
+  "updated": "2026-07-27T04:10:39.640999+00:00",
   "items": [
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1065,
-      "PriceFloor": 1278.0,
-      "BuyLimit": 18000,
-      "pctROI": 18.87
-    },
     {
       "ItemName": "Water battlestaff",
       "LowPrice": 8687,
@@ -17,10 +10,17 @@
     },
     {
       "ItemName": "Earth battlestaff",
-      "LowPrice": 8688,
+      "LowPrice": 8689,
       "PriceFloor": 8964.0,
       "BuyLimit": 18000,
-      "pctROI": 2.15
+      "pctROI": 2.14
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1083,
+      "PriceFloor": 1278.0,
+      "BuyLimit": 18000,
+      "pctROI": 16.9
     },
     {
       "ItemName": "Air battlestaff",
@@ -80,10 +80,10 @@
     },
     {
       "ItemName": "Combat bracelet",
-      "LowPrice": 11950,
+      "LowPrice": 11999,
       "PriceFloor": 12255.0,
       "BuyLimit": 10000,
-      "pctROI": 1.53
+      "pctROI": 1.12
     },
     {
       "ItemName": "Binding necklace",
@@ -100,11 +100,18 @@
       "pctROI": 14.34
     },
     {
+      "ItemName": "Ironwood repair kit",
+      "LowPrice": 2074,
+      "PriceFloor": 2133.0,
+      "BuyLimit": 13000,
+      "pctROI": 1.83
+    },
+    {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 380,
+      "LowPrice": 381,
       "PriceFloor": 388.0,
       "BuyLimit": 11000,
-      "pctROI": 1.32
+      "pctROI": 1.05
     }
   ],
   "methodology": "VeryGranular"
