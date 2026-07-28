@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-28T20:30:48.329685+00:00",
+  "updated": "2026-07-28T20:36:03.055072+00:00",
   "items": [
     {
       "ItemName": "Water battlestaff",
@@ -10,10 +10,17 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1072,
+      "LowPrice": 1055,
       "PriceFloor": 1279.0,
       "BuyLimit": 18000,
-      "pctROI": 18.19
+      "pctROI": 20.09
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8703,
+      "PriceFloor": 8965.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.99
     },
     {
       "ItemName": "Fire battlestaff",
@@ -24,17 +31,10 @@
     },
     {
       "ItemName": "Air battlestaff",
-      "LowPrice": 8722,
+      "LowPrice": 8729,
       "PriceFloor": 8965.0,
       "BuyLimit": 18000,
-      "pctROI": 1.77
-    },
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8725,
-      "PriceFloor": 8965.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.73
+      "pctROI": 1.68
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -58,6 +58,13 @@
       "pctROI": 2.17
     },
     {
+      "ItemName": "Combat bracelet",
+      "LowPrice": 11950,
+      "PriceFloor": 12256.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.54
+    },
+    {
       "ItemName": "Rune javelin tips",
       "LowPrice": 385,
       "PriceFloor": 560.0,
@@ -72,11 +79,11 @@
       "pctROI": 8.83
     },
     {
-      "ItemName": "Combat bracelet",
-      "LowPrice": 11980,
-      "PriceFloor": 12256.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.29
+      "ItemName": "Camphor repair kit",
+      "LowPrice": 1694,
+      "PriceFloor": 1837.0,
+      "BuyLimit": 13000,
+      "pctROI": 7.38
     },
     {
       "ItemName": "Amulet of glory(6)",
@@ -91,13 +98,6 @@
       "PriceFloor": 661.0,
       "BuyLimit": 10000,
       "pctROI": 26.69
-    },
-    {
-      "ItemName": "Camphor repair kit",
-      "LowPrice": 1717,
-      "PriceFloor": 1837.0,
-      "BuyLimit": 13000,
-      "pctROI": 5.94
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -129,10 +129,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 380,
+      "LowPrice": 379,
       "PriceFloor": 388.0,
       "BuyLimit": 11000,
-      "pctROI": 1.32
+      "pctROI": 1.58
     }
   ],
   "methodology": "VeryGranular"
