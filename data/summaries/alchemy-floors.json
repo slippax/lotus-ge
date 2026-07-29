@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-29T16:50:52.477008+00:00",
+  "updated": "2026-07-29T16:55:52.982091+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -7,13 +7,6 @@
       "PriceFloor": 1275.0,
       "BuyLimit": 18000,
       "pctROI": 20.29
-    },
-    {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8667,
-      "PriceFloor": 8961.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.37
     },
     {
       "ItemName": "Fire battlestaff",
@@ -30,11 +23,25 @@
       "pctROI": 2.18
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8708,
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8686,
       "PriceFloor": 8961.0,
       "BuyLimit": 18000,
-      "pctROI": 1.88
+      "pctROI": 2.14
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8702,
+      "PriceFloor": 8961.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.95
+    },
+    {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1055,
+      "PriceFloor": 1239.0,
+      "BuyLimit": 13000,
+      "pctROI": 16.3
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -44,6 +51,13 @@
       "pctROI": 2.41
     },
     {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 688,
+      "PriceFloor": 912.0,
+      "BuyLimit": 10000,
+      "pctROI": 31.25
+    },
+    {
       "ItemName": "Diamond bracelet",
       "LowPrice": 1795,
       "PriceFloor": 2026.0,
@@ -51,25 +65,11 @@
       "pctROI": 11.75
     },
     {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1066,
-      "PriceFloor": 1239.0,
-      "BuyLimit": 13000,
-      "pctROI": 15.1
-    },
-    {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 694,
-      "PriceFloor": 912.0,
-      "BuyLimit": 10000,
-      "pctROI": 30.12
-    },
-    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 365,
+      "LowPrice": 366,
       "PriceFloor": 556.0,
       "BuyLimit": 10000,
-      "pctROI": 50.96
+      "pctROI": 50.55
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -101,10 +101,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 341,
+      "LowPrice": 359,
       "PriceFloor": 385.0,
       "BuyLimit": 11000,
-      "pctROI": 12.02
+      "pctROI": 6.41
     }
   ],
   "methodology": "VeryGranular"
