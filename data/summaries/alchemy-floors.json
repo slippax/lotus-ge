@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-29T14:50:40.396542+00:00",
+  "updated": "2026-07-29T14:55:46.070288+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -9,11 +9,18 @@
       "pctROI": 20.29
     },
     {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8667,
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8675,
       "PriceFloor": 8961.0,
       "BuyLimit": 18000,
-      "pctROI": 2.37
+      "pctROI": 2.27
+    },
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8686,
+      "PriceFloor": 8961.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.14
     },
     {
       "ItemName": "Earth battlestaff",
@@ -23,13 +30,6 @@
       "pctROI": 2.09
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8700,
-      "PriceFloor": 8961.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.98
-    },
-    {
       "ItemName": "Onyx bolts (e)",
       "LowPrice": 8340,
       "PriceFloor": 8664.0,
@@ -37,25 +37,18 @@
       "pctROI": 2.85
     },
     {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8744,
+      "PriceFloor": 8961.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.46
+    },
+    {
       "ItemName": "Mahogany repair kit",
       "LowPrice": 1055,
       "PriceFloor": 1239.0,
       "BuyLimit": 13000,
       "pctROI": 16.3
-    },
-    {
-      "ItemName": "Amulet of glory(6)",
-      "LowPrice": 9901,
-      "PriceFloor": 10223.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.22
-    },
-    {
-      "ItemName": "Fire battlestaff",
-      "LowPrice": 8750,
-      "PriceFloor": 8961.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.39
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -80,10 +73,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 370,
+      "LowPrice": 362,
       "PriceFloor": 556.0,
       "BuyLimit": 10000,
-      "pctROI": 48.92
+      "pctROI": 52.21
     },
     {
       "ItemName": "Camphor repair kit",
@@ -115,10 +108,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 376,
+      "LowPrice": 371,
       "PriceFloor": 385.0,
       "BuyLimit": 11000,
-      "pctROI": 1.6
+      "pctROI": 2.96
     }
   ],
   "methodology": "VeryGranular"
