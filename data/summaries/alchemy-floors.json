@@ -1,6 +1,13 @@
 {
-  "updated": "2026-07-30T18:05:38.396513+00:00",
+  "updated": "2026-07-30T18:10:38.095064+00:00",
   "items": [
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1060,
+      "PriceFloor": 1268.0,
+      "BuyLimit": 18000,
+      "pctROI": 18.49
+    },
     {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8676,
@@ -9,32 +16,25 @@
       "pctROI": 2.18
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1075,
-      "PriceFloor": 1268.0,
-      "BuyLimit": 18000,
-      "pctROI": 16.84
-    },
-    {
       "ItemName": "Air battlestaff",
-      "LowPrice": 8695,
+      "LowPrice": 8685,
       "PriceFloor": 8954.0,
       "BuyLimit": 18000,
-      "pctROI": 1.96
-    },
-    {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8700,
-      "PriceFloor": 8954.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.9
+      "pctROI": 2.07
     },
     {
       "ItemName": "Earth battlestaff",
-      "LowPrice": 8703,
+      "LowPrice": 8706,
       "PriceFloor": 8954.0,
       "BuyLimit": 18000,
-      "pctROI": 1.86
+      "pctROI": 1.83
+    },
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8714,
+      "PriceFloor": 8954.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.73
     },
     {
       "ItemName": "Diamond bracelet",
@@ -80,10 +80,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 360,
+      "LowPrice": 359,
       "PriceFloor": 549.0,
       "BuyLimit": 10000,
-      "pctROI": 51.11
+      "pctROI": 51.53
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -100,6 +100,13 @@
       "pctROI": 2.94
     },
     {
+      "ItemName": "Binding necklace",
+      "LowPrice": 533,
+      "PriceFloor": 593.0,
+      "BuyLimit": 10000,
+      "pctROI": 10.32
+    },
+    {
       "ItemName": "Phoenix necklace",
       "LowPrice": 2077,
       "PriceFloor": 2153.0,
@@ -112,13 +119,6 @@
       "PriceFloor": 1128.0,
       "BuyLimit": 10000,
       "pctROI": 5.08
-    },
-    {
-      "ItemName": "Binding necklace",
-      "LowPrice": 582,
-      "PriceFloor": 593.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.03
     }
   ],
   "methodology": "VeryGranular"
