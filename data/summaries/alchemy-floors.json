@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-01T05:40:44.757041+00:00",
+  "updated": "2026-08-01T05:45:41.136087+00:00",
   "items": [
     {
       "ItemName": "Air battlestaff",
@@ -23,6 +23,13 @@
       "pctROI": 2.23
     },
     {
+      "ItemName": "Combat bracelet",
+      "LowPrice": 11853,
+      "PriceFloor": 12239.0,
+      "BuyLimit": 10000,
+      "pctROI": 2.23
+    },
+    {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1600,
       "PriceFloor": 1820.0,
@@ -31,31 +38,24 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1107,
+      "LowPrice": 1125,
       "PriceFloor": 1262.0,
       "BuyLimit": 18000,
-      "pctROI": 12.92
-    },
-    {
-      "ItemName": "Combat bracelet",
-      "LowPrice": 11905,
-      "PriceFloor": 12239.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.78
-    },
-    {
-      "ItemName": "Amulet of glory(6)",
-      "LowPrice": 9900,
-      "PriceFloor": 10210.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.1
+      "pctROI": 11.11
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 683,
+      "LowPrice": 686,
       "PriceFloor": 899.0,
       "BuyLimit": 10000,
-      "pctROI": 30.45
+      "pctROI": 29.88
+    },
+    {
+      "ItemName": "Amulet of glory(6)",
+      "LowPrice": 9918,
+      "PriceFloor": 10210.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.92
     },
     {
       "ItemName": "Fire battlestaff",
@@ -87,10 +87,10 @@
     },
     {
       "ItemName": "Mahogany repair kit",
-      "LowPrice": 1090,
+      "LowPrice": 1091,
       "PriceFloor": 1226.0,
       "BuyLimit": 13000,
-      "pctROI": 11.38
+      "pctROI": 11.27
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -105,13 +105,6 @@
       "PriceFloor": 2147.0,
       "BuyLimit": 10000,
       "pctROI": 3.66
-    },
-    {
-      "ItemName": "Binding necklace",
-      "LowPrice": 508,
-      "PriceFloor": 587.0,
-      "BuyLimit": 10000,
-      "pctROI": 14.57
     }
   ],
   "methodology": "VeryGranular"
