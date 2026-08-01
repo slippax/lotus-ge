@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-01T02:50:40.611684+00:00",
+  "updated": "2026-08-01T02:55:39.776159+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -7,13 +7,6 @@
       "PriceFloor": 8948.0,
       "BuyLimit": 18000,
       "pctROI": 3.52
-    },
-    {
-      "ItemName": "Fire battlestaff",
-      "LowPrice": 8660,
-      "PriceFloor": 8948.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.3
     },
     {
       "ItemName": "Magic longbow",
@@ -24,6 +17,13 @@
     },
     {
       "ItemName": "Air battlestaff",
+      "LowPrice": 8700,
+      "PriceFloor": 8948.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.83
+    },
+    {
+      "ItemName": "Fire battlestaff",
       "LowPrice": 8700,
       "PriceFloor": 8948.0,
       "BuyLimit": 18000,
@@ -42,13 +42,6 @@
       "PriceFloor": 8948.0,
       "BuyLimit": 18000,
       "pctROI": 1.66
-    },
-    {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1764,
-      "PriceFloor": 2013.0,
-      "BuyLimit": 10000,
-      "pctROI": 12.98
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -72,11 +65,18 @@
       "pctROI": 2.07
     },
     {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1810,
+      "PriceFloor": 2013.0,
+      "BuyLimit": 10000,
+      "pctROI": 10.11
+    },
+    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 369,
+      "LowPrice": 363,
       "PriceFloor": 543.0,
       "BuyLimit": 10000,
-      "pctROI": 45.8
+      "pctROI": 48.21
     },
     {
       "ItemName": "Combat bracelet",
@@ -84,6 +84,13 @@
       "PriceFloor": 12239.0,
       "BuyLimit": 10000,
       "pctROI": 1.14
+    },
+    {
+      "ItemName": "Ironwood repair kit",
+      "LowPrice": 2012,
+      "PriceFloor": 2117.0,
+      "BuyLimit": 13000,
+      "pctROI": 4.17
     },
     {
       "ItemName": "Binding necklace",
@@ -98,13 +105,6 @@
       "PriceFloor": 644.0,
       "BuyLimit": 10000,
       "pctROI": 11.15
-    },
-    {
-      "ItemName": "Diamond necklace",
-      "LowPrice": 1885,
-      "PriceFloor": 1924.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.06
     }
   ],
   "methodology": "VeryGranular"
