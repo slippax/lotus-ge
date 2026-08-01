@@ -1,13 +1,6 @@
 {
-  "updated": "2026-08-01T15:05:42.266431+00:00",
+  "updated": "2026-08-01T15:10:39.738863+00:00",
   "items": [
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8600,
-      "PriceFloor": 8947.0,
-      "BuyLimit": 18000,
-      "pctROI": 3.0
-    },
     {
       "ItemName": "Earth battlestaff",
       "LowPrice": 8600,
@@ -21,6 +14,13 @@
       "PriceFloor": 1261.0,
       "BuyLimit": 18000,
       "pctROI": 15.43
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8700,
+      "PriceFloor": 8947.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.82
     },
     {
       "ItemName": "Fire battlestaff",
@@ -58,18 +58,18 @@
       "pctROI": 2.07
     },
     {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 358,
+      "PriceFloor": 542.0,
+      "BuyLimit": 10000,
+      "pctROI": 50.0
+    },
+    {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1675,
       "PriceFloor": 1819.0,
       "BuyLimit": 13000,
       "pctROI": 7.52
-    },
-    {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 375,
-      "PriceFloor": 542.0,
-      "BuyLimit": 10000,
-      "pctROI": 43.2
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -101,10 +101,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 357,
+      "LowPrice": 340,
       "PriceFloor": 371.0,
       "BuyLimit": 11000,
-      "pctROI": 3.08
+      "pctROI": 8.24
     }
   ],
   "methodology": "VeryGranular"
