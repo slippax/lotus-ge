@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-02T22:25:44.731185+00:00",
+  "updated": "2026-08-02T22:30:55.402069+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -7,6 +7,13 @@
       "PriceFloor": 8941.0,
       "BuyLimit": 18000,
       "pctROI": 2.85
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8623,
+      "PriceFloor": 8941.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.66
     },
     {
       "ItemName": "Water battlestaff",
@@ -21,13 +28,6 @@
       "PriceFloor": 8941.0,
       "BuyLimit": 18000,
       "pctROI": 1.85
-    },
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8696,
-      "PriceFloor": 8941.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.79
     },
     {
       "ItemName": "Diamond bracelet",
@@ -108,10 +108,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 349,
+      "LowPrice": 356,
       "PriceFloor": 365.0,
       "BuyLimit": 11000,
-      "pctROI": 3.72
+      "pctROI": 1.69
     }
   ],
   "methodology": "VeryGranular"
