@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-02T17:35:38.110875+00:00",
+  "updated": "2026-08-02T17:40:37.874631+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -7,13 +7,6 @@
       "PriceFloor": 8942.0,
       "BuyLimit": 18000,
       "pctROI": 2.92
-    },
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8675,
-      "PriceFloor": 8942.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.05
     },
     {
       "ItemName": "Water battlestaff",
@@ -28,6 +21,13 @@
       "PriceFloor": 8942.0,
       "BuyLimit": 18000,
       "pctROI": 1.86
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8696,
+      "PriceFloor": 8942.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.81
     },
     {
       "ItemName": "Magic longbow",
@@ -52,10 +52,10 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 685,
+      "LowPrice": 698,
       "PriceFloor": 893.0,
       "BuyLimit": 10000,
-      "pctROI": 29.2
+      "pctROI": 26.79
     },
     {
       "ItemName": "Rune javelin tips",
@@ -108,10 +108,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 358,
+      "LowPrice": 328,
       "PriceFloor": 366.0,
       "BuyLimit": 11000,
-      "pctROI": 1.4
+      "pctROI": 10.67
     }
   ],
   "methodology": "VeryGranular"
