@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-02T07:15:40.929390+00:00",
+  "updated": "2026-08-02T07:20:40.904548+00:00",
   "items": [
     {
       "ItemName": "Water battlestaff",
@@ -7,6 +7,13 @@
       "PriceFloor": 8944.0,
       "BuyLimit": 18000,
       "pctROI": 4.46
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8650,
+      "PriceFloor": 8944.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.37
     },
     {
       "ItemName": "Fire battlestaff",
@@ -23,13 +30,6 @@
       "pctROI": 2.1
     },
     {
-      "ItemName": "Combat bracelet",
-      "LowPrice": 11856,
-      "PriceFloor": 12235.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.17
-    },
-    {
       "ItemName": "Magic longbow",
       "LowPrice": 1108,
       "PriceFloor": 1258.0,
@@ -37,25 +37,18 @@
       "pctROI": 12.45
     },
     {
+      "ItemName": "Camphor repair kit",
+      "LowPrice": 1624,
+      "PriceFloor": 1816.0,
+      "BuyLimit": 13000,
+      "pctROI": 10.71
+    },
+    {
       "ItemName": "Diamond bracelet",
       "LowPrice": 1767,
       "PriceFloor": 2009.0,
       "BuyLimit": 10000,
       "pctROI": 12.56
-    },
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8750,
-      "PriceFloor": 8944.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.2
-    },
-    {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 710,
-      "PriceFloor": 895.0,
-      "BuyLimit": 10000,
-      "pctROI": 24.93
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -66,10 +59,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 376,
+      "LowPrice": 375,
       "PriceFloor": 539.0,
       "BuyLimit": 10000,
-      "pctROI": 42.02
+      "pctROI": 42.4
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -77,6 +70,13 @@
       "PriceFloor": 1222.0,
       "BuyLimit": 13000,
       "pctROI": 11.01
+    },
+    {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 738,
+      "PriceFloor": 895.0,
+      "BuyLimit": 10000,
+      "pctROI": 20.19
     },
     {
       "ItemName": "Phoenix necklace",
@@ -98,13 +98,6 @@
       "PriceFloor": 584.0,
       "BuyLimit": 10000,
       "pctROI": 14.43
-    },
-    {
-      "ItemName": "Camphor repair kit",
-      "LowPrice": 1779,
-      "PriceFloor": 1816.0,
-      "BuyLimit": 13000,
-      "pctROI": 1.07
     }
   ],
   "methodology": "VeryGranular"
