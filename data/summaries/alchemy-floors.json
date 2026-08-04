@@ -1,12 +1,19 @@
 {
-  "updated": "2026-08-04T18:45:41.140247+00:00",
+  "updated": "2026-08-04T18:50:46.858564+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
-      "LowPrice": 8690,
+      "LowPrice": 8615,
       "PriceFloor": 8941.0,
       "BuyLimit": 18000,
-      "pctROI": 1.86
+      "pctROI": 2.75
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8724,
+      "PriceFloor": 8941.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.47
     },
     {
       "ItemName": "Water battlestaff",
@@ -21,13 +28,6 @@
       "PriceFloor": 12232.0,
       "BuyLimit": 10000,
       "pctROI": 1.76
-    },
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8740,
-      "PriceFloor": 8941.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.28
     },
     {
       "ItemName": "Magic longbow",
@@ -52,17 +52,17 @@
     },
     {
       "ItemName": "Diamond bracelet",
-      "LowPrice": 1831,
+      "LowPrice": 1833,
       "PriceFloor": 2006.0,
       "BuyLimit": 10000,
-      "pctROI": 8.47
+      "pctROI": 8.35
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 382,
+      "LowPrice": 379,
       "PriceFloor": 536.0,
       "BuyLimit": 10000,
-      "pctROI": 39.01
+      "pctROI": 40.11
     },
     {
       "ItemName": "Amulet of glory(6)",
@@ -98,6 +98,13 @@
       "PriceFloor": 581.0,
       "BuyLimit": 10000,
       "pctROI": 3.6
+    },
+    {
+      "ItemName": "Ruby bracelet",
+      "LowPrice": 1090,
+      "PriceFloor": 1115.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.28
     }
   ],
   "methodology": "VeryGranular"
