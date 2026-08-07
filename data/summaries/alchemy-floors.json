@@ -1,19 +1,26 @@
 {
-  "updated": "2026-08-07T13:10:41.205191+00:00",
+  "updated": "2026-08-07T13:15:47.419575+00:00",
   "items": [
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1107,
-      "PriceFloor": 1271.0,
-      "BuyLimit": 18000,
-      "pctROI": 13.73
-    },
     {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1601,
       "PriceFloor": 1829.0,
       "BuyLimit": 13000,
       "pctROI": 13.12
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1110,
+      "PriceFloor": 1271.0,
+      "BuyLimit": 18000,
+      "pctROI": 13.42
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8730,
+      "PriceFloor": 8957.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.58
     },
     {
       "ItemName": "Earth battlestaff",
@@ -37,13 +44,6 @@
       "pctROI": 15.81
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8753,
-      "PriceFloor": 8957.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.31
-    },
-    {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8757,
       "PriceFloor": 8957.0,
@@ -59,17 +59,17 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 731,
+      "LowPrice": 725,
       "PriceFloor": 908.0,
       "BuyLimit": 10000,
-      "pctROI": 22.98
+      "pctROI": 24.0
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 401,
+      "LowPrice": 405,
       "PriceFloor": 552.0,
       "BuyLimit": 10000,
-      "pctROI": 36.41
+      "pctROI": 35.06
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -84,6 +84,13 @@
       "PriceFloor": 2126.0,
       "BuyLimit": 13000,
       "pctROI": 5.2
+    },
+    {
+      "ItemName": "Combat bracelet",
+      "LowPrice": 12005,
+      "PriceFloor": 12248.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.01
     },
     {
       "ItemName": "Amulet of glory(6)",
@@ -112,13 +119,6 @@
       "PriceFloor": 1131.0,
       "BuyLimit": 10000,
       "pctROI": 3.99
-    },
-    {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 371,
-      "PriceFloor": 381.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.89
     }
   ],
   "methodology": "VeryGranular"
