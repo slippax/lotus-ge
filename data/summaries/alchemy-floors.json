@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07T03:10:40.026091+00:00",
+  "updated": "2026-08-07T03:15:37.354233+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -23,6 +23,13 @@
       "pctROI": 1.33
     },
     {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8753,
+      "PriceFloor": 8955.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.29
+    },
+    {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1655,
       "PriceFloor": 1827.0,
@@ -44,18 +51,11 @@
       "pctROI": 1.21
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8775,
-      "PriceFloor": 8955.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.04
-    },
-    {
       "ItemName": "Diamond bracelet",
-      "LowPrice": 1837,
+      "LowPrice": 1835,
       "PriceFloor": 2020.0,
       "BuyLimit": 10000,
-      "pctROI": 8.87
+      "pctROI": 8.99
     },
     {
       "ItemName": "Amulet of glory(6)",
@@ -119,6 +119,13 @@
       "PriceFloor": 594.0,
       "BuyLimit": 10000,
       "pctROI": 2.61
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 372,
+      "PriceFloor": 379.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.08
     }
   ],
   "methodology": "VeryGranular"
