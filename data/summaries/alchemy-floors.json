@@ -1,6 +1,13 @@
 {
-  "updated": "2026-08-08T02:40:43.834552+00:00",
+  "updated": "2026-08-08T02:45:48.582827+00:00",
   "items": [
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1130,
+      "PriceFloor": 1270.0,
+      "BuyLimit": 18000,
+      "pctROI": 11.33
+    },
     {
       "ItemName": "Air battlestaff",
       "LowPrice": 8753,
@@ -9,11 +16,18 @@
       "pctROI": 1.3
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1152,
-      "PriceFloor": 1270.0,
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 711,
+      "PriceFloor": 907.0,
+      "BuyLimit": 10000,
+      "pctROI": 26.3
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8764,
+      "PriceFloor": 8956.0,
       "BuyLimit": 18000,
-      "pctROI": 9.2
+      "pctROI": 1.18
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -21,13 +35,6 @@
       "PriceFloor": 1234.0,
       "BuyLimit": 13000,
       "pctROI": 12.83
-    },
-    {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 725,
-      "PriceFloor": 907.0,
-      "BuyLimit": 10000,
-      "pctROI": 23.86
     },
     {
       "ItemName": "Fire battlestaff",
@@ -52,17 +59,17 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 398,
+      "LowPrice": 397,
       "PriceFloor": 551.0,
       "BuyLimit": 10000,
-      "pctROI": 37.19
+      "pctROI": 37.53
     },
     {
-      "ItemName": "Ironwood repair kit",
-      "LowPrice": 2002,
-      "PriceFloor": 2125.0,
-      "BuyLimit": 13000,
-      "pctROI": 5.09
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8470,
+      "PriceFloor": 8659.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.22
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -77,6 +84,13 @@
       "PriceFloor": 1130.0,
       "BuyLimit": 10000,
       "pctROI": 3.8
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 365,
+      "PriceFloor": 380.0,
+      "BuyLimit": 11000,
+      "pctROI": 3.29
     }
   ],
   "methodology": "VeryGranular"
