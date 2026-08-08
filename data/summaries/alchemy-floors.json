@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-08T04:55:36.545344+00:00",
+  "updated": "2026-08-08T05:00:48.050333+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -52,10 +52,17 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 409,
+      "LowPrice": 407,
       "PriceFloor": 551.0,
       "BuyLimit": 10000,
-      "pctROI": 33.5
+      "pctROI": 34.15
+    },
+    {
+      "ItemName": "Ironwood repair kit",
+      "LowPrice": 2005,
+      "PriceFloor": 2125.0,
+      "BuyLimit": 13000,
+      "pctROI": 4.94
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -70,6 +77,13 @@
       "PriceFloor": 652.0,
       "BuyLimit": 10000,
       "pctROI": 14.13
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 373,
+      "PriceFloor": 380.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.07
     }
   ],
   "methodology": "VeryGranular"
