@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-08T20:45:39.825546+00:00",
+  "updated": "2026-08-08T20:50:38.989590+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -9,18 +9,18 @@
       "pctROI": 1.91
     },
     {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1123,
+      "PriceFloor": 1274.0,
+      "BuyLimit": 18000,
+      "pctROI": 12.38
+    },
+    {
       "ItemName": "Earth battlestaff",
       "LowPrice": 8741,
       "PriceFloor": 8960.0,
       "BuyLimit": 18000,
       "pctROI": 1.49
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1145,
-      "PriceFloor": 1274.0,
-      "BuyLimit": 18000,
-      "pctROI": 10.22
     },
     {
       "ItemName": "Camphor repair kit",
@@ -84,13 +84,6 @@
       "PriceFloor": 656.0,
       "BuyLimit": 10000,
       "pctROI": 16.28
-    },
-    {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 366,
-      "PriceFloor": 384.0,
-      "BuyLimit": 11000,
-      "pctROI": 4.1
     }
   ],
   "methodology": "VeryGranular"
