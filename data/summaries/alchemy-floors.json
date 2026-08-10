@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-10T19:35:37.087075+00:00",
+  "updated": "2026-08-10T19:40:42.150700+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -9,6 +9,13 @@
       "pctROI": 1.96
     },
     {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1107,
+      "PriceFloor": 1279.0,
+      "BuyLimit": 18000,
+      "pctROI": 14.45
+    },
+    {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1636,
       "PriceFloor": 1837.0,
@@ -16,39 +23,25 @@
       "pctROI": 11.19
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1140,
-      "PriceFloor": 1279.0,
-      "BuyLimit": 18000,
-      "pctROI": 11.14
-    },
-    {
       "ItemName": "Mahogany repair kit",
-      "LowPrice": 1060,
+      "LowPrice": 1062,
       "PriceFloor": 1243.0,
       "BuyLimit": 13000,
-      "pctROI": 16.13
+      "pctROI": 15.91
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 718,
+      "LowPrice": 719,
       "PriceFloor": 916.0,
       "BuyLimit": 10000,
-      "pctROI": 26.32
+      "pctROI": 26.15
     },
     {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1838,
-      "PriceFloor": 2030.0,
-      "BuyLimit": 10000,
-      "pctROI": 9.36
-    },
-    {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 410,
-      "PriceFloor": 560.0,
-      "BuyLimit": 10000,
-      "pctROI": 35.37
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8775,
+      "PriceFloor": 8965.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.15
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -58,6 +51,13 @@
       "pctROI": 1.43
     },
     {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 429,
+      "PriceFloor": 560.0,
+      "BuyLimit": 10000,
+      "pctROI": 29.37
+    },
+    {
       "ItemName": "Amethyst javelin tips",
       "LowPrice": 540,
       "PriceFloor": 661.0,
@@ -65,11 +65,18 @@
       "pctROI": 21.3
     },
     {
-      "ItemName": "Amulet of glory(6)",
-      "LowPrice": 10016,
-      "PriceFloor": 10227.0,
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1930,
+      "PriceFloor": 2030.0,
       "BuyLimit": 10000,
-      "pctROI": 1.09
+      "pctROI": 4.15
+    },
+    {
+      "ItemName": "Binding necklace",
+      "LowPrice": 576,
+      "PriceFloor": 604.0,
+      "BuyLimit": 10000,
+      "pctROI": 3.82
     }
   ],
   "methodology": "VeryGranular"
