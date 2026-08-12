@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-12T11:10:37.638866+00:00",
+  "updated": "2026-08-12T11:15:57.537679+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -17,17 +17,10 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 730,
+      "LowPrice": 729,
       "PriceFloor": 912.0,
       "BuyLimit": 10000,
-      "pctROI": 23.7
-    },
-    {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 410,
-      "PriceFloor": 556.0,
-      "BuyLimit": 10000,
-      "pctROI": 34.39
+      "pctROI": 23.87
     },
     {
       "ItemName": "Camphor repair kit",
@@ -37,6 +30,13 @@
       "pctROI": 6.2
     },
     {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 416,
+      "PriceFloor": 556.0,
+      "BuyLimit": 10000,
+      "pctROI": 32.45
+    },
+    {
       "ItemName": "Amethyst javelin tips",
       "LowPrice": 520,
       "PriceFloor": 657.0,
@@ -44,11 +44,25 @@
       "pctROI": 25.19
     },
     {
+      "ItemName": "Amulet of glory(6)",
+      "LowPrice": 10011,
+      "PriceFloor": 10223.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.1
+    },
+    {
       "ItemName": "Diamond bracelet",
       "LowPrice": 1930,
       "PriceFloor": 2026.0,
       "BuyLimit": 10000,
       "pctROI": 3.94
+    },
+    {
+      "ItemName": "Ruby bracelet",
+      "LowPrice": 1083,
+      "PriceFloor": 1135.0,
+      "BuyLimit": 10000,
+      "pctROI": 3.79
     }
   ],
   "methodology": "VeryGranular"
