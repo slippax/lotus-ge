@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-12T20:55:35.015249+00:00",
+  "updated": "2026-08-12T21:00:49.725657+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -17,17 +17,24 @@
     },
     {
       "ItemName": "Mahogany repair kit",
-      "LowPrice": 1075,
+      "LowPrice": 1055,
       "PriceFloor": 1238.0,
       "BuyLimit": 13000,
-      "pctROI": 14.05
+      "pctROI": 16.21
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8750,
+      "PriceFloor": 8960.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.38
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 710,
+      "LowPrice": 718,
       "PriceFloor": 911.0,
       "BuyLimit": 10000,
-      "pctROI": 27.04
+      "pctROI": 25.63
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -70,6 +77,13 @@
       "PriceFloor": 1832.0,
       "BuyLimit": 13000,
       "pctROI": 1.11
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 375,
+      "PriceFloor": 384.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.6
     }
   ],
   "methodology": "VeryGranular"
