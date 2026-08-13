@@ -1,26 +1,162 @@
 @import "tailwindcss";
 
+/*
+ * Lotus GE design tokens.
+ *
+ * Every colour in the app comes from here. Nothing should hardcode a hex or a
+ * Tailwind palette colour (bg-gray-800, text-green-400) — those don't know
+ * which theme they're in, which is how you end up with white-on-white.
+ *
+ * Light is the base. Dark redefines only the values, so components stay
+ * theme-agnostic: they ask for `border-line`, not "grey 600".
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* surfaces — warm neutrals, biased brown rather than a flat grey */
+  --ground:   #FAF8F2;
+  --surface:  #FFFFFF;
+  --raised:   #F3EFE5;
+  --line:     #E8E2D4;
+  --line-hi:  #D4CBB7;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* text */
+  --ink:      #181510;
+  --muted:    #5F5747;
+  --dim:      #7B7260;
+
+  /* one accent. gold is chrome — never money. */
+  --gold:     #8C6010;
+  --gold-soft:#F4E8CE;
+
+  /* money only. never used for UI furniture. */
+  --up:       #1B7337;
+  --down:     #A93725;
+
+  /* the band: the page's head. parchment on light, near-black on dark. */
+  --band:      #EBE2CE;
+  --band-ink:  #181510;
+  --band-mute: #6A6151;
+  --band-gold: #8C6010;
+  --band-line: rgba(24, 21, 16, 0.16);
+  --band-up:   #1B7337;
+  --band-down: #A93725;
+  --band-bloom:rgba(140, 96, 16, 0.14);
+  --grain-op:  0.30;
+
+  /* spacing scale — every gap in the app comes from one of these */
+  --s1:4px; --s2:8px; --s3:12px; --s4:18px; --s5:26px; --s6:40px; --s7:64px;
+
+  /* --font-plex-mono is injected by next/font in layout.tsx */
+  --font-ui: var(--font-plex-sans), -apple-system, BlinkMacSystemFont,
+             "Segoe UI", Roboto, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not([data-theme="light"]) {
+    --ground:   #100E0A;
+    --surface:  #191510;
+    --raised:   #201C14;
+    --line:     #262117;
+    --line-hi:  #3B3425;
+    --ink:      #EFE9DB;
+    --muted:    #A79B84;
+    --dim:      #8B8169;
+    --gold:     #E8A33D;
+    --gold-soft:#2C2213;
+    --up:       #5FBE72;
+    --down:     #E0705C;
+    --band:      #0A0806;
+    --band-ink:  #F5F0E3;
+    --band-mute: #A4977E;
+    --band-gold: #E8A33D;
+    --band-line: rgba(245, 240, 227, 0.12);
+    --band-up:   #7FCB8C;
+    --band-down: #E88E7C;
+    --band-bloom:rgba(232, 163, 61, 0.14);
+    --grain-op:  0.5;
   }
 }
 
+:root[data-theme="dark"] {
+  --ground:   #100E0A;
+  --surface:  #191510;
+  --raised:   #201C14;
+  --line:     #262117;
+  --line-hi:  #3B3425;
+  --ink:      #EFE9DB;
+  --muted:    #A79B84;
+  --dim:      #8B8169;
+  --gold:     #E8A33D;
+  --gold-soft:#2C2213;
+  --up:       #5FBE72;
+  --down:     #E0705C;
+  --band:      #0A0806;
+  --band-ink:  #F5F0E3;
+  --band-mute: #A4977E;
+  --band-gold: #E8A33D;
+  --band-line: rgba(245, 240, 227, 0.12);
+  --band-up:   #7FCB8C;
+  --band-down: #E88E7C;
+  --band-bloom:rgba(232, 163, 61, 0.14);
+  --grain-op:  0.5;
+}
+
+/* Expose the tokens to Tailwind so `bg-ground`, `text-muted`, `border-line`
+   etc. exist as utilities and flip with the theme automatically. */
+@theme inline {
+  --color-ground:    var(--ground);
+  --color-surface:   var(--surface);
+  --color-raised:    var(--raised);
+  --color-line:      var(--line);
+  --color-line-hi:   var(--line-hi);
+  --color-ink:       var(--ink);
+  --color-muted:     var(--muted);
+  --color-dim:       var(--dim);
+  --color-gold:      var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-up:        var(--up);
+  --color-down:      var(--down);
+  --color-band:      var(--band);
+  --color-band-ink:  var(--band-ink);
+  --color-band-mute: var(--band-mute);
+  --color-band-gold: var(--band-gold);
+
+  --font-sans: var(--font-ui);
+  --font-mono: var(--font-plex-mono);
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Numbers line up in columns or they aren't worth printing. */
+.tnum {
+  font-family: var(--font-plex-mono), ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* OSRS sprites are 20-30px bitmaps; scaling them smoothly turns them to mush. */
+.sprite {
+  image-rendering: pixelated;
+}
+
+/* Motion is limited to three things that mean something: the tape is live
+   prices, the pulse is a live feed, rows enter when the list changes. */
+@keyframes lotus-tape {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes lotus-pulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.3; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

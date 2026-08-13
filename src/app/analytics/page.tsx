@@ -1,1258 +1,520 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { audioSystem } from "@/lib/audio";
+import Masthead from "@/components/Masthead";
+import Freshness from "@/components/Freshness";
+import Ticker from "@/components/Ticker";
+import Lede from "@/components/Lede";
+import SignalList from "@/components/SignalList";
+import {
+  fromAlch,
+  fromBreakout,
+  fromConfluence,
+  fromCraft,
+  fromDip,
+  fromVolume,
+  availableSorts,
+  KIND_FILTER,
+  SORT_LABEL,
+  sortSignals,
+  type Signal,
+  type SignalKind,
+  type SortKey,
+} from "@/lib/signals";
 
-// Shock & Dip Detection (Market Recovery)
-interface DipItem {
-  id: number;
-  name: string;
-  currentPrice: number;
-  avgPrice24h: number;
-  priceDropPercent: number;
-  volumeSpike: number;
-  buyLimit: number;
-  recoveryPotential: number;
-  members: boolean;
-  buyRange: string;
-  sellRange: string;
-  estimatedProfit: number;
-}
+type Filter = "all" | SignalKind;
 
-// Price Floor Analysis (Alchemy Arbitrage)
-interface AlchemyItem {
-  id: number;
-  name: string;
-  currentPrice: number;
-  priceFloor: number;
-  alchValue: number;
-  profitMargin: number;
-  roi: number;
-  buyLimit: number;
-  members: boolean;
-}
+/** Each endpoint, with the normaliser that turns it into a Signal. */
+const SOURCES = [
+  { path: "dip-detection", map: fromDip },
+  { path: "alchemy-floors", map: fromAlch },
+  { path: "volatility-breakout", map: fromBreakout },
+  { path: "confluence", map: fromConfluence },
+  { path: "volume-profile", map: fromVolume },
+  { path: "recipe-arbitrage", map: fromCraft },
+] as const;
 
-// Volume Analysis Data - Removed (using database data only)
-
-// Volatility Breakout Analysis
-interface VolatilityItem {
-  id: number;
-  name: string;
-  currentPrice: number;
-  buyLimit: number;
-  compressionRatio: number;
-  breakoutDirection: string;
-  volumeConfirmation: string;
-  potentialBreakoutProfit: number;
-  compressionLevel: string;
-}
-
-// Volume Profile Analysis
-interface VolumeProfileItem {
-  id: number;
-  name: string;
-  currentPrice: number;
-  buyLimit: number;
-  volumePattern: string;
-  volumeSurge: string;
-  smartMoneySignal: string;
-  accumulationProfit: number;
-}
-
-// Multi-Timeframe Confluence
-interface ConfluenceItem {
-  id: number;
-  name: string;
-  currentPrice: number;
-  buyLimit: number;
-  bullishConfluence: number;
-  bearishConfluence: number;
-  signalStrength: string;
-  volumeConfirmation: string;
-  potentialProfit: number;
-}
-
-// Recipe Arbitrage
-interface RecipeArbitrageItem {
-  id: number;
-  productName: string;
-  productPrice: number;
-  productBuyLimit: number;
-  ingredient1Name: string;
-  totalIngredientCost: number;
-  profitPerCraft: number;
-  roi: number;
-  recipeType: string;
-  liquidityLevel: string;
-}
-
-interface ComprehensiveAnalytics {
-  dips: DipItem[];
-  alchemy: AlchemyItem[];
-  volatility: VolatilityItem[];
-  volumeProfile: VolumeProfileItem[];
-  confluence: ConfluenceItem[];
-  recipeArbitrage: RecipeArbitrageItem[];
-  timestamp: number;
-  cached: boolean;
-}
-
-type AnalyticsTab =
-  | "dips"
-  | "alchemy"
-  | "volatility"
-  | "volumeProfile"
-  | "confluence"
-  | "recipeArbitrage";
-
-// Helper function for formatting in OSRS style with decimal precision
-function formatGP(amount: number) {
-  if (!amount || isNaN(amount)) return "0";
-  if (amount >= 1000000000) {
-    return `${(amount / 1000000000).toFixed(3)}b`;
-  } else if (amount >= 1000000) {
-    return `${(amount / 1000000).toFixed(3)}m`;
-  } else if (amount >= 100000) {
-    return `${(amount / 1000).toFixed(2)}k`;
-  } else if (amount >= 1000) {
-    return `${(amount / 1000).toFixed(3)}k`;
-  }
-  // Show decimal places for values under 1000 GP for accurate trading
-  return amount.toFixed(3);
-}
-
-// Data transformation functions for API responses
-
-interface RawDipData {
-  id?: number;
-  name?: string;
-  currentPrice?: number;
-  currentLow?: number;
-  avgPrice24h?: number;
-  avg24hLow?: number;
-  priceDropPercent?: number;
-  dipMagnitudePercent?: number;
-  volumeSurge?: number;
-  buyLimit?: number;
-  recoveryPotential?: number;
-  potentialProfit?: number;
-  members?: boolean;
-  estimatedProfit?: number;
-  maxProfit4h?: number;
-}
-
-function transformDipsDataFromAPI(data: RawDipData[]): DipItem[] {
-  return data.slice(0, 50).map((item) => {
-    const currentLow = item.currentPrice || item.currentLow || 0;
-    const avgLow = item.avgPrice24h || item.avg24hLow || 0;
-
-    return {
-      id: item.id || 0,
-      name: item.name || "Unknown Item",
-      currentPrice: currentLow,
-      avgPrice24h: avgLow,
-      priceDropPercent: item.priceDropPercent || item.dipMagnitudePercent || 0,
-      volumeSpike: item.volumeSurge || 1,
-      buyLimit: item.buyLimit || 0,
-      recoveryPotential: item.recoveryPotential || item.potentialProfit || 0,
-      members: item.members || false,
-      buyRange: `${formatGP(currentLow * 0.98)} - ${formatGP(
-        currentLow * 1.02
-      )}`,
-      sellRange: `${formatGP(avgLow * 0.98)} - ${formatGP(avgLow * 1.02)}`,
-      estimatedProfit: item.estimatedProfit || item.maxProfit4h || 0,
-    };
-  });
-}
-
-interface RawAlchemyData {
-  id?: number;
-  name?: string;
-  currentLow?: number;
-  priceFloor?: number;
-  alchPrice?: number;
-  potentialProfit?: number;
-  roi?: number;
-  buyLimit?: number;
-  members?: boolean;
-}
-
-function transformAlchemyDataFromAPI(data: RawAlchemyData[]): AlchemyItem[] {
-  return data.slice(0, 50).map((item) => ({
-    id: item.id || 0,
-    name: item.name || "Unknown Item",
-    currentPrice: item.currentLow || 0,
-    priceFloor: item.priceFloor || 0,
-    alchValue: item.alchPrice || 0,
-    profitMargin: item.potentialProfit || 0,
-    roi: item.roi || 0,
-    buyLimit: item.buyLimit || 0,
-    members: item.members || false,
-  }));
-}
-
-// Transform functions for new analysis types
-interface RawVolatilityData {
-  id?: number;
-  name?: string;
-  currentPrice?: number;
-  buyLimit?: number;
-  compressionRatio?: number;
-  breakoutDirection?: string;
-  volumeConfirmation?: string;
-  potentialBreakoutProfit?: number;
-  compressionLevel?: string;
-}
-
-function transformVolatilityDataFromAPI(
-  data: RawVolatilityData[]
-): VolatilityItem[] {
-  return data.slice(0, 50).map((item, index) => ({
-    id: item.id || index + 1,
-    name: item.name || "Unknown Item",
-    currentPrice: item.currentPrice || 0,
-    buyLimit: item.buyLimit || 0,
-    compressionRatio: item.compressionRatio || 0,
-    breakoutDirection: item.breakoutDirection || "NEUTRAL",
-    volumeConfirmation: item.volumeConfirmation || "LOW_VOLUME",
-    potentialBreakoutProfit: item.potentialBreakoutProfit || 0,
-    compressionLevel: item.compressionLevel || "LOW_COMPRESSION",
-  }));
-}
-
-interface RawVolumeProfileData {
-  id?: number;
-  name?: string;
-  currentPrice?: number;
-  buyLimit?: number;
-  volumePattern?: string;
-  volumeSurge?: string;
-  smartMoneySignal?: string;
-  accumulationProfit?: number;
-}
-
-function transformVolumeProfileDataFromAPI(
-  data: RawVolumeProfileData[]
-): VolumeProfileItem[] {
-  return data.slice(0, 50).map((item, index) => ({
-    id: item.id || index + 1,
-    name: item.name || "Unknown Item",
-    currentPrice: item.currentPrice || 0,
-    buyLimit: item.buyLimit || 0,
-    volumePattern: item.volumePattern || "BALANCED",
-    volumeSurge: item.volumeSurge || "NORMAL_VOLUME",
-    smartMoneySignal: item.smartMoneySignal || "NO_SMART_MONEY_SIGNAL",
-    accumulationProfit: item.accumulationProfit || 0,
-  }));
-}
-
-interface RawConfluenceData {
-  id?: number;
-  name?: string;
-  currentPrice?: number;
-  buyLimit?: number;
-  bullishConfluence?: number;
-  bearishConfluence?: number;
-  signalStrength?: string;
-  volumeConfirmation?: string;
-  potentialProfit?: number;
-}
-
-function transformConfluenceDataFromAPI(
-  data: RawConfluenceData[]
-): ConfluenceItem[] {
-  return data.slice(0, 50).map((item, index) => ({
-    id: item.id || index + 1,
-    name: item.name || "Unknown Item",
-    currentPrice: item.currentPrice || 0,
-    buyLimit: item.buyLimit || 0,
-    bullishConfluence: item.bullishConfluence || 0,
-    bearishConfluence: item.bearishConfluence || 0,
-    signalStrength: item.signalStrength || "MIXED_SIGNALS",
-    volumeConfirmation: item.volumeConfirmation || "WEAK_VOLUME",
-    potentialProfit: item.potentialProfit || 0,
-  }));
-}
-
-interface RawRecipeArbitrageData {
-  id?: number;
-  productName?: string;
-  productPrice?: number;
-  productBuyLimit?: number;
-  ingredient1Name?: string;
-  totalIngredientCost?: number;
-  profitPerCraft?: number;
-  roi?: number;
-  recipeType?: string;
-  liquidityLevel?: string;
-}
-
-function transformRecipeArbitrageDataFromAPI(
-  data: RawRecipeArbitrageData[]
-): RecipeArbitrageItem[] {
-  return data.slice(0, 50).map((item, index) => ({
-    id: item.id || index + 1,
-    productName: item.productName || "Unknown Product",
-    productPrice: item.productPrice || 0,
-    productBuyLimit: item.productBuyLimit || 0,
-    ingredient1Name: item.ingredient1Name || "",
-    totalIngredientCost: item.totalIngredientCost || 0,
-    profitPerCraft: item.profitPerCraft || 0,
-    roi: item.roi || 0,
-    recipeType: item.recipeType || "",
-    liquidityLevel: item.liquidityLevel || "LOW_LIQUIDITY",
-  }));
-}
-
-// transformVolumeData function removed - using database data only
-
-// Local strategy processing functions removed - using API data only
+const KIND_ORDER: SignalKind[] = [
+  "dip",
+  "breakout",
+  "alch",
+  "craft",
+  "confluence",
+  "volume",
+];
 
 export default function AnalyticsPage() {
-  const [data, setData] = useState<ComprehensiveAnalytics | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [rows, setRows] = useState<Signal[] | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [lastUpdate, setLastUpdate] = useState<Date | null>(null);
-  const [dataUpdated, setDataUpdated] = useState<Date | null>(null);
-  const [, setCached] = useState(false);
-  const [activeTab, setActiveTab] = useState<AnalyticsTab>("dips");
-  const [isRefreshing, setIsRefreshing] = useState(false);
-  const [audioEnabled, setAudioEnabled] = useState(audioSystem.isEnabled());
+  const [updatedAt, setUpdatedAt] = useState<Date | null>(null);
+  const [filter, setFilter] = useState<Filter>("dip");
+  // Return is the only metric comparable across signal kinds. Ceiling scales
+  // with how expensive an item is, so sorting by it just ranks capital.
+  const [sort, setSort] = useState<SortKey>("roi");
 
-  const fetchData = async (isInstantRefresh = false) => {
+  const fetchData = useCallback(async (isInstantRefresh = false) => {
     try {
-      if (isInstantRefresh) {
-        setIsRefreshing(true);
-        // Brief animation delay to show the refresh
-        await new Promise((resolve) => setTimeout(resolve, 300));
-      } else {
-        setLoading(true);
-      }
+      const results = await Promise.all(
+        SOURCES.map(async ({ path, map }) => {
+          const res = await fetch(
+            `/api/osrs/${path}${isInstantRefresh ? `?t=${Date.now()}` : ""}`,
+            isInstantRefresh
+              ? { headers: { "Cache-Control": "no-cache" } }
+              : undefined
+          );
 
-      // Use lightweight APIs for all strategies (no more heavy database processing!)
-      console.log("Fetching analytics data from lightweight APIs...");
+          // A non-2xx is a real failure — never fold it into an empty list.
+          if (!res.ok) throw new Error(`${path} returned ${res.status}`);
 
-      // Use lightweight APIs for all strategies (no more heavy database processing!)
-      const timestamp = isInstantRefresh ? `?t=${Date.now()}` : "";
-      const fetchOptions = isInstantRefresh
-        ? { headers: { "Cache-Control": "no-cache", Pragma: "no-cache" } }
-        : {};
+          const body = await res.json();
+          return {
+            signals: map(body.data ?? []),
+            updated: body.dataUpdated as string | undefined,
+          };
+        })
+      );
 
-      const [
-        dipsResponse,
-        alchemyResponse,
-        volatilityResponse,
-        volumeProfileResponse,
-        confluenceResponse,
-        recipeArbitrageResponse,
-      ] = await Promise.all([
-        fetch(`/api/osrs/dip-detection${timestamp}`, fetchOptions),
-        fetch(`/api/osrs/alchemy-floors${timestamp}`, fetchOptions),
-        fetch(`/api/osrs/volatility-breakout${timestamp}`, fetchOptions),
-        fetch(`/api/osrs/volume-profile${timestamp}`, fetchOptions),
-        fetch(`/api/osrs/confluence${timestamp}`, fetchOptions),
-        fetch(`/api/osrs/recipe-arbitrage${timestamp}`, fetchOptions),
-      ]);
-
-      const dipsResult = await dipsResponse.json();
-      const alchemyResult = await alchemyResponse.json();
-      const volatilityResult = await volatilityResponse.json();
-      const volumeProfileResult = await volumeProfileResponse.json();
-      const confluenceResult = await confluenceResponse.json();
-      const recipeArbitrageResult = await recipeArbitrageResponse.json();
-
-      const dipsData = dipsResult.success ? dipsResult.data : [];
-      const alchemyData = alchemyResult.success ? alchemyResult.data : [];
-      const volatilityData = volatilityResult.success
-        ? volatilityResult.data
-        : [];
-      const volumeProfileData = volumeProfileResult.success
-        ? volumeProfileResult.data
-        : [];
-      const confluenceData = confluenceResult.success
-        ? confluenceResult.data
-        : [];
-      const recipeArbitrageData = recipeArbitrageResult.success
-        ? recipeArbitrageResult.data
-        : [];
-
-      // Use the earliest data timestamp from all APIs
-      const dataTimestamps = [
-        dipsResult.dataUpdated,
-        alchemyResult.dataUpdated,
-        volatilityResult.dataUpdated,
-        volumeProfileResult.dataUpdated,
-        confluenceResult.dataUpdated,
-        recipeArbitrageResult.dataUpdated,
-      ].filter(Boolean);
-
-      const latestDataUpdate =
-        dataTimestamps.length > 0
-          ? new Date(
-              Math.max(...dataTimestamps.map((ts) => new Date(ts).getTime()))
-            )
-          : null;
-
-      // Transform data to match existing interface (all from lightweight APIs)
-      const transformedData: ComprehensiveAnalytics = {
-        dips: transformDipsDataFromAPI(dipsData),
-        alchemy: transformAlchemyDataFromAPI(alchemyData),
-        volatility: transformVolatilityDataFromAPI(volatilityData),
-        volumeProfile: transformVolumeProfileDataFromAPI(volumeProfileData),
-        confluence: transformConfluenceDataFromAPI(confluenceData),
-        recipeArbitrage:
-          transformRecipeArbitrageDataFromAPI(recipeArbitrageData),
-        timestamp: Date.now(),
-        cached: false,
-      };
-
-      setData(transformedData);
-      const newTimestamp = new Date();
-      setLastUpdate(newTimestamp); // Always use current time for "last fetched"
-      // Force re-render by creating new Date object
-      setDataUpdated(latestDataUpdate ? new Date(latestDataUpdate) : null);
-      setCached(transformedData.cached);
+      setRows(results.flatMap((r) => r.signals));
+      const newest = results
+        .map((r) => (r.updated ? new Date(r.updated).getTime() : 0))
+        .reduce((a, b) => Math.max(a, b), 0);
+      setUpdatedAt(newest ? new Date(newest) : new Date());
       setError(null);
 
-      // Play soft notification sound for data refresh
-      if (isInstantRefresh) {
-        audioSystem.playDataRefreshSound();
-      }
-
-      console.log("Analytics data processed successfully from database!");
-      console.log(
-        "🕐 Updated timestamp to:",
-        newTimestamp.toLocaleTimeString()
-      );
-      console.log("🔄 Is instant refresh:", isInstantRefresh);
-      console.log("📅 Data timestamp from JSON:", latestDataUpdate);
-      console.log(
-        "📅 Data timestamp formatted:",
-        latestDataUpdate ? new Date(latestDataUpdate).toLocaleString() : "null"
-      );
-    } catch (error) {
-      console.error("Analytics fetch error:", error);
-      setError("Database connection error occurred");
-    } finally {
-      setLoading(false);
-      setIsRefreshing(false);
+      if (isInstantRefresh) audioSystem.playDataRefreshSound();
+    } catch (err) {
+      console.error("Analytics fetch error:", err);
+      setError(err instanceof Error ? err.message : "Unknown error");
     }
-  };
+  }, []);
 
   useEffect(() => {
     fetchData();
 
-    // Set up instant notifications via Server-Sent Events
-    console.log("🔗 Connecting to ntfy.sh for instant notifications...");
-    const eventSource = new EventSource(
-      "https://ntfy.sh/osrs-ge-lotus-updates/sse"
-    );
-
-    eventSource.onopen = () => {
-      console.log("✅ SSE connection established to ntfy.sh");
-    };
-
-    eventSource.onmessage = (event) => {
-      console.log("📨 SSE message received:", event.data);
+    // Instant updates: the collector pings ntfy.sh when new data lands.
+    const source = new EventSource("https://ntfy.sh/osrs-ge-lotus-updates/sse");
+    source.onmessage = (event) => {
       try {
-        const data = JSON.parse(event.data);
-        if (data.message === "refresh") {
-          console.log("🔔 Instant data update notification received!");
-          fetchData(true); // Instant refresh with animation
-        }
+        const parsed = JSON.parse(event.data);
+        if (parsed.message === "refresh") fetchData(true);
       } catch {
-        // Handle non-JSON messages
-        if (event.data === "refresh") {
-          console.log("🔔 Instant data update notification received!");
-          fetchData(true); // Instant refresh with animation
-        }
+        if (event.data === "refresh") fetchData(true);
       }
     };
+    return () => source.close();
+  }, [fetchData]);
 
-    eventSource.onerror = (error) => {
-      console.log("❌ SSE connection error (will retry automatically):", error);
-    };
+  const counts = useMemo(() => {
+    const c: Partial<Record<SignalKind, number>> = {};
+    (rows ?? []).forEach((r) => (c[r.kind] = (c[r.kind] ?? 0) + 1));
+    return c;
+  }, [rows]);
 
-    return () => {
-      eventSource.close();
-    };
-  }, []);
+  /*
+   * Dips is the landing view, but it's also the only filter that's routinely
+   * empty — a quiet market produces none, and the chip for a kind with no rows
+   * isn't rendered at all. Defaulting there unconditionally would strand you on
+   * "Nothing worth buying right now" with no visible tab to leave by, which
+   * reads as broken rather than as a quiet market. So the fallback to All runs
+   * once, on the first load, and never fights a filter you chose yourself.
+   */
+  const defaulted = useRef(false);
+  useEffect(() => {
+    if (defaulted.current || rows === null) return;
+    defaulted.current = true;
+    if (!counts.dip) setFilter("all");
+  }, [rows, counts.dip]);
 
-  const getTabTitle = (tab: AnalyticsTab) => {
-    switch (tab) {
-      case "dips":
-        return "Market Dips";
-      case "alchemy":
-        return "Alchemy Floors";
-      case "volatility":
-        return "Volatility Breakouts";
-      case "volumeProfile":
-        return "Volume Profile";
-      case "confluence":
-        return "Multi-Timeframe";
-      case "recipeArbitrage":
-        return "Recipe Arbitrage";
-    }
-  };
+  /*
+   * The list is ranked, so it grows rather than paginating: nobody looks for
+   * page 4 of "best opportunities", and numbered pages would chop the ranking
+   * into chunks. Rendering all ~190 rows at once is mostly a DOM and SVG cost
+   * — sprites are lazy — but there's no reason to pay it before it's asked for.
+   */
+  const PAGE = 25;
+  const [shown, setShown] = useState(PAGE);
 
-  // const getTabDescription = (tab: AnalyticsTab) => {
-  //   switch (tab) {
-  //     case "flipping":
-  //       return "Basic flipping opportunities with instant buy/sell spreads";
-  //     case "dips":
-  //       return "HIGH PRIORITY: Shock-induced dips for recovery trading";
-  //     case "alchemy":
-  //       return "Limited alchemy arbitrage opportunities (very few available)";
-  //     case "processing":
-  //       return "HIGH PRIORITY: Manufacturing arbitrage with highest profit potential";
-  //   }
-  // };
+  // Any change to what's being listed starts the count over.
+  useEffect(() => setShown(PAGE), [filter, sort]);
 
-  if (loading) {
-    return (
-      <div className="flex items-center justify-center min-h-[400px]">
-        <div className="text-center">
-          <div className="w-16 h-16 border-4 border-black border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-          <p className="text-xl font-semibold font-serif">
-            Analyzing local database data...
-          </p>
-          <p className="text-sm font-serif text-gray-600 mt-2">
-            Processing your collected OSRS market data
-          </p>
-        </div>
-      </div>
-    );
-  }
+  const filtered = useMemo(() => {
+    if (!rows) return [];
+    return filter === "all" ? rows : rows.filter((r) => r.kind === filter);
+  }, [rows, filter]);
 
-  if (error) {
-    return (
-      <div className="flex items-center justify-center min-h-[400px]">
-        <div className="text-center border-4 border-red-600 p-8">
-          <p className="text-xl font-bold text-red-600 font-serif mb-4">
-            Error
-          </p>
-          <p className="text-lg font-serif">{error}</p>
-          <button
-            onClick={() => fetchData()}
-            className="mt-4 border-4 border-black bg-black text-white px-6 py-2 font-bold text-lg font-serif hover:bg-white hover:text-black transition-colors duration-200"
-          >
-            Retry Analysis
-          </button>
-        </div>
-      </div>
-    );
-  }
+  const sorts = useMemo(() => availableSorts(filtered), [filtered]);
 
-  if (!data) {
-    return (
-      <div className="flex items-center justify-center min-h-[400px]">
-        <div className="text-center">
-          <p className="text-xl font-semibold font-serif">No data available</p>
-        </div>
-      </div>
-    );
-  }
+  // If the current sort can't apply to this filter, fall back to the order the
+  // analysis produced rather than leaving a control that silently does nothing.
+  useEffect(() => {
+    if (filtered.length && !sorts.includes(sort)) setSort("ranked");
+  }, [sorts, sort, filtered.length]);
+
+  const matched = useMemo(
+    () => sortSignals(filtered, sorts.includes(sort) ? sort : "ranked"),
+    [filtered, sort, sorts]
+  );
+
+  const visible = useMemo(() => matched.slice(0, shown), [matched, shown]);
+  const matching = matched.length;
+
+  const isLive = !error && rows !== null && visible.length > 0;
 
   return (
-    <div className="space-y-4 text-white min-h-screen mt-4 px-2">
-      {/* Streamlined Header */}
-      <div className="flex flex-col md:items-start gap-2">
-        {lastUpdate && (
-          <div className="text-base md:text-lg font-serif text-gray-300">
-            <p
-              className={`transition-all duration-300 ${
-                isRefreshing ? "text-green-400 scale-105" : ""
-              }`}
-            >
-              Updated: {lastUpdate.toLocaleTimeString()}
-            </p>
-            {dataUpdated && (
-              <p
-                className={`text-sm md:text-base transition-all duration-300 ${
-                  isRefreshing ? "text-green-400" : ""
-                }`}
-              >
-                Data: {dataUpdated.toLocaleString()}
-              </p>
-            )}
-            <div className="flex items-center gap-2">
-              <p className="text-xs md:text-sm text-blue-400">
-                Instant webhook updates
-              </p>
-              {/* Tiny Audio Toggle */}
-              <button
-                onClick={() => {
-                  const newEnabled = !audioEnabled;
-                  audioSystem.setEnabled(newEnabled);
-                  setAudioEnabled(newEnabled);
-                  if (newEnabled) {
-                    audioSystem.testSound();
-                  }
-                }}
-                className={`px-1 py-0.5 text-xs border transition-colors ${
-                  audioEnabled
-                    ? "border-green-400 text-green-400 hover:bg-green-400 hover:text-black"
-                    : "border-gray-500 text-gray-500 hover:border-gray-400 hover:text-gray-400"
-                }`}
-                style={{ fontSize: "8px", lineHeight: "10px" }}
-                title={
-                  audioEnabled
-                    ? "Audio notifications enabled"
-                    : "Audio notifications disabled"
-                }
-              >
-                🔊
-              </button>
+    <>
+      <div className="border-b border-[var(--band-line)] bg-band text-band-ink">
+        {/* Ticker picks its own ticks — only rows that can state a real move. */}
+        {rows && <Ticker rows={rows} />}
+        <div className="mx-auto max-w-[1080px] px-[var(--s5)]">
+          <Masthead
+            status={
+              <Freshness
+                updatedAt={updatedAt}
+                state={error ? "error" : rows === null ? "loading" : "live"}
+              />
+            }
+          />
+          {isLive ? (
+            <Lede top={visible[0]} />
+          ) : (
+            <BandMessage
+              title={
+                error
+                  ? "We can't see the market"
+                  : rows === null
+                    ? "Reading the Grand Exchange"
+                    : "The market is quiet"
+              }
+            />
+          )}
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-[1080px] px-[var(--s5)] pb-[var(--s7)]">
+        {rows !== null && !error && (
+          <div className="sticky top-0 z-20 flex items-center gap-3 border-b border-line bg-ground py-[var(--s3)] sm:py-[var(--s4)]">
+            {/*
+             * One line, always. Wrapping put three rows of chips above the
+             * fold on a phone and pushed the actual list off screen; the chips
+             * scroll sideways instead.
+             */}
+            <ChipStrip>
+              <Chip
+                active={filter === "all"}
+                onClick={() => setFilter("all")}
+                label="All"
+                count={rows.length}
+              />
+              {KIND_ORDER.filter((k) => counts[k]).map((k) => (
+                <Chip
+                  key={k}
+                  active={filter === k}
+                  onClick={() => setFilter(k)}
+                  label={KIND_FILTER[k]}
+                  count={counts[k]}
+                />
+              ))}
+            </ChipStrip>
+
+            <div className="flex shrink-0 items-center gap-2 text-[13.5px] text-muted">
+              <label htmlFor="sort" className="max-sm:sr-only">
+                Sort
+              </label>
+              <div className="relative">
+                <select
+                  id="sort"
+                  value={sort}
+                  onChange={(e) => setSort(e.target.value as SortKey)}
+                  className="cursor-pointer appearance-none rounded-sm border border-line-hi bg-transparent py-1.5 pl-3 pr-7 text-[13.5px] text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold)]"
+                >
+                  {sorts.map((k) => (
+                    <option key={k} value={k}>
+                      {SORT_LABEL[k]}
+                    </option>
+                  ))}
+                </select>
+                {/* appearance-none strips the native arrow; without one this
+                    reads as a label rather than a control on mobile. */}
+                <span
+                  aria-hidden="true"
+                  className="pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-[9px] text-dim"
+                >
+                  ▼
+                </span>
+              </div>
             </div>
           </div>
         )}
+
+        {error ? (
+          <State
+            tone="error"
+            title="We can't reach the price feed"
+            body="The data source didn't answer, so we don't know what the market is doing right now. This is different from an empty market — we'll keep retrying."
+            code={error}
+          />
+        ) : rows === null ? (
+          <State title="Loading" body="Fetching the latest Grand Exchange data." />
+        ) : visible.length === 0 ? (
+          <State
+            title="Nothing worth buying right now"
+            body="Prices are current and every item was checked — none meet the threshold. Check back after the next update."
+          />
+        ) : (
+          <>
+            <SignalList rows={visible} kind={filter} />
+
+            {matching > visible.length && (
+              <div className="flex justify-center pt-[var(--s5)]">
+                <button
+                  type="button"
+                  onClick={() => setShown((n) => n + PAGE)}
+                  className="cursor-pointer rounded-sm border border-line-hi px-4 py-2 text-[13.5px] font-medium text-muted transition-colors hover:border-gold hover:text-gold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold)]"
+                >
+                  Show {Math.min(PAGE, matching - visible.length)} more
+                </button>
+              </div>
+            )}
+
+          </>
+        )}
       </div>
+    </>
+  );
+}
 
-      {/* Strategy Tabs */}
-      <div className="border border-gray-600 overflow-hidden bg-gray-900">
-        <div className="grid grid-cols-2 md:flex bg-gray-800">
-          {(
-            [
-              "dips",
-              "alchemy",
-              "volatility",
-              "volumeProfile",
-              "confluence",
-              "recipeArbitrage",
-            ] as AnalyticsTab[]
-          ).map((tab) => (
-            <button
-              key={tab}
-              onClick={() => setActiveTab(tab)}
-              className={`px-3 md:px-8 py-2  font-semibold text-sm md:text-xl font-serif border-r border-gray-600 transition-colors ${
-                activeTab === tab
-                  ? "bg-white text-black"
-                  : "bg-gray-800 text-white hover:bg-gray-700"
-              }`}
-            >
-              {getTabTitle(tab)}
-            </button>
-          ))}
-        </div>
+/**
+ * The horizontal chip strip.
+ *
+ * A touch device already scrolls this — a swipe is a scroll. A mouse has no
+ * equivalent: the scrollbar is hidden, so on any window narrow enough to
+ * overflow there is nothing to grab and the chips past the fade are
+ * unreachable. So the drag is implemented here, for mouse pointers only —
+ * touch keeps its native momentum scrolling, which is better than anything
+ * we'd hand-roll.
+ *
+ * A drag that ends over a chip is followed by a `click`, so releasing the
+ * mouse would otherwise change the filter. `moved` tracks whether the pointer
+ * travelled far enough to count as a drag, and the capture-phase handler eats
+ * the click if it did — see `end` for why that suppression is on a timer.
+ *
+ * The wheel is deliberately left alone. This bar is sticky and spans the
+ * window, so turning a vertical wheel into a horizontal scroll would freeze
+ * the page any time the cursor happened to be resting over it. Shift+wheel
+ * already scrolls it horizontally, for free, in every browser.
+ *
+ * Keyboard needs nothing: the chips are real buttons, so tabbing to one that
+ * is off-screen scrolls it into view by itself.
+ */
+function ChipStrip({ children }: { children: React.ReactNode }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const drag = useRef<{
+    downX: number;
+    originX: number | null;
+    left: number;
+    moved: boolean;
+  } | null>(null);
+  const swallowClick = useRef(false);
 
-        <div className="overflow-x-auto">
-          {/* Tab Content */}
-          {activeTab === "dips" && <DipsTable data={data.dips} />}
-          {activeTab === "alchemy" && <AlchemyTable data={data.alchemy} />}
-          {activeTab === "volatility" && (
-            <VolatilityTable data={data.volatility} />
-          )}
-          {activeTab === "volumeProfile" && (
-            <VolumeProfileTable data={data.volumeProfile} />
-          )}
-          {activeTab === "confluence" && (
-            <ConfluenceTable data={data.confluence} />
-          )}
-          {activeTab === "recipeArbitrage" && (
-            <RecipeArbitrageTable data={data.recipeArbitrage} />
-          )}
-        </div>
+  /**
+   * Which edges have content hidden past them. Doubles as the overflow test:
+   * if neither edge can move, everything fits and there is nothing to drag.
+   */
+  const [edge, setEdge] = useState({ left: false, right: false });
+  const overflowing = edge.left || edge.right;
+
+  const measure = useCallback(() => {
+    const el = ref.current;
+    if (!el) return;
+    const left = el.scrollLeft > 1;
+    const right = el.scrollWidth - el.clientWidth - el.scrollLeft > 1;
+    // Returning `prev` unchanged lets React bail out — this runs on every
+    // scroll event, and the answer almost never changes.
+    setEdge((prev) =>
+      prev.left === left && prev.right === right ? prev : { left, right }
+    );
+  }, []);
+
+  // Re-measure when the strip is resized.
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const ro = new ResizeObserver(measure);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [measure]);
+
+  // Deliberately no dependency array: chips arriving changes scrollWidth
+  // without changing the box a ResizeObserver watches.
+  useEffect(measure);
+
+  const end = () => {
+    if (drag.current?.moved) {
+      swallowClick.current = true;
+      /*
+       * The click fires right after this and clears the flag itself. But a
+       * drag that ends over a gap, over the sort control, or off the strip
+       * entirely produces NO click — and a flag left standing would eat the
+       * next real one, making a chip look dead for exactly one press. This
+       * timer lands after any click that does arrive, so the suppression can
+       * never outlive the gesture that armed it.
+       */
+      setTimeout(() => (swallowClick.current = false), 0);
+    }
+    drag.current = null;
+  };
+
+  return (
+    <div
+      ref={ref}
+      onScroll={measure}
+      onPointerDown={(e) => {
+        // Belt and braces with the timer above: a gesture never starts with a
+        // suppression left over from the last one.
+        swallowClick.current = false;
+        if (!overflowing || e.pointerType !== "mouse" || e.button !== 0) return;
+        drag.current = { downX: e.clientX, originX: null, left: 0, moved: false };
+        // NB: capture is claimed in pointermove, not here. See below.
+      }}
+      onPointerMove={(e) => {
+        const el = ref.current;
+        const d = drag.current;
+        if (!d || !el) return;
+
+        // Under the threshold this is still a click, not a drag. Nothing moves.
+        if (!d.moved) {
+          if (Math.abs(e.clientX - d.downX) <= 4) return;
+          d.moved = true;
+
+          /*
+           * Claim the pointer only now that it's definitely a drag.
+           *
+           * Capturing on pointerdown breaks every chip. A captured pointer
+           * retargets the compatibility mouse events to the capturing element,
+           * so mousedown and mouseup both resolve to this div rather than to
+           * the button under the cursor — and `click`, which is derived from
+           * that pair, fires on the div too. The chip's own onClick never runs.
+           * It only showed up in the narrow view because that's the only place
+           * `overflowing` is true and the capture happened at all.
+           *
+           * Claiming it here costs nothing: the first 4px are tracked without
+           * capture, and from this point on the gesture is one we suppress the
+           * click for anyway.
+           */
+          el.setPointerCapture(e.pointerId);
+
+          /*
+           * Take the baseline here rather than at pointerdown. Pressing a
+           * button focuses it, and a chip that is only half visible — exactly
+           * the one sitting under the fade — gets scrolled into view by the
+           * browser immediately after pointerdown. A baseline captured before
+           * that lands is stale by however far the browser moved, and the
+           * first frame of the drag jumps by that much.
+           */
+          d.originX = e.clientX;
+          d.left = el.scrollLeft;
+          return;
+        }
+
+        el.scrollLeft = d.left - (e.clientX - (d.originX ?? d.downX));
+      }}
+      onPointerUp={end}
+      onPointerCancel={end}
+      onLostPointerCapture={end}
+      onClickCapture={(e) => {
+        if (!swallowClick.current) return;
+        swallowClick.current = false;
+        e.preventDefault();
+        e.stopPropagation();
+      }}
+      style={{
+        // Fade only the edges that actually have something behind them, so a
+        // sliced chip always reads as "scrolled", never as "clipped".
+        maskImage: `linear-gradient(to right, ${
+          edge.left ? "transparent, #000 24px" : "#000 0"
+        }, ${edge.right ? "#000 calc(100% - 24px), transparent" : "#000 100%"})`,
+      }}
+      // `-my-1 py-1` keeps focus rings from being clipped by the scroll box.
+      className={`-my-1 flex min-w-0 flex-1 select-none gap-2 overflow-x-auto py-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden ${
+        overflowing ? "cursor-grab active:cursor-grabbing" : ""
+      }`}
+    >
+      {children}
+    </div>
+  );
+}
+
+function Chip({
+  active,
+  onClick,
+  label,
+  count,
+}: {
+  active: boolean;
+  onClick: () => void;
+  label: string;
+  count?: number;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      aria-pressed={active}
+      className={`shrink-0 cursor-pointer whitespace-nowrap rounded-sm border px-3 py-1.5 text-[13.5px] font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold)] ${
+        active
+          ? "border-gold bg-gold-soft text-gold"
+          : "border-line-hi text-muted hover:border-muted hover:text-ink"
+      }`}
+    >
+      {label}
+      {count !== undefined && (
+        <span
+          className={`tnum ml-1.5 text-[12px] ${active ? "text-gold opacity-70" : "text-dim"}`}
+        >
+          {count}
+        </span>
+      )}
+    </button>
+  );
+}
+
+function BandMessage({ title }: { title: string }) {
+  return (
+    <div className="py-[var(--s5)] pb-[var(--s6)]">
+      <h2 className="text-[32px] font-semibold leading-tight tracking-[-0.03em]">
+        {title}
+      </h2>
+    </div>
+  );
+}
+
+function State({
+  title,
+  body,
+  code,
+  tone,
+}: {
+  title: string;
+  body: string;
+  code?: string;
+  tone?: "error";
+}) {
+  return (
+    <div className="px-[var(--s5)] py-[var(--s7)] text-center">
+      <div
+        className={`mb-2 text-[17px] font-semibold ${tone === "error" ? "text-down" : ""}`}
+      >
+        {title}
       </div>
-    </div>
-  );
-}
-
-// Table Components for each strategy
-
-function DipsTable({ data }: { data: DipItem[] }) {
-  return (
-    <div className="border border-gray-600 overflow-x-auto">
-      <table className="w-full border-collapse font-serif min-w-[700px]">
-        <thead>
-          <tr className="bg-gray-800">
-            <th className="border-b border-gray-600 p-2 text-left font-semibold text-sm md:text-xl text-white">
-              Item
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Buy Range
-            </th>
-            <th className="border-b border-gray-600  text-right font-semibold text-sm md:text-xl text-white">
-              Sell Target
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Price Drop
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Estimated Profit
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.slice(0, 20).map((item, index) => (
-            <tr key={`dip-${item.id}-${index}`} className="hover:bg-gray-800">
-              <td className="border-b border-gray-600 p-2">
-                <div className="flex items-center gap-2 md:gap-4">
-                  <div className="text-sm md:text-lg font-medium text-gray-300">
-                    #{index + 1}
-                  </div>
-                  <div>
-                    <div className="text-sm md:text-xl font-semibold text-white">
-                      {item.name}
-                    </div>
-                    {item.members && (
-                      <div className="text-xs md:text-sm text-blue-400 font-medium">
-                        Members
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </td>
-              <td className="border-b border-gray-600  text-right">
-                <div className="text-sm md:text-lg font-semibold text-blue-400">
-                  {item.buyRange}
-                </div>
-                <div className="text-xs md:text-sm text-gray-400">
-                  Buy during dip
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div className="text-sm md:text-lg font-semibold text-green-400">
-                  {item.sellRange}
-                </div>
-                <div className="text-xs md:text-sm text-gray-400">
-                  Recovery target
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div className="text-sm md:text-lg font-bold text-red-400">
-                  -{item.priceDropPercent.toFixed(1)}%
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div className="text-sm md:text-lg font-bold text-green-400">
-                  {formatGP(item.estimatedProfit)} gp
-                </div>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-}
-
-function AlchemyTable({ data }: { data: AlchemyItem[] }) {
-  return (
-    <div className="border border-gray-600 overflow-x-auto">
-      <table className="w-full border-collapse font-serif min-w-[600px]">
-        <thead>
-          <tr>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-2  text-left font-bold text-sm md:text-lg">
-              Item
-            </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-2  text-right font-bold text-sm md:text-lg">
-              Current Price
-            </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-2  text-right font-bold text-sm md:text-lg">
-              Price Floor
-            </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-2  text-right font-bold text-sm md:text-lg">
-              Profit Margin
-            </th>
-            <th className="border-b border-gray-600 bg-gray-800 text-white p-2  text-right font-bold text-sm md:text-lg">
-              ROI
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.slice(0, 20).map((item, index) => (
-            <tr
-              key={`alchemy-${item.id}-${index}`}
-              className="hover:bg-gray-800"
-            >
-              <td className="border-b border-gray-600 p-2  font-semibold text-white">
-                <div className="flex items-center gap-2 md:gap-2">
-                  <div className="text-sm md:text-base text-gray-300">
-                    #{index + 1}
-                  </div>
-                  <div>
-                    <div className="text-sm md:text-base font-bold">
-                      {item.name}
-                    </div>
-                    {item.members && (
-                      <div className="text-xs md:text-sm text-blue-400">
-                        Members
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2  text-right font-semibold text-white text-sm md:text-base">
-                {formatGP(item.currentPrice)} gp
-              </td>
-              <td className="border-b border-gray-600 p-2  text-right text-white text-sm md:text-base">
-                {formatGP(item.priceFloor)} gp
-              </td>
-              <td className="border-b border-gray-600 p-2  text-right">
-                <div className="font-bold text-green-400 text-sm md:text-base">
-                  {formatGP(item.profitMargin)} gp
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2  text-right">
-                <div className="font-bold text-green-400 text-sm md:text-base">
-                  {item.roi.toFixed(1)}%
-                </div>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-}
-
-// New Advanced Analysis Table Components
-
-function VolatilityTable({ data }: { data: VolatilityItem[] }) {
-  return (
-    <div className="border border-gray-600 overflow-x-auto">
-      <table className="w-full border-collapse font-serif min-w-[900px]">
-        <thead>
-          <tr className="bg-gray-800">
-            <th className="border-b border-gray-600 p-2 text-left font-semibold text-sm md:text-xl text-white">
-              Item
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Current Price
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Compression
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Breakout Direction
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Volume Confirmation
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Potential Profit
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.slice(0, 20).map((item, index) => (
-            <tr
-              key={`volatility-${item.id}-${index}`}
-              className="hover:bg-gray-800"
-            >
-              <td className="border-b border-gray-600 p-2">
-                <div className="flex items-center gap-2 md:gap-4">
-                  <div className="text-sm md:text-lg font-medium text-gray-300">
-                    #{index + 1}
-                  </div>
-                  <div>
-                    <div className="text-sm md:text-xl font-semibold text-white">
-                      {item.name}
-                    </div>
-                    <div className="text-xs md:text-sm text-gray-400">
-                      {item.compressionLevel}
-                    </div>
-                  </div>
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div className="text-sm md:text-lg font-semibold text-white">
-                  {formatGP(item.currentPrice)} gp
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div
-                  className={`text-sm md:text-lg font-bold ${
-                    item.compressionRatio < 30
-                      ? "text-red-400"
-                      : item.compressionRatio < 50
-                      ? "text-yellow-400"
-                      : "text-green-400"
-                  }`}
-                >
-                  {item.compressionRatio.toFixed(1)}%
-                </div>
-                <div className="text-xs md:text-sm text-gray-400">
-                  Daily vs Weekly
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div
-                  className={`text-sm md:text-lg font-bold ${
-                    item.breakoutDirection.includes("UPPER")
-                      ? "text-green-400"
-                      : item.breakoutDirection.includes("LOWER")
-                      ? "text-red-400"
-                      : "text-gray-400"
-                  }`}
-                >
-                  {item.breakoutDirection.replace("_", " ")}
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div
-                  className={`text-sm md:text-lg font-medium ${
-                    item.volumeConfirmation === "HIGH_VOLUME_CONFIRMATION"
-                      ? "text-green-400"
-                      : item.volumeConfirmation ===
-                        "MODERATE_VOLUME_CONFIRMATION"
-                      ? "text-yellow-400"
-                      : "text-gray-400"
-                  }`}
-                >
-                  {item.volumeConfirmation.replace("_", " ")}
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div className="text-sm md:text-lg font-bold text-green-400">
-                  {formatGP(item.potentialBreakoutProfit)} gp
-                </div>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-}
-
-// Helper functions for better volume profile display
-function formatVolumePattern(pattern: string): string {
-  const patterns: { [key: string]: string } = {
-    STRONG_ACCUMULATION: "Strong Buy Interest",
-    MODERATE_ACCUMULATION: "Moderate Buy Interest",
-    STRONG_DISTRIBUTION: "Strong Sell Pressure",
-    MODERATE_DISTRIBUTION: "Moderate Sell Pressure",
-    BALANCED: "Balanced Trading",
-  };
-  return patterns[pattern] || pattern.replace("_", " ");
-}
-
-function formatVolumeSurge(surge: string): string {
-  const surges: { [key: string]: string } = {
-    EXTREME_VOLUME_SURGE: "Extreme Activity",
-    HIGH_VOLUME_SURGE: "High Activity",
-    MODERATE_VOLUME_SURGE: "Increased Activity",
-    NORMAL_VOLUME: "Normal Activity",
-  };
-  return surges[surge] || surge.replace("_", " ");
-}
-
-function formatSmartMoneySignal(signal: string): string {
-  const signals: { [key: string]: string } = {
-    SMART_MONEY_ACCUMULATION: "Big Players Buying",
-    SMART_MONEY_DISTRIBUTION: "Big Players Selling",
-    NO_SMART_MONEY_SIGNAL: "Normal Trading",
-  };
-  return signals[signal] || signal.replace("_", " ");
-}
-
-function VolumeProfileTable({ data }: { data: VolumeProfileItem[] }) {
-  return (
-    <div className="border border-gray-600 overflow-x-auto">
-      <table className="w-full border-collapse font-serif min-w-[900px]">
-        <thead>
-          <tr className="bg-gray-800">
-            <th className="border-b border-gray-600 p-2 text-left font-semibold text-sm md:text-xl text-white">
-              Item
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Current Price
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Trading Pattern
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Activity Level
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Big Player Signal
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Potential Profit
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.slice(0, 20).map((item, index) => (
-            <tr
-              key={`volume-${item.id}-${index}`}
-              className="hover:bg-gray-800"
-            >
-              <td className="border-b border-gray-600 p-2">
-                <div className="flex items-center gap-2 md:gap-4">
-                  <div className="text-sm md:text-lg font-medium text-gray-300">
-                    #{index + 1}
-                  </div>
-                  <div>
-                    <div className="text-sm md:text-xl font-semibold text-white">
-                      {item.name}
-                    </div>
-                  </div>
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div className="text-sm md:text-lg font-semibold text-white">
-                  {formatGP(item.currentPrice)} gp
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div
-                  className={`text-sm md:text-lg font-bold ${
-                    item.volumePattern.includes("ACCUMULATION")
-                      ? "text-green-400"
-                      : item.volumePattern.includes("DISTRIBUTION")
-                      ? "text-red-400"
-                      : "text-gray-400"
-                  }`}
-                >
-                  {formatVolumePattern(item.volumePattern)}
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div
-                  className={`text-sm md:text-lg font-medium ${
-                    item.volumeSurge === "EXTREME_VOLUME_SURGE"
-                      ? "text-red-400"
-                      : item.volumeSurge === "HIGH_VOLUME_SURGE"
-                      ? "text-yellow-400"
-                      : item.volumeSurge === "MODERATE_VOLUME_SURGE"
-                      ? "text-green-400"
-                      : "text-gray-400"
-                  }`}
-                >
-                  {formatVolumeSurge(item.volumeSurge)}
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div
-                  className={`text-sm md:text-lg font-bold ${
-                    item.smartMoneySignal.includes("ACCUMULATION")
-                      ? "text-green-400"
-                      : item.smartMoneySignal.includes("DISTRIBUTION")
-                      ? "text-red-400"
-                      : "text-gray-400"
-                  }`}
-                >
-                  {formatSmartMoneySignal(item.smartMoneySignal)}
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div className="text-sm md:text-lg font-bold text-green-400">
-                  {formatGP(item.accumulationProfit)} gp
-                </div>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-}
-
-function ConfluenceTable({ data }: { data: ConfluenceItem[] }) {
-  return (
-    <div className="border border-gray-600 overflow-x-auto">
-      <table className="w-full border-collapse font-serif min-w-[900px]">
-        <thead>
-          <tr className="bg-gray-800">
-            <th className="border-b border-gray-600 p-2 text-left font-semibold text-sm md:text-xl text-white">
-              Item
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Current Price
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Bullish Confluence
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Signal Strength
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Volume Confirmation
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Potential Profit
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.slice(0, 20).map((item, index) => (
-            <tr
-              key={`confluence-${item.id}-${index}`}
-              className="hover:bg-gray-800"
-            >
-              <td className="border-b border-gray-600 p-2">
-                <div className="flex items-center gap-2 md:gap-4">
-                  <div className="text-sm md:text-lg font-medium text-gray-300">
-                    #{index + 1}
-                  </div>
-                  <div>
-                    <div className="text-sm md:text-xl font-semibold text-white">
-                      {item.name}
-                    </div>
-                  </div>
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div className="text-sm md:text-lg font-semibold text-white">
-                  {formatGP(item.currentPrice)} gp
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div
-                  className={`text-sm md:text-lg font-bold ${
-                    item.bullishConfluence >= 4
-                      ? "text-green-400"
-                      : item.bullishConfluence >= 3
-                      ? "text-yellow-400"
-                      : "text-gray-400"
-                  }`}
-                >
-                  {item.bullishConfluence}/5
-                </div>
-                <div className="text-xs md:text-sm text-gray-400">
-                  Timeframes Aligned
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div
-                  className={`text-sm md:text-lg font-bold ${
-                    item.signalStrength === "STRONG_BULLISH"
-                      ? "text-green-400"
-                      : item.signalStrength === "MODERATE_BULLISH"
-                      ? "text-yellow-400"
-                      : item.signalStrength === "STRONG_BEARISH"
-                      ? "text-red-400"
-                      : item.signalStrength === "MODERATE_BEARISH"
-                      ? "text-orange-400"
-                      : "text-gray-400"
-                  }`}
-                >
-                  {item.signalStrength.replace("_", " ")}
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div
-                  className={`text-sm md:text-lg font-medium ${
-                    item.volumeConfirmation === "VOLUME_CONFIRMED"
-                      ? "text-green-400"
-                      : item.volumeConfirmation === "VOLUME_SUPPORTED"
-                      ? "text-yellow-400"
-                      : "text-gray-400"
-                  }`}
-                >
-                  {item.volumeConfirmation.replace("_", " ")}
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div className="text-sm md:text-lg font-bold text-green-400">
-                  {formatGP(item.potentialProfit)} gp
-                </div>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-}
-
-function RecipeArbitrageTable({ data }: { data: RecipeArbitrageItem[] }) {
-  return (
-    <div className="border border-gray-600 overflow-x-auto">
-      <table className="w-full border-collapse font-serif min-w-[900px]">
-        <thead>
-          <tr className="bg-gray-800">
-            <th className="border-b border-gray-600 p-2 text-left font-semibold text-sm md:text-xl text-white">
-              Product
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Product Price
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Ingredient Cost
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Profit Per Craft
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              ROI
-            </th>
-            <th className="border-b border-gray-600 p-2 text-right font-semibold text-sm md:text-xl text-white">
-              Liquidity
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.slice(0, 20).map((item, index) => (
-            <tr
-              key={`recipe-${item.id}-${index}`}
-              className="hover:bg-gray-800"
-            >
-              <td className="border-b border-gray-600 p-2">
-                <div className="flex items-center gap-2 md:gap-4">
-                  <div className="text-sm md:text-lg font-medium text-gray-300">
-                    #{index + 1}
-                  </div>
-                  <div>
-                    <div className="text-sm md:text-xl font-semibold text-white">
-                      {item.productName}
-                    </div>
-                    <div className="text-xs md:text-sm text-gray-400">
-                      {item.recipeType}
-                    </div>
-                  </div>
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div className="text-sm md:text-lg font-semibold text-white">
-                  {formatGP(item.productPrice)} gp
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div className="text-sm md:text-lg font-semibold text-blue-400">
-                  {formatGP(item.totalIngredientCost)} gp
-                </div>
-                <div className="text-xs md:text-sm text-gray-400">
-                  {item.ingredient1Name}
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div className="text-sm md:text-lg font-bold text-green-400">
-                  {formatGP(item.profitPerCraft)} gp
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div
-                  className={`text-sm md:text-lg font-bold ${
-                    item.roi > 20
-                      ? "text-green-400"
-                      : item.roi > 10
-                      ? "text-yellow-400"
-                      : "text-orange-400"
-                  }`}
-                >
-                  {item.roi.toFixed(1)}%
-                </div>
-              </td>
-              <td className="border-b border-gray-600 p-2 text-right">
-                <div
-                  className={`text-sm md:text-lg font-medium ${
-                    item.liquidityLevel === "HIGH_LIQUIDITY"
-                      ? "text-green-400"
-                      : item.liquidityLevel === "MODERATE_LIQUIDITY"
-                      ? "text-yellow-400"
-                      : "text-red-400"
-                  }`}
-                >
-                  {item.liquidityLevel.replace("_", " ")}
-                </div>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <p className="mx-auto max-w-[48ch] text-[14.5px] leading-relaxed text-muted">
+        {body}
+      </p>
+      {code && (
+        <div className="tnum mt-[var(--s4)] inline-block rounded-sm border border-line px-3 py-1.5 text-[12.5px] text-muted">
+          {code}
+        </div>
+      )}
     </div>
   );
 }
