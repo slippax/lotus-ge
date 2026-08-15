@@ -47,46 +47,77 @@ const KIND_ORDER: SignalKind[] = [
 export default function AnalyticsPage() {
   const [rows, setRows] = useState<Signal[] | null>(null);
   const [error, setError] = useState<string | null>(null);
+  /** Feeds that failed while others succeeded — a partial view, said out loud. */
+  const [degraded, setDegraded] = useState<string[]>([]);
   const [updatedAt, setUpdatedAt] = useState<Date | null>(null);
   const [filter, setFilter] = useState<Filter>("dip");
   // Return is the only metric comparable across signal kinds. Ceiling scales
   // with how expensive an item is, so sorting by it just ranks capital.
   const [sort, setSort] = useState<SortKey>("roi");
 
-  const fetchData = useCallback(async (isInstantRefresh = false) => {
-    try {
-      const results = await Promise.all(
-        SOURCES.map(async ({ path, map }) => {
-          const res = await fetch(
-            `/api/osrs/${path}${isInstantRefresh ? `?t=${Date.now()}` : ""}`,
-            isInstantRefresh
-              ? { headers: { "Cache-Control": "no-cache" } }
-              : undefined
-          );
+  /**
+   * @param version When new data lands we need to bypass the CDN's 60-second
+   *   window. The obvious way is `?t=${Date.now()}` — and it's a trap: every
+   *   client gets a *different* URL, so none of them share a cache entry and
+   *   the refresh costs one upstream call per connected client, at exactly the
+   *   moment they all ask at once. The ntfy message id is the same string for
+   *   every subscriber, so all clients compute one URL: the first through pays,
+   *   the rest hit cache, and everyone sees the new data just as fast.
+   */
+  const fetchData = useCallback(async (version?: string) => {
+    /*
+     * allSettled, not all. Six independent upstream reads: one of them 503ing
+     * is no reason to throw away the five that answered. `all` rejects on the
+     * first failure and we'd blank a working page over one bad feed.
+     */
+    const results = await Promise.allSettled(
+      SOURCES.map(async ({ path, map }) => {
+        const res = await fetch(
+          `/api/osrs/${path}${version ? `?v=${encodeURIComponent(version)}` : ""}`
+        );
 
-          // A non-2xx is a real failure — never fold it into an empty list.
-          if (!res.ok) throw new Error(`${path} returned ${res.status}`);
+        // A non-2xx is a real failure — never fold it into an empty list.
+        if (!res.ok) throw new Error(`${path} returned ${res.status}`);
 
-          const body = await res.json();
-          return {
-            signals: map(body.data ?? []),
-            updated: body.dataUpdated as string | undefined,
-          };
-        })
+        const body = await res.json();
+        return {
+          path,
+          signals: map(body.data ?? []),
+          updated: body.dataUpdated as string | undefined,
+        };
+      })
+    );
+
+    const ok = results.flatMap((r) => (r.status === "fulfilled" ? [r.value] : []));
+    const failed = SOURCES.filter((s) => !ok.some((o) => o.path === s.path));
+
+    failed.forEach((s, i) => {
+      const rejection = results.find((r) => r.status === "rejected");
+      console.error(`Analytics fetch failed: ${s.path}`, i === 0 ? rejection : "");
+    });
+
+    // Every feed down is the one case where we genuinely know nothing, and it
+    // has to stay distinguishable from a quiet market.
+    if (ok.length === 0) {
+      setError(
+        results[0]?.status === "rejected"
+          ? String((results[0] as PromiseRejectedResult).reason)
+          : "Unknown error"
       );
-
-      setRows(results.flatMap((r) => r.signals));
-      const newest = results
-        .map((r) => (r.updated ? new Date(r.updated).getTime() : 0))
-        .reduce((a, b) => Math.max(a, b), 0);
-      setUpdatedAt(newest ? new Date(newest) : new Date());
-      setError(null);
-
-      if (isInstantRefresh) audioSystem.playDataRefreshSound();
-    } catch (err) {
-      console.error("Analytics fetch error:", err);
-      setError(err instanceof Error ? err.message : "Unknown error");
+      return;
     }
+
+    setRows(ok.flatMap((r) => r.signals));
+    const newest = ok
+      .map((r) => (r.updated ? new Date(r.updated).getTime() : 0))
+      .reduce((a, b) => Math.max(a, b), 0);
+    setUpdatedAt(newest ? new Date(newest) : new Date());
+    setError(null);
+    // Named, not counted: "volume-profile is missing" is actionable, "5 of 6
+    // loaded" leaves the reader wondering which numbers they can trust.
+    setDegraded(failed.map((s) => s.path));
+
+    if (version) audioSystem.playDataRefreshSound();
   }, []);
 
   useEffect(() => {
@@ -97,9 +128,11 @@ export default function AnalyticsPage() {
     source.onmessage = (event) => {
       try {
         const parsed = JSON.parse(event.data);
-        if (parsed.message === "refresh") fetchData(true);
+        // parsed.id is ntfy's message id: one value, delivered identically to
+        // every subscriber. That shared-ness is the whole point — see fetchData.
+        if (parsed.message === "refresh") fetchData(parsed.id ?? String(parsed.time));
       } catch {
-        if (event.data === "refresh") fetchData(true);
+        if (event.data === "refresh") fetchData();
       }
     };
     return () => source.close();
@@ -135,9 +168,6 @@ export default function AnalyticsPage() {
   const PAGE = 25;
   const [shown, setShown] = useState(PAGE);
 
-  // Any change to what's being listed starts the count over.
-  useEffect(() => setShown(PAGE), [filter, sort]);
-
   const filtered = useMemo(() => {
     if (!rows) return [];
     return filter === "all" ? rows : rows.filter((r) => r.kind === filter);
@@ -145,15 +175,25 @@ export default function AnalyticsPage() {
 
   const sorts = useMemo(() => availableSorts(filtered), [filtered]);
 
-  // If the current sort can't apply to this filter, fall back to the order the
-  // analysis produced rather than leaving a control that silently does nothing.
-  useEffect(() => {
-    if (filtered.length && !sorts.includes(sort)) setSort("ranked");
-  }, [sorts, sort, filtered.length]);
+  /*
+   * `sort` is what the reader asked for; this is what the current rows can
+   * actually do. Breakout and confluence publish no return, so "Best return"
+   * can't apply there and we fall back to the order the analysis produced
+   * rather than leaving a control that silently does nothing.
+   *
+   * The fallback is derived, never written back to state. Clamping `sort`
+   * itself was one-way — visiting breakout demoted it to "ranked" and nothing
+   * ever restored it, so coming back to dips silently re-sorted the list and
+   * the Lede headlined a different item than it had a moment earlier.
+   */
+  const effectiveSort = sorts.includes(sort) ? sort : "ranked";
+
+  // Any change to what's being listed starts the count over.
+  useEffect(() => setShown(PAGE), [filter, effectiveSort]);
 
   const matched = useMemo(
-    () => sortSignals(filtered, sorts.includes(sort) ? sort : "ranked"),
-    [filtered, sort, sorts]
+    () => sortSignals(filtered, effectiveSort),
+    [filtered, effectiveSort]
   );
 
   const visible = useMemo(() => matched.slice(0, shown), [matched, shown]);
@@ -224,7 +264,7 @@ export default function AnalyticsPage() {
               <div className="relative">
                 <select
                   id="sort"
-                  value={sort}
+                  value={effectiveSort}
                   onChange={(e) => setSort(e.target.value as SortKey)}
                   className="cursor-pointer appearance-none rounded-sm border border-line-hi bg-transparent py-1.5 pl-3 pr-7 text-[13.5px] text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold)]"
                 >
@@ -244,6 +284,18 @@ export default function AnalyticsPage() {
                 </span>
               </div>
             </div>
+          </div>
+        )}
+
+        {/*
+          * A feed that failed is not a feed with nothing in it. Without this
+          * line, a 503 on volume-profile looks exactly like "no volume signals
+          * today" — the same lie the API used to tell, moved into the UI.
+          */}
+        {!error && degraded.length > 0 && (
+          <div className="mb-[var(--s4)] rounded-sm border border-line-hi px-3 py-2 text-[13.5px] text-muted">
+            Showing a partial view — {degraded.join(", ")} didn&apos;t answer.
+            These are missing, not empty.
           </div>
         )}
 

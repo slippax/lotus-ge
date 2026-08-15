@@ -246,7 +246,7 @@ export function fromBreakout(items: Raw[]): Signal[] {
       limit,
       series: [], // ranges, not a price history — nothing honest to draw
       labels: [],
-      why: `Trading range has narrowed — ${up ? "poised to rise" : "poised to fall"}`,
+      why: `Trading range has narrowed - ${up ? "poised to rise" : "poised to fall"}`,
       // `potentialBreakoutProfit` is exactly price x buyLimit x 0.1 for every
       // row — a placeholder, not a projection. Showing it as a return would
       // print "+10.0%" against all 50 breakouts. The compression figure in

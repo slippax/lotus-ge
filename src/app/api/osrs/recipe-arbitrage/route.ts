@@ -1,4 +1,6 @@
 import { NextResponse } from "next/server";
+import { newRequestId, toErrorResponse } from "@/lib/errors";
+import { fetchSummary, SUMMARY_CACHE } from "@/lib/upstream";
 
 interface RecipeArbitrageOpportunity {
   id: number;
@@ -43,65 +45,6 @@ interface RawRecipeData {
   LiquidityLevel?: string;
 }
 
-// Cache for 5 seconds for instant updates
-let recipeCache: { data: RecipeArbitrageOpportunity[]; timestamp: number } | null = null;
-const CACHE_DURATION = 5 * 1000; // 5 seconds
-
-async function fetchRecipeArbitrageData() {
-  try {
-    // Try GitHub API first (no CDN cache), fallback to raw CDN
-    const githubApiUrl = "https://api.github.com/repos/slippax/lotus-ge/contents/data/summaries/recipe-arbitrage.json";
-
-    let githubResponse;
-    try {
-      // Try GitHub API first (bypasses CDN cache)
-      githubResponse = await fetch(githubApiUrl, {
-        headers: {
-          "User-Agent": "OSRS Data Seeker - Recipe Arbitrage Analysis",
-          "Accept": "application/vnd.github.v3.raw",
-          "Cache-Control": "no-cache",
-        },
-      });
-
-      // If GitHub API fails (rate limit, etc.), fall back to raw URL
-      if (!githubResponse.ok) {
-        console.log("GitHub API failed, falling back to raw URL");
-        const githubUrl = "https://raw.githubusercontent.com/slippax/lotus-ge/main/data/summaries/recipe-arbitrage.json";
-        githubResponse = await fetch(`${githubUrl}?t=${Date.now()}`, {
-          headers: {
-            "User-Agent": "OSRS Data Seeker - Recipe Arbitrage Analysis",
-            "Cache-Control": "no-cache",
-          },
-        });
-      }
-    } catch {
-      // Fallback to raw CDN if API fails
-      console.log("GitHub API exception, falling back to raw URL");
-      const githubUrl = "https://raw.githubusercontent.com/slippax/lotus-ge/main/data/summaries/recipe-arbitrage.json";
-      githubResponse = await fetch(`${githubUrl}?t=${Date.now()}`, {
-        headers: {
-          "User-Agent": "OSRS Data Seeker - Recipe Arbitrage Analysis",
-          "Cache-Control": "no-cache",
-        },
-      });
-    }
-
-    if (githubResponse.ok) {
-      const summaryData = await githubResponse.json();
-      console.log("Using GitHub recipe arbitrage summary data");
-      return {
-        items: summaryData.items,
-        updated: summaryData.updated
-      };
-    }
-  } catch (error) {
-    console.log("GitHub recipe arbitrage summary not available:", error);
-  }
-
-  // Return empty array if no data available
-  return { items: [], updated: null };
-}
-
 function processRecipeArbitrageData(data: RawRecipeData[]): RecipeArbitrageOpportunity[] {
   // Data is already processed by the database system using VeryGranular methodology
   // Just format it for the API response
@@ -129,49 +72,39 @@ function processRecipeArbitrageData(data: RawRecipeData[]): RecipeArbitrageOppor
 }
 
 export async function GET() {
+  const requestId = newRequestId();
+
   try {
-    const now = Date.now();
-
-    // Return cached data if still fresh
-    if (recipeCache && now - recipeCache.timestamp < CACHE_DURATION) {
-      return NextResponse.json({
-        success: true,
-        data: recipeCache.data,
-        timestamp: recipeCache.timestamp,
-        cached: true,
-        count: recipeCache.data.length,
-      });
-    }
-
-    // Fetch recipe arbitrage data from database
-    const recipeResult = await fetchRecipeArbitrageData();
+    const recipeResult = await fetchSummary<RawRecipeData>(
+      "recipe-arbitrage.json",
+      "recipe arbitrage data",
+      requestId
+    );
 
     // Process recipe arbitrage opportunities using database methodology
     const opportunities = processRecipeArbitrageData(recipeResult.items);
 
     // Use the actual timestamp from GitHub data, or current time as fallback
-    const dataTimestamp = recipeResult.updated ? new Date(recipeResult.updated).getTime() : now;
+    const dataTimestamp = recipeResult.updated
+      ? new Date(recipeResult.updated).getTime()
+      : Date.now();
 
-    // Cache results
-    recipeCache = { data: opportunities, timestamp: dataTimestamp };
-
-    return NextResponse.json({
-      success: true,
-      data: opportunities,
-      timestamp: dataTimestamp,
-      dataUpdated: recipeResult.updated,
-      cached: false,
-      count: opportunities.length,
-    });
-  } catch (error) {
-    console.error("Recipe Arbitrage API Error:", error);
     return NextResponse.json(
       {
-        success: false,
-        error: "Failed to fetch recipe arbitrage data",
-        timestamp: Date.now(),
+        success: true,
+        data: opportunities,
+        timestamp: dataTimestamp,
+        dataUpdated: recipeResult.updated,
+        count: opportunities.length,
       },
-      { status: 500 }
+      {
+        headers: {
+          "Cache-Control": SUMMARY_CACHE,
+          "x-request-id": requestId,
+        },
+      }
     );
+  } catch (error) {
+    return toErrorResponse(error, requestId);
   }
 }

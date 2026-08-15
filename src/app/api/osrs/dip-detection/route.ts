@@ -1,22 +1,6 @@
 import { NextResponse } from "next/server";
-import { errors, newRequestId, toErrorResponse } from "@/lib/errors";
-
-// Local-only failure switch. UPSTREAM_FAIL=ratelimit makes every call to GitHub
-// respond the way GitHub does when you exceed 60 requests/hour unauthenticated,
-// without actually going over the wire. Nothing sets this in production.
-async function upstreamFetch(url: string, init?: RequestInit): Promise<Response> {
-  if (process.env.UPSTREAM_FAIL === "ratelimit") {
-    console.log(`UPSTREAM_FAIL=ratelimit -> 403 for ${url}`);
-    return new Response(
-      JSON.stringify({
-        message: "API rate limit exceeded for 10.0.0.152.",
-        documentation_url: "https://docs.github.com/rest/overview/rate-limits",
-      }),
-      { status: 403, headers: { "Content-Type": "application/json" } }
-    );
-  }
-  return fetch(url, init);
-}
+import { newRequestId, toErrorResponse } from "@/lib/errors";
+import { fetchSummary, SUMMARY_CACHE } from "@/lib/upstream";
 
 interface DipOpportunity {
   id: number;
@@ -55,63 +39,6 @@ interface DipOpportunity {
   historicalSupport: boolean; // Price supported by history
   volumeConsistency: number; // Volume trading consistency
   riskScore: number; // Overall risk (lower = better)
-}
-
-// Cache for 5 seconds for instant updates
-let dipCache: { data: DipOpportunity[]; timestamp: number } | null = null;
-const CACHE_DURATION = 5 * 1000; // 5 seconds
-
-async function fetchDipDetectionData(requestId: string) {
-  // Try GitHub API first (no CDN cache), fallback to raw CDN
-  const githubApiUrl = "https://api.github.com/repos/slippax/lotus-ge/contents/data/summaries/dipped-items.json";
-  const githubUrl = "https://raw.githubusercontent.com/slippax/lotus-ge/main/data/summaries/dipped-items.json";
-
-  let githubResponse: Response;
-  try {
-    // Try GitHub API first (bypasses CDN cache)
-    githubResponse = await upstreamFetch(githubApiUrl, {
-      headers: {
-        "User-Agent": "OSRS Data Seeker - VeryGranular Dip Detection",
-        "Accept": "application/vnd.github.v3.raw",
-        "Cache-Control": "no-cache",
-      },
-    });
-
-    // If GitHub API fails (rate limit, etc.), fall back to raw URL
-    if (!githubResponse.ok) {
-      console.log(`[${requestId}] GitHub API ${githubResponse.status}, falling back to raw URL`);
-      githubResponse = await upstreamFetch(`${githubUrl}?t=${Date.now()}`, {
-        headers: {
-          "User-Agent": "OSRS Data Seeker - VeryGranular Dip Detection",
-          "Cache-Control": "no-cache",
-        },
-      });
-    }
-  } catch {
-    // Both paths failed at the network level — DNS, refused, timeout.
-    console.log(`[${requestId}] GitHub unreachable`);
-    throw errors.upstreamUnavailable(
-      "github_unreachable",
-      "Could not reach GitHub to load dip data."
-    );
-  }
-
-  // A 403/404/500 from GitHub does NOT throw — fetch only rejects on network
-  // failure. This explicit check is what used to be missing: execution fell
-  // through to `return { items: [] }` and the caller reported success.
-  if (!githubResponse.ok) {
-    throw errors.upstreamUnavailable(
-      "github_unavailable",
-      `GitHub returned ${githubResponse.status} when loading dip data.`
-    );
-  }
-
-  const summaryData = await githubResponse.json();
-  console.log(`[${requestId}] Using VeryGranular GitHub dip detection data`);
-  return {
-    items: summaryData.items,
-    updated: summaryData.updated,
-  };
 }
 
 interface RawDipData {
@@ -171,32 +98,19 @@ export async function GET() {
   const requestId = newRequestId();
 
   try {
-    const now = Date.now();
-
-    // Return cached data if still fresh
-    if (dipCache && now - dipCache.timestamp < CACHE_DURATION) {
-      return NextResponse.json(
-        {
-          success: true,
-          data: dipCache.data,
-          timestamp: dipCache.timestamp,
-          cached: true,
-        },
-        { headers: { "x-request-id": requestId } }
-      );
-    }
-
-    // Fetch dip detection data from database
-    const dipResult = await fetchDipDetectionData(requestId);
+    const dipResult = await fetchSummary<RawDipData>(
+      "dipped-items.json",
+      "dip data",
+      requestId
+    );
 
     // Process dips using VeryGranular methodology
     const dips = processDipData(dipResult.items);
 
     // Use the actual timestamp from GitHub data, or current time as fallback
-    const dataTimestamp = dipResult.updated ? new Date(dipResult.updated).getTime() : now;
-
-    // Cache results
-    dipCache = { data: dips, timestamp: dataTimestamp };
+    const dataTimestamp = dipResult.updated
+      ? new Date(dipResult.updated).getTime()
+      : Date.now();
 
     return NextResponse.json(
       {
@@ -204,10 +118,14 @@ export async function GET() {
         data: dips,
         timestamp: dataTimestamp,
         dataUpdated: dipResult.updated,
-        cached: false,
         count: dips.length,
       },
-      { headers: { "x-request-id": requestId } }
+      {
+        headers: {
+          "Cache-Control": SUMMARY_CACHE,
+          "x-request-id": requestId,
+        },
+      }
     );
   } catch (error) {
     return toErrorResponse(error, requestId);

@@ -59,7 +59,7 @@ export default function Lede({ top }: { top: Signal }) {
         </div>
 
         <p className="max-w-[44ch] text-[16px] leading-relaxed text-band-mute">
-          {top.why}. Buy limit is{" "}
+          {top.why}.<br/> Buy limit is{" "}
           <b className="font-medium text-band-ink">{fmt(top.limit)}</b> every four
           hours.
         </p>
