@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-16T22:20:38.580762+00:00",
+  "updated": "2026-08-16T22:25:42.705060+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -23,6 +23,13 @@
       "pctROI": 1.79
     },
     {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1013,
+      "PriceFloor": 1233.0,
+      "BuyLimit": 13000,
+      "pctROI": 20.53
+    },
+    {
       "ItemName": "Earth battlestaff",
       "LowPrice": 8717,
       "PriceFloor": 8955.0,
@@ -42,13 +49,6 @@
       "PriceFloor": 906.0,
       "BuyLimit": 10000,
       "pctROI": 28.51
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1079,
-      "PriceFloor": 1233.0,
-      "BuyLimit": 13000,
-      "pctROI": 13.16
     },
     {
       "ItemName": "Amulet of glory(6)",
@@ -80,17 +80,10 @@
     },
     {
       "ItemName": "Diamond bracelet",
-      "LowPrice": 1905,
+      "LowPrice": 1912,
       "PriceFloor": 2020.0,
       "BuyLimit": 10000,
-      "pctROI": 4.99
-    },
-    {
-      "ItemName": "Ruby bracelet",
-      "LowPrice": 1092,
-      "PriceFloor": 1129.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.38
+      "pctROI": 4.6
     }
   ],
   "methodology": "VeryGranular"
