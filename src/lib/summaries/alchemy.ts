@@ -7,26 +7,32 @@
 import { fetchSummary } from "@/lib/upstream";
 import type { Payload } from "@/lib/render";
 
+/**
+ * An alchemy floor, containing only what the collector actually knows.
+ *
+ * `alchemy-floors.json` gives us `ItemName`, `LowPrice`, `PriceFloor`,
+ * `BuyLimit`, `pctROI`. `PriceFloor` is already the alch value net of costs,
+ * computed upstream in collect.py.
+ *
+ * Dropped from v1 and preserved in `toLegacyAlchemy`: a three-level risk model
+ * with invented thresholds, a hardcoded `natureRuneCost: 170`, a `tax` derived
+ * from an assumed rate that `PriceFloor` may already account for, and
+ * `alchPrice`, which was just `priceFloor` under a second name.
+ */
 export interface AlchemyOpportunity {
-  id: string;
   name: string;
-  members: boolean;
-  icon: string;
 
+  /** Cheapest current buy offer, gp. */
   currentLow: number;
+  /** What high alchemy nets for it after costs, gp. From collect.py. */
   priceFloor: number;
 
+  /** GE buy limit per 4 hours. */
   buyLimit: number;
+  /** priceFloor − currentLow, gp. */
   potentialProfit: number;
+  /** Return on the buy price, %. Computed by collect.py. */
   roi: number;
-
-  alchPrice: number;
-  natureRuneCost: number;
-  tax: number;
-
-  liquidityRisk: number;
-  capitalRisk: number;
-  overallRisk: number;
 }
 
 interface RawAlchemyData {
@@ -39,33 +45,54 @@ interface RawAlchemyData {
 }
 
 function processAlchemyData(data: RawAlchemyData[]): AlchemyOpportunity[] {
-  // Data is already processed by the database system using VeryGranular methodology
-  // Just format it for the API response with OSRS number formatting
-  return data.map((item, index) => ({
+  return data.map((item) => {
+    const currentLow = item.LowPrice || 0;
+    const priceFloor = item.PriceFloor || 0;
+
+    return {
+      name: item.ItemName || "Unknown Item",
+      currentLow,
+      priceFloor,
+      buyLimit: item.BuyLimit || 0,
+      potentialProfit: priceFloor - currentLow,
+      roi: item.pctROI || 0,
+    };
+  });
+}
+
+/**
+ * Expands an honest alchemy row back into the pre-v1 shape.
+ *
+ * Same principle as `toLegacyDip` — see that function for why the invention
+ * lives in the legacy layer rather than being deleted outright.
+ *
+ * `index` is required because the old `id` was positional (`alchemy-0`,
+ * `alchemy-1`, …). It identified a row's place in one response, not an item —
+ * two requests could give the same item a different id. Note that the frontend
+ * never used it; it builds its own keys.
+ */
+export function toLegacyAlchemy(a: AlchemyOpportunity, index: number) {
+  return {
     id: `alchemy-${index}`,
-    name: item.ItemName || "Unknown Item",
-    members: true, // Default to members
+    name: a.name,
+    members: true,
     icon: "",
 
-    // Current state (from database analysis)
-    currentLow: item.LowPrice || 0,
-    priceFloor: item.PriceFloor || 0,
+    currentLow: a.currentLow,
+    priceFloor: a.priceFloor,
 
-    // Trading metrics (from database)
-    buyLimit: item.BuyLimit || 0,
-    potentialProfit: (item.PriceFloor || 0) - (item.LowPrice || 0),
-    roi: item.pctROI || 0,
+    buyLimit: a.buyLimit,
+    potentialProfit: a.potentialProfit,
+    roi: a.roi,
 
-    // Alchemy specific
-    alchPrice: item.PriceFloor || 0, // Price floor is the alch value minus costs
-    natureRuneCost: 170, // Approximate
-    tax: Math.floor((item.PriceFloor || 0) * 0.01),
+    alchPrice: a.priceFloor,
+    natureRuneCost: 170,
+    tax: Math.floor(a.priceFloor * 0.01),
 
-    // Risk assessment (simplified)
     liquidityRisk: 1,
-    capitalRisk: (item.LowPrice || 0) > 1000000 ? 2 : 1,
+    capitalRisk: a.currentLow > 1000000 ? 2 : 1,
     overallRisk: 2,
-  }));
+  };
 }
 
 /**

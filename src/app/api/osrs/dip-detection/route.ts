@@ -1,6 +1,6 @@
 import { newRequestId, toErrorResponse } from "@/lib/errors";
 import { legacy } from "@/lib/render";
-import { buildDips } from "@/lib/summaries/dips";
+import { buildDips, toLegacyDip } from "@/lib/summaries/dips";
 
 /**
  * GET /api/osrs/dip-detection — the pre-v1 shape.
@@ -22,7 +22,10 @@ export async function GET() {
   const requestId = newRequestId();
 
   try {
-    return legacy(await buildDips(requestId), requestId);
+    // v1 dropped the 17 placeholder fields; toLegacyDip puts them back, so
+    // this path still answers exactly as it did before they were removed.
+    const payload = await buildDips(requestId);
+    return legacy({ ...payload, data: payload.data.map(toLegacyDip) }, requestId);
   } catch (error) {
     return toErrorResponse(error, requestId);
   }

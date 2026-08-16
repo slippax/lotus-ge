@@ -1,6 +1,10 @@
 import { newRequestId, toErrorResponse } from "@/lib/errors";
 import { legacy } from "@/lib/render";
-import { buildAlchemy, LEGACY_METADATA } from "@/lib/summaries/alchemy";
+import {
+  buildAlchemy,
+  LEGACY_METADATA,
+  toLegacyAlchemy,
+} from "@/lib/summaries/alchemy";
 
 /**
  * GET /api/osrs/alchemy-floors — the pre-v1 shape.
@@ -17,9 +21,12 @@ export async function GET() {
   const requestId = newRequestId();
 
   try {
-    return legacy(await buildAlchemy(requestId), requestId, {
-      metadata: LEGACY_METADATA,
-    });
+    const payload = await buildAlchemy(requestId);
+    return legacy(
+      { ...payload, data: payload.data.map(toLegacyAlchemy) },
+      requestId,
+      { metadata: LEGACY_METADATA }
+    );
   } catch (error) {
     return toErrorResponse(error, requestId);
   }
