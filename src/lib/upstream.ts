@@ -25,6 +25,27 @@ const OWNER_REPO = "slippax/lotus-ge";
 const UA = "lotus-ge (+https://github.com/slippax/lotus-ge)";
 
 /**
+ * Authenticates our GitHub API calls, when a token is configured.
+ *
+ * Unauthenticated requests get **60 per hour per IP** — and on Vercel that IP
+ * is shared with other customers, so the budget isn't even ours to spend. A
+ * token raises it to 5,000/hr in a bucket only we draw from. That is the whole
+ * reason this exists: not the ceiling, the isolation.
+ *
+ * The token needs no scopes. Rate limits lift because the request is
+ * *authenticated*, not because of anything it's permitted to do — the file
+ * we're reading is public and anyone can curl it without a token at all.
+ *
+ * Conditional so local dev behaves identically without one. You will never hit
+ * 60 requests/hour from a laptop, so there's nothing to configure to work on
+ * this.
+ */
+function authHeader(): Record<string, string> {
+  const token = process.env.GITHUB_TOKEN;
+  return token ? { Authorization: `Bearer ${token}` } : {};
+}
+
+/**
  * What every summary route sends back.
  *
  * `s-maxage=60` is the whole scaling fix. The collector writes every ~5
@@ -113,15 +134,23 @@ export async function fetchSummary<T>(
         "User-Agent": UA,
         Accept: "application/vnd.github.v3.raw",
         "Cache-Control": "no-cache",
+        ...authHeader(),
       },
     });
 
-    // The API is the path with the 60-req/hr limit. The raw CDN is far more
+    // The API is the path with the rate limit. The raw CDN is far more
     // permissive, so it's the spare tyre — but note the log line: running on
     // the spare indefinitely is exactly the kind of thing that stays invisible
-    // until someone goes looking.
+    // until someone goes looking. A 401 or 403 here with GITHUB_TOKEN set
+    // means the token is wrong or expired, and we are silently back on 60/hr.
     if (!response.ok) {
-      console.log(`[${requestId}] GitHub API ${response.status} for ${file}, falling back to raw`);
+      const tokenNote =
+        process.env.GITHUB_TOKEN && (response.status === 401 || response.status === 403)
+          ? " — check GITHUB_TOKEN, it may be expired or malformed"
+          : "";
+      console.log(
+        `[${requestId}] GitHub API ${response.status} for ${file}, falling back to raw${tokenNote}`
+      );
 
       // Quantised to the minute, NOT Date.now(). A per-request buster makes
       // every request a unique URL, which defeats every cache between here and
