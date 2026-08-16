@@ -1,16 +1,13 @@
 import { newRequestId, toErrorResponse } from "@/lib/errors";
-import { legacy } from "@/lib/render";
+import { v1 } from "@/lib/render";
 import { buildRecipes } from "@/lib/summaries/recipes";
 
-/**
- * GET /api/osrs/recipe-arbitrage — the pre-v1 shape. Frozen contract.
- * See /api/osrs/dip-detection for why. New work goes to /api/v1/…
- */
+/** GET /api/v1/recipe-arbitrage — clean envelope over the same data. */
 export async function GET() {
   const requestId = newRequestId();
 
   try {
-    return legacy(await buildRecipes(requestId), requestId);
+    return v1(await buildRecipes(requestId), requestId);
   } catch (error) {
     return toErrorResponse(error, requestId);
   }

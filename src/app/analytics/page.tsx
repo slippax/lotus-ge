@@ -73,7 +73,7 @@ export default function AnalyticsPage() {
     const results = await Promise.allSettled(
       SOURCES.map(async ({ path, map }) => {
         const res = await fetch(
-          `/api/osrs/${path}${version ? `?v=${encodeURIComponent(version)}` : ""}`
+          `/api/v1/${path}${version ? `?v=${encodeURIComponent(version)}` : ""}`
         );
 
         // A non-2xx is a real failure — never fold it into an empty list.
@@ -83,7 +83,9 @@ export default function AnalyticsPage() {
         return {
           path,
           signals: map(body.data ?? []),
-          updated: body.dataUpdated as string | undefined,
+          // v1 calls this `updated`; the pre-v1 shape called the same value
+          // `dataUpdated` (and also shipped it a second time as `timestamp`).
+          updated: body.updated as string | undefined,
         };
       })
     );
