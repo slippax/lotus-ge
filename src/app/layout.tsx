@@ -3,12 +3,9 @@ import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 
 /*
- * One superfamily, two roles.
- *
- * Plex Mono carries every number — it has true tabular figures, which is the
- * whole reason a price column lines up. Plex Sans carries the words. They were
- * drawn together, so the pairing is coherent by construction rather than by
- * luck, and it reads as a designed system instead of the OS default.
+ * one superfamily, two roles. plex mono carries every number - true tabular
+ * figures, which is the only reason a price column lines up. plex sans carries
+ * the words. drawn together, so the pairing works by construction.
  */
 const plexMono = IBM_Plex_Mono({
   variable: "--font-plex-mono",

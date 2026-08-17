@@ -3,19 +3,17 @@
 import { fmt, priceMove, type Signal } from "@/lib/signals";
 import Sprite from "./Sprite";
 
-/** How many ticks ride the tape. Past this it's wallpaper, not information. */
+/** how many ticks ride the tape. past this it's wallpaper, not information. */
 const MAX_TICKS = 24;
 
 /**
- * The tape: the roof of the band. Ambient, not sticky — it sets the tone on
- * arrival and then scrolls away rather than competing with the numbers you're
- * actually reading. Pauses on hover, and doesn't run at all under
- * prefers-reduced-motion (see globals.css).
+ * the tape. ambient, not sticky - sets the tone on arrival then scrolls away
+ * instead of competing with the numbers you're reading. pauses on hover, off
+ * entirely under prefers-reduced-motion (globals.css).
  *
- * Each tick reads like a news ticker — name, price, then the move in gp and
- * percent. Only rows whose `series` is a genuine price history over time can
- * state a move (see `priceMove`), so the tape is built from those and quietly
- * skips the rest instead of printing a direction it can't back up.
+ * only rows whose `series` is real price history can state a move (priceMove),
+ * so the tape is built from those and skips the rest rather than printing a
+ * direction it can't back up.
  */
 export default function Ticker({ rows }: { rows: Signal[] }) {
   const moves = rows
@@ -27,7 +25,7 @@ export default function Ticker({ rows }: { rows: Signal[] }) {
 
   if (moves.length === 0) return null;
 
-  // Duplicated once so the -50% translate loops seamlessly.
+  // duplicated once so the -50% translate loops seamlessly.
   const ticks = [...moves, ...moves];
 
   return (

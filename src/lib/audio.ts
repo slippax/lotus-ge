@@ -1,4 +1,4 @@
-// Minimal audio system for data refresh notifications
+// tiny audio bleep for when new data lands
 
 export class SimpleAudioSystem {
   private audioContext: AudioContext | null = null;
@@ -36,7 +36,7 @@ export class SimpleAudioSystem {
     }
   }
 
-  // Play a very soft, pleasant notification sound
+  // soft notification sound
   playDataRefreshSound(): void {
     if (!this.enabled || !this.audioContext) return;
 
@@ -47,11 +47,11 @@ export class SimpleAudioSystem {
       oscillator.connect(gainNode);
       gainNode.connect(this.audioContext.destination);
 
-      // Soft, pleasant frequency (C5 note)
+      // C5
       oscillator.frequency.setValueAtTime(523, this.audioContext.currentTime);
       oscillator.type = 'sine'; // Smoothest waveform
 
-      // Very gentle envelope
+      // gentle envelope
       const now = this.audioContext.currentTime;
       const duration = 0.2; // Short duration
       
@@ -75,11 +75,11 @@ export class SimpleAudioSystem {
     return this.enabled;
   }
 
-  // Test the sound
+  // test the sound
   testSound(): void {
     this.playDataRefreshSound();
   }
 }
 
-// Singleton instance
+// singleton
 export const audioSystem = new SimpleAudioSystem();

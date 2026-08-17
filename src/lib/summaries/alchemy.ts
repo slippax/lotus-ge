@@ -1,37 +1,32 @@
 /**
- * Alchemy floors: items trading below what high alchemy pays for them.
- *
- * HTTP-free, version-blind. See `src/lib/summaries/dips.ts` for why.
+ * items trading below what high alchemy pays for them.
+ * http-free and version-blind, see dips.ts for why.
  */
 
 import { fetchSummary } from "@/lib/upstream";
 import type { Payload } from "@/lib/render";
 
 /**
- * An alchemy floor, containing only what the collector actually knows.
+ * only what the collector knows. alchemy-floors.json gives ItemName, LowPrice,
+ * PriceFloor, BuyLimit, pctROI - PriceFloor is already net of costs.
  *
- * `alchemy-floors.json` gives us `ItemName`, `LowPrice`, `PriceFloor`,
- * `BuyLimit`, `pctROI`. `PriceFloor` is already the alch value net of costs,
- * computed upstream in collect.py.
- *
- * Dropped from v1 and preserved in `toLegacyAlchemy`: a three-level risk model
- * with invented thresholds, a hardcoded `natureRuneCost: 170`, a `tax` derived
- * from an assumed rate that `PriceFloor` may already account for, and
- * `alchPrice`, which was just `priceFloor` under a second name.
+ * dropped from v1, kept in toLegacyAlchemy: an invented three-level risk model,
+ * a hardcoded natureRuneCost, a tax from an assumed rate PriceFloor may already
+ * include, and alchPrice which was just priceFloor again.
  */
 export interface AlchemyOpportunity {
   name: string;
 
-  /** Cheapest current buy offer, gp. */
+  /** cheapest current buy offer, gp. */
   currentLow: number;
-  /** What high alchemy nets for it after costs, gp. From collect.py. */
+  /** what alching nets after costs, gp. from collect.py. */
   priceFloor: number;
 
-  /** GE buy limit per 4 hours. */
+  /** ge buy limit per 4h. */
   buyLimit: number;
   /** priceFloor − currentLow, gp. */
   potentialProfit: number;
-  /** Return on the buy price, %. Computed by collect.py. */
+  /** return on the buy price, %. from collect.py. */
   roi: number;
 }
 
@@ -61,15 +56,11 @@ function processAlchemyData(data: RawAlchemyData[]): AlchemyOpportunity[] {
 }
 
 /**
- * Expands an honest alchemy row back into the pre-v1 shape.
+ * same idea as toLegacyDip, see there.
  *
- * Same principle as `toLegacyDip` — see that function for why the invention
- * lives in the legacy layer rather than being deleted outright.
- *
- * `index` is required because the old `id` was positional (`alchemy-0`,
- * `alchemy-1`, …). It identified a row's place in one response, not an item —
- * two requests could give the same item a different id. Note that the frontend
- * never used it; it builds its own keys.
+ * needs `index` because the old id was positional (alchemy-0, alchemy-1...) -
+ * it identified a row's slot in one response, not an item, so the same item
+ * could get a different id next request. frontend never used it anyway.
  */
 export function toLegacyAlchemy(a: AlchemyOpportunity, index: number) {
   return {
@@ -95,12 +86,7 @@ export function toLegacyAlchemy(a: AlchemyOpportunity, index: number) {
   };
 }
 
-/**
- * The static prose the pre-v1 response carried in a `metadata` block.
- *
- * Kept only so the legacy route can keep emitting it byte-for-byte. It's
- * documentation, not data — v1 leaves it out.
- */
+/** static prose the old response carried under `metadata`. docs, not data. */
 export const LEGACY_METADATA = {
   description:
     "High alchemy opportunities using VeryGranular research methodology",
@@ -109,7 +95,7 @@ export const LEGACY_METADATA = {
   methodology: "VeryGranular",
 };
 
-/** Throws `AppError` (503) if the upstream won't answer — never an empty list. */
+/** throws a 503 if the upstream won't answer. never an empty list. */
 export async function buildAlchemy(
   requestId: string
 ): Promise<Payload<AlchemyOpportunity>> {

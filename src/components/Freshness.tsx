@@ -6,14 +6,11 @@ import { isStale, timeAgo } from "@/lib/signals";
 type State = "loading" | "live" | "error";
 
 /**
- * How current the prices are, in the masthead.
+ * how current the prices are. first thing worth knowing on a market page, and
+ * it used to sit under the list where nobody looked. the dot carries the state
+ * for a glance, the text carries the detail.
  *
- * This is the first thing worth knowing about a market page and it was sitting
- * under the list where nobody would look. The dot carries the state so it
- * reads at a glance; the text carries the detail.
- *
- * It re-renders on a timer so "2m ago" doesn't quietly become a lie while the
- * tab sits open.
+ * re-renders on a timer so "2m ago" doesn't quietly become a lie on an open tab.
  */
 export default function Freshness({
   updatedAt,
@@ -49,8 +46,10 @@ export default function Freshness({
         : `Updated ${timeAgo(updatedAt)}`;
 
   return (
+    // pill not bare text - it sits next to the 32px round theme toggle, and
+    // matching height and border makes them read as one cluster.
     <span
-      className="flex items-center gap-2 text-[13px] text-band-mute"
+      className="flex h-8 items-center gap-2 rounded-full border border-[var(--band-line)] px-3 text-[12.5px] text-band-mute"
       title={updatedAt ? updatedAt.toLocaleString() : undefined}
     >
       <span

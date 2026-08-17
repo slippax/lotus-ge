@@ -3,8 +3,8 @@ import { legacy } from "@/lib/render";
 import { buildRecipes } from "@/lib/summaries/recipes";
 
 /**
- * GET /api/osrs/recipe-arbitrage — the pre-v1 shape. Frozen contract.
- * See /api/osrs/dip-detection for why. New work goes to /api/v1/…
+ * GET /api/osrs/recipe-arbitrage - pre-v1 shape, frozen contract.
+ * see /api/osrs/dip-detection for why. new work goes to /api/v1/...
  */
 export async function GET() {
   const requestId = newRequestId();

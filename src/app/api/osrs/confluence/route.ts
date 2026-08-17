@@ -3,8 +3,8 @@ import { legacy } from "@/lib/render";
 import { buildConfluence } from "@/lib/summaries/confluence";
 
 /**
- * GET /api/osrs/confluence — the pre-v1 shape. Frozen contract.
- * See /api/osrs/dip-detection for why. New work goes to /api/v1/confluence.
+ * GET /api/osrs/confluence - pre-v1 shape, frozen contract.
+ * see /api/osrs/dip-detection for why. new work goes to /api/v1/confluence.
  */
 export async function GET() {
   const requestId = newRequestId();

@@ -1,13 +1,12 @@
 /**
- * One shape for every signal.
+ * one shape for every signal.
  *
- * The six endpoints are six different analyses of the same underlying thing:
- * an item, with a reason to care about it. Normalising them here is what lets
- * the UI show one ranked list instead of six tabs the user has to compare in
- * their head.
+ * the six endpoints are six analyses of the same thing - an item with a reason
+ * to care about it. normalising here is what lets the ui show one ranked list
+ * instead of six tabs you compare in your head.
  *
- * Nothing in here invents numbers. Where an analysis genuinely has no price
- * history, `series` is empty and the UI shows nothing rather than a shape.
+ * nothing here invents numbers. no price history means `series` is empty and
+ * the ui draws nothing rather than a shape.
  */
 
 export type SignalKind =
@@ -22,36 +21,34 @@ export interface Signal {
   id: string;
   kind: SignalKind;
   name: string;
-  /** What you pay, in gp. */
+  /** what you pay, gp. */
   price: number;
-  /** GE buy limit per 4 hours. */
+  /** ge buy limit per 4h. */
   limit: number;
-  /** Real price points, oldest first. Empty when the analysis has no history. */
+  /** real price points, oldest first. empty if there's no history. */
   series: number[];
-  /** A label per series point, e.g. ["24h avg", "now"]. */
+  /** one label per series point, e.g. ["24h avg", "now"]. */
   labels: string[];
-  /** Plain-English reason this row is here. No enum strings. */
+  /** why this row is here, in english. no enum strings. */
   why: string;
   /**
-   * Net return as a percentage if the thesis plays out. Always a gain — a dip
-   * priced below its average is an opportunity, not a loss.
-   * `null` where the upstream analysis publishes no real figure.
+   * net return % if the thesis plays out. always a gain - a dip below its
+   * average is an opportunity, not a loss. null when upstream has no real number.
    */
   roi: number | null;
   /**
-   * Best case in gp, assuming you fill the whole buy limit AND sell every unit
-   * at the target. A ceiling, not an expectation — named accordingly.
-   * `null` where the upstream number is a placeholder rather than a result.
+   * best case gp, assuming you fill the whole buy limit and sell every unit at
+   * the target. a ceiling, not an expectation. null when upstream is a placeholder.
    */
   ceiling: number | null;
-  /** Two columns shown when the list is filtered to this kind. */
+  /** two columns shown when the list is filtered to this kind. */
   detail: [Metric, Metric];
 }
 
 /**
- * A kind-specific column. The six analyses don't produce comparable numbers,
- * so when the list is filtered to one kind it shows that kind's own metrics
- * instead of leaving the shared Return/Ceiling columns empty.
+ * kind-specific column. the six analyses don't produce comparable numbers, so
+ * filtering to one kind shows that kind's own metrics instead of leaving the
+ * shared Return/Ceiling columns empty.
  */
 export interface Metric {
   k: string;
@@ -60,9 +57,8 @@ export interface Metric {
 }
 
 /*
- * Names a player would use, not the names of the analyses that produced them.
- * "Confluence" is our word for it; "Trending" is theirs. Same mistake as
- * naming an endpoint after a process instead of a thing.
+ * names a player would use, not the names of the analyses behind them.
+ * "confluence" is our word, "trending" is theirs.
  */
 export const KIND_LABEL: Record<SignalKind, string> = {
   dip: "Dip",
@@ -73,7 +69,23 @@ export const KIND_LABEL: Record<SignalKind, string> = {
   confluence: "Trending",
 };
 
-/** Plural, for the filter chips. */
+/*
+ * attributive form, for the Lede's "Best ___ opportunity right now".
+ *
+ * a third map rather than lowercasing KIND_LABEL because two don't survive the
+ * slot - "best volume opportunity" says nothing, and "best confluence
+ * opportunity" is our jargon in the most-read line on the page.
+ */
+export const KIND_LEDE: Record<SignalKind, string> = {
+  dip: "dip",
+  breakout: "breakout",
+  alch: "alching",
+  craft: "crafting",
+  volume: "high-volume",
+  confluence: "trending",
+};
+
+/** plural, for the filter chips. */
 export const KIND_FILTER: Record<SignalKind, string> = {
   dip: "Dips",
   breakout: "Breakouts",
@@ -97,7 +109,7 @@ export function gp(n: number): string {
   return String(Math.round(n));
 }
 
-/** Compact, because it sits in the masthead next to the wordmark. */
+/** compact - it sits in the masthead next to the wordmark. */
 export function timeAgo(from: Date | null): string {
   if (!from) return "—";
   const secs = Math.max(0, Math.floor((Date.now() - from.getTime()) / 1000));
@@ -109,23 +121,21 @@ export function timeAgo(from: Date | null): string {
   return `${Math.floor(hrs / 24)}d ago`;
 }
 
-/** Prices land every few minutes; anything older than this is worth flagging. */
+/** prices land every few minutes, so older than this is worth flagging. */
 export function isStale(from: Date | null): boolean {
   if (!from) return true;
   return Date.now() - from.getTime() > 15 * 60 * 1000;
 }
 
 /**
- * The move a ticker can honestly print: how far the price has come, and from
- * what.
+ * the move a ticker can honestly print.
  *
- * Only two of the six analyses put a price *history* in `series`. A dip runs
- * 24-hour average → now; a trending item runs monthly mean → now. The other
- * four put two different things side by side — what you pay vs. what it alchs
- * for, the low vs. the high, ingredients vs. product. First-to-last there is a
- * gap between two quantities, not a change over time, so printing it as
- * "▲ +12%" would be a lie wearing a ticker's clothes. Those return null and
- * stay off the tape.
+ * only two of the six analyses put actual price history in `series` - dip runs
+ * 24h avg -> now, trending runs monthly mean -> now. the other four put two
+ * different quantities side by side (what you pay vs what it alchs for, low vs
+ * high, ingredients vs product). first-to-last there is a gap between two
+ * things, not a change over time, so "▲ +12%" would be a lie. those return null
+ * and stay off the tape.
  */
 export function priceMove(
   s: Signal
@@ -146,16 +156,16 @@ export function priceMove(
  * ------------------------------------------------------------------ */
 
 /**
- * Sprites go through our own route rather than straight to the wiki: 50 rows
- * hotlinking on every page load gets throttled, and the images vanish. The
- * proxy caches for a week. Filename quirks are handled there.
+ * sprites go through our own route, not straight to the wiki - 50 rows
+ * hotlinking per page load gets throttled and the images vanish. proxy caches
+ * for a week and handles the filename quirks.
  */
 export function spriteUrl(name: string): string {
   return `/api/osrs/sprite?item=${encodeURIComponent(name)}`;
 }
 
 /* ------------------------------------------------------------------ *
- * Normalisers — one per endpoint
+ * Normalisers - one per endpoint
  * ------------------------------------------------------------------ */
 
 const num = (v: unknown): number => {
@@ -165,7 +175,7 @@ const num = (v: unknown): number => {
 
 type Raw = Record<string, unknown>;
 
-/** Return + Ceiling as metrics, for the kinds that publish both. */
+/** return + ceiling as metrics, for the kinds that publish both. */
 function moneyDetail(roi: number | null, ceiling: number | null): [Metric, Metric] {
   return [
     {
@@ -190,8 +200,8 @@ export function fromDip(items: Raw[]): Signal[] {
   return items.map((r, i) => {
     const price = num(r.currentLow);
     const avg = num(r.avg24hLow);
-    // How far the price has fallen. Distinct from the return: a drop from 100
-    // to 50 is a 50% fall but a 100% gain on the way back.
+    // how far it's fallen - not the same as the return. 100 to 50 is a 50%
+    // fall but a 100% gain on the way back.
     const drop = avg > 0 ? ((avg - price) / avg) * 100 : 0;
     return {
       id: `dip-${i}`,
@@ -202,8 +212,8 @@ export function fromDip(items: Raw[]): Signal[] {
       series: avg > 0 && price > 0 ? [avg, price] : [],
       labels: ["24h average", "now"],
       why: `Trading ${drop.toFixed(1)}% below its 24-hour average of ${fmt(avg)} gp`,
-      // collect.py: (dailyMean - low - tax) / low * 100 — the net gain if it
-      // recovers, after GE tax. A positive return, not a fall.
+      // collect.py: (dailyMean - low - tax) / low * 100. net gain if it
+      // recovers, after ge tax.
       roi: num(r.roi),
       ceiling: num(r.maxProfit4h),
       detail: moneyDetail(num(r.roi), num(r.maxProfit4h)),
@@ -244,17 +254,16 @@ export function fromBreakout(items: Raw[]): Signal[] {
       name: String(r.name ?? "Unknown item"),
       price,
       limit,
-      series: [], // ranges, not a price history — nothing honest to draw
+      series: [], // ranges, not price history, so nothing honest to draw
       labels: [],
       why: `Trading range has narrowed - ${up ? "poised to rise" : "poised to fall"}`,
-      // `potentialBreakoutProfit` is exactly price x buyLimit x 0.1 for every
-      // row — a placeholder, not a projection. Showing it as a return would
-      // print "+10.0%" against all 50 breakouts. The compression figure in
-      // `why` is the real, computed part of this analysis.
+      // potentialBreakoutProfit is exactly price x buyLimit x 0.1 on every
+      // row - a placeholder, not a projection. showing it would print "+10.0%"
+      // against all 50 breakouts.
       roi: null,
       ceiling: null,
-      // The compression figure and the volume check are the real, computed
-      // parts of this analysis — they just aren't a return or a profit.
+      // the compression figure and volume check are the computed parts here,
+      // they just aren't a return or a profit.
       detail: [
         { k: "Band width", v: `${compression.toFixed(1)}%`, tone: "up" },
         { k: "Volume", v: humanVolume(String(r.volumeConfirmation ?? "")) },
@@ -289,16 +298,16 @@ export function fromConfluence(items: Raw[]): Signal[] {
         bull >= 5
           ? "Rising across every timeframe we track"
           : `Rising across ${bull} of the five timeframes we track`,
-      // Confluence publishes no return. The month-over-month change is real
-      // but it is a price move, not a profit — putting it under "Return" would
-      // mean that column said different things in different rows. It goes in
-      // the reason line instead, and the sparkline carries the shape.
+      // confluence publishes no return. the month-over-month change is real
+      // but it's a price move, not a profit - under "Return" that column would
+      // mean different things on different rows. goes in the reason line, and
+      // the sparkline carries the shape.
       // `potentialProfit` is the same price x limit x 0.1 placeholder the
       // breakout analysis uses, so there is no honest ceiling either.
       roi: null,
       ceiling: null,
       // A month-over-month move is real but it is a price change, not a
-      // profit — it gets its own column rather than sitting under "Return".
+      // profit - it gets its own column rather than sitting under "Return".
       detail: [
         {
           k: "Month change",

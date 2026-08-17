@@ -13,16 +13,13 @@ import {
 } from "lightweight-charts";
 
 /**
- * Price history, drawn by TradingView's lightweight-charts.
+ * price history via tradingview's lightweight-charts. engine is theirs, look is
+ * ours - everything visual comes from the globals.css tokens read at runtime.
+ * the library paints to a canvas so it can't inherit css variables, and literal
+ * hexes here would be the one place in the app that doesn't know its theme.
  *
- * The engine is theirs; the look is ours. Everything visual comes from the
- * tokens in globals.css, read at runtime — the library paints to a canvas, so
- * it can't inherit CSS variables the way the rest of the app does, and passing
- * literal hexes here would be the one place in the codebase that doesn't know
- * which theme it's in.
- *
- * Same rules as `Sparkline`: colour comes from the direction of travel, gold is
- * chrome and never data, gaps stay gaps.
+ * same rules as Sparkline: colour from direction of travel, gold is chrome and
+ * never data, gaps stay gaps.
  */
 
 export interface ChartPoint {
@@ -35,14 +32,14 @@ export interface HoveredPoint {
   value: number;
 }
 
-/** Reads a design token off the document, so the chart follows the theme. */
+/** reads a design token off the document so the chart follows the theme. */
 function token(name: string): string {
   return getComputedStyle(document.documentElement)
     .getPropertyValue(name)
     .trim();
 }
 
-/** Tokens are 6-digit hex; the canvas needs explicit alpha for the area fill. */
+/** tokens are 6-digit hex, the canvas needs explicit alpha for the fill. */
 function withAlpha(hex: string, alpha: number): string {
   const clean = hex.replace("#", "");
   if (clean.length !== 6) return hex;
@@ -58,14 +55,14 @@ export default function PriceChart({
   onHover,
 }: {
   points: ChartPoint[];
-  /** 5-minute data wants clock times on the axis; daily data wants dates. */
+  /** 5m data wants clock times on the axis, daily wants dates. */
   intraday: boolean;
   onHover: (point: HoveredPoint | null) => void;
 }) {
   const holder = useRef<HTMLDivElement>(null);
   const chart = useRef<IChartApi | null>(null);
   const series = useRef<ISeriesApi<"Area"> | null>(null);
-  // Held in a ref so re-theming doesn't need to re-run the data effect.
+  // in a ref so re-theming doesn't re-run the data effect.
   const hover = useRef(onHover);
   hover.current = onHover;
 
@@ -80,8 +77,8 @@ export default function PriceChart({
         : true;
 
     /**
-     * Applies the current theme to an existing chart. Split out because it runs
-     * twice: once at creation, and again whenever the theme flips underneath us.
+     * applies the current theme to an existing chart. split out because it runs
+     * twice - at creation, and whenever the theme flips under us.
      */
     function paint(c: IChartApi, s: ISeriesApi<"Area">) {
       const ink = token("--ink");
@@ -92,8 +89,8 @@ export default function PriceChart({
 
       c.applyOptions({
         layout: {
-          // Transparent so the modal's own surface shows through and the chart
-          // never carries a second, slightly-wrong background.
+          // transparent so the modal's surface shows through and the chart
+          // never carries a second slightly-wrong background.
           background: { type: ColorType.Solid, color: "transparent" },
           textColor: dim,
           fontFamily: getComputedStyle(document.body).fontFamily,
@@ -101,10 +98,9 @@ export default function PriceChart({
           attributionLogo: false,
         },
         grid: {
-          // No gridlines at all. `Sparkline` established the house idiom — the
-          // shape of the line is the message, and seven horizontal rules behind
-          // noisy hourly data compete with it. The price labels on the right
-          // still give you the scale.
+          // no gridlines. the shape of the line is the message and seven
+          // horizontal rules behind noisy hourly data fight it. the price
+          // labels on the right still give you the scale.
           vertLines: { visible: false },
           horzLines: { visible: false },
         },
@@ -120,8 +116,8 @@ export default function PriceChart({
           fixRightEdge: true,
         },
         crosshair: {
-          // Magnet snaps the hairline to real data points, so the reader aims
-          // at a day rather than at a 1px line.
+          // magnet snaps the hairline to real points, so you aim at a day
+          // rather than a 1px line.
           mode: CrosshairMode.Magnet,
           vertLine: {
             color: gold,
@@ -129,16 +125,16 @@ export default function PriceChart({
             style: LineStyle.Solid,
             labelBackgroundColor: gold,
           },
-          // The price is already in the header readout; a second floating label
-          // on the axis would be the same number twice.
+          // price is already in the header readout, a floating axis label
+          // would be the same number twice.
           horzLine: { visible: false, labelVisible: false },
         },
         localization: {
-          // Money is integer gp everywhere in this app and stays that way.
+          // money is integer gp everywhere and stays that way.
           priceFormatter: (v: number) => Math.round(v).toLocaleString(),
         },
-        // A chart in a modal that pans and zooms is a chart people get lost in
-        // and can't reset. The range chips are the only navigation.
+        // a modal chart that pans and zooms is one people get lost in and
+        // can't reset. the range chips are the only navigation.
         handleScroll: false,
         handleScale: false,
       });
@@ -167,17 +163,14 @@ export default function PriceChart({
     paint(c, s);
 
     /*
-     * The average across the visible window, as a dashed reference.
+     * average across the visible window, dashed. the whole app talks in
+     * "trading 35% below its 24h average" and the chart was showing the price
+     * without the thing it's compared to. muted and dashed so it stays
+     * reference, not data.
      *
-     * The whole app talks in "trading 35% below its 24-hour average", and until
-     * now the chart showed the price without the thing it's being compared to.
-     * With the line there, "is this actually cheap" is a glance rather than a
-     * calculation. Muted and dashed so it stays reference, not data.
-     *
-     * No title badge and no axis label: lightweight-charts draws the title
-     * inside the plot at the right edge, which lands squarely on the most
-     * recent points — the part you're most likely to be reading. The number
-     * lives in the header instead, with the rest of the figures.
+     * no title badge - lightweight-charts draws titles inside the plot at the
+     * right edge, right on top of the most recent points. the number lives in
+     * the header with the rest.
      */
     if (priced.length > 1) {
       const mean =
@@ -193,8 +186,8 @@ export default function PriceChart({
     }
 
     /*
-     * A null low is a bucket where nothing traded. Passing the timestamp with
-     * no value makes it whitespace: the line breaks rather than drawing a
+     * a null low is a bucket where nothing traded. passing the timestamp with
+     * no value makes it whitespace, so the line breaks instead of drawing a
      * straight invented price across hours that had none.
      */
     s.setData(
@@ -216,9 +209,8 @@ export default function PriceChart({
       hover.current({ t: param.time as number, value: value.value });
     });
 
-    // The theme can flip while the modal is open — via the toggle (which sets
-    // data-theme) or the OS. Canvas can't re-read CSS variables on its own, so
-    // both paths have to tell it to repaint.
+    // theme can flip while the modal is open, via the toggle or the os. canvas
+    // can't re-read css variables itself, so both paths have to say repaint.
     const media = window.matchMedia("(prefers-color-scheme: dark)");
     const repaint = () => paint(c, s);
     media.addEventListener("change", repaint);

@@ -25,7 +25,7 @@ import {
 
 type Filter = "all" | SignalKind;
 
-/** Each endpoint, with the normaliser that turns it into a Signal. */
+/** each endpoint, with the normaliser that turns it into a Signal. */
 const SOURCES = [
   { path: "dip-detection", map: fromDip },
   { path: "alchemy-floors", map: fromAlch },
@@ -47,44 +47,41 @@ const KIND_ORDER: SignalKind[] = [
 export default function AnalyticsPage() {
   const [rows, setRows] = useState<Signal[] | null>(null);
   const [error, setError] = useState<string | null>(null);
-  /** Feeds that failed while others succeeded — a partial view, said out loud. */
+  /** feeds that failed while others didn't. a partial view, said out loud. */
   const [degraded, setDegraded] = useState<string[]>([]);
   const [updatedAt, setUpdatedAt] = useState<Date | null>(null);
   const [filter, setFilter] = useState<Filter>("dip");
-  // Return is the only metric comparable across signal kinds. Ceiling scales
-  // with how expensive an item is, so sorting by it just ranks capital.
+  // return is the only metric comparable across kinds. ceiling scales with how
+  // expensive an item is, so sorting by it just ranks capital.
   const [sort, setSort] = useState<SortKey>("roi");
 
   /**
-   * @param version When new data lands we need to bypass the CDN's 60-second
-   *   window. The obvious way is `?t=${Date.now()}` — and it's a trap: every
-   *   client gets a *different* URL, so none of them share a cache entry and
-   *   the refresh costs one upstream call per connected client, at exactly the
-   *   moment they all ask at once. The ntfy message id is the same string for
-   *   every subscriber, so all clients compute one URL: the first through pays,
-   *   the rest hit cache, and everyone sees the new data just as fast.
+   * @param version bypasses the cdn's 60s window when new data lands.
+   *   `?t=${Date.now()}` is the trap here - every client gets a different url,
+   *   so nobody shares a cache entry and the refresh costs one upstream call
+   *   per connected client, all at once. ntfy's message id is the same string
+   *   for every subscriber, so everyone computes one url and only the first
+   *   through pays.
    */
   const fetchData = useCallback(async (version?: string) => {
-    /*
-     * allSettled, not all. Six independent upstream reads: one of them 503ing
-     * is no reason to throw away the five that answered. `all` rejects on the
-     * first failure and we'd blank a working page over one bad feed.
-     */
+    // allSettled, not all - six independent reads, and one 503ing is no reason
+    // to bin the five that worked. `all` rejects on the first failure and we'd
+    // blank a working page over one bad feed.
     const results = await Promise.allSettled(
       SOURCES.map(async ({ path, map }) => {
         const res = await fetch(
           `/api/v1/${path}${version ? `?v=${encodeURIComponent(version)}` : ""}`
         );
 
-        // A non-2xx is a real failure — never fold it into an empty list.
+        // a non-2xx is a real failure. never fold it into an empty list.
         if (!res.ok) throw new Error(`${path} returned ${res.status}`);
 
         const body = await res.json();
         return {
           path,
           signals: map(body.data ?? []),
-          // v1 calls this `updated`; the pre-v1 shape called the same value
-          // `dataUpdated` (and also shipped it a second time as `timestamp`).
+          // v1 calls this `updated`, the old shape called it `dataUpdated`
+          // (and shipped it again as `timestamp`).
           updated: body.updated as string | undefined,
         };
       })
@@ -98,7 +95,7 @@ export default function AnalyticsPage() {
       console.error(`Analytics fetch failed: ${s.path}`, i === 0 ? rejection : "");
     });
 
-    // Every feed down is the one case where we genuinely know nothing, and it
+    // every feed down is the one case where we genuinely know nothing, and it
     // has to stay distinguishable from a quiet market.
     if (ok.length === 0) {
       setError(
@@ -115,8 +112,8 @@ export default function AnalyticsPage() {
       .reduce((a, b) => Math.max(a, b), 0);
     setUpdatedAt(newest ? new Date(newest) : new Date());
     setError(null);
-    // Named, not counted: "volume-profile is missing" is actionable, "5 of 6
-    // loaded" leaves the reader wondering which numbers they can trust.
+    // named, not counted - "volume-profile is missing" is actionable, "5 of 6
+    // loaded" just leaves you wondering which numbers to trust.
     setDegraded(failed.map((s) => s.path));
 
     if (version) audioSystem.playDataRefreshSound();
@@ -125,13 +122,13 @@ export default function AnalyticsPage() {
   useEffect(() => {
     fetchData();
 
-    // Instant updates: the collector pings ntfy.sh when new data lands.
+    // the collector pings ntfy.sh when new data lands.
     const source = new EventSource("https://ntfy.sh/osrs-ge-lotus-updates/sse");
     source.onmessage = (event) => {
       try {
         const parsed = JSON.parse(event.data);
-        // parsed.id is ntfy's message id: one value, delivered identically to
-        // every subscriber. That shared-ness is the whole point — see fetchData.
+        // parsed.id is ntfy's message id - one value, identical for every
+        // subscriber. that shared-ness is the point, see fetchData.
         if (parsed.message === "refresh") fetchData(parsed.id ?? String(parsed.time));
       } catch {
         if (event.data === "refresh") fetchData();
@@ -147,12 +144,11 @@ export default function AnalyticsPage() {
   }, [rows]);
 
   /*
-   * Dips is the landing view, but it's also the only filter that's routinely
-   * empty — a quiet market produces none, and the chip for a kind with no rows
-   * isn't rendered at all. Defaulting there unconditionally would strand you on
-   * "Nothing worth buying right now" with no visible tab to leave by, which
-   * reads as broken rather than as a quiet market. So the fallback to All runs
-   * once, on the first load, and never fights a filter you chose yourself.
+   * dips is the landing view but also the only filter that's routinely empty -
+   * a quiet market produces none, and a chip with no rows isn't rendered. so
+   * defaulting there would strand you on "nothing worth buying right now" with
+   * no visible tab out, which reads as broken. the fallback to All runs once on
+   * first load and never fights a filter you picked yourself.
    */
   const defaulted = useRef(false);
   useEffect(() => {
@@ -162,10 +158,10 @@ export default function AnalyticsPage() {
   }, [rows, counts.dip]);
 
   /*
-   * The list is ranked, so it grows rather than paginating: nobody looks for
-   * page 4 of "best opportunities", and numbered pages would chop the ranking
-   * into chunks. Rendering all ~190 rows at once is mostly a DOM and SVG cost
-   * — sprites are lazy — but there's no reason to pay it before it's asked for.
+   * ranked list, so it grows instead of paginating - nobody wants page 4 of
+   * "best opportunities" and numbered pages chop the ranking into chunks.
+   * rendering all ~190 at once is mostly dom and svg cost, but no reason to pay
+   * it before someone asks.
    */
   const PAGE = 25;
   const [shown, setShown] = useState(PAGE);
@@ -178,19 +174,18 @@ export default function AnalyticsPage() {
   const sorts = useMemo(() => availableSorts(filtered), [filtered]);
 
   /*
-   * `sort` is what the reader asked for; this is what the current rows can
-   * actually do. Breakout and confluence publish no return, so "Best return"
-   * can't apply there and we fall back to the order the analysis produced
-   * rather than leaving a control that silently does nothing.
+   * `sort` is what was asked for, this is what the current rows can do.
+   * breakout and confluence publish no return, so "best return" can't apply and
+   * we fall back to the analysis order rather than leaving a control that
+   * silently does nothing.
    *
-   * The fallback is derived, never written back to state. Clamping `sort`
-   * itself was one-way — visiting breakout demoted it to "ranked" and nothing
-   * ever restored it, so coming back to dips silently re-sorted the list and
-   * the Lede headlined a different item than it had a moment earlier.
+   * derived, never written back to state. clamping `sort` itself was one-way -
+   * visiting breakout demoted it to "ranked" and nothing restored it, so coming
+   * back to dips silently re-sorted and the Lede headlined a different item.
    */
   const effectiveSort = sorts.includes(sort) ? sort : "ranked";
 
-  // Any change to what's being listed starts the count over.
+  // any change to what's listed starts the count over.
   useEffect(() => setShown(PAGE), [filter, effectiveSort]);
 
   const matched = useMemo(
@@ -206,7 +201,7 @@ export default function AnalyticsPage() {
   return (
     <>
       <div className="border-b border-[var(--band-line)] bg-band text-band-ink">
-        {/* Ticker picks its own ticks — only rows that can state a real move. */}
+        {/* Ticker picks its own ticks, only rows that can state a real move. */}
         {rows && <Ticker rows={rows} />}
         <div className="mx-auto max-w-[1080px] px-[var(--s5)]">
           <Masthead
@@ -218,7 +213,7 @@ export default function AnalyticsPage() {
             }
           />
           {isLive ? (
-            <Lede top={visible[0]} />
+            <Lede top={visible[0]} filter={filter} />
           ) : (
             <BandMessage
               title={
@@ -237,9 +232,9 @@ export default function AnalyticsPage() {
         {rows !== null && !error && (
           <div className="sticky top-0 z-20 flex items-center gap-3 border-b border-line bg-ground py-[var(--s3)] sm:py-[var(--s4)]">
             {/*
-             * One line, always. Wrapping put three rows of chips above the
-             * fold on a phone and pushed the actual list off screen; the chips
-             * scroll sideways instead.
+             * one line, always. wrapping put three rows of chips above the
+             * fold on a phone and pushed the list off screen, so they scroll
+             * sideways instead.
              */}
             <ChipStrip>
               <Chip
@@ -290,9 +285,9 @@ export default function AnalyticsPage() {
         )}
 
         {/*
-          * A feed that failed is not a feed with nothing in it. Without this
-          * line, a 503 on volume-profile looks exactly like "no volume signals
-          * today" — the same lie the API used to tell, moved into the UI.
+          * a failed feed is not a feed with nothing in it. without this line a
+          * 503 on volume-profile looks exactly like "no volume signals today" -
+          * the same lie the api used to tell, moved into the ui.
           */}
         {!error && degraded.length > 0 && (
           <div className="mb-[var(--s4)] rounded-sm border border-line-hi px-3 py-2 text-[13.5px] text-muted">
@@ -339,27 +334,23 @@ export default function AnalyticsPage() {
 }
 
 /**
- * The horizontal chip strip.
+ * the horizontal chip strip.
  *
- * A touch device already scrolls this — a swipe is a scroll. A mouse has no
- * equivalent: the scrollbar is hidden, so on any window narrow enough to
- * overflow there is nothing to grab and the chips past the fade are
- * unreachable. So the drag is implemented here, for mouse pointers only —
- * touch keeps its native momentum scrolling, which is better than anything
- * we'd hand-roll.
+ * touch already scrolls this, a swipe is a scroll. a mouse has no equivalent -
+ * the scrollbar is hidden, so on a narrow enough window there's nothing to grab
+ * and the chips past the fade are unreachable. hence the drag, mouse only.
+ * touch keeps its native momentum scrolling.
  *
- * A drag that ends over a chip is followed by a `click`, so releasing the
- * mouse would otherwise change the filter. `moved` tracks whether the pointer
- * travelled far enough to count as a drag, and the capture-phase handler eats
- * the click if it did — see `end` for why that suppression is on a timer.
+ * a drag ending over a chip is followed by a `click`, so letting go would
+ * change the filter. `moved` tracks whether the pointer went far enough to
+ * count as a drag and the capture-phase handler eats the click if it did - see
+ * `end` for why that's on a timer.
  *
- * The wheel is deliberately left alone. This bar is sticky and spans the
- * window, so turning a vertical wheel into a horizontal scroll would freeze
- * the page any time the cursor happened to be resting over it. Shift+wheel
- * already scrolls it horizontally, for free, in every browser.
+ * wheel is left alone on purpose. the bar is sticky and spans the window, so
+ * turning a vertical wheel into horizontal scroll would freeze the page any
+ * time the cursor rested over it. shift+wheel already does it for free.
  *
- * Keyboard needs nothing: the chips are real buttons, so tabbing to one that
- * is off-screen scrolls it into view by itself.
+ * keyboard needs nothing, the chips are real buttons.
  */
 function ChipStrip({ children }: { children: React.ReactNode }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -372,8 +363,8 @@ function ChipStrip({ children }: { children: React.ReactNode }) {
   const swallowClick = useRef(false);
 
   /**
-   * Which edges have content hidden past them. Doubles as the overflow test:
-   * if neither edge can move, everything fits and there is nothing to drag.
+   * which edges have content hidden past them. doubles as the overflow test -
+   * if neither can move then everything fits and there's nothing to drag.
    */
   const [edge, setEdge] = useState({ left: false, right: false });
   const overflowing = edge.left || edge.right;
@@ -383,14 +374,14 @@ function ChipStrip({ children }: { children: React.ReactNode }) {
     if (!el) return;
     const left = el.scrollLeft > 1;
     const right = el.scrollWidth - el.clientWidth - el.scrollLeft > 1;
-    // Returning `prev` unchanged lets React bail out — this runs on every
-    // scroll event, and the answer almost never changes.
+    // returning `prev` unchanged lets react bail out. this runs on every
+    // scroll event and the answer almost never changes.
     setEdge((prev) =>
       prev.left === left && prev.right === right ? prev : { left, right }
     );
   }, []);
 
-  // Re-measure when the strip is resized.
+  // re-measure when the strip resizes.
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
@@ -409,7 +400,7 @@ function ChipStrip({ children }: { children: React.ReactNode }) {
       /*
        * The click fires right after this and clears the flag itself. But a
        * drag that ends over a gap, over the sort control, or off the strip
-       * entirely produces NO click — and a flag left standing would eat the
+       * entirely produces NO click - and a flag left standing would eat the
        * next real one, making a chip look dead for exactly one press. This
        * timer lands after any click that does arrive, so the suppression can
        * never outlive the gesture that armed it.
@@ -447,7 +438,7 @@ function ChipStrip({ children }: { children: React.ReactNode }) {
            * Capturing on pointerdown breaks every chip. A captured pointer
            * retargets the compatibility mouse events to the capturing element,
            * so mousedown and mouseup both resolve to this div rather than to
-           * the button under the cursor — and `click`, which is derived from
+           * the button under the cursor - and `click`, which is derived from
            * that pair, fires on the div too. The chip's own onClick never runs.
            * It only showed up in the narrow view because that's the only place
            * `overflowing` is true and the capture happened at all.
@@ -460,8 +451,8 @@ function ChipStrip({ children }: { children: React.ReactNode }) {
 
           /*
            * Take the baseline here rather than at pointerdown. Pressing a
-           * button focuses it, and a chip that is only half visible — exactly
-           * the one sitting under the fade — gets scrolled into view by the
+           * button focuses it, and a chip that is only half visible - exactly
+           * the one sitting under the fade - gets scrolled into view by the
            * browser immediately after pointerdown. A baseline captured before
            * that lands is stale by however far the browser moved, and the
            * first frame of the drag jumps by that much.

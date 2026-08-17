@@ -7,15 +7,13 @@ import {
 } from "@/lib/summaries/alchemy";
 
 /**
- * GET /api/osrs/alchemy-floors — the pre-v1 shape.
+ * GET /api/osrs/alchemy-floors - pre-v1 shape, frozen contract.
+ * see /api/osrs/dip-detection for why.
  *
- * Frozen contract. See /api/osrs/dip-detection for why these paths still exist.
+ * only legacy route with an `extra` block - the old response had four lines of
+ * static prose under `metadata`. nothing reads it, hence v1 dropping it.
  *
- * This is the only legacy route carrying an `extra` block: the old response
- * included four lines of static prose under `metadata`. Nothing reads it and it
- * doesn't belong in a body, which is exactly why v1 drops it and this keeps it.
- *
- * New work goes to /api/v1/alchemy-floors.
+ * new work goes to /api/v1/alchemy-floors.
  */
 export async function GET() {
   const requestId = newRequestId();

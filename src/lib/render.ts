@@ -1,30 +1,18 @@
 /**
- * THE ENVELOPE IS A RENDERING CONCERN.
+ * just the response wrapping - fetching is upstream.ts, analysis is
+ * summaries/*.ts. only this bit differs between versions, so v2 costs one
+ * function here instead of a parallel copy of every route.
  *
- * This is the whole trick to supporting two API versions without forking the
- * codebase. A route does three separable things:
- *
- *   1. get the data        (src/lib/upstream.ts)
- *   2. compute the answer  (src/lib/summaries/*.ts)
- *   3. wrap it in a shape  ← this file
- *
- * Only (3) differs between versions. Once it's pulled out, a second version of
- * the whole API costs one function here plus eight lines per route — instead of
- * a parallel copy of every handler that drifts out of sync the first time you
- * fix a bug in one and forget the other.
- *
- * The rule that makes it work: **the analysis never knows which version is
- * asking.** If `buildDips()` ever takes a `version` argument, this has failed
- * and the fork has just moved somewhere less visible.
+ * keep the analysis ignorant of who's asking. if buildDips() ever takes a
+ * `version` arg the fork has just moved somewhere harder to spot.
  */
 
 import { NextResponse } from "next/server";
 import { SUMMARY_CACHE } from "@/lib/upstream";
 
-/** What every summary analysis returns, before anyone decides how to dress it. */
 export interface Payload<T> {
   data: T[];
-  /** ISO timestamp from the collector, or null if it didn't say. */
+  /** ISO timestamp from the collector, null if it didn't say. */
   updated: string | null;
   count: number;
 }
@@ -34,46 +22,25 @@ function headers(requestId: string) {
 }
 
 /**
- * v1 — the current shape.
- *
- * Note what's absent: `success`. The HTTP status line already carries whether
- * the request worked, and a body field that repeats it is a second source of
- * truth that will eventually disagree with the first. When it does, no client
- * knows which to believe. Errors already followed this rule (`errors.ts` emits
- * `{error:{…}}` with no boolean); this is the success side catching up.
- *
- * `cached` is gone too — it was always false, and `x-vercel-cache` answers that
- * question honestly without us maintaining it.
+ * v1. no `success` - errors.ts already worked this way, this is the happy path
+ * catching up. `cached` is gone too, it was hardcoded false and x-vercel-cache
+ * answers that properly anyway.
  */
 export function v1<T>(payload: Payload<T>, requestId: string) {
   return NextResponse.json(payload, { headers: headers(requestId) });
 }
 
 /**
- * The shape this API shipped before v1 existed.
+ * the shape we shipped before v1. frozen, don't tidy it - `success: true` is
+ * redundant, `timestamp` is `updated` as epoch ms and `dataUpdated` is the same
+ * value again under another name. all three stay, clients are already on them.
  *
- * **Treat this function as frozen.** It is not code to be improved — it's a
- * promise made to clients already running, which is the only reason the old
- * paths still exist. Every field here is preserved exactly as it was, including
- * `success: true` (redundant), `timestamp` (derived from `updated`), and
- * `dataUpdated` (the same value under a second name). Tidying any of them would
- * break the contract this function exists to keep.
- *
- * When telemetry says nobody calls the old paths any more, delete this function
- * and those routes together. That's the payoff: retiring a version becomes a
- * decision you get to make, rather than a break you inflict.
+ * delete this and the /api/osrs routes together once nothing calls them.
  */
 export function legacy<T>(
   payload: Payload<T>,
   requestId: string,
-  /**
-   * Per-endpoint fields the old shape carried and this one doesn't.
-   *
-   * Only `alchemy-floors` uses it, for a `metadata` block of static prose about
-   * the strategy. Nothing reads it, and it doesn't belong in a response body at
-   * all — which is precisely why it's dropped from v1 and kept here. A frozen
-   * contract keeps its warts; that's what makes it a contract.
-   */
+  /** only alchemy-floors uses this, for a `metadata` block nothing reads. */
   extra?: Record<string, unknown>
 ) {
   return NextResponse.json(

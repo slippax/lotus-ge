@@ -1,9 +1,9 @@
 /**
- * A word-sized chart: no axes, no gridlines, endpoint emphasised.
+ * word-sized chart. no axes, no gridlines, endpoint emphasised.
  *
- * Drawn only from real points. Rows whose analysis keeps no price history pass
- * an empty series and get an em dash instead — a blank cell reads as a bug,
- * a dash reads as "nothing recorded here".
+ * only drawn from real points - rows whose analysis keeps no history pass an
+ * empty series and get an em dash. a blank cell reads as a bug, a dash reads as
+ * "nothing recorded here".
  */
 export default function Sparkline({
   series,

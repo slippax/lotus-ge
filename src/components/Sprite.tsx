@@ -4,11 +4,9 @@ import { useState } from "react";
 import { spriteUrl } from "@/lib/signals";
 
 /**
- * An OSRS item sprite from the wiki.
- *
- * Not every item name maps to a wiki filename, so a miss has to degrade to
- * empty space rather than a broken-image box — a broken box reads as a bug,
- * a gap reads as "no picture for this one".
+ * not every item name maps to a wiki filename, so a miss degrades to empty
+ * space rather than a broken-image box. a broken box reads as a bug, a gap
+ * reads as "no picture for this one".
  */
 export default function Sprite({
   name,
@@ -18,12 +16,10 @@ export default function Sprite({
   size?: number;
 }) {
   /*
-   * Remember *which* url failed, not merely that one did.
-   *
-   * A boolean here is a trap: React reuses this component instance when only
-   * `name` changes, so a boolean stays true forever and every later item
-   * rendered in the same slot inherits the failure. The hero has a single
-   * sprite slot, so one missing icon would blank it permanently.
+   * remember which url failed, not just that one did. a boolean is a trap here
+   * - react reuses the instance when only `name` changes, so it stays true
+   * forever and every later item in the same slot inherits the failure. the
+   * hero has one sprite slot, so a single miss would blank it permanently.
    */
   const [failedSrc, setFailedSrc] = useState<string | null>(null);
   const src = spriteUrl(name);

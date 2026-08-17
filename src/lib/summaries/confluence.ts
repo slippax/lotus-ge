@@ -1,7 +1,7 @@
 /**
- * Confluence: items where several timeframe averages agree on direction.
+ * items where several timeframe averages agree on direction.
  *
- * HTTP-free, version-blind. See `src/lib/summaries/dips.ts` for why.
+ * http-free and version-blind, see dips.ts for why.
  */
 
 import { fetchSummary } from "@/lib/upstream";
@@ -63,7 +63,7 @@ function processConfluenceData(
   }));
 }
 
-/** Throws `AppError` (503) if the upstream won't answer — never an empty list. */
+/** throws a 503 if the upstream won't answer. never an empty list. */
 export async function buildConfluence(
   requestId: string
 ): Promise<Payload<ConfluenceOpportunity>> {

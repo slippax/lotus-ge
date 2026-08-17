@@ -3,25 +3,15 @@ import { errors, newRequestId, toErrorResponse } from "@/lib/errors";
 import { getMapping } from "@/lib/wiki";
 
 /**
- * Items, filtered.
+ * GET /api/v1/items?name=Mahogany%20logs
  *
- *   GET /api/v1/items?name=Mahogany%20logs
+ * exists because of a gap in our own data - the summaries collect.py commits
+ * only have display names, no ids. so the frontend holds "Mahogany logs" and
+ * needs 6332 before it can ask for history. real fix is the collector emitting
+ * typeid, then this is just a convenience.
  *
- * This exists because of a gap in our own data: the summaries `collect.py`
- * commits identify items by display name only, with no item id anywhere. The
- * frontend therefore holds "Mahogany logs" and needs 6332 before it can ask
- * for history.
- *
- * The right long-term fix is for the collector to emit `typeid` alongside
- * `ItemName`, at which point this route becomes a convenience rather than a
- * necessity. It's worth having either way — "find me the item called X" is a
- * reasonable thing to ask an item collection.
- *
- * Note the shape: a *collection*, so a filter that matches nothing is `200`
- * with an empty array, not `404`. "No items match this filter" is a successful
- * answer to a well-formed question. That is the opposite of the single-item
- * case in ./[id]/history, where an unknown id genuinely is a 404 — and the
- * difference is worth being deliberate about, because getting it backwards is
+ * it's a collection, so no match is 200 + empty array, not a 404. opposite of
+ * ./[id]/history where an unknown id really is a 404. getting that backwards is
  * how you end up with 404s that mean "empty page 3".
  */
 export async function GET(request: Request) {
@@ -63,8 +53,7 @@ export async function GET(request: Request) {
       {
         status: 200,
         headers: {
-          // Item identity doesn't change. Cache it hard — this lookup should
-          // cost the browser nothing after the first click.
+          // item identity doesn't change, so cache it hard.
           "Cache-Control": "public, s-maxage=86400, stale-while-revalidate=604800",
           "x-request-id": requestId,
         },

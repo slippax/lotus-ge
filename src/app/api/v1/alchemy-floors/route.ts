@@ -3,10 +3,8 @@ import { v1 } from "@/lib/render";
 import { buildAlchemy } from "@/lib/summaries/alchemy";
 
 /**
- * GET /api/v1/alchemy-floors
- *
- * Same data as /api/osrs/alchemy-floors, without `success` and without the
- * `metadata` block of static prose — that's documentation, not a response.
+ * GET /api/v1/alchemy-floors - same data as the /api/osrs one, minus `success`
+ * and minus the `metadata` prose block. that's docs, not a response.
  */
 export async function GET() {
   const requestId = newRequestId();

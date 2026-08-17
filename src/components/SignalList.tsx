@@ -7,10 +7,9 @@ import Sparkline from "./Sparkline";
 import Sprite from "./Sprite";
 
 /*
- * Mobile keeps the two things you decide on — price and the headline metric —
- * and drops the sparkline and the secondary metric. Hiding every number on
- * small screens, which is what `hidden md:block` on all of them amounted to,
- * left a list of names and no way to compare them.
+ * mobile keeps the two things you decide on, price and the headline metric, and
+ * drops the sparkline and secondary. `hidden md:block` on all of them meant a
+ * list of names with no way to compare them.
  */
 const GRID =
   "grid grid-cols-[22px_minmax(0,1fr)_auto] md:grid-cols-[34px_minmax(0,1fr)_96px_118px_96px_112px] gap-[var(--s3)] md:gap-[var(--s4)]";
@@ -22,12 +21,12 @@ const TONE: Record<string, string> = {
 };
 
 /**
- * One ranked list, not six tables.
+ * one ranked list, not six tables.
  *
- * On "All" the two metric columns are Return and Ceiling — the only figures
- * comparable across kinds. Filter to a single kind and they become that
- * analysis's own metrics, so a breakout shows its band width rather than an
- * empty Return cell it was never going to fill.
+ * on All the two metric columns are Return and Ceiling, the only figures
+ * comparable across kinds. filter to one kind and they become that analysis's
+ * own metrics, so a breakout shows band width instead of an empty Return cell
+ * it was never going to fill.
  */
 export default function SignalList({
   rows,
@@ -42,9 +41,8 @@ export default function SignalList({
       : [rows[0]?.detail[0].k ?? "", rows[0]?.detail[1].k ?? ""];
 
   /*
-   * Which item's history is open, by name — the rows carry no item id, so the
-   * modal resolves one itself. Held here rather than per-row so only one chart
-   * is ever mounted.
+   * which item's history is open, by name - rows carry no item id so the modal
+   * resolves one itself. held here not per-row so only one chart is mounted.
    */
   const [open, setOpen] = useState<string | null>(null);
 
@@ -107,10 +105,9 @@ function Row({
       : row.detail;
 
   /*
-   * The whole row is the hit target. A row is one item and clicking it has one
-   * meaning — "show me this" — so a dedicated chart icon would be a smaller
-   * target for no gain. A real <button> rather than a div with a click handler,
-   * so it is reachable by keyboard and announced as pressable.
+   * whole row is the hit target - one item, one meaning, so a dedicated chart
+   * icon would just be a smaller target. real <button> not a div with onClick
+   * so it's keyboard reachable and announced as pressable.
    */
   return (
     <button

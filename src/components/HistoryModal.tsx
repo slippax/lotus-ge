@@ -6,16 +6,15 @@ import Sprite from "./Sprite";
 import { fmt } from "@/lib/signals";
 
 /**
- * Price history for one item, over the list.
+ * price history for one item, over the list.
  *
- * The states here exist because the API distinguishes them. That is the whole
- * payoff of the route work: a blank chart used to be the only possible
- * rendering of four different situations, and now each one says what happened.
+ * these states exist because the api distinguishes them - a blank chart used to
+ * be the only rendering of four different situations.
  *
  *   200 with points   -> the chart
- *   200 with none     -> a real item nobody traded in this window
+ *   200 with none     -> real item, nobody traded it in this window
  *   404               -> no such item
- *   503               -> the wiki is unreachable; retrying is worthwhile
+ *   503               -> wiki unreachable, worth retrying
  */
 
 const RANGES = [
@@ -55,13 +54,10 @@ export default function HistoryModal({
   const dialogRef = useRef<HTMLDialogElement>(null);
 
   /*
-   * A real <dialog>, opened with showModal().
-   *
-   * The browser then handles what a modal has to get right and what we'd
-   * otherwise hand-roll badly: Tab is trapped inside, focus returns to the row
-   * that opened it on close, the content behind is inert to screen readers,
-   * Esc closes, and the whole thing renders in the top layer — above every
-   * stacking context on the page, so no portal and no z-index arithmetic.
+   * real <dialog> + showModal(), so the browser handles the bits we'd hand-roll
+   * badly: tab trapped inside, focus back to the row on close, content behind
+   * inert to screen readers, esc closes, and it renders in the top layer - so
+   * no portal and no z-index arithmetic.
    */
   useEffect(() => {
     const dialog = dialogRef.current;
@@ -69,8 +65,7 @@ export default function HistoryModal({
 
     if (!dialog.open) dialog.showModal();
 
-    // The list behind stays put while the chart is open. showModal() does not
-    // lock scrolling — the top layer is the only thing it gives you for free.
+    // showModal() doesn't lock scrolling, the top layer is all you get free.
     const previous = document.body.style.overflow;
     document.body.style.overflow = "hidden";
 
@@ -79,14 +74,11 @@ export default function HistoryModal({
     };
 
     /*
-     * Note what this cleanup deliberately does NOT do: call dialog.close().
-     *
-     * close() dispatches a real `close` event, which runs the onClose handler,
-     * which unmounts this component — so closing on cleanup means the effect's
-     * own teardown destroys the modal. StrictMode makes it obvious (mount,
-     * cleanup, mount => the dialog opened and killed itself), but it would be
-     * wrong regardless. Removing the element from the DOM takes it out of the
-     * top layer on its own.
+     * deliberately does not call dialog.close(). close() fires a real `close`
+     * event -> onClose -> unmounts this component, so closing on cleanup means
+     * the teardown destroys the modal. strictmode makes it obvious (mount,
+     * cleanup, mount and the dialog killed itself). removing the element takes
+     * it out of the top layer anyway.
      */
   }, []);
 
@@ -97,8 +89,8 @@ export default function HistoryModal({
       setState({ status: "loading" });
 
       try {
-        // Our summaries carry names, not ids, so identity is resolved first.
-        // Cached for a day upstream, so this is free after the first click.
+        // summaries carry names not ids, so resolve identity first. cached a
+        // day upstream, so it's free after the first click.
         const lookup = await fetch(
           `/api/v1/items?name=${encodeURIComponent(name)}`,
         );
@@ -106,8 +98,8 @@ export default function HistoryModal({
 
         if (cancelled) return;
 
-        // An empty collection is a successful answer here — it means we hold a
-        // name the wiki doesn't know, which is our data problem, not an outage.
+        // empty is a successful answer here - we hold a name the wiki doesn't
+        // know, which is our data problem, not an outage.
         if (!found.items?.length) {
           setState({ status: "missing" });
           return;
@@ -138,7 +130,7 @@ export default function HistoryModal({
 
         const data: HistoryResponse = await res.json();
 
-        // Distinguishable at last: the item is real, the window is just quiet.
+        // distinguishable at last - real item, quiet window.
         if (!data.points.some((p) => p.low !== null)) {
           setState({ status: "empty" });
           return;
@@ -159,11 +151,9 @@ export default function HistoryModal({
   }, [name, range]);
 
   /**
-   * The header reads the hovered point, falling back to the latest one.
-   *
-   * Percent change is always measured from the start of the visible window, so
-   * it answers "what has it done over this range" rather than drifting as the
-   * pointer moves.
+   * header reads the hovered point, falling back to the latest. percent change
+   * is always from the start of the visible window, so it answers "what's it
+   * done over this range" instead of drifting as the pointer moves.
    */
   const readout = useMemo(() => {
     const points = state.status === "ready" ? state.data.points : [];
@@ -177,8 +167,8 @@ export default function HistoryModal({
     const at = new Date((hover ? hover.t : last.t) * 1000);
     const base = first.low as number;
 
-    // Matches the dashed reference line the chart draws. Stated here rather
-    // than labelled on the plot, where the badge covered the latest prices.
+    // matches the dashed line the chart draws. stated here rather than on the
+    // plot, where the badge covered the latest prices.
     const withPrice = points.filter((p) => p.low !== null);
     const mean = Math.round(
       withPrice.reduce((sum, p) => sum + (p.low as number), 0) /
@@ -197,13 +187,11 @@ export default function HistoryModal({
   const onHover = useCallback((p: HoveredPoint | null) => setHover(p), []);
 
   /*
-   * UTC, deliberately, and labelled as such on the intraday view.
-   *
-   * The chart's own axis renders in UTC, and the underlying data is UTC-native
-   * — the 24h buckets are UTC midnight boundaries. Formatting this readout in
-   * the browser's local zone made the header say 08:40 while the axis directly
-   * below it said 12:40 for the same point. Two correct clocks disagreeing is
-   * worse than one clock the reader has to translate.
+   * utc on purpose, and labelled as such on the intraday view. the axis renders
+   * utc and the data is utc-native (24h buckets are utc midnight). formatting
+   * this in local time had the header saying 08:40 while the axis right below
+   * said 12:40 for the same point. two correct clocks disagreeing is worse than
+   * one you have to translate.
    */
   const dateFormat: Intl.DateTimeFormatOptions =
     range === "1d"
@@ -227,14 +215,14 @@ export default function HistoryModal({
     <dialog
       ref={dialogRef}
       aria-label={`Price history for ${name}`}
-      // Fires for Esc and for close() alike, so there is one exit path.
+      // fires for esc and close() alike, so there's one exit path.
       onClose={onClose}
       className="m-0 h-full max-h-none w-full max-w-none bg-transparent p-0 text-ink backdrop:bg-[rgba(16,14,10,0.55)] backdrop:backdrop-blur-[2px]"
     >
       <div
         className="flex h-full items-end justify-center sm:items-center sm:p-[var(--s4)]"
-        // Clicking the space around the card closes it. The card itself stops
-        // propagation, so this only ever fires on the backdrop area.
+        // click outside the card closes. the card stops propagation, so this
+        // only fires on the backdrop.
         onClick={() => dialogRef.current?.close()}
         role="presentation"
       >
@@ -257,8 +245,8 @@ export default function HistoryModal({
 
             <button
               type="button"
-              // The dialog's own close() so every exit — button, Esc, backdrop —
-              // runs through the same `onClose` event and restores focus.
+              // dialog's own close() so every exit - button, esc, backdrop -
+              // goes through the same onClose and restores focus.
               onClick={() => dialogRef.current?.close()}
               aria-label="Close"
               className="shrink-0 cursor-pointer rounded-sm border border-line-hi px-2 py-1 text-[13px] text-muted transition-colors hover:border-muted hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold)]"

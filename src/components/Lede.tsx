@@ -1,20 +1,25 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { fmt, gp, KIND_LABEL, type Signal } from "@/lib/signals";
+import {
+  fmt,
+  gp,
+  KIND_LABEL,
+  KIND_LEDE,
+  type Signal,
+  type SignalKind,
+} from "@/lib/signals";
 import Sprite from "./Sprite";
 
 /**
- * The best opportunity right now, stated rather than tabulated.
- *
- * A table shows you data and leaves you to do the work. This answers the
- * question the user actually arrived with, and everything below it is the
- * supporting detail.
+ * the best opportunity right now, stated rather than tabulated. a table shows
+ * you data and leaves you to do the work - this answers the question you
+ * arrived with, and everything below is supporting detail.
  */
 /**
- * The headline figure. Kinds that publish a return lead with it; the rest lead
- * with their own primary metric (a breakout's band width, a confluence run's
- * move over the month) rather than a giant em dash.
+ * the headline figure. kinds that publish a return lead with it, the rest lead
+ * with their own primary metric (band width, the month's move) rather than a
+ * giant em dash.
  */
 function headline(top: Signal): { text: string; label: string; animate: number | null } {
   if (top.roi !== null) {
@@ -29,12 +34,20 @@ function headline(top: Signal): { text: string; label: string; animate: number |
   };
 }
 
-export default function Lede({ top }: { top: Signal }) {
+export default function Lede({
+  top,
+  filter,
+}: {
+  top: Signal;
+  /** the active chip, not `top.kind` - the eyebrow describes the list you're
+   *  looking at, and on All the leader's own kind is incidental. */
+  filter: "all" | SignalKind;
+}) {
   const head = headline(top);
   const value = useCountUp(head.animate ?? 0, top.id);
   const ref = reference(top);
 
-  // Preserve the sign and unit of the original string while animating.
+  // keep the sign and unit of the original string while animating.
   const shown =
     head.animate === null
       ? head.text
@@ -46,9 +59,26 @@ export default function Lede({ top }: { top: Signal }) {
   return (
     <div className="grid items-end gap-[var(--s6)] py-[var(--s4)] pb-[var(--s6)] md:grid-cols-[minmax(0,1fr)_auto]">
       <div>
-        <div className="mb-[var(--s4)] flex items-center gap-2 text-[12.5px] text-band-gold">
-          <span className="h-1.5 w-1.5 animate-[lotus-pulse_2.8s_ease-in-out_infinite] rounded-full bg-[var(--band-gold)]" />
-          Best opportunity right now
+        {/*
+         * a label, not a status. used to carry a pulsing dot identical to the
+         * one in Freshness just above, so the two read as a matched pair of
+         * live indicators. the pulse belongs to one thing only - whether prices
+         * are current - so this takes the wordmark's treatment instead.
+         */}
+        {/*
+         * a tag, not a status light. started as a pulsing gold dot which
+         * competed with the Freshness dot above - same shape, same animation,
+         * when only one of them is actually a state. a tint flags the section
+         * instead and avoids a third hairline in a band that already has two.
+         *
+         * --band-bloom is the band's translucent gold. `w-fit` keeps the tint
+         * on the words instead of stretching across the column.
+         */}
+        {/* pr is short by ~1.5px: letter-spacing is applied *after* the last
+            glyph too, so a symmetric px-2 sits visibly off-centre in the tint. */}
+        <div className="mb-[var(--s4)] w-fit rounded-sm bg-[var(--band-bloom)] py-1 pl-2 pr-[6.5px] text-[11px] font-medium uppercase tracking-[0.14em] text-band-gold">
+          Best {filter === "all" ? "" : `${KIND_LEDE[filter]} `}opportunity right
+          now
         </div>
 
         <div className="mb-[var(--s3)] flex items-center gap-[var(--s4)]">
@@ -79,8 +109,13 @@ export default function Lede({ top }: { top: Signal }) {
           {head.label}
         </div>
         {top.ceiling !== null && (
-          <div className="tnum mt-0.5 text-[14px] text-band-ink">
-            {gp(top.ceiling)} gp at the buy limit
+          /*
+           * `tnum` swaps to mono, so on the whole line the words went mono too
+           * and it read as console output. figure only.
+           */
+          <div className="mt-1 text-[13px] text-band-mute">
+            <span className="tnum text-band-ink">{gp(top.ceiling)}</span> gp at
+            the buy limit
           </div>
         )}
       </div>
@@ -98,9 +133,9 @@ function Fact({ k, v }: { k: string; v: string }) {
 }
 
 /**
- * The comparison number is whichever end of the series isn't the buy price,
- * labelled from the row's own labels — assuming series[0] is always "a month
- * ago" is true for confluence rows and wrong for every other kind.
+ * the comparison number is whichever end of the series isn't the buy price,
+ * labelled from the row's own labels. assuming series[0] is "a month ago" holds
+ * for confluence and is wrong for every other kind.
  */
 function reference(s: Signal): { k: string; v: number } | null {
   if (s.series.length < 2) return null;
@@ -112,7 +147,7 @@ function reference(s: Signal): { k: string; v: number } | null {
   return { k: k[0].toUpperCase() + k.slice(1), v };
 }
 
-/** Animates only when the featured item changes — replaying it on every sort
+/** only animates when the featured item changes. replaying on every sort
  *  click is noise, not feedback. */
 function useCountUp(target: number, key: string) {
   const [value, setValue] = useState(target);

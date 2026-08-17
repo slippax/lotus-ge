@@ -1,22 +1,16 @@
 /**
- * THE ONE PLACE WE TALK TO GITHUB.
+ * everything that talks to github. collect.py commits the summaries here every
+ * ~5 min and six routes read them. each route used to carry its own copy of
+ * these forty lines, bug included.
  *
- * `collect.py` commits JSON summaries to this repo every ~5 minutes. Six routes
- * read six of those files, and until now each one carried its own copy of the
- * same forty lines — including its own copy of the same bug.
+ * two things not to undo:
  *
- * Two rules live here, and they are the reason this file exists:
+ * upstream failure is a 503, never an empty list. fetch doesn't throw on a 403,
+ * so a bare try/catch says "no opportunities right now" when it means "we
+ * couldn't ask".
  *
- *   1. An upstream failure is a 503, never an empty list. `fetch` does not
- *      throw on a 403; if you only wrap it in try/catch you will report
- *      "no opportunities right now" when the truth is "we couldn't ask."
- *      Those are opposite situations and a client must be able to tell them
- *      apart.
- *
- *   2. Nothing here is cached in a module variable. Caching is HTTP's job
- *      (see SUMMARY_CACHE below) — a shared cache in front of the function,
- *      keyed by URL, that every visitor hits. A `let cache` inside a
- *      serverless function is per-instance and invisible to everyone else.
+ * no module-level cache. `let cache` in a serverless function is per-instance
+ * and invisible to everyone else. SUMMARY_CACHE below does it properly.
  */
 
 import { errors } from "@/lib/errors";
@@ -25,20 +19,14 @@ const OWNER_REPO = "slippax/lotus-ge";
 const UA = "lotus-ge (+https://github.com/slippax/lotus-ge)";
 
 /**
- * Authenticates our GitHub API calls, when a token is configured.
+ * unauth github is 60/hr per IP, and on vercel that IP is shared with other
+ * customers so it isn't even our budget. a token gets 5,000/hr in our own
+ * bucket - the isolation matters more than the ceiling.
  *
- * Unauthenticated requests get **60 per hour per IP** — and on Vercel that IP
- * is shared with other customers, so the budget isn't even ours to spend. A
- * token raises it to 5,000/hr in a bucket only we draw from. That is the whole
- * reason this exists: not the ceiling, the isolation.
+ * needs no scopes, the limit lifts just because the request is authenticated.
  *
- * The token needs no scopes. Rate limits lift because the request is
- * *authenticated*, not because of anything it's permitted to do — the file
- * we're reading is public and anyone can curl it without a token at all.
- *
- * Conditional so local dev behaves identically without one. You will never hit
- * 60 requests/hour from a laptop, so there's nothing to configure to work on
- * this.
+ * optional so dev works without one, but note a single /analytics load is 6
+ * calls, so 60/hr is ~10 page loads before you quietly drop to the raw fallback.
  */
 function authHeader(): Record<string, string> {
   const token = process.env.GITHUB_TOKEN;
@@ -46,21 +34,16 @@ function authHeader(): Record<string, string> {
 }
 
 /**
- * What every summary route sends back.
+ * cache header for the six summary routes.
  *
- * `s-maxage=60` is the whole scaling fix. The collector writes every ~5
- * minutes, so a 60-second window is fresher than the data ever is, and it
- * turns "six GitHub calls per visitor" into "six GitHub calls per minute,
- * regardless of how many visitors there are."
+ * s-maxage=60 is the scaling fix. collector only writes every ~5 min so 60s is
+ * fresher than the data ever gets, and it turns six github calls per visitor
+ * into six per minute regardless of traffic.
  *
- * `max-age=0` is deliberate: the browser revalidates every time, so a reload
- * always reflects what the shared cache holds. Without it, browsers apply
- * their own heuristic freshness and you get an unpredictable private cache on
- * top of a predictable shared one.
+ * max-age=0 keeps the browser revalidating - without it you get its heuristic
+ * freshness as an unpredictable private cache on top of a predictable shared one.
  *
- * `stale-while-revalidate=300` means nobody ever waits on GitHub: once the 60
- * seconds lapse, the next visitor is served the slightly-old copy instantly
- * while the refresh happens behind them.
+ * stale-while-revalidate=300 so nobody waits on github.
  */
 export const SUMMARY_CACHE =
   "public, max-age=0, s-maxage=60, stale-while-revalidate=300";
@@ -71,14 +54,14 @@ export interface Summary<T> {
 }
 
 /**
- * Local-only failure switch — nothing sets this in production.
+ * local failure switch, nothing sets this in prod.
  *
- *   UPSTREAM_FAIL=ratelimit npm run dev   GitHub 403s, as it does at 60 req/hr
- *   UPSTREAM_FAIL=garbage   npm run dev   GitHub returns 200 with nonsense
- *   UPSTREAM_FAIL=slow      npm run dev   GitHub takes 30s to answer
+ *   UPSTREAM_FAIL=ratelimit npm run dev   403, like github at 60/hr
+ *   UPSTREAM_FAIL=garbage   npm run dev   200 with a body that isn't json
+ *   UPSTREAM_FAIL=slow      npm run dev   30s to answer
  *
- * You cannot trust a failure path you have never watched run. This is how you
- * watch it without waiting for a real outage.
+ * lets you watch the failure paths without waiting for a real outage.
+ * `npm run tour` picks the mode up and demos it.
  */
 async function upstreamFetch(url: string, init?: RequestInit): Promise<Response> {
   const mode = process.env.UPSTREAM_FAIL;
@@ -114,7 +97,7 @@ async function upstreamFetch(url: string, init?: RequestInit): Promise<Response>
  * Fetch one summary file, or throw.
  *
  * @param file  filename under data/summaries/, e.g. "dipped-items.json"
- * @param label what to call this data in an error message a human will read
+ * @param label what to call this data in an error a human will read
  */
 export async function fetchSummary<T>(
   file: string,
@@ -127,8 +110,8 @@ export async function fetchSummary<T>(
   let response: Response;
 
   try {
-    // The API is tried first because it serves the commit's current content,
-    // where raw.githubusercontent sits behind its own ~5 minute CDN cache.
+    // api first - it serves the commit's current content, raw sits behind its
+    // own ~5 min CDN cache.
     response = await upstreamFetch(apiUrl, {
       headers: {
         "User-Agent": UA,
@@ -138,30 +121,30 @@ export async function fetchSummary<T>(
       },
     });
 
-    // The API is the path with the rate limit. The raw CDN is far more
-    // permissive, so it's the spare tyre — but note the log line: running on
-    // the spare indefinitely is exactly the kind of thing that stays invisible
-    // until someone goes looking. A 401 or 403 here with GITHUB_TOKEN set
-    // means the token is wrong or expired, and we are silently back on 60/hr.
+    // raw is the spare tyre, way more permissive. hence the log line - sitting
+    // on the spare for weeks is the sort of thing nobody notices. a 401/403
+    // here while GITHUB_TOKEN is set means the token's wrong.
+    //
+    // if this repo goes private, raw needs auth too and stops being an
+    // independent fallback. see docs/03-going-private.md.
     if (!response.ok) {
       const tokenNote =
         process.env.GITHUB_TOKEN && (response.status === 401 || response.status === 403)
-          ? " — check GITHUB_TOKEN, it may be expired or malformed"
+          ? " - check GITHUB_TOKEN, it may be expired or malformed"
           : "";
       console.log(
         `[${requestId}] GitHub API ${response.status} for ${file}, falling back to raw${tokenNote}`
       );
 
-      // Quantised to the minute, NOT Date.now(). A per-request buster makes
-      // every request a unique URL, which defeats every cache between here and
-      // GitHub — the same mistake as a per-client cache-buster, one layer up.
+      // quantised to the minute, not Date.now() - a per-request buster makes
+      // every URL unique and defeats every cache between here and github.
       const minute = Math.floor(Date.now() / 60_000);
       response = await upstreamFetch(`${rawUrl}?t=${minute}`, {
         headers: { "User-Agent": UA },
       });
     }
   } catch {
-    // fetch only rejects on a network-level failure: DNS, refused, timeout.
+    // fetch only rejects on network-level stuff: dns, refused, timeout.
     console.error(`[${requestId}] GitHub unreachable for ${file}`);
     throw errors.upstreamUnavailable(
       "github_unreachable",
@@ -169,9 +152,9 @@ export async function fetchSummary<T>(
     );
   }
 
-  // THE CHECK THAT USED TO BE MISSING. A 403/404/500 arrives here as a normal
-  // resolved Response, so without this line execution simply carried on and
-  // returned an empty list with a 200.
+  // the check that used to be missing. a 403/404/500 lands here as a perfectly
+  // normal resolved Response, so without this we carried on and served an empty
+  // list with a 200.
   if (!response.ok) {
     console.error(`[${requestId}] GitHub ${response.status} for ${file}`);
     throw errors.upstreamUnavailable(
@@ -184,8 +167,8 @@ export async function fetchSummary<T>(
   try {
     body = await response.json();
   } catch {
-    // A 200 carrying something that isn't JSON — a proxy error page, a
-    // truncated body. Still an upstream problem, still not our bug, so 503.
+    // 200 carrying something that isn't json - proxy error page, truncated
+    // body. their problem, not ours, so still a 503.
     console.error(`[${requestId}] unparseable body for ${file}`);
     throw errors.upstreamUnavailable(
       "github_malformed",
@@ -195,8 +178,8 @@ export async function fetchSummary<T>(
 
   const summary = body as { items?: unknown; updated?: unknown };
 
-  // Shape check. Without it, `items` being undefined would sail through and
-  // land as `.map is not a function` — a 500 blaming us for their bad data.
+  // without this an undefined `items` sails through and turns up later as
+  // ".map is not a function" - a 500 blaming us for their bad data.
   if (!Array.isArray(summary.items)) {
     console.error(`[${requestId}] no items array for ${file}`);
     throw errors.upstreamUnavailable(

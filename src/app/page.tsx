@@ -7,7 +7,7 @@ export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    // Redirect to analytics since we're using database data only
+    // analytics is the only real page
     router.push("/analytics");
   }, [router]);
   return (

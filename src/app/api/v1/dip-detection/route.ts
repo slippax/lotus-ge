@@ -3,9 +3,7 @@ import { v1 } from "@/lib/render";
 import { buildDips } from "@/lib/summaries/dips";
 
 /**
- * GET /api/v1/dip-detection
- *
- * The current shape. Same data as /api/osrs/dip-detection, without the
+ * GET /api/v1/dip-detection - same data as the /api/osrs one, without the
  * `success` field that duplicated the status line.
  */
 export async function GET() {

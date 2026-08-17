@@ -1,7 +1,7 @@
 /**
- * Recipe arbitrage: crafted products worth more than their ingredients.
+ * crafted products worth more than their ingredients.
  *
- * HTTP-free, version-blind. See `src/lib/summaries/dips.ts` for why.
+ * http-free and version-blind, see dips.ts for why.
  */
 
 import { fetchSummary } from "@/lib/upstream";
@@ -78,7 +78,7 @@ function processRecipeArbitrageData(
   }));
 }
 
-/** Throws `AppError` (503) if the upstream won't answer — never an empty list. */
+/** throws a 503 if the upstream won't answer. never an empty list. */
 export async function buildRecipes(
   requestId: string
 ): Promise<Payload<RecipeArbitrageOpportunity>> {

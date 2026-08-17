@@ -2,16 +2,14 @@ import { NextResponse } from "next/server";
 import { errors, newRequestId, toErrorResponse } from "@/lib/errors";
 
 /**
- * Item sprites, proxied and cached.
+ * item sprites, proxied and cached.
  *
- * Hotlinking the wiki directly from the browser means one request per row per
- * visitor — 50 sprites x every page load. The wiki throttles that (rightly),
- * and the images silently vanish.
+ * hotlinking the wiki from the browser is one request per row per visitor - 50
+ * sprites every page load. the wiki throttles that, rightly, and the images
+ * quietly vanish.
  *
- * Proxying lets us cache hard: sprites effectively never change, so the CDN
- * and the browser can hold them for a week and the wiki sees almost nothing.
- * Same instinct as any upstream you don't own: cache it, identify yourself,
- * and fail loudly rather than silently.
+ * proxying lets us cache hard. sprites never change, so the cdn and browser
+ * hold them a week and the wiki barely sees us.
  */
 
 const WIKI = "https://oldschool.runescape.wiki/images";
@@ -19,7 +17,7 @@ const WIKI = "https://oldschool.runescape.wiki/images";
 async function tryFetch(file: string): Promise<Response | null> {
   const res = await fetch(`${WIKI}/${encodeURI(file)}.png`, {
     headers: {
-      // Identify ourselves. An anonymous scraper is what gets blocked.
+      // identify ourselves, anonymous scrapers are what get blocked.
       "User-Agent": "lotus-ge (+https://github.com/slippax/lotus-ge)",
     },
     next: { revalidate: 604800 },
@@ -40,10 +38,9 @@ export async function GET(request: Request) {
       );
     }
 
-    // Stackable items (bolts, arrows, darts, javelins) are filed under a "_5"
-    // suffix on the wiki — "Runite bolts" lives at "Runite_bolts_5.png".
-    // Trying the plain name first and falling back covers the whole class
-    // without maintaining a list of every stackable in the game.
+    // stackables (bolts, arrows, darts, javelins) are filed under a "_5"
+    // suffix - "Runite bolts" is at "Runite_bolts_5.png". trying plain first
+    // and falling back covers the lot without maintaining a list.
     const base = item.replace(/ /g, "_");
     const upstream = (await tryFetch(base)) ?? (await tryFetch(`${base}_5`));
 

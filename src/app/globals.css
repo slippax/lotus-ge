@@ -39,7 +39,10 @@
   --band-line: rgba(24, 21, 16, 0.16);
   --band-up:   #1B7337;
   --band-down: #A93725;
-  --band-bloom:rgba(140, 96, 16, 0.14);
+  /* The Lede's eyebrow tag: a hint of gold behind the label, not a filled
+     badge. Keep the alpha low in both themes — the gold text carries the
+     emphasis, and the fill only needs to separate the tag from the band. */
+  --band-bloom:rgba(140, 96, 16, 0.07);
   --grain-op:  0.30;
 
   /* spacing scale — every gap in the app comes from one of these */
@@ -71,7 +74,7 @@
     --band-line: rgba(245, 240, 227, 0.12);
     --band-up:   #7FCB8C;
     --band-down: #E88E7C;
-    --band-bloom:rgba(232, 163, 61, 0.14);
+    --band-bloom:rgba(232, 163, 61, 0.08);
     --grain-op:  0.5;
   }
 }
@@ -96,7 +99,7 @@
   --band-line: rgba(245, 240, 227, 0.12);
   --band-up:   #7FCB8C;
   --band-down: #E88E7C;
-  --band-bloom:rgba(232, 163, 61, 0.14);
+  --band-bloom:rgba(232, 163, 61, 0.08);
   --grain-op:  0.5;
 }
 

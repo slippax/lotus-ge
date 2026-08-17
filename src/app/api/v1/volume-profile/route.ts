@@ -2,7 +2,7 @@ import { newRequestId, toErrorResponse } from "@/lib/errors";
 import { v1 } from "@/lib/render";
 import { buildVolume } from "@/lib/summaries/volume";
 
-/** GET /api/v1/volume-profile — clean envelope over the same data. */
+/** GET /api/v1/volume-profile - clean envelope over the same data. */
 export async function GET() {
   const requestId = newRequestId();
 

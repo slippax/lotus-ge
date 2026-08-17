@@ -5,16 +5,15 @@ import { useEffect, useState } from "react";
 type Theme = "light" | "dark";
 
 /**
- * Site chrome: wordmark and theme toggle, sitting on the band.
- *
- * The toggle shows the *destination* — a moon means "go dark" — which is the
- * convention people expect and the one that's easy to get backwards.
+ * wordmark and theme toggle. the toggle shows the destination - a moon means
+ * "go dark" - which is the convention people expect and the easy one to get
+ * backwards.
  */
 export default function Masthead({ status }: { status?: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme | null>(null);
 
-  // Resolve the starting theme once on the client. Until then we render no
-  // icon at all rather than guessing and flickering to the other one.
+  // resolve the starting theme once on the client. until then render no icon
+  // rather than guessing and flickering to the other one.
   useEffect(() => {
     const stored = window.localStorage.getItem("lotus-theme") as Theme | null;
     if (stored) {
@@ -37,7 +36,9 @@ export default function Masthead({ status }: { status?: React.ReactNode }) {
   const isDark = theme === "dark";
 
   return (
-    <header className="flex items-center gap-3 py-[var(--s4)]">
+    // gap-2 not gap-3 - the status pill and toggle share a height and border
+    // now, so they want to sit as one group. flex-1 keeps the wordmark left.
+    <header className="flex items-center gap-2 py-[var(--s4)]">
       <h1 className="m-0 text-[16px] font-semibold uppercase tracking-[0.14em] text-band-ink">
         Lotus <span className="text-band-gold">GE</span>
       </h1>

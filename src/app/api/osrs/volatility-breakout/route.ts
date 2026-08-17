@@ -3,8 +3,8 @@ import { legacy } from "@/lib/render";
 import { buildVolatility } from "@/lib/summaries/volatility";
 
 /**
- * GET /api/osrs/volatility-breakout — the pre-v1 shape. Frozen contract.
- * See /api/osrs/dip-detection for why. New work goes to /api/v1/…
+ * GET /api/osrs/volatility-breakout - pre-v1 shape, frozen contract.
+ * see /api/osrs/dip-detection for why. new work goes to /api/v1/...
  */
 export async function GET() {
   const requestId = newRequestId();

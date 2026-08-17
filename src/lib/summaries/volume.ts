@@ -1,7 +1,7 @@
 /**
- * Volume profile: buy/sell volume imbalance, as an accumulation signal.
+ * buy/sell volume imbalance, as an accumulation signal.
  *
- * HTTP-free, version-blind. See `src/lib/summaries/dips.ts` for why.
+ * http-free and version-blind, see dips.ts for why.
  */
 
 import { fetchSummary } from "@/lib/upstream";
@@ -63,7 +63,7 @@ function processVolumeProfileData(
   }));
 }
 
-/** Throws `AppError` (503) if the upstream won't answer — never an empty list. */
+/** throws a 503 if the upstream won't answer. never an empty list. */
 export async function buildVolume(
   requestId: string
 ): Promise<Payload<VolumeProfileOpportunity>> {

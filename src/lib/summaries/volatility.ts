@@ -1,7 +1,7 @@
 /**
- * Volatility breakout: items whose trading range has compressed.
+ * items whose trading range has compressed.
  *
- * HTTP-free, version-blind. See `src/lib/summaries/dips.ts` for why.
+ * http-free and version-blind, see dips.ts for why.
  */
 
 import { fetchSummary } from "@/lib/upstream";
@@ -57,7 +57,7 @@ function processVolatilityData(
   }));
 }
 
-/** Throws `AppError` (503) if the upstream won't answer — never an empty list. */
+/** throws a 503 if the upstream won't answer. never an empty list. */
 export async function buildVolatility(
   requestId: string
 ): Promise<Payload<VolatilityOpportunity>> {

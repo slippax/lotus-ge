@@ -3,34 +3,27 @@ import { errors, newRequestId, toErrorResponse } from "@/lib/errors";
 import { getMapping, UA, WIKI } from "@/lib/wiki";
 
 /**
- * Price history for one item.
+ * GET /api/v1/items/536/history?range=1w
  *
- *   GET /api/v1/items/536/history?range=1w
+ * read-through cache over the wiki's timeseries api. we own none of this data -
+ * what we add is not hammering an upstream we don't pay for, and being honest
+ * about what happened, which the upstream isn't.
  *
- * A read-through cache over the OSRS wiki's timeseries API. We own no data
- * here — the value we add is (a) not hammering an upstream we don't pay for,
- * and (b) telling the truth about what happened, which the upstream does not.
- *
- * The upstream answers an unknown item with `200 {"data":[]}` — identical to a
- * real item nobody traded. Passing that through means the chart cannot tell
- * "no such item" from "quiet market", so both render as an empty box and the
- * user concludes the site is broken. Resolving the id first is what buys us a
- * real 404.
+ * the wiki answers an unknown item with 200 {"data":[]}, same as a real item
+ * nobody traded. pass that through and the chart can't tell "no such item" from
+ * "quiet market" - both render as an empty box and it looks broken. resolving
+ * the id first is what buys us a real 404.
  */
 
 /**
- * The ranges we offer.
+ * `range` is our vocabulary, `timestep` is the wiki's. keeping them separate
+ * means swapping data sources doesn't change our urls.
  *
- * `range` is our vocabulary; `timestep` is the wiki's. Keeping them separate
- * means swapping data sources later doesn't change our URLs.
+ * the wiki returns 365 points for every timestep, so timestep picks the
+ * resolution and we slice for the window. 6h is what makes the month view 120
+ * real points instead of 15 days of hourly ones labelled as a month.
  *
- * The upstream returns 365 points for every timestep, whatever it is — so the
- * timestep alone picks the *resolution* and we slice to get the *window*.
- * 6h is what makes a month view 120 honest points instead of 15 days of hourly
- * ones mislabelled as a month.
- *
- * maxAge tracks what the upstream itself advertises via `Expires`: 5m data goes
- * stale in seconds, 24h data holds until midnight UTC.
+ * maxAge follows what the upstream advertises via Expires.
  */
 const RANGES = {
   "1d": { timestep: "5m", keep: 288, maxAge: 60 },
@@ -41,15 +34,15 @@ const RANGES = {
 
 type Range = keyof typeof RANGES;
 
-/** One point, trimmed to what a chart actually draws. */
+/** one point, trimmed to what a chart actually draws. */
 interface Point {
-  /** Unix seconds, oldest first. */
+  /** unix seconds, oldest first. */
   t: number;
-  /** Buy-side average in gp, or null where nothing traded in that bucket. */
+  /** buy-side average in gp, null if nothing traded in the bucket. */
   low: number | null;
-  /** Sell-side average in gp, or null. */
+  /** sell-side average in gp, or null. */
   high: number | null;
-  /** Units traded in the bucket, both sides combined. */
+  /** units traded in the bucket, both sides. */
   volume: number;
 }
 
@@ -71,9 +64,8 @@ export async function GET(
     const { id } = await params;
     const rangeParam = new URL(request.url).searchParams.get("range") ?? "1w";
 
-    // Validate before touching the network. A bad request is our answer to
-    // give — asking the wiki about "banana" wastes a round trip and, worse,
-    // makes their error message our error message.
+    // validate before touching the network - asking the wiki about "banana"
+    // wastes a round trip and makes their error message ours.
     if (!/^\d+$/.test(id)) {
       throw errors.unprocessable(
         "invalid_item_id",
@@ -103,8 +95,8 @@ export async function GET(
       { headers: { "User-Agent": UA }, next: { revalidate: maxAge } }
     );
 
-    // The check a naive proxy skips. Without it, `body.data` is undefined on
-    // every upstream error and we cheerfully serve a 200 carrying nothing.
+    // the check a naive proxy skips. without it body.data is undefined on
+    // every upstream error and we serve a 200 carrying nothing.
     if (!upstream.ok) {
       console.error(`[${requestId}] wiki timeseries ${upstream.status}`);
       throw errors.upstreamUnavailable(
@@ -127,7 +119,7 @@ export async function GET(
       t: p.timestamp,
       low: p.avgLowPrice,
       high: p.avgHighPrice,
-      // Prices are gp and stay integers. Volumes are counts and do too.
+      // gp and counts, both stay integers.
       volume: (p.highPriceVolume ?? 0) + (p.lowPriceVolume ?? 0),
     }));
 
@@ -137,16 +129,15 @@ export async function GET(
         name: item.name,
         range: rangeParam,
         timestep,
-        // An empty array HERE is now meaningful: a real item, no trades in the
-        // window. The 404 above already removed the other reading.
+        // empty here is meaningful now - real item, no trades in the window.
+        // the 404 above already ruled out the other reading.
         points,
       },
       {
         status: 200,
         headers: {
-          // s-maxage caches at Vercel's edge, so a hundred readers of the same
-          // chart are one request to the wiki. stale-while-revalidate serves
-          // the old chart instantly while the new one is fetched behind it.
+          // s-maxage caches at the edge, so a hundred readers of the same
+          // chart are one request to the wiki.
           "Cache-Control": `public, s-maxage=${maxAge}, stale-while-revalidate=${maxAge * 2}`,
           "x-request-id": requestId,
         },
