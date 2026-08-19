@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-19T13:05:56.528552+00:00",
+  "updated": "2026-08-19T13:10:46.928589+00:00",
   "items": [
     {
       "ProductName": "Magic potion(4)",
@@ -117,6 +117,26 @@
       "TotalIngredientCost": 1568,
       "ProfitPerCraft": 626,
       "ROI": 39.92,
+      "RecipeType": "Decant 3 to 4 (Bob Barter)",
+      "QtyProduced": 1,
+      "LiquidityLevel": "HIGH_LIQUIDITY"
+    },
+    {
+      "ProductName": "Energy potion(4)",
+      "ProductPrice": 175,
+      "ProductBuyLimit": 2000,
+      "Ingredient1Name": "Energy potion(3)",
+      "Ingredient1Price": 126,
+      "Ingredient1Qty": "1.333",
+      "Ingredient2Name": "",
+      "Ingredient2Price": 0,
+      "Ingredient2Qty": "0",
+      "Ingredient3Name": "",
+      "Ingredient3Price": 0,
+      "Ingredient3Qty": "0",
+      "TotalIngredientCost": 126,
+      "ProfitPerCraft": 49,
+      "ROI": 38.89,
       "RecipeType": "Decant 3 to 4 (Bob Barter)",
       "QtyProduced": 1,
       "LiquidityLevel": "HIGH_LIQUIDITY"
@@ -242,26 +262,6 @@
       "LiquidityLevel": "HIGH_LIQUIDITY"
     },
     {
-      "ProductName": "Energy potion(4)",
-      "ProductPrice": 175,
-      "ProductBuyLimit": 2000,
-      "Ingredient1Name": "Energy potion(3)",
-      "Ingredient1Price": 132,
-      "Ingredient1Qty": "1.333",
-      "Ingredient2Name": "",
-      "Ingredient2Price": 0,
-      "Ingredient2Qty": "0",
-      "Ingredient3Name": "",
-      "Ingredient3Price": 0,
-      "Ingredient3Qty": "0",
-      "TotalIngredientCost": 132,
-      "ProfitPerCraft": 43,
-      "ROI": 32.58,
-      "RecipeType": "Decant 3 to 4 (Bob Barter)",
-      "QtyProduced": 1,
-      "LiquidityLevel": "HIGH_LIQUIDITY"
-    },
-    {
       "ProductName": "Super defence(4)",
       "ProductPrice": 3150,
       "ProductBuyLimit": 2000,
@@ -300,6 +300,26 @@
       "RecipeType": "Decant 3 to 4 (Bob Barter)",
       "QtyProduced": 1,
       "LiquidityLevel": "HIGH_LIQUIDITY"
+    },
+    {
+      "ProductName": "Dharok's platelegs",
+      "ProductPrice": 1143714,
+      "ProductBuyLimit": 15,
+      "Ingredient1Name": "Dharok's platelegs 0",
+      "Ingredient1Price": 905000,
+      "Ingredient1Qty": "1",
+      "Ingredient2Name": "",
+      "Ingredient2Price": 0,
+      "Ingredient2Qty": "0",
+      "Ingredient3Name": "",
+      "Ingredient3Price": 0,
+      "Ingredient3Qty": "0",
+      "TotalIngredientCost": 953000,
+      "ProfitPerCraft": 190714,
+      "ROI": 20.01,
+      "RecipeType": "Repair Broken Armour (POH calculated at 80 smithing)",
+      "QtyProduced": 1,
+      "LiquidityLevel": "LOW_LIQUIDITY"
     },
     {
       "ProductName": "Stamina potion(1)",
@@ -369,7 +389,7 @@
       "Ingredient1Price": 190511552,
       "Ingredient1Qty": "1",
       "Ingredient2Name": "Bandos tassets",
-      "Ingredient2Price": 15249886,
+      "Ingredient2Price": 15211352,
       "Ingredient2Qty": "0.5",
       "Ingredient3Name": "",
       "Ingredient3Price": 0,
@@ -380,26 +400,6 @@
       "RecipeType": "Use Broken Armour and 1 Bandosian Component on Anvil (90 smithing)",
       "QtyProduced": 1,
       "LiquidityLevel": "LOW_LIQUIDITY"
-    },
-    {
-      "ProductName": "Dragon scale dust",
-      "ProductPrice": 73,
-      "ProductBuyLimit": 13000,
-      "Ingredient1Name": "Blue dragon scale",
-      "Ingredient1Price": 19,
-      "Ingredient1Qty": "1",
-      "Ingredient2Name": "",
-      "Ingredient2Price": 0,
-      "Ingredient2Qty": "0",
-      "Ingredient3Name": "",
-      "Ingredient3Price": 0,
-      "Ingredient3Qty": "0",
-      "TotalIngredientCost": 69,
-      "ProfitPerCraft": 4,
-      "ROI": 5.8,
-      "RecipeType": "Crushing Dragon Scales (Wesley)",
-      "QtyProduced": 1,
-      "LiquidityLevel": "HIGH_LIQUIDITY"
     },
     {
       "ProductName": "Bandos godsword",
