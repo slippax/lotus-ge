@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-20T14:20:37.547305+00:00",
+  "updated": "2026-08-20T14:25:40.749530+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -31,10 +31,17 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 740,
+      "LowPrice": 744,
       "PriceFloor": 914.0,
       "BuyLimit": 10000,
-      "pctROI": 22.3
+      "pctROI": 21.64
+    },
+    {
+      "ItemName": "Ironwood repair kit",
+      "LowPrice": 2014,
+      "PriceFloor": 2132.0,
+      "BuyLimit": 13000,
+      "pctROI": 4.82
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -56,13 +63,6 @@
       "PriceFloor": 2028.0,
       "BuyLimit": 10000,
       "pctROI": 1.98
-    },
-    {
-      "ItemName": "Ironwood repair kit",
-      "LowPrice": 2084,
-      "PriceFloor": 2132.0,
-      "BuyLimit": 13000,
-      "pctROI": 1.3
     }
   ],
   "methodology": "VeryGranular"
