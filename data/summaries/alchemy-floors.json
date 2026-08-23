@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-23T05:45:38.892572+00:00",
+  "updated": "2026-08-23T05:50:45.756084+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -16,11 +16,18 @@
       "pctROI": 30.77
     },
     {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1102,
+      "PriceFloor": 1254.0,
+      "BuyLimit": 13000,
+      "pctROI": 12.7
+    },
+    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 387,
+      "LowPrice": 386,
       "PriceFloor": 571.0,
       "BuyLimit": 10000,
-      "pctROI": 46.25
+      "pctROI": 46.63
     },
     {
       "ItemName": "Earth battlestaff",
@@ -30,11 +37,11 @@
       "pctROI": 1.02
     },
     {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1119,
-      "PriceFloor": 1254.0,
-      "BuyLimit": 13000,
-      "pctROI": 10.99
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8798,
+      "PriceFloor": 8976.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.01
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -42,20 +49,6 @@
       "PriceFloor": 8679.0,
       "BuyLimit": 11000,
       "pctROI": 1.69
-    },
-    {
-      "ItemName": "Camphor repair kit",
-      "LowPrice": 1715,
-      "PriceFloor": 1848.0,
-      "BuyLimit": 13000,
-      "pctROI": 6.71
-    },
-    {
-      "ItemName": "Amulet of glory(6)",
-      "LowPrice": 10000,
-      "PriceFloor": 10238.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.36
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -79,11 +72,18 @@
       "pctROI": 3.26
     },
     {
+      "ItemName": "Camphor repair kit",
+      "LowPrice": 1770,
+      "PriceFloor": 1848.0,
+      "BuyLimit": 13000,
+      "pctROI": 3.39
+    },
+    {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 356,
+      "LowPrice": 360,
       "PriceFloor": 399.0,
       "BuyLimit": 11000,
-      "pctROI": 11.24
+      "pctROI": 10.0
     }
   ],
   "methodology": "VeryGranular"
