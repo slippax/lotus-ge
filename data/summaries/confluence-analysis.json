@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-26T10:30:47.646777+00:00",
+  "updated": "2026-08-26T10:35:38.755768+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -15,6 +15,21 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
       "PotentialProfit": 16056000.0
+    },
+    {
+      "ItemName": "Battlestaff",
+      "CurrentPrice": 7677,
+      "BuyLimit": 11000,
+      "FiveMinMean": 7600,
+      "HourlyMean": 7536,
+      "DailyMean": 7533,
+      "WeeklyMean": 7433,
+      "MonthlyMean": 7284,
+      "BullishConfluence": 5,
+      "BearishConfluence": 0,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 8444700.0
     },
     {
       "ItemName": "Lumberyard teleport",
@@ -152,6 +167,21 @@
       "PotentialProfit": 15852600.0
     },
     {
+      "ItemName": "Combat bracelet",
+      "CurrentPrice": 12111,
+      "BuyLimit": 10000,
+      "FiveMinMean": 12100,
+      "HourlyMean": 12108,
+      "DailyMean": 12099,
+      "WeeklyMean": 12078,
+      "MonthlyMean": 12052,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 12111000.0
+    },
+    {
       "ItemName": "Dragonstone bracelet",
       "CurrentPrice": 11374,
       "BuyLimit": 10000,
@@ -210,36 +240,6 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
       "PotentialProfit": 8916600.0
-    },
-    {
-      "ItemName": "Battlestaff",
-      "CurrentPrice": 7543,
-      "BuyLimit": 11000,
-      "FiveMinMean": 7600,
-      "HourlyMean": 7536,
-      "DailyMean": 7533,
-      "WeeklyMean": 7433,
-      "MonthlyMean": 7284,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 8297300.0
-    },
-    {
-      "ItemName": "Ranarr weed",
-      "CurrentPrice": 6020,
-      "BuyLimit": 11000,
-      "FiveMinMean": 6010,
-      "HourlyMean": 6010,
-      "DailyMean": 5995,
-      "WeeklyMean": 5963,
-      "MonthlyMean": 5667,
-      "BullishConfluence": 4,
-      "BearishConfluence": 0,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 6622000.0
     },
     {
       "ItemName": "Grimy ranarr weed",
@@ -452,21 +452,6 @@
       "PotentialProfit": 1911000.0
     },
     {
-      "ItemName": "Diamond",
-      "CurrentPrice": 1700,
-      "BuyLimit": 11000,
-      "FiveMinMean": 1686,
-      "HourlyMean": 1677,
-      "DailyMean": 1676,
-      "WeeklyMean": 1662,
-      "MonthlyMean": 1673,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 1870000.0
-    },
-    {
       "ItemName": "Dodgy necklace",
       "CurrentPrice": 1601,
       "BuyLimit": 10000,
@@ -618,7 +603,7 @@
     },
     {
       "ItemName": "Blighted super restore(4)",
-      "CurrentPrice": 3382,
+      "CurrentPrice": 3299,
       "BuyLimit": 2000,
       "FiveMinMean": 3280,
       "HourlyMean": 3306,
@@ -629,7 +614,7 @@
       "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 676400.0
+      "PotentialProfit": 659800.0
     },
     {
       "ItemName": "Anchovy pizza",
@@ -750,6 +735,21 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
       "PotentialProfit": 373540.0
+    },
+    {
+      "ItemName": "Pineapple",
+      "CurrentPrice": 220,
+      "BuyLimit": 13000,
+      "FiveMinMean": 210,
+      "HourlyMean": 207,
+      "DailyMean": 208,
+      "WeeklyMean": 195,
+      "MonthlyMean": 185,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 286000.0
     }
   ],
   "methodology": "VeryGranular_MultiTimeframeConfluence"
