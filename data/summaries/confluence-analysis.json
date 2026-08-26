@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-26T16:35:54.453028+00:00",
+  "updated": "2026-08-26T16:36:52.580032+00:00",
   "items": [
     {
       "ItemName": "Torstol",
@@ -32,6 +32,21 @@
       "PotentialProfit": 798600.0
     },
     {
+      "ItemName": "Gold ore",
+      "CurrentPrice": 162,
+      "BuyLimit": 30000,
+      "FiveMinMean": 157,
+      "HourlyMean": 155,
+      "DailyMean": 154,
+      "WeeklyMean": 151,
+      "MonthlyMean": 146,
+      "BullishConfluence": 5,
+      "BearishConfluence": 0,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 486000.0
+    },
+    {
       "ItemName": "Adamant bolts",
       "CurrentPrice": 177,
       "BuyLimit": 11000,
@@ -60,21 +75,6 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
       "PotentialProfit": 30663.0
-    },
-    {
-      "ItemName": "Blue wizard robe",
-      "CurrentPrice": 1573,
-      "BuyLimit": 125,
-      "FiveMinMean": 1360,
-      "HourlyMean": 1318,
-      "DailyMean": 1229,
-      "WeeklyMean": 1127,
-      "MonthlyMean": 1036,
-      "BullishConfluence": 5,
-      "BearishConfluence": 0,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 19663.0
     },
     {
       "ItemName": "Fire battlestaff",
@@ -213,7 +213,7 @@
     },
     {
       "ItemName": "Grimy ranarr weed",
-      "CurrentPrice": 5790,
+      "CurrentPrice": 5800,
       "BuyLimit": 11000,
       "FiveMinMean": 5784,
       "HourlyMean": 5776,
@@ -224,7 +224,7 @@
       "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 6369000.0
+      "PotentialProfit": 6380000.0
     },
     {
       "ItemName": "Hydra bones",
@@ -363,7 +363,7 @@
     },
     {
       "ItemName": "Dragon bones",
-      "CurrentPrice": 3334,
+      "CurrentPrice": 3310,
       "BuyLimit": 7500,
       "FiveMinMean": 3269,
       "HourlyMean": 3262,
@@ -374,11 +374,11 @@
       "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 2500500.0
+      "PotentialProfit": 2482500.0
     },
     {
       "ItemName": "Mahogany plank",
-      "CurrentPrice": 1833,
+      "CurrentPrice": 1840,
       "BuyLimit": 13000,
       "FiveMinMean": 1832,
       "HourlyMean": 1828,
@@ -389,7 +389,7 @@
       "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 2382900.0
+      "PotentialProfit": 2392000.0
     },
     {
       "ItemName": "Anti-venom(4)",
@@ -450,21 +450,6 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
       "PotentialProfit": 1892000.0
-    },
-    {
-      "ItemName": "Cactus spine",
-      "CurrentPrice": 1691,
-      "BuyLimit": 11000,
-      "FiveMinMean": 1623,
-      "HourlyMean": 1651,
-      "DailyMean": 1631,
-      "WeeklyMean": 1600,
-      "MonthlyMean": 1547,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 1860100.0
     },
     {
       "ItemName": "Raw manta ray",
@@ -632,21 +617,6 @@
       "PotentialProfit": 570000.0
     },
     {
-      "ItemName": "Gold ore",
-      "CurrentPrice": 155,
-      "BuyLimit": 30000,
-      "FiveMinMean": 157,
-      "HourlyMean": 155,
-      "DailyMean": 154,
-      "WeeklyMean": 151,
-      "MonthlyMean": 146,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 465000.0
-    },
-    {
       "ItemName": "Sapphire ring",
       "CurrentPrice": 418,
       "BuyLimit": 10000,
@@ -750,6 +720,36 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
       "PotentialProfit": 200200.0
+    },
+    {
+      "ItemName": "Plank",
+      "CurrentPrice": 141,
+      "BuyLimit": 13000,
+      "FiveMinMean": 147,
+      "HourlyMean": 144,
+      "DailyMean": 142,
+      "WeeklyMean": 131,
+      "MonthlyMean": 127,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 183300.0
+    },
+    {
+      "ItemName": "Amethyst arrow",
+      "CurrentPrice": 140,
+      "BuyLimit": 11000,
+      "FiveMinMean": 148,
+      "HourlyMean": 147,
+      "DailyMean": 146,
+      "WeeklyMean": 139,
+      "MonthlyMean": 132,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 154000.0
     }
   ],
   "methodology": "VeryGranular_MultiTimeframeConfluence"
