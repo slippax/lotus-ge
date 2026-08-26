@@ -1,19 +1,26 @@
 {
-  "updated": "2026-08-26T16:42:19.844270+00:00",
+  "updated": "2026-08-26T16:45:57.920476+00:00",
   "items": [
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1139,
+      "PriceFloor": 1284.0,
+      "BuyLimit": 18000,
+      "pctROI": 11.68
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8750,
+      "PriceFloor": 8971.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.51
+    },
     {
       "ItemName": "Water battlestaff",
       "LowPrice": 8751,
       "PriceFloor": 8971.0,
       "BuyLimit": 18000,
       "pctROI": 1.5
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1145,
-      "PriceFloor": 1284.0,
-      "BuyLimit": 18000,
-      "pctROI": 11.09
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -59,10 +66,17 @@
     },
     {
       "ItemName": "Amethyst javelin tips",
-      "LowPrice": 544,
+      "LowPrice": 545,
       "PriceFloor": 667.0,
       "BuyLimit": 10000,
-      "pctROI": 21.51
+      "pctROI": 21.28
+    },
+    {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1917,
+      "PriceFloor": 2036.0,
+      "BuyLimit": 10000,
+      "pctROI": 5.16
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -84,13 +98,6 @@
       "PriceFloor": 394.0,
       "BuyLimit": 11000,
       "pctROI": 12.68
-    },
-    {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1979,
-      "PriceFloor": 2036.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.87
     }
   ],
   "methodology": "VeryGranular"
