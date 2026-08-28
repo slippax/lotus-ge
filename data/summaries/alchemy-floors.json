@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-28T00:05:38.012862+00:00",
+  "updated": "2026-08-28T00:10:40.757782+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -38,10 +38,17 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 394,
+      "LowPrice": 393,
       "PriceFloor": 566.0,
       "BuyLimit": 10000,
-      "pctROI": 42.39
+      "pctROI": 42.75
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8789,
+      "PriceFloor": 8971.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.06
     },
     {
       "ItemName": "Combat bracelet",
@@ -79,25 +86,11 @@
       "pctROI": 4.28
     },
     {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8501,
-      "PriceFloor": 8674.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.02
-    },
-    {
       "ItemName": "Dragonstone bolts (e)",
       "LowPrice": 345,
       "PriceFloor": 394.0,
       "BuyLimit": 11000,
       "pctROI": 13.33
-    },
-    {
-      "ItemName": "Binding necklace",
-      "LowPrice": 588,
-      "PriceFloor": 610.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.72
     }
   ],
   "methodology": "VeryGranular"
