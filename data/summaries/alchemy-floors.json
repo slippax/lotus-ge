@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-28T07:40:37.465560+00:00",
+  "updated": "2026-08-28T07:45:37.888381+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -58,6 +58,13 @@
       "pctROI": 1.25
     },
     {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1904,
+      "PriceFloor": 2035.0,
+      "BuyLimit": 10000,
+      "pctROI": 5.83
+    },
+    {
       "ItemName": "Amethyst javelin tips",
       "LowPrice": 563,
       "PriceFloor": 666.0,
@@ -77,13 +84,6 @@
       "PriceFloor": 393.0,
       "BuyLimit": 11000,
       "pctROI": 10.8
-    },
-    {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1989,
-      "PriceFloor": 2035.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.31
     }
   ],
   "methodology": "VeryGranular"
