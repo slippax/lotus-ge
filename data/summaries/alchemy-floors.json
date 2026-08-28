@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-28T06:15:40.993098+00:00",
+  "updated": "2026-08-28T06:20:39.690221+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -30,6 +30,13 @@
       "pctROI": 13.39
     },
     {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 750,
+      "PriceFloor": 921.0,
+      "BuyLimit": 10000,
+      "pctROI": 21.6
+    },
+    {
       "ItemName": "Rune javelin tips",
       "LowPrice": 398,
       "PriceFloor": 565.0,
@@ -44,18 +51,25 @@
       "pctROI": 7.29
     },
     {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 775,
-      "PriceFloor": 921.0,
+      "ItemName": "Combat bracelet",
+      "LowPrice": 12000,
+      "PriceFloor": 12261.0,
       "BuyLimit": 10000,
-      "pctROI": 17.68
+      "pctROI": 1.16
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8479,
+      "LowPrice": 8480,
       "PriceFloor": 8673.0,
       "BuyLimit": 11000,
-      "pctROI": 1.27
+      "pctROI": 1.26
+    },
+    {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1902,
+      "PriceFloor": 2035.0,
+      "BuyLimit": 10000,
+      "pctROI": 5.94
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -72,11 +86,11 @@
       "pctROI": 17.23
     },
     {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1945,
-      "PriceFloor": 2035.0,
-      "BuyLimit": 10000,
-      "pctROI": 3.6
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 347,
+      "PriceFloor": 393.0,
+      "BuyLimit": 11000,
+      "pctROI": 12.39
     },
     {
       "ItemName": "Phoenix necklace",
@@ -84,13 +98,6 @@
       "PriceFloor": 2169.0,
       "BuyLimit": 10000,
       "pctROI": 2.14
-    },
-    {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 351,
-      "PriceFloor": 393.0,
-      "BuyLimit": 11000,
-      "pctROI": 11.11
     }
   ],
   "methodology": "VeryGranular"
