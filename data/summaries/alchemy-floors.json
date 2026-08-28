@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-28T05:40:39.139756+00:00",
+  "updated": "2026-08-28T05:45:37.406157+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -31,10 +31,10 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 741,
+      "LowPrice": 740,
       "PriceFloor": 921.0,
       "BuyLimit": 10000,
-      "pctROI": 23.08
+      "pctROI": 23.24
     },
     {
       "ItemName": "Rune javelin tips",
@@ -42,6 +42,13 @@
       "PriceFloor": 565.0,
       "BuyLimit": 10000,
       "pctROI": 42.49
+    },
+    {
+      "ItemName": "Camphor repair kit",
+      "LowPrice": 1701,
+      "PriceFloor": 1842.0,
+      "BuyLimit": 13000,
+      "pctROI": 7.23
     },
     {
       "ItemName": "Combat bracelet",
@@ -91,13 +98,6 @@
       "PriceFloor": 393.0,
       "BuyLimit": 11000,
       "pctROI": 11.43
-    },
-    {
-      "ItemName": "Camphor repair kit",
-      "LowPrice": 1800,
-      "PriceFloor": 1842.0,
-      "BuyLimit": 13000,
-      "pctROI": 1.33
     }
   ],
   "methodology": "VeryGranular"
