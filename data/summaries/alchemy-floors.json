@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-30T01:10:39.367561+00:00",
+  "updated": "2026-08-30T01:15:37.708054+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -23,11 +23,18 @@
       "pctROI": 25.31
     },
     {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1100,
+      "PriceFloor": 1247.0,
+      "BuyLimit": 13000,
+      "pctROI": 12.27
+    },
+    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 394,
+      "LowPrice": 390,
       "PriceFloor": 564.0,
       "BuyLimit": 10000,
-      "pctROI": 41.88
+      "pctROI": 43.33
     },
     {
       "ItemName": "Camphor repair kit",
@@ -37,13 +44,6 @@
       "pctROI": 7.42
     },
     {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8456,
-      "PriceFloor": 8672.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.54
-    },
-    {
       "ItemName": "Combat bracelet",
       "LowPrice": 12000,
       "PriceFloor": 12260.0,
@@ -51,18 +51,18 @@
       "pctROI": 1.15
     },
     {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1134,
-      "PriceFloor": 1247.0,
-      "BuyLimit": 13000,
-      "pctROI": 8.91
-    },
-    {
       "ItemName": "Ironwood repair kit",
       "LowPrice": 2017,
       "PriceFloor": 2138.0,
       "BuyLimit": 13000,
       "pctROI": 4.96
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8468,
+      "PriceFloor": 8672.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.39
     },
     {
       "ItemName": "Diamond bracelet",
@@ -94,10 +94,10 @@
     },
     {
       "ItemName": "Binding necklace",
-      "LowPrice": 594,
+      "LowPrice": 592,
       "PriceFloor": 608.0,
       "BuyLimit": 10000,
-      "pctROI": 1.35
+      "pctROI": 1.69
     }
   ],
   "methodology": "VeryGranular"
