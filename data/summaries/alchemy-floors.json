@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-30T06:15:38.967900+00:00",
+  "updated": "2026-08-30T06:20:43.220224+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -9,6 +9,13 @@
       "pctROI": 14.31
     },
     {
+      "ItemName": "Amulet of glory(6)",
+      "LowPrice": 9912,
+      "PriceFloor": 10231.0,
+      "BuyLimit": 10000,
+      "pctROI": 2.19
+    },
+    {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8775,
       "PriceFloor": 8969.0,
@@ -16,25 +23,18 @@
       "pctROI": 1.2
     },
     {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1096,
-      "PriceFloor": 1247.0,
-      "BuyLimit": 13000,
-      "pctROI": 12.68
-    },
-    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 404,
+      "LowPrice": 391,
       "PriceFloor": 564.0,
       "BuyLimit": 10000,
-      "pctROI": 38.37
+      "pctROI": 42.97
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 760,
+      "LowPrice": 752,
       "PriceFloor": 920.0,
       "BuyLimit": 10000,
-      "pctROI": 19.87
+      "pctROI": 21.14
     },
     {
       "ItemName": "Camphor repair kit",
@@ -44,11 +44,18 @@
       "pctROI": 6.05
     },
     {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1134,
+      "PriceFloor": 1247.0,
+      "BuyLimit": 13000,
+      "pctROI": 8.91
+    },
+    {
       "ItemName": "Diamond bracelet",
-      "LowPrice": 1881,
+      "LowPrice": 1902,
       "PriceFloor": 2034.0,
       "BuyLimit": 10000,
-      "pctROI": 7.07
+      "pctROI": 5.89
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -66,10 +73,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 364,
+      "LowPrice": 363,
       "PriceFloor": 392.0,
       "BuyLimit": 11000,
-      "pctROI": 6.87
+      "pctROI": 7.16
     }
   ],
   "methodology": "VeryGranular"
