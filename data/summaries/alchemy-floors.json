@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04T04:10:35.538739+00:00",
+  "updated": "2026-09-04T04:15:49.783040+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -30,6 +30,13 @@
       "pctROI": 12.8
     },
     {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8760,
+      "PriceFloor": 8968.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.36
+    },
+    {
       "ItemName": "Phoenix necklace",
       "LowPrice": 1933,
       "PriceFloor": 2167.0,
@@ -38,10 +45,17 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 729,
+      "LowPrice": 730,
       "PriceFloor": 919.0,
       "BuyLimit": 10000,
-      "pctROI": 24.83
+      "pctROI": 24.66
+    },
+    {
+      "ItemName": "Amulet of glory(6)",
+      "LowPrice": 9958,
+      "PriceFloor": 10230.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.71
     },
     {
       "ItemName": "Rune javelin tips",
@@ -58,13 +72,6 @@
       "pctROI": 31.6
     },
     {
-      "ItemName": "Ironwood repair kit",
-      "LowPrice": 2032,
-      "PriceFloor": 2137.0,
-      "BuyLimit": 13000,
-      "pctROI": 4.13
-    },
-    {
       "ItemName": "Diamond bracelet",
       "LowPrice": 1952,
       "PriceFloor": 2033.0,
@@ -72,18 +79,25 @@
       "pctROI": 3.13
     },
     {
+      "ItemName": "Ironwood repair kit",
+      "LowPrice": 2093,
+      "PriceFloor": 2137.0,
+      "BuyLimit": 13000,
+      "pctROI": 1.1
+    },
+    {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 371,
+      "LowPrice": 364,
       "PriceFloor": 391.0,
       "BuyLimit": 11000,
-      "pctROI": 4.58
+      "pctROI": 6.59
     },
     {
       "ItemName": "Yew longbow",
-      "LowPrice": 507,
+      "LowPrice": 505,
       "PriceFloor": 521.0,
       "BuyLimit": 18000,
-      "pctROI": 1.78
+      "pctROI": 2.18
     }
   ],
   "methodology": "VeryGranular"
