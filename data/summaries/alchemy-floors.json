@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04T20:50:40.310940+00:00",
+  "updated": "2026-09-04T20:55:38.266957+00:00",
   "items": [
     {
       "ItemName": "Camphor repair kit",
@@ -10,10 +10,17 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1146,
+      "LowPrice": 1132,
       "PriceFloor": 1281.0,
       "BuyLimit": 18000,
-      "pctROI": 10.73
+      "pctROI": 12.1
+    },
+    {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1052,
+      "PriceFloor": 1246.0,
+      "BuyLimit": 13000,
+      "pctROI": 17.3
     },
     {
       "ItemName": "Fire battlestaff",
@@ -23,18 +30,11 @@
       "pctROI": 1.36
     },
     {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1083,
-      "PriceFloor": 1246.0,
-      "BuyLimit": 13000,
-      "pctROI": 13.94
-    },
-    {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 734,
+      "LowPrice": 718,
       "PriceFloor": 919.0,
       "BuyLimit": 10000,
-      "pctROI": 23.98
+      "pctROI": 26.74
     },
     {
       "ItemName": "Rune javelin tips",
@@ -73,10 +73,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 372,
+      "LowPrice": 378,
       "PriceFloor": 391.0,
       "BuyLimit": 11000,
-      "pctROI": 4.3
+      "pctROI": 2.65
     }
   ],
   "methodology": "VeryGranular"
