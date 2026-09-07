@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07T18:35:38.375946+00:00",
+  "updated": "2026-09-07T18:40:40.623989+00:00",
   "items": [
     {
       "ItemName": "Water battlestaff",
@@ -10,10 +10,24 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1111,
+      "LowPrice": 1112,
       "PriceFloor": 1288.0,
       "BuyLimit": 18000,
-      "pctROI": 14.85
+      "pctROI": 14.75
+    },
+    {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1054,
+      "PriceFloor": 1253.0,
+      "BuyLimit": 13000,
+      "pctROI": 17.74
+    },
+    {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 700,
+      "PriceFloor": 926.0,
+      "BuyLimit": 10000,
+      "pctROI": 31.0
     },
     {
       "ItemName": "Camphor repair kit",
@@ -23,11 +37,11 @@
       "pctROI": 9.85
     },
     {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 714,
-      "PriceFloor": 926.0,
-      "BuyLimit": 10000,
-      "pctROI": 28.43
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8776,
+      "PriceFloor": 8975.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.25
     },
     {
       "ItemName": "Rune javelin tips",
@@ -38,24 +52,10 @@
     },
     {
       "ItemName": "Earth battlestaff",
-      "LowPrice": 8782,
+      "LowPrice": 8789,
       "PriceFloor": 8975.0,
       "BuyLimit": 18000,
-      "pctROI": 1.18
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8784,
-      "PriceFloor": 8975.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.16
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1106,
-      "PriceFloor": 1253.0,
-      "BuyLimit": 13000,
-      "pctROI": 12.21
+      "pctROI": 1.1
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -112,13 +112,6 @@
       "PriceFloor": 243.0,
       "BuyLimit": 18000,
       "pctROI": 17.56
-    },
-    {
-      "ItemName": "Yew longbow (u)",
-      "LowPrice": 144,
-      "PriceFloor": 148.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.08
     }
   ],
   "methodology": "VeryGranular"
