@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-08T10:30:47.470869+00:00",
+  "updated": "2026-09-08T10:35:37.761579+00:00",
   "items": [
     {
       "ItemName": "Coal",
@@ -19,7 +19,7 @@
     {
       "ItemName": "Soul rune",
       "CurrentPrice": 379,
-      "CurrentHigh": 385,
+      "CurrentHigh": 390,
       "BuyLimit": 25000,
       "LowPriceVolume": "28439",
       "HighPriceVolume": "43772",
@@ -49,7 +49,7 @@
     {
       "ItemName": "Gold ore",
       "CurrentPrice": 153,
-      "CurrentHigh": 156,
+      "CurrentHigh": 154,
       "BuyLimit": 30000,
       "LowPriceVolume": "22497",
       "HighPriceVolume": "16393",
@@ -288,7 +288,7 @@
     },
     {
       "ItemName": "Amethyst dart",
-      "CurrentPrice": 189,
+      "CurrentPrice": 191,
       "CurrentHigh": 196,
       "BuyLimit": 11000,
       "LowPriceVolume": "10109",
@@ -318,7 +318,7 @@
     },
     {
       "ItemName": "Amethyst arrow",
-      "CurrentPrice": 126,
+      "CurrentPrice": 129,
       "CurrentHigh": 130,
       "BuyLimit": 11000,
       "LowPriceVolume": "8728",
@@ -332,8 +332,23 @@
       "AccumulationProfit": 0
     },
     {
+      "ItemName": "Adamant arrow",
+      "CurrentPrice": 25,
+      "CurrentHigh": 25,
+      "BuyLimit": 11000,
+      "LowPriceVolume": "8707",
+      "HighPriceVolume": "13459",
+      "WeeklyLowVolume": "2168726",
+      "WeeklyHighVolume": "3013142",
+      "VolumeImbalanceRatio": 1741.4,
+      "VolumePattern": "MODERATE_DISTRIBUTION",
+      "VolumeSurge": "NORMAL_VOLUME",
+      "SmartMoneySignal": "NO_SMART_MONEY_SIGNAL",
+      "AccumulationProfit": 0
+    },
+    {
       "ItemName": "Silver ore",
-      "CurrentPrice": 67,
+      "CurrentPrice": 71,
       "CurrentHigh": 71,
       "BuyLimit": 13000,
       "LowPriceVolume": "7917",
@@ -344,7 +359,7 @@
       "VolumePattern": "STRONG_ACCUMULATION",
       "VolumeSurge": "NORMAL_VOLUME",
       "SmartMoneySignal": "NO_SMART_MONEY_SIGNAL",
-      "AccumulationProfit": 52000.0
+      "AccumulationProfit": 0
     },
     {
       "ItemName": "Forester's ration",
@@ -363,8 +378,8 @@
     },
     {
       "ItemName": "Adamantite ore",
-      "CurrentPrice": 564,
-      "CurrentHigh": 583,
+      "CurrentPrice": 571,
+      "CurrentHigh": 579,
       "BuyLimit": 4500,
       "LowPriceVolume": "7693",
       "HighPriceVolume": "3623",
@@ -374,7 +389,7 @@
       "VolumePattern": "STRONG_ACCUMULATION",
       "VolumeSurge": "NORMAL_VOLUME",
       "SmartMoneySignal": "NO_SMART_MONEY_SIGNAL",
-      "AccumulationProfit": 85500.0
+      "AccumulationProfit": 36000.0
     },
     {
       "ItemName": "Barb bolttips",
@@ -408,7 +423,7 @@
     },
     {
       "ItemName": "Magic logs",
-      "CurrentPrice": 735,
+      "CurrentPrice": 736,
       "CurrentHigh": 736,
       "BuyLimit": 12000,
       "LowPriceVolume": "6272",
@@ -423,7 +438,7 @@
     },
     {
       "ItemName": "Dragon arrow",
-      "CurrentPrice": 1827,
+      "CurrentPrice": 1837,
       "CurrentHigh": 1834,
       "BuyLimit": 11000,
       "LowPriceVolume": "6012",
@@ -434,7 +449,7 @@
       "VolumePattern": "MODERATE_ACCUMULATION",
       "VolumeSurge": "NORMAL_VOLUME",
       "SmartMoneySignal": "NO_SMART_MONEY_SIGNAL",
-      "AccumulationProfit": 1004850.0
+      "AccumulationProfit": 1010350.0
     },
     {
       "ItemName": "Amylase crystal",
@@ -529,7 +544,7 @@
     {
       "ItemName": "Diamond bolts (e)",
       "CurrentPrice": 125,
-      "CurrentHigh": 131,
+      "CurrentHigh": 127,
       "BuyLimit": 11000,
       "LowPriceVolume": "4408",
       "HighPriceVolume": "3943",
@@ -634,7 +649,7 @@
     {
       "ItemName": "Steel nails",
       "CurrentPrice": 37,
-      "CurrentHigh": 38,
+      "CurrentHigh": 37,
       "BuyLimit": 13000,
       "LowPriceVolume": "4016",
       "HighPriceVolume": "4362",
@@ -735,21 +750,6 @@
       "VolumeSurge": "NORMAL_VOLUME",
       "SmartMoneySignal": "NO_SMART_MONEY_SIGNAL",
       "AccumulationProfit": 0
-    },
-    {
-      "ItemName": "Uncut ruby",
-      "CurrentPrice": 1008,
-      "CurrentHigh": 1026,
-      "BuyLimit": 10000,
-      "LowPriceVolume": "3818",
-      "HighPriceVolume": "2057",
-      "WeeklyLowVolume": "990625",
-      "WeeklyHighVolume": "481009",
-      "VolumeImbalanceRatio": 763.6,
-      "VolumePattern": "MODERATE_ACCUMULATION",
-      "VolumeSurge": "NORMAL_VOLUME",
-      "SmartMoneySignal": "NO_SMART_MONEY_SIGNAL",
-      "AccumulationProfit": 504000.0
     }
   ],
   "methodology": "VeryGranular_VolumeProfile"
