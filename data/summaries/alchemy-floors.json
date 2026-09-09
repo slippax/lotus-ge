@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-09T02:25:48.988949+00:00",
+  "updated": "2026-09-09T02:30:40.871684+00:00",
   "items": [
     {
       "ItemName": "Amulet of glory(6)",
@@ -9,11 +9,25 @@
       "pctROI": 5.71
     },
     {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8650,
+      "PriceFloor": 8982.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.81
+    },
+    {
       "ItemName": "Magic longbow",
       "LowPrice": 1103,
       "PriceFloor": 1295.0,
       "BuyLimit": 18000,
       "pctROI": 16.32
+    },
+    {
+      "ItemName": "Camphor repair kit",
+      "LowPrice": 1599,
+      "PriceFloor": 1854.0,
+      "BuyLimit": 13000,
+      "pctROI": 14.82
     },
     {
       "ItemName": "Fire battlestaff",
@@ -23,32 +37,18 @@
       "pctROI": 1.81
     },
     {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8735,
-      "PriceFloor": 8982.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.81
-    },
-    {
-      "ItemName": "Camphor repair kit",
-      "LowPrice": 1651,
-      "PriceFloor": 1854.0,
-      "BuyLimit": 13000,
-      "pctROI": 11.21
-    },
-    {
       "ItemName": "Mahogany repair kit",
-      "LowPrice": 1073,
+      "LowPrice": 1037,
       "PriceFloor": 1260.0,
       "BuyLimit": 13000,
-      "pctROI": 16.31
+      "pctROI": 20.35
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 712,
+      "LowPrice": 718,
       "PriceFloor": 933.0,
       "BuyLimit": 10000,
-      "pctROI": 29.78
+      "pctROI": 28.69
     },
     {
       "ItemName": "Rune javelin tips",
@@ -72,18 +72,18 @@
       "pctROI": 1.59
     },
     {
+      "ItemName": "Amethyst javelin tips",
+      "LowPrice": 548,
+      "PriceFloor": 678.0,
+      "BuyLimit": 10000,
+      "pctROI": 22.63
+    },
+    {
       "ItemName": "Diamond bracelet",
       "LowPrice": 1904,
       "PriceFloor": 2047.0,
       "BuyLimit": 10000,
       "pctROI": 6.46
-    },
-    {
-      "ItemName": "Amethyst javelin tips",
-      "LowPrice": 570,
-      "PriceFloor": 678.0,
-      "BuyLimit": 10000,
-      "pctROI": 17.89
     },
     {
       "ItemName": "Teak repair kit",
@@ -112,13 +112,6 @@
       "PriceFloor": 535.0,
       "BuyLimit": 18000,
       "pctROI": 5.79
-    },
-    {
-      "ItemName": "Yew longbow (u)",
-      "LowPrice": 150,
-      "PriceFloor": 155.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.67
     }
   ],
   "methodology": "VeryGranular"
