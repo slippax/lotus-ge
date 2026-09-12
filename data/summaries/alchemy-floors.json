@@ -1,6 +1,13 @@
 {
-  "updated": "2026-09-12T08:50:36.603127+00:00",
+  "updated": "2026-09-12T08:55:37.743614+00:00",
   "items": [
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8650,
+      "PriceFloor": 8974.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.72
+    },
     {
       "ItemName": "Water battlestaff",
       "LowPrice": 8665,
@@ -30,13 +37,6 @@
       "pctROI": 12.83
     },
     {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8743,
-      "PriceFloor": 8974.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.62
-    },
-    {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1651,
       "PriceFloor": 1846.0,
@@ -45,10 +45,10 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 701,
+      "LowPrice": 700,
       "PriceFloor": 925.0,
       "BuyLimit": 10000,
-      "pctROI": 30.67
+      "pctROI": 30.86
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -87,10 +87,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 331,
+      "LowPrice": 332,
       "PriceFloor": 397.0,
       "BuyLimit": 11000,
-      "pctROI": 19.03
+      "pctROI": 18.67
     },
     {
       "ItemName": "Ruby bracelet",
@@ -101,10 +101,17 @@
     },
     {
       "ItemName": "Teak repair kit",
-      "LowPrice": 320,
+      "LowPrice": 336,
       "PriceFloor": 361.0,
       "BuyLimit": 13000,
-      "pctROI": 11.88
+      "pctROI": 6.55
+    },
+    {
+      "ItemName": "Yew longbow",
+      "LowPrice": 508,
+      "PriceFloor": 527.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.76
     }
   ],
   "methodology": "VeryGranular"
