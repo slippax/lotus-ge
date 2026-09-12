@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-12T13:01:07.909711+00:00",
+  "updated": "2026-09-12T13:05:39.204919+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -16,11 +16,18 @@
       "pctROI": 14.56
     },
     {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 700,
-      "PriceFloor": 925.0,
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8728,
+      "PriceFloor": 8974.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.8
+    },
+    {
+      "ItemName": "Combat bracelet",
+      "LowPrice": 11928,
+      "PriceFloor": 12265.0,
       "BuyLimit": 10000,
-      "pctROI": 30.86
+      "pctROI": 1.8
     },
     {
       "ItemName": "Camphor repair kit",
@@ -28,6 +35,13 @@
       "PriceFloor": 1846.0,
       "BuyLimit": 13000,
       "pctROI": 9.79
+    },
+    {
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 705,
+      "PriceFloor": 925.0,
+      "BuyLimit": 10000,
+      "pctROI": 29.93
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -49,13 +63,6 @@
       "PriceFloor": 8974.0,
       "BuyLimit": 18000,
       "pctROI": 1.16
-    },
-    {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8796,
-      "PriceFloor": 8974.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.01
     },
     {
       "ItemName": "Diamond bracelet",
@@ -94,10 +101,10 @@
     },
     {
       "ItemName": "Teak repair kit",
-      "LowPrice": 326,
+      "LowPrice": 320,
       "PriceFloor": 361.0,
       "BuyLimit": 13000,
-      "pctROI": 9.82
+      "pctROI": 11.88
     }
   ],
   "methodology": "VeryGranular"
