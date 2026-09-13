@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-13T06:35:36.062473+00:00",
+  "updated": "2026-09-13T06:40:39.098708+00:00",
   "items": [
     {
       "ItemName": "Air battlestaff",
@@ -30,6 +30,13 @@
       "pctROI": 9.66
     },
     {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8755,
+      "PriceFloor": 8974.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.48
+    },
+    {
       "ItemName": "Earth battlestaff",
       "LowPrice": 8760,
       "PriceFloor": 8974.0,
@@ -56,13 +63,6 @@
       "PriceFloor": 569.0,
       "BuyLimit": 10000,
       "pctROI": 57.54
-    },
-    {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8772,
-      "PriceFloor": 8974.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.29
     },
     {
       "ItemName": "Amulet of glory(6)",
@@ -94,24 +94,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 316,
+      "LowPrice": 311,
       "PriceFloor": 397.0,
       "BuyLimit": 11000,
-      "pctROI": 24.68
-    },
-    {
-      "ItemName": "Yew longbow",
-      "LowPrice": 506,
-      "PriceFloor": 527.0,
-      "BuyLimit": 18000,
-      "pctROI": 3.16
-    },
-    {
-      "ItemName": "Teak repair kit",
-      "LowPrice": 352,
-      "PriceFloor": 361.0,
-      "BuyLimit": 13000,
-      "pctROI": 1.7
+      "pctROI": 26.69
     }
   ],
   "methodology": "VeryGranular"
