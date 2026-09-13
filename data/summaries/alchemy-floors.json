@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-13T17:45:45.107449+00:00",
+  "updated": "2026-09-13T17:50:39.469734+00:00",
   "items": [
     {
       "ItemName": "Water battlestaff",
@@ -7,6 +7,13 @@
       "PriceFloor": 8975.0,
       "BuyLimit": 18000,
       "pctROI": 2.49
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8700,
+      "PriceFloor": 8975.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.14
     },
     {
       "ItemName": "Earth battlestaff",
@@ -21,13 +28,6 @@
       "PriceFloor": 1288.0,
       "BuyLimit": 18000,
       "pctROI": 14.65
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8735,
-      "PriceFloor": 8975.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.73
     },
     {
       "ItemName": "Camphor repair kit",
@@ -52,10 +52,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 351,
+      "LowPrice": 350,
       "PriceFloor": 570.0,
       "BuyLimit": 10000,
-      "pctROI": 60.97
+      "pctROI": 61.43
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -101,10 +101,10 @@
     },
     {
       "ItemName": "Yew longbow (u)",
-      "LowPrice": 136,
+      "LowPrice": 137,
       "PriceFloor": 148.0,
       "BuyLimit": 10000,
-      "pctROI": 8.09
+      "pctROI": 7.3
     }
   ],
   "methodology": "VeryGranular"
