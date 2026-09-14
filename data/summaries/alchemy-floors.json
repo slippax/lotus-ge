@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-14T19:05:39.473150+00:00",
+  "updated": "2026-09-14T19:10:44.829565+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -10,10 +10,17 @@
     },
     {
       "ItemName": "Air battlestaff",
-      "LowPrice": 8737,
+      "LowPrice": 8726,
       "PriceFloor": 8975.0,
       "BuyLimit": 18000,
-      "pctROI": 1.71
+      "pctROI": 1.83
+    },
+    {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8730,
+      "PriceFloor": 8975.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.79
     },
     {
       "ItemName": "Magic longbow",
@@ -51,6 +58,20 @@
       "pctROI": 56.51
     },
     {
+      "ItemName": "Amulet of glory(6)",
+      "LowPrice": 9971,
+      "PriceFloor": 10237.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.64
+    },
+    {
+      "ItemName": "Combat bracelet",
+      "LowPrice": 12000,
+      "PriceFloor": 12266.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.2
+    },
+    {
       "ItemName": "Diamond bracelet",
       "LowPrice": 1901,
       "PriceFloor": 2040.0,
@@ -77,6 +98,13 @@
       "PriceFloor": 398.0,
       "BuyLimit": 11000,
       "pctROI": 23.44
+    },
+    {
+      "ItemName": "Magic shortbow",
+      "LowPrice": 700,
+      "PriceFloor": 718.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.57
     }
   ],
   "methodology": "VeryGranular"
