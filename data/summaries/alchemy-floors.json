@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-14T21:55:40.213089+00:00",
+  "updated": "2026-09-14T22:00:50.256445+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -7,13 +7,6 @@
       "PriceFloor": 8975.0,
       "BuyLimit": 18000,
       "pctROI": 2.31
-    },
-    {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8700,
-      "PriceFloor": 8975.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.14
     },
     {
       "ItemName": "Fire battlestaff",
@@ -24,10 +17,17 @@
     },
     {
       "ItemName": "Air battlestaff",
-      "LowPrice": 8749,
+      "LowPrice": 8747,
       "PriceFloor": 8975.0,
       "BuyLimit": 18000,
-      "pctROI": 1.57
+      "pctROI": 1.59
+    },
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8755,
+      "PriceFloor": 8975.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.5
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -51,18 +51,32 @@
       "pctROI": 8.48
     },
     {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1079,
-      "PriceFloor": 1253.0,
-      "BuyLimit": 13000,
-      "pctROI": 15.01
-    },
-    {
       "ItemName": "Rune javelin tips",
       "LowPrice": 355,
       "PriceFloor": 570.0,
       "BuyLimit": 10000,
       "pctROI": 59.15
+    },
+    {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1095,
+      "PriceFloor": 1253.0,
+      "BuyLimit": 13000,
+      "pctROI": 13.33
+    },
+    {
+      "ItemName": "Combat bracelet",
+      "LowPrice": 11989,
+      "PriceFloor": 12266.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.29
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8472,
+      "PriceFloor": 8678.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.42
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -77,13 +91,6 @@
       "PriceFloor": 398.0,
       "BuyLimit": 11000,
       "pctROI": 30.36
-    },
-    {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8500,
-      "PriceFloor": 8678.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.08
     }
   ],
   "methodology": "VeryGranular"
