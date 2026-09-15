@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-15T09:05:42.409760+00:00",
+  "updated": "2026-09-15T09:10:39.519872+00:00",
   "items": [
-    {
-      "ItemName": "Grimy dwarf weed",
-      "CurrentPrice": 1350,
-      "BuyLimit": 11000,
-      "FiveMinMean": 1315,
-      "HourlyMean": 1308,
-      "DailyMean": 1294,
-      "WeeklyMean": 1283,
-      "MonthlyMean": 1265,
-      "BullishConfluence": 5,
-      "BearishConfluence": 0,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 1485000.0
-    },
     {
       "ItemName": "Aether catalyst",
       "CurrentPrice": 368,
@@ -123,7 +108,7 @@
     },
     {
       "ItemName": "Basalt",
-      "CurrentPrice": 1549,
+      "CurrentPrice": 1519,
       "BuyLimit": 10000,
       "FiveMinMean": 1549,
       "HourlyMean": 1516,
@@ -131,10 +116,25 @@
       "WeeklyMean": 1363,
       "MonthlyMean": 1204,
       "BullishConfluence": 4,
-      "BearishConfluence": 0,
+      "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 1549000.0
+      "PotentialProfit": 1519000.0
+    },
+    {
+      "ItemName": "Grimy dwarf weed",
+      "CurrentPrice": 1307,
+      "BuyLimit": 11000,
+      "FiveMinMean": 1315,
+      "HourlyMean": 1308,
+      "DailyMean": 1294,
+      "WeeklyMean": 1283,
+      "MonthlyMean": 1265,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 1437700.0
     },
     {
       "ItemName": "Lantadyme",
@@ -152,23 +152,8 @@
       "PotentialProfit": 1433300.0
     },
     {
-      "ItemName": "Blighted super restore(4)",
-      "CurrentPrice": 3101,
-      "BuyLimit": 2000,
-      "FiveMinMean": 3067,
-      "HourlyMean": 3039,
-      "DailyMean": 2984,
-      "WeeklyMean": 2929,
-      "MonthlyMean": 2991,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 620200.0
-    },
-    {
       "ItemName": "Steel bar",
-      "CurrentPrice": 610,
+      "CurrentPrice": 609,
       "BuyLimit": 10000,
       "FiveMinMean": 617,
       "HourlyMean": 614,
@@ -179,7 +164,22 @@
       "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 610000.0
+      "PotentialProfit": 609000.0
+    },
+    {
+      "ItemName": "Ranarr seed",
+      "CurrentPrice": 29644,
+      "BuyLimit": 200,
+      "FiveMinMean": 29452,
+      "HourlyMean": 29242,
+      "DailyMean": 29063,
+      "WeeklyMean": 28934,
+      "MonthlyMean": 30056,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 592880.0
     },
     {
       "ItemName": "Plain pizza",
@@ -300,21 +300,6 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
       "PotentialProfit": 261000.0
-    },
-    {
-      "ItemName": "Red spiders' eggs",
-      "CurrentPrice": 189,
-      "BuyLimit": 13000,
-      "FiveMinMean": 186,
-      "HourlyMean": 186,
-      "DailyMean": 184,
-      "WeeklyMean": 182,
-      "MonthlyMean": 180,
-      "BullishConfluence": 4,
-      "BearishConfluence": 0,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 245700.0
     },
     {
       "ItemName": "Iron bar",
@@ -750,6 +735,21 @@
       "SignalStrength": "MODERATE_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
       "PotentialProfit": 3294830.0
+    },
+    {
+      "ItemName": "Jaguar fur",
+      "CurrentPrice": 4700,
+      "BuyLimit": 10000,
+      "FiveMinMean": 4700,
+      "HourlyMean": 4700,
+      "DailyMean": 4625,
+      "WeeklyMean": 4600,
+      "MonthlyMean": 3750,
+      "BullishConfluence": 3,
+      "BearishConfluence": 0,
+      "SignalStrength": "MODERATE_BULLISH",
+      "VolumeConfirmation": "VOLUME_SUPPORTED",
+      "PotentialProfit": 3290000.0
     }
   ],
   "methodology": "VeryGranular_MultiTimeframeConfluence"
