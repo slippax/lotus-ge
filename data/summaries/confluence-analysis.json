@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-15T09:15:42.554940+00:00",
+  "updated": "2026-09-15T09:20:36.821026+00:00",
   "items": [
     {
       "ItemName": "Aether catalyst",
@@ -15,6 +15,21 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
       "PotentialProfit": 920000.0
+    },
+    {
+      "ItemName": "Adamantite ore",
+      "CurrentPrice": 587,
+      "BuyLimit": 4500,
+      "FiveMinMean": 583,
+      "HourlyMean": 582,
+      "DailyMean": 577,
+      "WeeklyMean": 560,
+      "MonthlyMean": 557,
+      "BullishConfluence": 5,
+      "BearishConfluence": 0,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 264150.0
     },
     {
       "ItemName": "Ring of wealth (5)",
@@ -152,6 +167,21 @@
       "PotentialProfit": 1433300.0
     },
     {
+      "ItemName": "Oak plank",
+      "CurrentPrice": 564,
+      "BuyLimit": 13000,
+      "FiveMinMean": 559,
+      "HourlyMean": 553,
+      "DailyMean": 554,
+      "WeeklyMean": 534,
+      "MonthlyMean": 448,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 733200.0
+    },
+    {
       "ItemName": "Steel bar",
       "CurrentPrice": 609,
       "BuyLimit": 10000,
@@ -285,21 +315,6 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
       "PotentialProfit": 272800.0
-    },
-    {
-      "ItemName": "Adamantite ore",
-      "CurrentPrice": 580,
-      "BuyLimit": 4500,
-      "FiveMinMean": 583,
-      "HourlyMean": 582,
-      "DailyMean": 577,
-      "WeeklyMean": 560,
-      "MonthlyMean": 557,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 261000.0
     },
     {
       "ItemName": "Iron bar",
@@ -735,21 +750,6 @@
       "SignalStrength": "MODERATE_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
       "PotentialProfit": 3294830.0
-    },
-    {
-      "ItemName": "Jaguar fur",
-      "CurrentPrice": 4700,
-      "BuyLimit": 10000,
-      "FiveMinMean": 4700,
-      "HourlyMean": 4700,
-      "DailyMean": 4625,
-      "WeeklyMean": 4600,
-      "MonthlyMean": 3750,
-      "BullishConfluence": 3,
-      "BearishConfluence": 0,
-      "SignalStrength": "MODERATE_BULLISH",
-      "VolumeConfirmation": "VOLUME_SUPPORTED",
-      "PotentialProfit": 3290000.0
     }
   ],
   "methodology": "VeryGranular_MultiTimeframeConfluence"
