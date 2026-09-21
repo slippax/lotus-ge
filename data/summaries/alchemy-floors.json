@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-21T08:25:37.538735+00:00",
+  "updated": "2026-09-21T08:30:42.946020+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -9,6 +9,13 @@
       "pctROI": 10.76
     },
     {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1820,
+      "PriceFloor": 2040.0,
+      "BuyLimit": 10000,
+      "pctROI": 10.99
+    },
+    {
       "ItemName": "Water battlestaff",
       "LowPrice": 8775,
       "PriceFloor": 8975.0,
@@ -16,18 +23,11 @@
       "pctROI": 1.26
     },
     {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1829,
-      "PriceFloor": 2040.0,
-      "BuyLimit": 10000,
-      "pctROI": 10.44
-    },
-    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 381,
+      "LowPrice": 374,
       "PriceFloor": 570.0,
       "BuyLimit": 10000,
-      "pctROI": 48.29
+      "pctROI": 51.07
     },
     {
       "ItemName": "Camphor repair kit",
@@ -38,10 +38,17 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 757,
+      "LowPrice": 759,
       "PriceFloor": 926.0,
       "BuyLimit": 10000,
-      "pctROI": 21.14
+      "pctROI": 20.82
+    },
+    {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1151,
+      "PriceFloor": 1253.0,
+      "BuyLimit": 13000,
+      "pctROI": 7.82
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -56,13 +63,6 @@
       "PriceFloor": 398.0,
       "BuyLimit": 11000,
       "pctROI": 26.6
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1180,
-      "PriceFloor": 1253.0,
-      "BuyLimit": 13000,
-      "pctROI": 5.17
     },
     {
       "ItemName": "Ruby bracelet",
@@ -91,6 +91,20 @@
       "PriceFloor": 1951.0,
       "BuyLimit": 18000,
       "pctROI": 1.42
+    },
+    {
+      "ItemName": "Diamond amulet (u)",
+      "LowPrice": 1803,
+      "PriceFloor": 1862.0,
+      "BuyLimit": 10000,
+      "pctROI": 2.27
+    },
+    {
+      "ItemName": "Ruby ring",
+      "LowPrice": 945,
+      "PriceFloor": 971.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.8
     }
   ],
   "methodology": "VeryGranular"
