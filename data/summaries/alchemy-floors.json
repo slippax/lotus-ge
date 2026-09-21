@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-21T18:05:40.692449+00:00",
+  "updated": "2026-09-21T18:10:42.402199+00:00",
   "items": [
     {
       "ItemName": "Air battlestaff",
@@ -30,6 +30,13 @@
       "pctROI": 1.26
     },
     {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1834,
+      "PriceFloor": 2040.0,
+      "BuyLimit": 10000,
+      "pctROI": 10.14
+    },
+    {
       "ItemName": "Rune javelin tips",
       "LowPrice": 387,
       "PriceFloor": 570.0,
@@ -44,18 +51,11 @@
       "pctROI": 23.92
     },
     {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1848,
-      "PriceFloor": 2040.0,
-      "BuyLimit": 10000,
-      "pctROI": 9.31
-    },
-    {
       "ItemName": "Mahogany repair kit",
-      "LowPrice": 1131,
+      "LowPrice": 1133,
       "PriceFloor": 1253.0,
       "BuyLimit": 13000,
-      "pctROI": 9.73
+      "pctROI": 9.53
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -105,13 +105,6 @@
       "PriceFloor": 971.0,
       "BuyLimit": 10000,
       "pctROI": 3.44
-    },
-    {
-      "ItemName": "Emerald necklace",
-      "LowPrice": 600,
-      "PriceFloor": 614.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.33
     }
   ],
   "methodology": "VeryGranular"
