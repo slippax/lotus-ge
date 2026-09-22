@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-22T20:15:42.582166+00:00",
+  "updated": "2026-09-22T20:20:41.662266+00:00",
   "items": [
     {
       "ItemName": "Camphor repair kit",
@@ -37,6 +37,13 @@
       "pctROI": 10.32
     },
     {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8785,
+      "PriceFloor": 8975.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.15
+    },
+    {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8785,
       "PriceFloor": 8975.0,
@@ -45,24 +52,24 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 744,
+      "LowPrice": 739,
       "PriceFloor": 926.0,
       "BuyLimit": 10000,
-      "pctROI": 23.25
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8790,
-      "PriceFloor": 8975.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.09
+      "pctROI": 24.09
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 396,
+      "LowPrice": 394,
       "PriceFloor": 570.0,
       "BuyLimit": 10000,
-      "pctROI": 42.68
+      "pctROI": 43.4
+    },
+    {
+      "ItemName": "Amulet of glory(6)",
+      "LowPrice": 9999,
+      "PriceFloor": 10237.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.36
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -86,11 +93,25 @@
       "pctROI": 49.5
     },
     {
+      "ItemName": "Diamond necklace",
+      "LowPrice": 1891,
+      "PriceFloor": 1951.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.17
+    },
+    {
       "ItemName": "Ruby necklace",
       "LowPrice": 1016,
       "PriceFloor": 1060.0,
       "BuyLimit": 18000,
       "pctROI": 3.35
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 345,
+      "PriceFloor": 398.0,
+      "BuyLimit": 11000,
+      "pctROI": 14.49
     },
     {
       "ItemName": "Ruby bracelet",
@@ -100,25 +121,11 @@
       "pctROI": 5.08
     },
     {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 354,
-      "PriceFloor": 398.0,
-      "BuyLimit": 11000,
-      "pctROI": 11.58
-    },
-    {
       "ItemName": "Emerald necklace",
       "LowPrice": 586,
       "PriceFloor": 614.0,
       "BuyLimit": 18000,
       "pctROI": 3.75
-    },
-    {
-      "ItemName": "Diamond amulet (u)",
-      "LowPrice": 1810,
-      "PriceFloor": 1862.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.88
     }
   ],
   "methodology": "VeryGranular"
