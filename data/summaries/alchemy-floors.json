@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-23T11:45:50.381711+00:00",
+  "updated": "2026-09-23T11:50:47.885512+00:00",
   "items": [
     {
       "ItemName": "Camphor repair kit",
@@ -38,10 +38,17 @@
     },
     {
       "ItemName": "Water battlestaff",
-      "LowPrice": 8797,
+      "LowPrice": 8790,
       "PriceFloor": 8975.0,
       "BuyLimit": 18000,
-      "pctROI": 1.01
+      "pctROI": 1.09
+    },
+    {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1127,
+      "PriceFloor": 1253.0,
+      "BuyLimit": 13000,
+      "pctROI": 10.12
     },
     {
       "ItemName": "Diamond bracelet",
@@ -72,25 +79,18 @@
       "pctROI": 18.54
     },
     {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1180,
-      "PriceFloor": 1253.0,
-      "BuyLimit": 13000,
-      "pctROI": 5.17
+      "ItemName": "Diamond necklace",
+      "LowPrice": 1891,
+      "PriceFloor": 1951.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.17
     },
     {
       "ItemName": "Ruby necklace",
-      "LowPrice": 1030,
+      "LowPrice": 1034,
       "PriceFloor": 1060.0,
       "BuyLimit": 18000,
-      "pctROI": 1.94
-    },
-    {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 369,
-      "PriceFloor": 398.0,
-      "BuyLimit": 11000,
-      "pctROI": 7.05
+      "pctROI": 1.55
     },
     {
       "ItemName": "Diamond amulet (u)",
@@ -105,6 +105,13 @@
       "PriceFloor": 614.0,
       "BuyLimit": 18000,
       "pctROI": 1.84
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 384,
+      "PriceFloor": 398.0,
+      "BuyLimit": 11000,
+      "pctROI": 2.86
     }
   ],
   "methodology": "VeryGranular"
