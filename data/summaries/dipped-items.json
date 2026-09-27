@@ -1,12 +1,19 @@
 {
-  "updated": "2026-09-27T11:31:17.279557+00:00",
+  "updated": "2026-09-27T11:35:35.521903+00:00",
   "items": [
     {
-      "ItemName": "Magic stone",
-      "LowPrice": 976000,
-      "AvgLow": 987344,
+      "ItemName": "Stew",
+      "LowPrice": 10,
+      "AvgLow": 140,
+      "BuyLimit": 10000,
+      "pctROI": 1290.0
+    },
+    {
+      "ItemName": "Rune knife",
+      "LowPrice": 58,
+      "AvgLow": 113,
       "BuyLimit": 11000,
-      "pctROI": 0.15
+      "pctROI": 93.1
     },
     {
       "ItemName": "Monkey tail",
@@ -14,13 +21,6 @@
       "AvgLow": 490595,
       "BuyLimit": 8,
       "pctROI": 17.74
-    },
-    {
-      "ItemName": "Annakarl teleport (tablet)",
-      "LowPrice": 2820,
-      "AvgLow": 2906,
-      "BuyLimit": 10000,
-      "pctROI": 2.02
     },
     {
       "ItemName": "Devout boots",
@@ -35,6 +35,34 @@
       "AvgLow": 2019,
       "BuyLimit": 11000,
       "pctROI": 46.99
+    },
+    {
+      "ItemName": "Soft clay",
+      "LowPrice": 76,
+      "AvgLow": 98,
+      "BuyLimit": 13000,
+      "pctROI": 28.95
+    },
+    {
+      "ItemName": "Oranges(5)",
+      "LowPrice": 895,
+      "AvgLow": 1276,
+      "BuyLimit": 600,
+      "pctROI": 41.23
+    },
+    {
+      "ItemName": "Dodgy necklace",
+      "LowPrice": 1315,
+      "AvgLow": 1349,
+      "BuyLimit": 10000,
+      "pctROI": 1.6
+    },
+    {
+      "ItemName": "Bandos rune armour set (lg)",
+      "LowPrice": 130000,
+      "AvgLow": 156113,
+      "BuyLimit": 8,
+      "pctROI": 18.89
     }
   ],
   "methodology": "VeryGranular"
