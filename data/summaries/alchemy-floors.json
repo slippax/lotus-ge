@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-29T01:05:40.616340+00:00",
+  "updated": "2026-09-29T01:10:37.288613+00:00",
   "items": [
     {
       "ItemName": "Air battlestaff",
@@ -9,11 +9,25 @@
       "pctROI": 2.11
     },
     {
+      "ItemName": "Camphor repair kit",
+      "LowPrice": 1580,
+      "PriceFloor": 1846.0,
+      "BuyLimit": 13000,
+      "pctROI": 15.7
+    },
+    {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8711,
       "PriceFloor": 8974.0,
       "BuyLimit": 18000,
       "pctROI": 2.0
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8721,
+      "PriceFloor": 8974.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.88
     },
     {
       "ItemName": "Water battlestaff",
@@ -23,25 +37,11 @@
       "pctROI": 1.59
     },
     {
-      "ItemName": "Camphor repair kit",
-      "LowPrice": 1638,
-      "PriceFloor": 1846.0,
-      "BuyLimit": 13000,
-      "pctROI": 11.6
-    },
-    {
       "ItemName": "Magic longbow",
-      "LowPrice": 1158,
+      "LowPrice": 1137,
       "PriceFloor": 1287.0,
       "BuyLimit": 18000,
-      "pctROI": 10.1
-    },
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8770,
-      "PriceFloor": 8974.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.31
+      "pctROI": 12.14
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -77,13 +77,6 @@
       "PriceFloor": 2039.0,
       "BuyLimit": 10000,
       "pctROI": 7.39
-    },
-    {
-      "ItemName": "Combat bracelet",
-      "LowPrice": 12005,
-      "PriceFloor": 12265.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.15
     },
     {
       "ItemName": "Rune javelin tips",
@@ -122,10 +115,10 @@
     },
     {
       "ItemName": "Emerald necklace",
-      "LowPrice": 590,
+      "LowPrice": 580,
       "PriceFloor": 613.0,
       "BuyLimit": 18000,
-      "pctROI": 2.88
+      "pctROI": 4.66
     }
   ],
   "methodology": "VeryGranular"
