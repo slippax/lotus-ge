@@ -1,6 +1,13 @@
 {
-  "updated": "2026-09-29T13:15:39.644115+00:00",
+  "updated": "2026-09-29T13:20:40.015697+00:00",
   "items": [
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8701,
+      "PriceFloor": 8974.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.11
+    },
     {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8711,
@@ -44,11 +51,18 @@
       "pctROI": 2.49
     },
     {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 416,
+      "PriceFloor": 569.0,
+      "BuyLimit": 10000,
+      "pctROI": 35.58
+    },
+    {
       "ItemName": "Diamond necklace",
-      "LowPrice": 1848,
+      "LowPrice": 1851,
       "PriceFloor": 1950.0,
       "BuyLimit": 18000,
-      "pctROI": 4.49
+      "pctROI": 4.32
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -56,13 +70,6 @@
       "PriceFloor": 925.0,
       "BuyLimit": 10000,
       "pctROI": 18.19
-    },
-    {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 436,
-      "PriceFloor": 569.0,
-      "BuyLimit": 10000,
-      "pctROI": 29.36
     },
     {
       "ItemName": "Diamond bracelet",
@@ -79,13 +86,6 @@
       "pctROI": 18.36
     },
     {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1164,
-      "PriceFloor": 1252.0,
-      "BuyLimit": 13000,
-      "pctROI": 6.53
-    },
-    {
       "ItemName": "Ruby necklace",
       "LowPrice": 995,
       "PriceFloor": 1059.0,
@@ -100,11 +100,25 @@
       "pctROI": 3.51
     },
     {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1169,
+      "PriceFloor": 1252.0,
+      "BuyLimit": 13000,
+      "pctROI": 6.07
+    },
+    {
       "ItemName": "Ruby bracelet",
       "LowPrice": 1048,
       "PriceFloor": 1148.0,
       "BuyLimit": 10000,
       "pctROI": 8.49
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 333,
+      "PriceFloor": 397.0,
+      "BuyLimit": 11000,
+      "pctROI": 18.32
     },
     {
       "ItemName": "Diamond amulet (u)",
@@ -114,18 +128,11 @@
       "pctROI": 3.66
     },
     {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 335,
-      "PriceFloor": 397.0,
-      "BuyLimit": 11000,
-      "pctROI": 17.61
-    },
-    {
       "ItemName": "Emerald necklace",
-      "LowPrice": 580,
+      "LowPrice": 577,
       "PriceFloor": 613.0,
       "BuyLimit": 18000,
-      "pctROI": 4.66
+      "pctROI": 5.2
     }
   ],
   "methodology": "VeryGranular"
