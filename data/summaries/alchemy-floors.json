@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30T18:20:38.697051+00:00",
+  "updated": "2026-09-30T18:25:37.268341+00:00",
   "items": [
     {
       "ItemName": "Camphor repair kit",
@@ -10,17 +10,10 @@
     },
     {
       "ItemName": "Earth battlestaff",
-      "LowPrice": 8550,
+      "LowPrice": 8700,
       "PriceFloor": 8973.0,
       "BuyLimit": 18000,
-      "pctROI": 3.91
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8740,
-      "PriceFloor": 8973.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.65
+      "pctROI": 2.11
     },
     {
       "ItemName": "Water battlestaff",
@@ -28,6 +21,13 @@
       "PriceFloor": 8973.0,
       "BuyLimit": 18000,
       "pctROI": 1.65
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8750,
+      "PriceFloor": 8973.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.53
     },
     {
       "ItemName": "Magic longbow",
@@ -59,10 +59,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 421,
+      "LowPrice": 417,
       "PriceFloor": 568.0,
       "BuyLimit": 10000,
-      "pctROI": 33.73
+      "pctROI": 35.01
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -93,6 +93,13 @@
       "pctROI": 5.65
     },
     {
+      "ItemName": "Ruby ring",
+      "LowPrice": 885,
+      "PriceFloor": 969.0,
+      "BuyLimit": 10000,
+      "pctROI": 8.47
+    },
+    {
       "ItemName": "Dragonstone bolts (e)",
       "LowPrice": 328,
       "PriceFloor": 396.0,
@@ -119,13 +126,6 @@
       "PriceFloor": 612.0,
       "BuyLimit": 18000,
       "pctROI": 3.59
-    },
-    {
-      "ItemName": "Ruby ring",
-      "LowPrice": 923,
-      "PriceFloor": 969.0,
-      "BuyLimit": 10000,
-      "pctROI": 4.01
     }
   ],
   "methodology": "VeryGranular"
