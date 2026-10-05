@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-05T05:40:38.932624+00:00",
+  "updated": "2026-10-05T05:45:36.392831+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -23,6 +23,13 @@
       "pctROI": 13.02
     },
     {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8755,
+      "PriceFloor": 8975.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.5
+    },
+    {
       "ItemName": "Onyx bolts (e)",
       "LowPrice": 8380,
       "PriceFloor": 8678.0,
@@ -35,13 +42,6 @@
       "PriceFloor": 8975.0,
       "BuyLimit": 18000,
       "pctROI": 1.26
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8776,
-      "PriceFloor": 8975.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.25
     },
     {
       "ItemName": "Diamond bracelet",
@@ -59,10 +59,10 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 759,
+      "LowPrice": 752,
       "PriceFloor": 926.0,
       "BuyLimit": 10000,
-      "pctROI": 20.82
+      "pctROI": 21.94
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -72,18 +72,18 @@
       "pctROI": 10.8
     },
     {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 416,
+      "PriceFloor": 570.0,
+      "BuyLimit": 10000,
+      "pctROI": 35.82
+    },
+    {
       "ItemName": "Ironwood repair kit",
       "LowPrice": 2013,
       "PriceFloor": 2144.0,
       "BuyLimit": 13000,
       "pctROI": 5.46
-    },
-    {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 445,
-      "PriceFloor": 570.0,
-      "BuyLimit": 10000,
-      "pctROI": 26.97
     },
     {
       "ItemName": "Diamond amulet (u)",
@@ -115,17 +115,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 345,
+      "LowPrice": 347,
       "PriceFloor": 398.0,
       "BuyLimit": 11000,
-      "pctROI": 14.49
-    },
-    {
-      "ItemName": "Emerald necklace",
-      "LowPrice": 591,
-      "PriceFloor": 614.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.88
+      "pctROI": 13.83
     }
   ],
   "methodology": "VeryGranular"
