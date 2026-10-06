@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-06T07:25:41.388445+00:00",
+  "updated": "2026-10-06T07:30:53.719309+00:00",
   "items": [
     {
       "ProductName": "Magic potion(4)",
@@ -143,7 +143,7 @@
     },
     {
       "ProductName": "Super defence(4)",
-      "ProductPrice": 3420,
+      "ProductPrice": 3405,
       "ProductBuyLimit": 2000,
       "Ingredient1Name": "Super defence(3)",
       "Ingredient1Price": 2454,
@@ -155,8 +155,8 @@
       "Ingredient3Price": 0,
       "Ingredient3Qty": "0",
       "TotalIngredientCost": 2454,
-      "ProfitPerCraft": 966,
-      "ROI": 39.36,
+      "ProfitPerCraft": 951,
+      "ROI": 38.75,
       "RecipeType": "Decant 3 to 4 (Bob Barter)",
       "QtyProduced": 1,
       "LiquidityLevel": "HIGH_LIQUIDITY"
@@ -342,26 +342,6 @@
       "LiquidityLevel": "LOW_LIQUIDITY"
     },
     {
-      "ProductName": "Torag's helm",
-      "ProductPrice": 228000,
-      "ProductBuyLimit": 15,
-      "Ingredient1Name": "Torag's helm 0",
-      "Ingredient1Price": 167616,
-      "Ingredient1Qty": "1",
-      "Ingredient2Name": "",
-      "Ingredient2Price": 0,
-      "Ingredient2Qty": "0",
-      "Ingredient3Name": "",
-      "Ingredient3Price": 0,
-      "Ingredient3Qty": "0",
-      "TotalIngredientCost": 203616,
-      "ProfitPerCraft": 24384,
-      "ROI": 11.98,
-      "RecipeType": "Repair Broken Armour (POH calculated at 80 smithing)",
-      "QtyProduced": 1,
-      "LiquidityLevel": "HIGH_LIQUIDITY"
-    },
-    {
       "ProductName": "Torag's platebody",
       "ProductPrice": 250553,
       "ProductBuyLimit": 15,
@@ -482,6 +462,26 @@
       "LiquidityLevel": "HIGH_LIQUIDITY"
     },
     {
+      "ProductName": "Torag's helm",
+      "ProductPrice": 228000,
+      "ProductBuyLimit": 15,
+      "Ingredient1Name": "Torag's helm 0",
+      "Ingredient1Price": 175000,
+      "Ingredient1Qty": "1",
+      "Ingredient2Name": "",
+      "Ingredient2Price": 0,
+      "Ingredient2Qty": "0",
+      "Ingredient3Name": "",
+      "Ingredient3Price": 0,
+      "Ingredient3Qty": "0",
+      "TotalIngredientCost": 211000,
+      "ProfitPerCraft": 17000,
+      "ROI": 8.06,
+      "RecipeType": "Repair Broken Armour (POH calculated at 80 smithing)",
+      "QtyProduced": 1,
+      "LiquidityLevel": "HIGH_LIQUIDITY"
+    },
+    {
       "ProductName": "Torstol potion (unf)",
       "ProductPrice": 3784,
       "ProductBuyLimit": 10000,
@@ -517,6 +517,26 @@
       "TotalIngredientCost": 2338,
       "ProfitPerCraft": 131,
       "ROI": 5.6,
+      "RecipeType": "Create Unfinished Potions (Zahur)",
+      "QtyProduced": 1,
+      "LiquidityLevel": "HIGH_LIQUIDITY"
+    },
+    {
+      "ProductName": "Harralander potion (unf)",
+      "ProductPrice": 646,
+      "ProductBuyLimit": 10000,
+      "Ingredient1Name": "Harralander",
+      "Ingredient1Price": 408,
+      "Ingredient1Qty": "1",
+      "Ingredient2Name": "Vial of water",
+      "Ingredient2Price": 4,
+      "Ingredient2Qty": "1",
+      "Ingredient3Name": "",
+      "Ingredient3Price": 0,
+      "Ingredient3Qty": "0",
+      "TotalIngredientCost": 612,
+      "ProfitPerCraft": 34,
+      "ROI": 5.56,
       "RecipeType": "Create Unfinished Potions (Zahur)",
       "QtyProduced": 1,
       "LiquidityLevel": "HIGH_LIQUIDITY"
@@ -560,26 +580,6 @@
       "RecipeType": "Repair Broken Armour (POH calculated at 80 smithing)",
       "QtyProduced": 1,
       "LiquidityLevel": "LOW_LIQUIDITY"
-    },
-    {
-      "ProductName": "Harralander potion (unf)",
-      "ProductPrice": 646,
-      "ProductBuyLimit": 10000,
-      "Ingredient1Name": "Harralander",
-      "Ingredient1Price": 411,
-      "Ingredient1Qty": "1",
-      "Ingredient2Name": "Vial of water",
-      "Ingredient2Price": 4,
-      "Ingredient2Qty": "1",
-      "Ingredient3Name": "",
-      "Ingredient3Price": 0,
-      "Ingredient3Qty": "0",
-      "TotalIngredientCost": 615,
-      "ProfitPerCraft": 31,
-      "ROI": 5.04,
-      "RecipeType": "Create Unfinished Potions (Zahur)",
-      "QtyProduced": 1,
-      "LiquidityLevel": "HIGH_LIQUIDITY"
     }
   ],
   "methodology": "VeryGranular_RecipeArbitrage"
