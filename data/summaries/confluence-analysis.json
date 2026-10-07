@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07T11:05:37.928007+00:00",
+  "updated": "2026-10-07T11:10:40.530829+00:00",
   "items": [
     {
       "ItemName": "Guthixian temple teleport",
@@ -182,6 +182,21 @@
       "PotentialProfit": 1441000.0
     },
     {
+      "ItemName": "Saradomin brew(4)",
+      "CurrentPrice": 7180,
+      "BuyLimit": 2000,
+      "FiveMinMean": 7164,
+      "HourlyMean": 7165,
+      "DailyMean": 7060,
+      "WeeklyMean": 6956,
+      "MonthlyMean": 6918,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 1436000.0
+    },
+    {
       "ItemName": "Emerald necklace",
       "CurrentPrice": 609,
       "BuyLimit": 18000,
@@ -272,23 +287,8 @@
       "PotentialProfit": 747000.0
     },
     {
-      "ItemName": "Blighted super restore(4)",
-      "CurrentPrice": 3505,
-      "BuyLimit": 2000,
-      "FiveMinMean": 3412,
-      "HourlyMean": 3445,
-      "DailyMean": 3409,
-      "WeeklyMean": 3336,
-      "MonthlyMean": 3129,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 701000.0
-    },
-    {
       "ItemName": "Ranarr seed",
-      "CurrentPrice": 31359,
+      "CurrentPrice": 31420,
       "BuyLimit": 200,
       "FiveMinMean": 30278,
       "HourlyMean": 29912,
@@ -299,7 +299,7 @@
       "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 627180.0
+      "PotentialProfit": 628400.0
     },
     {
       "ItemName": "Death rune",
@@ -345,21 +345,6 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
       "PotentialProfit": 380600.0
-    },
-    {
-      "ItemName": "Super attack(3)",
-      "CurrentPrice": 1385,
-      "BuyLimit": 2000,
-      "FiveMinMean": 1384,
-      "HourlyMean": 1376,
-      "DailyMean": 1370,
-      "WeeklyMean": 1429,
-      "MonthlyMean": 1423,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 277000.0
     },
     {
       "ItemName": "Snape grass seed",
@@ -722,21 +707,6 @@
       "PotentialProfit": 5690300.0
     },
     {
-      "ItemName": "Grimy ranarr weed",
-      "CurrentPrice": 5700,
-      "BuyLimit": 11000,
-      "FiveMinMean": 5693,
-      "HourlyMean": 5698,
-      "DailyMean": 5682,
-      "WeeklyMean": 5687,
-      "MonthlyMean": 5684,
-      "BullishConfluence": 3,
-      "BearishConfluence": 2,
-      "SignalStrength": "MODERATE_BULLISH",
-      "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 4389000.0
-    },
-    {
       "ItemName": "Lumberyard teleport",
       "CurrentPrice": 4013,
       "BuyLimit": 15000,
@@ -750,6 +720,36 @@
       "SignalStrength": "MODERATE_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
       "PotentialProfit": 4213650.0
+    },
+    {
+      "ItemName": "Soaked page",
+      "CurrentPrice": 4281,
+      "BuyLimit": 11000,
+      "FiveMinMean": 4281,
+      "HourlyMean": 4295,
+      "DailyMean": 4241,
+      "WeeklyMean": 3745,
+      "MonthlyMean": 3731,
+      "BullishConfluence": 3,
+      "BearishConfluence": 1,
+      "SignalStrength": "MODERATE_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 3296370.0
+    },
+    {
+      "ItemName": "Runite ore",
+      "CurrentPrice": 10208,
+      "BuyLimit": 4500,
+      "FiveMinMean": 10135,
+      "HourlyMean": 10120,
+      "DailyMean": 10056,
+      "WeeklyMean": 10075,
+      "MonthlyMean": 10094,
+      "BullishConfluence": 3,
+      "BearishConfluence": 2,
+      "SignalStrength": "MODERATE_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 3215520.0
     }
   ],
   "methodology": "VeryGranular_MultiTimeframeConfluence"
