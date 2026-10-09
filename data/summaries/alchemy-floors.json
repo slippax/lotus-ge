@@ -1,12 +1,19 @@
 {
-  "updated": "2026-10-09T05:30:41.916989+00:00",
+  "updated": "2026-10-09T05:35:35.791566+00:00",
   "items": [
     {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1123,
+      "PriceFloor": 1285.0,
+      "BuyLimit": 18000,
+      "pctROI": 13.36
+    },
+    {
       "ItemName": "Earth battlestaff",
-      "LowPrice": 8748,
+      "LowPrice": 8750,
       "PriceFloor": 8972.0,
       "BuyLimit": 18000,
-      "pctROI": 1.54
+      "pctROI": 1.52
     },
     {
       "ItemName": "Water battlestaff",
@@ -21,13 +28,6 @@
       "PriceFloor": 1844.0,
       "BuyLimit": 13000,
       "pctROI": 10.27
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1151,
-      "PriceFloor": 1285.0,
-      "BuyLimit": 18000,
-      "pctROI": 10.6
     },
     {
       "ItemName": "Air battlestaff",
@@ -115,10 +115,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 342,
+      "LowPrice": 343,
       "PriceFloor": 395.0,
       "BuyLimit": 11000,
-      "pctROI": 14.62
+      "pctROI": 14.29
     },
     {
       "ItemName": "Diamond necklace",
@@ -135,18 +135,25 @@
       "pctROI": 2.68
     },
     {
-      "ItemName": "Emerald necklace",
-      "LowPrice": 581,
-      "PriceFloor": 611.0,
-      "BuyLimit": 18000,
-      "pctROI": 4.13
-    },
-    {
       "ItemName": "Phoenix necklace",
       "LowPrice": 2120,
       "PriceFloor": 2170.0,
       "BuyLimit": 10000,
       "pctROI": 1.37
+    },
+    {
+      "ItemName": "Emerald necklace",
+      "LowPrice": 589,
+      "PriceFloor": 611.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.72
+    },
+    {
+      "ItemName": "Ruby ring",
+      "LowPrice": 940,
+      "PriceFloor": 968.0,
+      "BuyLimit": 10000,
+      "pctROI": 2.02
     }
   ],
   "methodology": "VeryGranular"
