@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-11T06:25:38.484482+00:00",
+  "updated": "2026-10-11T06:30:58.807054+00:00",
   "items": [
     {
       "ItemName": "Ogre arrow shaft",
@@ -12,19 +12,6 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 63000.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
-      "ItemName": "Infernal ashes",
-      "CurrentPrice": 2713,
-      "BuyLimit": 7500,
-      "DailyRange": 14,
-      "WeeklyRange": 704,
-      "MonthlyRange": 1394,
-      "CompressionRatio": 1.99,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 2034750.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -90,6 +77,19 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 1000000.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Infernal ashes",
+      "CurrentPrice": 2713,
+      "BuyLimit": 7500,
+      "DailyRange": 38,
+      "WeeklyRange": 704,
+      "MonthlyRange": 1394,
+      "CompressionRatio": 5.4,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 2034750.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -171,16 +171,29 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Burnt page",
-      "CurrentPrice": 8437,
-      "BuyLimit": 11000,
-      "DailyRange": 335,
-      "WeeklyRange": 1902,
-      "MonthlyRange": 2116,
-      "CompressionRatio": 17.61,
+      "ItemName": "Stew",
+      "CurrentPrice": 139,
+      "BuyLimit": 10000,
+      "DailyRange": 92,
+      "WeeklyRange": 528,
+      "MonthlyRange": 562,
+      "CompressionRatio": 17.42,
+      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 139000.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Nihil shard",
+      "CurrentPrice": 3069,
+      "BuyLimit": 30000,
+      "DailyRange": 48,
+      "WeeklyRange": 267,
+      "MonthlyRange": 361,
+      "CompressionRatio": 17.98,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 9280700.0,
+      "PotentialBreakoutProfit": 9207000.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -236,32 +249,6 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Stew",
-      "CurrentPrice": 139,
-      "BuyLimit": 10000,
-      "DailyRange": 114,
-      "WeeklyRange": 528,
-      "MonthlyRange": 562,
-      "CompressionRatio": 21.59,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 139000.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
-      "ItemName": "Sunlight antler bolts",
-      "CurrentPrice": 79,
-      "BuyLimit": 11000,
-      "DailyRange": 27,
-      "WeeklyRange": 124,
-      "MonthlyRange": 124,
-      "CompressionRatio": 21.77,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 86900.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
       "ItemName": "Bird nest (empty)",
       "CurrentPrice": 3935,
       "BuyLimit": 11000,
@@ -285,6 +272,19 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 3748800.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Unicorn horn",
+      "CurrentPrice": 673,
+      "BuyLimit": 13000,
+      "DailyRange": 10,
+      "WeeklyRange": 45,
+      "MonthlyRange": 138,
+      "CompressionRatio": 22.22,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 874900.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -366,19 +366,6 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
-      "ItemName": "Unicorn horn",
-      "CurrentPrice": 673,
-      "BuyLimit": 13000,
-      "DailyRange": 12,
-      "WeeklyRange": 45,
-      "MonthlyRange": 138,
-      "CompressionRatio": 26.67,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 874900.0,
-      "CompressionLevel": "HIGH_COMPRESSION"
-    },
-    {
       "ItemName": "Grimy snapdragon",
       "CurrentPrice": 7886,
       "BuyLimit": 11000,
@@ -405,16 +392,55 @@
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
+      "ItemName": "Demonic tallow",
+      "CurrentPrice": 252,
+      "BuyLimit": 11000,
+      "DailyRange": 20,
+      "WeeklyRange": 72,
+      "MonthlyRange": 85,
+      "CompressionRatio": 27.78,
+      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 277200.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Burnt page",
+      "CurrentPrice": 8438,
+      "BuyLimit": 11000,
+      "DailyRange": 533,
+      "WeeklyRange": 1902,
+      "MonthlyRange": 2116,
+      "CompressionRatio": 28.02,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 9281800.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
       "ItemName": "Summer pie",
-      "CurrentPrice": 594,
+      "CurrentPrice": 569,
       "BuyLimit": 10000,
       "DailyRange": 47,
       "WeeklyRange": 164,
       "MonthlyRange": 190,
       "CompressionRatio": 28.66,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 594000.0,
+      "PotentialBreakoutProfit": 569000.0,
+      "CompressionLevel": "HIGH_COMPRESSION"
+    },
+    {
+      "ItemName": "Haemostatic dressing (4)",
+      "CurrentPrice": 5632,
+      "BuyLimit": 2000,
+      "DailyRange": 454,
+      "WeeklyRange": 1576,
+      "MonthlyRange": 2212,
+      "CompressionRatio": 28.81,
+      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 1126400.0,
       "CompressionLevel": "HIGH_COMPRESSION"
     },
     {
@@ -457,32 +483,6 @@
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
-      "ItemName": "Demonic tallow",
-      "CurrentPrice": 252,
-      "BuyLimit": 11000,
-      "DailyRange": 22,
-      "WeeklyRange": 72,
-      "MonthlyRange": 85,
-      "CompressionRatio": 30.56,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 277200.0,
-      "CompressionLevel": "MODERATE_COMPRESSION"
-    },
-    {
-      "ItemName": "Nihil shard",
-      "CurrentPrice": 3069,
-      "BuyLimit": 30000,
-      "DailyRange": 83,
-      "WeeklyRange": 267,
-      "MonthlyRange": 361,
-      "CompressionRatio": 31.09,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 9207000.0,
-      "CompressionLevel": "MODERATE_COMPRESSION"
-    },
-    {
       "ItemName": "Jute fibre",
       "CurrentPrice": 666,
       "BuyLimit": 13000,
@@ -493,19 +493,6 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 865800.0,
-      "CompressionLevel": "MODERATE_COMPRESSION"
-    },
-    {
-      "ItemName": "Haemostatic dressing (4)",
-      "CurrentPrice": 5632,
-      "BuyLimit": 2000,
-      "DailyRange": 509,
-      "WeeklyRange": 1576,
-      "MonthlyRange": 2212,
-      "CompressionRatio": 32.3,
-      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 1126400.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -535,6 +522,19 @@
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
+      "ItemName": "Raw shark",
+      "CurrentPrice": 684,
+      "BuyLimit": 15000,
+      "DailyRange": 33,
+      "WeeklyRange": 97,
+      "MonthlyRange": 134,
+      "CompressionRatio": 34.02,
+      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 1026000.0,
+      "CompressionLevel": "MODERATE_COMPRESSION"
+    },
+    {
       "ItemName": "Volcanic ash",
       "CurrentPrice": 159,
       "BuyLimit": 13000,
@@ -548,8 +548,21 @@
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
+      "ItemName": "Marrentill potion (unf)",
+      "CurrentPrice": 240,
+      "BuyLimit": 10000,
+      "DailyRange": 22,
+      "WeeklyRange": 62,
+      "MonthlyRange": 177,
+      "CompressionRatio": 35.48,
+      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 240000.0,
+      "CompressionLevel": "MODERATE_COMPRESSION"
+    },
+    {
       "ItemName": "Red spiders' eggs",
-      "CurrentPrice": 142,
+      "CurrentPrice": 148,
       "BuyLimit": 13000,
       "DailyRange": 11,
       "WeeklyRange": 31,
@@ -557,20 +570,7 @@
       "CompressionRatio": 35.48,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 184600.0,
-      "CompressionLevel": "MODERATE_COMPRESSION"
-    },
-    {
-      "ItemName": "Raw shark",
-      "CurrentPrice": 681,
-      "BuyLimit": 15000,
-      "DailyRange": 35,
-      "WeeklyRange": 97,
-      "MonthlyRange": 134,
-      "CompressionRatio": 36.08,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 1021500.0,
+      "PotentialBreakoutProfit": 192400.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -588,7 +588,7 @@
     },
     {
       "ItemName": "Divine super combat potion(4)",
-      "CurrentPrice": 19167,
+      "CurrentPrice": 19181,
       "BuyLimit": 2000,
       "DailyRange": 580,
       "WeeklyRange": 1592,
@@ -596,7 +596,7 @@
       "CompressionRatio": 36.43,
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 3833400.0,
+      "PotentialBreakoutProfit": 3836200.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -610,19 +610,6 @@
       "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 1782000.0,
-      "CompressionLevel": "MODERATE_COMPRESSION"
-    },
-    {
-      "ItemName": "Saradomin brew(3)",
-      "CurrentPrice": 5165,
-      "BuyLimit": 2000,
-      "DailyRange": 52,
-      "WeeklyRange": 140,
-      "MonthlyRange": 203,
-      "CompressionRatio": 37.14,
-      "BreakoutDirection": "UPPER_BREAKOUT_IMMINENT",
-      "VolumeConfirmation": "LOW_VOLUME",
-      "PotentialBreakoutProfit": 1033000.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     },
     {
@@ -649,6 +636,19 @@
       "BreakoutDirection": "UPPER_BIAS",
       "VolumeConfirmation": "LOW_VOLUME",
       "PotentialBreakoutProfit": 2665000.0,
+      "CompressionLevel": "MODERATE_COMPRESSION"
+    },
+    {
+      "ItemName": "Weapon poison",
+      "CurrentPrice": 154,
+      "BuyLimit": 2000,
+      "DailyRange": 47,
+      "WeeklyRange": 121,
+      "MonthlyRange": 223,
+      "CompressionRatio": 38.84,
+      "BreakoutDirection": "LOWER_BREAKOUT_IMMINENT",
+      "VolumeConfirmation": "LOW_VOLUME",
+      "PotentialBreakoutProfit": 30800.0,
       "CompressionLevel": "MODERATE_COMPRESSION"
     }
   ],
