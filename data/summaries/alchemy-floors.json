@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12T15:05:40.146337+00:00",
+  "updated": "2026-10-12T15:10:42.071041+00:00",
   "items": [
     {
       "ItemName": "Air battlestaff",
@@ -7,6 +7,13 @@
       "PriceFloor": 8974.0,
       "BuyLimit": 18000,
       "pctROI": 2.01
+    },
+    {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8739,
+      "PriceFloor": 8974.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.67
     },
     {
       "ItemName": "Earth battlestaff",
@@ -58,18 +65,18 @@
       "pctROI": 12.52
     },
     {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1875,
-      "PriceFloor": 2039.0,
-      "BuyLimit": 10000,
-      "pctROI": 7.68
-    },
-    {
       "ItemName": "Combat bracelet",
-      "LowPrice": 12002,
+      "LowPrice": 12001,
       "PriceFloor": 12265.0,
       "BuyLimit": 10000,
-      "pctROI": 1.17
+      "pctROI": 1.18
+    },
+    {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1877,
+      "PriceFloor": 2039.0,
+      "BuyLimit": 10000,
+      "pctROI": 7.57
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -107,18 +114,25 @@
       "pctROI": 4.6
     },
     {
+      "ItemName": "Ruby ring",
+      "LowPrice": 900,
+      "PriceFloor": 970.0,
+      "BuyLimit": 10000,
+      "pctROI": 6.78
+    },
+    {
+      "ItemName": "Diamond necklace",
+      "LowPrice": 1900,
+      "PriceFloor": 1950.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.63
+    },
+    {
       "ItemName": "Ruby bracelet",
       "LowPrice": 1083,
       "PriceFloor": 1148.0,
       "BuyLimit": 10000,
       "pctROI": 4.99
-    },
-    {
-      "ItemName": "Diamond necklace",
-      "LowPrice": 1902,
-      "PriceFloor": 1950.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.52
     },
     {
       "ItemName": "Dragonstone bolts (e)",
@@ -133,20 +147,6 @@
       "PriceFloor": 613.0,
       "BuyLimit": 18000,
       "pctROI": 3.94
-    },
-    {
-      "ItemName": "Ruby ring",
-      "LowPrice": 923,
-      "PriceFloor": 970.0,
-      "BuyLimit": 10000,
-      "pctROI": 4.12
-    },
-    {
-      "ItemName": "Binding necklace",
-      "LowPrice": 595,
-      "PriceFloor": 613.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.02
     }
   ],
   "methodology": "VeryGranular"
