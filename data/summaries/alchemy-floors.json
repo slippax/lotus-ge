@@ -1,6 +1,13 @@
 {
-  "updated": "2026-10-13T04:35:38.767753+00:00",
+  "updated": "2026-10-13T04:40:39.567304+00:00",
   "items": [
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1135,
+      "PriceFloor": 1287.0,
+      "BuyLimit": 18000,
+      "pctROI": 12.33
+    },
     {
       "ItemName": "Air battlestaff",
       "LowPrice": 8750,
@@ -14,13 +21,6 @@
       "PriceFloor": 1252.0,
       "BuyLimit": 13000,
       "pctROI": 17.31
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1146,
-      "PriceFloor": 1287.0,
-      "BuyLimit": 18000,
-      "pctROI": 11.26
     },
     {
       "ItemName": "Camphor repair kit",
@@ -42,13 +42,6 @@
       "PriceFloor": 2039.0,
       "BuyLimit": 10000,
       "pctROI": 8.78
-    },
-    {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 960,
-      "PriceFloor": 1059.0,
-      "BuyLimit": 18000,
-      "pctROI": 9.27
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -79,6 +72,20 @@
       "pctROI": 1.38
     },
     {
+      "ItemName": "Ruby necklace",
+      "LowPrice": 979,
+      "PriceFloor": 1059.0,
+      "BuyLimit": 18000,
+      "pctROI": 7.15
+    },
+    {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 468,
+      "PriceFloor": 569.0,
+      "BuyLimit": 10000,
+      "pctROI": 20.51
+    },
+    {
       "ItemName": "Diamond amulet (u)",
       "LowPrice": 1769,
       "PriceFloor": 1861.0,
@@ -87,24 +94,17 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 327,
+      "LowPrice": 333,
       "PriceFloor": 397.0,
       "BuyLimit": 11000,
-      "pctROI": 20.49
-    },
-    {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 491,
-      "PriceFloor": 569.0,
-      "BuyLimit": 10000,
-      "pctROI": 14.87
+      "pctROI": 18.32
     },
     {
       "ItemName": "Ruby ring",
-      "LowPrice": 904,
+      "LowPrice": 900,
       "PriceFloor": 970.0,
       "BuyLimit": 10000,
-      "pctROI": 6.31
+      "pctROI": 6.78
     },
     {
       "ItemName": "Ruby bracelet",
@@ -128,18 +128,18 @@
       "pctROI": 1.26
     },
     {
+      "ItemName": "Sapphire necklace",
+      "LowPrice": 374,
+      "PriceFloor": 390.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.48
+    },
+    {
       "ItemName": "Binding necklace",
       "LowPrice": 597,
       "PriceFloor": 613.0,
       "BuyLimit": 10000,
       "pctROI": 1.68
-    },
-    {
-      "ItemName": "Sapphire necklace",
-      "LowPrice": 383,
-      "PriceFloor": 390.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.04
     }
   ],
   "methodology": "VeryGranular"
