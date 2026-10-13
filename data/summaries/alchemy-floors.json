@@ -1,12 +1,19 @@
 {
-  "updated": "2026-10-13T20:10:41.384336+00:00",
+  "updated": "2026-10-13T20:15:40.797998+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
-      "LowPrice": 8730,
+      "LowPrice": 8710,
       "PriceFloor": 8973.0,
       "BuyLimit": 18000,
-      "pctROI": 1.76
+      "pctROI": 2.0
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8755,
+      "PriceFloor": 8973.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.47
     },
     {
       "ItemName": "Magic longbow",
@@ -14,6 +21,13 @@
       "PriceFloor": 1286.0,
       "BuyLimit": 18000,
       "pctROI": 11.17
+    },
+    {
+      "ItemName": "Ironwood repair kit",
+      "LowPrice": 1978,
+      "PriceFloor": 2142.0,
+      "BuyLimit": 13000,
+      "pctROI": 7.23
     },
     {
       "ItemName": "Amulet of glory(6)",
@@ -30,13 +44,6 @@
       "pctROI": 8.04
     },
     {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8790,
-      "PriceFloor": 8973.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.07
-    },
-    {
       "ItemName": "Water battlestaff",
       "LowPrice": 8794,
       "PriceFloor": 8973.0,
@@ -49,13 +56,6 @@
       "PriceFloor": 1251.0,
       "BuyLimit": 13000,
       "pctROI": 10.92
-    },
-    {
-      "ItemName": "Ironwood repair kit",
-      "LowPrice": 2000,
-      "PriceFloor": 2142.0,
-      "BuyLimit": 13000,
-      "pctROI": 6.05
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -100,6 +100,13 @@
       "pctROI": 24.56
     },
     {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8495,
+      "PriceFloor": 8676.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.12
+    },
+    {
       "ItemName": "Diamond necklace",
       "LowPrice": 1885,
       "PriceFloor": 1949.0,
@@ -121,18 +128,18 @@
       "pctROI": 5.39
     },
     {
-      "ItemName": "Ruby bracelet",
-      "LowPrice": 1085,
-      "PriceFloor": 1147.0,
-      "BuyLimit": 10000,
-      "pctROI": 4.7
-    },
-    {
       "ItemName": "Ruby ring",
       "LowPrice": 910,
       "PriceFloor": 969.0,
       "BuyLimit": 10000,
       "pctROI": 5.49
+    },
+    {
+      "ItemName": "Ruby bracelet",
+      "LowPrice": 1088,
+      "PriceFloor": 1147.0,
+      "BuyLimit": 10000,
+      "pctROI": 4.41
     }
   ],
   "methodology": "VeryGranular"
