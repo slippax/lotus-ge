@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13T15:20:47.950260+00:00",
+  "updated": "2026-10-13T15:25:39.518412+00:00",
   "items": [
     {
       "ItemName": "Draynor manor teleport (tablet)",
@@ -17,6 +17,21 @@
       "PotentialProfit": 4474000.0
     },
     {
+      "ItemName": "Prayer potion(4)",
+      "CurrentPrice": 9868,
+      "BuyLimit": 2000,
+      "FiveMinMean": 9861,
+      "HourlyMean": 9814,
+      "DailyMean": 9760,
+      "WeeklyMean": 9722,
+      "MonthlyMean": 9623,
+      "BullishConfluence": 5,
+      "BearishConfluence": 0,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 1973600.0
+    },
+    {
       "ItemName": "Huasca seed",
       "CurrentPrice": 49456,
       "BuyLimit": 200,
@@ -30,21 +45,6 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
       "PotentialProfit": 989120.0
-    },
-    {
-      "ItemName": "Snape grass seed",
-      "CurrentPrice": 12138,
-      "BuyLimit": 200,
-      "FiveMinMean": 12073,
-      "HourlyMean": 11865,
-      "DailyMean": 11817,
-      "WeeklyMean": 10716,
-      "MonthlyMean": 10283,
-      "BullishConfluence": 5,
-      "BearishConfluence": 0,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 242760.0
     },
     {
       "ItemName": "Iron bar",
@@ -62,23 +62,8 @@
       "PotentialProfit": 198000.0
     },
     {
-      "ItemName": "Runite bolts",
-      "CurrentPrice": 91,
-      "BuyLimit": 11000,
-      "FiveMinMean": 89,
-      "HourlyMean": 87,
-      "DailyMean": 84,
-      "WeeklyMean": 82,
-      "MonthlyMean": 78,
-      "BullishConfluence": 5,
-      "BearishConfluence": 0,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 100100.0
-    },
-    {
       "ItemName": "Guthixian temple teleport",
-      "CurrentPrice": 24541,
+      "CurrentPrice": 24500,
       "BuyLimit": 15000,
       "FiveMinMean": 24541,
       "HourlyMean": 24518,
@@ -86,10 +71,10 @@
       "WeeklyMean": 24034,
       "MonthlyMean": 20466,
       "BullishConfluence": 4,
-      "BearishConfluence": 0,
+      "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 36811500.0
+      "PotentialProfit": 36750000.0
     },
     {
       "ItemName": "Searing page",
@@ -122,21 +107,6 @@
       "PotentialProfit": 15840000.0
     },
     {
-      "ItemName": "Skills necklace(4)",
-      "CurrentPrice": 12770,
-      "BuyLimit": 10000,
-      "FiveMinMean": 12770,
-      "HourlyMean": 12403,
-      "DailyMean": 12100,
-      "WeeklyMean": 11950,
-      "MonthlyMean": 11898,
-      "BullishConfluence": 4,
-      "BearishConfluence": 0,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 12770000.0
-    },
-    {
       "ItemName": "Skills necklace(6)",
       "CurrentPrice": 12586,
       "BuyLimit": 10000,
@@ -152,34 +122,49 @@
       "PotentialProfit": 12586000.0
     },
     {
-      "ItemName": "Nardah teleport",
-      "CurrentPrice": 11443,
+      "ItemName": "Skills necklace(4)",
+      "CurrentPrice": 12081,
       "BuyLimit": 10000,
-      "FiveMinMean": 11243,
-      "HourlyMean": 11123,
-      "DailyMean": 11117,
-      "WeeklyMean": 12739,
-      "MonthlyMean": 11872,
+      "FiveMinMean": 12770,
+      "HourlyMean": 12403,
+      "DailyMean": 12100,
+      "WeeklyMean": 11950,
+      "MonthlyMean": 11898,
       "BullishConfluence": 4,
       "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 11443000.0
+      "PotentialProfit": 12081000.0
     },
     {
-      "ItemName": "Ring of wealth",
-      "CurrentPrice": 11200,
-      "BuyLimit": 10000,
-      "FiveMinMean": 11168,
-      "HourlyMean": 11104,
-      "DailyMean": 11042,
-      "WeeklyMean": 11196,
-      "MonthlyMean": 11140,
+      "ItemName": "Onyx bolts (e)",
+      "CurrentPrice": 8500,
+      "BuyLimit": 11000,
+      "FiveMinMean": 8485,
+      "HourlyMean": 8472,
+      "DailyMean": 8463,
+      "WeeklyMean": 8453,
+      "MonthlyMean": 8463,
       "BullishConfluence": 4,
       "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 11200000.0
+      "PotentialProfit": 9350000.0
+    },
+    {
+      "ItemName": "West ardougne teleport (tablet)",
+      "CurrentPrice": 4771,
+      "BuyLimit": 10000,
+      "FiveMinMean": 4770,
+      "HourlyMean": 4772,
+      "DailyMean": 4631,
+      "WeeklyMean": 4472,
+      "MonthlyMean": 4133,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 4771000.0
     },
     {
       "ItemName": "Battlefront teleport (tablet)",
@@ -195,21 +180,6 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_SUPPORTED",
       "PotentialProfit": 4395000.0
-    },
-    {
-      "ItemName": "Grimy torstol",
-      "CurrentPrice": 3662,
-      "BuyLimit": 11000,
-      "FiveMinMean": 3657,
-      "HourlyMean": 3616,
-      "DailyMean": 3606,
-      "WeeklyMean": 3315,
-      "MonthlyMean": 3409,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 4028200.0
     },
     {
       "ItemName": "Ring of wealth scroll",
@@ -257,51 +227,6 @@
       "PotentialProfit": 2635600.0
     },
     {
-      "ItemName": "Dragon arrowtips",
-      "CurrentPrice": 2019,
-      "BuyLimit": 10000,
-      "FiveMinMean": 2002,
-      "HourlyMean": 1991,
-      "DailyMean": 1958,
-      "WeeklyMean": 1995,
-      "MonthlyMean": 1960,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 2019000.0
-    },
-    {
-      "ItemName": "Prayer potion(4)",
-      "CurrentPrice": 9811,
-      "BuyLimit": 2000,
-      "FiveMinMean": 9861,
-      "HourlyMean": 9814,
-      "DailyMean": 9760,
-      "WeeklyMean": 9722,
-      "MonthlyMean": 9623,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 1962200.0
-    },
-    {
-      "ItemName": "Icy basalt",
-      "CurrentPrice": 1533,
-      "BuyLimit": 10000,
-      "FiveMinMean": 1350,
-      "HourlyMean": 1527,
-      "DailyMean": 1480,
-      "WeeklyMean": 1386,
-      "MonthlyMean": 1310,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 1533000.0
-    },
-    {
       "ItemName": "Black bead",
       "CurrentPrice": 1254,
       "BuyLimit": 11000,
@@ -317,8 +242,53 @@
       "PotentialProfit": 1379400.0
     },
     {
+      "ItemName": "Divine ranging potion(4)",
+      "CurrentPrice": 6494,
+      "BuyLimit": 2000,
+      "FiveMinMean": 6482,
+      "HourlyMean": 6499,
+      "DailyMean": 6492,
+      "WeeklyMean": 6387,
+      "MonthlyMean": 5966,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 1298800.0
+    },
+    {
+      "ItemName": "Super combat potion(2)",
+      "CurrentPrice": 6448,
+      "BuyLimit": 2000,
+      "FiveMinMean": 6379,
+      "HourlyMean": 6406,
+      "DailyMean": 6120,
+      "WeeklyMean": 6112,
+      "MonthlyMean": 6109,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 1289600.0
+    },
+    {
+      "ItemName": "White berries",
+      "CurrentPrice": 785,
+      "BuyLimit": 13000,
+      "FiveMinMean": 740,
+      "HourlyMean": 763,
+      "DailyMean": 755,
+      "WeeklyMean": 709,
+      "MonthlyMean": 661,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 1020500.0
+    },
+    {
       "ItemName": "Unicorn horn dust",
-      "CurrentPrice": 793,
+      "CurrentPrice": 774,
       "BuyLimit": 13000,
       "FiveMinMean": 793,
       "HourlyMean": 777,
@@ -326,25 +296,25 @@
       "WeeklyMean": 735,
       "MonthlyMean": 688,
       "BullishConfluence": 4,
-      "BearishConfluence": 0,
+      "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 1030900.0
+      "PotentialProfit": 1006200.0
     },
     {
-      "ItemName": "Soul rune",
-      "CurrentPrice": 394,
+      "ItemName": "Blood rune",
+      "CurrentPrice": 342,
       "BuyLimit": 25000,
-      "FiveMinMean": 392,
-      "HourlyMean": 391,
-      "DailyMean": 397,
-      "WeeklyMean": 383,
-      "MonthlyMean": 381,
+      "FiveMinMean": 339,
+      "HourlyMean": 341,
+      "DailyMean": 339,
+      "WeeklyMean": 334,
+      "MonthlyMean": 333,
       "BullishConfluence": 4,
       "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 985000.0
+      "PotentialProfit": 855000.0
     },
     {
       "ItemName": "Super defence(4)",
@@ -390,6 +360,21 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
       "PotentialProfit": 634000.0
+    },
+    {
+      "ItemName": "Super restore(1)",
+      "CurrentPrice": 2615,
+      "BuyLimit": 2000,
+      "FiveMinMean": 2609,
+      "HourlyMean": 2609,
+      "DailyMean": 2607,
+      "WeeklyMean": 2582,
+      "MonthlyMean": 2479,
+      "BullishConfluence": 4,
+      "BearishConfluence": 0,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_SUPPORTED",
+      "PotentialProfit": 523000.0
     },
     {
       "ItemName": "Super defence(3)",
@@ -452,34 +437,19 @@
       "PotentialProfit": 254000.0
     },
     {
-      "ItemName": "Mist rune",
-      "CurrentPrice": 99,
-      "BuyLimit": 18000,
-      "FiveMinMean": 96,
-      "HourlyMean": 98,
-      "DailyMean": 96,
-      "WeeklyMean": 94,
-      "MonthlyMean": 88,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 178200.0
-    },
-    {
-      "ItemName": "Swordfish",
-      "CurrentPrice": 235,
-      "BuyLimit": 6000,
-      "FiveMinMean": 229,
-      "HourlyMean": 233,
-      "DailyMean": 219,
-      "WeeklyMean": 213,
-      "MonthlyMean": 211,
+      "ItemName": "Snape grass seed",
+      "CurrentPrice": 11820,
+      "BuyLimit": 200,
+      "FiveMinMean": 12073,
+      "HourlyMean": 11865,
+      "DailyMean": 11817,
+      "WeeklyMean": 10716,
+      "MonthlyMean": 10283,
       "BullishConfluence": 4,
       "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 141000.0
+      "PotentialProfit": 236400.0
     },
     {
       "ItemName": "Atlatl dart",
@@ -497,49 +467,19 @@
       "PotentialProfit": 140800.0
     },
     {
-      "ItemName": "Unpowered orb",
-      "CurrentPrice": 95,
-      "BuyLimit": 10000,
-      "FiveMinMean": 93,
-      "HourlyMean": 89,
-      "DailyMean": 90,
-      "WeeklyMean": 83,
-      "MonthlyMean": 76,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 95000.0
-    },
-    {
-      "ItemName": "Ball of wool",
-      "CurrentPrice": 63,
-      "BuyLimit": 13000,
-      "FiveMinMean": 62,
-      "HourlyMean": 61,
-      "DailyMean": 55,
-      "WeeklyMean": 63,
-      "MonthlyMean": 61,
+      "ItemName": "Runite bolts",
+      "CurrentPrice": 88,
+      "BuyLimit": 11000,
+      "FiveMinMean": 89,
+      "HourlyMean": 87,
+      "DailyMean": 84,
+      "WeeklyMean": 82,
+      "MonthlyMean": 78,
       "BullishConfluence": 4,
       "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 81900.0
-    },
-    {
-      "ItemName": "Gold bar",
-      "CurrentPrice": 68,
-      "BuyLimit": 10000,
-      "FiveMinMean": 67,
-      "HourlyMean": 67,
-      "DailyMean": 66,
-      "WeeklyMean": 65,
-      "MonthlyMean": 64,
-      "BullishConfluence": 4,
-      "BearishConfluence": 0,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 68000.0
+      "PotentialProfit": 96800.0
     },
     {
       "ItemName": "Extended antifire(4)",
@@ -587,6 +527,21 @@
       "PotentialProfit": 19200.0
     },
     {
+      "ItemName": "Mithril platelegs",
+      "CurrentPrice": 1210,
+      "BuyLimit": 125,
+      "FiveMinMean": 1197,
+      "HourlyMean": 1192,
+      "DailyMean": 1182,
+      "WeeklyMean": 1125,
+      "MonthlyMean": 1154,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 15125.0
+    },
+    {
       "ItemName": "Mithril warhammer",
       "CurrentPrice": 1009,
       "BuyLimit": 125,
@@ -617,19 +572,19 @@
       "PotentialProfit": 11600.0
     },
     {
-      "ItemName": "Limpwurt seed",
-      "CurrentPrice": 35,
-      "BuyLimit": 600,
-      "FiveMinMean": 35,
-      "HourlyMean": 33,
-      "DailyMean": 22,
-      "WeeklyMean": 16,
-      "MonthlyMean": 15,
+      "ItemName": "Staff of water",
+      "CurrentPrice": 924,
+      "BuyLimit": 125,
+      "FiveMinMean": 850,
+      "HourlyMean": 833,
+      "DailyMean": 810,
+      "WeeklyMean": 841,
+      "MonthlyMean": 825,
       "BullishConfluence": 4,
-      "BearishConfluence": 0,
+      "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 2100.0
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 11550.0
     },
     {
       "ItemName": "Guam seed",
@@ -647,19 +602,19 @@
       "PotentialProfit": 1260.0
     },
     {
-      "ItemName": "Leather boots",
-      "CurrentPrice": 81,
-      "BuyLimit": 125,
-      "FiveMinMean": 64,
-      "HourlyMean": 71,
-      "DailyMean": 61,
-      "WeeklyMean": 57,
-      "MonthlyMean": 49,
+      "ItemName": "Limpwurt seed",
+      "CurrentPrice": 20,
+      "BuyLimit": 600,
+      "FiveMinMean": 35,
+      "HourlyMean": 33,
+      "DailyMean": 22,
+      "WeeklyMean": 16,
+      "MonthlyMean": 15,
       "BullishConfluence": 4,
       "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 1013.0
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 1200.0
     },
     {
       "ItemName": "Ancient relic",
@@ -675,6 +630,21 @@
       "SignalStrength": "MODERATE_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
       "PotentialProfit": 279632553.0
+    },
+    {
+      "ItemName": "Aldarium",
+      "CurrentPrice": 49000,
+      "BuyLimit": 13000,
+      "FiveMinMean": 48811,
+      "HourlyMean": 48463,
+      "DailyMean": 47872,
+      "WeeklyMean": 48347,
+      "MonthlyMean": 49306,
+      "BullishConfluence": 3,
+      "BearishConfluence": 2,
+      "SignalStrength": "MODERATE_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 44590000.0
     },
     {
       "ItemName": "Mystic air staff",
@@ -750,6 +720,36 @@
       "SignalStrength": "MODERATE_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
       "PotentialProfit": 17457965.0
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "CurrentPrice": 8802,
+      "BuyLimit": 18000,
+      "FiveMinMean": 8775,
+      "HourlyMean": 8777,
+      "DailyMean": 8768,
+      "WeeklyMean": 8757,
+      "MonthlyMean": 8764,
+      "BullishConfluence": 3,
+      "BearishConfluence": 2,
+      "SignalStrength": "MODERATE_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 11090520.0
+    },
+    {
+      "ItemName": "Mort'ton teleport",
+      "CurrentPrice": 12650,
+      "BuyLimit": 10000,
+      "FiveMinMean": 12650,
+      "HourlyMean": 12648,
+      "DailyMean": 12659,
+      "WeeklyMean": 12325,
+      "MonthlyMean": 12324,
+      "BullishConfluence": 3,
+      "BearishConfluence": 1,
+      "SignalStrength": "MODERATE_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 8855000.0
     }
   ],
   "methodology": "VeryGranular_MultiTimeframeConfluence"
