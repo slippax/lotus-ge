@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15T06:40:46.704247+00:00",
+  "updated": "2026-10-15T06:45:49.284932+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -28,6 +28,13 @@
       "PriceFloor": 10233.0,
       "BuyLimit": 10000,
       "pctROI": 1.9
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8789,
+      "PriceFloor": 8971.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.06
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -72,11 +79,18 @@
       "pctROI": 13.0
     },
     {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8502,
+      "PriceFloor": 8674.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.01
+    },
+    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 472,
+      "LowPrice": 475,
       "PriceFloor": 566.0,
       "BuyLimit": 10000,
-      "pctROI": 18.86
+      "pctROI": 18.11
     },
     {
       "ItemName": "Ruby necklace",
@@ -115,10 +129,10 @@
     },
     {
       "ItemName": "Ruby ring",
-      "LowPrice": 930,
+      "LowPrice": 920,
       "PriceFloor": 967.0,
       "BuyLimit": 10000,
-      "pctROI": 3.01
+      "pctROI": 4.13
     }
   ],
   "methodology": "VeryGranular"
