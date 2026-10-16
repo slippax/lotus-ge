@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16T22:30:43.165025+00:00",
+  "updated": "2026-10-16T22:35:39.106000+00:00",
   "items": [
     {
       "ItemName": "Camphor repair kit",
@@ -9,11 +9,18 @@
       "pctROI": 9.94
     },
     {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1825,
-      "PriceFloor": 2036.0,
-      "BuyLimit": 10000,
-      "pctROI": 10.47
+      "ItemName": "Magic longbow",
+      "LowPrice": 1164,
+      "PriceFloor": 1284.0,
+      "BuyLimit": 18000,
+      "pctROI": 9.28
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8778,
+      "PriceFloor": 8971.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.18
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -21,20 +28,6 @@
       "PriceFloor": 2140.0,
       "BuyLimit": 13000,
       "pctROI": 7.29
-    },
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8780,
-      "PriceFloor": 8971.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.16
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1171,
-      "PriceFloor": 1284.0,
-      "BuyLimit": 18000,
-      "pctROI": 8.63
     },
     {
       "ItemName": "Water battlestaff",
@@ -45,10 +38,17 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 774,
+      "LowPrice": 765,
       "PriceFloor": 922.0,
       "BuyLimit": 10000,
-      "pctROI": 17.96
+      "pctROI": 19.35
+    },
+    {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1881,
+      "PriceFloor": 2036.0,
+      "BuyLimit": 10000,
+      "pctROI": 7.18
     },
     {
       "ItemName": "Diamond necklace",
@@ -107,13 +107,6 @@
       "pctROI": 7.09
     },
     {
-      "ItemName": "Diamond ring",
-      "LowPrice": 1770,
-      "PriceFloor": 1858.0,
-      "BuyLimit": 10000,
-      "pctROI": 3.95
-    },
-    {
       "ItemName": "Diamond amulet (u)",
       "LowPrice": 1788,
       "PriceFloor": 1858.0,
@@ -128,11 +121,18 @@
       "pctROI": 2.07
     },
     {
-      "ItemName": "Ruby ring",
-      "LowPrice": 940,
-      "PriceFloor": 967.0,
+      "ItemName": "Diamond ring",
+      "LowPrice": 1821,
+      "PriceFloor": 1858.0,
       "BuyLimit": 10000,
-      "pctROI": 1.91
+      "pctROI": 1.04
+    },
+    {
+      "ItemName": "Sapphire necklace",
+      "LowPrice": 381,
+      "PriceFloor": 388.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.05
     }
   ],
   "methodology": "VeryGranular"
