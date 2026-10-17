@@ -1,12 +1,33 @@
 {
-  "updated": "2026-10-17T02:30:46.784473+00:00",
+  "updated": "2026-10-17T02:35:37.944267+00:00",
   "items": [
     {
-      "ItemName": "Air battlestaff",
+      "ItemName": "Emerald necklace",
+      "LowPrice": 400,
+      "PriceFloor": 610.0,
+      "BuyLimit": 18000,
+      "pctROI": 51.0
+    },
+    {
+      "ItemName": "Earth battlestaff",
       "LowPrice": 8750,
       "PriceFloor": 8971.0,
       "BuyLimit": 18000,
       "pctROI": 1.51
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8753,
+      "PriceFloor": 8971.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.47
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1147,
+      "PriceFloor": 1284.0,
+      "BuyLimit": 18000,
+      "pctROI": 10.9
     },
     {
       "ItemName": "Camphor repair kit",
@@ -16,18 +37,11 @@
       "pctROI": 10.27
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1152,
-      "PriceFloor": 1284.0,
-      "BuyLimit": 18000,
-      "pctROI": 10.42
-    },
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8792,
-      "PriceFloor": 8971.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.02
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 747,
+      "PriceFloor": 922.0,
+      "BuyLimit": 10000,
+      "pctROI": 22.22
     },
     {
       "ItemName": "Water battlestaff",
@@ -35,13 +49,6 @@
       "PriceFloor": 8971.0,
       "BuyLimit": 18000,
       "pctROI": 1.01
-    },
-    {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 758,
-      "PriceFloor": 922.0,
-      "BuyLimit": 10000,
-      "pctROI": 20.45
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -58,13 +65,6 @@
       "pctROI": 1.39
     },
     {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 980,
-      "PriceFloor": 1056.0,
-      "BuyLimit": 18000,
-      "pctROI": 6.73
-    },
-    {
       "ItemName": "Diamond bracelet",
       "LowPrice": 1900,
       "PriceFloor": 2036.0,
@@ -72,11 +72,11 @@
       "pctROI": 6.11
     },
     {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 296,
-      "PriceFloor": 394.0,
-      "BuyLimit": 11000,
-      "pctROI": 32.09
+      "ItemName": "Ruby necklace",
+      "LowPrice": 985,
+      "PriceFloor": 1056.0,
+      "BuyLimit": 18000,
+      "pctROI": 6.19
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -84,6 +84,13 @@
       "PriceFloor": 667.0,
       "BuyLimit": 10000,
       "pctROI": 16.58
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 306,
+      "PriceFloor": 394.0,
+      "BuyLimit": 11000,
+      "pctROI": 27.78
     },
     {
       "ItemName": "Diamond necklace",
@@ -100,11 +107,11 @@
       "pctROI": 19.36
     },
     {
-      "ItemName": "Emerald necklace",
-      "LowPrice": 558,
-      "PriceFloor": 610.0,
-      "BuyLimit": 18000,
-      "pctROI": 8.24
+      "ItemName": "Diamond ring",
+      "LowPrice": 1770,
+      "PriceFloor": 1858.0,
+      "BuyLimit": 10000,
+      "pctROI": 3.95
     },
     {
       "ItemName": "Ruby bracelet",
@@ -114,32 +121,25 @@
       "pctROI": 4.52
     },
     {
+      "ItemName": "Sapphire necklace",
+      "LowPrice": 370,
+      "PriceFloor": 388.0,
+      "BuyLimit": 18000,
+      "pctROI": 4.05
+    },
+    {
+      "ItemName": "Ruby ring",
+      "LowPrice": 936,
+      "PriceFloor": 967.0,
+      "BuyLimit": 10000,
+      "pctROI": 2.35
+    },
+    {
       "ItemName": "Diamond amulet (u)",
       "LowPrice": 1821,
       "PriceFloor": 1858.0,
       "BuyLimit": 10000,
       "pctROI": 1.04
-    },
-    {
-      "ItemName": "Diamond ring",
-      "LowPrice": 1821,
-      "PriceFloor": 1858.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.04
-    },
-    {
-      "ItemName": "Ruby ring",
-      "LowPrice": 941,
-      "PriceFloor": 967.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.81
-    },
-    {
-      "ItemName": "Sapphire necklace",
-      "LowPrice": 376,
-      "PriceFloor": 388.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.39
     }
   ],
   "methodology": "VeryGranular"
