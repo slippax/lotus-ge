@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18T08:00:45.469539+00:00",
+  "updated": "2026-10-18T08:05:39.016011+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -59,10 +59,17 @@
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8480,
+      "LowPrice": 8460,
       "PriceFloor": 8673.0,
       "BuyLimit": 11000,
-      "pctROI": 1.26
+      "pctROI": 1.5
+    },
+    {
+      "ItemName": "Amulet of glory(6)",
+      "LowPrice": 10000,
+      "PriceFloor": 10232.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.3
     },
     {
       "ItemName": "Rune javelin tips",
@@ -140,6 +147,13 @@
       "PriceFloor": 387.0,
       "BuyLimit": 18000,
       "pctROI": 4.07
+    },
+    {
+      "ItemName": "Emerald ring",
+      "LowPrice": 509,
+      "PriceFloor": 520.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.18
     }
   ],
   "methodology": "VeryGranular"
