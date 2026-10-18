@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18T06:35:35.534013+00:00",
+  "updated": "2026-10-18T06:40:38.357781+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -10,10 +10,24 @@
     },
     {
       "ItemName": "Air battlestaff",
-      "LowPrice": 8769,
+      "LowPrice": 8750,
       "PriceFloor": 8970.0,
       "BuyLimit": 18000,
-      "pctROI": 1.28
+      "pctROI": 1.5
+    },
+    {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8752,
+      "PriceFloor": 8970.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.47
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1161,
+      "PriceFloor": 1283.0,
+      "BuyLimit": 18000,
+      "pctROI": 9.47
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -58,25 +72,11 @@
       "pctROI": 6.49
     },
     {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 450,
-      "PriceFloor": 565.0,
-      "BuyLimit": 10000,
-      "pctROI": 24.44
-    },
-    {
-      "ItemName": "Emerald necklace",
-      "LowPrice": 542,
-      "PriceFloor": 609.0,
+      "ItemName": "Ruby necklace",
+      "LowPrice": 987,
+      "PriceFloor": 1055.0,
       "BuyLimit": 18000,
-      "pctROI": 11.25
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1216,
-      "PriceFloor": 1283.0,
-      "BuyLimit": 18000,
-      "pctROI": 4.52
+      "pctROI": 5.88
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -93,11 +93,18 @@
       "pctROI": 15.38
     },
     {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 1000,
-      "PriceFloor": 1055.0,
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 480,
+      "PriceFloor": 565.0,
+      "BuyLimit": 10000,
+      "pctROI": 16.67
+    },
+    {
+      "ItemName": "Emerald necklace",
+      "LowPrice": 561,
+      "PriceFloor": 609.0,
       "BuyLimit": 18000,
-      "pctROI": 4.5
+      "pctROI": 7.49
     },
     {
       "ItemName": "Dragonstone bolts (e)",
@@ -105,13 +112,6 @@
       "PriceFloor": 393.0,
       "BuyLimit": 11000,
       "pctROI": 21.12
-    },
-    {
-      "ItemName": "Diamond necklace",
-      "LowPrice": 1894,
-      "PriceFloor": 1946.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.74
     },
     {
       "ItemName": "Ruby ring",
@@ -128,18 +128,18 @@
       "pctROI": 4.33
     },
     {
+      "ItemName": "Diamond necklace",
+      "LowPrice": 1904,
+      "PriceFloor": 1946.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.21
+    },
+    {
       "ItemName": "Sapphire necklace",
       "LowPrice": 369,
       "PriceFloor": 387.0,
       "BuyLimit": 18000,
       "pctROI": 4.07
-    },
-    {
-      "ItemName": "Emerald ring",
-      "LowPrice": 509,
-      "PriceFloor": 520.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.18
     }
   ],
   "methodology": "VeryGranular"
