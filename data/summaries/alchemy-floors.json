@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18T01:10:42.283958+00:00",
+  "updated": "2026-10-18T01:15:37.415316+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -24,10 +24,17 @@
     },
     {
       "ItemName": "Air battlestaff",
-      "LowPrice": 8783,
+      "LowPrice": 8781,
       "PriceFloor": 8970.0,
       "BuyLimit": 18000,
-      "pctROI": 1.12
+      "pctROI": 1.14
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8430,
+      "PriceFloor": 8673.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.86
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -35,13 +42,6 @@
       "PriceFloor": 921.0,
       "BuyLimit": 10000,
       "pctROI": 23.08
-    },
-    {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8435,
-      "PriceFloor": 8673.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.8
     },
     {
       "ItemName": "Water battlestaff",
@@ -63,6 +63,13 @@
       "PriceFloor": 1248.0,
       "BuyLimit": 13000,
       "pctROI": 10.55
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1200,
+      "PriceFloor": 1283.0,
+      "BuyLimit": 18000,
+      "pctROI": 5.92
     },
     {
       "ItemName": "Diamond bracelet",
@@ -121,13 +128,6 @@
       "pctROI": 25.0
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1225,
-      "PriceFloor": 1283.0,
-      "BuyLimit": 18000,
-      "pctROI": 3.76
-    },
-    {
       "ItemName": "Ruby ring",
       "LowPrice": 907,
       "PriceFloor": 966.0,
@@ -135,18 +135,18 @@
       "pctROI": 5.51
     },
     {
-      "ItemName": "Sapphire necklace",
-      "LowPrice": 357,
-      "PriceFloor": 387.0,
-      "BuyLimit": 18000,
-      "pctROI": 7.56
-    },
-    {
       "ItemName": "Ruby bracelet",
       "LowPrice": 1085,
       "PriceFloor": 1144.0,
       "BuyLimit": 10000,
       "pctROI": 4.42
+    },
+    {
+      "ItemName": "Sapphire necklace",
+      "LowPrice": 358,
+      "PriceFloor": 387.0,
+      "BuyLimit": 18000,
+      "pctROI": 7.26
     },
     {
       "ItemName": "Emerald bracelet",
@@ -157,10 +157,10 @@
     },
     {
       "ItemName": "Emerald ring",
-      "LowPrice": 497,
+      "LowPrice": 508,
       "PriceFloor": 520.0,
       "BuyLimit": 10000,
-      "pctROI": 3.62
+      "pctROI": 1.38
     }
   ],
   "methodology": "VeryGranular"
