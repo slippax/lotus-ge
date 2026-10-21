@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T02:10:38.069502+00:00",
+  "updated": "2026-10-21T02:15:43.727990+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -9,13 +9,6 @@
       "pctROI": 3.94
     },
     {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8600,
-      "PriceFloor": 8976.0,
-      "BuyLimit": 18000,
-      "pctROI": 3.34
-    },
-    {
       "ItemName": "Earth battlestaff",
       "LowPrice": 8602,
       "PriceFloor": 8976.0,
@@ -23,11 +16,18 @@
       "pctROI": 3.31
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8624,
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8674,
       "PriceFloor": 8976.0,
       "BuyLimit": 18000,
-      "pctROI": 3.05
+      "pctROI": 2.46
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8675,
+      "PriceFloor": 8976.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.44
     },
     {
       "ItemName": "Amulet of glory(6)",
@@ -52,17 +52,17 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1131,
+      "LowPrice": 1132,
       "PriceFloor": 1289.0,
       "BuyLimit": 18000,
-      "pctROI": 12.91
+      "pctROI": 12.81
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 658,
+      "LowPrice": 660,
       "PriceFloor": 927.0,
       "BuyLimit": 10000,
-      "pctROI": 39.51
+      "pctROI": 39.09
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -86,13 +86,6 @@
       "pctROI": 14.05
     },
     {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 372,
-      "PriceFloor": 571.0,
-      "BuyLimit": 10000,
-      "pctROI": 52.15
-    },
-    {
       "ItemName": "Combat bracelet",
       "LowPrice": 11952,
       "PriceFloor": 12267.0,
@@ -100,11 +93,11 @@
       "pctROI": 1.61
     },
     {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 239,
-      "PriceFloor": 399.0,
-      "BuyLimit": 11000,
-      "pctROI": 65.69
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 373,
+      "PriceFloor": 571.0,
+      "BuyLimit": 10000,
+      "pctROI": 51.74
     },
     {
       "ItemName": "Nihil shard",
@@ -112,6 +105,13 @@
       "PriceFloor": 2739.0,
       "BuyLimit": 30000,
       "pctROI": 2.11
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 244,
+      "PriceFloor": 399.0,
+      "BuyLimit": 11000,
+      "pctROI": 62.3
     },
     {
       "ItemName": "Emerald necklace",
@@ -122,10 +122,10 @@
     },
     {
       "ItemName": "Ruby necklace",
-      "LowPrice": 980,
+      "LowPrice": 983,
       "PriceFloor": 1061.0,
       "BuyLimit": 18000,
-      "pctROI": 7.24
+      "pctROI": 6.92
     },
     {
       "ItemName": "Ruby bracelet",
@@ -157,10 +157,10 @@
     },
     {
       "ItemName": "Sapphire necklace",
-      "LowPrice": 352,
+      "LowPrice": 351,
       "PriceFloor": 392.0,
       "BuyLimit": 18000,
-      "pctROI": 10.51
+      "pctROI": 10.83
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -178,24 +178,24 @@
     },
     {
       "ItemName": "Magic shortbow",
-      "LowPrice": 693,
+      "LowPrice": 688,
       "PriceFloor": 719.0,
       "BuyLimit": 18000,
-      "pctROI": 2.74
-    },
-    {
-      "ItemName": "Emerald ring",
-      "LowPrice": 492,
-      "PriceFloor": 526.0,
-      "BuyLimit": 10000,
-      "pctROI": 5.89
+      "pctROI": 3.49
     },
     {
       "ItemName": "Phoenix necklace",
-      "LowPrice": 2124,
+      "LowPrice": 2123,
       "PriceFloor": 2174.0,
       "BuyLimit": 10000,
-      "pctROI": 1.37
+      "pctROI": 1.41
+    },
+    {
+      "ItemName": "Emerald ring",
+      "LowPrice": 493,
+      "PriceFloor": 526.0,
+      "BuyLimit": 10000,
+      "pctROI": 5.68
     }
   ],
   "methodology": "VeryGranular"
