@@ -1,12 +1,19 @@
 {
-  "updated": "2026-10-21T15:45:43.485307+00:00",
+  "updated": "2026-10-21T15:50:50.479134+00:00",
   "items": [
     {
       "ItemName": "Air battlestaff",
-      "LowPrice": 8601,
+      "LowPrice": 8600,
       "PriceFloor": 8981.0,
       "BuyLimit": 18000,
-      "pctROI": 3.38
+      "pctROI": 3.4
+    },
+    {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8600,
+      "PriceFloor": 8981.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.4
     },
     {
       "ItemName": "Earth battlestaff",
@@ -23,13 +30,6 @@
       "pctROI": 2.8
     },
     {
-      "ItemName": "Fire battlestaff",
-      "LowPrice": 8679,
-      "PriceFloor": 8981.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.45
-    },
-    {
       "ItemName": "Ironwood repair kit",
       "LowPrice": 1872,
       "PriceFloor": 2150.0,
@@ -44,13 +44,6 @@
       "pctROI": 3.29
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1149,
-      "PriceFloor": 1294.0,
-      "BuyLimit": 18000,
-      "pctROI": 11.58
-    },
-    {
       "ItemName": "Combat bracelet",
       "LowPrice": 11930,
       "PriceFloor": 12271.0,
@@ -59,24 +52,31 @@
     },
     {
       "ItemName": "Phoenix necklace",
-      "LowPrice": 1961,
+      "LowPrice": 1946,
       "PriceFloor": 2179.0,
       "BuyLimit": 10000,
-      "pctROI": 10.05
+      "pctROI": 10.89
     },
     {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1837,
-      "PriceFloor": 2046.0,
-      "BuyLimit": 10000,
-      "pctROI": 10.29
+      "ItemName": "Magic longbow",
+      "LowPrice": 1169,
+      "PriceFloor": 1294.0,
+      "BuyLimit": 18000,
+      "pctROI": 9.67
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 740,
+      "LowPrice": 730,
       "PriceFloor": 932.0,
       "BuyLimit": 10000,
-      "pctROI": 24.73
+      "pctROI": 26.44
+    },
+    {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1842,
+      "PriceFloor": 2046.0,
+      "BuyLimit": 10000,
+      "pctROI": 9.99
     },
     {
       "ItemName": "Nihil shard",
@@ -100,18 +100,11 @@
       "pctROI": 53.85
     },
     {
-      "ItemName": "Diamond necklace",
-      "LowPrice": 1855,
-      "PriceFloor": 1957.0,
-      "BuyLimit": 18000,
-      "pctROI": 4.47
-    },
-    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 436,
+      "LowPrice": 441,
       "PriceFloor": 576.0,
       "BuyLimit": 10000,
-      "pctROI": 30.96
+      "pctROI": 29.48
     },
     {
       "ItemName": "Ruby necklace",
@@ -119,13 +112,6 @@
       "PriceFloor": 1066.0,
       "BuyLimit": 18000,
       "pctROI": 6.99
-    },
-    {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8486,
-      "PriceFloor": 8684.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.32
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -157,24 +143,24 @@
     },
     {
       "ItemName": "Mahogany repair kit",
-      "LowPrice": 1180,
+      "LowPrice": 1179,
       "PriceFloor": 1259.0,
       "BuyLimit": 13000,
-      "pctROI": 5.68
+      "pctROI": 5.77
+    },
+    {
+      "ItemName": "Diamond necklace",
+      "LowPrice": 1890,
+      "PriceFloor": 1957.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.54
     },
     {
       "ItemName": "Diamond amulet (u)",
-      "LowPrice": 1787,
+      "LowPrice": 1790,
       "PriceFloor": 1868.0,
       "BuyLimit": 10000,
-      "pctROI": 3.53
-    },
-    {
-      "ItemName": "Emerald bracelet",
-      "LowPrice": 613,
-      "PriceFloor": 680.0,
-      "BuyLimit": 10000,
-      "pctROI": 9.95
+      "pctROI": 3.35
     },
     {
       "ItemName": "Sapphire necklace",
@@ -182,13 +168,6 @@
       "PriceFloor": 397.0,
       "BuyLimit": 18000,
       "pctROI": 8.84
-    },
-    {
-      "ItemName": "Emerald ring",
-      "LowPrice": 496,
-      "PriceFloor": 531.0,
-      "BuyLimit": 10000,
-      "pctROI": 6.05
     },
     {
       "ItemName": "Dragon cannonball",
@@ -199,10 +178,17 @@
     },
     {
       "ItemName": "Ruby ring",
-      "LowPrice": 950,
+      "LowPrice": 945,
       "PriceFloor": 977.0,
       "BuyLimit": 10000,
-      "pctROI": 1.89
+      "pctROI": 2.43
+    },
+    {
+      "ItemName": "Emerald ring",
+      "LowPrice": 510,
+      "PriceFloor": 531.0,
+      "BuyLimit": 10000,
+      "pctROI": 3.14
     }
   ],
   "methodology": "VeryGranular"
