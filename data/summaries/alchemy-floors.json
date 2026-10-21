@@ -1,6 +1,13 @@
 {
-  "updated": "2026-10-21T19:00:54.670443+00:00",
+  "updated": "2026-10-21T19:05:44.189478+00:00",
   "items": [
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8700,
+      "PriceFloor": 8981.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.21
+    },
     {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8700,
@@ -14,13 +21,6 @@
       "PriceFloor": 8981.0,
       "BuyLimit": 18000,
       "pctROI": 2.16
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8716,
-      "PriceFloor": 8981.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.02
     },
     {
       "ItemName": "Magic longbow",
@@ -45,17 +45,10 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 691,
+      "LowPrice": 715,
       "PriceFloor": 932.0,
       "BuyLimit": 10000,
-      "pctROI": 33.57
-    },
-    {
-      "ItemName": "Diamond necklace",
-      "LowPrice": 1812,
-      "PriceFloor": 1957.0,
-      "BuyLimit": 18000,
-      "pctROI": 6.95
+      "pctROI": 29.09
     },
     {
       "ItemName": "Diamond bracelet",
@@ -70,6 +63,13 @@
       "PriceFloor": 8684.0,
       "BuyLimit": 11000,
       "pctROI": 2.05
+    },
+    {
+      "ItemName": "Diamond necklace",
+      "LowPrice": 1833,
+      "PriceFloor": 1957.0,
+      "BuyLimit": 18000,
+      "pctROI": 5.73
     },
     {
       "ItemName": "Combat bracelet",
@@ -115,10 +115,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 430,
+      "LowPrice": 436,
       "PriceFloor": 576.0,
       "BuyLimit": 10000,
-      "pctROI": 32.79
+      "pctROI": 30.96
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -129,10 +129,10 @@
     },
     {
       "ItemName": "Emerald necklace",
-      "LowPrice": 550,
+      "LowPrice": 548,
       "PriceFloor": 620.0,
       "BuyLimit": 18000,
-      "pctROI": 11.64
+      "pctROI": 12.04
     },
     {
       "ItemName": "Ruby bracelet",
@@ -177,18 +177,18 @@
       "pctROI": 8.84
     },
     {
-      "ItemName": "Emerald ring",
-      "LowPrice": 496,
-      "PriceFloor": 531.0,
-      "BuyLimit": 10000,
-      "pctROI": 6.05
-    },
-    {
       "ItemName": "Dragon cannonball",
       "LowPrice": 815,
       "PriceFloor": 843.0,
       "BuyLimit": 11000,
       "pctROI": 2.45
+    },
+    {
+      "ItemName": "Emerald ring",
+      "LowPrice": 515,
+      "PriceFloor": 531.0,
+      "BuyLimit": 10000,
+      "pctROI": 2.14
     }
   ],
   "methodology": "VeryGranular"
