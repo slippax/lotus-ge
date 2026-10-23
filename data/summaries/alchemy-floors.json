@@ -1,6 +1,13 @@
 {
-  "updated": "2026-10-23T14:00:55.937442+00:00",
+  "updated": "2026-10-23T14:05:57.571948+00:00",
   "items": [
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8700,
+      "PriceFloor": 8979.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.18
+    },
     {
       "ItemName": "Water battlestaff",
       "LowPrice": 8705,
@@ -23,6 +30,13 @@
       "pctROI": 1.88
     },
     {
+      "ItemName": "Ironwood repair kit",
+      "LowPrice": 1903,
+      "PriceFloor": 2148.0,
+      "BuyLimit": 13000,
+      "pctROI": 11.77
+    },
+    {
       "ItemName": "Combat bracelet",
       "LowPrice": 11861,
       "PriceFloor": 12269.0,
@@ -30,25 +44,11 @@
       "pctROI": 2.41
     },
     {
-      "ItemName": "Ironwood repair kit",
-      "LowPrice": 1918,
-      "PriceFloor": 2148.0,
-      "BuyLimit": 13000,
-      "pctROI": 10.9
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8742,
-      "PriceFloor": 8979.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.69
-    },
-    {
       "ItemName": "Diamond bracelet",
-      "LowPrice": 1811,
+      "LowPrice": 1800,
       "PriceFloor": 2044.0,
       "BuyLimit": 10000,
-      "pctROI": 11.76
+      "pctROI": 12.44
     },
     {
       "ItemName": "Camphor repair kit",
@@ -86,11 +86,11 @@
       "pctROI": 1.97
     },
     {
-      "ItemName": "Dragon javelin tips",
-      "LowPrice": 745,
-      "PriceFloor": 930.0,
-      "BuyLimit": 10000,
-      "pctROI": 23.62
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1110,
+      "PriceFloor": 1257.0,
+      "BuyLimit": 13000,
+      "pctROI": 12.16
     },
     {
       "ItemName": "Ruby necklace",
@@ -100,18 +100,18 @@
       "pctROI": 9.79
     },
     {
-      "ItemName": "Diamond necklace",
-      "LowPrice": 1852,
-      "PriceFloor": 1955.0,
-      "BuyLimit": 18000,
-      "pctROI": 4.54
+      "ItemName": "Dragon javelin tips",
+      "LowPrice": 766,
+      "PriceFloor": 930.0,
+      "BuyLimit": 10000,
+      "pctROI": 20.23
     },
     {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1131,
-      "PriceFloor": 1257.0,
-      "BuyLimit": 13000,
-      "pctROI": 10.08
+      "ItemName": "Diamond necklace",
+      "LowPrice": 1853,
+      "PriceFloor": 1955.0,
+      "BuyLimit": 18000,
+      "pctROI": 4.48
     },
     {
       "ItemName": "Rune javelin tips",
@@ -156,13 +156,6 @@
       "pctROI": 3.8
     },
     {
-      "ItemName": "Demonic tallow",
-      "LowPrice": 3,
-      "PriceFloor": 69.0,
-      "BuyLimit": 11000,
-      "pctROI": 2200.0
-    },
-    {
       "ItemName": "Diamond ring",
       "LowPrice": 1780,
       "PriceFloor": 1866.0,
@@ -182,6 +175,13 @@
       "PriceFloor": 975.0,
       "BuyLimit": 10000,
       "pctROI": 2.66
+    },
+    {
+      "ItemName": "Demonic tallow",
+      "LowPrice": 60,
+      "PriceFloor": 69.0,
+      "BuyLimit": 11000,
+      "pctROI": 15.0
     }
   ],
   "methodology": "VeryGranular"
