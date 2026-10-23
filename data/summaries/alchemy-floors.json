@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T23:55:40.363522+00:00",
+  "updated": "2026-10-23T00:00:48.350090+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -9,18 +9,18 @@
       "pctROI": 2.28
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1085,
-      "PriceFloor": 1293.0,
-      "BuyLimit": 18000,
-      "pctROI": 18.06
-    },
-    {
       "ItemName": "Ironwood repair kit",
       "LowPrice": 1868,
       "PriceFloor": 2149.0,
       "BuyLimit": 13000,
       "pctROI": 13.92
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1101,
+      "PriceFloor": 1293.0,
+      "BuyLimit": 18000,
+      "pctROI": 16.35
     },
     {
       "ItemName": "Camphor repair kit",
@@ -31,10 +31,10 @@
     },
     {
       "ItemName": "Air battlestaff",
-      "LowPrice": 8738,
+      "LowPrice": 8750,
       "PriceFloor": 8980.0,
       "BuyLimit": 18000,
-      "pctROI": 1.75
+      "pctROI": 1.61
     },
     {
       "ItemName": "Water battlestaff",
@@ -58,6 +58,13 @@
       "pctROI": 11.75
     },
     {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8776,
+      "PriceFloor": 8980.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.31
+    },
+    {
       "ItemName": "Combat bracelet",
       "LowPrice": 11950,
       "PriceFloor": 12270.0,
@@ -77,6 +84,13 @@
       "PriceFloor": 8683.0,
       "BuyLimit": 11000,
       "pctROI": 2.1
+    },
+    {
+      "ItemName": "Ruby necklace",
+      "LowPrice": 958,
+      "PriceFloor": 1065.0,
+      "BuyLimit": 18000,
+      "pctROI": 10.13
     },
     {
       "ItemName": "Dragonstone bracelet",
@@ -100,32 +114,18 @@
       "pctROI": 34.0
     },
     {
+      "ItemName": "Diamond necklace",
+      "LowPrice": 1844,
+      "PriceFloor": 1956.0,
+      "BuyLimit": 18000,
+      "pctROI": 5.04
+    },
+    {
       "ItemName": "Dragonstone bolts (e)",
       "LowPrice": 250,
       "PriceFloor": 403.0,
       "BuyLimit": 11000,
       "pctROI": 59.6
-    },
-    {
-      "ItemName": "Diamond ring",
-      "LowPrice": 1702,
-      "PriceFloor": 1867.0,
-      "BuyLimit": 10000,
-      "pctROI": 8.64
-    },
-    {
-      "ItemName": "Diamond necklace",
-      "LowPrice": 1861,
-      "PriceFloor": 1956.0,
-      "BuyLimit": 18000,
-      "pctROI": 4.08
-    },
-    {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 980,
-      "PriceFloor": 1065.0,
-      "BuyLimit": 18000,
-      "pctROI": 7.65
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -156,11 +156,25 @@
       "pctROI": 3.9
     },
     {
+      "ItemName": "Ruby bracelet",
+      "LowPrice": 1069,
+      "PriceFloor": 1154.0,
+      "BuyLimit": 10000,
+      "pctROI": 6.92
+    },
+    {
+      "ItemName": "Diamond ring",
+      "LowPrice": 1786,
+      "PriceFloor": 1867.0,
+      "BuyLimit": 10000,
+      "pctROI": 3.53
+    },
+    {
       "ItemName": "Sapphire necklace",
-      "LowPrice": 359,
+      "LowPrice": 358,
       "PriceFloor": 396.0,
       "BuyLimit": 18000,
-      "pctROI": 9.47
+      "pctROI": 9.78
     },
     {
       "ItemName": "Emerald bracelet",
@@ -170,18 +184,18 @@
       "pctROI": 9.25
     },
     {
-      "ItemName": "Ruby ring",
-      "LowPrice": 917,
-      "PriceFloor": 976.0,
-      "BuyLimit": 10000,
-      "pctROI": 5.45
-    },
-    {
       "ItemName": "Magic shortbow",
       "LowPrice": 694,
       "PriceFloor": 723.0,
       "BuyLimit": 18000,
       "pctROI": 3.17
+    },
+    {
+      "ItemName": "Ruby ring",
+      "LowPrice": 932,
+      "PriceFloor": 976.0,
+      "BuyLimit": 10000,
+      "pctROI": 3.76
     }
   ],
   "methodology": "VeryGranular"
