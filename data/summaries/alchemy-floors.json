@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23T00:20:40.038356+00:00",
+  "updated": "2026-10-23T00:25:36.662639+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -10,17 +10,17 @@
     },
     {
       "ItemName": "Ironwood repair kit",
-      "LowPrice": 1871,
+      "LowPrice": 1868,
       "PriceFloor": 2149.0,
       "BuyLimit": 13000,
-      "pctROI": 13.74
+      "pctROI": 13.92
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1098,
+      "LowPrice": 1094,
       "PriceFloor": 1293.0,
       "BuyLimit": 18000,
-      "pctROI": 16.67
+      "pctROI": 17.09
     },
     {
       "ItemName": "Camphor repair kit",
@@ -35,6 +35,13 @@
       "PriceFloor": 8980.0,
       "BuyLimit": 18000,
       "pctROI": 1.83
+    },
+    {
+      "ItemName": "Diamond necklace",
+      "LowPrice": 1788,
+      "PriceFloor": 1956.0,
+      "BuyLimit": 18000,
+      "pctROI": 8.33
     },
     {
       "ItemName": "Water battlestaff",
@@ -52,10 +59,17 @@
     },
     {
       "ItemName": "Diamond bracelet",
-      "LowPrice": 1800,
+      "LowPrice": 1801,
       "PriceFloor": 2045.0,
       "BuyLimit": 10000,
-      "pctROI": 12.5
+      "pctROI": 12.44
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8400,
+      "PriceFloor": 8683.0,
+      "BuyLimit": 11000,
+      "pctROI": 2.35
     },
     {
       "ItemName": "Fire battlestaff",
@@ -70,20 +84,6 @@
       "PriceFloor": 10242.0,
       "BuyLimit": 10000,
       "pctROI": 1.98
-    },
-    {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8420,
-      "PriceFloor": 8683.0,
-      "BuyLimit": 11000,
-      "pctROI": 2.1
-    },
-    {
-      "ItemName": "Diamond necklace",
-      "LowPrice": 1840,
-      "PriceFloor": 1956.0,
-      "BuyLimit": 18000,
-      "pctROI": 5.27
     },
     {
       "ItemName": "Ruby necklace",
@@ -149,13 +149,6 @@
       "pctROI": 12.89
     },
     {
-      "ItemName": "Diamond amulet (u)",
-      "LowPrice": 1727,
-      "PriceFloor": 1867.0,
-      "BuyLimit": 10000,
-      "pctROI": 7.06
-    },
-    {
       "ItemName": "Phoenix necklace",
       "LowPrice": 2076,
       "PriceFloor": 2178.0,
@@ -184,18 +177,25 @@
       "pctROI": 9.25
     },
     {
+      "ItemName": "Diamond amulet (u)",
+      "LowPrice": 1796,
+      "PriceFloor": 1867.0,
+      "BuyLimit": 10000,
+      "pctROI": 2.95
+    },
+    {
+      "ItemName": "Ruby ring",
+      "LowPrice": 917,
+      "PriceFloor": 976.0,
+      "BuyLimit": 10000,
+      "pctROI": 5.45
+    },
+    {
       "ItemName": "Magic shortbow",
       "LowPrice": 694,
       "PriceFloor": 723.0,
       "BuyLimit": 18000,
       "pctROI": 3.17
-    },
-    {
-      "ItemName": "Ruby ring",
-      "LowPrice": 934,
-      "PriceFloor": 976.0,
-      "BuyLimit": 10000,
-      "pctROI": 3.53
     }
   ],
   "methodology": "VeryGranular"
