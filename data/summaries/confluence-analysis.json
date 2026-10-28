@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-28T21:35:48.581106+00:00",
+  "updated": "2026-10-28T21:40:51.375331+00:00",
   "items": [
-    {
-      "ItemName": "Necklace of passage(5)",
-      "CurrentPrice": 1845,
-      "BuyLimit": 10000,
-      "FiveMinMean": 1653,
-      "HourlyMean": 1582,
-      "DailyMean": 1373,
-      "WeeklyMean": 1048,
-      "MonthlyMean": 1002,
-      "BullishConfluence": 5,
-      "BearishConfluence": 0,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 1845000.0
-    },
     {
       "ItemName": "Magic shortbow scroll",
       "CurrentPrice": 48141,
@@ -47,8 +32,23 @@
       "PotentialProfit": 4055700.0
     },
     {
+      "ItemName": "Dragon arrowtips",
+      "CurrentPrice": 2389,
+      "BuyLimit": 10000,
+      "FiveMinMean": 2379,
+      "HourlyMean": 2392,
+      "DailyMean": 2370,
+      "WeeklyMean": 2113,
+      "MonthlyMean": 2034,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 2389000.0
+    },
+    {
       "ItemName": "Burning amulet(5)",
-      "CurrentPrice": 2108,
+      "CurrentPrice": 1952,
       "BuyLimit": 10000,
       "FiveMinMean": 1951,
       "HourlyMean": 1904,
@@ -59,7 +59,22 @@
       "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 2108000.0
+      "PotentialProfit": 1952000.0
+    },
+    {
+      "ItemName": "Bagged plant 1",
+      "CurrentPrice": 1920,
+      "BuyLimit": 10000,
+      "FiveMinMean": 1905,
+      "HourlyMean": 1904,
+      "DailyMean": 1876,
+      "WeeklyMean": 2318,
+      "MonthlyMean": 2188,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 1920000.0
     },
     {
       "ItemName": "Dragon dart(p++)",
@@ -92,21 +107,6 @@
       "PotentialProfit": 1618000.0
     },
     {
-      "ItemName": "Dragon dart tip",
-      "CurrentPrice": 1230,
-      "BuyLimit": 11000,
-      "FiveMinMean": 1213,
-      "HourlyMean": 1210,
-      "DailyMean": 1179,
-      "WeeklyMean": 1093,
-      "MonthlyMean": 1164,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 1353000.0
-    },
-    {
       "ItemName": "Dagannoth hide",
       "CurrentPrice": 1214,
       "BuyLimit": 11000,
@@ -135,6 +135,21 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
       "PotentialProfit": 1258400.0
+    },
+    {
+      "ItemName": "Necklace of passage(5)",
+      "CurrentPrice": 1247,
+      "BuyLimit": 10000,
+      "FiveMinMean": 1653,
+      "HourlyMean": 1582,
+      "DailyMean": 1373,
+      "WeeklyMean": 1048,
+      "MonthlyMean": 1002,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 1247000.0
     },
     {
       "ItemName": "Snapdragon seed",
@@ -303,7 +318,7 @@
     },
     {
       "ItemName": "Blue wizard hat",
-      "CurrentPrice": 436,
+      "CurrentPrice": 325,
       "BuyLimit": 125,
       "FiveMinMean": 497,
       "HourlyMean": 404,
@@ -314,7 +329,7 @@
       "BearishConfluence": 1,
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 5450.0
+      "PotentialProfit": 4063.0
     },
     {
       "ItemName": "Bronze platelegs",
@@ -332,21 +347,6 @@
       "PotentialProfit": 3275.0
     },
     {
-      "ItemName": "Attack potion(2)",
-      "CurrentPrice": 10,
-      "BuyLimit": 2000,
-      "FiveMinMean": 10,
-      "HourlyMean": 9,
-      "DailyMean": 8,
-      "WeeklyMean": 6,
-      "MonthlyMean": 5,
-      "BullishConfluence": 4,
-      "BearishConfluence": 0,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_SUPPORTED",
-      "PotentialProfit": 2000.0
-    },
-    {
       "ItemName": "Red firelighter",
       "CurrentPrice": 70,
       "BuyLimit": 250,
@@ -360,6 +360,36 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
       "PotentialProfit": 1750.0
+    },
+    {
+      "ItemName": "Attack potion(2)",
+      "CurrentPrice": 8,
+      "BuyLimit": 2000,
+      "FiveMinMean": 10,
+      "HourlyMean": 9,
+      "DailyMean": 8,
+      "WeeklyMean": 6,
+      "MonthlyMean": 5,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_SUPPORTED",
+      "PotentialProfit": 1600.0
+    },
+    {
+      "ItemName": "Iron platelegs",
+      "CurrentPrice": 126,
+      "BuyLimit": 125,
+      "FiveMinMean": 120,
+      "HourlyMean": 120,
+      "DailyMean": 102,
+      "WeeklyMean": 68,
+      "MonthlyMean": 60,
+      "BullishConfluence": 4,
+      "BearishConfluence": 0,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 1575.0
     },
     {
       "ItemName": "Iron longsword",
@@ -438,7 +468,7 @@
     },
     {
       "ItemName": "Gold leaf",
-      "CurrentPrice": 135061,
+      "CurrentPrice": 133107,
       "BuyLimit": 11000,
       "FiveMinMean": 135061,
       "HourlyMean": 134626,
@@ -446,10 +476,10 @@
       "WeeklyMean": 132847,
       "MonthlyMean": 135657,
       "BullishConfluence": 3,
-      "BearishConfluence": 1,
+      "BearishConfluence": 2,
       "SignalStrength": "MODERATE_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 103996970.0
+      "PotentialProfit": 102492390.0
     },
     {
       "ItemName": "Grubby key",
@@ -465,21 +495,6 @@
       "SignalStrength": "MODERATE_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
       "PotentialProfit": 27720000.0
-    },
-    {
-      "ItemName": "Superior dragon bones",
-      "CurrentPrice": 19348,
-      "BuyLimit": 7500,
-      "FiveMinMean": 19338,
-      "HourlyMean": 19204,
-      "DailyMean": 19072,
-      "WeeklyMean": 19303,
-      "MonthlyMean": 20134,
-      "BullishConfluence": 3,
-      "BearishConfluence": 2,
-      "SignalStrength": "MODERATE_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 10157700.0
     },
     {
       "ItemName": "Bagged plant 3",
@@ -528,7 +543,7 @@
     },
     {
       "ItemName": "Celastrus bark",
-      "CurrentPrice": 8239,
+      "CurrentPrice": 8040,
       "BuyLimit": 12000,
       "FiveMinMean": 8016,
       "HourlyMean": 7953,
@@ -539,7 +554,7 @@
       "BearishConfluence": 2,
       "SignalStrength": "MODERATE_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 6920760.0
+      "PotentialProfit": 6753600.0
     },
     {
       "ItemName": "Onyx bolts",
@@ -558,7 +573,7 @@
     },
     {
       "ItemName": "Onyx bolt tips",
-      "CurrentPrice": 8245,
+      "CurrentPrice": 8255,
       "BuyLimit": 11000,
       "FiveMinMean": 8235,
       "HourlyMean": 8243,
@@ -569,22 +584,7 @@
       "BearishConfluence": 2,
       "SignalStrength": "MODERATE_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 6348650.0
-    },
-    {
-      "ItemName": "Battlestaff",
-      "CurrentPrice": 7992,
-      "BuyLimit": 11000,
-      "FiveMinMean": 7981,
-      "HourlyMean": 7986,
-      "DailyMean": 7887,
-      "WeeklyMean": 7847,
-      "MonthlyMean": 7888,
-      "BullishConfluence": 3,
-      "BearishConfluence": 2,
-      "SignalStrength": "MODERATE_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 6153840.0
+      "PotentialProfit": 6356350.0
     },
     {
       "ItemName": "Muddy key",
@@ -603,7 +603,7 @@
     },
     {
       "ItemName": "Ascension shards",
-      "CurrentPrice": 2101,
+      "CurrentPrice": 2003,
       "BuyLimit": 30000,
       "FiveMinMean": 2002,
       "HourlyMean": 2092,
@@ -614,11 +614,11 @@
       "BearishConfluence": 1,
       "SignalStrength": "MODERATE_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 4412100.0
+      "PotentialProfit": 4206300.0
     },
     {
       "ItemName": "Ranarr weed",
-      "CurrentPrice": 5194,
+      "CurrentPrice": 5195,
       "BuyLimit": 11000,
       "FiveMinMean": 5186,
       "HourlyMean": 5182,
@@ -629,7 +629,22 @@
       "BearishConfluence": 2,
       "SignalStrength": "MODERATE_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 3999380.0
+      "PotentialProfit": 4000150.0
+    },
+    {
+      "ItemName": "Runite ore",
+      "CurrentPrice": 10101,
+      "BuyLimit": 4500,
+      "FiveMinMean": 10008,
+      "HourlyMean": 10033,
+      "DailyMean": 9965,
+      "WeeklyMean": 9922,
+      "MonthlyMean": 10021,
+      "BullishConfluence": 3,
+      "BearishConfluence": 2,
+      "SignalStrength": "MODERATE_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 3181815.0
     },
     {
       "ItemName": "Lava dragon bones",
@@ -708,7 +723,7 @@
     },
     {
       "ItemName": "Seeking dragon arrow",
-      "CurrentPrice": 2956,
+      "CurrentPrice": 2920,
       "BuyLimit": 11000,
       "FiveMinMean": 2903,
       "HourlyMean": 2909,
@@ -719,22 +734,7 @@
       "BearishConfluence": 2,
       "SignalStrength": "MODERATE_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 2276120.0
-    },
-    {
-      "ItemName": "Draynor manor teleport (tablet)",
-      "CurrentPrice": 3156,
-      "BuyLimit": 10000,
-      "FiveMinMean": 3149,
-      "HourlyMean": 2920,
-      "DailyMean": 2837,
-      "WeeklyMean": 2996,
-      "MonthlyMean": 3619,
-      "BullishConfluence": 3,
-      "BearishConfluence": 2,
-      "SignalStrength": "MODERATE_BULLISH",
-      "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 2209200.0
+      "PotentialProfit": 2248400.0
     },
     {
       "ItemName": "Annakarl teleport (tablet)",
