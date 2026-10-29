@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29T18:35:40.342243+00:00",
+  "updated": "2026-10-29T18:40:44.091416+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -30,6 +30,13 @@
       "pctROI": 2.72
     },
     {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8655,
+      "PriceFloor": 8969.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.6
+    },
+    {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1528,
       "PriceFloor": 1841.0,
@@ -58,13 +65,6 @@
       "pctROI": 17.05
     },
     {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8710,
-      "PriceFloor": 8969.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.95
-    },
-    {
       "ItemName": "Combat bracelet",
       "LowPrice": 11851,
       "PriceFloor": 12260.0,
@@ -86,11 +86,18 @@
       "pctROI": 2.81
     },
     {
+      "ItemName": "Amulet of glory(6)",
+      "LowPrice": 9884,
+      "PriceFloor": 10231.0,
+      "BuyLimit": 10000,
+      "pctROI": 2.48
+    },
+    {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 658,
+      "LowPrice": 667,
       "PriceFloor": 920.0,
       "BuyLimit": 10000,
-      "pctROI": 38.45
+      "pctROI": 36.58
     },
     {
       "ItemName": "Diamond necklace",
@@ -129,10 +136,10 @@
     },
     {
       "ItemName": "Phoenix necklace",
-      "LowPrice": 1985,
+      "LowPrice": 1988,
       "PriceFloor": 2168.0,
       "BuyLimit": 10000,
-      "pctROI": 8.16
+      "pctROI": 8.0
     },
     {
       "ItemName": "Diamond amulet (u)",
@@ -184,18 +191,11 @@
       "pctROI": 8.21
     },
     {
-      "ItemName": "Yew longbow",
-      "LowPrice": 498,
-      "PriceFloor": 522.0,
-      "BuyLimit": 18000,
-      "pctROI": 3.82
-    },
-    {
       "ItemName": "Yew longbow (u)",
-      "LowPrice": 125,
+      "LowPrice": 126,
       "PriceFloor": 142.0,
       "BuyLimit": 10000,
-      "pctROI": 12.8
+      "pctROI": 11.9
     },
     {
       "ItemName": "Teak repair kit",
@@ -203,6 +203,13 @@
       "PriceFloor": 356.0,
       "BuyLimit": 13000,
       "pctROI": 3.22
+    },
+    {
+      "ItemName": "Yew longbow",
+      "LowPrice": 511,
+      "PriceFloor": 522.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.17
     }
   ],
   "methodology": "VeryGranular"
