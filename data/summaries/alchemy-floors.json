@@ -1,13 +1,6 @@
 {
-  "updated": "2026-10-29T14:50:46.297278+00:00",
+  "updated": "2026-10-29T14:55:39.238704+00:00",
   "items": [
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8611,
-      "PriceFloor": 8969.0,
-      "BuyLimit": 18000,
-      "pctROI": 3.12
-    },
     {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8612,
@@ -17,10 +10,17 @@
     },
     {
       "ItemName": "Air battlestaff",
-      "LowPrice": 8650,
+      "LowPrice": 8625,
       "PriceFloor": 8969.0,
       "BuyLimit": 18000,
-      "pctROI": 2.66
+      "pctROI": 2.96
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8625,
+      "PriceFloor": 8969.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.96
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -108,10 +108,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 369,
+      "LowPrice": 371,
       "PriceFloor": 564.0,
       "BuyLimit": 10000,
-      "pctROI": 51.49
+      "pctROI": 50.67
     },
     {
       "ItemName": "Emerald necklace",
@@ -192,10 +192,10 @@
     },
     {
       "ItemName": "Yew longbow (u)",
-      "LowPrice": 132,
+      "LowPrice": 133,
       "PriceFloor": 142.0,
       "BuyLimit": 10000,
-      "pctROI": 6.82
+      "pctROI": 6.02
     }
   ],
   "methodology": "VeryGranular"
