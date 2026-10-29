@@ -1,13 +1,6 @@
 {
-  "updated": "2026-10-29T02:45:42.691073+00:00",
+  "updated": "2026-10-29T02:50:43.636290+00:00",
   "items": [
-    {
-      "ItemName": "Fire battlestaff",
-      "LowPrice": 8530,
-      "PriceFloor": 8970.0,
-      "BuyLimit": 18000,
-      "pctROI": 4.11
-    },
     {
       "ItemName": "Water battlestaff",
       "LowPrice": 8535,
@@ -17,6 +10,13 @@
     },
     {
       "ItemName": "Earth battlestaff",
+      "LowPrice": 8600,
+      "PriceFloor": 8970.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.27
+    },
+    {
+      "ItemName": "Fire battlestaff",
       "LowPrice": 8600,
       "PriceFloor": 8970.0,
       "BuyLimit": 18000,
@@ -59,10 +59,10 @@
     },
     {
       "ItemName": "Ruby necklace",
-      "LowPrice": 874,
+      "LowPrice": 872,
       "PriceFloor": 1055.0,
       "BuyLimit": 18000,
-      "pctROI": 19.57
+      "pctROI": 19.84
     },
     {
       "ItemName": "Redwood shield",
@@ -108,10 +108,10 @@
     },
     {
       "ItemName": "Phoenix necklace",
-      "LowPrice": 1954,
+      "LowPrice": 1945,
       "PriceFloor": 2169.0,
       "BuyLimit": 10000,
-      "pctROI": 9.93
+      "pctROI": 10.44
     },
     {
       "ItemName": "Diamond bracelet",
@@ -122,17 +122,17 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 378,
+      "LowPrice": 371,
       "PriceFloor": 565.0,
       "BuyLimit": 10000,
-      "pctROI": 48.15
+      "pctROI": 50.94
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 238,
+      "LowPrice": 236,
       "PriceFloor": 393.0,
       "BuyLimit": 11000,
-      "pctROI": 63.87
+      "pctROI": 65.25
     },
     {
       "ItemName": "Combat bracelet",
@@ -147,13 +147,6 @@
       "PriceFloor": 609.0,
       "BuyLimit": 18000,
       "pctROI": 15.52
-    },
-    {
-      "ItemName": "Dragon cannonball",
-      "LowPrice": 715,
-      "PriceFloor": 832.0,
-      "BuyLimit": 11000,
-      "pctROI": 15.24
     },
     {
       "ItemName": "Magic shortbow",
@@ -178,10 +171,17 @@
     },
     {
       "ItemName": "Ruby ring",
-      "LowPrice": 865,
+      "LowPrice": 870,
       "PriceFloor": 966.0,
       "BuyLimit": 10000,
-      "pctROI": 10.64
+      "pctROI": 10.0
+    },
+    {
+      "ItemName": "Dragon cannonball",
+      "LowPrice": 755,
+      "PriceFloor": 832.0,
+      "BuyLimit": 11000,
+      "pctROI": 9.14
     },
     {
       "ItemName": "Teak repair kit",
@@ -203,6 +203,13 @@
       "PriceFloor": 520.0,
       "BuyLimit": 10000,
       "pctROI": 11.47
+    },
+    {
+      "ItemName": "Yew longbow",
+      "LowPrice": 512,
+      "PriceFloor": 523.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.17
     },
     {
       "ItemName": "Yew longbow (u)",
