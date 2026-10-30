@@ -1,6 +1,13 @@
 {
-  "updated": "2026-10-30T06:25:41.018746+00:00",
+  "updated": "2026-10-30T06:30:48.019181+00:00",
   "items": [
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8621,
+      "PriceFloor": 8967.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.98
+    },
     {
       "ItemName": "Ironwood repair kit",
       "LowPrice": 1785,
@@ -14,6 +21,13 @@
       "PriceFloor": 1943.0,
       "BuyLimit": 18000,
       "pctROI": 13.98
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8650,
+      "PriceFloor": 8967.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.64
     },
     {
       "ItemName": "Camphor repair kit",
@@ -44,25 +58,11 @@
       "pctROI": 29.11
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8680,
-      "PriceFloor": 8967.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.28
-    },
-    {
       "ItemName": "Magic shortbow",
       "LowPrice": 519,
       "PriceFloor": 710.0,
       "BuyLimit": 18000,
       "pctROI": 35.45
-    },
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8700,
-      "PriceFloor": 8967.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.05
     },
     {
       "ItemName": "Onyx ascension bolts (e)",
@@ -87,10 +87,17 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 639,
+      "LowPrice": 640,
       "PriceFloor": 918.0,
       "BuyLimit": 10000,
-      "pctROI": 42.25
+      "pctROI": 42.03
+    },
+    {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1778,
+      "PriceFloor": 2032.0,
+      "BuyLimit": 10000,
+      "pctROI": 13.16
     },
     {
       "ItemName": "Combat bracelet",
@@ -98,13 +105,6 @@
       "PriceFloor": 12258.0,
       "BuyLimit": 10000,
       "pctROI": 1.8
-    },
-    {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1802,
-      "PriceFloor": 2032.0,
-      "BuyLimit": 10000,
-      "pctROI": 11.65
     },
     {
       "ItemName": "Emerald necklace",
@@ -185,10 +185,24 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 288,
+      "LowPrice": 289,
       "PriceFloor": 390.0,
       "BuyLimit": 11000,
-      "pctROI": 34.38
+      "pctROI": 33.91
+    },
+    {
+      "ItemName": "Gold bracelet",
+      "LowPrice": 50,
+      "PriceFloor": 87.0,
+      "BuyLimit": 18000,
+      "pctROI": 74.0
+    },
+    {
+      "ItemName": "Emerald ring",
+      "LowPrice": 468,
+      "PriceFloor": 517.0,
+      "BuyLimit": 10000,
+      "pctROI": 9.4
     },
     {
       "ItemName": "Yew longbow",
@@ -203,13 +217,6 @@
       "PriceFloor": 354.0,
       "BuyLimit": 13000,
       "pctROI": 2.63
-    },
-    {
-      "ItemName": "Emerald ring",
-      "LowPrice": 506,
-      "PriceFloor": 517.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.19
     }
   ],
   "methodology": "VeryGranular"
