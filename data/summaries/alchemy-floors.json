@@ -1,13 +1,6 @@
 {
-  "updated": "2026-10-30T09:50:38.433004+00:00",
+  "updated": "2026-10-30T09:55:45.583374+00:00",
   "items": [
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8625,
-      "PriceFloor": 8966.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.92
-    },
     {
       "ItemName": "Earth battlestaff",
       "LowPrice": 8646,
@@ -21,6 +14,13 @@
       "PriceFloor": 1838.0,
       "BuyLimit": 13000,
       "pctROI": 19.74
+    },
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8675,
+      "PriceFloor": 8966.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.33
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -44,7 +44,7 @@
       "pctROI": 17.75
     },
     {
-      "ItemName": "Water battlestaff",
+      "ItemName": "Air battlestaff",
       "LowPrice": 8700,
       "PriceFloor": 8966.0,
       "BuyLimit": 18000,
@@ -80,24 +80,17 @@
     },
     {
       "ItemName": "Ruby necklace",
-      "LowPrice": 905,
+      "LowPrice": 900,
       "PriceFloor": 1051.0,
       "BuyLimit": 18000,
-      "pctROI": 15.03
-    },
-    {
-      "ItemName": "Magic shortbow",
-      "LowPrice": 579,
-      "PriceFloor": 709.0,
-      "BuyLimit": 18000,
-      "pctROI": 21.24
+      "pctROI": 15.67
     },
     {
       "ItemName": "Diamond necklace",
-      "LowPrice": 1801,
+      "LowPrice": 1800,
       "PriceFloor": 1942.0,
       "BuyLimit": 18000,
-      "pctROI": 6.77
+      "pctROI": 6.83
     },
     {
       "ItemName": "Emerald necklace",
@@ -114,11 +107,18 @@
       "pctROI": 11.66
     },
     {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8400,
+      "PriceFloor": 8669.0,
+      "BuyLimit": 11000,
+      "pctROI": 2.18
+    },
+    {
       "ItemName": "Amethyst javelin tips",
-      "LowPrice": 460,
+      "LowPrice": 461,
       "PriceFloor": 662.0,
       "BuyLimit": 10000,
-      "pctROI": 42.61
+      "pctROI": 42.3
     },
     {
       "ItemName": "Rune javelin tips",
@@ -150,17 +150,10 @@
     },
     {
       "ItemName": "Sapphire necklace",
-      "LowPrice": 292,
+      "LowPrice": 294,
       "PriceFloor": 383.0,
       "BuyLimit": 18000,
-      "pctROI": 30.14
-    },
-    {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8450,
-      "PriceFloor": 8669.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.57
+      "pctROI": 29.25
     },
     {
       "ItemName": "Ruby bracelet",
@@ -175,6 +168,13 @@
       "PriceFloor": 389.0,
       "BuyLimit": 11000,
       "pctROI": 42.44
+    },
+    {
+      "ItemName": "Magic shortbow",
+      "LowPrice": 633,
+      "PriceFloor": 709.0,
+      "BuyLimit": 18000,
+      "pctROI": 10.9
     },
     {
       "ItemName": "Redwood shield",
