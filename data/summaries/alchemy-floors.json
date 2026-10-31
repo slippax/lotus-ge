@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T12:10:40.720005+00:00",
+  "updated": "2026-10-31T12:15:38.992953+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -24,10 +24,17 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1042,
+      "LowPrice": 1015,
       "PriceFloor": 1277.0,
       "BuyLimit": 18000,
-      "pctROI": 21.4
+      "pctROI": 24.63
+    },
+    {
+      "ItemName": "Ruby necklace",
+      "LowPrice": 800,
+      "PriceFloor": 1048.0,
+      "BuyLimit": 18000,
+      "pctROI": 29.75
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -51,13 +58,6 @@
       "pctROI": 2.4
     },
     {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 833,
-      "PriceFloor": 1048.0,
-      "BuyLimit": 18000,
-      "pctROI": 24.61
-    },
-    {
       "ItemName": "Amulet of glory(6)",
       "LowPrice": 9757,
       "PriceFloor": 10225.0,
@@ -73,10 +73,10 @@
     },
     {
       "ItemName": "Emerald necklace",
-      "LowPrice": 412,
+      "LowPrice": 413,
       "PriceFloor": 602.0,
       "BuyLimit": 18000,
-      "pctROI": 44.66
+      "pctROI": 44.31
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -142,18 +142,18 @@
       "pctROI": 12.05
     },
     {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 359,
-      "PriceFloor": 558.0,
-      "BuyLimit": 10000,
-      "pctROI": 54.04
-    },
-    {
       "ItemName": "Amethyst javelin tips",
       "LowPrice": 472,
       "PriceFloor": 659.0,
       "BuyLimit": 10000,
       "pctROI": 38.35
+    },
+    {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 376,
+      "PriceFloor": 558.0,
+      "BuyLimit": 10000,
+      "pctROI": 47.07
     },
     {
       "ItemName": "Combat bracelet",
@@ -178,10 +178,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 284,
+      "LowPrice": 272,
       "PriceFloor": 387.0,
       "BuyLimit": 11000,
-      "pctROI": 35.21
+      "pctROI": 41.18
     },
     {
       "ItemName": "Ruby ring",
@@ -192,10 +192,10 @@
     },
     {
       "ItemName": "Emerald ring",
-      "LowPrice": 428,
+      "LowPrice": 426,
       "PriceFloor": 513.0,
       "BuyLimit": 10000,
-      "pctROI": 18.69
+      "pctROI": 19.25
     },
     {
       "ItemName": "Redwood shield",
@@ -217,6 +217,13 @@
       "PriceFloor": 516.0,
       "BuyLimit": 18000,
       "pctROI": 2.82
+    },
+    {
+      "ItemName": "Sapphire ring",
+      "LowPrice": 284,
+      "PriceFloor": 290.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.41
     }
   ],
   "methodology": "VeryGranular"
