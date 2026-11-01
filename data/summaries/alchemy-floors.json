@@ -1,26 +1,19 @@
 {
-  "updated": "2026-11-01T16:35:37.650075+00:00",
+  "updated": "2026-11-01T16:40:39.097186+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
-      "LowPrice": 8510,
+      "LowPrice": 8601,
       "PriceFloor": 8963.0,
       "BuyLimit": 18000,
-      "pctROI": 4.28
+      "pctROI": 3.17
     },
     {
       "ItemName": "Ironwood repair kit",
-      "LowPrice": 1766,
+      "LowPrice": 1750,
       "PriceFloor": 2132.0,
       "BuyLimit": 13000,
-      "pctROI": 19.54
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8625,
-      "PriceFloor": 8963.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.89
+      "pctROI": 20.63
     },
     {
       "ItemName": "Water battlestaff",
@@ -30,18 +23,18 @@
       "pctROI": 2.83
     },
     {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1032,
+      "PriceFloor": 1277.0,
+      "BuyLimit": 18000,
+      "pctROI": 22.58
+    },
+    {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1500,
       "PriceFloor": 1835.0,
       "BuyLimit": 13000,
       "pctROI": 21.13
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1037,
-      "PriceFloor": 1277.0,
-      "BuyLimit": 18000,
-      "pctROI": 21.99
     },
     {
       "ItemName": "Fire battlestaff",
@@ -58,6 +51,13 @@
       "pctROI": 3.64
     },
     {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8685,
+      "PriceFloor": 8963.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.18
+    },
+    {
       "ItemName": "Mahogany repair kit",
       "LowPrice": 971,
       "PriceFloor": 1241.0,
@@ -66,17 +66,17 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 570,
+      "LowPrice": 571,
       "PriceFloor": 914.0,
       "BuyLimit": 10000,
-      "pctROI": 58.77
+      "pctROI": 58.49
     },
     {
       "ItemName": "Onyx ascension bolts (e)",
-      "LowPrice": 8860,
+      "LowPrice": 8871,
       "PriceFloor": 9230.0,
       "BuyLimit": 11000,
-      "pctROI": 3.14
+      "pctROI": 3.01
     },
     {
       "ItemName": "Magic shortbow",
@@ -93,6 +93,13 @@
       "pctROI": 2.75
     },
     {
+      "ItemName": "Diamond necklace",
+      "LowPrice": 1783,
+      "PriceFloor": 1939.0,
+      "BuyLimit": 18000,
+      "pctROI": 7.68
+    },
+    {
       "ItemName": "Ruby necklace",
       "LowPrice": 912,
       "PriceFloor": 1048.0,
@@ -105,13 +112,6 @@
       "PriceFloor": 602.0,
       "BuyLimit": 18000,
       "pctROI": 26.0
-    },
-    {
-      "ItemName": "Diamond necklace",
-      "LowPrice": 1806,
-      "PriceFloor": 1939.0,
-      "BuyLimit": 18000,
-      "pctROI": 6.31
     },
     {
       "ItemName": "Rune javelin tips",
@@ -129,10 +129,10 @@
     },
     {
       "ItemName": "Amethyst javelin tips",
-      "LowPrice": 479,
+      "LowPrice": 478,
       "PriceFloor": 659.0,
       "BuyLimit": 10000,
-      "pctROI": 36.33
+      "pctROI": 36.61
     },
     {
       "ItemName": "Combat bracelet",
@@ -143,10 +143,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 259,
+      "LowPrice": 262,
       "PriceFloor": 387.0,
       "BuyLimit": 11000,
-      "pctROI": 48.26
+      "pctROI": 46.56
     },
     {
       "ItemName": "Phoenix necklace",
@@ -157,10 +157,10 @@
     },
     {
       "ItemName": "Teak repair kit",
-      "LowPrice": 256,
+      "LowPrice": 257,
       "PriceFloor": 350.0,
       "BuyLimit": 13000,
-      "pctROI": 35.55
+      "pctROI": 35.02
     },
     {
       "ItemName": "Diamond bracelet",
@@ -184,6 +184,13 @@
       "pctROI": 5.59
     },
     {
+      "ItemName": "Ruby ring",
+      "LowPrice": 863,
+      "PriceFloor": 959.0,
+      "BuyLimit": 10000,
+      "pctROI": 10.08
+    },
+    {
       "ItemName": "Emerald ring",
       "LowPrice": 425,
       "PriceFloor": 513.0,
@@ -198,25 +205,11 @@
       "pctROI": 3.97
     },
     {
-      "ItemName": "Yew longbow",
-      "LowPrice": 473,
-      "PriceFloor": 516.0,
-      "BuyLimit": 18000,
-      "pctROI": 8.03
-    },
-    {
       "ItemName": "Ruby amulet (u)",
       "LowPrice": 886,
       "PriceFloor": 959.0,
       "BuyLimit": 10000,
       "pctROI": 7.22
-    },
-    {
-      "ItemName": "Ruby ring",
-      "LowPrice": 909,
-      "PriceFloor": 959.0,
-      "BuyLimit": 10000,
-      "pctROI": 4.51
     }
   ],
   "methodology": "VeryGranular"
