@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T13:05:42.668057+00:00",
+  "updated": "2026-11-02T13:10:44.855176+00:00",
   "items": [
     {
       "ItemName": "Camphor repair kit",
@@ -30,6 +30,13 @@
       "pctROI": 4.16
     },
     {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8649,
+      "PriceFloor": 8960.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.57
+    },
+    {
       "ItemName": "Water battlestaff",
       "LowPrice": 8650,
       "PriceFloor": 8960.0,
@@ -44,18 +51,11 @@
       "pctROI": 16.59
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8655,
-      "PriceFloor": 8960.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.5
-    },
-    {
       "ItemName": "Mahogany repair kit",
-      "LowPrice": 1000,
+      "LowPrice": 972,
       "PriceFloor": 1238.0,
       "BuyLimit": 13000,
-      "pctROI": 22.6
+      "pctROI": 26.13
     },
     {
       "ItemName": "Fire battlestaff",
@@ -72,11 +72,25 @@
       "pctROI": 44.09
     },
     {
-      "ItemName": "Dragonstone bracelet",
-      "LowPrice": 10733,
-      "PriceFloor": 11113.0,
+      "ItemName": "Amulet of glory(6)",
+      "LowPrice": 9849,
+      "PriceFloor": 10222.0,
       "BuyLimit": 10000,
-      "pctROI": 2.51
+      "pctROI": 2.75
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8350,
+      "PriceFloor": 8663.0,
+      "BuyLimit": 11000,
+      "pctROI": 2.72
+    },
+    {
+      "ItemName": "Phoenix necklace",
+      "LowPrice": 1906,
+      "PriceFloor": 2159.0,
+      "BuyLimit": 10000,
+      "pctROI": 12.17
     },
     {
       "ItemName": "Ruby bracelet",
@@ -91,20 +105,6 @@
       "PriceFloor": 703.0,
       "BuyLimit": 18000,
       "pctROI": 21.47
-    },
-    {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8380,
-      "PriceFloor": 8663.0,
-      "BuyLimit": 11000,
-      "pctROI": 2.35
-    },
-    {
-      "ItemName": "Phoenix necklace",
-      "LowPrice": 1932,
-      "PriceFloor": 2159.0,
-      "BuyLimit": 10000,
-      "pctROI": 10.66
     },
     {
       "ItemName": "Diamond bracelet",
@@ -126,13 +126,6 @@
       "PriceFloor": 555.0,
       "BuyLimit": 10000,
       "pctROI": 50.27
-    },
-    {
-      "ItemName": "Amulet of glory(6)",
-      "LowPrice": 9965,
-      "PriceFloor": 10222.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.56
     },
     {
       "ItemName": "Ruby necklace",
@@ -164,17 +157,10 @@
     },
     {
       "ItemName": "Nihil shard",
-      "LowPrice": 2651,
+      "LowPrice": 2652,
       "PriceFloor": 2723.0,
       "BuyLimit": 30000,
-      "pctROI": 1.7
-    },
-    {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 273,
-      "PriceFloor": 384.0,
-      "BuyLimit": 11000,
-      "pctROI": 39.56
+      "pctROI": 1.66
     },
     {
       "ItemName": "Diamond amulet (u)",
@@ -184,11 +170,25 @@
       "pctROI": 6.34
     },
     {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 292,
+      "PriceFloor": 384.0,
+      "BuyLimit": 11000,
+      "pctROI": 30.48
+    },
+    {
+      "ItemName": "Diamond ring",
+      "LowPrice": 1744,
+      "PriceFloor": 1847.0,
+      "BuyLimit": 10000,
+      "pctROI": 4.87
+    },
+    {
       "ItemName": "Sapphire necklace",
-      "LowPrice": 325,
+      "LowPrice": 329,
       "PriceFloor": 377.0,
       "BuyLimit": 18000,
-      "pctROI": 15.08
+      "pctROI": 13.68
     },
     {
       "ItemName": "Yew longbow",
@@ -199,31 +199,17 @@
     },
     {
       "ItemName": "Ruby ring",
-      "LowPrice": 912,
+      "LowPrice": 877,
       "PriceFloor": 956.0,
       "BuyLimit": 10000,
-      "pctROI": 3.84
-    },
-    {
-      "ItemName": "Emerald ring",
-      "LowPrice": 475,
-      "PriceFloor": 510.0,
-      "BuyLimit": 10000,
-      "pctROI": 6.32
-    },
-    {
-      "ItemName": "Diamond ring",
-      "LowPrice": 1808,
-      "PriceFloor": 1847.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.16
+      "pctROI": 7.98
     },
     {
       "ItemName": "Teak repair kit",
-      "LowPrice": 338,
+      "LowPrice": 337,
       "PriceFloor": 347.0,
       "BuyLimit": 13000,
-      "pctROI": 1.78
+      "pctROI": 2.08
     }
   ],
   "methodology": "VeryGranular"
