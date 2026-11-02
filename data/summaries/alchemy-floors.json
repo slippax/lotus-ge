@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T11:50:39.785846+00:00",
+  "updated": "2026-11-02T11:55:42.196759+00:00",
   "items": [
     {
       "ItemName": "Air battlestaff",
@@ -30,18 +30,18 @@
       "pctROI": 2.67
     },
     {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1033,
+      "PriceFloor": 1274.0,
+      "BuyLimit": 18000,
+      "pctROI": 22.17
+    },
+    {
       "ItemName": "Earth battlestaff",
       "LowPrice": 8643,
       "PriceFloor": 8960.0,
       "BuyLimit": 18000,
       "pctROI": 2.64
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1034,
-      "PriceFloor": 1274.0,
-      "BuyLimit": 18000,
-      "pctROI": 22.05
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -65,6 +65,13 @@
       "pctROI": 2.74
     },
     {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1000,
+      "PriceFloor": 1238.0,
+      "BuyLimit": 13000,
+      "pctROI": 22.6
+    },
+    {
       "ItemName": "Nihil shard",
       "LowPrice": 2600,
       "PriceFloor": 2723.0,
@@ -79,32 +86,11 @@
       "pctROI": 43.17
     },
     {
-      "ItemName": "Amulet of glory(6)",
-      "LowPrice": 9849,
-      "PriceFloor": 10222.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.75
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1020,
-      "PriceFloor": 1238.0,
-      "BuyLimit": 13000,
-      "pctROI": 20.2
-    },
-    {
       "ItemName": "Onyx bolts (e)",
       "LowPrice": 8350,
       "PriceFloor": 8663.0,
       "BuyLimit": 11000,
       "pctROI": 2.72
-    },
-    {
-      "ItemName": "Ruby bracelet",
-      "LowPrice": 900,
-      "PriceFloor": 1134.0,
-      "BuyLimit": 10000,
-      "pctROI": 24.78
     },
     {
       "ItemName": "Magic shortbow",
@@ -115,10 +101,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 366,
+      "LowPrice": 365,
       "PriceFloor": 555.0,
       "BuyLimit": 10000,
-      "pctROI": 50.27
+      "pctROI": 50.68
     },
     {
       "ItemName": "Emerald necklace",
@@ -136,10 +122,24 @@
     },
     {
       "ItemName": "Diamond bracelet",
-      "LowPrice": 1846,
+      "LowPrice": 1840,
       "PriceFloor": 2025.0,
       "BuyLimit": 10000,
-      "pctROI": 8.61
+      "pctROI": 8.97
+    },
+    {
+      "ItemName": "Ruby bracelet",
+      "LowPrice": 960,
+      "PriceFloor": 1134.0,
+      "BuyLimit": 10000,
+      "pctROI": 16.98
+    },
+    {
+      "ItemName": "Amulet of glory(6)",
+      "LowPrice": 9965,
+      "PriceFloor": 10222.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.56
     },
     {
       "ItemName": "Diamond necklace",
@@ -198,18 +198,18 @@
       "pctROI": 12.79
     },
     {
-      "ItemName": "Ruby ring",
-      "LowPrice": 910,
-      "PriceFloor": 956.0,
-      "BuyLimit": 10000,
-      "pctROI": 4.07
-    },
-    {
       "ItemName": "Diamond ring",
       "LowPrice": 1793,
       "PriceFloor": 1847.0,
       "BuyLimit": 10000,
       "pctROI": 2.01
+    },
+    {
+      "ItemName": "Ruby ring",
+      "LowPrice": 912,
+      "PriceFloor": 956.0,
+      "BuyLimit": 10000,
+      "pctROI": 3.84
     },
     {
       "ItemName": "Diamond amulet (u)",
@@ -220,10 +220,10 @@
     },
     {
       "ItemName": "Emerald ring",
-      "LowPrice": 498,
+      "LowPrice": 488,
       "PriceFloor": 510.0,
       "BuyLimit": 10000,
-      "pctROI": 1.41
+      "pctROI": 3.48
     }
   ],
   "methodology": "VeryGranular"
