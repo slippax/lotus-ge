@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T18:10:44.107661+00:00",
+  "updated": "2026-11-02T18:15:41.945994+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -44,6 +44,13 @@
       "pctROI": 21.93
     },
     {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8653,
+      "PriceFloor": 8960.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.52
+    },
+    {
       "ItemName": "Onyx bolts (e)",
       "LowPrice": 8226,
       "PriceFloor": 8663.0,
@@ -58,25 +65,18 @@
       "pctROI": 3.81
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8700,
-      "PriceFloor": 8960.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.97
-    },
-    {
-      "ItemName": "Mahogany repair kit",
-      "LowPrice": 1000,
-      "PriceFloor": 1238.0,
-      "BuyLimit": 13000,
-      "pctROI": 22.6
-    },
-    {
       "ItemName": "Nihil shard",
       "LowPrice": 2600,
       "PriceFloor": 2723.0,
       "BuyLimit": 30000,
       "pctROI": 3.69
+    },
+    {
+      "ItemName": "Mahogany repair kit",
+      "LowPrice": 1008,
+      "PriceFloor": 1238.0,
+      "BuyLimit": 13000,
+      "pctROI": 21.63
     },
     {
       "ItemName": "Combat bracelet",
@@ -87,17 +87,10 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 623,
+      "LowPrice": 630,
       "PriceFloor": 911.0,
       "BuyLimit": 10000,
-      "pctROI": 44.78
-    },
-    {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1773,
-      "PriceFloor": 2025.0,
-      "BuyLimit": 10000,
-      "pctROI": 13.09
+      "pctROI": 43.17
     },
     {
       "ItemName": "Magic shortbow",
@@ -107,18 +100,18 @@
       "pctROI": 21.68
     },
     {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1782,
+      "PriceFloor": 2025.0,
+      "BuyLimit": 10000,
+      "pctROI": 12.51
+    },
+    {
       "ItemName": "Ruby bracelet",
       "LowPrice": 915,
       "PriceFloor": 1134.0,
       "BuyLimit": 10000,
       "pctROI": 22.73
-    },
-    {
-      "ItemName": "Diamond necklace",
-      "LowPrice": 1806,
-      "PriceFloor": 1936.0,
-      "BuyLimit": 18000,
-      "pctROI": 6.15
     },
     {
       "ItemName": "Emerald necklace",
@@ -133,6 +126,20 @@
       "PriceFloor": 1045.0,
       "BuyLimit": 18000,
       "pctROI": 11.65
+    },
+    {
+      "ItemName": "Yew longbow",
+      "LowPrice": 400,
+      "PriceFloor": 513.0,
+      "BuyLimit": 18000,
+      "pctROI": 27.0
+    },
+    {
+      "ItemName": "Diamond necklace",
+      "LowPrice": 1815,
+      "PriceFloor": 1936.0,
+      "BuyLimit": 18000,
+      "pctROI": 5.62
     },
     {
       "ItemName": "Rune javelin tips",
@@ -171,10 +178,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 276,
+      "LowPrice": 273,
       "PriceFloor": 384.0,
       "BuyLimit": 11000,
-      "pctROI": 38.04
+      "pctROI": 39.56
     },
     {
       "ItemName": "Redwood shield",
@@ -182,13 +189,6 @@
       "PriceFloor": 513.0,
       "BuyLimit": 18000,
       "pctROI": 14.41
-    },
-    {
-      "ItemName": "Yew longbow",
-      "LowPrice": 459,
-      "PriceFloor": 513.0,
-      "BuyLimit": 18000,
-      "pctROI": 10.68
     },
     {
       "ItemName": "Diamond amulet (u)",
@@ -205,13 +205,6 @@
       "pctROI": 4.87
     },
     {
-      "ItemName": "Ruby ring",
-      "LowPrice": 867,
-      "PriceFloor": 956.0,
-      "BuyLimit": 10000,
-      "pctROI": 9.23
-    },
-    {
       "ItemName": "Sapphire necklace",
       "LowPrice": 332,
       "PriceFloor": 377.0,
@@ -220,10 +213,10 @@
     },
     {
       "ItemName": "Emerald ring",
-      "LowPrice": 466,
+      "LowPrice": 465,
       "PriceFloor": 510.0,
       "BuyLimit": 10000,
-      "pctROI": 8.37
+      "pctROI": 8.6
     },
     {
       "ItemName": "Teak repair kit",
@@ -231,6 +224,13 @@
       "PriceFloor": 347.0,
       "BuyLimit": 13000,
       "pctROI": 8.52
+    },
+    {
+      "ItemName": "Ruby ring",
+      "LowPrice": 915,
+      "PriceFloor": 956.0,
+      "BuyLimit": 10000,
+      "pctROI": 3.5
     }
   ],
   "methodology": "VeryGranular"
