@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-03T23:25:35.334049+00:00",
+  "updated": "2026-11-03T23:30:47.671870+00:00",
   "items": [
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8512,
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8550,
       "PriceFloor": 8960.0,
       "BuyLimit": 18000,
-      "pctROI": 4.22
+      "pctROI": 3.75
     },
     {
       "ItemName": "Earth battlestaff",
@@ -14,6 +14,13 @@
       "PriceFloor": 8960.0,
       "BuyLimit": 18000,
       "pctROI": 3.63
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8610,
+      "PriceFloor": 8960.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.03
     },
     {
       "ItemName": "Camphor repair kit",
@@ -24,10 +31,10 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1028,
+      "LowPrice": 1027,
       "PriceFloor": 1274.0,
       "BuyLimit": 18000,
-      "pctROI": 22.76
+      "pctROI": 22.88
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -37,25 +44,18 @@
       "pctROI": 4.48
     },
     {
+      "ItemName": "Onyx ascension bolts (e)",
+      "LowPrice": 8800,
+      "PriceFloor": 9227.0,
+      "BuyLimit": 11000,
+      "pctROI": 3.81
+    },
+    {
       "ItemName": "Mahogany repair kit",
       "LowPrice": 971,
       "PriceFloor": 1238.0,
       "BuyLimit": 13000,
       "pctROI": 26.26
-    },
-    {
-      "ItemName": "Onyx ascension bolts (e)",
-      "LowPrice": 8850,
-      "PriceFloor": 9227.0,
-      "BuyLimit": 11000,
-      "pctROI": 3.22
-    },
-    {
-      "ItemName": "Fire battlestaff",
-      "LowPrice": 8701,
-      "PriceFloor": 8960.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.95
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -72,20 +72,6 @@
       "pctROI": 131.6
     },
     {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8717,
-      "PriceFloor": 8960.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.77
-    },
-    {
-      "ItemName": "Diamond necklace",
-      "LowPrice": 1770,
-      "PriceFloor": 1936.0,
-      "BuyLimit": 18000,
-      "pctROI": 8.31
-    },
-    {
       "ItemName": "Dragon javelin tips",
       "LowPrice": 663,
       "PriceFloor": 911.0,
@@ -94,10 +80,17 @@
     },
     {
       "ItemName": "Diamond bracelet",
-      "LowPrice": 1772,
+      "LowPrice": 1777,
       "PriceFloor": 2025.0,
       "BuyLimit": 10000,
-      "pctROI": 13.15
+      "pctROI": 12.83
+    },
+    {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8750,
+      "PriceFloor": 8960.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.38
     },
     {
       "ItemName": "Ruby bracelet",
@@ -105,6 +98,13 @@
       "PriceFloor": 1134.0,
       "BuyLimit": 10000,
       "pctROI": 22.6
+    },
+    {
+      "ItemName": "Diamond necklace",
+      "LowPrice": 1803,
+      "PriceFloor": 1936.0,
+      "BuyLimit": 18000,
+      "pctROI": 6.32
     },
     {
       "ItemName": "Magic shortbow",
@@ -115,10 +115,17 @@
     },
     {
       "ItemName": "Ruby necklace",
-      "LowPrice": 933,
+      "LowPrice": 932,
       "PriceFloor": 1045.0,
       "BuyLimit": 18000,
-      "pctROI": 10.93
+      "pctROI": 11.05
+    },
+    {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 369,
+      "PriceFloor": 555.0,
+      "BuyLimit": 10000,
+      "pctROI": 49.05
     },
     {
       "ItemName": "Combat bracelet",
@@ -142,13 +149,6 @@
       "pctROI": 8.8
     },
     {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 378,
-      "PriceFloor": 555.0,
-      "BuyLimit": 10000,
-      "pctROI": 45.5
-    },
-    {
       "ItemName": "Emerald necklace",
       "LowPrice": 513,
       "PriceFloor": 599.0,
@@ -164,10 +164,10 @@
     },
     {
       "ItemName": "Amethyst javelin tips",
-      "LowPrice": 526,
+      "LowPrice": 527,
       "PriceFloor": 656.0,
       "BuyLimit": 10000,
-      "pctROI": 23.57
+      "pctROI": 23.34
     },
     {
       "ItemName": "Diamond amulet (u)",
@@ -231,13 +231,6 @@
       "PriceFloor": 956.0,
       "BuyLimit": 10000,
       "pctROI": 2.27
-    },
-    {
-      "ItemName": "Yew longbow (u)",
-      "LowPrice": 128,
-      "PriceFloor": 133.0,
-      "BuyLimit": 10000,
-      "pctROI": 3.13
     }
   ],
   "methodology": "VeryGranular"
