@@ -1,12 +1,19 @@
 {
-  "updated": "2026-11-03T03:46:02.932089+00:00",
+  "updated": "2026-11-03T03:50:46.551213+00:00",
   "items": [
     {
+      "ItemName": "Magic longbow",
+      "LowPrice": 981,
+      "PriceFloor": 1273.0,
+      "BuyLimit": 18000,
+      "pctROI": 28.54
+    },
+    {
       "ItemName": "Onyx ascension bolts (e)",
-      "LowPrice": 8700,
+      "LowPrice": 8701,
       "PriceFloor": 9226.0,
       "BuyLimit": 11000,
-      "pctROI": 4.99
+      "pctROI": 4.98
     },
     {
       "ItemName": "Fire battlestaff",
@@ -16,18 +23,11 @@
       "pctROI": 3.02
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1006,
-      "PriceFloor": 1273.0,
-      "BuyLimit": 18000,
-      "pctROI": 25.35
-    },
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8624,
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8621,
       "PriceFloor": 8959.0,
       "BuyLimit": 18000,
-      "pctROI": 2.85
+      "pctROI": 2.89
     },
     {
       "ItemName": "Camphor repair kit",
@@ -38,17 +38,10 @@
     },
     {
       "ItemName": "Water battlestaff",
-      "LowPrice": 8631,
+      "LowPrice": 8669,
       "PriceFloor": 8959.0,
       "BuyLimit": 18000,
-      "pctROI": 2.77
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8641,
-      "PriceFloor": 8959.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.65
+      "pctROI": 2.32
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -63,6 +56,13 @@
       "PriceFloor": 1237.0,
       "BuyLimit": 13000,
       "pctROI": 25.51
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8700,
+      "PriceFloor": 8959.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.95
     },
     {
       "ItemName": "Nihil shard",
@@ -93,18 +93,18 @@
       "pctROI": 40.34
     },
     {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 895,
-      "PriceFloor": 1044.0,
-      "BuyLimit": 18000,
-      "pctROI": 15.53
-    },
-    {
       "ItemName": "Diamond necklace",
       "LowPrice": 1783,
       "PriceFloor": 1935.0,
       "BuyLimit": 18000,
       "pctROI": 7.46
+    },
+    {
+      "ItemName": "Ruby necklace",
+      "LowPrice": 911,
+      "PriceFloor": 1044.0,
+      "BuyLimit": 18000,
+      "pctROI": 13.5
     },
     {
       "ItemName": "Ruby bracelet",
@@ -164,10 +164,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 266,
+      "LowPrice": 267,
       "PriceFloor": 383.0,
       "BuyLimit": 11000,
-      "pctROI": 42.86
+      "pctROI": 42.32
     },
     {
       "ItemName": "Yew longbow",
@@ -175,13 +175,6 @@
       "PriceFloor": 512.0,
       "BuyLimit": 18000,
       "pctROI": 11.92
-    },
-    {
-      "ItemName": "Ruby ring",
-      "LowPrice": 859,
-      "PriceFloor": 955.0,
-      "BuyLimit": 10000,
-      "pctROI": 10.13
     },
     {
       "ItemName": "Diamond amulet (u)",
@@ -198,25 +191,32 @@
       "pctROI": 11.34
     },
     {
-      "ItemName": "Teak repair kit",
-      "LowPrice": 303,
-      "PriceFloor": 346.0,
-      "BuyLimit": 13000,
-      "pctROI": 13.2
+      "ItemName": "Ruby ring",
+      "LowPrice": 886,
+      "PriceFloor": 955.0,
+      "BuyLimit": 10000,
+      "pctROI": 6.77
     },
     {
       "ItemName": "Emerald ring",
-      "LowPrice": 460,
+      "LowPrice": 445,
       "PriceFloor": 509.0,
       "BuyLimit": 10000,
-      "pctROI": 9.57
+      "pctROI": 13.26
+    },
+    {
+      "ItemName": "Teak repair kit",
+      "LowPrice": 322,
+      "PriceFloor": 346.0,
+      "BuyLimit": 13000,
+      "pctROI": 6.52
     },
     {
       "ItemName": "Diamond ring",
-      "LowPrice": 1809,
+      "LowPrice": 1808,
       "PriceFloor": 1846.0,
       "BuyLimit": 10000,
-      "pctROI": 1.05
+      "pctROI": 1.11
     }
   ],
   "methodology": "VeryGranular"
