@@ -1,19 +1,19 @@
 {
-  "updated": "2026-11-04T05:55:37.470527+00:00",
+  "updated": "2026-11-04T06:00:47.345594+00:00",
   "items": [
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8512,
-      "PriceFloor": 8960.0,
-      "BuyLimit": 18000,
-      "pctROI": 4.22
-    },
     {
       "ItemName": "Nihil shard",
       "LowPrice": 2482,
       "PriceFloor": 2723.0,
       "BuyLimit": 30000,
       "pctROI": 8.62
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8550,
+      "PriceFloor": 8960.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.75
     },
     {
       "ItemName": "Fire battlestaff",
@@ -30,18 +30,18 @@
       "pctROI": 3.13
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1014,
-      "PriceFloor": 1274.0,
-      "BuyLimit": 18000,
-      "pctROI": 24.46
-    },
-    {
       "ItemName": "Air battlestaff",
       "LowPrice": 8641,
       "PriceFloor": 8960.0,
       "BuyLimit": 18000,
       "pctROI": 2.66
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1033,
+      "PriceFloor": 1274.0,
+      "BuyLimit": 18000,
+      "pctROI": 22.17
     },
     {
       "ItemName": "Camphor repair kit",
@@ -65,13 +65,6 @@
       "pctROI": 27.71
     },
     {
-      "ItemName": "Diamond necklace",
-      "LowPrice": 1743,
-      "PriceFloor": 1936.0,
-      "BuyLimit": 18000,
-      "pctROI": 9.98
-    },
-    {
       "ItemName": "Ironwood repair kit",
       "LowPrice": 1876,
       "PriceFloor": 2129.0,
@@ -79,11 +72,11 @@
       "pctROI": 12.37
     },
     {
-      "ItemName": "Diamond bracelet",
+      "ItemName": "Diamond necklace",
       "LowPrice": 1750,
-      "PriceFloor": 2025.0,
-      "BuyLimit": 10000,
-      "pctROI": 14.57
+      "PriceFloor": 1936.0,
+      "BuyLimit": 18000,
+      "pctROI": 9.54
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -94,10 +87,17 @@
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8350,
+      "LowPrice": 8354,
       "PriceFloor": 8663.0,
       "BuyLimit": 11000,
-      "pctROI": 2.72
+      "pctROI": 2.67
+    },
+    {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1798,
+      "PriceFloor": 2025.0,
+      "BuyLimit": 10000,
+      "pctROI": 11.51
     },
     {
       "ItemName": "Ruby bracelet",
@@ -105,13 +105,6 @@
       "PriceFloor": 1134.0,
       "BuyLimit": 10000,
       "pctROI": 20.75
-    },
-    {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 935,
-      "PriceFloor": 1045.0,
-      "BuyLimit": 18000,
-      "pctROI": 10.7
     },
     {
       "ItemName": "Rune javelin tips",
@@ -128,11 +121,25 @@
       "pctROI": 1.5
     },
     {
+      "ItemName": "Ruby necklace",
+      "LowPrice": 936,
+      "PriceFloor": 1045.0,
+      "BuyLimit": 18000,
+      "pctROI": 10.58
+    },
+    {
       "ItemName": "Magic shortbow",
-      "LowPrice": 607,
+      "LowPrice": 604,
       "PriceFloor": 703.0,
       "BuyLimit": 18000,
-      "pctROI": 14.66
+      "pctROI": 15.23
+    },
+    {
+      "ItemName": "Emerald necklace",
+      "LowPrice": 506,
+      "PriceFloor": 599.0,
+      "BuyLimit": 18000,
+      "pctROI": 17.39
     },
     {
       "ItemName": "Phoenix necklace",
@@ -156,13 +163,6 @@
       "pctROI": 26.46
     },
     {
-      "ItemName": "Emerald necklace",
-      "LowPrice": 521,
-      "PriceFloor": 599.0,
-      "BuyLimit": 18000,
-      "pctROI": 14.01
-    },
-    {
       "ItemName": "Amulet of glory(6)",
       "LowPrice": 10006,
       "PriceFloor": 10222.0,
@@ -171,10 +171,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 278,
+      "LowPrice": 285,
       "PriceFloor": 384.0,
       "BuyLimit": 11000,
-      "pctROI": 37.05
+      "pctROI": 33.68
     },
     {
       "ItemName": "Dragon cannonball",
@@ -224,6 +224,13 @@
       "PriceFloor": 599.0,
       "BuyLimit": 10000,
       "pctROI": 3.3
+    },
+    {
+      "ItemName": "Emerald ring",
+      "LowPrice": 489,
+      "PriceFloor": 510.0,
+      "BuyLimit": 10000,
+      "pctROI": 3.27
     }
   ],
   "methodology": "VeryGranular"
