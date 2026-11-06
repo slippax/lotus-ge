@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T20:30:51.147299+00:00",
+  "updated": "2026-11-06T20:35:45.721024+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -9,6 +9,13 @@
       "pctROI": 3.72
     },
     {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8555,
+      "PriceFloor": 8957.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.66
+    },
+    {
       "ItemName": "Nihil shard",
       "LowPrice": 2545,
       "PriceFloor": 2720.0,
@@ -16,11 +23,11 @@
       "pctROI": 5.82
     },
     {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8637,
-      "PriceFloor": 8957.0,
+      "ItemName": "Magic longbow",
+      "LowPrice": 1052,
+      "PriceFloor": 1271.0,
       "BuyLimit": 18000,
-      "pctROI": 2.67
+      "pctROI": 19.68
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -38,17 +45,10 @@
     },
     {
       "ItemName": "Air battlestaff",
-      "LowPrice": 8685,
+      "LowPrice": 8686,
       "PriceFloor": 8957.0,
       "BuyLimit": 18000,
-      "pctROI": 2.11
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1076,
-      "PriceFloor": 1271.0,
-      "BuyLimit": 18000,
-      "pctROI": 17.01
+      "pctROI": 2.1
     },
     {
       "ItemName": "Onyx ascension bolts (e)",
@@ -58,11 +58,11 @@
       "pctROI": 3.27
     },
     {
-      "ItemName": "Fire battlestaff",
-      "LowPrice": 8701,
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8705,
       "PriceFloor": 8957.0,
       "BuyLimit": 18000,
-      "pctROI": 1.92
+      "pctROI": 1.87
     },
     {
       "ItemName": "Combat bracelet",
@@ -142,18 +142,18 @@
       "pctROI": 1.27
     },
     {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 965,
-      "PriceFloor": 1042.0,
-      "BuyLimit": 18000,
-      "pctROI": 6.94
-    },
-    {
       "ItemName": "Emerald necklace",
       "LowPrice": 531,
       "PriceFloor": 596.0,
       "BuyLimit": 18000,
       "pctROI": 11.3
+    },
+    {
+      "ItemName": "Ruby necklace",
+      "LowPrice": 974,
+      "PriceFloor": 1042.0,
+      "BuyLimit": 18000,
+      "pctROI": 5.95
     },
     {
       "ItemName": "Diamond amulet (u)",
@@ -210,6 +210,13 @@
       "PriceFloor": 700.0,
       "BuyLimit": 18000,
       "pctROI": 1.02
+    },
+    {
+      "ItemName": "Binding necklace",
+      "LowPrice": 580,
+      "PriceFloor": 596.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.9
     }
   ],
   "methodology": "VeryGranular"
