@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T03:10:41.672021+00:00",
+  "updated": "2026-11-08T03:15:40.535542+00:00",
   "items": [
     {
       "ItemName": "Air battlestaff",
@@ -7,6 +7,13 @@
       "PriceFloor": 8951.0,
       "BuyLimit": 18000,
       "pctROI": 4.19
+    },
+    {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8556,
+      "PriceFloor": 8951.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.58
     },
     {
       "ItemName": "Earth battlestaff",
@@ -21,13 +28,6 @@
       "PriceFloor": 1265.0,
       "BuyLimit": 18000,
       "pctROI": 22.12
-    },
-    {
-      "ItemName": "Fire battlestaff",
-      "LowPrice": 8648,
-      "PriceFloor": 8951.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.47
     },
     {
       "ItemName": "Water battlestaff",
@@ -52,10 +52,10 @@
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8327,
+      "LowPrice": 8300,
       "PriceFloor": 8654.0,
       "BuyLimit": 11000,
-      "pctROI": 2.89
+      "pctROI": 3.23
     },
     {
       "ItemName": "Onyx ascension bolts (e)",
@@ -80,10 +80,17 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 660,
+      "LowPrice": 661,
       "PriceFloor": 902.0,
       "BuyLimit": 10000,
-      "pctROI": 35.3
+      "pctROI": 35.1
+    },
+    {
+      "ItemName": "Ruby necklace",
+      "LowPrice": 900,
+      "PriceFloor": 1036.0,
+      "BuyLimit": 18000,
+      "pctROI": 14.0
     },
     {
       "ItemName": "Diamond bracelet",
@@ -91,13 +98,6 @@
       "PriceFloor": 2016.0,
       "BuyLimit": 10000,
       "pctROI": 12.77
-    },
-    {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 903,
-      "PriceFloor": 1036.0,
-      "BuyLimit": 18000,
-      "pctROI": 13.62
     },
     {
       "ItemName": "Diamond necklace",
@@ -189,13 +189,6 @@
       "PriceFloor": 947.0,
       "BuyLimit": 10000,
       "pctROI": 1.96
-    },
-    {
-      "ItemName": "Emerald amulet (u)",
-      "LowPrice": 487,
-      "PriceFloor": 501.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.85
     }
   ],
   "methodology": "VeryGranular"
