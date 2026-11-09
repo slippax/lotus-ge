@@ -1,6 +1,13 @@
 {
-  "updated": "2026-11-09T16:20:53.161295+00:00",
+  "updated": "2026-11-09T16:25:45.145131+00:00",
   "items": [
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8650,
+      "PriceFloor": 8946.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.39
+    },
     {
       "ItemName": "Magic longbow",
       "LowPrice": 1064,
@@ -30,13 +37,6 @@
       "pctROI": 1.8
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8701,
-      "PriceFloor": 8946.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.79
-    },
-    {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8718,
       "PriceFloor": 8946.0,
@@ -45,10 +45,10 @@
     },
     {
       "ItemName": "Mahogany repair kit",
-      "LowPrice": 1022,
+      "LowPrice": 1025,
       "PriceFloor": 1224.0,
       "BuyLimit": 13000,
-      "pctROI": 18.59
+      "pctROI": 18.24
     },
     {
       "ItemName": "Ruby necklace",
@@ -114,18 +114,18 @@
       "pctROI": 12.59
     },
     {
+      "ItemName": "Combat bracelet",
+      "LowPrice": 11992,
+      "PriceFloor": 12237.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.03
+    },
+    {
       "ItemName": "Ironwood repair kit",
       "LowPrice": 2000,
       "PriceFloor": 2115.0,
       "BuyLimit": 13000,
       "pctROI": 4.7
-    },
-    {
-      "ItemName": "Combat bracelet",
-      "LowPrice": 11994,
-      "PriceFloor": 12237.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.01
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -182,13 +182,6 @@
       "PriceFloor": 689.0,
       "BuyLimit": 18000,
       "pctROI": 1.79
-    },
-    {
-      "ItemName": "Emerald ring",
-      "LowPrice": 479,
-      "PriceFloor": 496.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.71
     }
   ],
   "methodology": "VeryGranular"
