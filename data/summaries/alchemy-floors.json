@@ -1,13 +1,6 @@
 {
-  "updated": "2026-11-10T00:40:43.439890+00:00",
+  "updated": "2026-11-10T00:45:42.320624+00:00",
   "items": [
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8631,
-      "PriceFloor": 8945.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.61
-    },
     {
       "ItemName": "Amulet of glory(6)",
       "LowPrice": 9730,
@@ -17,10 +10,24 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1072,
+      "LowPrice": 1066,
       "PriceFloor": 1259.0,
       "BuyLimit": 18000,
-      "pctROI": 16.32
+      "pctROI": 16.98
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8680,
+      "PriceFloor": 8945.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.03
+    },
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8680,
+      "PriceFloor": 8945.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.03
     },
     {
       "ItemName": "Earth battlestaff",
@@ -28,13 +35,6 @@
       "PriceFloor": 8945.0,
       "BuyLimit": 18000,
       "pctROI": 1.92
-    },
-    {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8692,
-      "PriceFloor": 8945.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.89
     },
     {
       "ItemName": "Camphor repair kit",
@@ -80,10 +80,10 @@
     },
     {
       "ItemName": "Ruby necklace",
-      "LowPrice": 905,
+      "LowPrice": 906,
       "PriceFloor": 1030.0,
       "BuyLimit": 18000,
-      "pctROI": 12.71
+      "pctROI": 12.58
     },
     {
       "ItemName": "Dragon javelin tips",
@@ -135,13 +135,6 @@
       "pctROI": 4.91
     },
     {
-      "ItemName": "Diamond amulet (u)",
-      "LowPrice": 1701,
-      "PriceFloor": 1832.0,
-      "BuyLimit": 10000,
-      "pctROI": 6.64
-    },
-    {
       "ItemName": "Ruby bracelet",
       "LowPrice": 999,
       "PriceFloor": 1119.0,
@@ -156,6 +149,13 @@
       "pctROI": 32.13
     },
     {
+      "ItemName": "Diamond amulet (u)",
+      "LowPrice": 1720,
+      "PriceFloor": 1832.0,
+      "BuyLimit": 10000,
+      "pctROI": 5.47
+    },
+    {
       "ItemName": "Emerald bracelet",
       "LowPrice": 585,
       "PriceFloor": 644.0,
@@ -163,18 +163,18 @@
       "pctROI": 9.06
     },
     {
+      "ItemName": "Ruby ring",
+      "LowPrice": 880,
+      "PriceFloor": 941.0,
+      "BuyLimit": 10000,
+      "pctROI": 5.91
+    },
+    {
       "ItemName": "Ruby amulet (u)",
       "LowPrice": 886,
       "PriceFloor": 941.0,
       "BuyLimit": 10000,
       "pctROI": 5.19
-    },
-    {
-      "ItemName": "Ruby ring",
-      "LowPrice": 894,
-      "PriceFloor": 941.0,
-      "BuyLimit": 10000,
-      "pctROI": 4.25
     }
   ],
   "methodology": "VeryGranular"
