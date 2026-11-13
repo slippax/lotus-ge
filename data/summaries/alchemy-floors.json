@@ -1,6 +1,13 @@
 {
-  "updated": "2026-11-13T00:10:40.891435+00:00",
+  "updated": "2026-11-13T00:15:42.171559+00:00",
   "items": [
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8626,
+      "PriceFloor": 8943.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.64
+    },
     {
       "ItemName": "Earth battlestaff",
       "LowPrice": 8650,
@@ -59,17 +66,10 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 708,
+      "LowPrice": 706,
       "PriceFloor": 894.0,
       "BuyLimit": 10000,
-      "pctROI": 25.14
-    },
-    {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8756,
-      "PriceFloor": 8943.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.12
+      "pctROI": 25.5
     },
     {
       "ItemName": "Phoenix necklace",
@@ -79,6 +79,13 @@
       "pctROI": 8.49
     },
     {
+      "ItemName": "Combat bracelet",
+      "LowPrice": 11949,
+      "PriceFloor": 12234.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.36
+    },
+    {
       "ItemName": "Diamond bracelet",
       "LowPrice": 1835,
       "PriceFloor": 2008.0,
@@ -86,11 +93,11 @@
       "pctROI": 8.34
     },
     {
-      "ItemName": "Emerald necklace",
-      "LowPrice": 503,
-      "PriceFloor": 583.0,
+      "ItemName": "Diamond necklace",
+      "LowPrice": 1823,
+      "PriceFloor": 1919.0,
       "BuyLimit": 18000,
-      "pctROI": 14.91
+      "pctROI": 4.22
     },
     {
       "ItemName": "Ruby bracelet",
@@ -100,25 +107,25 @@
       "pctROI": 13.79
     },
     {
-      "ItemName": "Diamond necklace",
-      "LowPrice": 1827,
-      "PriceFloor": 1919.0,
+      "ItemName": "Emerald necklace",
+      "LowPrice": 504,
+      "PriceFloor": 583.0,
       "BuyLimit": 18000,
-      "pctROI": 4.0
-    },
-    {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8450,
-      "PriceFloor": 8646.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.3
+      "pctROI": 14.68
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 412,
+      "LowPrice": 410,
       "PriceFloor": 538.0,
       "BuyLimit": 10000,
-      "pctROI": 29.37
+      "pctROI": 30.0
+    },
+    {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8454,
+      "PriceFloor": 8646.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.25
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -135,11 +142,25 @@
       "pctROI": 7.37
     },
     {
+      "ItemName": "Diamond ring",
+      "LowPrice": 1741,
+      "PriceFloor": 1830.0,
+      "BuyLimit": 10000,
+      "pctROI": 4.08
+    },
+    {
+      "ItemName": "Diamond amulet (u)",
+      "LowPrice": 1756,
+      "PriceFloor": 1830.0,
+      "BuyLimit": 10000,
+      "pctROI": 3.19
+    },
+    {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 321,
+      "LowPrice": 317,
       "PriceFloor": 367.0,
       "BuyLimit": 11000,
-      "pctROI": 13.4
+      "pctROI": 14.83
     },
     {
       "ItemName": "Nihil shard",
@@ -149,25 +170,11 @@
       "pctROI": 1.09
     },
     {
-      "ItemName": "Diamond ring",
-      "LowPrice": 1792,
-      "PriceFloor": 1830.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.12
-    },
-    {
       "ItemName": "Ruby ring",
       "LowPrice": 910,
       "PriceFloor": 939.0,
       "BuyLimit": 10000,
       "pctROI": 2.2
-    },
-    {
-      "ItemName": "Diamond amulet (u)",
-      "LowPrice": 1793,
-      "PriceFloor": 1830.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.06
     }
   ],
   "methodology": "VeryGranular"
