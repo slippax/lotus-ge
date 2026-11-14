@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T04:10:39.256734+00:00",
+  "updated": "2026-11-14T04:15:46.144077+00:00",
   "items": [
     {
       "ItemName": "Water battlestaff",
@@ -16,11 +16,25 @@
       "pctROI": 14.17
     },
     {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8700,
+      "PriceFloor": 8943.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.77
+    },
+    {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8700,
       "PriceFloor": 8943.0,
       "BuyLimit": 18000,
       "pctROI": 1.77
+    },
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1093,
+      "PriceFloor": 1257.0,
+      "BuyLimit": 18000,
+      "pctROI": 13.91
     },
     {
       "ItemName": "Earth battlestaff",
@@ -30,25 +44,11 @@
       "pctROI": 1.71
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8711,
-      "PriceFloor": 8943.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.64
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1102,
-      "PriceFloor": 1257.0,
-      "BuyLimit": 18000,
-      "pctROI": 12.98
-    },
-    {
       "ItemName": "Amulet of glory(6)",
-      "LowPrice": 9877,
+      "LowPrice": 9867,
       "PriceFloor": 10205.0,
       "BuyLimit": 10000,
-      "pctROI": 2.29
+      "pctROI": 2.39
     },
     {
       "ItemName": "Combat bracelet",
@@ -58,11 +58,18 @@
       "pctROI": 1.78
     },
     {
+      "ItemName": "Ironwood repair kit",
+      "LowPrice": 1930,
+      "PriceFloor": 2112.0,
+      "BuyLimit": 13000,
+      "pctROI": 8.34
+    },
+    {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 676,
+      "LowPrice": 677,
       "PriceFloor": 894.0,
       "BuyLimit": 10000,
-      "pctROI": 31.07
+      "pctROI": 30.87
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -87,10 +94,10 @@
     },
     {
       "ItemName": "Diamond bracelet",
-      "LowPrice": 1826,
+      "LowPrice": 1825,
       "PriceFloor": 2008.0,
       "BuyLimit": 10000,
-      "pctROI": 8.87
+      "pctROI": 8.93
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -100,18 +107,11 @@
       "pctROI": 1.7
     },
     {
-      "ItemName": "Ironwood repair kit",
-      "LowPrice": 1976,
-      "PriceFloor": 2112.0,
-      "BuyLimit": 13000,
-      "pctROI": 5.82
-    },
-    {
       "ItemName": "Ruby necklace",
-      "LowPrice": 935,
+      "LowPrice": 933,
       "PriceFloor": 1028.0,
       "BuyLimit": 18000,
-      "pctROI": 8.88
+      "pctROI": 9.11
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -168,6 +168,20 @@
       "PriceFloor": 360.0,
       "BuyLimit": 18000,
       "pctROI": 10.87
+    },
+    {
+      "ItemName": "Emerald ring",
+      "LowPrice": 482,
+      "PriceFloor": 493.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.45
+    },
+    {
+      "ItemName": "Teak repair kit",
+      "LowPrice": 323,
+      "PriceFloor": 330.0,
+      "BuyLimit": 13000,
+      "pctROI": 1.24
     }
   ],
   "methodology": "VeryGranular"
