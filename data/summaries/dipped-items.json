@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T18:00:49.874730+00:00",
+  "updated": "2026-11-15T18:05:38.306254+00:00",
   "items": [
     {
       "ItemName": "Arcane sigil",
@@ -10,17 +10,24 @@
     },
     {
       "ItemName": "Burnt page",
-      "LowPrice": 4068,
+      "LowPrice": 4069,
       "AvgLow": 4550,
       "BuyLimit": 11000,
-      "pctROI": 10.74
+      "pctROI": 10.72
+    },
+    {
+      "ItemName": "Toxic blowpipe (empty)",
+      "LowPrice": 6768731,
+      "AvgLow": 7218020,
+      "BuyLimit": 8,
+      "pctROI": 5.57
     },
     {
       "ItemName": "Twisted buckler",
-      "LowPrice": 7760309,
+      "LowPrice": 7783570,
       "AvgLow": 8168133,
       "BuyLimit": 8,
-      "pctROI": 4.2
+      "pctROI": 3.89
     },
     {
       "ItemName": "Crushed nest",
@@ -35,13 +42,6 @@
       "AvgLow": 8980,
       "BuyLimit": 10000,
       "pctROI": 49.08
-    },
-    {
-      "ItemName": "Serpentine helm (uncharged)",
-      "LowPrice": 2317659,
-      "AvgLow": 2436291,
-      "BuyLimit": 8,
-      "pctROI": 4.07
     },
     {
       "ItemName": "Magic fang",
@@ -86,13 +86,6 @@
       "pctROI": 7.68
     },
     {
-      "ItemName": "Maple sapling",
-      "LowPrice": 2078,
-      "AvgLow": 3006,
-      "BuyLimit": 200,
-      "pctROI": 43.21
-    },
-    {
       "ItemName": "Onions(10)",
       "LowPrice": 140,
       "AvgLow": 400,
@@ -107,6 +100,20 @@
       "pctROI": 60.61
     },
     {
+      "ItemName": "Ascension bolts",
+      "LowPrice": 50,
+      "AvgLow": 63,
+      "BuyLimit": 11000,
+      "pctROI": 26.0
+    },
+    {
+      "ItemName": "Maple sapling",
+      "LowPrice": 2283,
+      "AvgLow": 3006,
+      "BuyLimit": 200,
+      "pctROI": 30.35
+    },
+    {
       "ItemName": "Willow branch",
       "LowPrice": 673,
       "AvgLow": 951,
@@ -119,13 +126,6 @@
       "AvgLow": 25,
       "BuyLimit": 15000,
       "pctROI": 38.89
-    },
-    {
-      "ItemName": "Salmon",
-      "LowPrice": 4,
-      "AvgLow": 21,
-      "BuyLimit": 6000,
-      "pctROI": 425.0
     }
   ],
   "methodology": "VeryGranular"
