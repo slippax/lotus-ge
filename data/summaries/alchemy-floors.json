@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T14:10:40.904602+00:00",
+  "updated": "2026-11-17T14:15:44.778489+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -7,13 +7,6 @@
       "PriceFloor": 1260.0,
       "BuyLimit": 18000,
       "pctROI": 16.96
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8679,
-      "PriceFloor": 8946.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.05
     },
     {
       "ItemName": "Water battlestaff",
@@ -49,6 +42,13 @@
       "PriceFloor": 2145.0,
       "BuyLimit": 10000,
       "pctROI": 12.5
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8747,
+      "PriceFloor": 8946.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.26
     },
     {
       "ItemName": "Onyx ascension bolts (e)",
@@ -108,10 +108,10 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 300,
+      "LowPrice": 301,
       "PriceFloor": 370.0,
       "BuyLimit": 11000,
-      "pctROI": 22.33
+      "pctROI": 21.93
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -121,32 +121,18 @@
       "pctROI": 12.77
     },
     {
+      "ItemName": "Emerald necklace",
+      "LowPrice": 557,
+      "PriceFloor": 586.0,
+      "BuyLimit": 18000,
+      "pctROI": 4.31
+    },
+    {
       "ItemName": "Emerald bracelet",
       "LowPrice": 600,
       "PriceFloor": 645.0,
       "BuyLimit": 10000,
       "pctROI": 6.5
-    },
-    {
-      "ItemName": "Emerald necklace",
-      "LowPrice": 568,
-      "PriceFloor": 586.0,
-      "BuyLimit": 18000,
-      "pctROI": 2.29
-    },
-    {
-      "ItemName": "Diamond ring",
-      "LowPrice": 1792,
-      "PriceFloor": 1833.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.28
-    },
-    {
-      "ItemName": "Ruby amulet (u)",
-      "LowPrice": 914,
-      "PriceFloor": 942.0,
-      "BuyLimit": 10000,
-      "pctROI": 2.08
     }
   ],
   "methodology": "VeryGranular"
