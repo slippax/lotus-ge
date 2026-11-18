@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T14:35:43.263259+00:00",
+  "updated": "2026-11-18T14:40:42.302783+00:00",
   "items": [
     {
       "ItemName": "Black dragonhide",
@@ -62,6 +62,21 @@
       "PotentialProfit": 721000.0
     },
     {
+      "ItemName": "Gold bar",
+      "CurrentPrice": 80,
+      "BuyLimit": 10000,
+      "FiveMinMean": 79,
+      "HourlyMean": 78,
+      "DailyMean": 75,
+      "WeeklyMean": 71,
+      "MonthlyMean": 66,
+      "BullishConfluence": 5,
+      "BearishConfluence": 0,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 80000.0
+    },
+    {
       "ItemName": "Gold leaf",
       "CurrentPrice": 134501,
       "BuyLimit": 11000,
@@ -90,21 +105,6 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
       "PotentialProfit": 44748000.0
-    },
-    {
-      "ItemName": "Crystal key",
-      "CurrentPrice": 18544,
-      "BuyLimit": 11000,
-      "FiveMinMean": 18480,
-      "HourlyMean": 18402,
-      "DailyMean": 18075,
-      "WeeklyMean": 17722,
-      "MonthlyMean": 17834,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 20398400.0
     },
     {
       "ItemName": "Earth battlestaff",
@@ -377,21 +377,6 @@
       "PotentialProfit": 1967500.0
     },
     {
-      "ItemName": "Diamond bracelet",
-      "CurrentPrice": 1869,
-      "BuyLimit": 10000,
-      "FiveMinMean": 1869,
-      "HourlyMean": 1858,
-      "DailyMean": 1833,
-      "WeeklyMean": 1829,
-      "MonthlyMean": 1797,
-      "BullishConfluence": 4,
-      "BearishConfluence": 0,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "WEAK_VOLUME",
-      "PotentialProfit": 1869000.0
-    },
-    {
       "ItemName": "Diamond amulet (u)",
       "CurrentPrice": 1856,
       "BuyLimit": 10000,
@@ -405,6 +390,21 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
       "PotentialProfit": 1856000.0
+    },
+    {
+      "ItemName": "Diamond bracelet",
+      "CurrentPrice": 1841,
+      "BuyLimit": 10000,
+      "FiveMinMean": 1869,
+      "HourlyMean": 1858,
+      "DailyMean": 1833,
+      "WeeklyMean": 1829,
+      "MonthlyMean": 1797,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "WEAK_VOLUME",
+      "PotentialProfit": 1841000.0
     },
     {
       "ItemName": "Ruby necklace",
@@ -480,6 +480,21 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "WEAK_VOLUME",
       "PotentialProfit": 1295600.0
+    },
+    {
+      "ItemName": "Magic seed",
+      "CurrentPrice": 64444,
+      "BuyLimit": 200,
+      "FiveMinMean": 64370,
+      "HourlyMean": 64427,
+      "DailyMean": 64110,
+      "WeeklyMean": 61505,
+      "MonthlyMean": 60655,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 1288880.0
     },
     {
       "ItemName": "Manta ray",
@@ -677,21 +692,6 @@
       "PotentialProfit": 287360.0
     },
     {
-      "ItemName": "Palm tree seed",
-      "CurrentPrice": 13500,
-      "BuyLimit": 200,
-      "FiveMinMean": 13501,
-      "HourlyMean": 13304,
-      "DailyMean": 13138,
-      "WeeklyMean": 11837,
-      "MonthlyMean": 11210,
-      "BullishConfluence": 4,
-      "BearishConfluence": 1,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 270000.0
-    },
-    {
       "ItemName": "Rune arrowtips",
       "CurrentPrice": 265,
       "BuyLimit": 10000,
@@ -722,6 +722,21 @@
       "PotentialProfit": 264480.0
     },
     {
+      "ItemName": "Palm tree seed",
+      "CurrentPrice": 13200,
+      "BuyLimit": 200,
+      "FiveMinMean": 13501,
+      "HourlyMean": 13304,
+      "DailyMean": 13138,
+      "WeeklyMean": 11837,
+      "MonthlyMean": 11210,
+      "BullishConfluence": 4,
+      "BearishConfluence": 1,
+      "SignalStrength": "STRONG_BULLISH",
+      "VolumeConfirmation": "VOLUME_CONFIRMED",
+      "PotentialProfit": 264000.0
+    },
+    {
       "ItemName": "Gold necklace",
       "CurrentPrice": 139,
       "BuyLimit": 18000,
@@ -735,21 +750,6 @@
       "SignalStrength": "STRONG_BULLISH",
       "VolumeConfirmation": "VOLUME_CONFIRMED",
       "PotentialProfit": 250200.0
-    },
-    {
-      "ItemName": "Stew",
-      "CurrentPrice": 237,
-      "BuyLimit": 10000,
-      "FiveMinMean": 237,
-      "HourlyMean": 228,
-      "DailyMean": 220,
-      "WeeklyMean": 165,
-      "MonthlyMean": 149,
-      "BullishConfluence": 4,
-      "BearishConfluence": 0,
-      "SignalStrength": "STRONG_BULLISH",
-      "VolumeConfirmation": "VOLUME_CONFIRMED",
-      "PotentialProfit": 237000.0
     }
   ],
   "methodology": "VeryGranular_MultiTimeframeConfluence"
