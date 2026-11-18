@@ -1,6 +1,13 @@
 {
-  "updated": "2026-11-18T03:15:41.181694+00:00",
+  "updated": "2026-11-18T03:20:38.867182+00:00",
   "items": [
+    {
+      "ItemName": "Ironwood repair kit",
+      "LowPrice": 1850,
+      "PriceFloor": 2115.0,
+      "BuyLimit": 13000,
+      "pctROI": 13.19
+    },
     {
       "ItemName": "Water battlestaff",
       "LowPrice": 8693,
@@ -10,10 +17,17 @@
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8304,
+      "LowPrice": 8300,
       "PriceFloor": 8649.0,
       "BuyLimit": 11000,
-      "pctROI": 3.12
+      "pctROI": 3.17
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8700,
+      "PriceFloor": 8946.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.8
     },
     {
       "ItemName": "Earth battlestaff",
@@ -35,13 +49,6 @@
       "PriceFloor": 10208.0,
       "BuyLimit": 10000,
       "pctROI": 2.64
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8716,
-      "PriceFloor": 8946.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.62
     },
     {
       "ItemName": "Fire battlestaff",
@@ -80,17 +87,17 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 770,
+      "LowPrice": 751,
       "PriceFloor": 897.0,
       "BuyLimit": 10000,
-      "pctROI": 15.45
+      "pctROI": 18.38
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 417,
+      "LowPrice": 413,
       "PriceFloor": 541.0,
       "BuyLimit": 10000,
-      "pctROI": 28.54
+      "pctROI": 29.78
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -98,13 +105,6 @@
       "PriceFloor": 642.0,
       "BuyLimit": 10000,
       "pctROI": 21.37
-    },
-    {
-      "ItemName": "Ironwood repair kit",
-      "LowPrice": 2016,
-      "PriceFloor": 2115.0,
-      "BuyLimit": 13000,
-      "pctROI": 3.87
     },
     {
       "ItemName": "Ruby bracelet",
@@ -122,10 +122,17 @@
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 319,
+      "LowPrice": 324,
       "PriceFloor": 370.0,
       "BuyLimit": 11000,
-      "pctROI": 15.05
+      "pctROI": 13.27
+    },
+    {
+      "ItemName": "Emerald necklace",
+      "LowPrice": 563,
+      "PriceFloor": 586.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.2
     }
   ],
   "methodology": "VeryGranular"
