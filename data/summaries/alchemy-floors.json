@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-17T23:55:40.546226+00:00",
+  "updated": "2026-11-18T00:00:48.812115+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1072,
+      "LowPrice": 1070,
       "PriceFloor": 1260.0,
       "BuyLimit": 18000,
-      "pctROI": 16.42
+      "pctROI": 16.64
     },
     {
       "ItemName": "Earth battlestaff",
@@ -17,10 +17,10 @@
     },
     {
       "ItemName": "Water battlestaff",
-      "LowPrice": 8701,
+      "LowPrice": 8704,
       "PriceFloor": 8946.0,
       "BuyLimit": 18000,
-      "pctROI": 1.79
+      "pctROI": 1.76
     },
     {
       "ItemName": "Fire battlestaff",
@@ -38,10 +38,17 @@
     },
     {
       "ItemName": "Camphor repair kit",
-      "LowPrice": 1630,
+      "LowPrice": 1635,
       "PriceFloor": 1818.0,
       "BuyLimit": 13000,
-      "pctROI": 10.43
+      "pctROI": 10.09
+    },
+    {
+      "ItemName": "Onyx ascension bolts (e)",
+      "LowPrice": 8938,
+      "PriceFloor": 9213.0,
+      "BuyLimit": 11000,
+      "pctROI": 2.05
     },
     {
       "ItemName": "Onyx bolts (e)",
@@ -56,13 +63,6 @@
       "PriceFloor": 2145.0,
       "BuyLimit": 10000,
       "pctROI": 9.88
-    },
-    {
-      "ItemName": "Onyx ascension bolts (e)",
-      "LowPrice": 8950,
-      "PriceFloor": 9213.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.91
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -126,6 +126,20 @@
       "PriceFloor": 370.0,
       "BuyLimit": 11000,
       "pctROI": 11.55
+    },
+    {
+      "ItemName": "Diamond ring",
+      "LowPrice": 1787,
+      "PriceFloor": 1833.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.57
+    },
+    {
+      "ItemName": "Emerald necklace",
+      "LowPrice": 567,
+      "PriceFloor": 586.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.47
     }
   ],
   "methodology": "VeryGranular"
