@@ -1,6 +1,13 @@
 {
-  "updated": "2026-11-19T18:15:42.767072+00:00",
+  "updated": "2026-11-19T18:20:57.824561+00:00",
   "items": [
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8700,
+      "PriceFloor": 8946.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.8
+    },
     {
       "ItemName": "Magic longbow",
       "LowPrice": 1098,
@@ -37,13 +44,6 @@
       "pctROI": 9.09
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8760,
-      "PriceFloor": 8946.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.11
-    },
-    {
       "ItemName": "Diamond bracelet",
       "LowPrice": 1823,
       "PriceFloor": 2011.0,
@@ -73,17 +73,17 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 767,
+      "LowPrice": 766,
       "PriceFloor": 897.0,
       "BuyLimit": 10000,
-      "pctROI": 15.91
+      "pctROI": 16.06
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 426,
+      "LowPrice": 439,
       "PriceFloor": 541.0,
       "BuyLimit": 10000,
-      "pctROI": 25.82
+      "pctROI": 22.1
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -100,18 +100,18 @@
       "pctROI": 8.62
     },
     {
+      "ItemName": "Emerald necklace",
+      "LowPrice": 541,
+      "PriceFloor": 586.0,
+      "BuyLimit": 18000,
+      "pctROI": 7.39
+    },
+    {
       "ItemName": "Diamond amulet (u)",
       "LowPrice": 1744,
       "PriceFloor": 1833.0,
       "BuyLimit": 10000,
       "pctROI": 4.07
-    },
-    {
-      "ItemName": "Emerald necklace",
-      "LowPrice": 545,
-      "PriceFloor": 586.0,
-      "BuyLimit": 18000,
-      "pctROI": 6.61
     },
     {
       "ItemName": "Ruby necklace",
@@ -129,17 +129,10 @@
     },
     {
       "ItemName": "Ascension bolts",
-      "LowPrice": 41,
+      "LowPrice": 46,
       "PriceFloor": 81.0,
       "BuyLimit": 11000,
-      "pctROI": 97.56
-    },
-    {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 361,
-      "PriceFloor": 370.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.66
+      "pctROI": 76.09
     }
   ],
   "methodology": "VeryGranular"
