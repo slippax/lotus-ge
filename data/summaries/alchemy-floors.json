@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T12:35:39.220217+00:00",
+  "updated": "2026-11-19T12:40:44.735381+00:00",
   "items": [
     {
       "ItemName": "Camphor repair kit",
@@ -16,6 +16,13 @@
       "pctROI": 13.76
     },
     {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8709,
+      "PriceFloor": 8946.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.7
+    },
+    {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8726,
       "PriceFloor": 8946.0,
@@ -23,25 +30,11 @@
       "pctROI": 1.5
     },
     {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8750,
-      "PriceFloor": 8946.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.22
-    },
-    {
       "ItemName": "Amulet of glory(6)",
       "LowPrice": 9922,
       "PriceFloor": 10208.0,
       "BuyLimit": 10000,
       "pctROI": 1.85
-    },
-    {
-      "ItemName": "Water battlestaff",
-      "LowPrice": 8756,
-      "PriceFloor": 8946.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.15
     },
     {
       "ItemName": "Phoenix necklace",
@@ -87,10 +80,10 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 813,
+      "LowPrice": 801,
       "PriceFloor": 897.0,
       "BuyLimit": 10000,
-      "pctROI": 9.35
+      "pctROI": 10.99
     },
     {
       "ItemName": "Ruby necklace",
@@ -107,18 +100,18 @@
       "pctROI": 2.83
     },
     {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 342,
-      "PriceFloor": 370.0,
-      "BuyLimit": 11000,
-      "pctROI": 7.31
-    },
-    {
       "ItemName": "Diamond amulet (u)",
       "LowPrice": 1793,
       "PriceFloor": 1833.0,
       "BuyLimit": 10000,
       "pctROI": 1.23
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 350,
+      "PriceFloor": 370.0,
+      "BuyLimit": 11000,
+      "pctROI": 4.86
     }
   ],
   "methodology": "VeryGranular"
