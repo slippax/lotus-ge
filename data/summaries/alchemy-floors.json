@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T02:20:41.473999+00:00",
+  "updated": "2026-11-19T02:25:39.864998+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -9,18 +9,18 @@
       "pctROI": 1.99
     },
     {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1080,
+      "PriceFloor": 1261.0,
+      "BuyLimit": 18000,
+      "pctROI": 15.65
+    },
+    {
       "ItemName": "Air battlestaff",
       "LowPrice": 8700,
       "PriceFloor": 8947.0,
       "BuyLimit": 18000,
       "pctROI": 1.82
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1095,
-      "PriceFloor": 1261.0,
-      "BuyLimit": 18000,
-      "pctROI": 14.06
     },
     {
       "ItemName": "Fire battlestaff",
@@ -31,10 +31,10 @@
     },
     {
       "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8354,
+      "LowPrice": 8350,
       "PriceFloor": 8650.0,
       "BuyLimit": 11000,
-      "pctROI": 2.51
+      "pctROI": 2.56
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -42,6 +42,13 @@
       "PriceFloor": 2116.0,
       "BuyLimit": 13000,
       "pctROI": 8.55
+    },
+    {
+      "ItemName": "Combat bracelet",
+      "LowPrice": 11902,
+      "PriceFloor": 12238.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.8
     },
     {
       "ItemName": "Camphor repair kit",
@@ -101,10 +108,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 427,
+      "LowPrice": 425,
       "PriceFloor": 542.0,
       "BuyLimit": 10000,
-      "pctROI": 25.76
+      "pctROI": 26.35
     },
     {
       "ItemName": "Ruby bracelet",
@@ -112,13 +119,6 @@
       "PriceFloor": 1121.0,
       "BuyLimit": 10000,
       "pctROI": 7.98
-    },
-    {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 985,
-      "PriceFloor": 1032.0,
-      "BuyLimit": 18000,
-      "pctROI": 3.76
     },
     {
       "ItemName": "Dragonstone bolts (e)",
@@ -135,11 +135,18 @@
       "pctROI": 5.25
     },
     {
+      "ItemName": "Ruby necklace",
+      "LowPrice": 1002,
+      "PriceFloor": 1032.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.0
+    },
+    {
       "ItemName": "Diamond amulet (u)",
-      "LowPrice": 1782,
+      "LowPrice": 1790,
       "PriceFloor": 1834.0,
       "BuyLimit": 10000,
-      "pctROI": 1.91
+      "pctROI": 1.45
     }
   ],
   "methodology": "VeryGranular"
