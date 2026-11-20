@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T05:45:40.354475+00:00",
+  "updated": "2026-11-20T05:50:38.481783+00:00",
   "items": [
     {
       "ItemName": "Earth battlestaff",
@@ -23,6 +23,13 @@
       "pctROI": 1.44
     },
     {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8755,
+      "PriceFloor": 8946.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.17
+    },
+    {
       "ItemName": "Camphor repair kit",
       "LowPrice": 1660,
       "PriceFloor": 1818.0,
@@ -35,13 +42,6 @@
       "PriceFloor": 2145.0,
       "BuyLimit": 10000,
       "pctROI": 8.87
-    },
-    {
-      "ItemName": "Amulet of glory(6)",
-      "LowPrice": 9950,
-      "PriceFloor": 10208.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.57
     },
     {
       "ItemName": "Onyx ascension bolts (e)",
@@ -65,13 +65,6 @@
       "pctROI": 9.49
     },
     {
-      "ItemName": "Emerald necklace",
-      "LowPrice": 510,
-      "PriceFloor": 586.0,
-      "BuyLimit": 18000,
-      "pctROI": 13.92
-    },
-    {
       "ItemName": "Dragon javelin tips",
       "LowPrice": 769,
       "PriceFloor": 897.0,
@@ -80,10 +73,17 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 440,
+      "LowPrice": 434,
       "PriceFloor": 541.0,
       "BuyLimit": 10000,
-      "pctROI": 21.82
+      "pctROI": 23.5
+    },
+    {
+      "ItemName": "Emerald necklace",
+      "LowPrice": 526,
+      "PriceFloor": 586.0,
+      "BuyLimit": 18000,
+      "pctROI": 10.46
     },
     {
       "ItemName": "Ruby bracelet",
@@ -107,6 +107,20 @@
       "pctROI": 9.84
     },
     {
+      "ItemName": "Yew longbow",
+      "LowPrice": 464,
+      "PriceFloor": 499.0,
+      "BuyLimit": 18000,
+      "pctROI": 6.68
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 331,
+      "PriceFloor": 370.0,
+      "BuyLimit": 11000,
+      "pctROI": 10.88
+    },
+    {
       "ItemName": "Sapphire amulet (u)",
       "LowPrice": 240,
       "PriceFloor": 274.0,
@@ -115,17 +129,10 @@
     },
     {
       "ItemName": "Ascension bolts",
-      "LowPrice": 57,
+      "LowPrice": 54,
       "PriceFloor": 81.0,
       "BuyLimit": 11000,
-      "pctROI": 42.11
-    },
-    {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 343,
-      "PriceFloor": 370.0,
-      "BuyLimit": 11000,
-      "pctROI": 7.0
+      "pctROI": 50.0
     }
   ],
   "methodology": "VeryGranular"
