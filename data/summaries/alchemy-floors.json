@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T04:30:46.711567+00:00",
+  "updated": "2026-11-20T04:35:37.606850+00:00",
   "items": [
     {
       "ItemName": "Magic longbow",
@@ -7,6 +7,13 @@
       "PriceFloor": 1260.0,
       "BuyLimit": 18000,
       "pctROI": 10.83
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8750,
+      "PriceFloor": 8946.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.22
     },
     {
       "ItemName": "Water battlestaff",
@@ -37,13 +44,6 @@
       "pctROI": 9.28
     },
     {
-      "ItemName": "Onyx bolts (e)",
-      "LowPrice": 8421,
-      "PriceFloor": 8649.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.69
-    },
-    {
       "ItemName": "Onyx ascension bolts (e)",
       "LowPrice": 8990,
       "PriceFloor": 9213.0,
@@ -72,18 +72,32 @@
       "pctROI": 15.3
     },
     {
+      "ItemName": "Onyx bolts (e)",
+      "LowPrice": 8462,
+      "PriceFloor": 8649.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.19
+    },
+    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 442,
+      "LowPrice": 425,
       "PriceFloor": 541.0,
       "BuyLimit": 10000,
-      "pctROI": 21.27
+      "pctROI": 26.12
     },
     {
       "ItemName": "Diamond necklace",
-      "LowPrice": 1863,
+      "LowPrice": 1865,
       "PriceFloor": 1922.0,
       "BuyLimit": 18000,
-      "pctROI": 2.15
+      "pctROI": 2.04
+    },
+    {
+      "ItemName": "Ruby necklace",
+      "LowPrice": 987,
+      "PriceFloor": 1031.0,
+      "BuyLimit": 18000,
+      "pctROI": 3.44
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -94,24 +108,17 @@
     },
     {
       "ItemName": "Ascension bolts",
-      "LowPrice": 45,
+      "LowPrice": 47,
       "PriceFloor": 81.0,
       "BuyLimit": 11000,
-      "pctROI": 80.0
-    },
-    {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 1004,
-      "PriceFloor": 1031.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.69
+      "pctROI": 72.34
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 343,
+      "LowPrice": 344,
       "PriceFloor": 370.0,
       "BuyLimit": 11000,
-      "pctROI": 7.0
+      "pctROI": 6.69
     },
     {
       "ItemName": "Diamond amulet (u)",
@@ -126,13 +133,6 @@
       "PriceFloor": 499.0,
       "BuyLimit": 18000,
       "pctROI": 1.02
-    },
-    {
-      "ItemName": "Diamond ascension bolts",
-      "LowPrice": 326,
-      "PriceFloor": 333.0,
-      "BuyLimit": 11000,
-      "pctROI": 1.23
     }
   ],
   "methodology": "VeryGranular"
