@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T19:15:47.920673+00:00",
+  "updated": "2026-11-20T19:25:44.684877+00:00",
   "items": [
     {
       "ItemName": "Fire battlestaff",
@@ -10,10 +10,17 @@
     },
     {
       "ItemName": "Magic longbow",
-      "LowPrice": 1123,
+      "LowPrice": 1122,
       "PriceFloor": 1259.0,
       "BuyLimit": 18000,
-      "pctROI": 11.04
+      "pctROI": 11.14
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8750,
+      "PriceFloor": 8945.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.21
     },
     {
       "ItemName": "Onyx ascension bolts (e)",
@@ -21,13 +28,6 @@
       "PriceFloor": 9212.0,
       "BuyLimit": 11000,
       "pctROI": 1.65
-    },
-    {
-      "ItemName": "Amulet of glory(6)",
-      "LowPrice": 9948,
-      "PriceFloor": 10207.0,
-      "BuyLimit": 10000,
-      "pctROI": 1.58
     },
     {
       "ItemName": "Diamond bracelet",
@@ -38,17 +38,10 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 780,
+      "LowPrice": 773,
       "PriceFloor": 896.0,
       "BuyLimit": 10000,
-      "pctROI": 13.85
-    },
-    {
-      "ItemName": "Emerald necklace",
-      "LowPrice": 522,
-      "PriceFloor": 585.0,
-      "BuyLimit": 18000,
-      "pctROI": 11.11
+      "pctROI": 14.88
     },
     {
       "ItemName": "Camphor repair kit",
@@ -70,6 +63,13 @@
       "PriceFloor": 2144.0,
       "BuyLimit": 10000,
       "pctROI": 4.58
+    },
+    {
+      "ItemName": "Emerald necklace",
+      "LowPrice": 530,
+      "PriceFloor": 585.0,
+      "BuyLimit": 18000,
+      "pctROI": 9.43
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -100,13 +100,6 @@
       "pctROI": 6.54
     },
     {
-      "ItemName": "Diamond ascension bolts",
-      "LowPrice": 304,
-      "PriceFloor": 332.0,
-      "BuyLimit": 11000,
-      "pctROI": 8.22
-    },
-    {
       "ItemName": "Ruby necklace",
       "LowPrice": 1006,
       "PriceFloor": 1030.0,
@@ -133,6 +126,13 @@
       "PriceFloor": 362.0,
       "BuyLimit": 18000,
       "pctROI": 1.7
+    },
+    {
+      "ItemName": "Diamond ascension bolts",
+      "LowPrice": 323,
+      "PriceFloor": 332.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.86
     }
   ],
   "methodology": "VeryGranular"
