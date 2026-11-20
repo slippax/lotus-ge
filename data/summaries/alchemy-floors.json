@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T23:35:47.389034+00:00",
+  "updated": "2026-11-20T23:40:44.498618+00:00",
   "items": [
     {
       "ItemName": "Abyssal bracelet(5)",
@@ -9,20 +9,6 @@
       "pctROI": 29.98
     },
     {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8700,
-      "PriceFloor": 8945.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.79
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8725,
-      "PriceFloor": 8945.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.5
-    },
-    {
       "ItemName": "Magic longbow",
       "LowPrice": 1119,
       "PriceFloor": 1259.0,
@@ -30,11 +16,25 @@
       "pctROI": 11.44
     },
     {
+      "ItemName": "Fire battlestaff",
+      "LowPrice": 8730,
+      "PriceFloor": 8945.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.44
+    },
+    {
       "ItemName": "Phoenix necklace",
       "LowPrice": 1953,
       "PriceFloor": 2144.0,
       "BuyLimit": 10000,
       "pctROI": 8.7
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8766,
+      "PriceFloor": 8945.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.03
     },
     {
       "ItemName": "Diamond bracelet",
@@ -93,13 +93,6 @@
       "pctROI": 1.01
     },
     {
-      "ItemName": "Emerald necklace",
-      "LowPrice": 530,
-      "PriceFloor": 585.0,
-      "BuyLimit": 18000,
-      "pctROI": 9.43
-    },
-    {
       "ItemName": "Amethyst javelin tips",
       "LowPrice": 551,
       "PriceFloor": 641.0,
@@ -114,25 +107,39 @@
       "pctROI": 6.54
     },
     {
-      "ItemName": "Ruby necklace",
-      "LowPrice": 988,
-      "PriceFloor": 1030.0,
+      "ItemName": "Emerald necklace",
+      "LowPrice": 543,
+      "PriceFloor": 585.0,
       "BuyLimit": 18000,
-      "pctROI": 3.24
+      "pctROI": 6.81
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 350,
+      "LowPrice": 336,
       "PriceFloor": 369.0,
       "BuyLimit": 11000,
-      "pctROI": 4.57
+      "pctROI": 8.93
+    },
+    {
+      "ItemName": "Ascension bolts",
+      "LowPrice": 57,
+      "PriceFloor": 80.0,
+      "BuyLimit": 11000,
+      "pctROI": 40.35
+    },
+    {
+      "ItemName": "Ruby necklace",
+      "LowPrice": 1008,
+      "PriceFloor": 1030.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.19
     },
     {
       "ItemName": "Sapphire necklace",
-      "LowPrice": 352,
+      "LowPrice": 351,
       "PriceFloor": 362.0,
       "BuyLimit": 18000,
-      "pctROI": 1.99
+      "pctROI": 2.28
     },
     {
       "ItemName": "Binding necklace",
@@ -140,13 +147,6 @@
       "PriceFloor": 585.0,
       "BuyLimit": 10000,
       "pctROI": 1.4
-    },
-    {
-      "ItemName": "Ascension bolts",
-      "LowPrice": 75,
-      "PriceFloor": 80.0,
-      "BuyLimit": 11000,
-      "pctROI": 6.67
     }
   ],
   "methodology": "VeryGranular"
