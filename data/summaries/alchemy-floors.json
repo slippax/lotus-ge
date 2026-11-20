@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T23:30:49.112817+00:00",
+  "updated": "2026-11-20T23:35:47.389034+00:00",
   "items": [
     {
       "ItemName": "Abyssal bracelet(5)",
@@ -9,18 +9,25 @@
       "pctROI": 29.98
     },
     {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8700,
+      "PriceFloor": 8945.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.79
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8725,
+      "PriceFloor": 8945.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.5
+    },
+    {
       "ItemName": "Magic longbow",
       "LowPrice": 1119,
       "PriceFloor": 1259.0,
       "BuyLimit": 18000,
       "pctROI": 11.44
-    },
-    {
-      "ItemName": "Air battlestaff",
-      "LowPrice": 8750,
-      "PriceFloor": 8945.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.21
     },
     {
       "ItemName": "Phoenix necklace",
@@ -87,10 +94,10 @@
     },
     {
       "ItemName": "Emerald necklace",
-      "LowPrice": 531,
+      "LowPrice": 530,
       "PriceFloor": 585.0,
       "BuyLimit": 18000,
-      "pctROI": 9.23
+      "pctROI": 9.43
     },
     {
       "ItemName": "Amethyst javelin tips",
@@ -108,31 +115,38 @@
     },
     {
       "ItemName": "Ruby necklace",
-      "LowPrice": 987,
+      "LowPrice": 988,
       "PriceFloor": 1030.0,
       "BuyLimit": 18000,
-      "pctROI": 3.34
+      "pctROI": 3.24
     },
     {
       "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 335,
+      "LowPrice": 350,
       "PriceFloor": 369.0,
       "BuyLimit": 11000,
-      "pctROI": 9.25
-    },
-    {
-      "ItemName": "Ascension bolts",
-      "LowPrice": 65,
-      "PriceFloor": 80.0,
-      "BuyLimit": 11000,
-      "pctROI": 23.08
+      "pctROI": 4.57
     },
     {
       "ItemName": "Sapphire necklace",
-      "LowPrice": 353,
+      "LowPrice": 352,
       "PriceFloor": 362.0,
       "BuyLimit": 18000,
-      "pctROI": 1.7
+      "pctROI": 1.99
+    },
+    {
+      "ItemName": "Binding necklace",
+      "LowPrice": 572,
+      "PriceFloor": 585.0,
+      "BuyLimit": 10000,
+      "pctROI": 1.4
+    },
+    {
+      "ItemName": "Ascension bolts",
+      "LowPrice": 75,
+      "PriceFloor": 80.0,
+      "BuyLimit": 11000,
+      "pctROI": 6.67
     }
   ],
   "methodology": "VeryGranular"
