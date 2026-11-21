@@ -1,6 +1,13 @@
 {
-  "updated": "2026-11-21T05:55:40.120761+00:00",
+  "updated": "2026-11-21T06:00:52.543907+00:00",
   "items": [
+    {
+      "ItemName": "Water battlestaff",
+      "LowPrice": 8700,
+      "PriceFloor": 8945.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.79
+    },
     {
       "ItemName": "Magic longbow",
       "LowPrice": 1130,
@@ -9,18 +16,25 @@
       "pctROI": 10.35
     },
     {
-      "ItemName": "Phoenix necklace",
-      "LowPrice": 1925,
-      "PriceFloor": 2144.0,
-      "BuyLimit": 10000,
-      "pctROI": 10.29
-    },
-    {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8760,
       "PriceFloor": 8945.0,
       "BuyLimit": 18000,
       "pctROI": 1.1
+    },
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8761,
+      "PriceFloor": 8945.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.08
+    },
+    {
+      "ItemName": "Phoenix necklace",
+      "LowPrice": 1953,
+      "PriceFloor": 2144.0,
+      "BuyLimit": 10000,
+      "pctROI": 8.7
     },
     {
       "ItemName": "Camphor repair kit",
@@ -108,10 +122,10 @@
     },
     {
       "ItemName": "Ascension bolts",
-      "LowPrice": 68,
+      "LowPrice": 67,
       "PriceFloor": 80.0,
       "BuyLimit": 11000,
-      "pctROI": 17.65
+      "pctROI": 19.4
     }
   ],
   "methodology": "VeryGranular"
