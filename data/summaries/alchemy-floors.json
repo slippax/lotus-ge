@@ -1,19 +1,26 @@
 {
-  "updated": "2026-11-21T12:50:49.166522+00:00",
+  "updated": "2026-11-21T12:55:41.516126+00:00",
   "items": [
     {
       "ItemName": "Water battlestaff",
-      "LowPrice": 8650,
+      "LowPrice": 8651,
       "PriceFloor": 8945.0,
       "BuyLimit": 18000,
-      "pctROI": 2.38
+      "pctROI": 2.37
+    },
+    {
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8715,
+      "PriceFloor": 8945.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.62
     },
     {
       "ItemName": "Air battlestaff",
-      "LowPrice": 8729,
+      "LowPrice": 8725,
       "PriceFloor": 8945.0,
       "BuyLimit": 18000,
-      "pctROI": 1.45
+      "pctROI": 1.5
     },
     {
       "ItemName": "Fire battlestaff",
@@ -21,13 +28,6 @@
       "PriceFloor": 8945.0,
       "BuyLimit": 18000,
       "pctROI": 1.44
-    },
-    {
-      "ItemName": "Earth battlestaff",
-      "LowPrice": 8750,
-      "PriceFloor": 8945.0,
-      "BuyLimit": 18000,
-      "pctROI": 1.21
     },
     {
       "ItemName": "Magic longbow",
@@ -45,10 +45,10 @@
     },
     {
       "ItemName": "Ruby necklace",
-      "LowPrice": 946,
+      "LowPrice": 947,
       "PriceFloor": 1030.0,
       "BuyLimit": 18000,
-      "pctROI": 7.82
+      "pctROI": 7.71
     },
     {
       "ItemName": "Camphor repair kit",
@@ -72,13 +72,6 @@
       "pctROI": 1.27
     },
     {
-      "ItemName": "Ironwood repair kit",
-      "LowPrice": 2003,
-      "PriceFloor": 2114.0,
-      "BuyLimit": 13000,
-      "pctROI": 4.49
-    },
-    {
       "ItemName": "Diamond bracelet",
       "LowPrice": 1891,
       "PriceFloor": 2010.0,
@@ -86,11 +79,18 @@
       "pctROI": 5.24
     },
     {
+      "ItemName": "Ironwood repair kit",
+      "LowPrice": 2019,
+      "PriceFloor": 2114.0,
+      "BuyLimit": 13000,
+      "pctROI": 3.67
+    },
+    {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 439,
+      "LowPrice": 446,
       "PriceFloor": 540.0,
       "BuyLimit": 10000,
-      "pctROI": 21.87
+      "pctROI": 19.96
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -115,17 +115,10 @@
     },
     {
       "ItemName": "Emerald necklace",
-      "LowPrice": 541,
+      "LowPrice": 540,
       "PriceFloor": 585.0,
       "BuyLimit": 18000,
-      "pctROI": 7.21
-    },
-    {
-      "ItemName": "Sapphire necklace",
-      "LowPrice": 340,
-      "PriceFloor": 362.0,
-      "BuyLimit": 18000,
-      "pctROI": 5.59
+      "pctROI": 7.41
     },
     {
       "ItemName": "Dragonstone bolts (e)",
@@ -135,11 +128,18 @@
       "pctROI": 5.78
     },
     {
+      "ItemName": "Sapphire necklace",
+      "LowPrice": 349,
+      "PriceFloor": 362.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.87
+    },
+    {
       "ItemName": "Ascension bolts",
-      "LowPrice": 70,
+      "LowPrice": 74,
       "PriceFloor": 80.0,
       "BuyLimit": 11000,
-      "pctROI": 14.29
+      "pctROI": 8.11
     }
   ],
   "methodology": "VeryGranular"
