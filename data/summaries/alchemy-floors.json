@@ -1,6 +1,13 @@
 {
-  "updated": "2026-11-21T16:25:45.633447+00:00",
+  "updated": "2026-11-21T16:30:56.038645+00:00",
   "items": [
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8700,
+      "PriceFloor": 8945.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.79
+    },
     {
       "ItemName": "Magic longbow",
       "LowPrice": 1145,
@@ -16,11 +23,18 @@
       "pctROI": 1.04
     },
     {
+      "ItemName": "Diamond bracelet",
+      "LowPrice": 1836,
+      "PriceFloor": 2010.0,
+      "BuyLimit": 10000,
+      "pctROI": 8.39
+    },
+    {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 734,
+      "LowPrice": 737,
       "PriceFloor": 896.0,
       "BuyLimit": 10000,
-      "pctROI": 20.98
+      "pctROI": 20.49
     },
     {
       "ItemName": "Camphor repair kit",
@@ -51,25 +65,18 @@
       "pctROI": 1.09
     },
     {
-      "ItemName": "Rune javelin tips",
-      "LowPrice": 434,
-      "PriceFloor": 540.0,
-      "BuyLimit": 10000,
-      "pctROI": 23.27
-    },
-    {
-      "ItemName": "Diamond bracelet",
-      "LowPrice": 1891,
-      "PriceFloor": 2010.0,
-      "BuyLimit": 10000,
-      "pctROI": 5.24
-    },
-    {
       "ItemName": "Phoenix necklace",
       "LowPrice": 2026,
       "PriceFloor": 2144.0,
       "BuyLimit": 10000,
       "pctROI": 4.79
+    },
+    {
+      "ItemName": "Rune javelin tips",
+      "LowPrice": 439,
+      "PriceFloor": 540.0,
+      "BuyLimit": 10000,
+      "pctROI": 21.87
     },
     {
       "ItemName": "Diamond necklace",
@@ -80,10 +87,10 @@
     },
     {
       "ItemName": "Ruby necklace",
-      "LowPrice": 982,
+      "LowPrice": 979,
       "PriceFloor": 1030.0,
       "BuyLimit": 18000,
-      "pctROI": 3.87
+      "pctROI": 4.19
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -114,18 +121,18 @@
       "pctROI": 4.06
     },
     {
+      "ItemName": "Ascension bolts",
+      "LowPrice": 68,
+      "PriceFloor": 80.0,
+      "BuyLimit": 11000,
+      "pctROI": 17.65
+    },
+    {
       "ItemName": "Dragonstone bolts (e)",
       "LowPrice": 354,
       "PriceFloor": 369.0,
       "BuyLimit": 11000,
       "pctROI": 3.39
-    },
-    {
-      "ItemName": "Ascension bolts",
-      "LowPrice": 70,
-      "PriceFloor": 80.0,
-      "BuyLimit": 11000,
-      "pctROI": 14.29
     }
   ],
   "methodology": "VeryGranular"
