@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T11:50:47.168276+00:00",
+  "updated": "2026-11-24T11:55:45.780078+00:00",
   "items": [
     {
       "ProductName": "Magic potion(4)",
@@ -82,26 +82,6 @@
       "LiquidityLevel": "HIGH_LIQUIDITY"
     },
     {
-      "ProductName": "Super attack(4)",
-      "ProductPrice": 1460,
-      "ProductBuyLimit": 2000,
-      "Ingredient1Name": "Super attack(3)",
-      "Ingredient1Price": 1024,
-      "Ingredient1Qty": "1.333",
-      "Ingredient2Name": "",
-      "Ingredient2Price": 0,
-      "Ingredient2Qty": "0",
-      "Ingredient3Name": "",
-      "Ingredient3Price": 0,
-      "Ingredient3Qty": "0",
-      "TotalIngredientCost": 1024,
-      "ProfitPerCraft": 436,
-      "ROI": 42.58,
-      "RecipeType": "Decant 3 to 4 (Bob Barter)",
-      "QtyProduced": 1,
-      "LiquidityLevel": "HIGH_LIQUIDITY"
-    },
-    {
       "ProductName": "Antifire potion(4)",
       "ProductPrice": 641,
       "ProductBuyLimit": 2000,
@@ -157,6 +137,26 @@
       "TotalIngredientCost": 1645,
       "ProfitPerCraft": 631,
       "ROI": 38.36,
+      "RecipeType": "Decant 3 to 4 (Bob Barter)",
+      "QtyProduced": 1,
+      "LiquidityLevel": "HIGH_LIQUIDITY"
+    },
+    {
+      "ProductName": "Super attack(4)",
+      "ProductPrice": 1405,
+      "ProductBuyLimit": 2000,
+      "Ingredient1Name": "Super attack(3)",
+      "Ingredient1Price": 1020,
+      "Ingredient1Qty": "1.333",
+      "Ingredient2Name": "",
+      "Ingredient2Price": 0,
+      "Ingredient2Qty": "0",
+      "Ingredient3Name": "",
+      "Ingredient3Price": 0,
+      "Ingredient3Qty": "0",
+      "TotalIngredientCost": 1020,
+      "ProfitPerCraft": 385,
+      "ROI": 37.75,
       "RecipeType": "Decant 3 to 4 (Bob Barter)",
       "QtyProduced": 1,
       "LiquidityLevel": "HIGH_LIQUIDITY"
@@ -422,24 +422,24 @@
       "LiquidityLevel": "LOW_LIQUIDITY"
     },
     {
-      "ProductName": "Zamorak godsword",
-      "ProductPrice": 12799355,
-      "ProductBuyLimit": 8,
-      "Ingredient1Name": "Godsword blade",
-      "Ingredient1Price": 471846,
+      "ProductName": "Dwarf weed potion (unf)",
+      "ProductPrice": 1685,
+      "ProductBuyLimit": 10000,
+      "Ingredient1Name": "Dwarf weed",
+      "Ingredient1Price": 1383,
       "Ingredient1Qty": "1",
-      "Ingredient2Name": "Zamorak hilt",
-      "Ingredient2Price": 11668122,
+      "Ingredient2Name": "Vial of water",
+      "Ingredient2Price": 8,
       "Ingredient2Qty": "1",
       "Ingredient3Name": "",
       "Ingredient3Price": 0,
       "Ingredient3Qty": "0",
-      "TotalIngredientCost": 12139968,
-      "ProfitPerCraft": 659387,
-      "ROI": 5.43,
-      "RecipeType": "Combine hilt and godsword blade",
+      "TotalIngredientCost": 1591,
+      "ProfitPerCraft": 94,
+      "ROI": 5.91,
+      "RecipeType": "Create Unfinished Potions (Zahur)",
       "QtyProduced": 1,
-      "LiquidityLevel": "LOW_LIQUIDITY"
+      "LiquidityLevel": "HIGH_LIQUIDITY"
     }
   ],
   "methodology": "VeryGranular_RecipeArbitrage"
