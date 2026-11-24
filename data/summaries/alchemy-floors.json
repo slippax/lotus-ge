@@ -1,19 +1,19 @@
 {
-  "updated": "2026-11-24T14:55:41.408370+00:00",
+  "updated": "2026-11-24T15:00:52.781483+00:00",
   "items": [
+    {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1111,
+      "PriceFloor": 1259.0,
+      "BuyLimit": 18000,
+      "pctROI": 12.24
+    },
     {
       "ItemName": "Fire battlestaff",
       "LowPrice": 8740,
       "PriceFloor": 8945.0,
       "BuyLimit": 18000,
       "pctROI": 1.33
-    },
-    {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1131,
-      "PriceFloor": 1259.0,
-      "BuyLimit": 18000,
-      "pctROI": 10.26
     },
     {
       "ItemName": "Ironwood repair kit",
@@ -66,10 +66,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 435,
+      "LowPrice": 440,
       "PriceFloor": 540.0,
       "BuyLimit": 10000,
-      "pctROI": 22.99
+      "pctROI": 21.59
     },
     {
       "ItemName": "Mahogany repair kit",
@@ -87,10 +87,17 @@
     },
     {
       "ItemName": "Ruby bracelet",
-      "LowPrice": 1069,
+      "LowPrice": 1063,
       "PriceFloor": 1119.0,
       "BuyLimit": 10000,
-      "pctROI": 3.65
+      "pctROI": 4.23
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 343,
+      "PriceFloor": 369.0,
+      "BuyLimit": 11000,
+      "pctROI": 6.71
     },
     {
       "ItemName": "Emerald bracelet",
@@ -101,17 +108,10 @@
     },
     {
       "ItemName": "Sapphire necklace",
-      "LowPrice": 348,
+      "LowPrice": 347,
       "PriceFloor": 362.0,
       "BuyLimit": 18000,
-      "pctROI": 3.16
-    },
-    {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 351,
-      "PriceFloor": 369.0,
-      "BuyLimit": 11000,
-      "pctROI": 4.27
+      "pctROI": 3.46
     }
   ],
   "methodology": "VeryGranular"
