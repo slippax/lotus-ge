@@ -1,6 +1,13 @@
 {
-  "updated": "2026-11-25T08:35:43.600436+00:00",
+  "updated": "2026-11-25T08:40:46.976750+00:00",
   "items": [
+    {
+      "ItemName": "Air battlestaff",
+      "LowPrice": 8700,
+      "PriceFloor": 8945.0,
+      "BuyLimit": 18000,
+      "pctROI": 1.79
+    },
     {
       "ItemName": "Magic longbow",
       "LowPrice": 1100,
@@ -45,10 +52,10 @@
     },
     {
       "ItemName": "Dragon javelin tips",
-      "LowPrice": 790,
+      "LowPrice": 789,
       "PriceFloor": 896.0,
       "BuyLimit": 10000,
-      "pctROI": 12.41
+      "pctROI": 12.55
     },
     {
       "ItemName": "Rune incendiary cannonball",
@@ -86,13 +93,6 @@
       "pctROI": 5.02
     },
     {
-      "ItemName": "Dragonstone bolts (e)",
-      "LowPrice": 338,
-      "PriceFloor": 369.0,
-      "BuyLimit": 11000,
-      "pctROI": 8.28
-    },
-    {
       "ItemName": "Ruby necklace",
       "LowPrice": 1004,
       "PriceFloor": 1030.0,
@@ -105,6 +105,13 @@
       "PriceFloor": 644.0,
       "BuyLimit": 10000,
       "pctROI": 2.9
+    },
+    {
+      "ItemName": "Dragonstone bolts (e)",
+      "LowPrice": 352,
+      "PriceFloor": 369.0,
+      "BuyLimit": 11000,
+      "pctROI": 3.98
     }
   ],
   "methodology": "VeryGranular"
