@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T10:20:44.654566+00:00",
+  "updated": "2026-11-28T10:25:36.478664+00:00",
   "items": [
     {
       "ItemName": "Water battlestaff",
@@ -16,6 +16,13 @@
       "pctROI": 1.2
     },
     {
+      "ItemName": "Magic longbow",
+      "LowPrice": 1143,
+      "PriceFloor": 1259.0,
+      "BuyLimit": 18000,
+      "pctROI": 9.1
+    },
+    {
       "ItemName": "Onyx ascension bolts (e)",
       "LowPrice": 8950,
       "PriceFloor": 9212.0,
@@ -23,11 +30,11 @@
       "pctROI": 1.9
     },
     {
-      "ItemName": "Magic longbow",
-      "LowPrice": 1144,
-      "PriceFloor": 1259.0,
+      "ItemName": "Earth battlestaff",
+      "LowPrice": 8764,
+      "PriceFloor": 8945.0,
       "BuyLimit": 18000,
-      "pctROI": 9.0
+      "pctROI": 1.05
     },
     {
       "ItemName": "Camphor repair kit",
@@ -80,10 +87,10 @@
     },
     {
       "ItemName": "Rune javelin tips",
-      "LowPrice": 489,
+      "LowPrice": 483,
       "PriceFloor": 540.0,
       "BuyLimit": 10000,
-      "pctROI": 9.41
+      "pctROI": 10.77
     },
     {
       "ItemName": "Emerald bracelet",
@@ -114,11 +121,25 @@
       "pctROI": 3.76
     },
     {
+      "ItemName": "Emerald necklace",
+      "LowPrice": 568,
+      "PriceFloor": 585.0,
+      "BuyLimit": 18000,
+      "pctROI": 2.11
+    },
+    {
       "ItemName": "Rune incendiary cannonball",
       "LowPrice": 1369,
       "PriceFloor": 1401.0,
       "BuyLimit": 11000,
       "pctROI": 1.31
+    },
+    {
+      "ItemName": "Diamond ascension bolts",
+      "LowPrice": 324,
+      "PriceFloor": 332.0,
+      "BuyLimit": 11000,
+      "pctROI": 1.54
     }
   ],
   "methodology": "VeryGranular"
